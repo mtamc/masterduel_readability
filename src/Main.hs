@@ -124,7 +124,6 @@ numberEffects card = card
             ⊕ [ cur
                 & #content %~ (newPrefix ⊕)
                 & #trailingText %~ Text.stripEnd
-
               ]
           , if mustUseEnclosed then enclosedRest else enclosedNums
           )
