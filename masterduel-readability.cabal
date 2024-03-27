@@ -60,7 +60,10 @@ library
     , hspec
     , hspec-contrib
     , lens
+    , megaparsec
     , mtl
+    , pcre-heavy
+    , pcre-light
     , relude
     , safe-exceptions
     , template-haskell
@@ -106,7 +109,10 @@ executable masterduel-readability-exe
     , hspec-contrib
     , lens
     , masterduel-readability
+    , megaparsec
     , mtl
+    , pcre-heavy
+    , pcre-light
     , relude
     , safe-exceptions
     , template-haskell
@@ -151,7 +157,10 @@ test-suite masterduel-readability-test
     , hspec-contrib
     , lens
     , masterduel-readability-exe
+    , megaparsec
     , mtl
+    , pcre-heavy
+    , pcre-light
     , relude
     , safe-exceptions
     , template-haskell

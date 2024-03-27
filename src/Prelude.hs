@@ -10,6 +10,7 @@ module Prelude
   , module Data.Ord.Unicode
   , module Relude
   , applyWhen
+  , decorate
   , echo
   , justIf
   , positJust
@@ -46,3 +47,6 @@ positJust err  Nothing  = throwError err
 
 (≪) ∷ Monad m ⇒ m a → m b → m a
 (≪) = flip (≫)
+
+decorate ∷ Monoid m ⇒ m → m → m → m
+decorate left right a = left ⊕ a ⊕ right

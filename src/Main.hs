@@ -1,17 +1,21 @@
-{-# LANGUAGE DeriveAnyClass, DeriveGeneric, OverloadedRecordDot #-}
+{-# LANGUAGE DeriveAnyClass, DeriveGeneric, IncoherentInstances, OverloadedRecordDot #-}
 {-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
 {-# HLINT ignore "Use zipWith" #-}
 module Main (main) where
 
-import Control.Lens
+import Control.Lens             (view, (%~), (.~), (^.))
 import Data.Aeson
 import Data.Aeson.Encode.Pretty
 import Data.Binary.Builder      as Binary
-import Data.Binary.Get
+import Data.Binary.Get          hiding (lookAhead)
 import Data.ByteString          qualified as BS
 import Data.ByteString.Lazy     qualified as BL
+import Data.List                (partition)
 import Data.Text                qualified as Text
+import Prelude                  hiding (many)
 import Relude.Unsafe            qualified as Unsafe
+import Text.Megaparsec
+import Text.Megaparsec.Char
 import Util
 
 main ∷ IO ()
@@ -48,17 +52,25 @@ paths
 
 -- TYPES
 
-data Card
+data Card effectType
   = Card
     { name            ∷ Text
       -- Often the first registered effect is not at position 0
     , leadingText     ∷ Text
-    , effects         ∷ [Effect]
-    , pendulumEffects ∷ [Effect]
+    , effects         ∷ [effectType]
+    , pendulumEffects ∷ [effectType]
     }
   deriving (Eq, FromJSON, Generic, Show, ToJSON)
 
-cardOriginalText ∷ Card → Text
+instance Functor Card where
+  fmap ∷ (a → b) → Card a → Card b
+  fmap f card
+    = card
+    { effects = map f card.effects
+    , pendulumEffects = map f card.pendulumEffects
+    }
+
+cardOriginalText ∷ Card Effect → Text
 cardOriginalText c =
   Text.concat
     ( c.leadingText
@@ -101,44 +113,201 @@ data PartData
 
 -- UPDATING DESCS
 
-updateDesc ∷ Card → Card
-updateDesc = numberEffects
+substringsToCapitalize ∷ [Text]
+substringsToCapitalize =
+  [ "special summon" , "normal summon" , "tribute summon" , "ritual summon" , "pendulum summon" , "synchro summon" , "link summon" , "xyz summon" , "fusion summon"
+  , "destroy" , "destroying"
+  , "negate", "negating"
+  , "quick-effect"
+  ]
 
-numberEffects ∷ Card → Card
-numberEffects card = card
-  { effects =
-      fst $ foldl'
-        (\(newEffects, enclosedNums) cur →
-          let
-            neEnclosedNums = nonEmpty enclosedNums
-            enclosedCurrent = maybe '①' head neEnclosedNums
-            enclosedRest = maybe [] tail neEnclosedNums
-            textSoFar = Text.concat (card.leadingText : map effectText newEffects)
-            mustUseEnclosed = Text.strip cur.content ≢ ""
-            mustAddNewline = Text.strip cur.content ≢ "" ∧ Text.strip textSoFar ≢ ""
-            newPrefix
-              = (if mustAddNewline then "\n" else "")
-              ⊕ (if mustUseEnclosed then Text.cons enclosedCurrent " " else "")
-          in
-          ( newEffects
-            ⊕ [ cur
-                & #content %~ (newPrefix ⊕)
-                & #trailingText %~ Text.stripEnd
-              ]
-          , if mustUseEnclosed then enclosedRest else enclosedNums
-          )
-        )
-        ([], enclosedNumbers)
-        card.effects
-  , leadingText = Text.strip card.leadingText
-  }
-  where
-  enclosedNumbers = "①②③④④⑥⑦⑧⑨⑩⑪⑫⑬⑬⑮⑯⑰⑱⑲⑳"
+-- | Data structure used internally to better represent effect elements
+data ProcessedEffect
+  = ProcessedEffect
+    { leadingNewline   ∷ Bool
+    , enclosedNumber   ∷ Maybe Text
+    , tags             ∷ [Text]
+    , condition        ∷ Maybe Text
+    , activation       ∷ Maybe Text
+    , mainEffect       ∷ Text
+    , trailingText     ∷ Text
+    , originalPosition ∷ Int
+      {-| Effect with no offset registered in Card_Part, we parsed it manually -}
+    , unregistered     ∷ Bool
+    }
+  deriving (Eq, FromJSON, Generic, Show, ToJSON)
+
+mapPEffectText ∷ (Text → Text) → ProcessedEffect → ProcessedEffect
+mapPEffectText f
+  = #condition %~ fmap f
+  ⋙ #activation %~ fmap f
+  ⋙ #mainEffect %~ f
+
+type Parser = Parsec Void Text
+
+updateDesc ∷ Card Effect → Card Effect
+updateDesc card = let
+  processedEffects = map effectToProcessed card.effects
+  normalizedLeading = Text.strip card.leadingText
+  (leadingWithoutUnregisteredEffects, unregisteredEffects) =
+    getUnregisteredEffects normalizedLeading processedEffects
+  withProcessedEffectsAndNormalizedLeading
+    = Card
+      { name = card.name
+      , leadingText = leadingWithoutUnregisteredEffects
+      , effects
+        = numberEffects leadingWithoutUnregisteredEffects (unregisteredEffects ⊕ processedEffects)
+      , pendulumEffects =
+        numberEffects "dummy text so first pendulum effect has a newline"
+          $ map effectToProcessed card.pendulumEffects
+      }
+  final
+    = tagQuickEffects withProcessedEffectsAndNormalizedLeading
+  (finalLeadingText, finalEffects) = fromUnregisteredEffects final.leadingText final.effects
+  in Card
+    { name = final.name
+    , leadingText = finalLeadingText
+    , effects = map processedToEffect finalEffects
+    , pendulumEffects = map processedToEffect final.pendulumEffects
+    }
+
+fromUnregisteredEffects ∷ Text → [ProcessedEffect] → (Text, [ProcessedEffect])
+fromUnregisteredEffects leadingText effects = let
+  (unregisteredEffects, effectsWithoutUnregistered) = partition (.unregistered) effects
+  leadingTextContainingUnregisteredEffects =
+    leadingText ⊕ Text.concat (map (effectText . processedToEffect) unregisteredEffects)
+  in (leadingTextContainingUnregisteredEffects, effectsWithoutUnregistered)
+
+-- | atm we only parse one specific case: zero registered effects and the entire
+-- leading text is one sentence. if there are multiple sentences then it's very
+-- hard to know if this is one or multiple effects and how to separate them.
+getUnregisteredEffects ∷ Text → [ProcessedEffect] → (Text, [ProcessedEffect])
+getUnregisteredEffects leadingText effects =
+  if not (null effects) ∨ Text.length (Text.filter (≡ '.') leadingText) > 1 then
+    (leadingText, effects)
+  else let
+    unregisteredEffectParser ∷ Parser (Text, [ProcessedEffect])
+    unregisteredEffectParser = do
+      cond ←
+        (try do
+          let end = noneOf ['.', ':'] *> void newline
+          condStart ← toText <$> manyTill anySingle (try (lookAhead end) <|> eof)
+          condLastChar ← one <$> anySingle
+          void newline
+          pure (condStart ⊕ condLastChar)
+        ) <|> pure ""
+      effectTxt ← (Just . toText <$> someTill anySingle eof) <|> pure Nothing
+      let effect = effectTxt <&> basicProcessedEffectFromText 0
+      pure (cond, maybeToList effect)
+    (summoningCondition, unregisteredEffects) =
+      fromRight (error "") $ parse unregisteredEffectParser "" leadingText
+    in (summoningCondition, unregisteredEffects ⧺ effects)
+
+{-| this uses default value and is not the fully processed state -}
+effectToProcessed ∷ Effect → ProcessedEffect
+effectToProcessed effect =
+  ProcessedEffect
+    { leadingNewline = False
+    , enclosedNumber = Nothing
+    , tags = []
+    , condition = Nothing
+    , activation = Nothing
+    , mainEffect = effect.content
+    , trailingText = effect.trailingText
+    , originalPosition = effect.originalPosition
+    , unregistered = False
+    }
+
+basicProcessedEffectFromText ∷ Int → Text → ProcessedEffect
+basicProcessedEffectFromText pos text =
+  ProcessedEffect
+    { leadingNewline = False
+    , enclosedNumber = Nothing
+    , tags = []
+    , condition = Nothing
+    , activation = Nothing
+    , mainEffect = text
+    , trailingText = ""
+    , originalPosition = pos
+    , unregistered = False
+    }
+
+processedToEffect ∷ ProcessedEffect → Effect
+processedToEffect processed =
+  Effect
+    { content =
+      (if processed.leadingNewline then "\n" else "")
+      ⊕ maybe "" (⊕ " ") processed.enclosedNumber
+      ⊕ Text.concat (map ((<> " | ") . Text.toUpper) $ sort processed.tags)
+      ⊕ maybe "" (decorate "<i>" "</i>") processed.condition
+      ⊕ maybe "" (decorate "<b>" "</b>") processed.activation
+      ⊕ processed.mainEffect
+    , trailingText = processed.trailingText
+    , originalPosition = processed.originalPosition
+    }
+
+numberEffects ∷ Text → [ProcessedEffect] → [ProcessedEffect]
+numberEffects cardLeadingText effects = let
+  effectsThatNeedNumbering = filter (\e → Text.strip e.mainEffect ≢ "") effects
+  in fst $ foldl'
+    (\(newEffects, enclosedNums) cur →
+      let
+        neEnclosedNums = nonEmpty enclosedNums
+        enclosedCurrent = maybe '①' head neEnclosedNums
+        enclosedRest = maybe [] tail neEnclosedNums
+        textSoFar = Text.concat (cardLeadingText : map (effectText . processedToEffect) newEffects)
+        mustUseEnclosed = length effectsThatNeedNumbering > 1 ∧ (Text.strip cur.mainEffect ≢ "")
+        mustAddNewline = Text.strip cur.mainEffect ≢ "" ∧ Text.strip textSoFar ≢ ""
+      in
+      ( newEffects
+        ⊕ [ cur
+            & #leadingNewline .~ mustAddNewline
+            & #enclosedNumber .~ (if mustUseEnclosed then Just (one enclosedCurrent) else Nothing)
+            & #trailingText %~ Text.stripEnd
+          ]
+      , if mustUseEnclosed then enclosedRest else enclosedNums
+      )
+    )
+    ([], "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑬⑮⑯⑰⑱⑲⑳")
+    effects
+
+-- | NOTE: this currently assumes no text from mainEffect has been moved to
+-- condition/activation
+tagQuickEffects ∷ Card ProcessedEffect → Card ProcessedEffect
+tagQuickEffects = fmap tag where
+  tag ∷ ProcessedEffect → ProcessedEffect
+  tag effect = let
+    isQuick = any (maybe False hasQuickEffectText)
+      [Just effect.mainEffect, effect.activation, effect.condition]
+    in effect
+      & applyWhen isQuick (mapPEffectText removeQuickEffectText . (#tags %~ ("quick":)))
+
+
+quickEffectP ∷ Parser Text
+quickEffectP = do
+  leadingSpace ← maybe "" one <$> optional (char ' ')
+  parensStart ← choice $ map string' ["(quick effect", "(this is a quick effect"]
+  dot ← maybe "" one <$> optional (char '.')
+  closingParens ← one <$> char ')'
+  pure $ leadingSpace ⊕ parensStart ⊕ dot ⊕ closingParens
+
+removeQuickEffectP ∷ Parser Text
+removeQuickEffectP = do
+  prefix ← toText <$> manyTill anySingle (try (void (lookAhead quickEffectP)) <|> eof)
+  try (void quickEffectP <|> eof)
+  suffix ← toText <$> many anySingle
+  pure $ prefix ⊕ suffix
+
+removeQuickEffectText ∷ Text → Text
+removeQuickEffectText = toText . fromRight (error "") . parse removeQuickEffectP ""
+
+hasQuickEffectText ∷ Text → Bool
+hasQuickEffectText text = removeQuickEffectText text ≢ text
 
 
 -- ENCODING
 
-generateDescAndPartFiles ∷ [Card] → IO ()
+generateDescAndPartFiles ∷ [Card Effect] → IO ()
 generateDescAndPartFiles cards = do
   let
     cardTexts = map cardOriginalText cards
@@ -153,10 +322,10 @@ generateDescAndPartFiles cards = do
   partDataToBinary (PartData start end) =
     putWord16le (fromIntegral start) ⊕ putWord16le (fromIntegral end)
 
-  toPartDatas ∷ [Card] → [PartData]
+  toPartDatas ∷ [Card Effect] → [PartData]
   toPartDatas = concatMap toCardPartDatas
 
-  toCardPartDatas ∷ Card → [PartData]
+  toCardPartDatas ∷ Card Effect → [PartData]
   toCardPartDatas card = let
     originalText = cardOriginalText card
     partDatas
@@ -204,7 +373,7 @@ generateDescAndPartFiles cards = do
 
 -- DECODING
 
-getCards ∷ IO [Card]
+getCards ∷ IO [Card Effect]
 getCards =
   mkCards
     <$> decodeFile paths.name
@@ -212,7 +381,7 @@ getCards =
     <*> readFileLBS paths.part
     <*> readFileLBS paths.pidx
 
-mkCards ∷ [Text] → [Text] → BL.ByteString → BL.ByteString → [Card]
+mkCards ∷ [Text] → [Text] → BL.ByteString → BL.ByteString → [Card Effect]
 mkCards names (map encodeUtf8 → descs) partSrc pidxSrc =
   map
     (\(name, desc, pidx) → let

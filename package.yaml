@@ -33,6 +33,9 @@ dependencies:
 - aeson
 - MissingH
 - utf8-string
+- pcre-heavy
+- pcre-light
+- megaparsec
 
 language: GHC2021
 
