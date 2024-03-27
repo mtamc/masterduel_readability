@@ -1,0 +1,160 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           masterduel-readability
+version:        0.1.0.0
+description:    Please see the README on GitHub at <url_here>
+homepage:       https://github.com/mtamc/masterduel-readability#readme
+bug-reports:    https://github.com/mtamc/masterduel-readability/issues
+author:         mtamc
+maintainer:     mtamc
+copyright:      2023 mtamc
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/mtamc/masterduel-readability
+
+library
+  exposed-modules:
+      Main
+      Prelude
+      Util
+  other-modules:
+      Paths_masterduel_readability
+  hs-source-dirs:
+      src
+  default-extensions:
+      OverloadedStrings
+      OverloadedLabels
+      UnicodeSyntax
+      NoFieldSelectors
+      LambdaCase
+      DuplicateRecordFields
+      ViewPatterns
+      BlockArguments
+      DataKinds
+      TypeOperators
+      TypeFamilies
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      MissingH
+    , aeson
+    , aeson-pretty
+    , base-noprelude
+    , base-unicode-symbols
+    , binary
+    , bytestring
+    , containers
+    , data-default
+    , directory
+    , filepath
+    , generic-lens
+    , hspec
+    , hspec-contrib
+    , lens
+    , mtl
+    , relude
+    , safe-exceptions
+    , template-haskell
+    , text
+    , utf8-string
+  default-language: GHC2021
+
+executable masterduel-readability-exe
+  main-is: Main.hs
+  other-modules:
+      Prelude
+      Util
+      Paths_masterduel_readability
+  hs-source-dirs:
+      src
+  default-extensions:
+      OverloadedStrings
+      OverloadedLabels
+      UnicodeSyntax
+      NoFieldSelectors
+      LambdaCase
+      DuplicateRecordFields
+      ViewPatterns
+      BlockArguments
+      DataKinds
+      TypeOperators
+      TypeFamilies
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N -fwrite-ide-info -hiedir=.hie
+  build-depends:
+      MissingH
+    , aeson
+    , aeson-pretty
+    , base-noprelude
+    , base-unicode-symbols
+    , binary
+    , bytestring
+    , containers
+    , data-default
+    , directory
+    , filepath
+    , generic-lens
+    , hspec
+    , hspec-contrib
+    , lens
+    , masterduel-readability
+    , mtl
+    , relude
+    , safe-exceptions
+    , template-haskell
+    , text
+    , utf8-string
+  default-language: GHC2021
+
+test-suite masterduel-readability-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_masterduel_readability
+  hs-source-dirs:
+      test
+  default-extensions:
+      OverloadedStrings
+      OverloadedLabels
+      UnicodeSyntax
+      NoFieldSelectors
+      LambdaCase
+      DuplicateRecordFields
+      ViewPatterns
+      BlockArguments
+      DataKinds
+      TypeOperators
+      TypeFamilies
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      MissingH
+    , aeson
+    , aeson-pretty
+    , base-noprelude
+    , base-unicode-symbols
+    , binary
+    , bytestring
+    , containers
+    , data-default
+    , directory
+    , filepath
+    , generic-lens
+    , hspec
+    , hspec-contrib
+    , lens
+    , masterduel-readability-exe
+    , mtl
+    , relude
+    , safe-exceptions
+    , template-haskell
+    , text
+    , utf8-string
+  default-language: GHC2021

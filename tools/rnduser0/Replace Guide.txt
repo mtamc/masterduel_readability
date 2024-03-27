@@ -1,0 +1,425 @@
+. 
+.\n\n
+
+\.\\n\\n(This card[^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(You cannot [^.;]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(You must [^.;]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(You take no [^.;]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(Your opponent[^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(Other[^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(Your other[^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(If [^.]*while this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(If this card was [^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(If you activate[^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(If you use[^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(If you control \"[^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(If you control no [^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(If you control this [^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(If you control [^.]*when this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(If you draw [^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(If you Special Summoned [^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(If you Special Summon a monster[^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(If you Special Summon to [^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(If you Ritual Summon [^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(If you inflict[^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(If you placed [^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(If you banish[^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(If you did not [^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(The[^.]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(When [^.]*this card's effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\n(This card[^.]*this way[^.]*\.)
+\.\\n\1
+
+\.\\n\\n(That [^.]*\.)
+\. \1
+
+\.\\n\\n([A-Z][^.;:]*?)(also[^.]*?apply the following effect|then[^.]*?apply the following effect)
+\.\\n\1\2
+
+([a-z])\\n
+\1\\n\\n
+
+([^.]\u0029)\\n([A-Z])
+\1\\n\\n\2
+
+\\"\\n([A-Z])
+\\"\\n\\n\1
+
+(min.|max.)\\n\\n
+\1 
+
+.\n\n(
+.\n(
+
+.\n(Quick Effect):
+.\n\n(Quick Effect):
+
+.\n(This card
+.\n\n(This card
+
+.\n(1 monster can only
+.\n\n(1 monster can only
+
+.\n(A monster can only
+.\n\n(A monster can only
+
+.)\n
+.)\n\n
+
+.) 
+.)\n\n
+
+\n\nThey cannot 
+\nThey cannot 
+
+\n\n●
+\n●
+
+(●[^\[]*?\.)\\n\\n([^\u25CF\[])
+\1 \2
+
+(●[^\[]*?\.)\\n\\n([^\u25CF\[])
+\1 \2
+
+(●[^\[]*?\.)\\n([^\u25CF\[])
+\1 \2
+
+(●[^\[]*?\.)\\n([^\u25CF\[])
+\1 \2
+
+(\\n| )You can only activate each effect of \\"
+\\n\\nYou can only activate each effect of \\"
+
+(\\n| )You can only activate each effect of \\"
+\\n\\nYou can only activate each effect of \\"
+
+(\\n| )You can only use each effect of \\"
+\\n\\nYou can only use each effect of \\"
+
+(\\n| )You can only activate 1 \\"
+\\n\\nYou can only activate 1 \\"
+
+(\\n| )You can only use 1 \\"
+\\n\\nYou can only use 1 \\"
+
+ You can only control 1 \"
+\n\nYou can only control 1 \"
+
+. You cannot Special Summon any monsters during the turn you activate this effect, except 
+.\nYou cannot Special Summon any monsters during the turn you activate this effect, except 
+
+. You cannot Special Summon monsters the turn you activate this card, except \"Gem-Knight\" monsters.
+.\n\nYou cannot Special Summon monsters the turn you activate this card, except \"Gem-Knight\" monsters.
+
+. You cannot Special Summon monsters the turn you activate this effect, except WIND monsters.
+.\nYou cannot Special Summon monsters the turn you activate this effect, except WIND monsters.
+
+\. During (either player's turn |the |your )
+\.\n\nDuring \1
+
+\.\n\nDuring the turn you (activate|use) this effect,
+\.\nDuring the turn you \1 this effect,
+
+(\\n\\n| )You can only activate this effect
+\\nYou can only activate this effect
+
+(\\n\\n| )You can only use this effect
+\\nYou can only use this effect
+
+(\\n\\n| )You can use this effect
+\\nYou can use this effect
+
+(\\n\\n| )You can only activate the previous effect
+\\nYou can only activate the previous effect
+
+(\\n\\n| )You can only use the previous effect
+\\nYou can only use the previous effect
+
+\.\\n\\n(You can only attack [^.;]*this effect[^.]*?\.)
+\.\\n\1
+
+\.\\n\\nYou can only (apply|gain) this effect
+\.\\nYou can only \1 this effect
+
+\. You can only (Special|Fusion|Ritual|Synchro|Xyz|Link)( Summon[^\[]*?this way\.)
+\.\\nYou can only \1\2
+
+\.\\n\\nYou can only (Special|Fusion|Ritual|Synchro|Xyz|Link)( Summon[^\[]*?this way\.)
+\.\\nYou can only \1\2
+
+\. You can only (Special|Fusion|Ritual|Synchro|Xyz|Link)( Summon[^\[:]*?this effect\.)
+\.\\nYou can only \1\2
+
+\.\\n\\nYou can only (Special|Fusion|Ritual|Synchro|Xyz|Link)( Summon[^\[:]*?this effect\.)
+\.\\nYou can only \1\2
+
+\. You can only (Special|Fusion|Ritual|Synchro|Xyz|Link)( Summon[^\[]*?\.)
+\.\\n\\nYou can only \1\2
+
+\\n\\n(When|If|During the turn this card was) (Special |Fusion |Ritual |Synchro |Xyz |Link |)Summoned this way
+\\n\1 \2Summoned this way
+ 
+ (When|If|During the turn this card was) (Special |Fusion |Ritual |Synchro |Xyz |Link |)Summoned this way
+\\n\1 \2Summoned this way
+
+. (These Special Summons are treated 
+.\n(These Special Summons are treated 
+
+. Neither player can activate cards or effects in response to this effect's activation.
+.\nNeither player can activate cards or effects in response to this effect's activation.
+
+. You can banish this card
+.\n\nYou can banish this card
+
+\. If this card is (banished |sent to the G|in your G)
+\.\\n\\nIf this card is \1
+
+([^1])\. Once 
+\1\.\n\nOnce 
+
+. You can only activate the effect 
+.\\nYou can only activate the effect 
+
+. If this card in your possession 
+.\n\nIf this card in your possession 
+
+.\n\n(This card is NOT treated as a Trap
+.\n(This card is NOT treated as a Trap
+
+.\n\n(This card is also still a Trap
+.\n(This card is also still a Trap
+
+\n\nThis effect 
+\nThis effect 
+
+\"Beat Cop from the Underworld\" once per turn. 
+\"Beat Cop from the Underworld\" once per turn.\n
+
+\. (If|When|While) (a|an) 
+\.\\n\\n\1 \2 
+
+. You can target 
+.\n\nYou can target 
+
+. This turn, you cannot discard another card with the same name 
+.\nThis turn, you cannot discard another card with the same name 
+
+. When your 
+.\n\nWhen your 
+
+. You can only use 
+.\nYou can only use 
+
+. If you have \"Endless Engine Argyro System\"
+.\nIf you have \"Endless Engine Argyro System\"
+
+. If you activate 
+.\n\nIf you activate 
+
+. A \"Therion\" monster 
+.\nA \"Therion\" monster 
+
+. A \"Purrely\" Xyz 
+.\n\nA \"Purrely\" Xyz 
+
+. Your opponent must 
+.\nYour opponent must 
+
+\n\nThen
+\nThen
+
+.\n\nIf you cannot,
+.\nIf you cannot,
+
+.\n\nWhen you do this,
+.\nWhen you do this,
+
+.\n\nThis effect
+.\nThis effect
+
+\n\nThis is a Quick
+\nThis is a Quick
+
+\n\n(Transfer its materials to this card.) 
+\n(Transfer its materials to this card.)\n\n
+ 
+.\n\nTransfer its material
+.\nTransfer its material
+
+.\n\nTransfer this card's material
+.\nTransfer this card's material
+
+.\n\nOtherwise
+. Otherwise
+
+.\n\nIts
+. Its
+
+\.\\n\\n(\(?Xyz Materials )
+\. \1
+
+.\n\nYour choice
+. Your choice
+
+.\n\nOnly count
+. Only count
+
+ die.\n\nUntil 
+ die.\nUntil 
+
+.\n\nIf the result 
+. If the result 
+
+.\n\nCall the type 
+. Call the type 
+
+.\n\nIf you call 
+. If you call 
+
+.\n\nIf it is 
+. If it is 
+
+.\n\nIf its 
+. If its 
+
+.\n\nIf it does
+. If it does
+
+.\n\nIf not, 
+. If not, 
+
+\.\\n\\nIf you do(| not| this)(,|:)
+\. If you do\1\2
+
+\.\\n\\nIf you do not (Special|Xyz) Summon
+\. If you do not \1 Summon
+
+\.\\n\\nWhen you do(,|:)
+\. When you do\1
+
+ take control of it.\n\nIf you do not control
+ take control of it. If you do not control
+
+.\n\nIf you do not control 2 or more of the same 
+. If you do not control 2 or more of the same 
+
+ Union Monster at a time.\n\nIf the 
+ Union Monster at a time. If the 
+
+.\n\nYou must also Tribute 
+.\nYou must also Tribute 
+
+.\n\nTheir
+. Their
+
+\.\\n\\n(Banish|Destroy) (them|it)
+\. \1 \2
+
+.\n\nFor the rest of this turn after this card resolves
+.\nFor the rest of this turn after this card resolves
+
+\.\\n\\nSpecial Summon (it|that monster)
+\. Special Summon \1
+
+monster(s)\n\n
+monster(s) 
+
+card(s)\n\n
+card(s) 
+
+P.U.N.K.\n\n
+P.U.N.K. 
+
+D.D.\n\n
+D.D. 
+
+T.G.\n\n
+T.G. 
+
+U.A.\n\n
+U.A. 
+
+F.A.\n\n
+F.A. 
+
+A.I.\n\n
+A.I. 
+
+B.E.S.\n\n
+B.E.S. 
+
+Dr.\n\n
+Dr. 
+
+N.As.H.\n\n
+N.As.H. 
+
+N.As.Ch.\n\n
+N.As.Ch. 
+
+Ms.\n\n
+Ms. 
+
+Jr.\n\n
+Jr. 
+
+vs.\n\n
+vs. 
+
+\n\n\n
+\n\n
+
+\n\n[Pendulum
+\n[Pendulum

@@ -1,0 +1,6 @@
+node_modules/
+.git/
+.stack-work/
+dist-newstyle/
+.hie/
+config.dhall
