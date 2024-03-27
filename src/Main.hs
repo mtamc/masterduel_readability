@@ -338,7 +338,7 @@ splitActivationsAndConditions =
   ) ⋙ #leadingText
     %~ ( Text.splitOn "."
        ⋙ map
-         ( Text.strip
+         ( removeSurroundingSpaces
          ⋙ splitActivationsAndConditions'
          ⋙ (\(cond, acti, mainEff)
             → maybe "" (decorate "<i>" ":</i> ") cond
@@ -357,13 +357,16 @@ splitActivationsAndConditions' sentence = let
       case Text.split (≡ ':') sentence of
         []        → error "should never happen"
         [noColon] → (Nothing, noColon)
-        cond:rest → (textNonEmpty cond, Text.strip $ Text.concat rest)
+        cond:rest → (textNonEmpty cond, removeSurroundingSpaces $ Text.concat rest)
     (activation, mainEffect) =
       case Text.split (≡ ';') everythingAfterCondition of
         []            → error "should never happen"
         [noSemicolon] → (Nothing, noSemicolon)
-        acti:rest     → (textNonEmpty acti, Text.strip $ Text.concat rest)
+        acti:rest     → (textNonEmpty acti, removeSurroundingSpaces $ Text.concat rest)
     in (condition, activation, mainEffect)
+
+removeSurroundingSpaces ∷ Text → Text
+removeSurroundingSpaces = Text.dropWhileEnd (≡ ' ') . Text.dropWhile (≡ ' ')
 
 tagOncePerTurns ∷ Card ProcessedEffect → Card ProcessedEffect
 tagOncePerTurns
