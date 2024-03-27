@@ -249,7 +249,7 @@ processedToEffect processed =
       (if processed.leadingNewline then "\n" else "")
       ⊕ maybe "" (⊕ " ") processed.enclosedNumber
       ⊕ Text.concat (map ((<> " | ") . Text.toUpper) $ ordNub processed.tags)
-      ⊕ maybe "" (decorate "<i>" ":</i> ") processed.condition
+      ⊕ maybe "" (decorate "" ": ") processed.condition
       ⊕ maybe "" (decorate "<b>" ";</b> ") processed.activation
       ⊕ processed.mainEffect
     , trailingText = processed.trailingText
@@ -349,6 +349,7 @@ splitActivationsAndConditions =
        ⋙ Text.intercalate ". "
        ⋙ Text.replace ". )" ".)"
        ⋙ Text.strip
+
        )
 
 splitActivationsAndConditions' ∷ Text → (Maybe Text, Maybe Text, Text)
@@ -563,10 +564,14 @@ generateDescAndPartFiles cards = do
   toCardPartDatas card = let
     originalText = cardOriginalText card
     partDatas
-      = map (toEffectPartData originalText)
-        (sortOn (^. #originalPosition) card.effects)
-      ⊕ map (toEffectPartData (disregardMonsterEffects originalText))
-        (sortOn (^. #originalPosition) card.pendulumEffects)
+      = ( map (toEffectPartData originalText)
+        . filter (\e → e.originalPosition ≢ 0)
+        $ sortOn (^. #originalPosition) card.effects
+        )
+        ⊕ ( map (toEffectPartData (disregardMonsterEffects originalText))
+          . filter (\e → e.originalPosition ≢ 0)
+          $ sortOn (^. #originalPosition) card.pendulumEffects
+          )
     in partDatas
 
   toEffectPartData ∷ Text → Effect → PartData
