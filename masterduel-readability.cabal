@@ -55,6 +55,7 @@ library
     , containers
     , data-default
     , directory
+    , extra
     , filepath
     , generic-lens
     , hspec
@@ -103,6 +104,7 @@ executable masterduel-readability-exe
     , containers
     , data-default
     , directory
+    , extra
     , filepath
     , generic-lens
     , hspec
@@ -151,6 +153,7 @@ test-suite masterduel-readability-test
     , containers
     , data-default
     , directory
+    , extra
     , filepath
     , generic-lens
     , hspec

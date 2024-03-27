@@ -3,7 +3,7 @@
 {-# HLINT ignore "Use zipWith" #-}
 module Main (main) where
 
-import Control.Lens             (view, (%~), (.~), (^.))
+import Control.Lens             (set, view, (%~), (.~), (^.))
 import Data.Aeson
 import Data.Aeson.Encode.Pretty
 import Data.Binary.Builder      as Binary
@@ -11,6 +11,7 @@ import Data.Binary.Get          hiding (lookAhead)
 import Data.ByteString          qualified as BS
 import Data.ByteString.Lazy     qualified as BL
 import Data.List                (partition)
+import Data.List.Extra          (dropEnd)
 import Data.Text                qualified as Text
 import Prelude                  hiding (many)
 import Relude.Unsafe            qualified as Unsafe
@@ -80,7 +81,7 @@ cardOriginalText c =
 
 data Effect
   = Effect
-    { content          ∷ Text
+    { mainEffect       ∷ Text
       -- Sometimes there's text not part of any effect, most commonly " "
       -- in between effects, but can also be "unregistered" effect text
     , trailingText     ∷ Text
@@ -90,7 +91,7 @@ data Effect
   deriving (Eq, FromJSON, Generic, Show, ToJSON)
 
 effectText ∷ Effect → Text
-effectText e = e.content ⊕ e.trailingText
+effectText e = e.mainEffect ⊕ e.trailingText
 
 data PidxData
   = PidxData
@@ -112,14 +113,6 @@ data PartData
 
 
 -- UPDATING DESCS
-
-substringsToCapitalize ∷ [Text]
-substringsToCapitalize =
-  [ "special summon" , "normal summon" , "tribute summon" , "ritual summon" , "pendulum summon" , "synchro summon" , "link summon" , "xyz summon" , "fusion summon"
-  , "destroy" , "destroying"
-  , "negate", "negating"
-  , "quick-effect"
-  ]
 
 -- | Data structure used internally to better represent effect elements
 data ProcessedEffect
@@ -149,20 +142,23 @@ updateDesc ∷ Card Effect → Card Effect
 updateDesc card = let
   processedEffects = map effectToProcessed card.effects
   normalizedLeading = Text.strip card.leadingText
-  (leadingWithoutUnregisteredEffects, unregisteredEffects) =
+  (leadingWithoutUnregisteredEffects, effectsWithUnregistered) =
     getUnregisteredEffects normalizedLeading processedEffects
   withProcessedEffectsAndNormalizedLeading
     = Card
       { name = card.name
       , leadingText = leadingWithoutUnregisteredEffects
       , effects
-        = numberEffects leadingWithoutUnregisteredEffects (unregisteredEffects ⊕ processedEffects)
+        = numberEffects leadingWithoutUnregisteredEffects effectsWithUnregistered
       , pendulumEffects =
         numberEffects "dummy text so first pendulum effect has a newline"
           $ map effectToProcessed card.pendulumEffects
       }
   final
-    = tagQuickEffects withProcessedEffectsAndNormalizedLeading
+    = uppercaseKeywords
+    $ splitActivationsAndConditions
+    $ tagOncePerTurns
+    $ tagQuickEffects withProcessedEffectsAndNormalizedLeading
   (finalLeadingText, finalEffects) = fromUnregisteredEffects final.leadingText final.effects
   in Card
     { name = final.name
@@ -182,10 +178,16 @@ fromUnregisteredEffects leadingText effects = let
 -- leading text is one sentence. if there are multiple sentences then it's very
 -- hard to know if this is one or multiple effects and how to separate them.
 getUnregisteredEffects ∷ Text → [ProcessedEffect] → (Text, [ProcessedEffect])
-getUnregisteredEffects leadingText effects =
-  if not (null effects) ∨ Text.length (Text.filter (≡ '.') leadingText) > 1 then
+getUnregisteredEffects leadingText effects
+  | not (null effects) ∨ Text.length (Text.filter (≡ '.') leadingText) > 2 =
     (leadingText, effects)
-  else let
+  | Text.length (Text.filter (≡ '.') leadingText) ≡ 2
+    ∧ not
+      (isAllowableSecondSentence
+        (Text.split (≡ '.') leadingText & drop 1 & map (<> ". ") & Text.concat & Text.strip)
+      )
+      = (leadingText, effects)
+  | otherwise = let
     unregisteredEffectParser ∷ Parser (Text, [ProcessedEffect])
     unregisteredEffectParser = do
       cond ←
@@ -203,6 +205,14 @@ getUnregisteredEffects leadingText effects =
       fromRight (error "") $ parse unregisteredEffectParser "" leadingText
     in (summoningCondition, unregisteredEffects ⧺ effects)
 
+isAllowableSecondSentence ∷ Text → Bool
+isAllowableSecondSentence txt
+  = txt
+  ∈ [ "It cannot attack this turn."
+    ]
+  ∨ "Otherwise, " `Text.isPrefixOf` txt
+  ∨ fst (detectStandardHopt "this" txt)
+
 {-| this uses default value and is not the fully processed state -}
 effectToProcessed ∷ Effect → ProcessedEffect
 effectToProcessed effect =
@@ -212,7 +222,7 @@ effectToProcessed effect =
     , tags = []
     , condition = Nothing
     , activation = Nothing
-    , mainEffect = effect.content
+    , mainEffect = effect.mainEffect
     , trailingText = effect.trailingText
     , originalPosition = effect.originalPosition
     , unregistered = False
@@ -235,12 +245,12 @@ basicProcessedEffectFromText pos text =
 processedToEffect ∷ ProcessedEffect → Effect
 processedToEffect processed =
   Effect
-    { content =
+    { mainEffect =
       (if processed.leadingNewline then "\n" else "")
       ⊕ maybe "" (⊕ " ") processed.enclosedNumber
-      ⊕ Text.concat (map ((<> " | ") . Text.toUpper) $ sort processed.tags)
-      ⊕ maybe "" (decorate "<i>" "</i>") processed.condition
-      ⊕ maybe "" (decorate "<b>" "</b>") processed.activation
+      ⊕ Text.concat (map ((<> " | ") . Text.toUpper) $ ordNub processed.tags)
+      ⊕ maybe "" (decorate "<i>" ":</i> ") processed.condition
+      ⊕ maybe "" (decorate "<b>" ";</b> ") processed.activation
       ⊕ processed.mainEffect
     , trailingText = processed.trailingText
     , originalPosition = processed.originalPosition
@@ -248,7 +258,7 @@ processedToEffect processed =
 
 numberEffects ∷ Text → [ProcessedEffect] → [ProcessedEffect]
 numberEffects cardLeadingText effects = let
-  effectsThatNeedNumbering = filter (\e → Text.strip e.mainEffect ≢ "") effects
+  effectsThatNeedNumbering = filter (mustBeNumbered . (.mainEffect)) effects
   in fst $ foldl'
     (\(newEffects, enclosedNums) cur →
       let
@@ -256,7 +266,7 @@ numberEffects cardLeadingText effects = let
         enclosedCurrent = maybe '①' head neEnclosedNums
         enclosedRest = maybe [] tail neEnclosedNums
         textSoFar = Text.concat (cardLeadingText : map (effectText . processedToEffect) newEffects)
-        mustUseEnclosed = length effectsThatNeedNumbering > 1 ∧ (Text.strip cur.mainEffect ≢ "")
+        mustUseEnclosed = length effectsThatNeedNumbering > 1 ∧ mustBeNumbered cur.mainEffect
         mustAddNewline = Text.strip cur.mainEffect ≢ "" ∧ Text.strip textSoFar ≢ ""
       in
       ( newEffects
@@ -271,8 +281,230 @@ numberEffects cardLeadingText effects = let
     ([], "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑬⑮⑯⑰⑱⑲⑳")
     effects
 
--- | NOTE: this currently assumes no text from mainEffect has been moved to
--- condition/activation
+mustBeNumbered ∷ Text → Bool
+mustBeNumbered effectTxt
+  = Text.strip effectTxt ≢ ""
+  ∧ not ("●" `Text.isPrefixOf` Text.strip effectTxt)
+
+mapAllText ∷ (Text → Text) → Card ProcessedEffect → Card ProcessedEffect
+mapAllText f
+  = #leadingText %~ f
+  ⋙ #effects
+    %~ map
+      ( #condition    %~ fmap f
+      ⋙ #activation   %~ fmap f
+      ⋙ #mainEffect   %~ f
+      ⋙ #trailingText %~ f
+      )
+  ⋙ #pendulumEffects
+    %~ map
+      ( #condition    %~ fmap f
+      ⋙ #activation   %~ fmap f
+      ⋙ #mainEffect   %~ f
+      ⋙ #trailingText %~ f
+      )
+
+
+uppercaseKeywords ∷ Card ProcessedEffect → Card ProcessedEffect
+uppercaseKeywords = mapAllText \txt
+  → Text.replace "Set" "SET"
+  . Text.replace "Setting" "SETTING"
+  $ foldr subStrToUpperCase txt substringsToCapitalize
+  where
+  substringsToCapitalize ∷ [Text]
+  substringsToCapitalize =
+    [ "summoning", "summoned", "summon", "summons", "special summon" , "normal summon" , "tribute summon" , "ritual summon" , "pendulum summon" , "synchro summon" , "link summon" , "xyz summon" , "fusion summon"
+    , "destroy", "destroying", "destroyed", "destroys"
+    , "negate", "negating", "negated", "negates"
+    , "discard", "discarding", "discarded", "discards"
+    , "quick effect"
+    ]
+  subStrToUpperCase ∷ Text → Text → Text
+  subStrToUpperCase "" str = str
+  subStrToUpperCase _ "" = ""
+  subStrToUpperCase needle haystack
+    | Text.toLower needle `Text.isPrefixOf` Text.toLower haystack =
+      Text.toUpper needle ⊕ subStrToUpperCase needle (Text.drop (Text.length needle) haystack)
+    | otherwise = Text.take 1 haystack ⊕ subStrToUpperCase needle (Text.drop 1 haystack)
+
+splitActivationsAndConditions ∷ Card ProcessedEffect → Card ProcessedEffect
+splitActivationsAndConditions =
+  (fmap \effect → let
+    (condition, activation, mainEffect) = splitActivationsAndConditions' effect.mainEffect
+    in effect
+      & #condition  .~ condition
+      & #activation .~ activation
+      & #mainEffect .~ mainEffect
+  ) ⋙ #leadingText
+    %~ ( Text.splitOn "."
+       ⋙ map
+         ( Text.strip
+         ⋙ splitActivationsAndConditions'
+         ⋙ (\(cond, acti, mainEff)
+            → maybe "" (decorate "<i>" ":</i> ") cond
+            ⊕ maybe "" (decorate "<b>" ";</b> ") acti
+            ⊕ mainEff
+           )
+         )
+       ⋙ Text.intercalate ". "
+       ⋙ Text.replace ". )" ".)"
+       ⋙ Text.strip
+       )
+
+splitActivationsAndConditions' ∷ Text → (Maybe Text, Maybe Text, Text)
+splitActivationsAndConditions' sentence = let
+    (condition, everythingAfterCondition) =
+      case Text.split (≡ ':') sentence of
+        []        → error "should never happen"
+        [noColon] → (Nothing, noColon)
+        cond:rest → (textNonEmpty cond, Text.strip $ Text.concat rest)
+    (activation, mainEffect) =
+      case Text.split (≡ ';') everythingAfterCondition of
+        []            → error "should never happen"
+        [noSemicolon] → (Nothing, noSemicolon)
+        acti:rest     → (textNonEmpty acti, Text.strip $ Text.concat rest)
+    in (condition, activation, mainEffect)
+
+tagOncePerTurns ∷ Card ProcessedEffect → Card ProcessedEffect
+tagOncePerTurns
+  = tagHoptActis . tagTrailingHoptInPendulum . tagTrailingHoptInMonster . fmap tag
+  where
+  tag ∷ ProcessedEffect → ProcessedEffect
+  tag = tagStandardHopt . tagGainHopt . tagOptComma . tagOptColon
+  -- e.g. Senet Switch
+  tagOptColon ∷ ProcessedEffect → ProcessedEffect
+  tagOptColon effect
+    | "Once per turn: " `Text.isInfixOf` effect.mainEffect =
+      effect & #tags %~ ("opt":) & #mainEffect %~ Text.replace "Once per turn: " ""
+    | otherwise = effect
+  -- e.g. Infernal Dragon
+  tagOptComma ∷ ProcessedEffect → ProcessedEffect
+  tagOptComma effect
+    | "Once per turn, " `Text.isInfixOf` effect.mainEffect =
+      effect
+        & #tags %~ ("opt":)
+        & #mainEffect %~ (mapTextHead Text.toUpper . Text.replace "Once per turn, " "")
+    | otherwise = effect
+  -- e.g. Angel 01
+  tagGainHopt ∷ ProcessedEffect → ProcessedEffect
+  tagGainHopt effect
+    | "You can only gain this effect once per turn" `Text.isInfixOf` effect.mainEffect =
+      effect & #tags %~ ("hopt":)
+    | otherwise = effect
+  -- e.g. Motor Shell (trailingText)
+  tagStandardHopt ∷ ProcessedEffect → ProcessedEffect
+  tagStandardHopt effect =
+    case detectStandardHopt "this" effect.mainEffect of
+      (True, changed) → effect & #mainEffect .~ changed & #tags %~ ("hopt":)
+      (False, _) →
+        case detectStandardHopt "this" effect.trailingText of
+          (True, changed) → effect & #trailingText .~ changed & #tags %~ ("hopt":)
+          (False, _)      → effect
+  tagTrailingHoptInMonster ∷ Card ProcessedEffect → Card ProcessedEffect
+  tagTrailingHoptInMonster card =
+    case viaNonEmpty last $ card ^. #effects of
+      Nothing → card
+      Just effect →
+        case detectStandardHopt "each" effect.mainEffect of
+          (True, changed) →
+            card
+              & #effects
+                  %~ ( (\effs → dropEnd 1 effs ⧺ [effect & #mainEffect .~ changed])
+                     ⋙ map (#tags %~ ("hopt":))
+                     )
+          (False, _) →
+            case detectStandardHopt "each" effect.trailingText of
+              (True, changed) →
+                card
+                  & #effects
+                      %~ ( (\effs → dropEnd 1 effs ⧺ [effect & #trailingText .~ changed])
+                         ⋙ map (#tags %~ ("hopt":))
+                         )
+              (False, _) →
+                case detectStandardHopt "each" card.leadingText of
+                  (True, changed) →
+                    card
+                      & #leadingText .~ changed
+                      & #effects %~ map (#tags %~ ("hopt":))
+                  (False, _) → card
+  -- Not DRY at all but whatever
+  tagTrailingHoptInPendulum ∷ Card ProcessedEffect → Card ProcessedEffect
+  tagTrailingHoptInPendulum card =
+    case viaNonEmpty last $ card ^. #pendulumEffects of
+      Nothing → card
+      Just effect →
+        case detectStandardHopt "each" effect.mainEffect of
+          (True, changed) →
+            card
+              & #pendulumEffects
+                  %~ ( (\effs → dropEnd 1 effs ⧺ [effect & #mainEffect .~ changed])
+                     ⋙ map (#tags %~ ("hopt":))
+                     )
+          (False, _) →
+            case detectStandardHopt "each" effect.trailingText of
+              (True, changed) →
+                card
+                  & #pendulumEffects
+                      %~ ( (\effs → dropEnd 1 effs ⧺ [effect & #trailingText .~ changed])
+                         ⋙ map (#tags %~ ("hopt":))
+                         )
+              (False, _) →
+                case detectStandardHopt "each" card.leadingText of
+                  (True, changed) →
+                    card
+                      & #leadingText .~ changed
+                      & #pendulumEffects %~ map (#tags %~ ("hopt":))
+                  (False, _) → card
+  detectActiHopt ∷ Text → (Bool, Text)
+  detectActiHopt = fromRight (error "") . parse
+    (do
+      let
+        hoptP ∷ Parser Text
+        hoptP = do
+          start ← toText <$> string "You can only activate 1 \""
+          name ← toText <$> someTill anySingle (try (lookAhead (char '"')))
+          end ← string "\" per turn."
+          spc ← maybe "" one <$> optional (char ' ')
+          pure (start ⊕ name ⊕ end ⊕ spc)
+      everythingBeforeHopt ← toText <$> manyTill anySingle (try (void $ lookAhead hoptP) <|> eof)
+      hopt ← optional hoptP
+      everythingAfter ← textNonEmpty . toText <$> many anySingle
+      pure (isJust hopt, Text.strip everythingBeforeHopt ⊕ maybe "" (" " <>) everythingAfter)
+    )
+    ""
+  tagHoptActis ∷ Card ProcessedEffect → Card ProcessedEffect
+  tagHoptActis card
+    | any (\e → fst $ detectActiHopt e.trailingText) card.effects =
+      card
+        & #leadingText %~ (("HOPT ACTIVATION\n" <>) ⋙ Text.strip)
+        & #effects %~ mapHead (#leadingNewline .~ True)
+        & #effects
+          %~ map
+            (\e
+              → detectActiHopt e.trailingText
+              & \(detected, changed) → if detected then e & #trailingText .~ changed else e
+            )
+    | otherwise = card
+
+-- | Reports if Hopt detected and returns the string with the Hopt removed
+detectStandardHopt ∷ Text → Text → (Bool, Text)
+detectStandardHopt thisOrEach = fromRight (error "") . parse
+  (do
+    let
+      hoptP ∷ Parser Text
+      hoptP = do
+        start ← toText <$> string ("You can only use " ⊕ thisOrEach ⊕ " effect of \"")
+        name ← toText <$> someTill anySingle (try (char '"'))
+        end ← toText . ("\"" <>) <$> string " once per turn."
+        spc ← maybe "" one <$> optional (char ' ')
+        pure (start ⊕ name ⊕ end ⊕ spc)
+    everythingBeforeHopt ← toText <$> manyTill anySingle (try (void (lookAhead hoptP)) <|> eof)
+    hopt ← optional hoptP
+    everythingAfter ← textNonEmpty . toText <$> many anySingle
+    pure (isJust hopt, Text.strip everythingBeforeHopt ⊕ maybe "" (" " <>) everythingAfter)
+  )
+  ""
+
 tagQuickEffects ∷ Card ProcessedEffect → Card ProcessedEffect
 tagQuickEffects = fmap tag where
   tag ∷ ProcessedEffect → ProcessedEffect
@@ -281,7 +513,6 @@ tagQuickEffects = fmap tag where
       [Just effect.mainEffect, effect.activation, effect.condition]
     in effect
       & applyWhen isQuick (mapPEffectText removeQuickEffectText . (#tags %~ ("quick":)))
-
 
 quickEffectP ∷ Parser Text
 quickEffectP = do
@@ -337,8 +568,8 @@ generateDescAndPartFiles cards = do
 
   toEffectPartData ∷ Text → Effect → PartData
   toEffectPartData originalText e = let
-    start = Unsafe.fromJust $ utf8SubIndex e.content originalText
-    end = start + BS.length (encodeUtf8 e.content)
+    start = Unsafe.fromJust $ utf8SubIndex e.mainEffect originalText
+    end = start + BS.length (encodeUtf8 e.mainEffect)
     in PartData start end
 
   disregardMonsterEffects ∷ Text → Text
@@ -408,14 +639,14 @@ mkCards names (map encodeUtf8 → descs) partSrc pidxSrc =
               let next = effectPositionsWithOriginalOrder !!? (currentIndex + 1)
                in if (view #start . fst <$> next) ≡ Just 0 then nextEffectPos (currentIndex + 1)
                   else fst <$> next
-            content
+            mainEffect
               = decodeUtf8
               . BL.take (fromIntegral (effectPos.end - effectPos.start))
               $ BL.drop (fromIntegral effectPos.start) desc
             in Effect
-              { content = content
+              { mainEffect = mainEffect
               , trailingText =
-                  if content ≡ "" then ""
+                  if mainEffect ≡ "" then ""
                   else decodeUtf8
                      . case nextEffectPos i of
                          Nothing   → identity

@@ -36,6 +36,7 @@ dependencies:
 - pcre-heavy
 - pcre-light
 - megaparsec
+- extra
 
 language: GHC2021
 
