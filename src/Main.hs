@@ -302,8 +302,11 @@ numberEffects cardLeadingText effects = let
       , if mustUseEnclosed then enclosedRest else enclosedNums
       )
     )
-    ([], "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑬⑮⑯⑰⑱⑲⑳")
+    ([], enclosedList)
     effects
+
+enclosedList ∷ [Char]
+enclosedList =  "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑬⑮⑯⑰⑱⑲⑳"
 
 mustBeNumbered ∷ Text → Bool
 mustBeNumbered effectTxt
@@ -346,7 +349,7 @@ uppercaseKeywords = mapAllText \txt
     , "deck"
     , "banish", "banished", "banishing", "banishes"
     , "excavate", "excavating", "excavated", "excavates"
-    , "draw", "draws", "drew"
+    , "draw", "draws", "drew", "drawing"
     , "piercing"
     ]
   subStrToUpperCase ∷ Text → Text → Text
@@ -553,7 +556,20 @@ tagOncePerTurns
   tagFollowingHopt overEffects card =
     card & overEffects (fst . foldl' f ([], False))
     where
-    f (result, True) effect = (result ⧺ [effect & #tags %~ ("hopt":)], True)
+    f (result, True) effect =
+      ( result ⧺
+        [ effect
+          & #tags %~ ("hopt":)
+          & #mainEffect %~ Text.replace "● " ""
+          & #enclosedNumber .~
+            Just case foldMapM (textNonEmpty ↢ (.enclosedNumber)) $ reverse result of
+              Nothing → one $ Unsafe.head enclosedList
+              Just (Text.head → lastEnclosed) →
+                one . Unsafe.head . drop 1 $ dropWhile (≢ lastEnclosed) enclosedList
+        ]
+      , True
+
+      )
     f (result, False) effect =
       case detectFollowingHopt effect.trailingText of
         Just changed → (result ⧺ [effect & #trailingText .~ changed], True)
