@@ -34,10 +34,10 @@ main = do
 
 data Paths
   = Paths
-    { name ∷ FilePath
-    , desc ∷ FilePath
-    , part ∷ FilePath
-    , pidx ∷ FilePath
+    { name :: FilePath
+    , desc :: FilePath
+    , part :: FilePath
+    , pidx :: FilePath
     }
   deriving (Eq, FromJSON, Generic, Show, ToJSON)
 
@@ -55,11 +55,11 @@ paths
 
 data Card effectType
   = Card
-    { name            ∷ Text
+    { name            :: Text
       -- Often the first registered effect is not at position 0
-    , leadingText     ∷ Text
-    , effects         ∷ [effectType]
-    , pendulumEffects ∷ [effectType]
+    , leadingText     :: Text
+    , effects         :: [effectType]
+    , pendulumEffects :: [effectType]
     }
   deriving (Eq, FromJSON, Generic, Show, ToJSON)
 
@@ -81,12 +81,12 @@ cardOriginalText c =
 
 data Effect
   = Effect
-    { mainEffect       ∷ Text
+    { mainEffect       :: Text
       -- Sometimes there's text not part of any effect, most commonly " "
       -- in between effects, but can also be "unregistered" effect text
-    , trailingText     ∷ Text
+    , trailingText     :: Text
       -- Some of the effects are out of order in the Part file... lower is first.
-    , originalPosition ∷ Int
+    , originalPosition :: Int
     }
   deriving (Eq, FromJSON, Generic, Show, ToJSON)
 
@@ -96,9 +96,9 @@ effectText e = e.mainEffect ⊕ e.trailingText
 data PidxData
   = PidxData
     { -- Position of the card's first effect in the Part asset (which is a sequence of effect positions)
-      firstEffectIndex    ∷ Int
-    , effectCount         ∷ Int
-    , pendulumEffectCount ∷ Int
+      firstEffectIndex    :: Int
+    , effectCount         :: Int
+    , pendulumEffectCount :: Int
     }
   deriving (Eq, Generic, Show)
 
@@ -106,8 +106,8 @@ data PidxData
 -- character of the card's description.
 data PartData
   = PartData
-    { start ∷ Int
-    , end   ∷ Int
+    { start :: Int
+    , end   :: Int
     }
   deriving (Eq, Generic, Show)
 
@@ -117,16 +117,16 @@ data PartData
 -- | Data structure used internally to better represent effect elements
 data ProcessedEffect
   = ProcessedEffect
-    { leadingNewline   ∷ Bool
-    , enclosedNumber   ∷ Maybe Text
-    , tags             ∷ [Text]
-    , condition        ∷ Maybe Text
-    , activation       ∷ Maybe Text
-    , mainEffect       ∷ Text
-    , trailingText     ∷ Text
-    , originalPosition ∷ Int
+    { leadingNewline   :: Bool
+    , enclosedNumber   :: Maybe Text
+    , tags             :: [Text]
+    , condition        :: Maybe Text
+    , activation       :: Maybe Text
+    , mainEffect       :: Text
+    , trailingText     :: Text
+    , originalPosition :: Int
       {-| Effect with no offset registered in Card_Part, we parsed it manually -}
-    , unregistered     ∷ Bool
+    , unregistered     :: Bool
     }
   deriving (Eq, FromJSON, Generic, Show, ToJSON)
 
@@ -157,8 +157,7 @@ updateDesc card = let
   final
     = uppercaseKeywords
     $ splitActivationsAndConditions
-    $ mapAllText rewordSearch
-    $ mapAllText rewordBounce
+    $ mapAllText (rewordSearch . rewordBounce . rewordPiercing . rewordMill)
     $ tagPhases
     $ tagOncePerTurns
     $ graveyardToGy
@@ -308,11 +307,10 @@ mapAllText f
       ⋙ #trailingText %~ f
       )
 
-
 uppercaseKeywords ∷ Card ProcessedEffect → Card ProcessedEffect
 uppercaseKeywords = mapAllText \txt
   → Text.replace "Set" "SET"
-  . Text.replace "Setting" "SETTING"
+  . Text.replace "Seting" "SETTING"
   $ foldr subStrToUpperCase txt substringsToCapitalize
   where
   substringsToCapitalize ∷ [Text]
@@ -324,6 +322,10 @@ uppercaseKeywords = mapAllText \txt
     , "quick effect"
     , "hand"
     , "deck"
+    , "banish", "banished", "banishing", "banishes"
+    , "excavate", "excavating", "excavated", "excavates"
+    , "draw", "draws", "drew"
+    , "piercing"
     ]
   subStrToUpperCase ∷ Text → Text → Text
   subStrToUpperCase "" str = str
@@ -425,6 +427,61 @@ rewordBounce =
       )
       ""
 
+-- Piercing wordings:
+-- If [this card that was SPECIAL SUMMONED from the GY] attacks a Defense Position monster, inflict piercing battle damage.
+-- If [this card] attacks a Defense Position monster, inflict piercing battle damage {optional: to your opponent}.
+-- While you control another Insect monster, if [an Insect monster you control] attacks a Defense Position monster, inflict piercing battle damage to your opponent.
+-- During battle, when it attacks a Defense Position monster whose DEF is lower than the ATK of the equipped monster, inflict the difference as Battle Damage to your opponent.
+rewordPiercing ∷ Text → Text
+rewordPiercing = fromRight (error "") . parse
+  (do
+    let
+      piercingP ∷ Parser Text
+      piercingP = do
+        ifWord ← toText <$> string' "if "
+        what ← toText
+          <$> someTill (anySingleBut '.')
+            (try
+              (string' "attacks a defense position monster, inflict piercing battle damage"
+              <|> string' "attacks a Defense Position monster whose DEF is lower than the ATK of the equipped monster, inflict the difference as Battle Damage"
+              )
+            )
+        _toYourOpp ← optional $ string' " to your opponent"
+        let newStart = what & applyWhen (ifWord ≡ "If ") (mapTextHead Text.toUpper)
+        pure $ newStart ⊕ "is PIERCING"
+    everythingBeforePiercing ←
+      toText <$> manyTill anySingle (try (void $ lookAhead piercingP) <|> eof)
+    piercing ← optional piercingP
+    everythingAfter ← toText <$> many anySingle
+    pure $ case piercing of
+      Nothing    → everythingBeforePiercing ⊕ everythingAfter
+      Just found → rewordPiercing (everythingBeforePiercing ⊕ found ⊕ everythingAfter)
+  )
+  ""
+
+rewordMill ∷ Text → Text
+rewordMill = fromRight (error "") . parse
+  (do
+    let
+      millP ∷ Parser Text
+      millP = do
+        _return ← toText <$> string' "send "
+        what ← toText
+          <$> someTill (anySingleBut '.')
+            (try
+              (   string' " from the top of your deck to the gy"
+              <|> string' " from the top of your deck to the graveyard")
+              )
+        pure $ "MILL " ⊕ what
+    everythingBeforeMill ← toText <$> manyTill anySingle (try (void $ lookAhead millP) <|> eof)
+    mill ← optional millP
+    everythingAfter ← toText <$> many anySingle
+    pure $ case mill of
+      Nothing    → everythingBeforeMill ⊕ everythingAfter
+      Just found → rewordBounce (everythingBeforeMill ⊕ found ⊕ everythingAfter)
+  )
+  ""
+
 rewordSearch ∷ Text → Text
 rewordSearch = fromRight (error "") . parse
   (do
@@ -434,7 +491,7 @@ rewordSearch = fromRight (error "") . parse
         _add ← toText <$> string' "add "
         quantity ← numberChar
         void hspace1
-        what ← toText <$> someTill anySingle (try (lookAhead (string' " from your deck")))
+        what ← toText <$> someTill (anySingleBut '.') (try (lookAhead (string' " from your deck")))
         _fromYour ← string' " from your "
         deckOrGy ← Text.toLower . toText <$> (string' "deck or gy" <|> string' "deck")
         _toYourHand ← string' " to your hand"
