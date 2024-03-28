@@ -1,6 +1,9 @@
 This is a personal playground built on top of
 <https://github.com/RndUser0/YGOMD-Improve_Card_Text_Readibility>
 
+No instructions on what to do with this, but if you would like any, feel free to
+ask and I'll help you.
+
 ### Current features
 
 - Numbered card effects separated by single newlines
