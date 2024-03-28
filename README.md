@@ -16,8 +16,9 @@ This is a personal playground built on top of
     QUICK EFFECT, HANDsdeck, BANISH(...), EXCAVATE(...), DRAW(...), PIERCING
 - Useless text "DESTROYED by battle or card effect(s)" shortened to "DESTROYED"
 - Certain verbose actions/properties are reworded:
+
 | original | reworded |
-|---|---|
+| --- | --- |
 | Add X from your deck to your hand | SEARCH X |
 | Add X from your deck or GY to your hand | SEARCH X (from DECK or GY) |
 | Return X (from the field) to the hand | BOUNCE x |
@@ -26,7 +27,7 @@ This is a personal playground built on top of
 | If X attacks a defense position monster, inflict piercing battle damage | X is PIERCING |
 | If X attacks a Defense Position monster whose DEF is lower than the ATK of the equipped monster, inflict the difference as Battle Damage | X is PIERCING |
 
-Note: Somnetimes, certain effects are "unregistered" in masterduel (they have no in-duel highlight). When those are one-sentence (or in certain cases 2), they are processed by this mod, but when there are multiple sentences they are mostly unprocessed as the logic to separate them into discrete effects is not implemented yet (and probably would be fairly complex to implement).
+Note: Sometimes, certain effects are "unregistered" in masterduel (they have no in-duel highlight). When those are one-sentence (or in certain cases 2), they are processed by this mod, but when there are multiple sentences they are mostly unprocessed as the logic to separate them into discrete effects is not implemented yet (and probably would be fairly complex to implement).
 
 Those unregistered effects still have the rewords in the above table, keyword
 uppercasing, activation cost bolding, "Graveyard" replaced to "GY", and
