@@ -151,7 +151,7 @@ updateDesc card = let
       , effects
         = numberEffects leadingWithoutUnregisteredEffects effectsWithUnregistered
       , pendulumEffects =
-        numberEffects "dummy text so first pendulum effect has a newline"
+        numberEffects "dummy" -- so first pendulum effect has a newline
           $ map effectToProcessed card.pendulumEffects
       }
   final
@@ -287,7 +287,10 @@ numberEffects cardLeadingText effects = let
         enclosedCurrent = maybe '①' head neEnclosedNums
         enclosedRest = maybe [] tail neEnclosedNums
         textSoFar = Text.concat (cardLeadingText : map (effectText . processedToEffect) newEffects)
-        mustUseEnclosed = length effectsThatNeedNumbering > 1 ∧ mustBeNumbered cur.mainEffect
+        mustUseEnclosed =
+          (length effectsThatNeedNumbering > 1
+            ∨ all (\x → Text.strip cardLeadingText ≢ x) ["", "dummy"]
+          ) ∧ mustBeNumbered cur.mainEffect
         mustAddNewline = Text.strip cur.mainEffect ≢ "" ∧ Text.strip textSoFar ≢ ""
       in
       ( newEffects
