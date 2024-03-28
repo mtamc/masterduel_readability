@@ -3,7 +3,7 @@
 {-# HLINT ignore "Use zipWith" #-}
 module Main (main) where
 
-import Control.Lens             (set, view, (%~), (.~), (^.))
+import Control.Lens             (over, set, view, (%~), (.~), (^.))
 import Data.Aeson
 import Data.Aeson.Encode.Pretty
 import Data.Binary.Builder      as Binary
@@ -157,7 +157,11 @@ updateDesc card = let
   final
     = uppercaseKeywords
     $ splitActivationsAndConditions
+    $ mapAllText rewordSearch
+    $ mapAllText rewordBounce
+    $ tagPhases
     $ tagOncePerTurns
+    $ graveyardToGy
     $ tagQuickEffects withProcessedEffectsAndNormalizedLeading
   (finalLeadingText, finalEffects) = fromUnregisteredEffects final.leadingText final.effects
   in Card
@@ -211,7 +215,7 @@ isAllowableSecondSentence txt
   ∈ [ "It cannot attack this turn."
     ]
   ∨ "Otherwise, " `Text.isPrefixOf` txt
-  ∨ fst (detectStandardHopt "this" txt)
+  ∨ isJust (detectStandardHopt "this" txt)
 
 {-| this uses default value and is not the fully processed state -}
 effectToProcessed ∷ Effect → ProcessedEffect
@@ -313,11 +317,13 @@ uppercaseKeywords = mapAllText \txt
   where
   substringsToCapitalize ∷ [Text]
   substringsToCapitalize =
-    [ "summoning", "summoned", "summon", "summons", "special summon" , "normal summon" , "tribute summon" , "ritual summon" , "pendulum summon" , "synchro summon" , "link summon" , "xyz summon" , "fusion summon"
+    [ "summoning", "summoned", "summon", "summons", "special summon" , "normal summon" , "tribute summon" , "ritual summon" , "pendulum summon" , "flip summon", "synchro summon" , "link summon" , "xyz summon" , "fusion summon", "normal or special summon"
     , "destroy", "destroying", "destroyed", "destroys"
     , "negate", "negating", "negated", "negates"
     , "discard", "discarding", "discarded", "discards"
     , "quick effect"
+    , "hand"
+    , "deck"
     ]
   subStrToUpperCase ∷ Text → Text → Text
   subStrToUpperCase "" str = str
@@ -369,9 +375,89 @@ splitActivationsAndConditions' sentence = let
 removeSurroundingSpaces ∷ Text → Text
 removeSurroundingSpaces = Text.dropWhileEnd (≡ ' ') . Text.dropWhile (≡ ' ')
 
+tagPhases ∷ Card ProcessedEffect → Card ProcessedEffect
+tagPhases = fmap \effect →
+  case parsePhase effect.mainEffect of
+    Nothing                   → effect
+    Just (phase, newMainText) → effect & #tags %~ (phase:) & #mainEffect .~ newMainText
+  where
+  parsePhase ∷ Text → Maybe (Text, Text)
+  parsePhase = fromRight Nothing . parse
+    (do
+      _during ← toText <$> string @String "During "
+      whose ← choice [string "your opponent's", string "the", string "your"]
+      let
+        whoseAbbreviated =
+          case whose of
+            "the"             → ""
+            "your opponent's" → "opp's "
+            "your"            → "your "
+            _                 → error "unexpected whose"
+      void $ char ' '
+      phaseType ← toText <$> someTill anySingle (try (char ' '))
+      _phaseWord ← someTill anySingle (try (char ':' <|> char ','))
+      void $ char ' '
+      rest ← toText <$> manyTill anySingle eof
+      pure $ Just (whoseAbbreviated ⊕ phaseType ⊕ " phase", mapTextHead Text.toUpper rest)
+    )
+    ""
+
+rewordBounce ∷ Text → Text
+rewordBounce =
+  Text.replace "returned to the hand" "BOUNCED"
+    . fromRight (error "") . parse
+      (do
+        let
+          bounceP ∷ Parser Text
+          bounceP = do
+            _return ← toText <$> string' "return "
+            what ← toText
+              <$> someTill anySingle
+                (try (string' " from the field to the hand" <|> string' " to the hand"))
+            pure $ "BOUNCE " ⊕ what
+        everythingBeforeBounce ←
+          toText <$> manyTill anySingle (try (void $ lookAhead bounceP) <|> eof)
+        bounce ← optional bounceP
+        everythingAfter ← toText <$> many anySingle
+        pure $ case bounce of
+          Nothing    → everythingBeforeBounce ⊕ everythingAfter
+          Just found → rewordBounce (everythingBeforeBounce ⊕ found ⊕ everythingAfter)
+      )
+      ""
+
+rewordSearch ∷ Text → Text
+rewordSearch = fromRight (error "") . parse
+  (do
+    let
+      searchP ∷ Parser Text
+      searchP = do
+        _add ← toText <$> string' "add "
+        quantity ← numberChar
+        void hspace1
+        what ← toText <$> someTill anySingle (try (lookAhead (string' " from your deck")))
+        _fromYour ← string' " from your "
+        deckOrGy ← Text.toLower . toText <$> (string' "deck or gy" <|> string' "deck")
+        _toYourHand ← string' " to your hand"
+        pure $
+          "SEARCH " ⊕ one quantity ⊕ " " ⊕ what ⊕ (if deckOrGy ≡ "deck or gy" then " (from DECK or GY)" else "")
+    everythingBeforeSearch ← toText <$> manyTill anySingle (try (void $ lookAhead searchP) <|> eof)
+    search ← optional searchP
+    everythingAfter ← toText <$> many anySingle
+    pure $ case search of
+      Nothing    → everythingBeforeSearch ⊕ everythingAfter
+      Just found → rewordSearch (everythingBeforeSearch ⊕ found ⊕ everythingAfter)
+  )
+  ""
+
+graveyardToGy ∷ Card ProcessedEffect → Card ProcessedEffect
+graveyardToGy = mapAllText (Text.replace "Graveyard" "GY")
+
 tagOncePerTurns ∷ Card ProcessedEffect → Card ProcessedEffect
 tagOncePerTurns
-  = tagHoptActis . tagTrailingHoptInPendulum . tagTrailingHoptInMonster . fmap tag
+  = tagFollowingHoptInBoth
+  . tagHoptActis
+  . tagTrailingHoptInBoth
+  . fmap tag
   where
   tag ∷ ProcessedEffect → ProcessedEffect
   tag = tagStandardHopt . tagGainHopt . tagOptComma . tagOptColon
@@ -399,66 +485,61 @@ tagOncePerTurns
   tagStandardHopt ∷ ProcessedEffect → ProcessedEffect
   tagStandardHopt effect =
     case detectStandardHopt "this" effect.mainEffect of
-      (True, changed) → effect & #mainEffect .~ changed & #tags %~ ("hopt":)
-      (False, _) →
+      Just changed → effect & #mainEffect .~ changed & #tags %~ ("hopt":)
+      Nothing →
         case detectStandardHopt "this" effect.trailingText of
-          (True, changed) → effect & #trailingText .~ changed & #tags %~ ("hopt":)
-          (False, _)      → effect
-  tagTrailingHoptInMonster ∷ Card ProcessedEffect → Card ProcessedEffect
-  tagTrailingHoptInMonster card =
-    case viaNonEmpty last $ card ^. #effects of
+          Just changed → effect & #trailingText .~ changed & #tags %~ ("hopt":)
+          Nothing      → effect
+  tagFollowingHopt
+    ∷ (([ProcessedEffect] → [ProcessedEffect]) → Card ProcessedEffect → Card ProcessedEffect)
+    → Card ProcessedEffect
+    → Card ProcessedEffect
+  tagFollowingHopt overEffects card =
+    card & overEffects (fst . foldl' f ([], False))
+    where
+    f (result, True) effect = (result ⧺ [effect & #tags %~ ("hopt":)], True)
+    f (result, False) effect =
+      case detectFollowingHopt effect.trailingText of
+        Just changed → (result ⧺ [effect & #trailingText .~ changed], True)
+        Nothing      → (result ⧺ [effect], False)
+  tagFollowingHoptInBoth ∷ Card ProcessedEffect → Card ProcessedEffect
+  tagFollowingHoptInBoth =
+    tagFollowingHopt (over #effects) . tagFollowingHopt (over #pendulumEffects)
+  tagTrailingHopt
+    ∷ (Card ProcessedEffect → [ProcessedEffect])
+    → (([ProcessedEffect] → [ProcessedEffect]) → Card ProcessedEffect → Card ProcessedEffect)
+    → Card ProcessedEffect
+    → Card ProcessedEffect
+  tagTrailingHopt getEffects overEffects card =
+    case viaNonEmpty last (getEffects card) of
       Nothing → card
       Just effect →
         case detectStandardHopt "each" effect.mainEffect of
-          (True, changed) →
+          Just changed →
             card
               & #effects
                   %~ ( (\effs → dropEnd 1 effs ⧺ [effect & #mainEffect .~ changed])
                      ⋙ map (#tags %~ ("hopt":))
                      )
-          (False, _) →
+          Nothing →
             case detectStandardHopt "each" effect.trailingText of
-              (True, changed) →
+              Just changed →
                 card
-                  & #effects
-                      %~ ( (\effs → dropEnd 1 effs ⧺ [effect & #trailingText .~ changed])
-                         ⋙ map (#tags %~ ("hopt":))
-                         )
-              (False, _) →
+                  & overEffects
+                    ( (\effs → dropEnd 1 effs ⧺ [effect & #trailingText .~ changed])
+                    ⋙ map (#tags %~ ("hopt":))
+                    )
+              Nothing →
                 case detectStandardHopt "each" card.leadingText of
-                  (True, changed) →
+                  Just changed →
                     card
                       & #leadingText .~ changed
-                      & #effects %~ map (#tags %~ ("hopt":))
-                  (False, _) → card
-  -- Not DRY at all but whatever
-  tagTrailingHoptInPendulum ∷ Card ProcessedEffect → Card ProcessedEffect
-  tagTrailingHoptInPendulum card =
-    case viaNonEmpty last $ card ^. #pendulumEffects of
-      Nothing → card
-      Just effect →
-        case detectStandardHopt "each" effect.mainEffect of
-          (True, changed) →
-            card
-              & #pendulumEffects
-                  %~ ( (\effs → dropEnd 1 effs ⧺ [effect & #mainEffect .~ changed])
-                     ⋙ map (#tags %~ ("hopt":))
-                     )
-          (False, _) →
-            case detectStandardHopt "each" effect.trailingText of
-              (True, changed) →
-                card
-                  & #pendulumEffects
-                      %~ ( (\effs → dropEnd 1 effs ⧺ [effect & #trailingText .~ changed])
-                         ⋙ map (#tags %~ ("hopt":))
-                         )
-              (False, _) →
-                case detectStandardHopt "each" card.leadingText of
-                  (True, changed) →
-                    card
-                      & #leadingText .~ changed
-                      & #pendulumEffects %~ map (#tags %~ ("hopt":))
-                  (False, _) → card
+                      & overEffects (map (#tags %~ ("hopt":)))
+                  Nothing → card
+  tagTrailingHoptInBoth ∷ Card ProcessedEffect → Card ProcessedEffect
+  tagTrailingHoptInBoth
+    = tagTrailingHopt (^. #effects) (over #effects)
+    . tagTrailingHopt (^. #pendulumEffects) (over #pendulumEffects)
   detectActiHopt ∷ Text → (Bool, Text)
   detectActiHopt = fromRight (error "") . parse
     (do
@@ -491,7 +572,7 @@ tagOncePerTurns
     | otherwise = card
 
 -- | Reports if Hopt detected and returns the string with the Hopt removed
-detectStandardHopt ∷ Text → Text → (Bool, Text)
+detectStandardHopt ∷ Text → Text → Maybe Text
 detectStandardHopt thisOrEach = fromRight (error "") . parse
   (do
     let
@@ -505,7 +586,33 @@ detectStandardHopt thisOrEach = fromRight (error "") . parse
     everythingBeforeHopt ← toText <$> manyTill anySingle (try (void (lookAhead hoptP)) <|> eof)
     hopt ← optional hoptP
     everythingAfter ← textNonEmpty . toText <$> many anySingle
-    pure (isJust hopt, Text.strip everythingBeforeHopt ⊕ maybe "" (" " <>) everythingAfter)
+    pure $
+      if isJust hopt then
+        Just $ Text.strip everythingBeforeHopt ⊕ maybe "" (" " <>) everythingAfter
+      else
+        Nothing
+  )
+  ""
+
+detectFollowingHopt ∷ Text → Maybe Text
+detectFollowingHopt = fromRight (error "") . parse
+  (do
+    let
+      hoptP ∷ Parser Text
+      hoptP = do
+        start ← toText <$> string "You can only use each of the following effects of \""
+        name ← toText <$> someTill anySingle (try (char '"'))
+        end ← toText . ("\"" <>) <$> string " once per turn."
+        spc ← maybe "" one <$> optional (char ' ')
+        pure (start ⊕ name ⊕ end ⊕ spc)
+    everythingBeforeHopt ← toText <$> manyTill anySingle (try (void (lookAhead hoptP)) <|> eof)
+    hopt ← optional hoptP
+    everythingAfter ← textNonEmpty . toText <$> many anySingle
+    pure $
+      if isJust hopt then
+        Just $ Text.strip everythingBeforeHopt ⊕ maybe "" (" " <>) everythingAfter
+      else
+        Nothing
   )
   ""
 
