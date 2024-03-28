@@ -514,7 +514,7 @@ tagOncePerTurns
   . fmap tag
   where
   tag ∷ ProcessedEffect → ProcessedEffect
-  tag = tagSsHopt . tagStandardHopt . tagGainHopt . tagOptComma . tagOptColon
+  tag = tagPreviousHopt . tagSsHopt . tagStandardHopt . tagGainHopt . tagOptComma . tagOptColon
   -- e.g. Senet Switch
   tagOptColon ∷ ProcessedEffect → ProcessedEffect
   tagOptColon effect
@@ -544,6 +544,11 @@ tagOncePerTurns
         case detectStandardHopt "this" effect.trailingText of
           Just changed → effect & #trailingText .~ changed & #tags %~ ("hopt":)
           Nothing      → effect
+  tagPreviousHopt ∷ ProcessedEffect → ProcessedEffect
+  tagPreviousHopt effect =
+    case detectPreviousHopt effect.trailingText of
+      Just changed → effect & #trailingText .~ changed & #tags %~ ("hopt":)
+      Nothing      → effect
   tagSsHopt ∷ ProcessedEffect → ProcessedEffect
   tagSsHopt effect =
     case detectSsHopt effect.trailingText of
@@ -713,6 +718,11 @@ standardHoptParser' startP endP = do
 detectStandardHopt ∷ Text → Text → Maybe Text
 detectStandardHopt thisOrEach = detectAndRemove $ standardHoptParser
   ("You can only use " ⊕ thisOrEach ⊕ " effect of \"")
+  "\" once per turn."
+
+detectPreviousHopt ∷ Text → Maybe Text
+detectPreviousHopt = detectAndRemove $ standardHoptParser
+  "You can only use the previous effect of \""
   "\" once per turn."
 
 detectOneOnlyOnce ∷ Text → Maybe Text
