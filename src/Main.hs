@@ -163,8 +163,8 @@ updateDesc card = let
     $ mapAllText
       ( Text.replace "destroyed by battle or card effect" "destroyed"
       . Text.replace "destroyed by battle or card effects" "destroyed"
+      . Text.replace "Graveyard" "GY"
       )
-    $ graveyardToGy
     $ tagQuickEffects withProcessedEffectsAndNormalizedLeading
   (finalLeadingText, finalEffects) = fromUnregisteredEffects final.leadingText final.effects
   in Card
@@ -509,9 +509,6 @@ rewordSearch = fromRight (error "") . parse
       Just found → rewordSearch (everythingBeforeSearch ⊕ found ⊕ everythingAfter)
   )
   ""
-
-graveyardToGy ∷ Card ProcessedEffect → Card ProcessedEffect
-graveyardToGy = mapAllText (Text.replace "Graveyard" "GY")
 
 tagOncePerTurns ∷ Card ProcessedEffect → Card ProcessedEffect
 tagOncePerTurns
