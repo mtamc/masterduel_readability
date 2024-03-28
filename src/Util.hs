@@ -23,3 +23,6 @@ mapTextHead f = Text.uncons ⋙ \case
 mapHead ∷ (a → a) → [a] → [a]
 mapHead _ []     = []
 mapHead f (x:xs) = f x : xs
+
+mapLast ∷ (a → a) → [a] → [a]
+mapLast f = reverse . mapHead f . reverse

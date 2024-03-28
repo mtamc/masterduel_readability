@@ -155,7 +155,8 @@ updateDesc card = let
           $ map effectToProcessed card.pendulumEffects
       }
   final
-    = uppercaseKeywords
+    = mapAllText (Text.replace "SUMMONING conditions" "Summoning conditions")
+    . uppercaseKeywords
     $ splitActivationsAndConditions
     $ mapAllText (rewordSearch . rewordBounce . rewordPiercing . rewordMill)
     $ tagPhases
@@ -165,6 +166,7 @@ updateDesc card = let
       . Text.replace "destroyed by battle or card effects" "destroyed"
       . Text.replace "Send the top card of your Deck to the GY" "MILL 1 card"
       . Text.replace "Graveyard" "GY"
+      . Text.replace "●" "● "
       )
     $ tagQuickEffects withProcessedEffectsAndNormalizedLeading
   (finalLeadingText, finalEffects) = fromUnregisteredEffects final.leadingText final.effects
@@ -254,15 +256,26 @@ processedToEffect ∷ ProcessedEffect → Effect
 processedToEffect processed =
   Effect
     { mainEffect =
-      (if processed.leadingNewline then "\n" else "")
-      ⊕ maybe "" (⊕ " ") processed.enclosedNumber
-      ⊕ Text.concat (map ((<> " | ") . Text.toUpper) $ ordNub processed.tags)
-      ⊕ maybe "" (decorate "" ": ") processed.condition
-      ⊕ maybe "" (decorate "<b>" ";</b> ") processed.activation
-      ⊕ processed.mainEffect
+        (if processed.leadingNewline then "\n" else "")
+        ⊕ maybe "" (⊕ " ") processed.enclosedNumber
+        ⊕ Text.concat (map ((<> " | ") . Text.toUpper) $ ordNub processed.tags)
+        ⊕ maybe "" formatCondition processed.condition
+        ⊕ maybe "" formatActivation processed.activation
+        ⊕ processed.mainEffect
     , trailingText = processed.trailingText
     , originalPosition = processed.originalPosition
     }
+
+formatCondition ∷ Text → Text
+formatCondition = decorate "" ": "
+
+formatActivation ∷ Text → Text
+formatActivation = decorate "<b>" ";</b> "
+
+collapseNewlines ∷ Text → Text
+collapseNewlines txt
+  | "\n\n" `Text.isInfixOf` txt = collapseNewlines (Text.replace "\n\n" "\n" txt)
+  | otherwise = txt
 
 numberEffects ∷ Text → [ProcessedEffect] → [ProcessedEffect]
 numberEffects cardLeadingText effects = let
@@ -324,6 +337,7 @@ uppercaseKeywords = mapAllText \txt
     , "destroy", "destroying", "destroyed", "destroys"
     , "negate", "negating", "negated", "negates"
     , "discard", "discarding", "discarded", "discards"
+    , "extra deck"
     , "quick effect"
     , "hand"
     , "deck"
@@ -343,9 +357,9 @@ uppercaseKeywords = mapAllText \txt
 splitActivationsAndConditions ∷ Card ProcessedEffect → Card ProcessedEffect
 splitActivationsAndConditions =
   (fmap \effect → let
-    (condition, activation, mainEffect) = splitActivationsAndConditions' effect.mainEffect
+    (prea, condition, activation, mainEffect) = splitActivationsAndConditions' effect.mainEffect
     in effect
-      & #condition  .~ condition
+      & #condition  .~ ((maybe "" (<> "\n") prea ⊕) <$> condition)
       & #activation .~ activation
       & #mainEffect .~ mainEffect
   ) ⋙ #leadingText
@@ -353,8 +367,15 @@ splitActivationsAndConditions =
        ⋙ map
          ( removeSurroundingSpaces
          ⋙ splitActivationsAndConditions'
-         ⋙ (\(cond, acti, mainEff)
-            → maybe "" (decorate "<i>" ":</i> ") cond
+         ⋙ (\(prea, cond, acti, mainEff)
+            → fromMaybe "" prea
+            ⊕ maybe ""
+              (\c →
+                if "|" `Text.isInfixOf` c
+                  then decorate "" ": " c
+                  else formatCondition c
+              )
+              cond
             ⊕ maybe "" (decorate "<b>" ";</b> ") acti
             ⊕ mainEff
            )
@@ -362,22 +383,26 @@ splitActivationsAndConditions =
        ⋙ Text.intercalate ". "
        ⋙ Text.replace ". )" ".)"
        ⋙ Text.strip
-
        )
 
-splitActivationsAndConditions' ∷ Text → (Maybe Text, Maybe Text, Text)
+splitActivationsAndConditions' ∷ Text → (Maybe Text, Maybe Text, Maybe Text, Text)
 splitActivationsAndConditions' sentence = let
-    (condition, everythingAfterCondition) =
+    (conditionWithPreamble, everythingAfterCondition) =
       case Text.split (≡ ':') sentence of
         []        → error "should never happen"
         [noColon] → (Nothing, noColon)
-        cond:rest → (textNonEmpty cond, removeSurroundingSpaces $ Text.concat rest)
+        cond:rest → (textNonEmpty cond, removeSurroundingSpaces $ Text.intercalate ":" rest)
+    (preamble, condition) =
+      case Text.split (≡ '\n') $ fromMaybe "" conditionWithPreamble of
+        []          → error "should never happen"
+        [noNewline] → (Nothing, textNonEmpty noNewline)
+        prea:rest   → (textNonEmpty prea, textNonEmpty $ removeSurroundingSpaces $ Text.intercalate "\n" rest)
     (activation, mainEffect) =
       case Text.split (≡ ';') everythingAfterCondition of
         []            → error "should never happen"
         [noSemicolon] → (Nothing, noSemicolon)
-        acti:rest     → (textNonEmpty acti, removeSurroundingSpaces $ Text.concat rest)
-    in (condition, activation, mainEffect)
+        acti:rest     → (textNonEmpty acti, removeSurroundingSpaces $ Text.intercalate "\n" rest)
+    in (preamble, condition, activation, mainEffect)
 
 removeSurroundingSpaces ∷ Text → Text
 removeSurroundingSpaces = Text.dropWhileEnd (≡ ' ') . Text.dropWhile (≡ ' ')
@@ -409,28 +434,26 @@ tagPhases = fmap \effect →
     )
     ""
 
+reword ∷ Parser Text → Text → Text
+reword findAndReplaceP = fromRight (error "") . parse
+  (do
+    everythingBefore ←
+      toText <$> manyTill anySingle (try (void $ lookAhead findAndReplaceP) <|> eof)
+    replacement ← optional findAndReplaceP
+    everythingAfter ← toText <$> many anySingle
+    pure $ case replacement of
+      Nothing    → everythingBefore ⊕ everythingAfter
+      Just found → reword findAndReplaceP (everythingBefore ⊕ found ⊕ everythingAfter)
+  )
+  ""
+
 rewordBounce ∷ Text → Text
-rewordBounce =
-  Text.replace "returned to the hand" "BOUNCED"
-    . fromRight (error "") . parse
-      (do
-        let
-          bounceP ∷ Parser Text
-          bounceP = do
-            _return ← toText <$> string' "return "
-            what ← toText
-              <$> someTill anySingle
-                (try (string' " from the field to the hand" <|> string' " to the hand"))
-            pure $ "BOUNCE " ⊕ what
-        everythingBeforeBounce ←
-          toText <$> manyTill anySingle (try (void $ lookAhead bounceP) <|> eof)
-        bounce ← optional bounceP
-        everythingAfter ← toText <$> many anySingle
-        pure $ case bounce of
-          Nothing    → everythingBeforeBounce ⊕ everythingAfter
-          Just found → rewordBounce (everythingBeforeBounce ⊕ found ⊕ everythingAfter)
-      )
-      ""
+rewordBounce = Text.replace "returned to the hand" "BOUNCED" . reword do
+  _return ← toText <$> string' "return "
+  what ← toText
+    <$> someTill anySingle
+      (try (string' " from the field to the hand" <|> string' " to the hand"))
+  pure $ "BOUNCE " ⊕ what
 
 -- Piercing wordings:
 -- If [this card that was SPECIAL SUMMONED from the GY] attacks a Defense Position monster, inflict piercing battle damage.
@@ -438,88 +461,54 @@ rewordBounce =
 -- While you control another Insect monster, if [an Insect monster you control] attacks a Defense Position monster, inflict piercing battle damage to your opponent.
 -- During battle, when it attacks a Defense Position monster whose DEF is lower than the ATK of the equipped monster, inflict the difference as Battle Damage to your opponent.
 rewordPiercing ∷ Text → Text
-rewordPiercing = fromRight (error "") . parse
-  (do
-    let
-      piercingP ∷ Parser Text
-      piercingP = do
-        ifWord ← toText <$> string' "if "
-        what ← toText
-          <$> someTill (anySingleBut '.')
-            (try
-              (string' "attacks a defense position monster, inflict piercing battle damage"
-              <|> string' "attacks a Defense Position monster whose DEF is lower than the ATK of the equipped monster, inflict the difference as Battle Damage"
-              )
-            )
-        _toYourOpp ← optional $ string' " to your opponent"
-        let newStart = what & applyWhen (ifWord ≡ "If ") (mapTextHead Text.toUpper)
-        pure $ newStart ⊕ "is PIERCING"
-    everythingBeforePiercing ←
-      toText <$> manyTill anySingle (try (void $ lookAhead piercingP) <|> eof)
-    piercing ← optional piercingP
-    everythingAfter ← toText <$> many anySingle
-    pure $ case piercing of
-      Nothing    → everythingBeforePiercing ⊕ everythingAfter
-      Just found → rewordPiercing (everythingBeforePiercing ⊕ found ⊕ everythingAfter)
-  )
-  ""
+rewordPiercing = reword do
+  ifWord ← toText <$> string' "if "
+  what ← toText
+    <$> someTill (anySingleBut '.')
+      (try
+        (string' "attacks a defense position monster, inflict piercing battle damage"
+        <|> string' "attacks a Defense Position monster whose DEF is lower than the ATK of the equipped monster, inflict the difference as Battle Damage"
+        )
+      )
+  _toYourOpp ← optional $ string' " to your opponent"
+  let newStart = what & applyWhen (ifWord ≡ "If ") (mapTextHead Text.toUpper)
+  pure $ newStart ⊕ "is PIERCING"
 
 rewordMill ∷ Text → Text
-rewordMill = fromRight (error "") . parse
-  (do
-    let
-      millP ∷ Parser Text
-      millP = do
-        _return ← toText <$> string' "send "
-        what ← toText
-          <$> someTill (anySingleBut '.')
-            (try
-              (   string' " from the top of your deck to the gy"
-              <|> string' " from the top of your deck to the graveyard")
-              )
-        pure $ "MILL " ⊕ what
-    everythingBeforeMill ← toText <$> manyTill anySingle (try (void $ lookAhead millP) <|> eof)
-    mill ← optional millP
-    everythingAfter ← toText <$> many anySingle
-    pure $ case mill of
-      Nothing    → everythingBeforeMill ⊕ everythingAfter
-      Just found → rewordBounce (everythingBeforeMill ⊕ found ⊕ everythingAfter)
-  )
-  ""
+rewordMill = reword do
+  _return ← toText <$> string' "send "
+  what ← toText
+    <$> someTill (anySingleBut '.')
+      (try
+        (   string' " from the top of your deck to the gy"
+        <|> string' " from the top of your deck to the graveyard")
+        )
+  pure $ "MILL " ⊕ what
 
 rewordSearch ∷ Text → Text
-rewordSearch = fromRight (error "") . parse
-  (do
-    let
-      searchP ∷ Parser Text
-      searchP = do
-        _add ← toText <$> string' "add "
-        quantity ← numberChar
-        void hspace1
-        what ← toText <$> someTill (anySingleBut '.') (try (lookAhead (string' " from your deck")))
-        _fromYour ← string' " from your "
-        deckOrGy ← Text.toLower . toText <$> (string' "deck or gy" <|> string' "deck")
-        _toYourHand ← string' " to your hand"
-        pure $
-          "SEARCH " ⊕ one quantity ⊕ " " ⊕ what ⊕ (if deckOrGy ≡ "deck or gy" then " (from DECK or GY)" else "")
-    everythingBeforeSearch ← toText <$> manyTill anySingle (try (void $ lookAhead searchP) <|> eof)
-    search ← optional searchP
-    everythingAfter ← toText <$> many anySingle
-    pure $ case search of
-      Nothing    → everythingBeforeSearch ⊕ everythingAfter
-      Just found → rewordSearch (everythingBeforeSearch ⊕ found ⊕ everythingAfter)
-  )
-  ""
+rewordSearch = reword do
+  _add ← toText <$> string' "add "
+  quantity ← numberChar
+  void hspace1
+  what ← toText <$> someTill (anySingleBut '.') (try (lookAhead (string' " from your deck")))
+  _fromYour ← string' " from your "
+  deckOrGy ← Text.toLower . toText <$> (string' "deck or gy" <|> string' "deck")
+  _toYourHand ← string' " to your hand"
+  _comma ← optional $ char ','
+  pure $
+    "SEARCH " ⊕ one quantity ⊕ " " ⊕ what ⊕ (if deckOrGy ≡ "deck or gy" then " (from DECK or GY)" else "")
 
 tagOncePerTurns ∷ Card ProcessedEffect → Card ProcessedEffect
 tagOncePerTurns
-  = tagFollowingHoptInBoth
+  = tagFollowingHoptInMonsterAndPend
   . tagHoptActis
-  . tagTrailingHoptInBoth
+  . tagLeadingHoptOneEffect
+  . tagTrailingHoptOneEffect
+  . tagTrailingHoptInMonsterAndPend
   . fmap tag
   where
   tag ∷ ProcessedEffect → ProcessedEffect
-  tag = tagStandardHopt . tagGainHopt . tagOptComma . tagOptColon
+  tag = tagSsHopt . tagStandardHopt . tagGainHopt . tagOptComma . tagOptColon
   -- e.g. Senet Switch
   tagOptColon ∷ ProcessedEffect → ProcessedEffect
   tagOptColon effect
@@ -549,6 +538,11 @@ tagOncePerTurns
         case detectStandardHopt "this" effect.trailingText of
           Just changed → effect & #trailingText .~ changed & #tags %~ ("hopt":)
           Nothing      → effect
+  tagSsHopt ∷ ProcessedEffect → ProcessedEffect
+  tagSsHopt effect =
+    case detectSsHopt effect.trailingText of
+      Just changed → effect & #trailingText .~ changed & #tags %~ ("hopt":)
+      Nothing      → effect
   tagFollowingHopt
     ∷ (([ProcessedEffect] → [ProcessedEffect]) → Card ProcessedEffect → Card ProcessedEffect)
     → Card ProcessedEffect
@@ -561,8 +555,8 @@ tagOncePerTurns
       case detectFollowingHopt effect.trailingText of
         Just changed → (result ⧺ [effect & #trailingText .~ changed], True)
         Nothing      → (result ⧺ [effect], False)
-  tagFollowingHoptInBoth ∷ Card ProcessedEffect → Card ProcessedEffect
-  tagFollowingHoptInBoth =
+  tagFollowingHoptInMonsterAndPend ∷ Card ProcessedEffect → Card ProcessedEffect
+  tagFollowingHoptInMonsterAndPend =
     tagFollowingHopt (over #effects) . tagFollowingHopt (over #pendulumEffects)
   tagTrailingHopt
     ∷ (Card ProcessedEffect → [ProcessedEffect])
@@ -595,30 +589,70 @@ tagOncePerTurns
                       & #leadingText .~ changed
                       & overEffects (map (#tags %~ ("hopt":)))
                   Nothing → card
-  tagTrailingHoptInBoth ∷ Card ProcessedEffect → Card ProcessedEffect
-  tagTrailingHoptInBoth
+  -- eg
+  -- last effect trailing text: Fluffal Bear/Infernoble Arms Durendal
+  --  You can only use 1 \"Fluffal Bear\" effect per turn, and only once that turn.
+  --
+  --  chaos witch is the only one where the last effect triling text is:
+  --   You can only use 1 \"Chaos Witch\" effect per turn, and only once that turn, also you cannot SPECIAL SUMMON monsters from the Extra DECK, except LIGHT or DARK Synchro Monsters, the turn you activate either effect.
+  --   not yet supported/implemented
+  tagTrailingHoptOneEffect
+    ∷ Card ProcessedEffect
+    → Card ProcessedEffect
+  tagTrailingHoptOneEffect card =
+    case viaNonEmpty last card.effects of
+      Nothing → card
+      Just lastEffect →
+        case detectOneOnlyOnce lastEffect.trailingText of
+          Just changed →
+            card
+              & #effects %~ (mapHead (#leadingNewline .~ True) . mapLast (#trailingText .~ changed))
+              & #leadingText %~
+                (\leading →
+                  leading
+                  ⊕ (if leading ≡ "" then "" else "\n")
+                  ⊕ "HOPT | You can use ONE of:"
+                )
+          Nothing → card
+  -- first effect's trailing text: Scarm, Malebranche of the Burning Abyss
+  -- " You can only use 1 of these effects of \"Scarm, Malebranche of the Burning Abyss\" per turn, and only once that turn."
+  --
+  -- Graff, Malebranche of the Burning Abyss, same^
+  -- Naturia Sacred Tree:  You can only use 1 of the following effects of \"Naturia Sacred Tree\" per turn, and only once that turn.
+  tagLeadingHoptOneEffect
+    ∷ Card ProcessedEffect
+    → Card ProcessedEffect
+  tagLeadingHoptOneEffect card =
+    case viaNonEmpty head card.effects of
+      Nothing → card
+      Just firstEffect →
+        case detectFollowingOneOnlyOnce firstEffect.trailingText of
+          Just changed →
+            card
+              & #effects %~ mapHead (#trailingText .~ changed ⋙ #leadingNewline .~ True)
+              & #leadingText %~
+                (\leading →
+                  leading
+                  ⊕ (if leading ≡ "" then "" else "\n")
+                  ⊕ "HOPT | You can use ONE of:"
+                )
+          Nothing →
+            case detectFollowingOneOnlyOnce card.leadingText of
+              Nothing → card
+              Just changed →
+                card
+                  & #leadingText .~
+                    ( changed
+                    ⊕ (if changed ≡ "" then "" else "\n")
+                    ⊕ "HOPT | You can use ONE of:"
+                    )
+  tagTrailingHoptInMonsterAndPend ∷ Card ProcessedEffect → Card ProcessedEffect
+  tagTrailingHoptInMonsterAndPend
     = tagTrailingHopt (^. #effects) (over #effects)
     . tagTrailingHopt (^. #pendulumEffects) (over #pendulumEffects)
-  detectActiHopt ∷ Text → (Bool, Text)
-  detectActiHopt = fromRight (error "") . parse
-    (do
-      let
-        hoptP ∷ Parser Text
-        hoptP = do
-          start ← toText <$> string "You can only activate 1 \""
-          name ← toText <$> someTill anySingle (try (lookAhead (char '"')))
-          end ← string "\" per turn."
-          spc ← maybe "" one <$> optional (char ' ')
-          pure (start ⊕ name ⊕ end ⊕ spc)
-      everythingBeforeHopt ← toText <$> manyTill anySingle (try (void $ lookAhead hoptP) <|> eof)
-      hopt ← optional hoptP
-      everythingAfter ← textNonEmpty . toText <$> many anySingle
-      pure (isJust hopt, Text.strip everythingBeforeHopt ⊕ maybe "" (" " <>) everythingAfter)
-    )
-    ""
   tagHoptActis ∷ Card ProcessedEffect → Card ProcessedEffect
   tagHoptActis card
-    | any (\e → fst $ detectActiHopt e.trailingText) card.effects =
+    | any (\e → isJust $ detectActiHopt e.trailingText) card.effects =
       card
         & #leadingText %~ (("HOPT ACTIVATION\n" <>) ⋙ Text.strip)
         & #effects %~ mapHead (#leadingNewline .~ True)
@@ -626,54 +660,70 @@ tagOncePerTurns
           %~ map
             (\e
               → detectActiHopt e.trailingText
-              & \(detected, changed) → if detected then e & #trailingText .~ changed else e
+              & \case { Just changed → e & #trailingText .~ changed; Nothing → e }
             )
     | otherwise = card
 
--- | Reports if Hopt detected and returns the string with the Hopt removed
-detectStandardHopt ∷ Text → Text → Maybe Text
-detectStandardHopt thisOrEach = fromRight (error "") . parse
+detectAndRemove ∷ Parser Text → Text → Maybe Text
+detectAndRemove partToRemoveP = fromRight (error "") . parse
   (do
-    let
-      hoptP ∷ Parser Text
-      hoptP = do
-        start ← toText <$> string ("You can only use " ⊕ thisOrEach ⊕ " effect of \"")
-        name ← toText <$> someTill anySingle (try (char '"'))
-        end ← toText . ("\"" <>) <$> string " once per turn."
-        spc ← maybe "" one <$> optional (char ' ')
-        pure (start ⊕ name ⊕ end ⊕ spc)
-    everythingBeforeHopt ← toText <$> manyTill anySingle (try (void (lookAhead hoptP)) <|> eof)
-    hopt ← optional hoptP
+    everythingBeforeHopt ← toText
+      <$> manyTill anySingle (try (void (lookAhead partToRemoveP)) <|> eof)
+    partToRemove ← optional partToRemoveP
     everythingAfter ← textNonEmpty . toText <$> many anySingle
     pure $
-      if isJust hopt then
+      if isJust partToRemove then
         Just $ Text.strip everythingBeforeHopt ⊕ maybe "" (" " <>) everythingAfter
       else
         Nothing
   )
   ""
 
-detectFollowingHopt ∷ Text → Maybe Text
-detectFollowingHopt = fromRight (error "") . parse
-  (do
-    let
-      hoptP ∷ Parser Text
-      hoptP = do
-        start ← toText <$> string "You can only use each of the following effects of \""
-        name ← toText <$> someTill anySingle (try (char '"'))
-        end ← toText . ("\"" <>) <$> string " once per turn."
-        spc ← maybe "" one <$> optional (char ' ')
-        pure (start ⊕ name ⊕ end ⊕ spc)
-    everythingBeforeHopt ← toText <$> manyTill anySingle (try (void (lookAhead hoptP)) <|> eof)
-    hopt ← optional hoptP
-    everythingAfter ← textNonEmpty . toText <$> many anySingle
-    pure $
-      if isJust hopt then
-        Just $ Text.strip everythingBeforeHopt ⊕ maybe "" (" " <>) everythingAfter
-      else
-        Nothing
+standardHoptParser ∷ Text → Text → Parser Text
+standardHoptParser start end = standardHoptParser' (string start) (string end)
+
+standardHoptParser' ∷ (Token s ~ Char, ToText a1, ToText a2, MonadParsec e s m) ⇒ m a1 → m a2 → m Text
+standardHoptParser' startP endP = do
+  startStr ← toText <$> startP
+  name ← toText <$> someTill anySingle (try (lookAhead endP))
+  endStr ← toText <$> endP
+  spc ← maybe "" one <$> optional (char ' ')
+  pure (startStr ⊕ name ⊕ endStr ⊕ spc)
+
+-- | Reports if Hopt detected and returns the string with the Hopt removed
+detectStandardHopt ∷ Text → Text → Maybe Text
+detectStandardHopt thisOrEach = detectAndRemove $ standardHoptParser
+  ("You can only use " ⊕ thisOrEach ⊕ " effect of \"")
+  "\" once per turn."
+
+detectOneOnlyOnce ∷ Text → Maybe Text
+detectOneOnlyOnce = detectAndRemove $ standardHoptParser
+  "You can only use 1 \""
+  "\" effect per turn, and only once that turn."
+
+detectFollowingOneOnlyOnce ∷ Text → Maybe Text
+detectFollowingOneOnlyOnce = detectAndRemove $ standardHoptParser'
+  (choice $ map string
+    [ "You can only use 1 of these effects of \""
+    , "You can only use 1 of the following effects of \""
+    ]
   )
-  ""
+  (string "\" per turn, and only once that turn.")
+
+detectActiHopt ∷ Text → Maybe Text
+detectActiHopt = detectAndRemove $ standardHoptParser
+  "You can only activate 1 \""
+  "\" per turn."
+
+detectSsHopt ∷ Text → Maybe Text
+detectSsHopt = detectAndRemove $ standardHoptParser
+  "You can only Special Summon \""
+  "\" once per turn this way."
+
+detectFollowingHopt ∷ Text → Maybe Text
+detectFollowingHopt = detectAndRemove $ standardHoptParser
+  "You can only use each of the following effects of \""
+  "\" once per turn."
 
 tagQuickEffects ∷ Card ProcessedEffect → Card ProcessedEffect
 tagQuickEffects = fmap tag where
@@ -766,13 +816,12 @@ generateDescAndPartFiles cards = do
             Nothing
     go incorrect correct (Text.uncons → Just (cur, rest))
       | correctPlusCur ≡ substr = Just . BS.length $ encodeUtf8 incorrect
-      -- one newline = correct
       | correctPlusCur `Text.isPrefixOf` substr = go incorrect correctPlusCur rest
-      -- two newlines = incorrect, but we add both to the incorrect instead of
-      -- keeping the second one as the first one :(
+      | one cur `Text.isPrefixOf` substr = go incorrectPlusCorrect (one cur) rest
       | otherwise = go incorrectPlusCorrectPlusCur "" rest
       where
       correctPlusCur = correct `Text.snoc` cur
+      incorrectPlusCorrect = incorrect ⊕ correct
       incorrectPlusCorrectPlusCur = incorrect ⊕ correct `Text.snoc` cur
 
 
