@@ -34,10 +34,10 @@ main = do
 
 data Paths
   = Paths
-    { name :: FilePath
-    , desc :: FilePath
-    , part :: FilePath
-    , pidx :: FilePath
+    { name ∷ FilePath
+    , desc ∷ FilePath
+    , part ∷ FilePath
+    , pidx ∷ FilePath
     }
   deriving (Eq, FromJSON, Generic, Show, ToJSON)
 
@@ -55,11 +55,11 @@ paths
 
 data Card effectType
   = Card
-    { name            :: Text
+    { name            ∷ Text
       -- Often the first registered effect is not at position 0
-    , leadingText     :: Text
-    , effects         :: [effectType]
-    , pendulumEffects :: [effectType]
+    , leadingText     ∷ Text
+    , effects         ∷ [effectType]
+    , pendulumEffects ∷ [effectType]
     }
   deriving (Eq, FromJSON, Generic, Show, ToJSON)
 
@@ -81,12 +81,12 @@ cardOriginalText c =
 
 data Effect
   = Effect
-    { mainEffect       :: Text
+    { mainEffect       ∷ Text
       -- Sometimes there's text not part of any effect, most commonly " "
       -- in between effects, but can also be "unregistered" effect text
-    , trailingText     :: Text
+    , trailingText     ∷ Text
       -- Some of the effects are out of order in the Part file... lower is first.
-    , originalPosition :: Int
+    , originalPosition ∷ Int
     }
   deriving (Eq, FromJSON, Generic, Show, ToJSON)
 
@@ -96,9 +96,9 @@ effectText e = e.mainEffect ⊕ e.trailingText
 data PidxData
   = PidxData
     { -- Position of the card's first effect in the Part asset (which is a sequence of effect positions)
-      firstEffectIndex    :: Int
-    , effectCount         :: Int
-    , pendulumEffectCount :: Int
+      firstEffectIndex    ∷ Int
+    , effectCount         ∷ Int
+    , pendulumEffectCount ∷ Int
     }
   deriving (Eq, Generic, Show)
 
@@ -106,8 +106,8 @@ data PidxData
 -- character of the card's description.
 data PartData
   = PartData
-    { start :: Int
-    , end   :: Int
+    { start ∷ Int
+    , end   ∷ Int
     }
   deriving (Eq, Generic, Show)
 
@@ -117,16 +117,16 @@ data PartData
 -- | Data structure used internally to better represent effect elements
 data ProcessedEffect
   = ProcessedEffect
-    { leadingNewline   :: Bool
-    , enclosedNumber   :: Maybe Text
-    , tags             :: [Text]
-    , condition        :: Maybe Text
-    , activation       :: Maybe Text
-    , mainEffect       :: Text
-    , trailingText     :: Text
-    , originalPosition :: Int
+    { leadingNewline   ∷ Bool
+    , enclosedNumber   ∷ Maybe Text
+    , tags             ∷ [Text]
+    , condition        ∷ Maybe Text
+    , activation       ∷ Maybe Text
+    , mainEffect       ∷ Text
+    , trailingText     ∷ Text
+    , originalPosition ∷ Int
       {-| Effect with no offset registered in Card_Part, we parsed it manually -}
-    , unregistered     :: Bool
+    , unregistered     ∷ Bool
     }
   deriving (Eq, FromJSON, Generic, Show, ToJSON)
 
@@ -160,6 +160,10 @@ updateDesc card = let
     $ mapAllText (rewordSearch . rewordBounce . rewordPiercing . rewordMill)
     $ tagPhases
     $ tagOncePerTurns
+    $ mapAllText
+      ( Text.replace "destroyed by battle or card effect" "destroyed"
+      . Text.replace "destroyed by battle or card effects" "destroyed"
+      )
     $ graveyardToGy
     $ tagQuickEffects withProcessedEffectsAndNormalizedLeading
   (finalLeadingText, finalEffects) = fromUnregisteredEffects final.leadingText final.effects
