@@ -163,6 +163,7 @@ updateDesc card = let
     $ mapAllText
       ( Text.replace "destroyed by battle or card effect" "destroyed"
       . Text.replace "destroyed by battle or card effects" "destroyed"
+      . Text.replace "Send the top card of your Deck to the GY" "MILL 1 card"
       . Text.replace "Graveyard" "GY"
       )
     $ tagQuickEffects withProcessedEffectsAndNormalizedLeading
