@@ -39,6 +39,23 @@ cp tools/rnduser0/CARD_Desc.bytes ./data/release_bytes_with_empty_lines/
 cp tools/rnduser0/CARD_Indx.bytes ./data/release_bytes_with_empty_lines/
 cp tools/rnduser0/Card_Part.bytes ./data/release_bytes_with_empty_lines/
 
+mkdir -p ./data/release_bytes_numbering_only
+cp data/CARD_Desc.bytes.dec.json.numberingOnly.new tools/rnduser0/CARD_Desc.bytes.dec.json
+cp data/Card_Part.bytes.dec.numberingOnly.new tools/rnduser0/Card_Part.bytes.dec
+cd tools/rnduser0/ && python _CARD_merge_and_encrypt.py && cd ../..
+cp tools/rnduser0/CARD_Desc.bytes ./data/release_bytes_numbering_only/
+cp tools/rnduser0/CARD_Indx.bytes ./data/release_bytes_numbering_only/
+cp tools/rnduser0/Card_Part.bytes ./data/release_bytes_numbering_only/
+
+mkdir -p ./data/release_bytes_numbering_and_newlines
+cp data/CARD_Desc.bytes.dec.json.numberingAndNewlines.new tools/rnduser0/CARD_Desc.bytes.dec.json
+cp data/Card_Part.bytes.dec.numberingAndNewlines.new tools/rnduser0/Card_Part.bytes.dec
+cd tools/rnduser0/ && python _CARD_merge_and_encrypt.py && cd ../..
+cp tools/rnduser0/CARD_Desc.bytes ./data/release_bytes_numbering_and_newlines/
+cp tools/rnduser0/CARD_Indx.bytes ./data/release_bytes_numbering_and_newlines/
+cp tools/rnduser0/Card_Part.bytes ./data/release_bytes_numbering_and_newlines/
+
+
 echo "STEP 5/5 | bundling the encrypted files"
 cd ./tools/rebundle
 python pack.py
@@ -48,9 +65,11 @@ mkdir release
 cp -r ./original_game_files ./release/uninstall
 cp -r ./tools/rebundle/install ./release/install
 cp -r ./tools/rebundle/install_with_empty_lines ./release/install_with_empty_lines
+cp -r ./tools/rebundle/install_with_numbering_only ./release/install_with_numbering_only
+cp -r ./tools/rebundle/install_with_numbering_and_empty_lines_only ./release/install_with_numbering_and_empty_lines_only
 dat=$(date +%Y-%m-%d)
 cd release
-zip -r "./release-$dat.zip" ./uninstall ./install ./install_with_empty_lines
+zip -r "./readable-card-effects-release-$dat.zip" ./uninstall ./install ./install_with_empty_lines ./.install_with_numbering_only ./install_with_numbering_and_empty_lines_only
 cd ..
 
 echo "the release files are in ./release, also zipped to ./release/"

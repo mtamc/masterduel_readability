@@ -14,7 +14,7 @@ import Data.Binary.Get          hiding (lookAhead)
 import Data.ByteString          qualified as BS
 import Data.ByteString.Lazy     qualified as BL
 import Data.Char                (toUpper)
-import Data.List                (partition)
+import Data.List                (partition, unzip4)
 import Data.List.Extra          (dropEnd)
 import Data.Text                qualified as Text
 import Prelude                  hiding (many)
@@ -25,18 +25,36 @@ import Util
 
 main ∷ IO ()
 main = do
-  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Masquerena", "Treasure Map", "Mayowashidori"])
+  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Magical Contract Door", "Ohime", "Mayowashidori", "Durendal", "Ojamagic", "Magical Contract Door", "Hecatrice", "Hidden Armory"])
+  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster"])
   cards ← getCards (const True)
   writeFileLBS "./data/decoded_cards.json" (encodePretty cards)
   -- generateDescAndPartFiles cards
-  let (cardsWithUpdatedDescs, cardsWithUpdatedDescsAndEmptyLines)
-        = unzip
-        $ map ((\v → (v.regular, v.withEmptyLines)) . updateDesc) cards
+  let
+    ( cardsWithUpdatedDescs, cardsWithUpdatedDescsAndDoubleNewlines, cardsWithNumberingAndNewlines, cardsWithNumberingAndDoubleNewlines )
+      = unzip4
+      $ map
+        ((\v →
+          ( v.regular
+          , v.withDoubleNewlines
+          , v.numberingAndNewlinesOnly
+          , v.numberingAndDoubleNewlinesOnly
+          )
+         )
+        . updateDesc
+        )
+        cards
   writeFileLBS "./data/decoded_cards.updated.json" (encodePretty cardsWithUpdatedDescs)
   writeFileLBS "./data/decoded_cards.updated.withNewlines.json"
-    (encodePretty cardsWithUpdatedDescsAndEmptyLines)
+    (encodePretty cardsWithUpdatedDescsAndDoubleNewlines)
+  writeFileLBS "./data/decoded_cards.updated.numberingOnly.json"
+    (encodePretty cardsWithNumberingAndNewlines)
+  writeFileLBS "./data/decoded_cards.updated.numberingAndNewlines.json"
+    (encodePretty cardsWithNumberingAndDoubleNewlines)
   generateDescAndPartFiles ".new" cardsWithUpdatedDescs
-  generateDescAndPartFiles ".withemptylines.new" cardsWithUpdatedDescsAndEmptyLines
+  generateDescAndPartFiles ".withemptylines.new" cardsWithUpdatedDescsAndDoubleNewlines
+  generateDescAndPartFiles ".numberingOnly.new" cardsWithNumberingAndNewlines
+  generateDescAndPartFiles ".numberingAndNewlines.new" cardsWithNumberingAndDoubleNewlines
   echo "done"
 
 
@@ -150,8 +168,10 @@ type Parser = Parsec Void Text
 
 data CardVersions
   = CardVersions
-    { regular        ∷ Card Effect
-    , withEmptyLines ∷ Card Effect
+    { regular                        ∷ Card Effect
+    , withDoubleNewlines             ∷ Card Effect
+    , numberingAndNewlinesOnly       ∷ Card Effect
+    , numberingAndDoubleNewlinesOnly ∷ Card Effect
     }
   deriving (Eq, FromJSON, Generic, Show, ToJSON)
 
@@ -161,17 +181,18 @@ updateDesc card = let
   normalizedLeading = Text.strip card.leadingText
   (leadingWithoutUnregisteredEffects, effectsWithUnregistered) =
     getUnregisteredEffects normalizedLeading processedEffects
+  numberedEffects = numberEffects leadingWithoutUnregisteredEffects effectsWithUnregistered
+  numberedPendulumEffects =
+    numberEffects "dummy" -- so first pendulum effect has a newline
+      $ map effectToProcessed card.pendulumEffects
   withProcessedEffectsAndNormalizedLeading
     = Card
       { name = card.name
       , leadingText = leadingWithoutUnregisteredEffects
-      , effects
-        = numberEffects leadingWithoutUnregisteredEffects effectsWithUnregistered
-      , pendulumEffects =
-        numberEffects "dummy" -- so first pendulum effect has a newline
-          $ map effectToProcessed card.pendulumEffects
+      , effects = numberedEffects
+      , pendulumEffects = numberedPendulumEffects
       }
-  final
+  reworded
     = mapAllText (Text.replace "SUMMONING conditions" "Summoning conditions")
     . uppercaseKeywords
     . splitActivationsAndConditions
@@ -186,21 +207,34 @@ updateDesc card = let
       . Text.replace "●" "● "
       )
     $ tagQuickEffects withProcessedEffectsAndNormalizedLeading
-  (finalLeadingText, finalEffects) = fromUnregisteredEffects False final.leadingText final.effects
-  (finalLeadingTextWithEmptyLines, _) =
-    fromUnregisteredEffects True final.leadingText final.effects
+  (rewordedLeadingText, rewordedEffects) = fromUnregisteredEffects False reworded.leadingText reworded.effects
+  (rewordedLeadingTextWithEmptyLines, _) =
+    fromUnregisteredEffects True reworded.leadingText reworded.effects
   in CardVersions
     { regular = Card
-      { name = final.name
-      , leadingText = finalLeadingText
-      , effects = map (processedToEffect False) finalEffects
-      , pendulumEffects = map (processedToEffect False) final.pendulumEffects
+      { name = reworded.name
+      , leadingText = rewordedLeadingText
+      , effects = map (processedToEffect False) rewordedEffects
+      , pendulumEffects = map (processedToEffect False) reworded.pendulumEffects
       }
-    , withEmptyLines = Card
-      { name = final.name
-      , leadingText = finalLeadingTextWithEmptyLines
-      , effects = map (processedToEffect True) finalEffects
-      , pendulumEffects = map (processedToEffect True) final.pendulumEffects
+    , withDoubleNewlines = Card
+      { name = reworded.name
+      , leadingText = rewordedLeadingTextWithEmptyLines
+      , effects = map (processedToEffect True) rewordedEffects
+      , pendulumEffects = map (processedToEffect True) reworded.pendulumEffects
+      }
+    , numberingAndNewlinesOnly = Card
+      { name = card.name
+      , leadingText =
+        fst $ fromUnregisteredEffects False leadingWithoutUnregisteredEffects numberedEffects
+      , effects = map (processedToEffect False) numberedEffects
+      , pendulumEffects = map (processedToEffect False) numberedPendulumEffects
+      }
+    , numberingAndDoubleNewlinesOnly = Card
+      { name = card.name
+      , leadingText = rewordedLeadingTextWithEmptyLines
+      , effects = map (processedToEffect True) numberedEffects
+      , pendulumEffects = map (processedToEffect True) numberedPendulumEffects
       }
     }
 
@@ -397,7 +431,7 @@ splitActivationsAndConditions =
          ( removeSurroundingSpaces
          ⋙ splitActivationsAndConditions'
          ⋙ (\(prea, cond, acti, mainEff)
-            → fromMaybe "" prea
+            → maybe "" (<> "\n") prea
             ⊕ maybe ""
               (\c →
                 if "|" `Text.isInfixOf` c
@@ -488,7 +522,7 @@ reword findAndReplaceP = fromRight (error "") . parse
 rewordBounce ∷ Text → Text
 rewordBounce = Text.replace "returned to the hand" "BOUNCED" . reword do
   string' "return "
-  thingToBounce ← someTill anySingle $ try do
+  thingToBounce ← someTill anyNotConjunction $ try do
     string " "
     optional (string "from the field ")
     string "to the hand"
@@ -502,7 +536,7 @@ rewordBounce = Text.replace "returned to the hand" "BOUNCED" . reword do
 rewordPiercing ∷ Text → Text
 rewordPiercing = reword do
   ifWord ← string' "if "
-  thingThatIsPiercing ← someTill (anySingleBut '.') . try . choice $ map string'
+  thingThatIsPiercing ← someTill anyNotConjunction . try . choice $ map string'
     [ "attacks a defense position monster, inflict piercing battle damage"
     , "attacks a Defense Position monster whose DEF is lower than the ATK of the equipped monster, inflict the difference as Battle Damage"
     ]
@@ -513,17 +547,23 @@ rewordPiercing = reword do
 rewordMill ∷ Text → Text
 rewordMill = reword do
   string' "send "
-  thingToMill ← someTill (anySingleBut '.') $ try do
+  thingToMill ← someTill anyNotConjunction $ try do
     string' " from the top of your deck to the "
     choice $ map string' ["gy", "graveyard"]
   pure $ "MILL " ⊕ thingToMill
+
+notConjunction ∷ Parser ()
+notConjunction = notFollowedBy $ choice $ map string' [".", ", then", ", and if you do", ", also"]
+
+anyNotConjunction ∷ Parser Char
+anyNotConjunction = notConjunction *> anySingle
 
 rewordSearch ∷ Text → Text
 rewordSearch = reword do
   string' "add "
   quantity ← numberChar
   hspace1
-  thingToSearch ← someTill (anySingleBut '.') . try . lookAhead $ string' " from your deck"
+  thingToSearch ← someTill anyNotConjunction . try . lookAhead $ string' " from your deck"
   string' " from your "
   deckOrGy ← choice $ map string' ["deck or gy", "deck"]
   string' " to your hand"
@@ -666,7 +706,7 @@ tagOncePerTurns
                 (\leading →
                   leading
                   ⊕ (if leading ≡ "" then "" else "\n")
-                  ⊕ "HOPT | You can use ONE of:"
+                  ⊕ "HOPT | You can use ONE of —"
                 )
           Nothing → card
   -- first effect's trailing text: Scarm, Malebranche of the Burning Abyss
