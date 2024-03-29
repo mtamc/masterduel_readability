@@ -1,8 +1,15 @@
 This is a personal playground built on top of
 <https://github.com/RndUser0/YGOMD-Improve_Card_Text_Readibility>
 
-No instructions on what to do with this, but if you would like any, feel free to
-ask and I'll help you.
+### How to generate the modded files
+
+Untested on other machines, you might have some dependency issues. Probably Linux only.
+
+When the game has updated and you haven't installed the mod, run
+"./get_original_files.sh".
+
+Then to generate the release files, run "./make_release_files.sh"
+
 
 ### Current features
 

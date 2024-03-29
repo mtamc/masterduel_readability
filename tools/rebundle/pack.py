@@ -13,9 +13,10 @@ def getFilesList(path: str) -> list[str]:
             res.append(relative_path)
     return res
 
+shutil.rmtree('./install/')
 shutil.copytree('../../original_game_files/', './install/', dirs_exist_ok=True)
 for filepath in getFilesList("./install/"):
-    env = UnityPy.load("./release/" + filepath)
+    env = UnityPy.load("./install/" + filepath)
     for obj in env.objects:
         if obj.type.name == "TextAsset":
             data: Any = obj.read()
@@ -41,7 +42,8 @@ for filepath in getFilesList("./install/"):
         with open("./install/" + filepath, "wb") as f:
             f.write(env.file.save())
 
-shutil.copytree('../../original_game_files/', './install/', dirs_exist_ok=True)
+shutil.rmtree( './install_with_empty_lines/')
+shutil.copytree('../../original_game_files/', './install_with_empty_lines/', dirs_exist_ok=True)
 for filepath in getFilesList("./install_with_empty_lines/"):
     env = UnityPy.load("./install_with_empty_lines/" + filepath)
     for obj in env.objects:

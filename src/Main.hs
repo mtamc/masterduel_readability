@@ -1,15 +1,19 @@
 {-# LANGUAGE DeriveAnyClass, DeriveGeneric, IncoherentInstances, OverloadedRecordDot #-}
 {-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
 {-# HLINT ignore "Use zipWith" #-}
+{-# OPTIONS_GHC -Wno-type-defaults #-}
+{-# OPTIONS_GHC -Wno-unused-do-bind #-}
+{-# HLINT ignore "Use ?~" #-}
 module Main (main) where
 
-import Control.Lens             (over, set, view, (%~), (.~), (^.))
+import Control.Lens             (over, view, (%~), (.~), (^.))
 import Data.Aeson
 import Data.Aeson.Encode.Pretty
 import Data.Binary.Builder      as Binary
 import Data.Binary.Get          hiding (lookAhead)
 import Data.ByteString          qualified as BS
 import Data.ByteString.Lazy     qualified as BL
+import Data.Char                (toUpper)
 import Data.List                (partition)
 import Data.List.Extra          (dropEnd)
 import Data.Text                qualified as Text
@@ -21,12 +25,18 @@ import Util
 
 main ∷ IO ()
 main = do
-  cards ← getCards
+  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Masquerena", "Treasure Map", "Mayowashidori"])
+  cards ← getCards (const True)
   writeFileLBS "./data/decoded_cards.json" (encodePretty cards)
   -- generateDescAndPartFiles cards
-  let cardsWithUpdatedDescs = map updateDesc cards
+  let (cardsWithUpdatedDescs, cardsWithUpdatedDescsAndEmptyLines)
+        = unzip
+        $ map ((\v → (v.regular, v.withEmptyLines)) . updateDesc) cards
   writeFileLBS "./data/decoded_cards.updated.json" (encodePretty cardsWithUpdatedDescs)
-  generateDescAndPartFiles cardsWithUpdatedDescs
+  writeFileLBS "./data/decoded_cards.updated.withNewlines.json"
+    (encodePretty cardsWithUpdatedDescsAndEmptyLines)
+  generateDescAndPartFiles ".new" cardsWithUpdatedDescs
+  generateDescAndPartFiles ".withemptylines.new" cardsWithUpdatedDescsAndEmptyLines
   echo "done"
 
 
@@ -138,7 +148,14 @@ mapPEffectText f
 
 type Parser = Parsec Void Text
 
-updateDesc ∷ Card Effect → Card Effect
+data CardVersions
+  = CardVersions
+    { regular        ∷ Card Effect
+    , withEmptyLines ∷ Card Effect
+    }
+  deriving (Eq, FromJSON, Generic, Show, ToJSON)
+
+updateDesc ∷ Card Effect → CardVersions
 updateDesc card = let
   processedEffects = map effectToProcessed card.effects
   normalizedLeading = Text.strip card.leadingText
@@ -157,11 +174,11 @@ updateDesc card = let
   final
     = mapAllText (Text.replace "SUMMONING conditions" "Summoning conditions")
     . uppercaseKeywords
-    $ splitActivationsAndConditions
-    $ mapAllText (rewordSearch . rewordBounce . rewordPiercing . rewordMill)
-    $ tagPhases
-    $ tagOncePerTurns
-    $ mapAllText
+    . splitActivationsAndConditions
+    . mapAllText (rewordSearch . rewordBounce . rewordPiercing . rewordMill)
+    . tagPhases
+    . tagOncePerTurns
+    . mapAllText
       ( Text.replace "destroyed by battle or card effect" "destroyed"
       . Text.replace "destroyed by battle or card effects" "destroyed"
       . Text.replace "Send the top card of your Deck to the GY" "MILL 1 card"
@@ -169,19 +186,29 @@ updateDesc card = let
       . Text.replace "●" "● "
       )
     $ tagQuickEffects withProcessedEffectsAndNormalizedLeading
-  (finalLeadingText, finalEffects) = fromUnregisteredEffects final.leadingText final.effects
-  in Card
-    { name = final.name
-    , leadingText = finalLeadingText
-    , effects = map processedToEffect finalEffects
-    , pendulumEffects = map processedToEffect final.pendulumEffects
+  (finalLeadingText, finalEffects) = fromUnregisteredEffects False final.leadingText final.effects
+  (finalLeadingTextWithEmptyLines, _) =
+    fromUnregisteredEffects True final.leadingText final.effects
+  in CardVersions
+    { regular = Card
+      { name = final.name
+      , leadingText = finalLeadingText
+      , effects = map (processedToEffect False) finalEffects
+      , pendulumEffects = map (processedToEffect False) final.pendulumEffects
+      }
+    , withEmptyLines = Card
+      { name = final.name
+      , leadingText = finalLeadingTextWithEmptyLines
+      , effects = map (processedToEffect True) finalEffects
+      , pendulumEffects = map (processedToEffect True) final.pendulumEffects
+      }
     }
 
-fromUnregisteredEffects ∷ Text → [ProcessedEffect] → (Text, [ProcessedEffect])
-fromUnregisteredEffects leadingText effects = let
+fromUnregisteredEffects ∷ Bool → Text → [ProcessedEffect] → (Text, [ProcessedEffect])
+fromUnregisteredEffects emptyLines leadingText effects = let
   (unregisteredEffects, effectsWithoutUnregistered) = partition (.unregistered) effects
   leadingTextContainingUnregisteredEffects =
-    leadingText ⊕ Text.concat (map (effectText . processedToEffect) unregisteredEffects)
+    leadingText ⊕ Text.concat (map (effectText . processedToEffect emptyLines) unregisteredEffects)
   in (leadingTextContainingUnregisteredEffects, effectsWithoutUnregistered)
 
 -- | atm we only parse one specific case: zero registered effects and the entire
@@ -203,14 +230,14 @@ getUnregisteredEffects leadingText effects
       cond ←
         (try do
           let end = noneOf ['.', ':'] *> void newline
-          condStart ← toText <$> manyTill anySingle (try (lookAhead end) <|> eof)
+          condStart ← manyTill anySingle (try (lookAhead end) <|> eof)
           condLastChar ← one <$> anySingle
           void newline
           pure (condStart ⊕ condLastChar)
         ) <|> pure ""
-      effectTxt ← (Just . toText <$> someTill anySingle eof) <|> pure Nothing
-      let effect = effectTxt <&> basicProcessedEffectFromText 0
-      pure (cond, maybeToList effect)
+      effectTxt ← optional $ someTill anySingle eof
+      let effect = basicProcessedEffectFromText 0 . toText <$> effectTxt
+      pure (toText cond, maybeToList effect)
     (summoningCondition, unregisteredEffects) =
       fromRight (error "") $ parse unregisteredEffectParser "" leadingText
     in (summoningCondition, unregisteredEffects ⧺ effects)
@@ -252,11 +279,11 @@ basicProcessedEffectFromText pos text =
     , unregistered = False
     }
 
-processedToEffect ∷ ProcessedEffect → Effect
-processedToEffect processed =
+processedToEffect ∷ Bool → ProcessedEffect → Effect
+processedToEffect emptyLines processed =
   Effect
     { mainEffect =
-        (if processed.leadingNewline then "\n" else "")
+        (if processed.leadingNewline then "\n" ⊕ if emptyLines then "\n" else "" else "")
         ⊕ maybe "" (⊕ " ") processed.enclosedNumber
         ⊕ Text.concat (map ((<> " | ") . Text.toUpper) $ ordNub processed.tags)
         ⊕ maybe "" formatCondition processed.condition
@@ -272,11 +299,6 @@ formatCondition = decorate "" ": "
 formatActivation ∷ Text → Text
 formatActivation = decorate "<b>" ";</b> "
 
-collapseNewlines ∷ Text → Text
-collapseNewlines txt
-  | "\n\n" `Text.isInfixOf` txt = collapseNewlines (Text.replace "\n\n" "\n" txt)
-  | otherwise = txt
-
 numberEffects ∷ Text → [ProcessedEffect] → [ProcessedEffect]
 numberEffects cardLeadingText effects = let
   effectsThatNeedNumbering = filter (mustBeNumbered . (.mainEffect)) effects
@@ -286,7 +308,8 @@ numberEffects cardLeadingText effects = let
         neEnclosedNums = nonEmpty enclosedNums
         enclosedCurrent = maybe '①' head neEnclosedNums
         enclosedRest = maybe [] tail neEnclosedNums
-        textSoFar = Text.concat (cardLeadingText : map (effectText . processedToEffect) newEffects)
+        textSoFar =
+          Text.concat (cardLeadingText : map (effectText . processedToEffect False) newEffects)
         mustUseEnclosed =
           (length effectsThatNeedNumbering > 1
             ∨ all (\x → Text.strip cardLeadingText ≢ x) ["", "dummy"]
@@ -402,7 +425,11 @@ splitActivationsAndConditions' sentence = let
       case Text.split (≡ '\n') $ fromMaybe "" conditionWithPreamble of
         []          → error "should never happen"
         [noNewline] → (Nothing, textNonEmpty noNewline)
-        prea:rest   → (textNonEmpty prea, textNonEmpty $ removeSurroundingSpaces $ Text.intercalate "\n" rest)
+        prea:rest   →
+          ( textNonEmpty prea
+          , fmap ((if isJust (textNonEmpty prea) then "" else "\n") <>)
+              . textNonEmpty . removeSurroundingSpaces $ Text.intercalate "\n" rest
+          )
     (activation, mainEffect) =
       case Text.split (≡ ';') everythingAfterCondition of
         []            → error "should never happen"
@@ -422,8 +449,8 @@ tagPhases = fmap \effect →
   parsePhase ∷ Text → Maybe (Text, Text)
   parsePhase = fromRight Nothing . parse
     (do
-      _during ← toText <$> string @String "During "
-      whose ← choice [string "your opponent's", string "the", string "your"]
+      _during ← string @String "During "
+      whose ← choice $ map string ["your opponent's", "the", "your"]
       let
         whoseAbbreviated =
           case whose of
@@ -431,35 +458,41 @@ tagPhases = fmap \effect →
             "your opponent's" → "opp's "
             "your"            → "your "
             _                 → error "unexpected whose"
-      void $ char ' '
-      phaseType ← toText <$> someTill anySingle (try (char ' '))
-      _phaseWord ← someTill anySingle (try (char ':' <|> char ','))
-      void $ char ' '
-      rest ← toText <$> manyTill anySingle eof
-      pure $ Just (whoseAbbreviated ⊕ phaseType ⊕ " phase", mapTextHead Text.toUpper rest)
+      char ' '
+      phaseTypeOrTurn ← (toString <$> string "turn") <|>
+        (do
+          phaseType ← someTill anySingle (try (char ' '))
+          _phaseWord ← string' "phase"
+          pure phaseType
+        )
+      _connector ← char ':' <|> char ','
+      char ' '
+      rest ← manyTill anySingle eof
+      let phaseOrTurnTag = if phaseTypeOrTurn ≡ "turn" then "turn" else phaseTypeOrTurn ⊕ " phase"
+      pure $ Just (toText (whoseAbbreviated ⊕ phaseOrTurnTag), toText $ mapHead toUpper rest)
     )
     ""
 
-reword ∷ Parser Text → Text → Text
+reword ∷ Parser String → Text → Text
 reword findAndReplaceP = fromRight (error "") . parse
   (do
-    everythingBefore ←
-      toText <$> manyTill anySingle (try (void $ lookAhead findAndReplaceP) <|> eof)
+    everythingBefore ← manyTill anySingle $ try (void $ lookAhead findAndReplaceP) <|> eof
     replacement ← optional findAndReplaceP
-    everythingAfter ← toText <$> many anySingle
+    everythingAfter ← many anySingle
     pure $ case replacement of
-      Nothing    → everythingBefore ⊕ everythingAfter
-      Just found → reword findAndReplaceP (everythingBefore ⊕ found ⊕ everythingAfter)
+      Nothing    → toText $ everythingBefore ⊕ everythingAfter
+      Just found → reword findAndReplaceP $ toText (everythingBefore ⊕ found ⊕ everythingAfter)
   )
   ""
 
 rewordBounce ∷ Text → Text
 rewordBounce = Text.replace "returned to the hand" "BOUNCED" . reword do
-  _return ← toText <$> string' "return "
-  what ← toText
-    <$> someTill anySingle
-      (try (string' " from the field to the hand" <|> string' " to the hand"))
-  pure $ "BOUNCE " ⊕ what
+  string' "return "
+  thingToBounce ← someTill anySingle $ try do
+    string " "
+    optional (string "from the field ")
+    string "to the hand"
+  pure $ "BOUNCE " ⊕ thingToBounce
 
 -- Piercing wordings:
 -- If [this card that was SPECIAL SUMMONED from the GY] attacks a Defense Position monster, inflict piercing battle damage.
@@ -468,41 +501,39 @@ rewordBounce = Text.replace "returned to the hand" "BOUNCED" . reword do
 -- During battle, when it attacks a Defense Position monster whose DEF is lower than the ATK of the equipped monster, inflict the difference as Battle Damage to your opponent.
 rewordPiercing ∷ Text → Text
 rewordPiercing = reword do
-  ifWord ← toText <$> string' "if "
-  what ← toText
-    <$> someTill (anySingleBut '.')
-      (try
-        (string' "attacks a defense position monster, inflict piercing battle damage"
-        <|> string' "attacks a Defense Position monster whose DEF is lower than the ATK of the equipped monster, inflict the difference as Battle Damage"
-        )
-      )
-  _toYourOpp ← optional $ string' " to your opponent"
-  let newStart = what & applyWhen (ifWord ≡ "If ") (mapTextHead Text.toUpper)
-  pure $ newStart ⊕ "is PIERCING"
+  ifWord ← string' "if "
+  thingThatIsPiercing ← someTill (anySingleBut '.') . try . choice $ map string'
+    [ "attacks a defense position monster, inflict piercing battle damage"
+    , "attacks a Defense Position monster whose DEF is lower than the ATK of the equipped monster, inflict the difference as Battle Damage"
+    ]
+  optional $ string' " to your opponent"
+  let capitalizedIfNeeded = applyWhen (ifWord ≡ "If ") (mapHead toUpper)
+  pure $ capitalizedIfNeeded thingThatIsPiercing ⊕ "is PIERCING"
 
 rewordMill ∷ Text → Text
 rewordMill = reword do
-  _return ← toText <$> string' "send "
-  what ← toText
-    <$> someTill (anySingleBut '.')
-      (try
-        (   string' " from the top of your deck to the gy"
-        <|> string' " from the top of your deck to the graveyard")
-        )
-  pure $ "MILL " ⊕ what
+  string' "send "
+  thingToMill ← someTill (anySingleBut '.') $ try do
+    string' " from the top of your deck to the "
+    choice $ map string' ["gy", "graveyard"]
+  pure $ "MILL " ⊕ thingToMill
 
 rewordSearch ∷ Text → Text
 rewordSearch = reword do
-  _add ← toText <$> string' "add "
+  string' "add "
   quantity ← numberChar
-  void hspace1
-  what ← toText <$> someTill (anySingleBut '.') (try (lookAhead (string' " from your deck")))
-  _fromYour ← string' " from your "
-  deckOrGy ← Text.toLower . toText <$> (string' "deck or gy" <|> string' "deck")
-  _toYourHand ← string' " to your hand"
-  _comma ← optional $ char ','
-  pure $
-    "SEARCH " ⊕ one quantity ⊕ " " ⊕ what ⊕ (if deckOrGy ≡ "deck or gy" then " (from DECK or GY)" else "")
+  hspace1
+  thingToSearch ← someTill (anySingleBut '.') . try . lookAhead $ string' " from your deck"
+  string' " from your "
+  deckOrGy ← choice $ map string' ["deck or gy", "deck"]
+  string' " to your hand"
+  optional $ char ','
+  pure
+    $ "SEARCH "
+    ⊕ one quantity
+    ⊕ " "
+    ⊕ thingToSearch
+    ⊕ (if Text.toLower deckOrGy ≡ "deck or gy" then " (from DECK or GY)" else "")
 
 tagOncePerTurns ∷ Card ProcessedEffect → Card ProcessedEffect
 tagOncePerTurns
@@ -691,13 +722,14 @@ tagOncePerTurns
 detectAndRemove ∷ Parser Text → Text → Maybe Text
 detectAndRemove partToRemoveP = fromRight (error "") . parse
   (do
-    everythingBeforeHopt ← toText
-      <$> manyTill anySingle (try (void (lookAhead partToRemoveP)) <|> eof)
+    everythingBeforeHopt ← manyTill anySingle (try (void (lookAhead partToRemoveP)) <|> eof)
     partToRemove ← optional partToRemoveP
-    everythingAfter ← textNonEmpty . toText <$> many anySingle
+    everythingAfter ← many anySingle
     pure $
       if isJust partToRemove then
-        Just $ Text.strip everythingBeforeHopt ⊕ maybe "" (" " <>) everythingAfter
+        Just
+          . Text.strip
+          . toText $ everythingBeforeHopt ⊕ maybe "" (" " <>) (strNonEmpty everythingAfter)
       else
         Nothing
   )
@@ -706,13 +738,13 @@ detectAndRemove partToRemoveP = fromRight (error "") . parse
 standardHoptParser ∷ Text → Text → Parser Text
 standardHoptParser start end = standardHoptParser' (string start) (string end)
 
-standardHoptParser' ∷ (Token s ~ Char, ToText a1, ToText a2, MonadParsec e s m) ⇒ m a1 → m a2 → m Text
+standardHoptParser' ∷ Parser Text → Parser Text → Parser Text
 standardHoptParser' startP endP = do
-  startStr ← toText <$> startP
-  name ← toText <$> someTill anySingle (try (lookAhead endP))
-  endStr ← toText <$> endP
+  startStr ← startP
+  name ← someTill' anySingle (try (lookAhead endP))
+  endStr ← endP
   spc ← maybe "" one <$> optional (char ' ')
-  pure (startStr ⊕ name ⊕ endStr ⊕ spc)
+  pure $ startStr ⊕ name ⊕ endStr ⊕ spc
 
 -- | Reports if Hopt detected and returns the string with the Hopt removed
 detectStandardHopt ∷ Text → Text → Maybe Text
@@ -763,20 +795,22 @@ tagQuickEffects = fmap tag where
     in effect
       & applyWhen isQuick (mapPEffectText removeQuickEffectText . (#tags %~ ("quick":)))
 
-quickEffectP ∷ Parser Text
+quickEffectP ∷ Parser ()
 quickEffectP = do
-  leadingSpace ← maybe "" one <$> optional (char ' ')
-  parensStart ← choice $ map string' ["(quick effect", "(this is a quick effect"]
-  dot ← maybe "" one <$> optional (char '.')
-  closingParens ← one <$> char ')'
-  pure $ leadingSpace ⊕ parensStart ⊕ dot ⊕ closingParens
+  optional (char ' ')
+  char '('
+  optional $ string' "this is a "
+  string' "quick effect"
+  optional $ char '.'
+  char ')'
+  pass
 
 removeQuickEffectP ∷ Parser Text
 removeQuickEffectP = do
-  prefix ← toText <$> manyTill anySingle (try (void (lookAhead quickEffectP)) <|> eof)
-  try (void quickEffectP <|> eof)
-  suffix ← toText <$> many anySingle
-  pure $ prefix ⊕ suffix
+  prefix ← manyTill anySingle $ try (lookAhead quickEffectP) <|> eof
+  try (quickEffectP <|> eof)
+  suffix ← many anySingle
+  pure . toText $ prefix ⊕ suffix
 
 removeQuickEffectText ∷ Text → Text
 removeQuickEffectText = toText . fromRight (error "") . parse removeQuickEffectP ""
@@ -787,16 +821,16 @@ hasQuickEffectText text = removeQuickEffectText text ≢ text
 
 -- ENCODING
 
-generateDescAndPartFiles ∷ [Card Effect] → IO ()
-generateDescAndPartFiles cards = do
+generateDescAndPartFiles ∷ FilePath → [Card Effect] → IO ()
+generateDescAndPartFiles suffix cards = do
   let
     cardTexts = map cardOriginalText cards
     newPartSrc
       = toLazyByteString
       . mconcat
       $ (putWord16le 0 : putWord16le 0 : map partDataToBinary (toPartDatas cards))
-  writeFileLBS (paths.part ⊕ ".new") newPartSrc
-  writeFileLBS (paths.desc ⊕ ".new") $ encodePretty cardTexts
+  writeFileLBS (paths.part ⊕ suffix) newPartSrc
+  writeFileLBS (paths.desc ⊕ suffix) $ encodePretty cardTexts
   where
   partDataToBinary ∷ PartData → Builder
   partDataToBinary (PartData start end) =
@@ -856,17 +890,17 @@ generateDescAndPartFiles cards = do
 
 -- DECODING
 
-getCards ∷ IO [Card Effect]
-getCards =
-  mkCards
+getCards ∷ (Text → Bool) → IO [Card Effect]
+getCards nameFilter =
+  mkCards nameFilter
     <$> decodeFile paths.name
     <*> decodeFile paths.desc
     <*> readFileLBS paths.part
     <*> readFileLBS paths.pidx
 
-mkCards ∷ [Text] → [Text] → BL.ByteString → BL.ByteString → [Card Effect]
-mkCards names (map encodeUtf8 → descs) partSrc pidxSrc =
-  map
+mkCards ∷ (Text → Bool) → [Text] → [Text] → BL.ByteString → BL.ByteString → [Card Effect]
+mkCards nameFilter names (map encodeUtf8 → descs) partSrc pidxSrc =
+  mapMaybe
     (\(name, desc, pidx) → let
       effectPositionsWithOriginalOrder ∷ [(PartData, Int)]
       effectPositionsWithOriginalOrder
@@ -915,7 +949,7 @@ mkCards names (map encodeUtf8 → descs) partSrc pidxSrc =
       pendulumEffects ∷ [Effect]
       pendulumEffects = drop pidx.effectCount allEffects
 
-      in Card name leadingText effects pendulumEffects
+      in if nameFilter name then Just $ Card name leadingText effects pendulumEffects else Nothing
     )
     (zip3 names descs pidxData)
   where

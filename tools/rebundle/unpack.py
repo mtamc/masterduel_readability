@@ -13,6 +13,7 @@ def getFilesList(path: str) -> list[str]:
             res.append(relative_path)
     return res
 
+shutil.rmtree('./original/')
 shutil.copytree('../../original_game_files/', './original/', dirs_exist_ok=True)
 os.makedirs("bytes", exist_ok=True)
 for filepath in getFilesList("./original"):
@@ -20,5 +21,6 @@ for filepath in getFilesList("./original"):
     for obj in env.objects:
         if obj.type.name == "TextAsset":
             data: Any = obj.read()
-            with open("./bytes/" + data.name + ".bytes", "wb") as f:
-                f.write(bytes(data.script))
+            if data.name.lower() in ["card_desc", "card_indx", "card_name", "card_part", "card_pidx"]:
+                with open("./bytes/" + data.name + ".bytes", "wb") as f:
+                    f.write(bytes(data.script))
