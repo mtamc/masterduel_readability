@@ -20,7 +20,7 @@ cp "./tools/rnduser0/Card_Part.bytes.dec" "./data/Card_Part.bytes.dec"
 cp "./tools/rnduser0/Card_Pidx.bytes.dec" "./data/Card_Pidx.bytes.dec"
 
 echo "STEP 3/5 | running the haskell program (this can take up to 2 minutes)"
-cabal run
+# cabal run
 
 echo "STEP 4/5 | encrypting the result"
 mkdir -p ./data/release_bytes
@@ -69,7 +69,7 @@ cp -r ./tools/rebundle/install_with_numbering_only ./release/install_with_number
 cp -r ./tools/rebundle/install_with_numbering_and_empty_lines_only ./release/install_with_numbering_and_empty_lines_only
 dat=$(date +%Y-%m-%d)
 cd release
-zip -r "./readable-card-effects-release-$dat.zip" ./uninstall ./install ./install_with_empty_lines ./.install_with_numbering_only ./install_with_numbering_and_empty_lines_only
+zip -r "./readable-card-effects-release-$dat.zip" ./uninstall ./install ./install_with_empty_lines ./install_with_numbering_only ./install_with_numbering_and_empty_lines_only
 cd ..
 
 echo "the release files are in ./release, also zipped to ./release/"
