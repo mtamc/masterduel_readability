@@ -27,6 +27,7 @@ main ∷ IO ()
 main = do
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Magical Contract Door", "Ohime", "Mayowashidori", "Durendal", "Ojamagic", "Magical Contract Door", "Hecatrice", "Hidden Armory"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster"])
+  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster", "Original Sinful Spoils", "Ohime"])
   cards ← getCards (const True)
   writeFileLBS "./data/decoded_cards.json" (encodePretty cards)
   -- generateDescAndPartFiles cards
@@ -232,7 +233,8 @@ updateDesc card = let
       }
     , numberingAndDoubleNewlinesOnly = Card
       { name = card.name
-      , leadingText = rewordedLeadingTextWithEmptyLines
+      , leadingText =
+        fst $ fromUnregisteredEffects True leadingWithoutUnregisteredEffects numberedEffects
       , effects = map (processedToEffect True) numberedEffects
       , pendulumEffects = map (processedToEffect True) numberedPendulumEffects
       }
@@ -324,6 +326,13 @@ processedToEffect emptyLines processed =
         ⊕ maybe "" formatActivation processed.activation
         ⊕ processed.mainEffect
     , trailingText = processed.trailingText
+      & mapTextHead
+        (\c →
+          case (c ≡ " ", emptyLines) of
+            (True, True)  → "\n\n"
+            (True, False) → "\n"
+            (False, _)    → c
+        )
     , originalPosition = processed.originalPosition
     }
 

@@ -20,7 +20,7 @@ cp "./tools/rnduser0/Card_Part.bytes.dec" "./data/Card_Part.bytes.dec"
 cp "./tools/rnduser0/Card_Pidx.bytes.dec" "./data/Card_Pidx.bytes.dec"
 
 echo "STEP 3/5 | running the haskell program (this can take up to 2 minutes)"
-# cabal run
+cabal run
 
 echo "STEP 4/5 | encrypting the result"
 mkdir -p ./data/release_bytes
