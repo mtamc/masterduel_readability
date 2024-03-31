@@ -29,7 +29,7 @@ main = do
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Magical Contract Door", "Ohime", "Mayowashidori", "Durendal", "Ojamagic", "Magical Contract Door", "Hecatrice", "Hidden Armory"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster", "Original Sinful Spoils", "Ohime"])
-  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Gigobyte"])
+  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Kunai with Chain"])
   cards ← getCards (const True)
   writeFileLBS "./data/decoded_cards.json" (encodePretty cards)
   -- generateDescAndPartFiles cards
@@ -516,7 +516,7 @@ splitActivationsAndConditions' sentence = let
       case Text.split (≡ ';') everythingAfterCondition of
         []            → error "should never happen"
         [noSemicolon] → (Nothing, noSemicolon)
-        acti:rest     → (textNonEmpty acti, removeSurroundingSpaces $ Text.intercalate "\n" rest)
+        acti:rest     → (textNonEmpty acti, removeSurroundingSpaces $ Text.intercalate ";" rest)
     in (preamble, condition, activation, mainEffect)
 
 removeSurroundingSpaces ∷ Text → Text
