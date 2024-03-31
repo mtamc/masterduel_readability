@@ -1,6 +1,11 @@
 #!/bin/bash
 set -e
 
+# this file isn't DRY at all lol
+
+ver="$1"
+date=$(date +%Y-%m-%d)
+
 echo "Ensure the files at ./original_game_files are up to date! You can update them with ./get_original_files.sh (THE MOD SHOULD NOT BE INSTALLED WHEN YOU DO THIS)"
 
 echo "STEP 1/5 | exporting game file assets as bytes"
@@ -67,9 +72,10 @@ cp -r ./tools/rebundle/install ./release/install
 cp -r ./tools/rebundle/install_with_empty_lines ./release/install_with_empty_lines
 cp -r ./tools/rebundle/install_with_numbering_only ./release/install_with_numbering_only
 cp -r ./tools/rebundle/install_with_numbering_and_empty_lines_only ./release/install_with_numbering_and_empty_lines_only
-dat=$(date +%Y-%m-%d)
+cp ./data/decoded_cards.updated.json ./release/effects.json
+cp ./data/difference_with_last_release.json ./release/difference_with_last_release.json
 cd release
-zip -r "./readable-card-effects-release-$dat.zip" ./uninstall ./install ./install_with_empty_lines ./install_with_numbering_only ./install_with_numbering_and_empty_lines_only
+zip -r "./readable-card-effects-release-${date}-${ver}.zip" ./uninstall ./install ./install_with_empty_lines ./install_with_numbering_only ./install_with_numbering_and_empty_lines_only ./difference_with_last_release.json
 cd ..
 
 echo "the release files are in ./release, also zipped to ./release/"

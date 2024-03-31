@@ -16,6 +16,7 @@ import Data.ByteString.Lazy     qualified as BL
 import Data.Char                (toUpper)
 import Data.List                (partition, unzip4)
 import Data.List.Extra          (dropEnd)
+import Data.Map                 qualified as Map
 import Data.Text                qualified as Text
 import Prelude                  hiding (many)
 import Relude.Unsafe            qualified as Unsafe
@@ -28,6 +29,7 @@ main = do
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Magical Contract Door", "Ohime", "Mayowashidori", "Durendal", "Ojamagic", "Magical Contract Door", "Hecatrice", "Hidden Armory"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster", "Original Sinful Spoils", "Ohime"])
+  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Gigobyte"])
   cards ← getCards (const True)
   writeFileLBS "./data/decoded_cards.json" (encodePretty cards)
   -- generateDescAndPartFiles cards
@@ -45,18 +47,48 @@ main = do
         . updateDesc
         )
         cards
-  writeFileLBS "./data/decoded_cards.updated.json" (encodePretty cardsWithUpdatedDescs)
-  writeFileLBS "./data/decoded_cards.updated.withNewlines.json"
-    (encodePretty cardsWithUpdatedDescsAndDoubleNewlines)
-  writeFileLBS "./data/decoded_cards.updated.numberingOnly.json"
-    (encodePretty cardsWithNumberingAndNewlines)
-  writeFileLBS "./data/decoded_cards.updated.numberingAndNewlines.json"
-    (encodePretty cardsWithNumberingAndDoubleNewlines)
-  generateDescAndPartFiles ".new" cardsWithUpdatedDescs
-  generateDescAndPartFiles ".withemptylines.new" cardsWithUpdatedDescsAndDoubleNewlines
-  generateDescAndPartFiles ".numberingOnly.new" cardsWithNumberingAndNewlines
-  generateDescAndPartFiles ".numberingAndNewlines.new" cardsWithNumberingAndDoubleNewlines
+  mapM_
+    (\(debugPath, suffix, cardData) → do
+      writeFileLBS debugPath $ encodePretty cardData
+      generateDescAndPartFiles suffix cardsWithUpdatedDescs
+    )
+    [ ( "./data/decoded_cards.updated.json", ".new", cardsWithUpdatedDescs )
+    , ( "./data/decoded_cards.updated.withNewlines.json"
+      , ".withemptylines.new"
+      , cardsWithUpdatedDescsAndDoubleNewlines
+      )
+    , ( "./data/decoded_cards.updated.numberingOnly.json"
+      , ".numberingOnly.new"
+      , cardsWithNumberingAndNewlines
+      )
+    , ( "./data/decoded_cards.updated.numberingAndNewlines.json"
+      , ".numberingAndNewlines.new"
+      , cardsWithNumberingAndDoubleNewlines
+      )
+    ]
+  generateDiff
   echo "done"
+
+data CardDiff
+  = CardDiff
+    { previous ∷ Maybe Text
+    , _current ∷ Text
+    }
+  deriving (Eq, FromJSON, Generic, Show, ToJSON)
+
+
+generateDiff ∷ IO ()
+generateDiff = do
+  let toMap cards = Map.fromList $ map (\c → (c.name, cardOriginalText c)) cards
+  previousReleaseEffects ← toMap <$> decodeFile @[Card Effect] "./release/effects.json"
+  currentEffects ← toMap <$> decodeFile @[Card Effect] "./data/decoded_cards.updated.json"
+  let
+    diff
+      = Map.filter (\d → d.previous ≢ Just d._current)
+      $ Map.mapWithKey (\name → CardDiff (Map.lookup name previousReleaseEffects))
+        currentEffects
+  writeFileLBS "./data/difference_with_last_release.json" (encodePretty diff)
+  echo "made diff"
 
 
 -- CONFIG
@@ -252,12 +284,13 @@ fromUnregisteredEffects emptyLines leadingText effects = let
 -- hard to know if this is one or multiple effects and how to separate them.
 getUnregisteredEffects ∷ Text → [ProcessedEffect] → (Text, [ProcessedEffect])
 getUnregisteredEffects leadingText effects
-  | not (null effects) ∨ Text.length (Text.filter (≡ '.') leadingText) > 2 =
-    (leadingText, effects)
-  | Text.length (Text.filter (≡ '.') leadingText) ≡ 2
+  -- | not (null effects) ∨ Text.length (Text.filter (≡ '.') leadingText) > 2 =
+    -- (leadingText, effects)
+  | not (null effects) = (leadingText, effects)
+  | Text.length (Text.filter (≡ '.') leadingText) > 1
     ∧ not
-      (isAllowableSecondSentence
-        (Text.split (≡ '.') leadingText & drop 1 & map (<> ". ") & Text.concat & Text.strip)
+      (all (isAllowableSecondSentence . Text.strip . (<> "."))
+        (drop 1 $ Text.split (≡ '.') leadingText)
       )
       = (leadingText, effects)
   | otherwise = let
@@ -282,9 +315,11 @@ isAllowableSecondSentence ∷ Text → Bool
 isAllowableSecondSentence txt
   = txt
   ∈ [ "It cannot attack this turn."
+    , "Your Deck is then shuffled."
+    , "."
     ]
   ∨ "Otherwise, " `Text.isPrefixOf` txt
-  ∨ isJust (detectStandardHopt "this" txt)
+  ∨ isJust (detectStandardHopt txt)
 
 {-| this uses default value and is not the fully processed state -}
 effectToProcessed ∷ Effect → ProcessedEffect
@@ -399,20 +434,24 @@ mapAllText f
 
 uppercaseKeywords ∷ Card ProcessedEffect → Card ProcessedEffect
 uppercaseKeywords = mapAllText \txt
-  → Text.replace "Set" "SET"
-  . Text.replace "Seting" "SETTING"
+  -- → Text.replace "Set" "SET"
+  -- . Text.replace "Setting" "SETTING"
+  → (\t → foldr (\substr → Text.replace (Text.toUpper substr) (Text.toLower substr)) t substringsToUncapitalize)
   $ foldr subStrToUpperCase txt substringsToCapitalize
   where
+  substringsToUncapitalize ∷ [Text]
+  substringsToUncapitalize =
+    [ "destroyed", "negated", "discarded", "banished", "excavated", "drew" ]
   substringsToCapitalize ∷ [Text]
   substringsToCapitalize =
-    [ "summoning", "summoned", "summon", "summons", "special summon" , "normal summon" , "tribute summon" , "ritual summon" , "pendulum summon" , "flip summon", "synchro summon" , "link summon" , "xyz summon" , "fusion summon", "normal or special summon"
-    , "destroy", "destroying", "destroyed", "destroys"
+    -- [ "summoning", "summoned", "summon", "summons", "special summon" , "normal summon" , "tribute summon" , "ritual summon" , "pendulum summon" , "flip summon", "synchro summon" , "link summon" , "xyz summon" , "fusion summon", "normal or special summon"
+    [ "destroy", "destroying", "destroyed", "destroys"
     , "negate", "negating", "negated", "negates"
     , "discard", "discarding", "discarded", "discards"
-    , "extra deck"
+    -- , "extra deck"
     , "quick effect"
-    , "hand"
-    , "deck"
+    -- , "hand"
+    -- , "deck"
     , "banish", "banished", "banishing", "banishes"
     , "excavate", "excavating", "excavated", "excavates"
     , "draw", "draws", "drew", "drawing"
@@ -529,7 +568,7 @@ reword findAndReplaceP = fromRight (error "") . parse
   ""
 
 rewordBounce ∷ Text → Text
-rewordBounce = Text.replace "returned to the hand" "BOUNCED" . reword do
+rewordBounce = Text.replace "returned to the hand" "bounced" . reword do
   string' "return "
   thingToBounce ← someTill anyNotConjunction $ try do
     string " "
@@ -618,10 +657,10 @@ tagOncePerTurns
   -- e.g. Motor Shell (trailingText)
   tagStandardHopt ∷ ProcessedEffect → ProcessedEffect
   tagStandardHopt effect =
-    case detectStandardHopt "this" effect.mainEffect of
+    case detectStandardHopt effect.mainEffect of
       Just changed → effect & #mainEffect .~ changed & #tags %~ ("hopt":)
       Nothing →
-        case detectStandardHopt "this" effect.trailingText of
+        case detectStandardHopt effect.trailingText of
           Just changed → effect & #trailingText .~ changed & #tags %~ ("hopt":)
           Nothing      → effect
   tagPreviousHopt ∷ ProcessedEffect → ProcessedEffect
@@ -671,7 +710,7 @@ tagOncePerTurns
     case viaNonEmpty last (getEffects card) of
       Nothing → card
       Just effect →
-        case detectStandardHopt "each" effect.mainEffect of
+        case detectStandardHoptEach effect.mainEffect of
           Just changed →
             card
               & #effects
@@ -679,7 +718,7 @@ tagOncePerTurns
                      ⋙ map (#tags %~ ("hopt":))
                      )
           Nothing →
-            case detectStandardHopt "each" effect.trailingText of
+            case detectStandardHoptEach effect.trailingText of
               Just changed →
                 card
                   & overEffects
@@ -687,7 +726,7 @@ tagOncePerTurns
                     ⋙ map (#tags %~ ("hopt":))
                     )
               Nothing →
-                case detectStandardHopt "each" card.leadingText of
+                case detectStandardHoptEach card.leadingText of
                   Just changed →
                     card
                       & #leadingText .~ changed
@@ -796,9 +835,17 @@ standardHoptParser' startP endP = do
   pure $ startStr ⊕ name ⊕ endStr ⊕ spc
 
 -- | Reports if Hopt detected and returns the string with the Hopt removed
-detectStandardHopt ∷ Text → Text → Maybe Text
-detectStandardHopt thisOrEach = detectAndRemove $ standardHoptParser
-  ("You can only use " ⊕ thisOrEach ⊕ " effect of \"")
+detectStandardHopt ∷ Text → Maybe Text
+detectStandardHopt
+  = detectAndRemove $ choice
+  [ standardHoptParser "You can only use this effect of \"" "\" once per turn."
+  -- Gather Your Mind only
+  , standardHoptParser "You can only use 1 \"" "\" per turn."
+  ]
+
+detectStandardHoptEach ∷ Text → Maybe Text
+detectStandardHoptEach = detectAndRemove $ standardHoptParser
+  "You can only use each effect of \""
   "\" once per turn."
 
 detectPreviousHopt ∷ Text → Maybe Text

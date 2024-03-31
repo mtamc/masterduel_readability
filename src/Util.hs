@@ -1,10 +1,11 @@
 {-# OPTIONS_GHC -Wno-deprecations #-}
 module Util where
 
-import Data.Aeson           hiding (Null)
-import Data.Text            qualified as Text
+import Data.Aeson       hiding (Null)
+import Data.Text        qualified as Text
+import System.Directory (createDirectory, doesDirectoryExist)
 import Text.Megaparsec
-import Text.Megaparsec.Char
+
 
 decodeFile ∷ FromJSON a ⇒ FilePath → IO a
 decodeFile f = eitherDecodeFileStrict f ≫= \case
@@ -37,3 +38,8 @@ someTill' a b = toText <$> someTill a b
 
 manyTill' ∷ (ToText [a], MonadPlus f) ⇒ f a → f end → f Text
 manyTill' a b = toText <$> manyTill a b
+
+createDirectoryIfMissing ∷ FilePath → IO ()
+createDirectoryIfMissing dirPath = do
+    directoryExists ← doesDirectoryExist dirPath
+    unless directoryExists $ createDirectory dirPath
