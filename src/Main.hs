@@ -29,10 +29,10 @@ main = do
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Magical Contract Door", "Ohime", "Mayowashidori", "Durendal", "Ojamagic", "Magical Contract Door", "Hecatrice", "Hidden Armory"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster", "Original Sinful Spoils", "Ohime"])
-  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Kunai with Chain"])
+  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["The First Darklord"])
+  --
   cards ← getCards (const True)
   writeFileLBS "./data/decoded_cards.json" (encodePretty cards)
-  -- generateDescAndPartFiles cards
   let
     ( cardsWithUpdatedDescs, cardsWithUpdatedDescsAndDoubleNewlines, cardsWithNumberingAndNewlines, cardsWithNumberingAndDoubleNewlines )
       = unzip4
@@ -50,7 +50,7 @@ main = do
   mapM_
     (\(debugPath, suffix, cardData) → do
       writeFileLBS debugPath $ encodePretty cardData
-      generateDescAndPartFiles suffix cardsWithUpdatedDescs
+      generateDescAndPartFiles suffix cardData
     )
     [ ( "./data/decoded_cards.updated.json", ".new", cardsWithUpdatedDescs )
     , ( "./data/decoded_cards.updated.withNewlines.json"
@@ -363,10 +363,12 @@ processedToEffect emptyLines processed =
     , trailingText = processed.trailingText
       & mapTextHead
         (\c →
-          case (c ≡ " ", emptyLines) of
-            (True, True)  → "\n\n"
-            (True, False) → "\n"
-            (False, _)    → c
+          case (c ≡ " ", c ≡ "\n", emptyLines) of
+            (True, _, True)       → "\n\n"
+            (True, _, False)      → "\n"
+            (False, True, _)      → c
+            (False, False, True)  → "\n\n" ⊕ c
+            (False, False, False) → "\n" ⊕ c
         )
     , originalPosition = processed.originalPosition
     }
@@ -772,13 +774,18 @@ tagOncePerTurns
         case detectFollowingOneOnlyOnce firstEffect.trailingText of
           Just changed →
             card
-              & #effects %~ mapHead (#trailingText .~ changed ⋙ #leadingNewline .~ True)
-              & #leadingText %~
-                (\leading →
-                  leading
-                  ⊕ (if leading ≡ "" then "" else "\n")
-                  ⊕ "HOPT | You can use ONE of:"
+              & #effects
+                %~ mapHead
+                ( #trailingText .~ changed
+                  ⊕ ((if changed ≡ "" then "" else "\n") ⊕ "HOPT | You can use ONE of:")
+                ⋙ #leadingNewline .~ True
                 )
+              -- & #leadingText %~
+                -- (\leading →
+                  -- leading ⊕ (if Text.strip changed ≢ "" then "" else
+                  -- (if leading ≡ "" then "" else "\n")
+                  -- ⊕ "HOPT | You can use ONE of:")
+                -- )
           Nothing →
             case detectFollowingOneOnlyOnce card.leadingText of
               Nothing → card
@@ -818,6 +825,8 @@ detectAndRemove partToRemoveP = fromRight (error "") . parse
         Just
           . Text.strip
           . toText $ everythingBeforeHopt ⊕ maybe "" (" " <>) (strNonEmpty everythingAfter)
+
+
       else
         Nothing
   )
@@ -951,7 +960,8 @@ generateDescAndPartFiles suffix cards = do
 
   toEffectPartData ∷ Text → Effect → PartData
   toEffectPartData originalText e = let
-    start = Unsafe.fromJust $ utf8SubIndex e.mainEffect originalText
+    start = fromMaybe (error $ "|| " ⊕ e.mainEffect ⊕ " | " ⊕ originalText)
+      $ utf8SubIndex e.mainEffect originalText
     end = start + BS.length (encodeUtf8 e.mainEffect)
     in PartData start end
 
