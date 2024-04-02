@@ -29,8 +29,7 @@ main = do
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Magical Contract Door", "Ohime", "Mayowashidori", "Durendal", "Ojamagic", "Magical Contract Door", "Hecatrice", "Hidden Armory"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster", "Original Sinful Spoils", "Ohime"])
-  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["The First Darklord"])
-  --
+  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Cyber Dragon Herz"])
   cards ← getCards (const True)
   writeFileLBS "./data/decoded_cards.json" (encodePretty cards)
   let
@@ -751,7 +750,10 @@ tagOncePerTurns
         case detectOneOnlyOnce lastEffect.trailingText of
           Just changed →
             card
-              & #effects %~ (mapHead (#leadingNewline .~ True) . mapLast (#trailingText .~ changed))
+              & #effects %~
+                ( mapHead (#leadingNewline .~ True)
+                . mapLast (#trailingText .~ changed)
+                )
               & #leadingText %~
                 (\leading →
                   leading
@@ -778,7 +780,7 @@ tagOncePerTurns
                 %~ mapHead
                 ( #trailingText .~ changed
                   ⊕ ((if changed ≡ "" then "" else "\n") ⊕ "HOPT | You can use ONE of:")
-                ⋙ #leadingNewline .~ True
+                -- >>> #leadingNewline .~ (changed ≢ "")
                 )
               -- & #leadingText %~
                 -- (\leading →
