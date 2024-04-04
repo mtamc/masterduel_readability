@@ -29,7 +29,7 @@ main = do
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Magical Contract Door", "Ohime", "Mayowashidori", "Durendal", "Ojamagic", "Magical Contract Door", "Hecatrice", "Hidden Armory"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster", "Original Sinful Spoils", "Ohime"])
-  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Cyber Dragon Herz"])
+  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Baronne", "Bagooska", "Donner"])
   cards ← getCards (const True)
   writeFileLBS "./data/decoded_cards.json" (encodePretty cards)
   let
@@ -275,8 +275,16 @@ fromUnregisteredEffects ∷ Bool → Text → [ProcessedEffect] → (Text, [Proc
 fromUnregisteredEffects emptyLines leadingText effects = let
   (unregisteredEffects, effectsWithoutUnregistered) = partition (.unregistered) effects
   leadingTextContainingUnregisteredEffects =
-    leadingText ⊕ Text.concat (map (effectText . processedToEffect emptyLines) unregisteredEffects)
+    applyWhen emptyLines singleNewlinesToDouble leadingText
+      ⊕ Text.concat (map (effectText . processedToEffect emptyLines) unregisteredEffects)
   in (leadingTextContainingUnregisteredEffects, effectsWithoutUnregistered)
+
+singleNewlinesToDouble ∷ Text → Text
+singleNewlinesToDouble = reword do
+  before ← anySingleBut '\n'
+  newline
+  after ← anySingleBut '\n'
+  pure $ one before ⊕ "\n\n" ⊕ one after
 
 -- | atm we only parse one specific case: zero registered effects and the entire
 -- leading text is one sentence. if there are multiple sentences then it's very
@@ -455,7 +463,7 @@ uppercaseKeywords = mapAllText \txt
     -- , "deck"
     , "banish", "banished", "banishing", "banishes"
     , "excavate", "excavating", "excavated", "excavates"
-    , "draw", "draws", "drew", "drawing"
+    , "draw", "draws", "drew", "drawing", "drawn"
     , "piercing"
     ]
   subStrToUpperCase ∷ Text → Text → Text
@@ -533,6 +541,7 @@ tagPhases = fmap \effect →
   parsePhase = fromRight Nothing . parse
     (do
       _during ← string @String "During "
+      optional $ string "each of "
       whose ← choice $ map string ["your opponent's", "the", "your"]
       let
         whoseAbbreviated =
@@ -545,13 +554,14 @@ tagPhases = fmap \effect →
       phaseTypeOrTurn ← (toString <$> string "turn") <|>
         (do
           phaseType ← someTill anySingle (try (char ' '))
-          _phaseWord ← string' "phase"
-          pure phaseType
+          string' "phase"
+          pluralS ← optional $ string "s"
+          pure $ phaseType ⊕ " phase" ⊕ maybe "" toString pluralS
         )
       _connector ← char ':' <|> char ','
       char ' '
       rest ← manyTill anySingle eof
-      let phaseOrTurnTag = if phaseTypeOrTurn ≡ "turn" then "turn" else phaseTypeOrTurn ⊕ " phase"
+      let phaseOrTurnTag = if phaseTypeOrTurn ≡ "turn" then "turn" else phaseTypeOrTurn
       pure $ Just (toText (whoseAbbreviated ⊕ phaseOrTurnTag), toText $ mapHead toUpper rest)
     )
     ""
@@ -562,9 +572,12 @@ reword findAndReplaceP = fromRight (error "") . parse
     everythingBefore ← manyTill anySingle $ try (void $ lookAhead findAndReplaceP) <|> eof
     replacement ← optional findAndReplaceP
     everythingAfter ← many anySingle
+    -- TODO in future release: make this less hacky?
+    let fixCommaPeriod = Text.replace ",." "."
     pure $ case replacement of
       Nothing    → toText $ everythingBefore ⊕ everythingAfter
-      Just found → reword findAndReplaceP $ toText (everythingBefore ⊕ found ⊕ everythingAfter)
+      Just found → reword findAndReplaceP
+        $ fixCommaPeriod $ toText (everythingBefore ⊕ found ⊕ everythingAfter)
   )
   ""
 
@@ -685,11 +698,14 @@ tagOncePerTurns
       ( result ⧺
         [ effect
           & #tags %~ ("hopt":)
-          & #mainEffect %~ Text.replace "● " ""
+          & #mainEffect %~
+            (\ef →
+              applyWhen (not ("1 of these" `Text.isInfixOf` ef)) (Text.replace "● " "") ef
+            )
           & #enclosedNumber .~
-            Just case foldMapM (textNonEmpty ↢ (.enclosedNumber)) $ reverse result of
-              Nothing → one $ Unsafe.head enclosedList
-              Just (Text.head → lastEnclosed) →
+            Just case mapMaybe (textNonEmpty ↢ (.enclosedNumber)) $ reverse result of
+              [] → one $ Unsafe.head enclosedList
+              (Text.head → lastEnclosed):_ →
                 one . Unsafe.head . drop 1 $ dropWhile (≢ lastEnclosed) enclosedList
         ]
       , True
@@ -889,9 +905,13 @@ detectSsHopt = detectAndRemove $ standardHoptParser
   "\" once per turn this way."
 
 detectFollowingHopt ∷ Text → Maybe Text
-detectFollowingHopt = detectAndRemove $ standardHoptParser
-  "You can only use each of the following effects of \""
-  "\" once per turn."
+detectFollowingHopt = detectAndRemove $ standardHoptParser'
+  (choice $ map string
+    [ "You can only use each of the following effects of \""
+    , "You can only use each of these effects of \""
+    ]
+  )
+  (string "\" once per turn.")
 
 tagQuickEffects ∷ Card ProcessedEffect → Card ProcessedEffect
 tagQuickEffects = fmap tag where
