@@ -1,6 +1,86 @@
 {
-    "Dreaming Reality of Nemleria, Realized": {
-        "_current": "① Gains 100 ATK for each face-down card in your Extra Deck.\n② HOPT | If this card is in your hand: <b>You can target 1 monster you control;</b> place it on the bottom of the Deck, and if you do, Special Summon this card.\n③ HOPT | If this card is Special Summoned: <b>You can activate 1 of these effects;</b> \n● Add 1 \"Dreaming Nemleria\" from your Deck to your face-up Extra Deck.\n● Change 1 other face-up monster on the field to face-down Defense Position.",
-        "previous": "① Gains 100 ATK for each face-down card in your Extra Deck.\n② HOPT | If this card is in your hand: <b>You can target 1 monster you control;</b> place it on the bottom of the Deck, and if you do, Special Summon this card.\n③ HOPT | If this card is Special Summoned: <b>You can activate 1 of these effects;</b> \nAdd 1 \"Dreaming Nemleria\" from your Deck to your face-up Extra Deck.\nChange 1 other face-up monster on the field to face-down Defense Position."
+    "Aztekipede, the Worm Warrior": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned by BANISHING 1 Insect-Type monster from your GY, and cannot be Special Summoned by other ways.\n① If this card inflicts battle damage to your opponent: Send the top card of their Deck to the GY.",
+        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned by BANISHING 1 Insect-Type monster from your GY, and cannot be Special Summoned by other ways. If this card inflicts battle damage to your opponent: Send the top card of their Deck to the GY."
+    },
+    "Blackwing - Aurora the Northern Lights": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by BANISHING 2 face-up monsters you control (1 \"Blackwing\" Tuner and 1 non-Tuner), and cannot be Special Summoned by other ways.\n① OPT | <b>You can BANISH 1 \"Blackwing\" Synchro Monster from your Extra Deck;</b> until the End Phase, this card's name and original ATK become that monster's, and replace this effect with that monster's original effects.",
+        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by BANISHING 2 face-up monsters you control (1 \"Blackwing\" Tuner and 1 non-Tuner), and cannot be Special Summoned by other ways. Once per turn: <b>You can BANISH 1 \"Blackwing\" Synchro Monster from your Extra Deck;</b> until the End Phase, this card's name and original ATK become that monster's, and replace this effect with that monster's original effects."
+    },
+    "Dark Eradicator Warlock": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by Tributing 1 \"Dark Magician\", and cannot be Special Summoned by other ways.\n① Each time a Normal Spell Card is activated, inflict 1000 damage to your opponent immediately after it resolves.",
+        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by Tributing 1 \"Dark Magician\", and cannot be Special Summoned by other ways. Each time a Normal Spell Card is activated, inflict 1000 damage to your opponent immediately after it resolves."
+    },
+    "Dark Sage": {
+        "_current": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand or Deck) by Tributing 1 \"Dark Magician\" immediately after applying the effect of \"Time Wizard\" in which you called the coin toss right.\n① When Special Summoned this way: SEARCH 1 Spell Card.",
+        "previous": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand or Deck) by Tributing 1 \"Dark Magician\" immediately after applying the effect of \"Time Wizard\" in which you called the coin toss right. When Special Summoned this way: SEARCH 1 Spell Card."
+    },
+    "Desert Twister": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by BANISHING 2 WIND and 1 EARTH monsters from your GY.\n① OPT | <b>You can DISCARD 1 card, then target 1 Spell/Trap on the field;</b> DESTROY it.",
+        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by BANISHING 2 WIND and 1 EARTH monsters from your GY. Once per turn: <b>You can DISCARD 1 card, then target 1 Spell/Trap on the field;</b> DESTROY it."
+    },
+    "Doom Dozer": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by BANISHING 2 Insect monsters from your GY.\n① If this card inflicts battle damage to your opponent: Send the top card of their Deck to the GY.",
+        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by BANISHING 2 Insect monsters from your GY. If this card inflicts battle damage to your opponent: Send the top card of their Deck to the GY."
+    },
+    "Dragon of Pride and Soul": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) while your opponent has 25 or more cards in their GY.\n① While you have 25 or more cards in your GY, this card gains 2500 ATK/DEF.",
+        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) while your opponent has 25 or more cards in their GY. While you have 25 or more cards in your GY, this card gains 2500 ATK/DEF."
+    },
+    "Frost and Flame Dragon": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by BANISHING 1 FIRE and 2 WATER monsters from your GY.\n① OPT | <b>You can DISCARD 1 card, then target 1 monster on the field;</b> DESTROY that target.",
+        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by BANISHING 1 FIRE and 2 WATER monsters from your GY. Once per turn: <b>You can DISCARD 1 card, then target 1 monster on the field;</b> DESTROY that target."
+    },
+    "Lightray Daedalus": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by having 4 or more LIGHT monsters in your GY, and cannot be Special Summoned by other ways.\n① OPT | <b>You can target 1 Field Spell Card and 2 other cards on the field;</b> DESTROY them.",
+        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by having 4 or more LIGHT monsters in your GY, and cannot be Special Summoned by other ways. Once per turn: <b>You can target 1 Field Spell Card and 2 other cards on the field;</b> DESTROY them."
+    },
+    "Lightray Diabolos": {
+        "_current": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand) by having 5 or more LIGHT monsters with different names in your GY.\n① OPT | <b>You can BANISH 1 LIGHT monster from your GY, then target 1 Set card your opponent controls;</b> reveal that target, then place that target on either the top or bottom of the Deck.",
+        "previous": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand) by having 5 or more LIGHT monsters with different names in your GY. Once per turn: <b>You can BANISH 1 LIGHT monster from your GY, then target 1 Set card your opponent controls;</b> reveal that target, then place that target on either the top or bottom of the Deck."
+    },
+    "Megarock Dragon": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by BANISHING any number of Rock monster(s) from your GY.\n① The original ATK/DEF of this card become the number of Rock monsters banished to Special Summon it x 700.",
+        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by BANISHING any number of Rock monster(s) from your GY. The original ATK/DEF of this card become the number of Rock monsters banished to Special Summon it x 700."
+    },
+    "Montage Dragon": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by sending 3 other monsters from your hand to the GY, and cannot be Special Summoned by other ways.\n① This card's ATK becomes the combined original Levels of the sent monsters x 300.",
+        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by sending 3 other monsters from your hand to the GY, and cannot be Special Summoned by other ways. This card's ATK becomes the combined original Levels of the sent monsters x 300."
+    },
+    "Red-Eyes Darkness Dragon": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by Tributing 1 \"Red-Eyes Black Dragon\".\n① Gains 300 ATK for each Dragon monster in your GY.",
+        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by Tributing 1 \"Red-Eyes Black Dragon\". Gains 300 ATK for each Dragon monster in your GY."
+    },
+    "Rosaria, the Stately Fallen Angel": {
+        "_current": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand) by BANISHING 2 Level 7 or higher Plant-Type monsters (1 from your hand and 1 from your GY).\n① OPT | You can NEGATE the effects of all other face-up cards currently on the field, until the end of this turn.",
+        "previous": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand) by BANISHING 2 Level 7 or higher Plant-Type monsters (1 from your hand and 1 from your GY). Once per turn: You can NEGATE the effects of all other face-up cards currently on the field, until the end of this turn."
+    },
+    "Sephylon, the Ultimate Timelord": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by having 10 or more monsters in your GY.\n① OPT | You can Special Summon 1 Level 8 or higher Fairy monster from your hand or GY, but its effects are negated, also its ATK becomes 4000.",
+        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by having 10 or more monsters in your GY. Once per turn: You can Special Summon 1 Level 8 or higher Fairy monster from your hand or GY, but its effects are negated, also its ATK becomes 4000."
+    },
+    "Spirit of the Pharaoh": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned by \"The First Sarcophagus\".\n① When this card is Special Summoned: <b>You can target up to 4 Level 2 or lower Zombie Normal Monsters in your GY;</b> Special Summon those targets.",
+        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned by \"The First Sarcophagus\". When this card is Special Summoned: <b>You can target up to 4 Level 2 or lower Zombie Normal Monsters in your GY;</b> Special Summon those targets."
+    },
+    "The Dark Creator": {
+        "_current": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand) by having 5 or more DARK monsters in your GY while you control no monsters.\n① OPT | <b>You can BANISH 1 DARK monster from your GY to target 1 DARK monster in your GY;</b> Special Summon that target.",
+        "previous": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand) by having 5 or more DARK monsters in your GY while you control no monsters. Once per turn: <b>You can BANISH 1 DARK monster from your GY to target 1 DARK monster in your GY;</b> Special Summon that target."
+    },
+    "The Rock Spirit": {
+        "_current": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand) by BANISHING 1 EARTH monster from your GY.\n① Gains 300 ATK during your opponent's Battle Phase only.",
+        "previous": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand) by BANISHING 1 EARTH monster from your GY. Gains 300 ATK during your opponent's Battle Phase only."
+    },
+    "Vampire Genesis": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by BANISHING 1 \"Vampire Lord\" you control.\n① OPT | <b>You can DISCARD 1 Zombie monster to the GY, then target 1 Zombie monster in your GY with a Level less than the discarded Zombie monster's;</b> Special Summon that target.",
+        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by BANISHING 1 \"Vampire Lord\" you control. Once per turn: <b>You can DISCARD 1 Zombie monster to the GY, then target 1 Zombie monster in your GY with a Level less than the discarded Zombie monster's;</b> Special Summon that target."
+    },
+    "Winged Kuriboh LV10": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned with \"Transcendent Wings\".\n① OPP'S BATTLE PHASE | QUICK | <b>You can Tribute this face-up card;</b> DESTROY as many Attack Position monsters your opponent controls as possible, and if you do, inflict damage to your opponent equal to the combined original ATK of those destroyed monster(s).",
+        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned with \"Transcendent Wings\". During your opponent's Battle Phase (QUICK EFFECT): <b>You can Tribute this face-up card;</b> DESTROY as many Attack Position monsters your opponent controls as possible, and if you do, inflict damage to your opponent equal to the combined original ATK of those destroyed monster(s)."
+    },
+    "Wulf, Lightsworn Beast": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned by a card effect.\n① If this card is sent from your Deck to the GY: Special Summon it.",
+        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned by a card effect. If this card is sent from your Deck to the GY: Special Summon it."
     }
 }

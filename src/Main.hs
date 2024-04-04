@@ -29,7 +29,7 @@ main = do
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Magical Contract Door", "Ohime", "Mayowashidori", "Durendal", "Ojamagic", "Magical Contract Door", "Hecatrice", "Hidden Armory"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster", "Original Sinful Spoils", "Ohime"])
-  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Baronne", "Bagooska", "Donner"])
+  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Winged Kuriboh LV10"])
   cards ← getCards (const True)
   writeFileLBS "./data/decoded_cards.json" (encodePretty cards)
   let
@@ -296,27 +296,49 @@ getUnregisteredEffects leadingText effects
   | not (null effects) = (leadingText, effects)
   | Text.length (Text.filter (≡ '.') leadingText) > 1
     ∧ not
-      (all (isAllowableSecondSentence . Text.strip . (<> "."))
-        (drop 1 $ Text.split (≡ '.') leadingText)
+      ( all (isAllowableSecondSentence . Text.strip . (<> "."))
+          (drop 1 $ Text.split (≡ '.') leadingText)
       )
+    ∧ not (isInherentSummonThenOneSentence leadingText)
       = (leadingText, effects)
   | otherwise = let
     unregisteredEffectParser ∷ Parser (Text, [ProcessedEffect])
     unregisteredEffectParser = do
       cond ←
         (try do
-          let end = noneOf ['.', ':'] *> void newline
-          condStart ← manyTill anySingle (try (lookAhead end) <|> eof)
+          let endP = noneOf ['.', ':'] *> void newline
+          condStart ← manyTill anySingle (try (lookAhead endP) <|> eof)
           condLastChar ← one <$> anySingle
           void newline
           pure (condStart ⊕ condLastChar)
         ) <|> pure ""
+      nomi ← if isInherentSummonThenOneSentence leadingText
+        then do
+          fstSentence ← manyTill anySingle (try (lookAhead (void $ char '.')) <|> eof)
+          char '.'
+          sndSentence ← manyTill anySingle (try (lookAhead (void $ char '.')) <|> eof)
+          char '.'
+          char ' '
+          pure $ fstSentence ⊕ "." ⊕ sndSentence ⊕ "."
+        else pure ""
       effectTxt ← optional $ someTill anySingle eof
       let effect = basicProcessedEffectFromText 0 . toText <$> effectTxt
-      pure (toText cond, maybeToList effect)
+      pure (toText (cond ⊕ nomi), maybeToList effect)
     (summoningCondition, unregisteredEffects) =
       fromRight (error "") $ parse unregisteredEffectParser "" leadingText
     in (summoningCondition, unregisteredEffects ⧺ effects)
+
+isInherentSummonThenOneSentence ∷ Text → Bool
+isInherentSummonThenOneSentence = Text.split (≡ '.') ⋙ \case
+  [a,b,_,d]
+    → Text.strip a ≡ "Cannot be Normal Summoned/Set"
+    ∧ any (`Text.isPrefixOf` Text.strip b)
+        [ "Must be Special Summoned "
+        , "This card cannot be Special Summoned except "
+        , "Must first be Special Summoned"
+        ]
+    ∧ d ≡ ""
+  _ → False
 
 isAllowableSecondSentence ∷ Text → Bool
 isAllowableSecondSentence txt
