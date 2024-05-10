@@ -253,7 +253,10 @@ updateDesc card = let
       { name = reworded.name
       , leadingText = rewordedLeadingTextWithEmptyLines
       , effects = map (processedToEffect True) rewordedEffects
-      , pendulumEffects = map (processedToEffect True) reworded.pendulumEffects
+      , pendulumEffects =
+        case reworded.pendulumEffects of
+          []   → []
+          x:xs → processedToEffect False x : map (processedToEffect True) xs
       }
     , numberingAndNewlinesOnly = Card
       { name = card.name
@@ -267,7 +270,10 @@ updateDesc card = let
       , leadingText =
         fst $ fromUnregisteredEffects True leadingWithoutUnregisteredEffects numberedEffects
       , effects = map (processedToEffect True) numberedEffects
-      , pendulumEffects = map (processedToEffect True) numberedPendulumEffects
+      , pendulumEffects =
+        case numberedPendulumEffects of
+          []   → []
+          x:xs → processedToEffect False x : map (processedToEffect True) xs
       }
     }
 
@@ -893,9 +899,13 @@ detectStandardHopt
   ]
 
 detectStandardHoptEach ∷ Text → Maybe Text
-detectStandardHoptEach = detectAndRemove $ standardHoptParser
-  "You can only use each effect of \""
-  "\" once per turn."
+detectStandardHoptEach = detectAndRemove $ standardHoptParser'
+  (choice $ map string
+    [ "You can only use each effect of \""
+    , "You can only use each Pendulum Effect of \""
+    ]
+  )
+  (string "\" once per turn.")
 
 detectPreviousHopt ∷ Text → Maybe Text
 detectPreviousHopt = detectAndRemove $ standardHoptParser
@@ -1021,11 +1031,11 @@ generateDescAndPartFiles suffix cards = do
       | substr ≡ "" = Just 0
       | correct ≡ substr = Just . BS.length $ encodeUtf8 incorrect
       | otherwise =
-          log
-            ( " |||| SUBSTR = " ⊕ substr
-            ⊕ " |||| INCORRECT = " ⊕ incorrect
-            ⊕ " |||| CORRECT = " ⊕ correct
-            )
+          -- log
+            -- ( " |||| SUBSTR = " ⊕ substr
+            -- ⊕ " |||| INCORRECT = " ⊕ incorrect
+            -- ⊕ " |||| CORRECT = " ⊕ correct
+            -- )
             Nothing
     go incorrect correct (Text.uncons → Just (cur, rest))
       | correctPlusCur ≡ substr = Just . BS.length $ encodeUtf8 incorrect
