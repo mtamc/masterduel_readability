@@ -31,8 +31,11 @@ def Decrypt(data: bytes, m_iCryptoKey):
 			v ^= i % 7
 			data[i] ^= v & 0xFF			
 		return zlib.decompress(data)		
-	except zlib.error:
-		#print('zlib.error because of wrong crypo key:' + hex(m_iCryptoKey))		
+	except zlib.error as e:
+		#  with open("error_data", "wb") as f:
+			#  f.write(data)
+		#  print(f"zlib error: {e}")
+		# print('zlib.error because of wrong crypo key:' + hex(m_iCryptoKey))
 		return bytearray()
 	#except Exception:
 	#else:
@@ -66,6 +69,7 @@ def CheckCryptoKey(filename, m_iCryptoKey):
 		return 1
 		
 def FindCryptoKey(filename):
+	keyfile = '!CryptoKey_' + filename + '.txt'
 	print('No correct crypto key found. Searching for crypto key...')	
 	m_iCryptoKey = -0x1	
 	data = ReadByteData(filename)	
@@ -74,16 +78,17 @@ def FindCryptoKey(filename):
 			m_iCryptoKey = m_iCryptoKey + 1				
 			dec_data = Decrypt(data, m_iCryptoKey)
 			#if os.stat('CARD_Indx.dec').st_size > 0:						
-	with open('!CryptoKey.txt', 'w') as f_CryptoKey:
+	with open(keyfile, 'w') as f_CryptoKey:
 		f_CryptoKey.write(hex(m_iCryptoKey))
 	f_CryptoKey.close()
-	print('Found correct crypto key "' + hex(m_iCryptoKey) + '" and wrote it to file "!CryptoKey.txt".')	
+	print('Found correct crypto key "' + hex(m_iCryptoKey) + '" and wrote it to file "' + keyfile + '".')	
 	return m_iCryptoKey
 
 def GetCryptoKey(filename):
-	if FileCheck('!CryptoKey.txt') == 1:
+	keyfile = '!CryptoKey_' + filename + '.txt'
+	if FileCheck(keyfile) == 1:
 		print('Trying to read crypto key from file...')
-		with open('!CryptoKey.txt', 'rt') as f_CryptoKey:		
+		with open(keyfile, 'rt') as f_CryptoKey:		
 				m_iCryptoKey = int(f_CryptoKey.read(),16)			
 		f_CryptoKey.close()	
 		print('Read crypto key "' + hex(m_iCryptoKey) + '" from file, checking if it is correct...')

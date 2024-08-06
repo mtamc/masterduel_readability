@@ -21,6 +21,7 @@ CARD_Desc_filename = CARD_filename_list[2]
 # 2. Get crypto key
 
 m_iCryptoKey = GetCryptoKey(CARD_Indx_filename)
+m_iCryptoKeyDesc = GetCryptoKey(CARD_Desc_filename)
 
 # 3. Decrypt card files from section 1
 
@@ -28,7 +29,8 @@ print('Decrypting files...')
 
 for filename in CARD_filename_list:	
 	data = ReadByteData(filename)
-	data = Decrypt(data, m_iCryptoKey)
+	key = m_iCryptoKeyDesc if filename == CARD_Desc_filename else m_iCryptoKey
+	data = Decrypt(data, key)
 	WriteDecByteData(filename, data)
 	print('Decrypted file "' + filename + '".')
 
