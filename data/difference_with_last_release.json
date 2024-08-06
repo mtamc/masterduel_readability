@@ -1,50 +1,6 @@
 {
-    "Card of Safe Return": {
-        "_current": "When a monster(s) is Special Summoned from your GY (except during the Damage Step): You can DRAW 1 card.",
-        "previous": "When a monster is Special Summoned from your GY, you can DRAW 1 card."
-    },
-    "Dimension Fusion": {
-        "_current": "<b>Pay 2000 LP;</b> each player Special Summons as many of their banished monsters as possible.",
-        "previous": "Pay 2000 Life Points. Both players Special Summon as many of their removed from play monsters as possible."
-    },
-    "Drill Warrior": {
-        "_current": "\"Drill Synchron\" + 1+ non-Tuner monsters\n① OPT | During your Main Phase 1: You can halve this card's ATK, and if you do, it can attack your opponent directly this turn.\n② OPT | You can DISCARD 1 card, and if you do, BANISH this card.\n③ During your next Standby Phase: Special Summon this card banished by this effect, then add 1 monster from your GY to your hand.",
-        "previous": "\"Drill Synchron\" + 1 or more non-Tuner monsters\n① OPT | During your Main Phase 1: You can halve this card's ATK, and if you do, it can attack your opponent directly this turn.\n② OPT | You can DISCARD 1 card, and if you do, BANISH this card.\n③ During your next Standby Phase: Special Summon this card banished by this effect, then add 1 monster from your GY to your hand."
-    },
-    "Enigmaster Packbit": {
-        "_current": "1 Tuner + 1+ non-Tuner monsters\n① HOPT | If this card is Synchro Summoned, or sent to the GY: <b>You can target 1 monster in your GY, or 1 face-up monster your opponent controls;</b> DISCARD 1 card, and if you do, place that monster in its owner's Spell & Trap Zone as a face-up Continuous Trap.\n② HOPT | During either player's turn, if this card is a Continuous Trap: You can Special Summon 1 face-up Monster Card from your Spell & Trap Zone.",
-        "previous": null
-    },
-    "Fishborg Blaster": {
-        "_current": "If you control a face-up Level 3 or lower WATER monster: <b>You can DISCARD 1 card;</b> Special Summon this card from your GY.\nIf this card is used as Synchro Material, all other Synchro Materials must be WATER.",
-        "previous": "If you control a face-up Level 3 or lower WATER monster: <b>You can DISCARD 1 card;</b> Special Summon this card from your GY.\nIf this card is used as a Synchro Material Monster, all other Synchro Material Monsters must be WATER."
-    },
-    "Raidraptor - Rising Rebellion Falcon": {
-        "_current": "5 Level 13 Winged Beast monsters\n① Unaffected by other cards' effects.\n② If this card is Xyz Summoned: You can DESTROY as many cards your opponent controls as possible, then if this card has 3 or more \"Raidraptor\" Xyz Monsters with different names as material, inflict damage to your opponent equal to the combined original ATK of the destroyed monsters.\n③ OPT | <b>You can detach 3 materials from this card, then target 1 \"Raidraptor\" Xyz Monster in your GY;</b> this card gains that monster's effects until the End Phase.",
-        "previous": null
-    },
-    "Reactan, Dragon Ruler of Pebbles": {
-        "_current": "HOPT | <b>You can DISCARD this card and 1 Dragon or EARTH monster;</b> Special Summon 1 \"Redox, Dragon Ruler of Boulders\" from your Deck, but it cannot attack this turn.",
-        "previous": "<b>You can DISCARD this card AND 1 Dragon or EARTH monster;</b> Special Summon 1 \"Redox, Dragon Ruler of Boulders\" from your Deck. It cannot attack this turn.\nYou can only use the effect of \"Reactan, Dragon Ruler of Pebbles\" once per turn."
-    },
-    "Rescue Hedgehog": {
-        "_current": "HOPT | <b>You can BANISH this card you control;</b> Special Summon 2 Level 3 or lower monsters from your Deck with the same Type, Attribute, and Level as each other (1 Normal Monster and 1 Effect Monster), but their effects are negated, also DESTROY them during the End Phase.",
-        "previous": null
-    },
-    "Return from the Different Dimension": {
-        "_current": "<b>Pay half your LP;</b> Special Summon as many of your banished monsters as possible. During the End Phase, BANISH all monsters that were Special Summoned by this effect.",
-        "previous": "<b>Pay half your Life Points;</b> Special Summon as many of your banished monsters as possible. During the End Phase, BANISH all monsters that were Special Summoned by this effect."
-    },
     "Shocktopus": {
-        "_current": "When this card is destroyed by battle with an opponent's monster and sent to the GY: You can equip this card to that opponent's monster.\nThat monster's ATK becomes 0, also it cannot change its battle position.",
-        "previous": "① When this card is destroyed by battle with an opponent's monster and sent to the GY: You can equip this card to that opponent's monster.\n② That monster's ATK becomes 0, also it cannot change its battle position."
-    },
-    "Skull Guardian, Protector of the Voiceless Voice": {
-        "_current": "You can Ritual Summon this card with \"Prayers of the Voiceless Voice\".\n① Gains 2050 ATK while you have \"Lo, the Prayers of the Voiceless Voice\" on your field or in your GY.\n② HOPT | If this card is Ritual Summoned: You can SEARCH 1 \"Voiceless Voice\" monster, or 1 Ritual Monster (Warrior or Dragon).\n③ HOPT | QUICK | When your opponent activates a card or effect while you control \"Lo, the Prayers of the Voiceless Voice\": You can NEGATE the activation, and if you do, DESTROY that card.",
-        "previous": null
-    },
-    "XX-Saber Gottoms": {
-        "_current": "1 Tuner + 1+ EARTH monsters\n① <b>You can Tribute 1 \"X-Saber\" monster;</b> DISCARD 1 random card from your opponent's hand.",
-        "previous": "1 Tuner + 1 or more EARTH monsters\n① You can Tribute 1 \"X-Saber\" monster to DISCARD 1 random card from your opponent's hand."
+        "_current": "① When this card is destroyed by battle with an opponent's monster and sent to the GY: You can equip this card to that opponent's monster.\n② That monster's ATK becomes 0, also it cannot change its battle position.",
+        "previous": "When this card is destroyed by battle with an opponent's monster and sent to the GY: You can equip this card to that opponent's monster.\nThat monster's ATK becomes 0, also it cannot change its battle position."
     }
 }
