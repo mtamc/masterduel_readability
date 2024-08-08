@@ -191,6 +191,7 @@ def ProgressiveProcessing(CARD_Indx_filename, filename, start):
         res = []
         for i in range(len(desc_indx) - 1):
             s = data[desc_indx[i]:desc_indx[i + 1]]
+            print(s)
             s = s.decode('UTF-8')
             while len(s) > 0 and s[-1] == '\u0000':
                 s = s[:-1]

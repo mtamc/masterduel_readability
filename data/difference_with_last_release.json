@@ -1,6 +1,162 @@
 {
+    "Arbitration of White": {
+        "_current": "① HOPT | <b>You can target 1 Fish monster you control;</b> it is treated as a Tuner this turn.\n② HOPT | When an opponent's monster declares an attack: <b>You can DISCARD 1 Fish monster;</b> change all monsters your opponent controls to Defense Position.\n③ HOPT | If your Fish monster is destroyed by battle or sent to your GY: <b>You can send this face-up card from your Spell & Trap Zone to the GY;</b> Special Summon 1 Fish monster from your GY.",
+        "previous": null
+    },
+    "Barrier of the Voiceless Voice": {
+        "_current": "① While you control \"Lo, the Prayers of the Voiceless Voice\" and a LIGHT Ritual Monster, your opponent's monsters can only target Ritual Monsters for attacks, also your opponent cannot target LIGHT monsters you control with card effects.\n② YOUR MAIN PHASE | HOPT | You can SEARCH 1 \"Voiceless Voice\" card or 1 \"Skull Guardian\" Ritual Monster except \"Barrier of the Voiceless Voice\".",
+        "previous": null
+    },
+    "Blessing of the Voiceless Voice": {
+        "_current": "① HOPT | <b>You can target 1 of your \"Voiceless Voice\" cards that is banished or in your GY, except \"Blessing of the Voiceless Voice\";</b> add it to your hand.\n② HOPT | If a non-Ritual Monster(s) is Normal or Special Summoned face-up (except during the Damage Step): You can Ritual Summon 1 LIGHT Ritual Monster (Warrior or Dragon) from your hand, by Tributing monsters from your hand or field whose total Levels equal or exceed the Level of that Ritual Monster, and if you do, it cannot be destroyed by battle.",
+        "previous": null
+    },
+    "Brionac, the Magical Ice Dragon": {
+        "_current": "1 Tuner + 1+ non-Tuner monsters\n① HOPT | If this card is Synchro Summoned: <b>You can DISCARD 1 card, then target 1 card on the field;</b> BOUNCE it.\n② HOPT | If this card is Special Summoned from the GY: <b>You can DISCARD 1 card, then target 1 card on the field;</b> BOUNCE it.",
+        "previous": null
+    },
+    "Burgundy the Magic Elf": {
+        "_current": "① HOPT | If a card(s) is discarded from your opponent's hand by card effect (except during the Damage Step): You can inflict 400 damage to your opponent for each card discarded.\n② HOPT | When this card is destroyed by battle and sent to the GY: You can DISCARD 1 random card from your opponent's hand.",
+        "previous": null
+    },
+    "Dark Element": {
+        "_current": "① HOPT | If you have a \"Gate Guardian\" monster in your GY: <b>Pay half your LP;</b> Special Summon 1 Level 11 or higher \"Gate Guardian\" monster from your hand, Deck, or Extra Deck, ignoring its Summoning conditions.\n② HOPT | <b>You can BANISH this card from your GY;</b> add 1 of your \"Sanga of the Thunder\", \"Kazejin\", or \"Suijin\" from your Deck or BANISHment to your hand.",
+        "previous": null
+    },
+    "Dark Guardian": {
+        "_current": "(This card is always treated as a \"Gate Guardian\" card.)\nCannot be Normal Summoned/Set. Must be either Special Summoned by \"Dark Element\", or Special Summoned (from your hand or GY) by shuffling into the Deck, 1 each of your \"Sanga of the Thunder\", \"Kazejin\", and \"Suijin\" that is in your hand, face-up field, GY, and/or banished.\n① Cannot be destroyed by battle.\nIf this card is Special Summoned by the effect of \"Dark Element\", it is unaffected by other monsters' effects or your opponent's activated Spell Cards or effects.",
+        "previous": null
+    },
+    "Emissary from the House of Wax": {
+        "_current": "① HOPT | When an opponent's monster declares an attack: You can Special Summon this card from your hand.\n② If this card battles a monster, neither can be destroyed by that battle.\n③ At the end of your opponent's Battle Phase: <b>You can activate this effect;</b> until the start of your opponent's next Battle Phase, all Attack Position monsters your opponent currently controls cannot change their battle positions, nor be used as material for a Fusion, Synchro, Xyz, or Link Summon, also their effects are negated.",
+        "previous": null
+    },
+    "Eye of Illusion": {
+        "_current": "If you control an Illusion or Spellcaster monster: <b>Activate 1 of these effects;</b> \n● Your Illusion and Spellcaster monsters cannot be destroyed by battle this turn.\n● During your opponent's turn: Target 1 face-up monster your opponent controls; take control of it until the End Phase.\n● When an opponent's monster declares an attack: Target 1 face-up monster your opponent controls, except the attacking monster; change the attack target to it and perform damage calculation.",
+        "previous": null
+    },
+    "Fish Lamp": {
+        "_current": "1 Tuner + 1+ non-Tuner monsters\n① HOPT | If this card is sent to the GY as Synchro Material: You can Special Summon 2 \"Lamp Tokens\" (Fish/FIRE/Level 2/ATK 0/DEF 0), also you cannot Special Summon from the Extra Deck for the rest of this turn, except Fish monsters.\n② HOPT | If you control a Fish Synchro Monster: <b>You can BANISH this card from your GY, then target 1 card on the field;</b> DESTROY it.",
+        "previous": null
+    },
+    "Fishborg Harpooner": {
+        "_current": "① HOPT | <b>You can reveal this card and 1 WATER monster in your hand;</b> Special Summon 1 of them and DISCARD the other.\n② If this card is sent to the GY as material for a WATER Synchro Monster: You can NEGATE the effects of 1 Effect Monster your opponent controls, until the end of this turn.",
+        "previous": null
+    },
+    "Frozen Domain of the Ice Barrier": {
+        "_current": "① Your opponent cannot activate cards or effects in response to the activation of your \"Ice Barrier\" monster effects.\n② HOPT | If a monster(s) is Special Summoned from the Extra Deck (except during the Damage Step): You can return to the hand or shuffle into the Deck, 1 \"Ice Barrier\" monster you control, then you can place 1 card from the field or either GY on the bottom of the Deck.\n③ YOUR END PHASE | OPT | Reveal 3 \"Ice Barrier\" monsters with different names in your Extra Deck or DESTROY this card.",
+        "previous": null
+    },
+    "Georgius, Swordman of the Ice Barrier": {
+        "_current": "① While you control another \"Ice Barrier\" monster, your opponent cannot activate the effects of monsters in the GY.\n② HOPT | If you control an \"Ice Barrier\" monster: You can Special Summon this card from your hand in Defense Position.\n③ HOPT | If this card is Normal or Special Summoned: You can Special Summon 1 Level 5 or lower \"Ice Barrier\" monster from your hand or GY.",
+        "previous": null
+    },
+    "Guardian of the Voiceless Voice": {
+        "_current": "① If a face-up monster(s) you control is destroyed, except Ritual Monsters: You can Special Summon 1 \"Skull Guardian\" from your hand or Deck.\n② <b>You can send this face-up card to the GY, then target 1 Ritual Monster you control;</b> it gains ATK equal to the combined original ATK of the other monsters currently on the field, until the end of this turn.\nYou can only use each effect of \"Guardian of the Voiceless Voice\" once per turn, and cannot activate more than 1 in the same Chain.",
+        "previous": null
+    },
+    "Junk Dragonlet": {
+        "_current": "① HOPT | If you control a Synchro Monster, you can Special Summon this card (from your hand).\n② HOPT | When a Synchro Monster you control declares an attack: <b>You can BANISH this card from your GY;</b> that monster you control gains 800 ATK until the end of this turn.",
+        "previous": null
+    },
+    "Junk Mail": {
+        "_current": "① A Synchro Monster that used this card as material cannot be destroyed by battle.\n② HOPT | If this card is in your GY, except the turn it was sent there, and you control a Synchro Monster with \"Warrior\", \"Synchron\", or \"Stardust\" in its original name: You can Special Summon this card, but BANISH it when it leaves the field.",
+        "previous": null
+    },
+    "Keaf, Murk of the Ghoti": {
+        "_current": "① HOPT | If a Fish monster is on the field: You can Special Summon this card from your hand.\n② HOPT | If a monster(s) is Special Summoned to your opponent's field (except during the Damage Step): <b>You can target 1 of those monsters and 1 of your banished Level 6 or lower Fish monsters;</b> BANISH both that opponent's monster and this card, and if you do, Special Summon your targeted monster.\n③ HOPT | During the Standby Phase of the next turn after this card was banished: You can Special Summon this banished card.",
+        "previous": null
+    },
+    "Lamp Token": {
+        "_current": "Special Summoned with the effect of \"Fish Lamp.\"",
+        "previous": null
+    },
+    "Master Tao the Chanter": {
+        "_current": "① If this card battles a monster, neither can be destroyed by that battle.\n② HOPT | If this card is sent to the GY: <b>You can target 1 Illusion monster in your GY, except \"Master Tao the Chanter\";</b> Special Summon it in Defense Position, also you cannot Special Summon from the GY for the rest of this turn, except Illusion monsters.",
+        "previous": null
+    },
+    "Mirror Mage of the Ice Barrier": {
+        "_current": "① HOPT | <b>You can Tribute 1 other Effect Monster;</b> Special Summon up to 3 \"Ice Barrier Tokens\" (Aqua/WATER/Level 1/ATK 0/DEF 0), and if you do, increase this card's Level by that number, also you cannot Special Summon from the Extra Deck for the rest of this turn, except WATER Synchro Monsters.\n② HOPT | If this card is sent to the GY: You can add 1 of your \"Ice Barrier\" cards that is banished or in your Deck to your hand, except \"Mirror Mage of the Ice Barrier\".",
+        "previous": null
+    },
+    "Prayers of the Voiceless Voice": {
+        "_current": "① This card can be used to Ritual Summon any LIGHT Ritual Monster. You must also Tribute LIGHT monsters from your hand or field whose total Levels equal or exceed the Level of the Ritual Monster.\n② HOPT | If a face-up LIGHT Ritual Monster(s) you control leaves the field by an opponent's card effect (except during the Damage Step): <b>You can BANISH this card from your GY;</b> Special Summon 1 \"Sauravis, the Ancient and Ascended\", \"Saffira, Queen of Dragons\", or \"Skull Guardian, Protector of the Voiceless Voice\" from your hand or Deck, ignoring its Summoning conditions.",
+        "previous": null
+    },
+    "Principug": {
+        "_current": "<b>You can target 1 monster you control with \"Guardian\" in its original name, that cannot be Normal Summoned/Set;</b> it can make a second attack during each Battle Phase this turn.HOPT | \nHOPT | <b>You can BANISH this card from your GY, then target 1 \"Guardian\" monster in your GY that cannot be Normal Summoned/Set, and activate 1 of these effects;</b> \n● Add it to your hand.\n● Add 1 other card that is mentioned on that monster from your GY to your hand.",
+        "previous": null
+    },
+    "Psiics, Moonlight of the Ghoti": {
+        "_current": "① HOPT | If this card is Normal or Special Summoned: You can SEARCH 1 Fish monster except \"Psiics, Moonlight of the Ghoti\", then BANISH 1 Fish monster from your hand or face-up field.\n② HOPT | If this card is banished: <b>You can BANISH 1 Fish monster from your hand, GY, or face-up field, except \"Psiics, Moonlight of the Ghoti\";</b> Special Summon this card.",
+        "previous": null
+    },
+    "Radiance of the Voiceless Voice": {
+        "_current": "MAIN PHASE | <b>You can activate 1 of these effects;</b> \n● Shuffle 1 LIGHT Ritual Monster (Warrior or Dragon) or 1 Ritual Spell from your hand or GY into the Deck, and if you do, add to your hand, or Special Summon, 1 \"Voiceless Voice\" monster from your Deck.\n● Target cards your opponent controls, up to the number of LIGHT Ritual Monsters (Warrior or Dragon) you control; DESTROY both this card and as many of the targeted cards as possible.\nYou can only use the effect of \"Radiance of the Voiceless Voice\" once per turn.",
+        "previous": null
+    },
+    "Raidraptor - Bloom Vulture": {
+        "_current": "① If you do not control any face-up monsters, other than Winged Beast monsters: You can Special Summon both this card and 1 \"Raidraptor\" monster from your hand.\n② If you control no monsters: <b>You can target 2 Level 4 or lower \"Raidraptor\" monsters in your GY, including this card;</b> Special Summon them in Defense Position.\nYou can only use 1 \"Raidraptor - Bloom Vulture\" effect per turn, and only once that turn, also you cannot Special Summon monsters the turn you activate either of these effects, except DARK monsters.",
+        "previous": null
+    },
+    "Raidraptor - Brave Strix": {
+        "_current": "2 Level 5 monsters\n① A \"Raidraptor\" Xyz Monster that has this card as material gains this effect.\n● This card gains ATK equal to its Rank x 100.\nYou can only use 1 of the following effects of \"Raidraptor - Brave Strix\" per turn, and only once that turn.\n② <b>You can detach 1 material from this card;</b> Set 1 \"Raidraptor\" Spell/Trap from your Deck.\nIf this card has a Winged Beast monster as material: <b>You can detach 1 material from this card;</b> SEARCH 1 \"Rank-Up-Magic\" Spell.",
+        "previous": null
+    },
+    "Raidraptor - Glorious Bright": {
+        "_current": "HOPT | You can use ONE of —\n① If you control a \"Raidraptor\" monster: <b>Target 1 face-up monster your opponent controls, or if you control a \"Raidraptor\" Xyz Monster, you can target 1 face-up card your opponent controls;</b> NEGATE that card's effects until the end of this turn.\n② <b>You can BANISH this card from your GY, then target 1 of your \"Raidraptor\" monsters that is banished or in your GY;</b> add it to your hand.",
+        "previous": null
+    },
+    "Raidraptor - Noir Lanius": {
+        "_current": "① YOUR MAIN PHASE | HOPT | If this card was Normal or Special Summoned this turn: <b>You can target 1 \"Raidraptor\" monster you control;</b> SEARCH 1 \"Raidraptor\" monster with a different Level than that monster.\n② HOPT | <b>You can BANISH this card from your GY;</b> increase or decrease the Levels of all \"Raidraptor\" monsters you currently control by 1.",
+        "previous": null
+    },
+    "Raidraptor - Roost": {
+        "_current": "① HOPT | If a \"Raidraptor\" monster(s) is Special Summoned from the Extra Deck to your field (except during the Damage Step): You can SEARCH 1 \"Raidraptor\" Spell/Trap except \"Raidraptor - Roost\".\n② HOPT | <b>You can target 3 of your \"Raidraptor\" monsters that are banished and/or in your GY;</b> place them on the bottom of your Deck in any order, then DRAW 1 card.",
+        "previous": null
+    },
+    "Rise Rank-Up-Magic Raidraptor's Force": {
+        "_current": "HOPT ACTIVATION\nDuring the Main Phase or your opponent's Battle Phase: <b>Target 2 or more \"Raidraptor\" Xyz Monsters you control and/or in your GY, including a monster on the field;</b> if at least 2 remain face-up at resolution, Special Summon 1 \"Raidraptor\" Xyz Monster from your Extra Deck with a Rank equal to their combined Ranks, and if you do, attach the targeted monsters to it as material. (This is treated as an Xyz Summon. Transfer their materials to the Summoned monster.)",
+        "previous": null
+    },
+    "Saffira, Divine Dragon of the Voiceless Voice": {
+        "_current": "You can Ritual Summon this card with \"Blessing of the Voiceless Voice\".\n① HOPT | If this card is Ritual Summoned while you have \"Lo, the Prayers of the Voiceless Voice\" on your field or in your GY: You can DRAW 2 cards, then DISCARD 1 card.\n② HOPT | When an attack is declared involving a LIGHT Ritual Monster (Warrior or Dragon): You can DISCARD 1 random card from your opponent's hand.\n③ OPP'S END PHASE | HOPT | You can add 1 LIGHT monster from your GY to your hand.",
+        "previous": null
+    },
+    "Saffira, Dragon Queen of the Voiceless Voice": {
+        "_current": "① HOPT | <b>You can DISCARD this card;</b> send 1 Ritual Spell from your Deck to the GY, then you can SEARCH 1 LIGHT Ritual Monster (Warrior or Dragon) (from DECK or GY).\n② HOPT | <b>You can BANISH this card from your GY;</b> Ritual Summon 1 LIGHT Ritual Monster (Warrior or Dragon) from your hand, by Tributing monsters from your hand or field whose total Levels equal or exceed the Level of the Ritual Monster.",
+        "previous": null
+    },
+    "Sauravis, Dragon Sage of the Voiceless Voice": {
+        "_current": "① HOPT | You can Special Summon this card (from your hand) by shuffling 2 Spells from your hand and/or GY into the Deck, including a Ritual Spell.\n② HOPT | QUICK | When your opponent activates a card or effect: <b>You can BOUNCE this card;</b> Special Summon 1 LIGHT Ritual Monster (Warrior or Dragon) from your hand or Deck, but shuffle it into the Deck during the End Phase of the next turn.",
+        "previous": null
+    },
     "Shocktopus": {
-        "_current": "① When this card is destroyed by battle with an opponent's monster and sent to the GY: You can equip this card to that opponent's monster.\n② That monster's ATK becomes 0, also it cannot change its battle position.",
-        "previous": "When this card is destroyed by battle with an opponent's monster and sent to the GY: You can equip this card to that opponent's monster.\nThat monster's ATK becomes 0, also it cannot change its battle position."
+        "_current": "When this card is destroyed by battle with an opponent's monster and sent to the GY: You can equip this card to that opponent's monster.\nThat monster's ATK becomes 0, also it cannot change its battle position.",
+        "previous": "① When this card is destroyed by battle with an opponent's monster and sent to the GY: You can equip this card to that opponent's monster.\n② That monster's ATK becomes 0, also it cannot change its battle position."
+    },
+    "Swallow's Cowrie": {
+        "_current": "HOPT ACTIVATION\n<b>Tribute 1 Winged Beast monster in your hand or face-up field;</b> SEARCH 1 Winged Beast monster with the same Level that the Tributed monster had.",
+        "previous": null
+    },
+    "White Aura Porpoise": {
+        "_current": "1 WATER Tuner + 1+ non-Tuner monsters\n① HOPT | If this card is Synchro Summoned: You can Special Summon 1 Level 4 or lower Fish monster from your hand or GY in Defense Position, then you can Special Summon 1 monster with that same name from your GY.\n② If this card in your possession is destroyed by your opponent's card and sent to your GY: <b>You can BANISH 1 other WATER monster from your GY;</b> Special Summon this card, and if you do, it is treated as a Tuner.",
+        "previous": null
+    },
+    "White Circle Reef": {
+        "_current": "① HOPT | <b>Target 1 Fish monster you control;</b> DESTROY that Fish monster, and if you do, SEARCH 1 monster with the same name it had on the field or, if you controlled a Fish Synchro Monster when you activated this card, you can Special Summon it instead.\n② HOPT | <b>You can BANISH this card from your GY, then target 2 Fish monsters with the same name in your GY;</b> place 1 of the 2 on the bottom of your Deck, and if you do, Special Summon the other.",
+        "previous": null
+    },
+    "White Reincarnation": {
+        "_current": "HOPT ACTIVATION\n① When this card is activated: SEARCH 1 Fish monster with an effect that treats itself as a Tuner.\n② OPT | At the end of the Damage Step, if your \"White Aura\" monster attacked: <b>You can activate this effect;</b> the attacking monster can make a second attack in a row.\n③ OPT | If a Level 8 or higher Fish Synchro Monster(s) is Special Summoned from your GY, even during the Damage Step: You can DESTROY all monsters your opponent controls.",
+        "previous": null
+    },
+    "White Sardine": {
+        "_current": "① HOPT | <b>You can send 1 \"White Sardine\" from your Deck to the GY;</b> Special Summon this card from your hand, also you cannot Special Summon from the Extra Deck for the rest of this turn, except WATER monsters.\n② If this card is Special Summoned from the GY: You can treat it as a Tuner this turn.",
+        "previous": null
+    },
+    "White Sunfish": {
+        "_current": "① HOPT | If this card is in your hand: <b>You can target 1 Level 4 or lower Fish monster in your GY with the same name as a card you control;</b> Special Summon this card, and if you do, Special Summon that monster.\n② If this card is Special Summoned from the GY: You can treat it as a Tuner this turn.",
+        "previous": null
     }
 }
