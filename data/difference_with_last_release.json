@@ -1,338 +1,98 @@
 {
-    "Arcana Force EX - The Dark Ruler": {
-        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by sending 3 monsters you control to the GY.\nIf this card is Special Summoned: Toss a coin.\n● Heads: This card can make a second attack during each Battle Phase, but if it does so using this effect, change it to Defense Position at the end of the Battle Phase. Its battle position cannot be changed until the end of your next turn.\n● Tails: If this card is destroyed, DESTROY all cards on the field.",
-        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by sending 3 monsters you control to the GY, and cannot be Special Summoned by other ways.\nWhen this card is Special Summoned: Toss a coin and gain the appropriate effect.\n● Heads: This card can make a second attack during each Battle Phase, but if it does so using this effect, change it to Defense Position at the end of the Battle Phase. Its battle position cannot be changed until the end of your next turn.\n● Tails: If this card is destroyed, DESTROY all cards on the field."
+    "Arcana Force I - The Magician": {
+        "_current": "If this card is Summoned: Toss a coin.\n● Heads: Each time a Spell Card is activated, this card's ATK becomes double its original ATK when that card resolves, until the end of that turn.\n● Tails: Each time a Spell Card is activated, your opponent gains 500 LP when that card resolves.",
+        "previous": "If this card is Summoned: Toss a coin.\n● Heads: If a Spell Card is activated, this card's ATK becomes double its original ATK until the end of that turn.\n● Tails: If a Spell Card is activated, your opponent gains 500 LP."
     },
-    "Beastking of the Swamps": {
-        "_current": "This card can be used as a substitute for any 1 Fusion Material mentioned by name on the Fusion Monster Card, but the other material(s) must be correct.",
-        "previous": "You can substitute this card for any 1 Fusion Material Monster. When you do this, the other Fusion Material Monster(s) must be the correct one(s)."
-    },
-    "Blaze, Supreme Ruler of all Dragons": {
-        "_current": "2 Level 7 monsters\n① OPT | <b>You can detach 1 material from this card;</b> DESTROY 2 cards (1 from your hand or field, and 1 your opponent controls).\n② HOPT | <b>You can BANISH a total of 2 FIRE and/or Dragon monsters from your hand and/or GY;</b> Special Summon this card from your GY, but return it to the Extra Deck when it leaves the field.",
+    "Argostars - Glorious Adra": {
+        "_current": "During your opponent's turn, if you control a Continuous Trap Card (QUICK EFFECT): <b>You can BANISH this card from your hand;</b> make the ATK of 1 monster on the field 0 until the end of this turn. If this card is Normal Summoned: This turn, your opponent cannot activate cards or effects in response to the activation of your Continuous Trap Cards or their effects. <b>You can BANISH this card you control;</b> place up to 2 \"Argostars\" Continuous Traps with different names from your hand and/or Deck face-up in your Spell & Trap Zone. You can only use this effect of \"Argostars - Glorious Adra\" once per turn.",
         "previous": null
     },
-    "Borreload Furious Dragon": {
-        "_current": "2 DARK Dragon monsters\n① HOPT | QUICK | <b>You can target 1 monster you control and 1 card your opponent controls;</b> DESTROY them.\n② HOPT | <b>You can BANISH this card from your GY, then target 1 DARK Link Monster in your GY;</b> Special Summon it, but neither player can activate its effects this turn.",
-        "previous": "2 DARK Dragon monsters\n① HOPT | QUICK | <b>You can target 1 monster you control and 1 card your opponent controls;</b> DESTROY them.\n② HOPT | <b>You can BANISH this card from your GY, then target 1 DARK Link Monster in your GY;</b> Special Summon it, but it cannot activate its effects this turn."
+    "Blue-Eyes Twin Burst Dragon": {
+        "_current": "\"Blue-Eyes White Dragon\" + \"Blue-Eyes White Dragon\"\nMust be either Fusion Summoned, or Special Summoned by sending the above monsters you control to the GY.\n① Cannot be destroyed by battle.\n② Can make up to 2 attacks on monsters during each Battle Phase.\nAt the end of the Damage Step, when this card attacks an opponent's monster, but the opponent's monster was not destroyed by the battle: You can BANISH that opponent's monster.",
+        "previous": "\"Blue-Eyes White Dragon\" + \"Blue-Eyes White Dragon\"\nMust be either Fusion Summoned, or Special Summoned by sending the above monsters you control to the GY.\n① Cannot be destroyed by battle.\n② This card can make up to 2 attacks on monsters during each Battle Phase.\nAt the end of the Damage Step, when this card attacks an opponent's monster, but the opponent's monster was not destroyed by the battle: You can BANISH that opponent's monster."
     },
-    "Carnot the Eternal Machine": {
-        "_current": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand or GY) during a Duel in which your opponent has activated a monster effect in their hand or GY. You can only Special Summon \"Carnot the Eternal Machine\" once per turn.\n① OPT | If your opponent activates a monster effect (except during the Damage Step): You can make this card gain 1000 ATK.\n② If this card is sent to the GY, except from the hand or Deck: Shuffle this card into the Deck.",
+    "Crystal Clear Wing Over Synchro Dragon": {
+        "_current": "2+ Tuners or 1 Tuner Synchro Monster + \"Clear Wing Synchro Dragon\"\nMust be Synchro Summoned. Once per turn, when another card, or its effect, is activated (QUICK EFFECT): You can NEGATE the activation, and if you do, DESTROY that card, and if you destroyed a monster, this card gains ATK equal to that monster's original ATK until the end of this turn. If this face-up Synchro Summoned card in its owner's control leaves the field by an opponent's card: You can Special Summon 1 \"Clear Wing\" monster from your Extra Deck.",
         "previous": null
-    },
-    "Crystolic Potential": {
-        "_current": "① All \"Crystron\" monsters you control gain 300 ATK/DEF.\n② END PHASE | OPT | You can DRAW cards equal to the number of \"Crystron\" Synchro Monsters you Synchro Summoned this turn.",
-        "previous": "① All \"Crystron\" monsters you control gain 300 ATK and DEF.\n② END PHASE | OPT | You can DRAW cards equal to the number of \"Crystron\" Synchro Monsters you Synchro Summoned this turn."
-    },
-    "Crystron Ametrix": {
-        "_current": "1 Tuner + 1+ non-Tuner monsters\n① If this card is Synchro Summoned: You can change all face-up Special Summoned monsters your opponent controls to Defense Position.\n② If this Synchro Summoned card is destroyed: <b>You can target 1 \"Crystron\" monster in your GY, except a Synchro Monster;</b> Special Summon it.",
-        "previous": "1 Tuner + 1 or more non-Tuner monsters\n① If this card is Synchro Summoned: You can change all face-up Special Summoned monsters your opponent controls to Defense Position.\n② If this Synchro Summoned card is destroyed: <b>You can target 1 \"Crystron\" monster in your GY, except a Synchro Monster;</b> Special Summon it."
     },
     "Crystron Citree": {
-        "_current": "HOPT | QUICK | During your opponent's Main or Battle Phase: <b>You can target 1 non-Tuner monster in your GY;</b> Special Summon it, but its effects are negated (if any), and if you do, immediately after this effect resolves, Synchro Summon 1 Machine Synchro Monster using only that monster and this card. These Synchro Materials are banished instead of being sent to the GY.",
-        "previous": "HOPT | QUICK | During your opponent's Main Phase or Battle Phase: <b>You can target 1 non-Tuner monster in your GY;</b> Special Summon it, but it has its effects negated (if any), and if you do, immediately after this effect resolves, Synchro Summon 1 Machine-Type Synchro Monster using only that monster and this card. These Synchro Materials are banished instead of being sent to the GY."
+        "_current": "HOPT | QUICK | During your opponent's Main or Battle Phase: <b>You can target 1 non-Tuner in your GY;</b> Special Summon it, but its effects are negated (if any), then immediately after this effect resolves, Synchro Summon 1 Machine Synchro Monster using only that monster and this card. These Synchro Materials are banished instead of being sent to the GY.",
+        "previous": "HOPT | QUICK | During your opponent's Main or Battle Phase: <b>You can target 1 non-Tuner monster in your GY;</b> Special Summon it, but its effects are negated (if any), and if you do, immediately after this effect resolves, Synchro Summon 1 Machine Synchro Monster using only that monster and this card. These Synchro Materials are banished instead of being sent to the GY."
     },
-    "Crystron Phoenix": {
-        "_current": "1 Tuner Synchro Monster + 1+ non-Tuner Synchro Monsters\n① If this card is Synchro Summoned: You can BANISH all Spells and Traps your opponent controls and in their GY.\n② If this Synchro Summoned card is destroyed: <b>You can target 1 other monster in your GY;</b> Special Summon it.",
-        "previous": "1 Tuner Synchro Monster + 1 or more non-Tuner Synchro Monsters\n① If this card is Synchro Summoned: You can BANISH all Spell and Trap Cards your opponent controls and in their GY.\n② If this Synchro Summoned card is destroyed: <b>You can target 1 other monster in your GY;</b> Special Summon it."
+    "Drill Driver Vespenato": {
+        "_current": "2 Level 5 monsters\nOnce per turn, you can also Xyz Summon \"Drill Driver Vespenato\" by using 1 Rank 4 Xyz Monster you control as material. (Transfer its materials to this card.) Cannot be used as material for an Xyz Summon the turn it was Xyz Summoned.\n① This card is PIERCING.\n② HOPT | If this Xyz Summoned card in its owner's control is destroyed by an opponent's card: <b>You can target 1 Level 5 or lower monster in your GY;</b> Special Summon it.",
+        "previous": "2 Level 5 monsters\nOnce per turn, you can also Xyz Summon \"Drill Driver Vespenato\" by using 1 Rank 4 Xyz Monster you control as material. (Transfer its materials to this card.) This card cannot be used as material for an Xyz Summon the turn it was Xyz Summoned.\n① This card is PIERCING.\n② HOPT | If this Xyz Summoned card in its owner's control is destroyed by an opponent's card: <b>You can target 1 Level 5 or lower monster in your GY;</b> Special Summon it."
     },
-    "Crystron Prasiortle": {
-        "_current": "HOPT | You can use ONE of —\n① <b>You can target 1 face-up card you control;</b> you cannot Special Summon from the Extra Deck for the rest of this turn, except Machine Synchro Monsters, also, DESTROY that card, and if you do, Special Summon 1 \"Crystron\" Tuner from your Deck.\n② <b>You can BANISH this card from your GY;</b> Special Summon 1 \"Crystron\" monster from your hand.",
-        "previous": "HOPT | You can use ONE of —\n① <b>You can target 1 face-up card you control;</b> you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except Machine-Type Synchro Monsters, also, DESTROY that card, and if you do, Special Summon 1 \"Crystron\" Tuner from your Deck.\n② <b>You can BANISH this card from your GY;</b> Special Summon 1 \"Crystron\" monster from your hand."
-    },
-    "Crystron Quan": {
-        "_current": "HOPT | QUICK | During your opponent's Main or Battle Phase: You can Special Summon 1 non-Tuner monster from your hand, but its effects are negated (if any), and if you do, immediately after this effect resolves, Synchro Summon 1 Machine Synchro Monster using only that monster and this card.",
-        "previous": "HOPT | QUICK | During your opponent's Main Phase or Battle Phase: You can Special Summon 1 non-Tuner monster from your hand, but it has its effects negated (if any), and if you do, immediately after this effect resolves, Synchro Summon 1 Machine-Type Synchro Monster using only that monster and this card."
-    },
-    "Crystron Quariongandrax": {
-        "_current": "2+ Tuners + 1 non-Tuner monster\n① If this card is Synchro Summoned: <b>You can target monsters your opponent controls and/or in their GY, up to the number of materials used for the Synchro Summon of this card;</b> BANISH them.\n② If this Synchro Summoned card is destroyed: <b>You can target 1 banished monster, except this card;</b> Special Summon it to your field.",
-        "previous": "2 or more Tuners + 1 non-Tuner monster\n① If this card is Synchro Summoned: <b>You can target monsters your opponent controls and/or in their GY, up to the number of Synchro Materials used for the Synchro Summon of this card;</b> BANISH them.\n② If this Synchro Summoned card is destroyed: <b>You can target 1 banished monster, except this card;</b> Special Summon it to your field."
-    },
-    "Crystron Rion": {
-        "_current": "HOPT | QUICK | During your opponent's Main or Battle Phase: <b>You can target 1 of your banished non-Tuners;</b> Special Summon it, but its effects are negated (if any), and if you do, immediately after this effect resolves, Synchro Summon 1 Machine Synchro Monster using only that monster and this card. These Synchro Materials are shuffled into the Deck instead of being sent to the GY.",
-        "previous": "HOPT | QUICK | During your opponent's Main Phase or Battle Phase: <b>You can target 1 of your banished non-Tuner monsters;</b> Special Summon it, but it has its effects negated (if any), and if you do, immediately after this effect resolves, Synchro Summon 1 Machine-Type Synchro Monster using only that monster and this card. These Synchro Materials are shuffled into the Deck instead of being sent to the GY."
-    },
-    "Crystron Rosenix": {
-        "_current": "HOPT | You can use ONE of —\n① <b>You can target 1 face-up card you control;</b> you cannot Special Summon from the Extra Deck for the rest of this turn, except Machine Synchro Monsters, also, DESTROY that card, and if you do, Special Summon 1 \"Crystron\" Tuner from your Deck.\n② <b>You can BANISH this card from your GY;</b> Special Summon 1 \"Crystron Token\" (Machine/WATER/Level 1/ATK 0/DEF 0), but it cannot be Tributed.",
-        "previous": "HOPT | You can use ONE of —\n① <b>You can target 1 face-up card you control;</b> you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except Machine-Type Synchro Monsters, also, DESTROY that card, and if you do, Special Summon 1 \"Crystron\" Tuner from your Deck.\n② <b>You can BANISH this card from your GY;</b> Special Summon 1 \"Crystron Token\" (Machine-Type/WATER/Level 1/ATK 0/DEF 0), but it cannot be Tributed."
-    },
-    "Crystron Smiger": {
-        "_current": "HOPT | You can use ONE of —\n① <b>You can target 1 face-up card you control;</b> you cannot Special Summon from the Extra Deck for the rest of this turn, except Machine Synchro Monsters, also, DESTROY that card, and if you do, Special Summon 1 \"Crystron\" Tuner from your Deck.\n② <b>You can BANISH this card from your GY;</b> SEARCH 1 \"Crystron\" Spell/Trap Card.",
-        "previous": "HOPT | You can use ONE of —\n① <b>You can target 1 face-up card you control;</b> you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except Machine-Type Synchro Monsters, also, DESTROY that card, and if you do, Special Summon 1 \"Crystron\" Tuner from your Deck.\n② <b>You can BANISH this card from your GY;</b> SEARCH 1 \"Crystron\" Spell/Trap Card."
-    },
-    "Crystron Thystvern": {
-        "_current": "HOPT | You can use ONE of —\n① <b>You can target 1 face-up card you control;</b> you cannot Special Summon from the Extra Deck for the rest of this turn, except Machine Synchro Monsters, also, DESTROY that card, and if you do, Special Summon 1 \"Crystron\" Tuner from your Deck.\n② <b>You can BANISH this card from your GY;</b> SEARCH 1 \"Crystron\" monster except \"Crystron Thystvern\".",
-        "previous": "HOPT | You can use ONE of —\n① <b>You can target 1 face-up card you control;</b> you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except Machine-Type Synchro Monsters, also, DESTROY that card, and if you do, Special Summon 1 \"Crystron\" Tuner from your Deck.\n② <b>You can BANISH this card from your GY;</b> SEARCH 1 \"Crystron\" monster except \"Crystron Thystvern\"."
-    },
-    "Dark Fusion": {
-        "_current": "Fusion Summon 1 Fiend Fusion Monster from your Extra Deck, using monsters from your hand or field as material. Your opponent cannot target it with card effects this turn.",
-        "previous": "Fusion Summon 1 Fiend Fusion Monster from your Extra Deck, using monsters from your hand or field as Fusion Material. Your opponent cannot target it with card effects this turn."
-    },
-    "Darkstorm Dragon": {
-        "_current": "This card is treated as a Normal Monster while face-up on the field or in the GY.\nOPT | <b>While this card is a Normal Monster on the field, you can Normal Summon it to have it become an Effect Monster with this effect.\n● You can send 1 face-up Spell/Trap you control to the GY;</b> DESTROY all Spells and Traps on the field.",
-        "previous": "This card is treated as a Normal Monster while face-up on the field or in the GY.\nOPT | <b>While this card is a Normal Monster on the field, you can Normal Summon it to have it become an Effect Monster with this effect.\n● You can send 1 face-up Spell/Trap Card you control to the GY;</b> DESTROY all Spell and Trap Cards on the field."
-    },
-    "Dora Dora": {
-        "_current": "① HOPT | If this card is Normal Summoned: You can SEARCH 1 Level 4 or lower FIRE Dragon monster.\n② YOUR MAIN PHASE | OPT | You can EXCAVATE the top card of your Deck, and if it is a FIRE Dragon monster, send it to the GY, and if you do, this card gains 1000 ATK for each \"Dora Dora\" you control. Otherwise, place the excavated card on the bottom of your Deck.",
+    "Evil HERO Neos Lord": {
+        "_current": "\"Elemental HERO Neos\" (or 1 Fusion Monster that mentions it) + 1 Effect Monster on the field\nMust be Special Summoned with \"Dark Fusion\". Cannot be destroyed. If this card is Special Summoned, or a monster(s) is sent to your opponent's GY while this card is on the field: <b>You can target 1 face-up monster your opponent controls;</b> take control of it. You can only use this effect of \"Evil HERO Neos Lord\" once per turn.",
         "previous": null
     },
-    "Escapegoat": {
-        "_current": "① When your opponent activates a card or effect that targets a monster(s) you control, except a Token: <b>You can Tribute 1 monster;</b> Special Summon 1 \"Escapegoat Token\" (Beast/EARTH/Level 1/ATK 0/DEF 0) in Defense Position.\n② If a non-Token monster(s) you control would be destroyed, you can DESTROY 1 Token in your Monster Zone instead.",
+    "Ghostrick Doll": {
+        "_current": "Cannot be Normal Summoned, unless you control a \"Ghostrick\" monster.\n① OPT | You can change this card to face-down Defense Position.\n② If this card is flipped face-up: During the End Phase of this turn, change as many face-up monsters on the field as possible to face-down Defense Position, then you can Special Summon 1 \"Ghostrick\" monster from your Deck in face-down Defense Position, whose Level is less than or equal to the number of monsters flipped face-down by this effect.",
+        "previous": "Cannot be Normal Summoned, unless you control a \"Ghostrick\" monster.\n① OPT | You can change this card to face-down Defense Position.\n② When this card is flipped face-up: During the End Phase, change as many face-up monsters on the field as possible to face-down Defense Position, then you can Special Summon 1 \"Ghostrick\" monster from your Deck in face-down Defense Position, whose Level is less than or equal to the number of monsters flipped face-down by this effect."
+    },
+    "Gladiator Beast Claudius": {
+        "_current": "5 \"Gladiator Beast\" monsters\nMust first be Special Summoned (from your Extra Deck) by shuffling the above cards from your field and/or GY into the Deck/Extra Deck. If Summoned this way: You can conduct your next Battle Phase twice. Once per turn, if your opponent activates a monster effect (except during the Damage Step): <b>You can activate the following effect depending on whose turn it is;</b> \n● Yours: Special Summon 1 \"Gladiator Beast\" monster from your Deck. \n● Opponent's: Special Summon 1 Level 11 or lower \"Gladiator Beast\" monster from your Extra Deck, ignoring its Summoning conditions.",
         "previous": null
     },
-    "Escapegoat Token": {
-        "_current": "Special Summoned with the effect of \"Escapegoat.\"",
+    "Gold Pride - Eradicator": {
+        "_current": "1 Tuner + 1+ non-Tuner monsters\n① OPP'S TURN | HOPT | QUICK | <b>You can target 1 Fusion, Synchro, Xyz, or Link Monster on the field, or if your LP are lower than your opponent's, you can target 2;</b> DESTROY them.\n② END PHASE | OPT | If the previous effect was activated this turn: Return this card to the Extra Deck, and if you do, Special Summon 1 \"Gold Pride - Eliminator\" from your Deck or GY.",
         "previous": null
     },
-    "Flametongue the Burning Blade": {
-        "_current": "2 FIRE monsters\n① Face-up Spells/Traps you control cannot be destroyed by your opponent's card effects.\n② HOPT | <b>You can target 1 of your banished FIRE monsters;</b> add it to your hand, but you cannot activate cards, or the effects of cards, with its name for the rest of this turn.",
+    "Grinning Grave Virus": {
+        "_current": "<b>Tribute 1 DARK monster with 3000 or less ATK;</b> your opponent DESTROYS 1 card (of their choice) in their hand or Deck for every 500 ATK that monster had on the field. If you Tributed a monster with 2000 or more ATK to activate this card, look at all cards your opponent DRAWS until the end of their 3rd turn after this card resolves, and DESTROY all monsters among them. Cards destroyed and sent to the GY by this card's effects cannot activate their own effects that same turn.",
+        "previous": "<b>Tribute 1 DARK monster with 3000 or less ATK;</b> your opponent DESTROYS 1 card (of their choice) in their hand or Deck for every 500 ATK that monster had on the field. If you Tributed a monster with 2000 or more ATK to activate this card, look at all cards your opponent DRAWS until the end of their 3rd turn after this card's activation, and DESTROY all monsters among them. Cards destroyed and sent to the GY by this card's effects cannot activate their own effects that same turn."
+    },
+    "Hallo, the Spirit of Tricks": {
+        "_current": "If this card is Normal or Special Summoned: <b>You can activate this effect;</b> if you still control this face-up card, your opponent chooses 1 of these effects for you to apply.\n● This card gains 800 ATK for each Fiend monster currently in your GY.\n● Inflict 500 damage to your opponent for each Fiend monster in your GY.HOPT | \nHOPT | If this card is destroyed: You can send 1 monster your opponent controls to the GY.",
         "previous": null
     },
-    "G Golem Pebble Dog": {
-        "_current": "① HOPT | If this card is Normal or Special Summoned: You can add to your hand or Special Summon 1 \"G Golem Pebble Dog\" from your Deck, also you cannot Special Summon for the rest of this turn, except Cyberse monsters.\n② HOPT | If this card is sent from the hand to the GY: You can SEARCH 1 \"G Golem\" card.",
-        "previous": "① HOPT | If this card is Normal or Special Summoned: You can add to your hand or Special Summon 1 \"G Golem Pebble Dog\" from your Deck, also you cannot Special Summon monsters for the rest of this turn, except Cyberse monsters.\n② HOPT | If this card is sent from the hand to the GY: You can SEARCH 1 \"G Golem\" card."
+    "Heroic Challenger - Extra Sword": {
+        "_current": "An Xyz Monster that was Summoned using this card as material gains this effect.\n● If it is Xyz Summoned: It gains 1000 ATK.",
+        "previous": "An Xyz Monster that was Summoned using this card as material gains this effect.\n● When it is Xyz Summoned: It gains 1000 ATK."
     },
-    "G Golem Rock Hammer": {
-        "_current": "① HOPT | If this card is in your hand: <b>You can DISCARD 1 other Cyberse monster;</b> reduce this card's Level by 2 until the end of this turn (even after it is Summoned/Set).\n② HOPT | <b>You can Tribute this card;</b> Special Summon 3 \"G Golem Tokens\" (Cyberse/EARTH/Level 1/ATK 0/DEF 0) in Defense Position, also you cannot Special Summon for the rest of this turn, except Cyberse monsters.",
-        "previous": "① HOPT | If this card is in your hand: <b>You can DISCARD 1 other Cyberse monster;</b> reduce this card's Level by 2 until the end of this turn (even after it is Summoned/Set).\n② HOPT | <b>You can Tribute this card;</b> Special Summon 3 \"G Golem Tokens\" (Cyberse/EARTH/Level 1/ATK 0/DEF 0) in Defense Position, also you cannot Special Summon monsters for the rest of this turn, except Cyberse monsters."
+    "Mermail Abyssgaios": {
+        "_current": "2 Level 7 WATER monsters\n① While this card has material, Level 5 or higher monsters cannot attack.\n② OPT | QUICK | <b>You can detach 1 material from this card;</b> NEGATE the effects of all face-up monsters your opponent currently controls with less ATK than this card, until the end of this turn.",
+        "previous": "2 Level 7 WATER monsters\n① While this face-up card has Xyz Material, Level 5 or higher monsters cannot attack.\n② OPT | QUICK | <b>You can detach 1 material from this card;</b> NEGATE the effects of all face-up monsters your opponent currently controls that have less ATK than this card, until the end of the turn."
     },
-    "Gen the Diamond Tiger": {
-        "_current": "① OPT | At the end of the Battle Phase: BOUNCE this card.\n② YOUR MAIN PHASE | HOPT | You can Special Summon 1 \"Ken the Warrior Dragon\" from your hand or Deck to your opponent's field in Defense Position.\n③ HOPT | If this card is Special Summoned by the effect of \"Ken the Warrior Dragon\": DISCARD 1 card.",
+    "Moon of the Closed Heaven": {
+        "_current": "2 Effect Monsters\n① HOPT | <b>You can target 1 face-up monster your opponent controls this card points to;</b> this turn, if you Link Summon a Link-5 monster using this card you control, you can also use that monster your opponent controls as material.",
         "previous": null
     },
-    "Gladiator Beast Andabata": {
-        "_current": "\"Gladiator Beast Augustus\" + 2 \"Gladiator Beast\" monsters\nMust first be Special Summoned (from your Extra Deck) by shuffling the above cards you control into the Deck.\n① If Summoned this way: You can Special Summon 1 Level 7 or lower \"Gladiator Beast\" Fusion Monster from your Extra Deck, ignoring its Summoning conditions.\n② At the end of the Battle Phase, if this card battled: <b>You can return it to the Extra Deck;</b> Special Summon 2 \"Gladiator Beast\" monsters from your Deck.",
-        "previous": "\"Gladiator Beast Augustus\" + 2 \"Gladiator Beast\" monsters\nMust first be Special Summoned (from your Extra Deck) by shuffling the above cards you control into the Deck. (You do not use \"Polymerization\".)\n① If Summoned this way: You can Special Summon 1 Level 7 or lower \"Gladiator Beast\" Fusion Monster from your Extra Deck, ignoring its Summoning conditions.\n② At the end of the Battle Phase, if this card battled: <b>You can return it to the Extra Deck;</b> Special Summon 2 \"Gladiator Beast\" monsters from your Deck."
+    "Neo Blue-Eyes Ultimate Dragon": {
+        "_current": "\"Blue-Eyes White Dragon\" + \"Blue-Eyes White Dragon\" + \"Blue-Eyes White Dragon\"\n① At the end of the Damage Step, if this Fusion Summoned card attacked, and this is the only face-up card you control: <b>You can send 1 \"Blue-Eyes\" Fusion Monster from your Extra Deck to the GY;</b> this card can attack again in a row.\nYou can use this effect of \"Neo Blue-Eyes Ultimate Dragon\" twice per turn.\n② QUICK | When a card or effect is activated that targets a \"Blue-Eyes\" monster(s) you control: <b>You can BANISH this card from your GY;</b> NEGATE the activation, and if you do, DESTROY that card.",
+        "previous": "\"Blue-Eyes White Dragon\" + \"Blue-Eyes White Dragon\" + \"Blue-Eyes White Dragon\"\n① At the end of the Damage Step, if this is the only face-up card you control, and this Fusion Summoned card attacked: <b>You can send 1 \"Blue-Eyes\" Fusion Monster from your Extra Deck to the GY;</b> this card can attack again in a row.\nYou can use this effect of \"Neo Blue-Eyes Ultimate Dragon\" up to twice per turn.\n② During either player's turn, when a card or effect is activated that targets a \"Blue-Eyes\" monster(s) you control: <b>You can BANISH this card from your GY;</b> NEGATE the activation, and if you do, DESTROY that card."
     },
-    "Gladiator Beast Augustus": {
-        "_current": "① When this card is Special Summoned by the effect of a \"Gladiator Beast\" monster: You can Special Summon 1 \"Gladiator Beast\" monster from your hand in Defense Position. Shuffle it into the Deck during the End Phase.\n② At the end of the Battle Phase, if this card battled: <b>You can shuffle it into the Deck;</b> Special Summon 1 \"Gladiator Beast\" monster from your Deck, except \"Gladiator Beast Augustus\".",
-        "previous": "① When this card is Special Summoned by the effect of a \"Gladiator Beast\" monster: You can Special Summon 1 \"Gladiator Beast\" monster from your hand in Defense Position. Shuffle it into the Deck during the End Phase.\n② At the end of the Battle Phase, if this card attacked or was attacked: <b>You can shuffle it into the Deck;</b> Special Summon 1 \"Gladiator Beast\" monster from your Deck, except \"Gladiator Beast Augustus\"."
+    "Number 104: Masquerade": {
+        "_current": "3 Level 4 monsters\n① BATTLE PHASE | QUICK | When your opponent activates a monster effect: <b>You can detach 1 material from this card;</b> NEGATE the activation, and if you do, inflict 800 damage to your opponent.\n② YOUR MAIN PHASE | OPT | You can send the top card of your opponent's Deck to the GY.",
+        "previous": "3 Level 4 monsters\n① During either player's Battle Phase, when an opponent's monster effect is activated: <b>You can detach 1 Xyz Material from this card;</b> NEGATE the activation, and if you do, inflict 800 damage to your opponent.\n② OPT | You can send the top card of your opponent's Deck to the GY."
     },
-    "Gladiator Beast Bestiari": {
-        "_current": "① If this card is Special Summoned by the effect of a \"Gladiator Beast\" monster: <b>Target 1 Spell/Trap on the field;</b> DESTROY that target.\n② At the end of the Battle Phase, if this card battled: <b>You can shuffle it into the Deck;</b> Special Summon 1 \"Gladiator Beast\" monster from your Deck, except \"Gladiator Beast Bestiari\".",
-        "previous": "① If this card is Special Summoned by the effect of a \"Gladiator Beast\" monster: <b>Target 1 Spell/Trap Card on the field;</b> DESTROY that target.\n② At the end of the Battle Phase, if this card attacked or was attacked: <b>You can shuffle it into the Deck;</b> Special Summon 1 \"Gladiator Beast\" monster from your Deck, except \"Gladiator Beast Bestiari\"."
+    "Powersink Stone": {
+        "_current": "① Each time a monster effect is activated, place 1 Spellstone Counter on this card when that effect resolves (max. 2).\n② While this card has 2 Spellstone Counters, neither player can activate the effects of face-up monsters on the field, also the effects of face-up monsters on the field are negated.\n③ END PHASE | OPT | If this card has any Spellstone Counters: Remove them.",
+        "previous": "① Each time a monster effect is activated, place 1 Spellstone Counter on this card (max. 2).\n② While this card has 2 Spellstone Counters, neither player can activate the effects of face-up monsters on the field, also the effects of face-up monsters on the field are negated.\n③ END PHASE | OPT | If this card has any Spellstone Counters: Remove them."
     },
-    "Gladiator Beast Heraklinos": {
-        "_current": "\"Gladiator Beast Laquari\" + 2 \"Gladiator Beast\" monsters\nMust first be Special Summoned (from your Extra Deck) by shuffling the above cards you control into the Deck.\n① QUICK | When a Spell/Trap Card is activated: <b>You can DISCARD 1 card;</b> NEGATE the activation, and if you do, DESTROY it. This card must be face-up on the field to activate and to resolve this effect.",
-        "previous": "\"Gladiator Beast Laquari\" + 2 \"Gladiator Beast\" monsters\nMust first be Special Summoned (from your Extra Deck) by shuffling the above cards you control into the Deck. (You do not use \"Polymerization\".)\n① QUICK | When a Spell/Trap Card is activated: <b>You can DISCARD 1 card;</b> NEGATE the activation, and if you do, DESTROY it. This card must be face-up on the field to activate and to resolve this effect."
+    "Scrypton": {
+        "_current": "① HOPT | <b>You can BANISH 1 Cyberse monster from your GY, except \"Scrypton\";</b> Special Summon this card from your hand.\n② HOPT | If this card is sent to the GY as Link Material for a Cyberse monster: <b>You can target 1 banished monster;</b> shuffle it into the Deck.",
+        "previous": "① HOPT | <b>You can BANISH 1 Cyberse monster from your GY, except \"Scrypton\";</b> Special Summon this card from your hand.\n② HOPT | If this card is sent to the GY as material for the Link Summon of a Cyberse monster: <b>You can target 1 banished monster;</b> shuffle it into the Deck."
     },
-    "Gladiator Beast Laquari": {
-        "_current": "① If this card was Special Summoned by the effect of a \"Gladiator Beast\" monster, its original ATK becomes 2100.\n② At the end of the Battle Phase, if this card battled: <b>You can shuffle it into the Deck;</b> Special Summon 1 \"Gladiator Beast\" monster from your Deck, except \"Gladiator Beast Laquari\".",
-        "previous": "① If this card was Special Summoned by the effect of a \"Gladiator Beast\" monster, its original ATK becomes 2100.\n② At the end of the Battle Phase, if this card attacked or was attacked: <b>You can shuffle it into the Deck;</b> Special Summon 1 \"Gladiator Beast\" monster from your Deck, except \"Gladiator Beast Laquari\"."
-    },
-    "Gladiator Beast Murmillo": {
-        "_current": "① If this card is Special Summoned by the effect of a \"Gladiator Beast\" monster: <b>Target 1 face-up monster;</b> DESTROY that target.\n② At the end of the Battle Phase, if this card battled: <b>You can shuffle it into the Deck;</b> Special Summon 1 \"Gladiator Beast\" monster from your Deck, except \"Gladiator Beast Murmillo\".",
-        "previous": "① When this card is Special Summoned by the effect of a \"Gladiator Beast\" monster: <b>Target 1 face-up monster;</b> DESTROY that target.\n② At the end of the Battle Phase, if this card attacked or was attacked: <b>You can shuffle it into the Deck;</b> Special Summon 1 \"Gladiator Beast\" monster from your Deck, except \"Gladiator Beast Murmillo\"."
-    },
-    "Gladiator Beast Nerokius": {
-        "_current": "3 \"Gladiator Beast\" monsters\nMust first be Special Summoned (from your Extra Deck) by shuffling the above cards you control into the Deck.\n① Cannot be destroyed by battle. If this card attacks or is attacked, your opponent cannot activate cards or effects until the end of the Damage Step.\n② At the end of the Battle Phase, if this card battled: <b>You can shuffle it into the Extra Deck;</b> Special Summon 2 \"Gladiator Beast\" monsters from your Deck.",
-        "previous": "3 \"Gladiator Beast\" monsters\nMust first be Special Summoned (from your Extra Deck) by shuffling the above cards you control into the Deck. (You do not use \"Polymerization\".)\n① Cannot be destroyed by battle. If this card attacks or is attacked, your opponent cannot activate cards or effects until the end of the Damage Step.\n② At the end of the Battle Phase, if this card attacked or was attacked: <b>You can shuffle it into the Extra Deck;</b> Special Summon 2 \"Gladiator Beast\" monsters from your Deck."
-    },
-    "Gladiator Beast Noxious": {
-        "_current": "① When an opponent's monster declares a direct attack: You can Special Summon this card from your hand, and if you do, change the attack target to this card, and perform damage calculation. This card cannot be destroyed by that battle.\n② If this card is Special Summoned by the effect of a \"Gladiator Beast\" monster: You can send 1 \"Gladiator Beast\" monster from your Deck to the GY.\n③ At the end of the Battle Phase, if this card battled: <b>You can shuffle it into the Deck;</b> Special Summon 1 \"Gladiator Beast\" monster from your Deck, except \"Gladiator Beast Noxious\".",
-        "previous": "① When an opponent's monster declares a direct attack: You can Special Summon this card from your hand, and if you do, change the attack target to this card, and proceed to damage calculation. This card cannot be destroyed by that battle.\n② If this card is Special Summoned by the effect of a \"Gladiator Beast\" monster: You can send 1 \"Gladiator Beast\" monster from your Deck to the GY.\n③ At the end of the Battle Phase, if this card battled: <b>You can shuffle it into the Deck;</b> Special Summon 1 \"Gladiator Beast\" monster from your Deck, except \"Gladiator Beast Noxious\"."
-    },
-    "Gladiator Beast Retiari": {
-        "_current": "① When this card is Special Summoned by the effect of a \"Gladiator Beast\" monster: <b>You can target 1 card in your opponent's GY;</b> BANISH it.\n② At the end of the Battle Phase, if this card battled: <b>You can shuffle it into the Deck;</b> Special Summon 1 \"Gladiator Beast\" monster from your Deck, except \"Gladiator Beast Retiari\".",
-        "previous": "① When this card is Special Summoned by the effect of a \"Gladiator Beast\" monster, you can remove from play 1 card from your opponent's GY.\n② At the end of the Battle Phase, if this card attacked or was attacked, you can return it to the Deck to Special Summon 1 \"Gladiator Beast\" monster from your Deck, except \"Gladiator Beast Retiari\"."
-    },
-    "Gladiator Beast Secutor": {
-        "_current": "If this card was Special Summoned by the effect of a \"Gladiator Beast\" monster, then at the end of any Battle Phase in which this card battled: Special Summon 2 \"Gladiator Beast\" monsters from your Deck, except \"Gladiator Beast Secutor\".",
-        "previous": "If this card was Special Summoned by the effect of a \"Gladiator Beast\" monster, then at the end of any Battle Phase in which this card attacked or was attacked: Special Summon 2 \"Gladiator Beast\" monsters from your Deck, except \"Gladiator Beast Secutor\"."
-    },
-    "Gladiator Beast Tamer Editor": {
-        "_current": "2 Level 5 or higher \"Gladiator Beast\" monsters\nMust first be Special Summoned (from your Extra Deck) by shuffling the above cards you control into the Deck. Cannot be used as Fusion Material.\n① OPT | You can Special Summon 1 \"Gladiator Beast\" Fusion Monster from your Extra Deck, except \"Gladiator Beast Tamer Editor\", ignoring its Summoning conditions.\n② At the end of the Battle Phase, if your \"Gladiator Beast\" monster battled: <b>You can shuffle that monster into the Deck or Extra Deck;</b> Special Summon 1 \"Gladiator Beast\" monster from your Deck.",
-        "previous": "2 Level 5 or higher \"Gladiator Beast\" monsters\nMust first be Special Summoned (from your Extra Deck) by shuffling the above cards you control into the Deck. (You do not use \"Polymerization\".) Cannot be used as Fusion Material.\n① OPT | You can Special Summon 1 \"Gladiator Beast\" Fusion Monster from your Extra Deck, except \"Gladiator Beast Tamer Editor\", ignoring its Summoning conditions.\n② At the end of the Battle Phase, if your \"Gladiator Beast\" monster battled: <b>You can shuffle that monster into the Deck or Extra Deck;</b> Special Summon 1 \"Gladiator Beast\" monster from your Deck."
-    },
-    "Gladiator Beast United": {
-        "_current": "HOPT ACTIVATION\nBATTLE PHASE | Shuffle into the Deck, from your hand, field, or GY, the materials that are mentioned on a \"Gladiator Beast\" Fusion Monster, then Special Summon that Fusion Monster from your Extra Deck, ignoring its Summoning conditions.\nYou cannot declare attacks the turn you activate this card, except with \"Gladiator Beast\" monsters.",
-        "previous": "HOPT ACTIVATION\nBATTLE PHASE | Shuffle into the Deck, from your hand, field, or GY, the Fusion Materials that are listed on a \"Gladiator Beast\" Fusion Monster, then Special Summon that Fusion Monster from your Extra Deck, ignoring its Summoning conditions.\nYou cannot declare attacks the turn you activate this card, except with \"Gladiator Beast\" monsters."
-    },
-    "Gladiator Beast War Chariot": {
-        "_current": "When a monster effect is activated, while you control a \"Gladiator Beast\" monster: NEGATE the activation, and if you do, DESTROY it.",
-        "previous": "When an Effect Monster's effect is activated, while you control a \"Gladiator Beast\" monster: NEGATE the activation, and if you do, DESTROY it."
-    },
-    "Goblin Biker Big Gabonga": {
-        "_current": "2 Level 3 monsters\n① HOPT | If this card is Xyz Summoned: You can SEARCH 1 \"Goblin\" monster.\n② HOPT | If material is detached from a monster(s) on the field (except during the Damage Step): <b>You can target 1 face-up monster on the field, except this card;</b> attach it to this card as material.\n③ END PHASE | HOPT | You can attach 1 \"Goblin\" monster from your Deck to this card as material.",
+    "Snake-Eyes Doomed Dragon": {
+        "_current": "1 \"Snake-Eye\" monster + 1 Illusion monster\nMust be either Fusion Summoned, or Special Summoned by sending 2 face-up Monster Cards from your Spell & Trap Zone to the GY. If this card is Special Summoned: <b>You can target 1 face-up monster on the field;</b> place it face-up in its owner's Spell & Trap Zone as a Continuous Spell. You can only use this effect of \"Snake-Eyes Doomed Dragon\" once per turn.",
         "previous": null
     },
-    "Goblin Biker Boom Mach": {
-        "_current": "QUICK | Once per Chain, during the Main Phase, if this card is in your hand or GY: You can detach 1 Xyz Material from a monster on either field, and if you do, Special Summon this card, also you cannot Special Summon \"Goblin Biker Boom Mach\" until the end of the next turn.",
+    "Summon Sorceress": {
+        "_current": "2+ monsters with the same Type, except Tokens\n① HOPT | If this card is Link Summoned: You can Special Summon 1 monster from your hand in Defense Position to your opponent's zone this card points to (but NEGATE its effects), then you can Special Summon 1 monster from your Deck in Defense Position with the same Type as that monster (but NEGATE its effects). If you Summon from your Deck this way, you cannot Special Summon for the rest of this turn, except monsters with that same original Type.",
+        "previous": "2+ monsters with the same Type, except Tokens\n① HOPT | If this card is Link Summoned: <b>You can Special Summon 1 monster from your hand in Defense Position, to your opponent's zone this card points to. You can target 1 face-up monster this card points to;</b> Special Summon 1 monster from your Deck in Defense Position, with the same Type as that monster, to a zone this card points to, but NEGATE its effects."
+    },
+    "True Light": {
+        "_current": "Your opponent cannot target \"Blue-Eyes White Dragon\" in your Monster Zone with card effects.\n① If this face-up card is sent from the Spell & Trap Zone to the GY: DESTROY all monsters you control.\nYou can only use the following effect of \"True Light\" once per turn.\n② <b>You can activate 1 of these effects;</b> \n● Special Summon 1 \"Blue-Eyes White Dragon\" from your hand or GY.\n● Set 1 Spell/Trap from your Deck, that mentions \"Blue-Eyes White Dragon\", with a different name from the cards you control and in your GY.",
+        "previous": "Your opponent cannot target \"Blue-Eyes White Dragon\" in your Monster Zone with card effects.\n① If this face-up card is sent from the Spell & Trap Zone to the GY: DESTROY all monsters you control.\nYou can only use the following effect of \"True Light\" once per turn.\n② <b>You can activate 1 of these effects;</b> \n● Special Summon 1 \"Blue-Eyes White Dragon\" from your hand or GY.\n● Set 1 Spell/Trap directly from your Deck, that mentions \"Blue-Eyes White Dragon\", with a different name from the cards you control and in your GY."
+    },
+    "Ween, the Spirit of Treats": {
+        "_current": "If this card is Normal or Special Summoned: <b>You can activate this effect;</b> if you still control this face-up card, your opponent chooses 1 of these effects for you to apply.\n● This card gains 800 ATK for each Zombie monster currently in your GY.\n● Inflict 500 damage to your opponent for each Zombie monster in your GY.HOPT | \nHOPT | If this card is destroyed: You can Special Summon 1 monster from your opponent's GY to your field.",
         "previous": null
     },
-    "Goblin Biker Clatter Sploder": {
-        "_current": "① HOPT | If this card is Normal or Special Summoned: <b>You can target 1 \"Goblin\" monster in your GY, except \"Goblin Biker Clatter Sploder\";</b> Special Summon it.\n② OPP'S MAIN PHASE | HOPT | QUICK | If this card is in your GY: You can detach 1 Xyz Material from a monster on either field, and if you do, Special Summon this card, but BANISH it when it leaves the field.",
-        "previous": null
-    },
-    "Goblin Biker Dugg Charger": {
-        "_current": "① HOPT | If this card is in your hand: You can detach 1 Xyz Material from a monster on either field, and if you do, Special Summon this card.\n② HOPT | If this card is Normal or Special Summoned: You can SEARCH 1 \"Goblin Biker\" Spell/Trap.",
-        "previous": null
-    },
-    "Goblin Biker Grand Bash": {
-        "_current": "\"Goblin\" monsters you control gain 300 ATK for each \"Goblin\" monster you control.\n① YOUR MAIN PHASE | HOPT | You can Normal Summon 1 \"Goblin\" monster, in addition to your Normal Summon/Set. (You can only gain this effect once per turn.)\n② HOPT | <b>You can target 2 \"Goblin\" monsters you control, then activate 1 of these effects;</b> \n● Make the Level of 1 of the monsters become the current Level of the other.\n● Both of their Levels become their combined original Levels.",
-        "previous": null
-    },
-    "Goblin Biker Grand Entrance": {
-        "_current": "SEARCH 1 \"Goblin\" monster then you can apply the following effect.\n● Detach 1 Xyz Material from a monster on either field, and if you do, Special Summon 1 Level 4 or lower \"Goblin\" monster from your hand.\nHOPT | <b>You can BANISH this card from your GY;</b> detach 1 Xyz Material from a monster on either field, then you can add 1 \"Goblin\" monster from your GY to your hand.",
-        "previous": null
-    },
-    "Goblin Biker Grand Pileup": {
-        "_current": "① HOPT | <b>Target 1 Xyz Monster you control;</b> Special Summon 1 \"Goblin\" Xyz Monster from your Extra Deck, by using that target as material, and if you do, attach this card to it as material. (This is treated as an Xyz Summon. Transfer its materials to the Summoned monster.)\n② HOPT | <b>You can BANISH this card from your GY, then target 1 \"Goblin\" Xyz Monster you control and 1 card in either GY;</b> attach the targeted card from the GY to that monster on the field as material.",
-        "previous": null
-    },
-    "Goblin Biker Grand Stampede": {
-        "_current": "HOPT | You can use ONE of —\n① MAIN PHASE | You can: Immediately after this effect resolves, Xyz Summon 1 Xyz Monster, using only \"Goblin\" monsters you control.\n② If you control a \"Goblin\" Xyz Monster: <b>You can target 1 Effect Monster on the field;</b> detach 1 Xyz Material from a monster on either field, and if you do, NEGATE that monster's effects until the end of this turn.",
-        "previous": null
-    },
-    "Goblin Biker Mean Merciless": {
-        "_current": "① HOPT | If this card is Normal or Special Summoned: You can Special Summon 1 \"Goblin\" monster from your hand, except \"Goblin Biker Mean Merciless\".\n② YOUR MAIN PHASE | HOPT | If this card is in your GY: You can detach 1 Xyz Material from a monster on either field, and if you do, Special Summon this card, but BANISH it when it leaves the field.",
-        "previous": null
-    },
-    "Goblin Biker Troika Griare": {
-        "_current": "2+ Level 3 monsters\n① While 3 or more Xyz Materials are attached to monsters on the field, \"Goblin\" monsters you control can attack directly.\n② OPT | If a monster(s) is Normal or Special Summoned, while this card is in the Monster Zone (except during the Damage Step): <b>You can target 1 of those monsters;</b> detach 1 material from a monster on either field, and if you do, change the targeted monster's battle position.\n③ OPT | When an opponent's monster declares an attack: You can detach 1 material from a monster on either field, and if you do, NEGATE that attack.",
-        "previous": null
-    },
-    "Goblin Freefall Squad": {
-        "_current": "① HOPT | If this card is Special Summoned from the hand in Attack Position: <b>You can target 1 face-up Effect Monster your opponent controls;</b> change this card to Defense Position, also NEGATE the effects of that monster while this monster is in face-up Defense Position.\n② HOPT | If a monster(s) is Special Summoned to your opponent's field, while this card is in your GY (except during the Damage Step): <b>You can DISCARD 1 card;</b> add this card to your hand.",
-        "previous": null
-    },
-    "Goblin's Crazy Beast": {
-        "_current": "2+ Level 6 monsters\n① OPT | QUICK | <b>You can target 1 Spell/Trap on the field;</b> detach 2 materials from a monster(s) on the field, and if you do, attach that target to this card as material.\n② If a monster(s) you control would be destroyed by card effect, you can detach 1 material from this card instead.\n③ If this card is in your GY: You can Special Summon this card, then you can attach 1 \"Goblin\" monster from your GY to this card as material.\nYou can only use this effect of \"Goblin's Crazy Beast\" once per Duel.",
-        "previous": null
-    },
-    "Hi-Speedroid Cork Shooter": {
-        "_current": "1 Tuner + 1+ non-Tuner monsters\nHOPT | If this card is Synchro Summoned: <b>You can activate 1 of these effects;</b> \n● SEARCH 1 \"Speedroid\" Spell/Trap.\n● If all materials that were used for the Synchro Summon of this card were \"Speedroid\" monsters, and are all in your GY, Special Summon all of them.\nYou cannot Special Summon the turn you activate this effect, except WIND monsters.",
-        "previous": "1 Tuner + 1+ non-Tuner monsters\nHOPT | If this card is Synchro Summoned: <b>You can activate 1 of these effects;</b> \n● SEARCH 1 \"Speedroid\" Spell/Trap.\n● If all materials that were used for the Synchro Summon of this card were \"Speedroid\" monsters, and are all in your GY, Special Summon all of them.\nYou cannot Special Summon monsters the turn you activate this effect, except WIND monsters."
-    },
-    "Hi-Speedroid Hagoita": {
-        "_current": "1 Tuner + 1 or more non-Tuner monsters\n① QUICK | <b>You can Tribute this card;</b> increase the Levels of all monsters currently on the field by 1, until the end of this turn.\n② HOPT | If this card is in your GY and you control a \"Speedroid\" Tuner monster: You can Special Summon this card, also you cannot Special Summon for the rest of this turn, except WIND monsters.",
-        "previous": "1 Tuner + 1 or more non-Tuner monsters\n① During either player's turn: <b>You can Tribute this card;</b> increase the Levels of all monsters currently on the field by 1, until the end of this turn.\n② HOPT | If this card is in your GY and you control a \"Speedroid\" Tuner monster: You can Special Summon this card, also you cannot Special Summon monsters for the rest of this turn, except WIND monsters."
-    },
-    "Hi-Speedroid Kendama": {
-        "_current": "1 Tuner + 1 or more non-Tuner monsters\n① This card is PIERCING.\n② HOPT | <b>You can BANISH 1 Machine monster from your GY;</b> inflict 500 damage to your opponent.\n③ HOPT | If this card is in your GY and you control no cards: You can Special Summon this card. You cannot Normal Summon/Set the turn you activate this effect.",
-        "previous": "1 Tuner + 1 or more non-Tuner monsters\n① This card is PIERCING.\n② HOPT | <b>You can BANISH 1 Machine-Type monster from your GY;</b> inflict 500 damage to your opponent.\n③ HOPT | If this card is in your GY and you control no cards: You can Special Summon this card. You cannot Normal Summon/Set the turn you activate this effect."
-    },
-    "Infernoid Evil": {
-        "_current": "2 \"Infernoid\" monsters\n① HOPT | If this card is Fusion Summoned: <b>You can BANISH 1 \"Infernoid\" monster from your GY;</b> send \"Infernoid\" monsters with different names from your Deck to the GY equal to the banished monster's Level.\n② HOPT | If this card is sent to the GY or banished: You can SEARCH 1 \"Void\" Spell/Trap.",
-        "previous": null
-    },
-    "Ken the Warrior Dragon": {
-        "_current": "① OPT | At the end of the Battle Phase: BOUNCE this card.\n② YOUR MAIN PHASE | HOPT | You can Special Summon 1 \"Gen the Diamond Tiger\" from your hand or Deck to your opponent's field in Defense Position.\n③ HOPT | If this card is Special Summoned by the effect of \"Gen the Diamond Tiger\": Your opponent DRAWS 2 cards, then they DISCARD 1 card.",
-        "previous": null
-    },
-    "Kuibelt the Blade Dragon": {
-        "_current": "1 Tuner + 1+ non-Tuner monsters\n① HOPT | If this card is Synchro Summoned: <b>You can target 1 card on the field;</b> DESTROY it.\n② HOPT | If this card on the field is destroyed: <b>You can target 1 face-up monster on the field;</b> that monster cannot attack until the end of your opponent's turn.",
-        "previous": null
-    },
-    "Magmacho Dragon": {
-        "_current": "① HOPT | <b>You can BANISH up to 3 FIRE monsters from your GY;</b> this card gains 400 ATK for each, until the end of this turn.\n② HOPT | If a face-up FIRE monster(s) you control is destroyed by card effect, while this card is in your GY (except during the Damage Step): You can Special Summon this card (but BANISH it when it leaves the field), then DRAW 1 card.",
-        "previous": null
-    },
-    "Materiactor Annulus": {
-        "_current": "HOPT ACTIVATION\nDetach 1 material from a monster you control, then if the detached material was sent to your GY, you can Set that card.",
-        "previous": "HOPT ACTIVATION\nDetach 1 Xyz Material from a monster you control, then if the detached material was sent to your GY, you can Set that card to your field."
-    },
-    "Materiactor Gigadra": {
-        "_current": "① HOPT | <b>You can DISCARD 1 card;</b> Special Summon 1 Level 3 Normal Monster from your hand or Deck, or if you discarded a Normal Monster to activate this effect, you can Special Summon 1 \"Materiactor\" monster instead.\n② You cannot Special Summon from the Extra Deck, except Xyz Monsters.",
-        "previous": "① HOPT | <b>You can DISCARD 1 card;</b> Special Summon 1 Level 3 Normal Monster from your hand or Deck, or if you discarded a Normal Monster to activate this effect, you can Special Summon 1 \"Materiactor\" monster instead.\n② You cannot Special Summon monsters from the Extra Deck, except Xyz Monsters."
-    },
-    "Materialization": {
-        "_current": "HOPT ACTIVATION\n<b>Target 1 face-up Monster Card in any Spell & Trap Zone, then activate 1 of these effects;</b> \n● Special Summon it to its owner's field.\n● BOUNCE it.\n● DESTROY it, then you can DESTROY 1 monster on the field with an equal or lower Level.",
-        "previous": null
-    },
-    "Metaltronus": {
-        "_current": "HOPT ACTIVATION\n<b>Target 1 face-up non-Token monster your opponent controls;</b> Special Summon 1 monster from your hand, Deck, or Extra Deck that has 2 or more of the same Type, Attribute, and/or ATK (but NEGATE its effects), and if you do, NEGATE that targeted monster's effects, also, after that, if these monsters have the same name, you can BANISH both, face-down. Your opponent cannot activate the targeted monster's effects in response to this card's activation.",
-        "previous": null
-    },
-    "Old Entity Hastorr": {
-        "_current": "1 Tuner + 1+ non-Tuner monsters\n① If this card is sent from the Monster Zone to the GY: <b>You can target 1 face-up monster your opponent controls;</b> equip this card from your GY to that monster. That monster cannot attack, also its effects are negated.\n② If this card leaves the field while equipped to an opponent's monster by this effect: Take control of the monster this card was equipped to.",
-        "previous": "1 Tuner + 1 or more non-Tuner monsters\n① If this card is sent from the Monster Zone to the GY: <b>You can target 1 face-up monster your opponent controls;</b> equip this card from your GY to that monster. That monster cannot attack, also its effects are negated.\n② If this card leaves the field while equipped to an opponent's monster by this effect: Take control of the monster this card was equipped to."
-    },
-    "PSY-Framegear Epsilon": {
-        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned by a card effect.\n① QUICK | When your opponent activates a Trap Card while you control no monsters: You can Special Summon both this card from your hand and 1 \"PSY-Frame Driver\" from your hand, Deck, or GY, and if you do, NEGATE that activation, and if you do that, DESTROY that Trap Card. During the End Phase, BANISH the face-up monsters Special Summoned by this effect.",
-        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned by a card effect, and cannot be Special Summoned by other ways.\n① During either player's turn, when your opponent activates a Trap Card while you control no monsters: You can Special Summon both this card from your hand and 1 \"PSY-Frame Driver\" from your hand, Deck, or GY, and if you do, NEGATE that activation, and if you do that, DESTROY that Trap Card. During the End Phase, BANISH the face-up monsters Special Summoned by this effect."
-    },
-    "Pitknight Filly": {
-        "_current": "2 Effect Monsters\n① HOPT | If this card is Special Summoned to a zone a Link Monster points to: <b>You can target 1 monster you control with 1500 or less ATK;</b> this turn, it can make a second attack during each Battle Phase, also if it battles an opponent's monster, any battle damage it inflicts to your opponent is doubled.\n② HOPT | During the Standby Phase of the next turn after this card was destroyed and sent to the GY: You can Special Summon this card.",
-        "previous": null
-    },
-    "Ritual Beast Inheritance": {
-        "_current": "① Monsters your opponent controls lose 200 ATK for each different Type among the \"Ritual Beast\" monsters you control.\n② HOPT | <b>You can reveal 1 \"Ritual Beast\" monster in your hand;</b> SEARCH 1 \"Ritual Beast\" monster with a different Type then DISCARD 1 card.\n③ HOPT | If 2 or more monsters are Special Summoned to your field at the same time (except during the Damage Step): <b>You can target 1 monster on the field;</b> change its battle position.",
-        "previous": null
-    },
-    "Ritual Beast Ulti-Nochiudrago": {
-        "_current": "1 \"Ritual Beast Tamer\" monster + 1 \"Spiritual Beast\" monster\nMust be Special Summoned (from your Extra Deck) by BANISHING the above cards from your field and/or GY. You can only Special Summon \"Ritual Beast Ulti-Nochiudrago(s)\" once per turn.\n① Your opponent cannot target other \"Ritual Beast\" monsters you control with card effects.\n② QUICK | <b>You can return this card to the Extra Deck, then target 1 of your banished \"Ritual Beast\" monsters;</b> Special Summon it, but it cannot attack directly.",
-        "previous": null
-    },
-    "Sangen Kaiho": {
-        "_current": "① MAIN PHASE | HOPT | If all monsters you control are FIRE Dragon monsters (min. 1) and your opponent controls more monsters than you do: End the Main Phase.\n② HOPT | If 3 or more attacks have been declared this turn: <b>You can BANISH this card from your GY;</b> DRAW 1 card, then you can Special Summon any number of \"Tenpai Dragon\" monsters from your hand.",
-        "previous": null
-    },
-    "Sangen Kaimen": {
-        "_current": "HOPT ACTIVATION\nApply 1 of these effects, or if you activated this card during the Battle Phase, you can apply any of them, in sequence.\n● SEARCH 1 Level 4 or lower FIRE Dragon monster.\n● Special Summon 1 FIRE Dragon monster from your hand.",
-        "previous": null
-    },
-    "Sangen Summoning": {
-        "_current": "① During your Main Phase 1, FIRE Dragon monsters you control are unaffected by your opponent's activated effects.\n② YOUR MAIN PHASE | HOPT | You can SEARCH 1 \"Tenpai Dragon\" monster then DISCARD 1 card.\n③ If this card is destroyed during the Battle Phase: <b>You can target 1 Dragon Synchro Monster you control;</b> double its ATK.",
-        "previous": null
-    },
-    "Sangenpai Bident Dragion": {
-        "_current": "1 Dragon Tuner + 1+ non-Tuner Dragon monsters\n① If this card is Synchro Summoned: <b>You can target 1 FIRE Dragon monster in your GY;</b> Special Summon it, also you cannot Special Summon for the rest of this turn, except Dragon monsters.\n② QUICK | If 3 or more attacks have been declared this turn: You can Special Summon this card from your GY, then you can DESTROY 1 Spell/Trap on the field.\nYou can only use this effect of \"Sangenpai Bident Dragion\" once per Duel, and its previous effect only once per turn.",
-        "previous": null
-    },
-    "Sangenpai Transcendent Dragion": {
-        "_current": "1 Dragon Tuner + 1+ non-Tuner Dragon monsters\n① All monsters your opponent controls must attack, if able. Your opponent cannot activate cards or effects during the Battle Phase.\n② If this card is Synchro Summoned: You can change all monsters on the field to Attack Position.\n③ QUICK | If 3 or more attacks have been declared this turn: You can Special Summon this card from your GY, then you can DESTROY 1 card on the field.\nYou can only use this effect of \"Sangenpai Transcendent Dragion\" once per Duel.",
-        "previous": null
-    },
-    "Speedroid Dominobutterfly": {
-        "_current": "Cannot be used as a Synchro Material, except for the Synchro Summon of a WIND Dragon or Machine Synchro Monster. If this card, Special Summoned from the Extra Deck, is used as material for a Synchro Summon, BANISH it. \n[Pendulum Effect]\n① You cannot Pendulum Summon, except WIND monsters. This effect cannot be negated.\n② HOPT | <b>You can DISCARD 1 WIND monster, then target 1 of your banished WIND monsters;</b> add it to your hand.",
-        "previous": "Cannot be used as a Synchro Material, except for the Synchro Summon of a WIND Dragon or Machine-Type Synchro Monster. If this card, Special Summoned from the Extra Deck, is used as a Material for a Synchro Summon, BANISH it. \n[Pendulum Effect]\n① You cannot Pendulum Summon monsters, except WIND monsters. This effect cannot be negated.\n② HOPT | <b>You can DISCARD 1 WIND monster, then target 1 of your banished WIND monsters;</b> add it to your hand."
-    },
-    "Speedroid Marble Machine": {
-        "_current": "HOPT | When this card is Normal Summoned: <b>You can activate this effect;</b> SEARCH 1 \"Speedroid\" monster also you cannot Special Summon for the rest of this turn, except WIND monsters.\n[Pendulum Effect]\nOPT | When your Defense Position monster is targeted for an attack: You can change it to face-up Attack Position, also it cannot be destroyed by battle this turn (even if this card leaves the field).",
-        "previous": "HOPT | When this card is Normal Summoned: <b>You can activate this effect;</b> SEARCH 1 \"Speedroid\" monster also you cannot Special Summon monsters for the rest of this turn, except WIND monsters.\n[Pendulum Effect]\nOPT | When your Defense Position monster is targeted for an attack: You can change it to face-up Attack Position, also it cannot be destroyed by battle this turn (even if this card leaves the field)."
-    },
-    "Speedroid Taketomborg": {
-        "_current": "① If you control a WIND monster, you can Special Summon this card (from your hand).\n② <b>You can Tribute this card;</b> Special Summon 1 \"Speedroid\" Tuner from your Deck, also you cannot Special Summon for the rest of this turn, except WIND monsters.\nYou can only Special Summon \"Speedroid Taketomborg(s)\" once per turn.",
-        "previous": "① If you control a WIND monster, you can Special Summon this card (from your hand).\n② <b>You can Tribute this card;</b> Special Summon 1 \"Speedroid\" Tuner from your Deck, also you cannot Special Summon monsters for the rest of this turn, except WIND monsters.\nYou can only Special Summon \"Speedroid Taketomborg(s)\" once per turn."
-    },
-    "Super Anti-Kaiju War Machine Mecha-Dogoran": {
-        "_current": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand) while your opponent controls a \"Kaiju\" monster.\n① You can only control 1 \"Kaiju\" monster.\n② OPT | <b>You can remove 2 Kaiju Counters from anywhere on the field;</b> equip 1 \"Kaiju\" monster from your hand or GY to this card.\n③ Gains ATK equal to the combined original ATK of the \"Kaiju\" monsters equipped to it by this effect.",
-        "previous": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand) while your opponent controls a \"Kaiju\" monster.\n① You can only control 1 \"Kaiju\" monster.\n② OPT | <b>You can remove 2 Kaiju Counters from anywhere on the field;</b> equip 1 \"Kaiju\" monster from your hand or GY to this card.\n③ This card gains ATK equal to the combined original ATK of the \"Kaiju\" monsters equipped to it by this effect."
-    },
-    "Swordsoul Assessment": {
-        "_current": "① HOPT | <b>Target 1 face-up monster you control;</b> BANISH up to 5 \"Swordsoul\" cards and/or Wyrm monsters from your GY, and if you do, that monster gains 300 ATK for each card banished this way.\n② HOPT | If this card is banished: You can Special Summon 1 \"Swordsoul Token\" (Wyrm/Tuner/WATER/Level 4/ATK 0/DEF 0). While that Token is in the Monster Zone, the player who Summoned it cannot Special Summon from the Extra Deck, except Synchro Monsters.",
-        "previous": "① HOPT | <b>Target 1 face-up monster you control;</b> BANISH up to 5 \"Swordsoul\" cards and/or Wyrm monsters from your GY, and if you do, that monster gains 300 ATK for each card banished this way.\n② HOPT | If this card is banished: You can Special Summon 1 \"Swordsoul Token\" (Wyrm/Tuner/WATER/Level 4/ATK 0/DEF 0). While that Token is in the Monster Zone, the player who Summoned it cannot Special Summon monsters from the Extra Deck, except Synchro Monsters."
-    },
-    "Tarai": {
-        "_current": "HOPT | If this card is in your hand: <b>You can target 1 face-up monster in the Main Monster Zone that has activated its effect on the field this turn;</b> DESTROY it, and if you do, Special Summon this card to the zone that monster was in.",
-        "previous": null
-    },
-    "Tenpai Dragon Chundra": {
-        "_current": "① BATTLE PHASE | OPT | QUICK | You can: Immediately after this effect resolves, Synchro Summon using this card you control.\n② HOPT | If you control a FIRE Dragon monster: You can Special Summon this card from your hand.\n③ HOPT | At the start of the Damage Step, if a monster battles: You can Special Summon 1 Level 4 or lower FIRE Dragon monster from your Deck, except \"Tenpai Dragon Chundra\".",
-        "previous": null
-    },
-    "Tenpai Dragon Fadra": {
-        "_current": "① HOPT | If this card is Normal or Special Summoned, or at the start of the Damage Step, if a monster battles: <b>You can target 1 Level 4 or lower FIRE Dragon monster in your GY;</b> Special Summon it.\n② Your FIRE Dragon monsters cannot be destroyed by battle.\n③ BATTLE PHASE | OPT | QUICK | You can: Immediately after this effect resolves, Synchro Summon using this card you control.",
-        "previous": null
-    },
-    "Tenpai Dragon Genroku": {
-        "_current": "① HOPT | If this card is added to your hand, except by DRAWING it: You can Special Summon this card as a Tuner, then you can increase its Level by 1.\n② HOPT | QUICK | <b>You can Tribute this card;</b> Special Summon 1 \"Tenpai Dragon\" monster from your Deck, except \"Tenpai Dragon Genroku\", also you cannot Special Summon for the rest of this turn, except Dragon monsters.",
-        "previous": null
-    },
-    "Tenpai Dragon Paidra": {
-        "_current": "① HOPT | If this card is Normal or Special Summoned: You can add to your hand or Set 1 \"Sangen\" Spell/Trap from your Deck.\n② You take no battle damage from battles involving your FIRE Dragon monsters.\n③ BATTLE PHASE | OPT | QUICK | You can: Immediately after this effect resolves, Synchro Summon using this card you control.",
-        "previous": null
-    },
-    "Vagnawa the Moon-Eating Dragon": {
-        "_current": "1 Tuner + 1+ non-Tuner monsters\n① HOPT | If this card is Synchro Summoned: <b>You can activate this effect;</b> this card gains 300 ATK for each Level that the non-Tuners used had, then inflict 300 damage to your opponent for each Level that the Tuner used had. The ATK increase lasts until the end of the next turn.",
-        "previous": null
-    },
-    "Void Breach": {
-        "_current": "\"Infernoid\" monsters you control gain 100 ATK for each of your banished \"Infernoid\" monsters.\nHOPT | If you control no monsters, or all monsters you control are Fiend monsters: <b>You can activate 1 of these effects;</b> \n● Add 1 of your banished \"Infernoid\" monsters to your hand.\n● Special Summon 1 \"Infernoid\" monster from your hand, ignoring its Summoning conditions.",
-        "previous": null
-    },
-    "Void Reignition": {
-        "_current": "① <b>Reveal 1 \"Infernoid\" monster or 1 \"Void\" Spell/Trap in your hand;</b> DISCARD your entire hand, then DRAW the same number of cards you discarded.\n② If you control no monsters, or all monsters you control are Fiend monsters, except the turn this card was sent to the GY: <b>You can BANISH this card from your GY, then target up to 11 of your banished \"Infernoid\" monsters with different names;</b> return them to the GY.\nYou can only use this effect of \"Void Reignition\" once per Duel.",
-        "previous": null
+    "Xyz Gift": {
+        "_current": "If you control 2 or more face-up Xyz Monsters: Detach 2 materials from a monster(s) you control, and if you do, DRAW 2 cards.",
+        "previous": "If you control 2 or more face-up Xyz Monsters: Detach 2 Xyz Materials from a monster you control and DRAW 2 cards."
     }
 }
