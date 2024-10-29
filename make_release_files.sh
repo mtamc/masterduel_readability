@@ -10,6 +10,7 @@ echo "Ensure the files at ./original_game_files are up to date! You can update t
 
 echo "STEP 1/5 | exporting game file assets as bytes"
 cd ./tools/rebundle/
+rm -f bytes/*
 python ./unpack.py
 cd ../..
 

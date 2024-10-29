@@ -44,9 +44,10 @@ while IFS= read -r subfile; do
 
         # Increment the success counter
         ((success_count++))
-        if [ "$success_count" -ge 5 ]; then
+        # NOTE: the AssetStudioModCLI command will match on both CARD_Name and CARD_Named, and IDK how to get it to tell me what the actual found name of the asset is, so we just fetch all 6 even though we don't need CARD_Named
+        if [ "$success_count" -ge 6 ]; then
             printf "\r| Progress: %6.2f%% - Successful operations: %d | \n" "$(bc <<< "scale=2; $processed_files * 100 / $total_files")" "$success_count"
-            echo "Found all 5 files, stopping now."
+            echo "Found all 6 files, stopping now."
             break
         fi
     fi

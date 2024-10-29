@@ -19,8 +19,11 @@ os.makedirs("bytes", exist_ok=True)
 for filepath in getFilesList("./original"):
     env = UnityPy.load("./original/" + filepath)
     for obj in env.objects:
+        testdata: Any = obj.read()
+        print('checking: ', testdata.name)
         if obj.type.name == "TextAsset":
             data: Any = obj.read()
             if data.name.lower() in ["card_desc", "card_indx", "card_name", "card_part", "card_pidx"]:
+                print('writing: ', data.name)
                 with open("./bytes/" + data.name + ".bytes", "wb") as f:
                     f.write(bytes(data.script))
