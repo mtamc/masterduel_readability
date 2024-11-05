@@ -1,6 +1,82 @@
 {
-    "Clear World": {
-        "_current": "Once per turn, during your End Phase, pay 500 LP or DESTROY this card.\nEach player receives effects, depending on the monster Attributes they control.\n● LIGHT: Play with your hand revealed at all times.\n● DARK: If you control 2 or more monsters, you cannot declare an attack.\n● EARTH: During your Standby Phase, DESTROY 1 face-up Defense Position monster you control.\n● WATER: During your End Phase, DISCARD 1 card.\n● FIRE: During your End Phase, take 1000 damage.\n● WIND: You must pay 500 LP to activate a Spell Card.",
-        "previous": "During each of your End Phases, pay 500 Life Points or DESTROY this card.\nEach player receives effects, depending on the monster Attributes they control.\n● LIGHT: <b>Play with your hand revealed at all times.\n● DARK: If you control 2 or more monsters, you cannot declare an attack.\n● EARTH: During your Standby Phase: Target 1 face-up Defense Position monster you control;</b> DESTROY that target.\n● WATER: During your End Phase: DISCARD 1 card.\n● FIRE: During your End Phase: Take 1000 damage.\n● WIND: You must pay 500 Life Points to activate a Spell Card."
+    "Clear Vice Dragon": {
+        "_current": "① You are unaffected by the effects of \"Clear World\".\n② If this card attacks an opponent's monster, this card's ATK becomes twice the ATK of the attack target, during damage calculation only.\n③ If this card would be destroyed by an opponent's card effect, you can DISCARD 1 card instead.",
+        "previous": "① You are unaffected by the effects of \"Clear World\".\n② If this card attacks an opponent's monster, the ATK of this card becomes twice the ATK of the attack target, during damage calculation only.\n③ If this card would be destroyed by an opponent's card effect, you can DISCARD 1 card instead."
+    },
+    "Divine Golden Shadow Dragon Dragluxion": {
+        "_current": "2 Level 8 monsters\nIf this card is Special Summoned from the Extra Deck: You can SEARCH 1 \"Galaxy\" or \"Tachyon\" card. <b>You can detach 2 materials from this card;</b> Special Summon from your Extra Deck, 1 Rank 8 Dragon Xyz Monster with 3000 ATK, using this card you control as material (this is treated as an Xyz Summon, transfer its materials to the Summoned monster), then you can attach 1 \"Galaxy\" monster from your Extra Deck to it. You can only use each effect of \"Divine Golden Shadow Dragon Dragluxion\" once per turn.",
+        "previous": null
+    },
+    "Flowering Etoile the Melodious Magnificat": {
+        "_current": "1 \"Melodious Maestra\" monster + 2 \"Melodious\" monsters\n① HOPT | QUICK | You can BANISH (until the End Phase) any number of \"Melodious\" monsters you control, then you can BOUNCE up to that many face-up cards your opponent controls.\n② If this face-up Fusion Summoned card in its owner's control leaves the field because of an opponent's card: You can Special Summon 1 \"Melodious\" monster from your Deck or Extra Deck, except \"Flowering Etoile the Melodious Magnificat\".",
+        "previous": null
+    },
+    "Gandora-G the Dragon of Destruction": {
+        "_current": "① Gains 300 ATK for each banished card.\n② HOPT | If you control \"Shining Sarcophagus\": You can Special Summon this card from your hand.\n③ HOPT | <b>You can pay half your LP;</b> DESTROY as many other cards on the field as possible, and if you do, BANISH them, then Special Summon 1 Level 7 or lower monster that mentions \"Shining Sarcophagus\" from your Deck, and increase its Level by the number of cards destroyed by this effect.",
+        "previous": null
+    },
+    "Gladiator Beast Essedarii": {
+        "_current": "2 \"Gladiator Beast\" monsters\n① Must first be Special Summoned (from your Extra Deck) by shuffling the above cards you control into the Deck.",
+        "previous": "2 \"Gladiator Beast\" monsters\nMust first be Special Summoned (from your Extra Deck) by shuffling the above cards you control into the Deck. (You do not use \"Polymerization\".)"
+    },
+    "Madolche Queen Tiarafraise": {
+        "_current": "3 Level 5 \"Madolche\" monsters\nOnce per turn, you can also Xyz Summon \"Madolche Queen Tiarafraise\" by using \"Madolche Queen Tiaramisu\" you control. (Transfer its materials to this card.)\n① QUICK | Once per opponent's turn: <b>You can detach 1 material from this card, then target up to 2 \"Madolche\" cards in your GY;</b> shuffle them into the Deck, also shuffle up to the same number of cards your opponent controls into the Deck.\n② If this card in your possession is destroyed by an opponent's card and sent to your GY: Return this card to the Extra Deck.",
+        "previous": null
+    },
+    "Nebula Dragon": {
+        "_current": "① HOPT | <b>You can reveal this card and 1 other Level 8 Dragon monster in your hand;</b> Special Summon both in Defense Position, but NEGATE their effects, also you cannot Normal or Special Summon for the rest of this turn, except LIGHT or DARK Dragon monsters.\n② HOPT | <b>You can BANISH this card from your GY, then target 1 Level 4 LIGHT or DARK Dragon monster in your GY;</b> add it to your hand.",
+        "previous": "① HOPT | <b>You can reveal this card and 1 other Level 8 Dragon monster in your hand;</b> Special Summon both in Defense Position, but NEGATE their effects, also you cannot Normal or Special Summon monsters for the rest of this turn, except LIGHT or DARK Dragon monsters.\n② HOPT | <b>You can BANISH this card from your GY, then target 1 Level 4 LIGHT or DARK Dragon monster in your GY;</b> add it to your hand."
+    },
+    "Nightmare Apprentice": {
+        "_current": "① HOPT | You can Special Summon this card (from your hand) by DISCARDING 1 card.\n② If this card battles a monster, neither can be destroyed by that battle.\n③ HOPT | If this card is Normal or Special Summoned: You can SEARCH 1 Illusion monster except \"Nightmare Apprentice\".",
+        "previous": null
+    },
+    "Number 4: Stealth Kragen": {
+        "_current": "2 Level 4 WATER monsters\n① All face-up monsters on the field become WATER.\n② MAIN PHASE | OPT | QUICK | You can DESTROY 1 WATER monster your opponent controls, and if you do, inflict damage to your opponent equal to half the ATK it had on the field.\n③ If this Xyz Summoned card is destroyed: You can Special Summon \"Stealth Kragen Spawn(s)\" from your Extra Deck, up to the number of materials this card had, then you can attach up to 1 WATER monster from your GY to each of those Special Summoned monsters.",
+        "previous": "2 Level 4 WATER monsters\n① All face-up monsters on the field become WATER.\n② MAIN PHASE | OPT | QUICK | You can DESTROY 1 WATER monster your opponent controls, and if you do, inflict damage to your opponent equal to half the ATK it had on the field.\n③ If this Xyz Summoned card is destroyed: You can Special Summon \"Stealth Kragen Spawn(s)\" from your Extra Deck, up to the number of materials this card had, then you can attach up to 1 WATER monster from your GY to each of those Special Summoned monsters as material."
+    },
+    "Number C107: Neo Galaxy-Eyes Tachyon Dragon": {
+        "_current": "3 Level 9 monsters\n① OPT | <b>You can detach 1 material from this card;</b> for the rest of this turn, NEGATE the effects of all other face-up cards currently on the field, also your opponent cannot activate cards or effects on the field.\nIf this card has \"Number 107: <b>Galaxy-Eyes Tachyon Dragon\" as material, it gains this effect.\n● You can Tribute 2 monsters;</b> this card can make up to 3 attacks on monsters during each Battle Phase this turn.",
+        "previous": "3 Level 9 monsters\n① OPT | <b>You can detach 1 material from this card;</b> until the end of this turn, NEGATE the effects of all other face-up cards currently on the field, also your opponent cannot activate cards or effects on the field.\nIf this card has \"Number 107: <b>Galaxy-Eyes Tachyon Dragon\" as material, it gains this effect.\n● You can Tribute 2 monsters;</b> this card can make up to 3 attacks on monsters during each Battle Phase this turn."
+    },
+    "Rank-Up-Magic Barian's Force": {
+        "_current": "<b>Target 1 face-up Xyz Monster you control;</b> Special Summon from your Extra Deck, 1 \"Number C\" or \"CXyz\" monster with the same Type as that monster you control but 1 Rank higher, by using it as material (this is treated as an Xyz Summon, transfer its materials to the Summoned monster), then, if possible, detach 1 Xyz Material from a monster your opponent controls and attach it to the Summoned monster.",
+        "previous": "<b>Target 1 face-up Xyz Monster you control;</b> Special Summon from your Extra Deck, 1 \"Number C\" or \"CXyz\" monster with the same Type as that monster you control but 1 Rank higher, by using it as the Xyz Material. (This Special Summon is treated as an Xyz Summon. Xyz Materials attached to it also become Xyz Materials on the Summoned monster.) Then, if possible, detach 1 Xyz Material from a monster your opponent controls and attach it to the Summoned monster as an Xyz Material."
+    },
+    "Swordsoul Strategist Longyuan": {
+        "_current": "① HOPT | <b>You can DISCARD 1 other \"Swordsoul\" card or 1 other Wyrm monster;</b> Special Summon this card from your hand, then you can Special Summon 1 \"Swordsoul Token\" (Wyrm/Tuner/WATER/Level 4/ATK 0/DEF 0). While that Token is in the Monster Zone, the player who Summoned it cannot Special Summon from the Extra Deck, except Synchro Monsters.\n② HOPT | If this card is sent to the GY as Synchro Material: You can inflict 1200 damage to your opponent.",
+        "previous": "① HOPT | <b>You can DISCARD 1 other \"Swordsoul\" card or 1 other Wyrm monster;</b> Special Summon this card from your hand, then you can Special Summon 1 \"Swordsoul Token\" (Wyrm/Tuner/WATER/Level 4/ATK 0/DEF 0). While that Token is in the Monster Zone, the player who Summoned it cannot Special Summon monsters from the Extra Deck, except Synchro Monsters.\n② HOPT | If this card is sent to the GY as Synchro Material: You can inflict 1200 damage to your opponent."
+    },
+    "Swordsoul of Mo Ye": {
+        "_current": "① HOPT | If this card is Normal or Special Summoned: <b>You can reveal 1 \"Swordsoul\" card or 1 Wyrm monster in your hand;</b> Special Summon 1 \"Swordsoul Token\" (Wyrm/Tuner/WATER/Level 4/ATK 0/DEF 0). While that Token is in the Monster Zone, the player who Summoned it cannot Special Summon from the Extra Deck, except Synchro Monsters.\n② HOPT | If this card is sent to the GY as Synchro Material: You can DRAW 1 card.",
+        "previous": "① HOPT | If this card is Normal or Special Summoned: <b>You can reveal 1 \"Swordsoul\" card or 1 Wyrm monster in your hand;</b> Special Summon 1 \"Swordsoul Token\" (Wyrm/Tuner/WATER/Level 4/ATK 0/DEF 0). While that Token is in the Monster Zone, the player who Summoned it cannot Special Summon monsters from the Extra Deck, except Synchro Monsters.\n② HOPT | If this card is sent to the GY as Synchro Material: You can DRAW 1 card."
+    },
+    "Swordsoul of Taia": {
+        "_current": "① HOPT | <b>You can BANISH 1 \"Swordsoul\" card or 1 Wyrm monster from your GY;</b> Special Summon 1 \"Swordsoul Token\" (Wyrm/Tuner/WATER/Level 4/ATK 0/DEF 0). While that Token is in the Monster Zone, the player who Summoned it cannot Special Summon from the Extra Deck, except Synchro Monsters.\n② HOPT | If this card is sent to the GY as Synchro Material: You can send 1 \"Swordsoul\" card or 1 Wyrm monster from your Deck to the GY.",
+        "previous": "① HOPT | <b>You can BANISH 1 \"Swordsoul\" card or 1 Wyrm monster from your GY;</b> Special Summon 1 \"Swordsoul Token\" (Wyrm/Tuner/WATER/Level 4/ATK 0/DEF 0). While that Token is in the Monster Zone, the player who Summoned it cannot Special Summon monsters from the Extra Deck, except Synchro Monsters.\n② HOPT | If this card is sent to the GY as Synchro Material: You can send 1 \"Swordsoul\" card or 1 Wyrm monster from your Deck to the GY."
+    },
+    "The Winged Dragon of Ra - Immortal Phoenix": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned by its own effect.\n① If \"The Winged Dragon of Ra\" is sent from the field to your GY while this card is in your GY: Special Summon this card.\n② Cards and effects cannot be activated in response to this effect's activation. Unaffected by other cards' effects.\n③ <b>You can pay 1000 LP;</b> send 1 monster on the field to the GY.\n④ END PHASE | OPT | Send this card to the GY, and if you do, Special Summon 1 \"The Winged Dragon of Ra - Sphere Mode\" from your hand, Deck, or GY, ignoring its Summoning conditions.",
+        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned by its own effect.\n① If \"The Winged Dragon of Ra\" is sent from the field to your GY while this card is in your GY: Special Summon this card.\n② Cards and effects cannot be activated in response to this effect's activation. This card is unaffected by other cards' effects.\n③ <b>You can pay 1000 LP;</b> send 1 monster on the field to the GY.\n④ END PHASE | OPT | Send this card to the GY, and if you do, Special Summon 1 \"The Winged Dragon of Ra - Sphere Mode\" from your hand, Deck, or GY, ignoring its Summoning conditions."
+    },
+    "Trickstar Band Drumatis": {
+        "_current": "2 \"Trickstar\" monsters\n\"Trickstar\" Link Monsters you control that point to this card gains 1000 ATK. You can only use each of the following effects of \"Trickstar Band Drumatis\" once per turn. If this card is Fusion Summoned: You can SEARCH 1 \"Trickstar\" card with a different name from the cards you control or in your GY. If effect damage is inflicted (except during the Damage Step): <b>You can target 1 face-up monster on the field;</b> its ATK becomes 0.",
+        "previous": null
+    },
+    "Trickstar Noble Angel": {
+        "_current": "2 \"Trickstar\" monsters\nIf this card is Link Summoned: You can SEARCH 1 \"Blue Tears\" card. If you have a Fusion Monster in your field GY: <b>You can target 1 \"Trickstar\" monster in your GY;</b> Special Summon it. If effect damage is inflicted (except during the Damage Step): <b>You can target 1 face-up card on the field;</b> DESTROY it. You can only use each effect of \"Trickstar Noble Angel\" once per turn.",
+        "previous": null
+    },
+    "Ultimate Flame Swordsman": {
+        "_current": "\"Flame Swordsman\" + \"Fighting Flame Dragon\"\n① HOPT | <b>You can target 1 monster your opponent controls;</b> DESTROY it, and if you do, inflict 500 damage to your opponent. This is a QUICK EFFECT if this card is equipped with an Equip Card.\n② HOPT | At the start of the Damage Step, if this card battles: You can double this card's ATK until the end of this turn, but if you do, DESTROY it during the End Phase of this turn.",
+        "previous": null
+    },
+    "Vessel for the Dragon Cycle": {
+        "_current": "HOPT ACTIVATION\nSend 1 Wyrm monster from your Deck to the GY, then if you control a face-up non-Effect Monster, you can add from your Deck to your hand 1 \"Tenyi\" monster with a different name from the monster sent to the GY.",
+        "previous": "HOPT ACTIVATION\nSend 1 Wyrm monster from your Deck to the GY, then, if you control a face-up non-Effect Monster, you can add from your Deck to your hand 1 \"Tenyi\" monster with a different name from the monster sent to the GY."
+    },
+    "XYZ-Hyper Dragon Cannon": {
+        "_current": "\"X-Cross Cannon\" + \"Y-Wyrm Head\" + \"Z-Zillion Tank\"\nMust first be Special Summoned (from your Extra Deck) by BANISHING the above cards from your field and/or GY. Once per opponent's turn (QUICK EFFECT): <b>You can DISCARD 1 card, then target 1 card your opponent controls;</b> DESTROY it. <b>You can BANISH this card from your field or GY and reveal 1 Level 8 LIGHT Machine Fusion Monster in your Extra Deck;</b> Special Summon up to 3 of the Fusion Materials whose names are mentioned on that monster from your GY and/or BANISHment.",
+        "previous": null
     }
 }
