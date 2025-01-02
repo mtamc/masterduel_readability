@@ -29,7 +29,7 @@ main = do
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Magical Contract Door", "Ohime", "Mayowashidori", "Durendal", "Ojamagic", "Magical Contract Door", "Hecatrice", "Hidden Armory"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster", "Original Sinful Spoils", "Ohime"])
-  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Winged Kuriboh LV10"])
+  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Decode Talker Heatsoul"])
   cards ← getCards (const True)
   writeFileLBS "./data/decoded_cards.json" (encodePretty cards)
   let
@@ -1065,6 +1065,7 @@ mkCards nameFilter names (map encodeUtf8 → descs) partSrc pidxSrc =
       effectPositionsWithOriginalOrder ∷ [(PartData, Int)]
       effectPositionsWithOriginalOrder
         = sortOn (fst ⋙ (^. #start))
+        . filter (\(x,_) → x.start ≢ x.end)
         . take (pidx.effectCount + pidx.pendulumEffectCount)
         . drop pidx.firstEffectIndex
         $ zip allEffectPositions [0..]
