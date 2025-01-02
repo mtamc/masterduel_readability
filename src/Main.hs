@@ -29,7 +29,7 @@ main = do
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Magical Contract Door", "Ohime", "Mayowashidori", "Durendal", "Ojamagic", "Magical Contract Door", "Hecatrice", "Hidden Armory"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster", "Original Sinful Spoils", "Ohime"])
-  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Decode Talker Heatsoul"])
+  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["The Iris Swordsoul"])
   cards ← getCards (const True)
   writeFileLBS "./data/decoded_cards.json" (encodePretty cards)
   let
@@ -762,6 +762,7 @@ tagOncePerTurns
                   %~ ( (\effs → dropEnd 1 effs ⧺ [effect & #mainEffect .~ changed])
                      ⋙ map (#tags %~ ("hopt":))
                      )
+              -- & lg "effcts"
           Nothing →
             case detectStandardHoptEach effect.trailingText of
               Just changed →
@@ -1065,7 +1066,7 @@ mkCards nameFilter names (map encodeUtf8 → descs) partSrc pidxSrc =
       effectPositionsWithOriginalOrder ∷ [(PartData, Int)]
       effectPositionsWithOriginalOrder
         = sortOn (fst ⋙ (^. #start))
-        . filter (\(x,_) → x.start ≢ x.end)
+        -- . filter (\(x,_) → x.start ≢ x.end)
         . take (pidx.effectCount + pidx.pendulumEffectCount)
         . drop pidx.firstEffectIndex
         $ zip allEffectPositions [0..]
@@ -1134,3 +1135,5 @@ mkCards nameFilter names (map encodeUtf8 → descs) partSrc pidxSrc =
     start ← fromIntegral <$> getWord16le
     end ← fromIntegral <$> getWord16le
     pure $ PartData start end
+
+lg lbl a = trace (lbl ⊕ ": " ⊕ show a) a
