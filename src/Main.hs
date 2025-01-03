@@ -29,7 +29,7 @@ main = do
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Magical Contract Door", "Ohime", "Mayowashidori", "Durendal", "Ojamagic", "Magical Contract Door", "Hecatrice", "Hidden Armory"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster"])
   -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["T.G. Blade Blaster", "Original Sinful Spoils", "Ohime"])
-  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["The Iris Swordsoul"])
+  -- cards ← getCards (\name → any (`Text.isInfixOf` name) ["Arianna the Labrynth Servant"])
   cards ← getCards (const True)
   writeFileLBS "./data/decoded_cards.json" (encodePretty cards)
   let
@@ -725,7 +725,7 @@ tagOncePerTurns
     f (result, True) effect =
       ( result ⧺
         [ effect
-          & #tags %~ ("hopt":)
+          & applyWhen (effect.mainEffect ≢ "" ∨ effect.trailingText ≢ "") ( #tags %~ ("hopt":))
           & #mainEffect %~
             (\ef →
               applyWhen (not ("1 of these" `Text.isInfixOf` ef)) (Text.replace "● " "") ef
@@ -760,7 +760,12 @@ tagOncePerTurns
             card
               & #effects
                   %~ ( (\effs → dropEnd 1 effs ⧺ [effect & #mainEffect .~ changed])
-                     ⋙ map (#tags %~ ("hopt":))
+                     ⋙ map
+                       (\ef →
+                         applyWhen (ef.mainEffect ≢ "" ∨ ef.trailingText ≢ "")
+                          (#tags %~ ("hopt":))
+                          ef
+                       )
                      )
               -- & lg "effcts"
           Nothing →
@@ -769,14 +774,26 @@ tagOncePerTurns
                 card
                   & overEffects
                     ( (\effs → dropEnd 1 effs ⧺ [effect & #trailingText .~ changed])
-                    ⋙ map (#tags %~ ("hopt":))
+                    ⋙ map
+                      (\ef →
+                        applyWhen (ef.mainEffect ≢ "" ∨ ef.trailingText ≢ "")
+                         (#tags %~ ("hopt":))
+                         ef
+                      )
                     )
               Nothing →
                 case detectStandardHoptEach card.leadingText of
                   Just changed →
                     card
                       & #leadingText .~ changed
-                      & overEffects (map (#tags %~ ("hopt":)))
+                      & overEffects
+                        (map
+                        (\ef →
+                          applyWhen (ef.mainEffect ≢ "" ∨ ef.trailingText ≢ "")
+                           (#tags %~ ("hopt":))
+                           ef
+                        )
+                        )
                   Nothing → card
   -- eg
   -- last effect trailing text: Fluffal Bear/Infernoble Arms Durendal
@@ -1079,6 +1096,8 @@ mkCards nameFilter names (map encodeUtf8 → descs) partSrc pidxSrc =
       leadingText ∷ Text
       leadingText = decodeUtf8 $ BL.take (fromIntegral firstEffectStartPosition) desc
 
+      -- takeAmountPlusEmpty
+
       allEffects ∷ [Effect]
       allEffects =
         map
@@ -1105,11 +1124,30 @@ mkCards nameFilter names (map encodeUtf8 → descs) partSrc pidxSrc =
           )
           (zip effectPositionsWithOriginalOrder [0..])
 
+      isEmptyEffect ∷ Effect → Bool
+      isEmptyEffect effect = effect.mainEffect ≡ "" ∧ effect.trailingText ≡ ""
+
+      takeAmountPlusEmpty ∷ Int → [Effect] → [Effect]
+      takeAmountPlusEmpty 0 = const []
+      takeAmountPlusEmpty n = \case
+        [] → []
+        (x:xs)
+          | isEmptyEffect x → x : takeAmountPlusEmpty n xs
+          | otherwise       → x : takeAmountPlusEmpty (n - 1) xs
+
+      dropAmountPlusEmpty ∷ Int → [Effect] → [Effect]
+      dropAmountPlusEmpty 0 fx = fx
+      dropAmountPlusEmpty n fx = case fx of
+        [] → []
+        (x:xs)
+          | isEmptyEffect x → dropAmountPlusEmpty n xs
+          | otherwise       → dropAmountPlusEmpty (n - 1) xs
+
       effects ∷ [Effect]
-      effects = take pidx.effectCount allEffects
+      effects = takeAmountPlusEmpty pidx.effectCount allEffects
 
       pendulumEffects ∷ [Effect]
-      pendulumEffects = drop pidx.effectCount allEffects
+      pendulumEffects = dropAmountPlusEmpty pidx.effectCount allEffects
 
       in if nameFilter name then Just $ Card name leadingText effects pendulumEffects else Nothing
     )
