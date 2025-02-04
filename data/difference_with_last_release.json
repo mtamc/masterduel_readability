@@ -1,202 +1,38 @@
 {
-    "Aiza the Dragoness of Deranged Devotion": {
-        "_current": "① HOPT | If this card is Special Summoned: You can place 1 Deranged Counter on 1 face-up monster your opponent controls, and it cannot be used as material for a Fusion, Synchro, Xyz, or Link Summon while it has that counter.\n② HOPT | At the start of the Damage Step, if this card battles an opponent's monster with a Deranged Counter: You can DESTROY that opponent's monster, and if you do, both players take damage equal to its original ATK, also DESTROY this card at the end of this Battle Phase.",
+    "Elzette, Azamina of the White Forest": {
+        "_current": "① HOPT | <b>You can reveal this card in your hand;</b> Special Summon 1 \"White Forest\" or \"Azamina\" monster from your hand.\n② YOUR MAIN PHASE | HOPT | You can Fusion Summon 1 \"Azamina\" Fusion Monster from your Extra Deck, using monsters from your hand or field.\n③ HOPT | If this card is sent to the GY as Synchro Material: You can SEARCH 1 \"Sinful Spoils\" card.",
         "previous": null
     },
-    "Argostars - Glorious Adra": {
-        "_current": "During your opponent's turn, if you control a Continuous Trap Card (QUICK EFFECT): <b>You can BANISH this card from your hand;</b> make the ATK of 1 monster on the field 0 until the end of this turn. If this card is Normal Summoned: This turn, your opponent cannot activate cards or effects in response to the activation of your Continuous Trap Cards or their effects. <b>You can BANISH this card you control;</b> place up to 2 \"Argostars\" Continuous Traps with different names from your hand and/or Deck face-up in your Spell & Trap Zone. You can only use this effect of \"Argostars - Glorious Adra\" once per turn.",
-        "previous": "① OPP'S TURN | QUICK | If you control a Continuous Trap Card: <b>You can BANISH this card from your hand;</b> make the ATK of 1 monster on the field 0 until the end of this turn.\n② If this card is Normal Summoned: This turn, your opponent cannot activate cards or effects in response to the activation of your Continuous Trap Cards or their effects.\n③ HOPT | <b>You can BANISH this card you control;</b> place up to 2 \"Argostars\" Continuous Traps with different names from your hand and/or Deck face-up in your Spell & Trap Zone."
+    "Exosister Martha": {
+        "_current": "① HOPT | If you control no monsters, or only Xyz Monsters: You can Special Summon this card from your hand, and if you do, Special Summon 1 \"Exosister Elis\" from your Deck. You cannot Special Summon the turn you activate this effect, except \"Exosister\" monsters.\n② HOPT | If a card(s) moves out of either GY (except during the Damage Step): You can Special Summon from your Extra Deck, 1 \"Exosister\" Xyz Monster, using this face-up card you control as material. (This is treated as an Xyz Summon.)",
+        "previous": "① HOPT | If you control no monsters, or only Xyz Monsters: You can Special Summon this card from your hand, and if you do, Special Summon 1 \"Exosister Elis\" from your Deck. You cannot Special Summon monsters the turn you activate this effect, except \"Exosister\" monsters.\n② HOPT | If a card(s) moves out of either GY (except during the Damage Step): You can Special Summon from your Extra Deck, 1 \"Exosister\" Xyz Monster, using this face-up card you control as material. (This is treated as an Xyz Summon.)"
     },
-    "Ashened for Eternity": {
-        "_current": "HOPT ACTIVATION\n① When this card is activated: You can add 1 \"Veidos the Eruption Dragon of Extinction\" or 1 \"Ashened\" monster from your GY to your hand.\n② HOPT | <b>You can target 1 face-up monster your opponent controls that you own;</b> take control of that monster, then you can make all face-up monsters your opponent currently controls lose ATK equal to the targeted monster's original ATK. This ATK change lasts until the end of this turn.",
-        "previous": null
+    "Exosister Vadis": {
+        "_current": "HOPT ACTIVATION\n<b>Pay 800 LP;</b> choose 1 \"Exosister\" monster from your Deck, then take 1 other \"Exosister\" monster from your Deck that is mentioned on that monster, and Special Summon both, but shuffle them into the Deck during the End Phase, also for the rest of this turn after this card resolves, you cannot Special Summon from the Extra Deck, except \"Exosister\" monsters.",
+        "previous": "HOPT ACTIVATION\n<b>Pay 800 LP;</b> choose 1 \"Exosister\" monster from your Deck, then take 1 other \"Exosister\" monster from your Deck that is mentioned on that monster, and Special Summon both, but shuffle them into the Deck during the End Phase, also for the rest of this turn after this card resolves, you cannot Special Summon monsters from the Extra Deck, except \"Exosister\" monsters."
     },
-    "Ashened to Endlessness": {
-        "_current": "① MAIN PHASE | HOPT | You can Fusion Summon 1 Pyro Fusion Monster from your Extra Deck using monsters from either field as material, including \"Veidos the Eruption Dragon of Extinction\", and if you do, it gains 500 ATK for each material used.\n② HOPT | <b>You can BANISH this card and 1 DARK Pyro monster from your GY;</b> all monsters your opponent currently controls become Pyro until the end of this turn.",
-        "previous": null
+    "Exosisters Magnifica": {
+        "_current": "2 Rank 4 \"Exosister\" Xyz Monsters\nMust be Xyz Summoned with the above materials.\n① Can make a second attack during each Battle Phase.\n② OPT | QUICK | <b>You can detach 1 material from this card;</b> BANISH 1 card your opponent controls.\n③ QUICK | When your opponent activates a card or effect: You can return 1 Xyz Monster you own attached to this card to your Extra Deck, then you can Special Summon that monster from your Extra Deck, using this card you control as material. (This is treated as an Xyz Summon. Transfer this card's materials to the Summoned monster.)",
+        "previous": "2 Rank 4 \"Exosister\" Xyz Monsters\nMust be Xyz Summoned with the above materials.\n① Can make a second attack during each Battle Phase.\n② OPT | QUICK | <b>You can detach 1 material from this card;</b> BANISH 1 card your opponent controls.\n③ QUICK | When your opponent activates a card or effect: You can return 1 Xyz Monster you own attached to this card to your Extra Deck, then you can Special Summon that monster from your Extra Deck, by using this card you control as material. (This is treated as an Xyz Summon. Transfer this card's materials to the Summoned monster.)"
     },
-    "Awakening of Veidos": {
-        "_current": "HOPT ACTIVATION\nPlace 1 \"Obsidim, the Ashened City\" from your Deck, face-up in either Field Zone, then if your opponent controls a card in their Field Zone, you can SEARCH 1 Level 5 or higher DARK Pyro monster. For the rest of this turn after this card resolves, you cannot Special Summon from the Deck or Extra Deck, except Pyro monsters.",
-        "previous": null
+    "Promethean Princess, Bestower of Flames": {
+        "_current": "2+ Effect Monsters\n① You cannot Special Summon, except FIRE monsters.\n② YOUR MAIN PHASE | HOPT | You can Special Summon 1 FIRE monster from your GY.\n③ HOPT | If a monster(s) is Special Summoned to your opponent's field, while this card is in your GY (except during the Damage Step): <b>You can target 1 FIRE monster you control and 1 monster your opponent controls;</b> DESTROY them, and if you do, Special Summon this card.",
+        "previous": "2+ Effect Monsters\n① You cannot Special Summon monsters, except FIRE monsters.\n② YOUR MAIN PHASE | HOPT | You can Special Summon 1 FIRE monster from your GY.\n③ HOPT | If a monster(s) is Special Summoned to your opponent's field, while this card is in your GY (except during the Damage Step): <b>You can target 1 FIRE monster you control and 1 monster your opponent controls;</b> DESTROY them, and if you do, Special Summon this card."
     },
-    "Battleguard Echoes": {
-        "_current": "HOPT ACTIVATION\n① When this card is activated: You can SEARCH 1 Level 5 EARTH Warrior monster then DISCARD 1 card.\n② OPT | If a monster(s) is returned from the field to the hand, even during the Damage Step: <b>You can activate 1 of these effects;</b> \n● SEARCH 1 \"Battleguard Rage\" or \"Battleguard Howling\".\n● Change 1 face-up monster on the field to face-down Defense Position.",
-        "previous": null
+    "Regulus": {
+        "_current": "OPT | You can select 1 Field Spell Card in your GY.\nReturn it to the Deck.",
+        "previous": "OPT | You can select 1 Field Spell Card in your GY. Return it to the Deck."
     },
-    "Blazing Bombardment Beast": {
-        "_current": "1 Machine monster + 1 Pyro monster\n① HOPT | If this card is Special Summoned: You can DESTROY all monsters your opponent controls with 1900 or less ATK.\n② HOPT | If this card is sent to the GY: <b>You can target 1 monster your opponent controls with 1900 or less ATK;</b> DESTROY that monster, and if you do, inflict damage to your opponent equal to its original ATK.",
-        "previous": null
+    "Rescue-ACE Turbulence": {
+        "_current": "① HOPT | <b>You can BANISH 2 \"Rescue-ACE\" cards from your GY;</b> Special Summon this card from your hand.\n② YOUR MAIN PHASE | HOPT | You can Set up to 4 \"Rescue-ACE\" Quick-Play Spells / Normal Traps, with different names, from your Deck.\n③ HOPT | If another card(s) you control leaves the field by an opponent's card effect (except during the Damage Step): <b>You can target 1 card on the field;</b> DESTROY it.",
+        "previous": "① HOPT | <b>You can BANISH 2 \"Rescue-ACE\" cards from your GY;</b> Special Summon this card from your hand.\n② YOUR MAIN PHASE | HOPT | You can Set up to 4 \"Rescue-ACE\" Quick-Play Spells / Normal Traps, with different names, directly from your Deck.\n③ HOPT | If another card(s) you control leaves the field by an opponent's card effect (except during the Damage Step): <b>You can target 1 card on the field;</b> DESTROY it."
     },
-    "Blink Out": {
-        "_current": "<b>Target 1 Link Monster on the field;</b> return it to the Extra Deck, then you can Special Summon 1 of the monsters from your GY that was sent there as its Link Material.",
-        "previous": null
+    "Speed Warrior": {
+        "_current": "Once per Battle Step, if this card was Normal Summoned this turn (except during the Damage Step): You can make its ATK become double its original ATK, until the end of the Battle Phase.",
+        "previous": "Once per Battle Phase, if this card was Normal Summoned this turn (except during the Damage Step): You can make its ATK become double its original ATK, until the end of the Battle Phase."
     },
-    "Centur-Ion Primera Primus": {
-        "_current": "1 Tuner + 1+ non-Tuner monsters\nCannot be destroyed by battle, unless it was Special Summoned from the Extra Deck. You can only use each of the following effects of \"Centur-Ion Primera Primus\" once per turn. If this card is Synchro Summoned: You can SEARCH 1 \"Emblema\" card (from DECK or GY) then you can DESTROY 2 cards (1 on each field). If a face-up \"Centur-Ion\" card(s) you control leaves the field by an opponent's card effect, while this card is in your GY (except during the Damage Step): You can Special Summon this card.",
-        "previous": "1 Tuner + 1+ non-Tuner monsters\n① Cannot be destroyed by battle, unless it was Special Summoned from the Extra Deck.\n② HOPT | If this card is Synchro Summoned: You can SEARCH 1 \"Emblema\" card (from DECK or GY) then you can DESTROY 2 cards (1 on each field).\n③ HOPT | If a face-up \"Centur-Ion\" card(s) you control leaves the field by an opponent's card effect, while this card is in your GY (except during the Damage Step): You can Special Summon this card."
-    },
-    "Crystal Clear Wing Over Synchro Dragon": {
-        "_current": "2+ Tuners or 1 Tuner Synchro Monster + \"Clear Wing Synchro Dragon\"\nMust be Synchro Summoned. Once per turn, when another card, or its effect, is activated (QUICK EFFECT): You can NEGATE the activation, and if you do, DESTROY that card, and if you destroyed a monster, this card gains ATK equal to that monster's original ATK until the end of this turn. If this face-up Synchro Summoned card in its owner's control leaves the field by an opponent's card: You can Special Summon 1 \"Clear Wing\" monster from your Extra Deck.",
-        "previous": "2+ Tuners or 1 Tuner Synchro Monster + \"Clear Wing Synchro Dragon\"\nMust be Synchro Summoned.\n① OPT | QUICK | When another card, or its effect, is activated: You can NEGATE the activation, and if you do, DESTROY that card, and if you destroyed a monster, this card gains ATK equal to that monster's original ATK until the end of this turn.\n② If this face-up Synchro Summoned card in its owner's control leaves the field by an opponent's card: You can Special Summon 1 \"Clear Wing\" monster from your Extra Deck."
-    },
-    "Dark End Evaporation Dragon": {
-        "_current": "① HOPT | <b>You can BANISH 1 Level 8 Dragon monster from your Extra Deck;</b> Special Summon this card from your hand, also you cannot Special Summon for the rest of this turn, except Dragon monsters.\n② HOPT | <b>You can activate 1 of these effects;</b> \n● Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field.\n● Target 1 other Attack Position monster on the field; make this card lose exactly 500 ATK/DEF, and if you do, DESTROY that monster.",
-        "previous": null
-    },
-    "Diabell, Queen of the White Forest": {
-        "_current": "1 Tuner + 1+ non-Tuner monsters\nIf this card is Synchro Summoned using a Tuner Synchro Monster: <b>You can target 1 Spell/Trap in your GY;</b> add it to your hand. When your opponent activates a card or effect (QUICK EFFECT): <b>You can send 1 Spell/Trap from your hand or field to the GY;</b> Special Summon 1 Level 7 or lower Tuner Synchro Monster from your Extra Deck, GY, or BANISHment. You can only use each effect of \"Diabell, Queen of the White Forest\" once per turn.",
-        "previous": "1 Tuner + 1+ non-Tuner monsters\n① HOPT | If this card is Synchro Summoned using a Tuner Synchro Monster: <b>You can target 1 Spell/Trap in your GY;</b> add it to your hand.\n② HOPT | QUICK | When your opponent activates a card or effect: <b>You can send 1 Spell/Trap from your hand or field to the GY;</b> Special Summon 1 Level 7 or lower Tuner Synchro Monster from your Extra Deck, GY, or BANISHment."
-    },
-    "Dinovatus Docus": {
-        "_current": "You can only Special Summon \"Dinovatus Docus(s)\" once per turn.\n① If you control 2 or more Dinosaur monsters: You can Special Summon this card from your hand.\n② HOPT | <b>You can Tribute 1 Level 4 or lower monster;</b> Special Summon 1 Dinosaur monster from your Deck that is 2 Levels higher or lower than the Tributed monster had on the field, but DESTROY it during the End Phase.",
-        "previous": null
-    },
-    "Divine Golden Shadow Dragon Dragluxion": {
-        "_current": "2 Level 8 monsters\nIf this card is Special Summoned from the Extra Deck: You can SEARCH 1 \"Galaxy\" or \"Tachyon\" card. <b>You can detach 2 materials from this card;</b> Special Summon from your Extra Deck, 1 Rank 8 Dragon Xyz Monster with 3000 ATK, using this card you control as material (this is treated as an Xyz Summon, transfer its materials to the Summoned monster), then you can attach 1 \"Galaxy\" monster from your Extra Deck to it. You can only use each effect of \"Divine Golden Shadow Dragon Dragluxion\" once per turn.",
-        "previous": "2 Level 8 monsters\n① HOPT | If this card is Special Summoned from the Extra Deck: You can SEARCH 1 \"Galaxy\" or \"Tachyon\" card.\n② HOPT | <b>You can detach 2 materials from this card;</b> Special Summon from your Extra Deck, 1 Rank 8 Dragon Xyz Monster with 3000 ATK, using this card you control as material (this is treated as an Xyz Summon, transfer its materials to the Summoned monster), then you can attach 1 \"Galaxy\" monster from your Extra Deck to it."
-    },
-    "Double Dai": {
-        "_current": "HOPT ACTIVATION\nActivate 1 of these effects;\n● If you control no monsters: <b>Special Summon 1 Level 4 Warrior monster from your Deck.\n● Target 1 Warrior monster you control;</b> Special Summon 1 EARTH Warrior monster with an equal or lower Level from your Deck or GY.",
-        "previous": null
-    },
-    "Dragon's Light and Darkness": {
-        "_current": "Activate 1 of these effects (but you can only use each effect of \"Dragon's Light and Darkness\" once per turn);\n● Shuffle 1 Level 8 Dragon monster from your hand into the Deck and SEARCH 1 Level 8 Dragon monster with a different Attribute.\n● Target 1 Dragon monster you control; it gains ATK equal to its Level x 200.\n● When a card or effect is activated that targets a Dragon monster you control: NEGATE that effect.",
-        "previous": null
-    },
-    "Drytron Meteonis DA Draconids": {
-        "_current": "You can Ritual Summon this card with \"Meteonis Drytron\".\n① Other \"Drytron\" monsters you control cannot be destroyed by your opponent's card effects.\n② QUICK | Twice per turn, when your opponent activates a monster effect: <b>You can BANISH \"Drytron\" monsters (min. 1) from your GY whose total ATK equal or exceed the original ATK of that monster;</b> NEGATE the activation, and if you do, DESTROY it.\n③ If this Ritual Summoned card in its owner's control is destroyed by an opponent's card: You can Special Summon 1 Ritual Monster with 4000 ATK from your hand or Deck. (This is treated as a Ritual Summon.)",
-        "previous": null
-    },
-    "Drytron Nu II": {
-        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned by card effect.\n① If a \"Drytron\" card is on the field: You can Special Summon this card from your hand or GY, but BANISH it when it leaves the field.\n② If this card is Special Summoned: You can SEARCH 1 \"Drytron\" monster except \"Drytron Nu II\".\nYou can only use each effect of \"Drytron Nu II\" once per turn, also you cannot Ritual Summon the turn you activate either of this card's effects, except Machine monsters.",
-        "previous": null
-    },
-    "Embers of the Ashened": {
-        "_current": "2 Pyro monsters\n① HOPT | If this card is Fusion Summoned: <b>You can target 1 Field Spell in your GY;</b> add it to your hand.\n② HOPT | At the start of the Damage Step, if this card battles an opponent's Pyro monster: You can DESTROY that opponent's monster, and if it is your turn, this card can make a second attack in a row.",
-        "previous": null
-    },
-    "Extinguishing the Ashened": {
-        "_current": "① HOPT | Send 1 DARK Pyro monster from your Deck to the GY, then you can add 1 Level 5 or higher Pyro monster from your GY to your hand. For the rest of this turn after this card resolves, you cannot Special Summon from the Extra Deck, except Pyro monsters.\n② HOPT | <b>You can BANISH this card from your GY;</b> Fusion Summon 1 Pyro Fusion Monster from your Extra Deck, using monsters from your hand or field as material.",
-        "previous": null
-    },
-    "Final Bringer of the End Times": {
-        "_current": "HOPT ACTIVATION\n<b>Target 1 monster you control and 1 card your opponent controls;</b> DESTROY them.",
-        "previous": null
-    },
-    "Hero of the Ashened City": {
-        "_current": "① HOPT | If \"Obsidim, the Ashened City\" is in the Field Zone, you can Special Summon this card (from your hand).\n② MAIN PHASE | HOPT | QUICK | <b>You can target 1 Pyro monster on the field;</b> DESTROY it, then if you destroyed \"Veidos the Eruption Dragon of Extinction\" by this effect, you can place 1 \"Obsidim, the Ashened City\" from your Deck face-up in your Field Zone.",
-        "previous": null
-    },
-    "In Papa's Footsteps": {
-        "_current": "If a card(s) is sent to the GY, except \"In Papa's Footsteps\": BANISH up to 5 cards from your GY, face-down, then if 7 or more of your cards are currently banished face-down, your opponent BANISHES as many cards as possible from their GY (max. 5) face-down.",
-        "previous": null
-    },
-    "Interdimensional Matter Forwarder": {
-        "_current": "① HOPT | <b>You can target 1 monster on the field;</b> BANISH it, then return it to the field.\n② HOPT | If your opponent activates a card or effect: <b>You can target 1 face-up monster on the field whose effects are negated;</b> BANISH it, then return it to the field.\n③ HOPT | Before resolving an opponent's effect that targets this card on the field, BANISH this card, until the End Phase of the next turn.",
-        "previous": null
-    },
-    "Jungle Dweller": {
-        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned by card effect.\n① While there are 2 cards in the Field Zones, your opponent cannot target this card with card effects.\n② HOPT | <b>You can BANISH 1 LIGHT or DARK monster from your GY;</b> Special Summon this card from your hand.\n③ HOPT | If this card in its owner's possession is destroyed by an opponent's card: You can shuffle up to 2 of your Field Spells from your GY or BANISHment into the Deck, then you can DESTROY up to that many cards your opponent controls.",
-        "previous": null
-    },
-    "Khaos Starsource Dragon": {
-        "_current": "1 LIGHT or DARK Dragon monster + 1 Dragon monster\n① HOPT | If this card is Fusion Summoned: <b>You can target cards your opponent controls, up to the number of LIGHT and DARK monsters used as this card's material;</b> DESTROY them.\n② HOPT | If this card is banished: <b>You can target 1 Level 4 LIGHT or DARK Dragon monster you control;</b> its Level becomes 8.",
-        "previous": null
-    },
-    "King of the Ashened City": {
-        "_current": "① HOPT | If \"Obsidim, the Ashened City\" is in the Field Zone, you can Special Summon this card (from your hand).\n② YOUR MAIN PHASE | HOPT | You can Special Summon 1 \"Ashened\" monster from your hand, except \"King of the Ashened City\", or if your opponent controls a monster with 2800 or more ATK, you can Special Summon it from your Deck instead.",
-        "previous": null
-    },
-    "Knight Armed Dragon, the Armored Knight Dragon": {
-        "_current": "① HOPT | If you Special Summon a Level 5 or higher Dragon monster(s): You can Special Summon this card from your hand.\n② HOPT | If this card is Special Summoned: You can make this card's Attribute and Level become the same as 1 of your banished Dragon monsters'.\n③ HOPT | If this card is sent to the GY: <b>You can target 1 Dragon monster you control;</b> it gains 1000 ATK. Neither player can activate cards or effects in response to this effect's activation.",
-        "previous": null
-    },
-    "Light End Sublimation Dragon": {
-        "_current": "① HOPT | <b>You can BANISH 1 Level 8 Dragon monster from your Extra Deck;</b> Special Summon this card from your hand, also you cannot Special Summon for the rest of this turn, except Dragon monsters.\n② YOUR MAIN PHASE | HOPT | You can Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field.\n③ HOPT | When an opponent's monster declares an attack: You can make this card lose exactly 500 ATK/DEF, and if you do, that opponent's monster loses 1500 ATK.",
-        "previous": null
-    },
-    "Lo, the Prayers of the Voiceless Voice": {
-        "_current": "If you Ritual Summon exactly 1 LIGHT Ritual Monster (Warrior or Dragon) with a card effect that requires use of monsters, this card can be used as the entire Tribute. You can only use each of the following effects of \"Lo, the Prayers of the Voiceless Voice\" once per turn. If this card is Normal or Special Summoned: You can place 1 \"Voiceless Voice\" Continuous Spell/Trap from your Deck face-up in your Spell & Trap Zone. If a LIGHT Ritual Monster (Warrior or Dragon) is Special Summoned to your field, while this card is in your GY (except during the Damage Step): You can Special Summon this card.",
-        "previous": "① If you Ritual Summon exactly 1 LIGHT Ritual Monster (Warrior or Dragon) with a card effect that requires use of monsters, this card can be used as the entire Tribute.\n② HOPT | If this card is Normal or Special Summoned: You can place 1 \"Voiceless Voice\" Continuous Spell/Trap from your Deck face-up in your Spell & Trap Zone.\n③ HOPT | If a LIGHT Ritual Monster (Warrior or Dragon) is Special Summoned to your field, while this card is in your GY (except during the Damage Step): You can Special Summon this card."
-    },
-    "Lord of the Missing Barrows": {
-        "_current": "① You can Special Summon this card (from your hand) by BANISHING 3 cards from your GY (1 monster, 1 Spell, and 1 Trap).\n② HOPT | If this card is Special Summoned from the hand: You can BANISH 1 monster and 2 Spells/Traps from your opponent's field and/or GY.",
-        "previous": null
-    },
-    "Majespecter Draco - Ryu": {
-        "_current": "2 Level 4 monsters\nIf you can Pendulum Summon Level 4, you can Pendulum Summon this face-up card from your Extra Deck. If a monster(s) is Tributed while this card is on the field (except during the Damage Step): <b>You can detach 1 material from this card;</b> Special Summon 1 Level 6 or lower WIND Spellcaster monster from your Deck. You can only use this effect of \"Majespecter Draco - Ryu\" up to twice per turn. If this card in the Monster Zone is destroyed, or Tributed: You can place this card in your Pendulum Zone. \n[Pendulum Effect]\nIf you have a \"Majespecter\" or \"Dracoslayer\" card in your other Pendulum Zone: You can SEARCH 1 \"Majespecter\" card then you can DESTROY 1 card in your Pendulum Zone. You can only use this effect of \"Majespecter Draco - Ryu\" once per turn.",
-        "previous": "2 Level 4 monsters\nIf you can Pendulum Summon Level 4, you can Pendulum Summon this face-up card from your Extra Deck.\n① If a monster(s) is Tributed while this card is on the field (except during the Damage Step): <b>You can detach 1 material from this card;</b> Special Summon 1 Level 6 or lower WIND Spellcaster monster from your Deck.\nYou can only use this effect of \"Majespecter Draco - Ryu\" up to twice per turn.\n② If this card in the Monster Zone is destroyed, or Tributed: You can place this card in your Pendulum Zone.\n[Pendulum Effect]\nHOPT | If you have a \"Majespecter\" or \"Dracoslayer\" card in your other Pendulum Zone: You can SEARCH 1 \"Majespecter\" card then you can DESTROY 1 card in your Pendulum Zone."
-    },
-    "Meteoroa Drytron": {
-        "_current": "① HOPT | If a \"Drytron\" card(s) is banished (except during the Damage Step): <b>You can Tribute 1 \"Drytron\" monster, then target up to 2 of your banished \"Drytron\" cards;</b> add them to your hand.\n② HOPT | <b>You can reveal 1 \"Meteonis Drytron\" in your hand;</b> Ritual Summon 1 Machine Ritual Monster from your hand or GY, by Tributing Machine monsters from your hand or field whose total ATK equals or exceeds its ATK.",
-        "previous": null
-    },
-    "Mikazukinoyaiba, the Moon Fang Dragon": {
-        "_current": "① END PHASE | HOPT | If this card is in your hand or GY: You can Special Summon it, but place it on the bottom of the Deck when it leaves the field.\n② HOPT | <b>You can DISCARD 1 card;</b> SEARCH 1 Level 7 DARK Dragon monster.",
-        "previous": null
-    },
-    "Mulcharmy Fuwalos": {
-        "_current": "QUICK | If you control no cards: <b>You can DISCARD this card;</b> apply these effects this turn.\n● Each time your opponent Special Summons a monster(s) from the Deck and/or Extra Deck, immediately DRAW 1 card.\n● Once, during this End Phase, if the number of cards in your hand is more than the number of cards your opponent controls +6, you must randomly shuffle cards from your hand into the Deck so the number in your hand equals the number your opponent controls +6.\nYou can only activate 1 other \"Mulcharmy\" monster effect, the turn you activate this effect.",
-        "previous": null
-    },
-    "Mulcharmy Purulia": {
-        "_current": "QUICK | If you control no cards: <b>You can DISCARD this card;</b> apply these effects this turn.\n● Each time your opponent Normal or Special Summons a monster(s) from the hand, immediately DRAW 1 card.\n● Once, during this End Phase, if the number of cards in your hand is more than the number of cards your opponent controls +6, you must randomly shuffle cards from your hand into the Deck so the number in your hand equals the number your opponent controls +6.\nYou can only activate 1 other \"Mulcharmy\" monster effect, the turn you activate this effect.",
-        "previous": null
-    },
-    "Obsidim, the Ashened City": {
-        "_current": "① Face-up Special Summoned monsters your opponent controls become Pyro during your turn only.\n② YOUR END PHASE | HOPT | <b>You can target 1 \"Obsidim, the Ashened City\" in your GY;</b> place it on the bottom of your Deck, then DRAW 1 card.\n③ HOPT | If this card in the Field Zone is destroyed or banished: You can Special Summon 1 \"Ashened\" monster from your Deck.",
-        "previous": null
-    },
-    "Priestess of the Ashened City": {
-        "_current": "① HOPT | If \"Obsidim, the Ashened City\" is in the Field Zone, you can Special Summon this card (from your hand).\n② HOPT | If this card is Normal or Special Summoned: You can SEARCH 1 \"Ashened\" card except \"Priestess of the Ashened City\".",
-        "previous": null
-    },
-    "Pyrite Knight": {
-        "_current": "① HOPT | If this card is in your hand or GY: <b>You can target 1 Warrior monster (EARTH or FIRE) you control, except \"Pyrite Knight\";</b> BOUNCE it, and if you do, Special Summon this card, then Special Summon 1 \"Pyrite Token\" (Warrior/FIRE/Level 4/ATK 0/DEF 2000) to your opponent's field in Defense Position.\n② BATTLE PHASE | HOPT | QUICK | You can Special Summon 1 Warrior monster from your hand.",
-        "previous": null
-    },
-    "Pyrite Token": {
-        "_current": "Special Summoned with the effect of \"Pyrite Knight.\"",
-        "previous": null
-    },
-    "Rekindling the Ashened": {
-        "_current": "HOPT ACTIVATION\n<b>Place 1 of your \"Ashened\" cards that is banished or in your GY on the bottom of your Main Deck, except \"Rekindling the Ashened\", then target 1 Effect Monster your opponent controls;</b> NEGATE its effects until the end of this turn.",
-        "previous": null
-    },
-    "Shaman of the Ashened City": {
-        "_current": "① HOPT | If \"Obsidim, the Ashened City\" is in the Field Zone, you can Special Summon this card (from your hand).\n② HOPT | <b>You can target 3 of your Pyro monsters that are banished and/or in your GY;</b> shuffle them into the Deck, then if you shuffled an \"Ashened\" monster, you can SEARCH 1 \"Obsidim, the Ashened City\".",
-        "previous": null
-    },
-    "Spearhead of the Ashened City": {
-        "_current": "① HOPT | If \"Obsidim, the Ashened City\" is in the Field Zone, you can Special Summon this card (from your hand).\n② HOPT | If your opponent controls a monster with 2800 or more ATK: <b>You can Tribute this card, then target 1 card your opponent controls;</b> BOUNCE it.",
-        "previous": null
-    },
-    "Tantrum Toddler": {
-        "_current": "2 Level 1 monsters\n① Once per Chain, if a card or effect activation is negated (except during the Damage Step): You can attach up to 1 card each from your GY and your opponent's GY to this card as material.\n② QUICK | This card gains effects based on the number of materials attached to it.\n● 1+: <b>Gains 700 ATK/DEF for each material attached to it.\n● 4+: Cannot be destroyed.\n● 8+:: You can detach 4 materials from this card;</b> DESTROY all cards on the field.",
-        "previous": null
-    },
-    "The Unstoppable Exodia Incarnate": {
-        "_current": "5 \"Forbidden One\" monsters\nCannot be destroyed by an opponent's card effects. Once per turn, if this card battles, during damage calculation: You can make this card gain ATK equal to your LP. Once per turn, when a Spell/Trap Card or effect is activated (QUICK EFFECT): You can NEGATE that activation. Once per turn, during the End Phase: You can Set 1 \"Exodd\" or \"Obliterate!!!\" Spell/Trap from your Deck. Once per turn, during your Standby Phase: Lose 1000 LP.",
-        "previous": "5 \"Forbidden One\" monsters\n① Cannot be destroyed by an opponent's card effects.\n② OPT | If this card battles, during damage calculation: You can make this card gain ATK equal to your LP.\n③ OPT | QUICK | When a Spell/Trap Card or effect is activated: You can NEGATE that activation.\n④ END PHASE | OPT | You can Set 1 \"Exodd\" or \"Obliterate!!!\" Spell/Trap from your Deck.\n⑤ YOUR STANDBY PHASE | OPT | Lose 1000 LP."
-    },
-    "Tricorn the Cacophonous Concert": {
-        "_current": "① HOPT | If a monster(s) in your possession is destroyed: You can Special Summon this card from your hand.\n② HOPT | If this card is sent from the field to the GY: <b>You can target 1 monster in your GY with both the same Type and Attribute as a monster you control;</b> add that monster to your hand.",
-        "previous": null
-    },
-    "Varudras, the Final Bringer of the End Times": {
-        "_current": "2+ Level 10 monsters\n① HOPT | QUICK | When your opponent activates a card or effect: <b>You can detach 1 material from this card;</b> NEGATE the activation, then you can detach 1 material from this card, then DESTROY 1 card on the field.\n② HOPT | At the start of the Damage Step, if this card attacks while it has material: You can DESTROY 1 card on the field.\n③ HOPT | If this Xyz Summoned card is destroyed: You can DESTROY 1 card on the field.",
-        "previous": null
-    },
-    "Veidos the Dragon of Endless Darkness": {
-        "_current": "\"Veidos the Eruption Dragon of Extinction\" + 2+ Level 9 or lower Pyro monsters\n① Cannot be destroyed by card effects, also your opponent cannot target it with monster effects.\n② If this card is Fusion Summoned: You can DESTROY all Spells and Traps your opponent controls.\n③ HOPT | QUICK | When your opponent activates a card or effect on the field: <b>You can send 1 face-up \"Ashened\" card you control to the GY;</b> DESTROY that card.",
-        "previous": null
-    },
-    "Veidos the Eruption Dragon of Extinction": {
-        "_current": "① MAIN PHASE | HOPT | QUICK | If this card is in your hand: <b>You can target 1 card in a Field Zone;</b> Special Summon this card to your opponent's field, and if you do, DESTROY that card, then you can add to your hand or Set 1 \"Ashened\" Continuous Trap from your Deck.\n② HOPT | If this card is sent from your opponent's field to your GY: You can DESTROY all monsters on the field.",
-        "previous": null
-    },
-    "Xyz Force": {
-        "_current": "① HOPT | Send 1 \"Xyz\" card from your Deck to the GY, except \"Xyz Force\", or if an Xyz Monster is on the field that has an Xyz Monster as material, you can add the \"Xyz\" card to your hand instead.\n② YOUR MAIN PHASE | HOPT | Except the turn this card was sent to the GY: <b>You can BANISH this card from your GY;</b> detach 1 material from an Xyz Monster on either field, then if the detached material was an Xyz Monster, you can Special Summon that monster from your GY or your BANISHment, in Defense Position.",
-        "previous": null
+    "Vicious Claw": {
+        "_current": "① The equipped monster gains 300 ATK.\n② If the equipped monster would be destroyed by battle, return this card to its owner's hand instead. Then, DESTROY 1 monster, except the one that battled the equipped monster, and inflict 600 damage to your opponent.\n③ After that, Special Summon 1 \"Evil Token\" (Fiend-Type/DARK/Level 7/ATK 2500/DEF 2500) on your opponent's side of the field.\nDuring the turn this card is returned to your hand, you cannot use \"Vicious Claw\" from your hand.",
+        "previous": "① The equipped monster gains 300 ATK.\n② If the equipped monster would be destroyed by battle, return this card to its owner's hand instead. Then, DESTROY 1 monster, except the one that battled the equipped monster, and inflict 600 damage to your opponent. After that, Special Summon 1 \"Evil Token\" (Fiend-Type/DARK/Level 7/ATK 2500/DEF 2500) on your opponent's side of the field.\n③ During the turn this card is returned to your hand, you cannot use \"Vicious Claw\" from your hand."
     }
 }
