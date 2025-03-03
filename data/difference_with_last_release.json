@@ -1,38 +1,162 @@
 {
-    "Elzette, Azamina of the White Forest": {
-        "_current": "① HOPT | <b>You can reveal this card in your hand;</b> Special Summon 1 \"White Forest\" or \"Azamina\" monster from your hand.\n② YOUR MAIN PHASE | HOPT | You can Fusion Summon 1 \"Azamina\" Fusion Monster from your Extra Deck, using monsters from your hand or field.\n③ HOPT | If this card is sent to the GY as Synchro Material: You can SEARCH 1 \"Sinful Spoils\" card.",
+    "Azamina Aphes": {
+        "_current": "(This card is always treated as a \"White Forest\" card.)\n① HOPT | <b>Target cards on the field, up to the number of Fusion and Synchro Monsters in your field and GY that are Fiend, Illusion, or Spellcaster;</b> BOUNCE them.\n② HOPT | If this card is sent to the GY to activate a monster effect: You can Set this card.",
         "previous": null
     },
-    "Exosister Martha": {
-        "_current": "① HOPT | If you control no monsters, or only Xyz Monsters: You can Special Summon this card from your hand, and if you do, Special Summon 1 \"Exosister Elis\" from your Deck. You cannot Special Summon the turn you activate this effect, except \"Exosister\" monsters.\n② HOPT | If a card(s) moves out of either GY (except during the Damage Step): You can Special Summon from your Extra Deck, 1 \"Exosister\" Xyz Monster, using this face-up card you control as material. (This is treated as an Xyz Summon.)",
-        "previous": "① HOPT | If you control no monsters, or only Xyz Monsters: You can Special Summon this card from your hand, and if you do, Special Summon 1 \"Exosister Elis\" from your Deck. You cannot Special Summon monsters the turn you activate this effect, except \"Exosister\" monsters.\n② HOPT | If a card(s) moves out of either GY (except during the Damage Step): You can Special Summon from your Extra Deck, 1 \"Exosister\" Xyz Monster, using this face-up card you control as material. (This is treated as an Xyz Summon.)"
+    "Azamina Debtors": {
+        "_current": "HOPT | You can use ONE of —\n① MAIN PHASE | Reveal 1 \"Azamina\" Fusion Monster in your Extra Deck, and for every 4 Levels it has (round down), send 1 \"Sinful Spoils\" card from your hand and/or field to the GY (if face-down, reveal it), then Special Summon that revealed monster. (This is treated as a Fusion Summon.)\n② YOUR MAIN PHASE | <b>You can BANISH this card from your GY, then target 1 \"Azamina\" monster in your GY;</b> Special Summon it.",
+        "previous": null
     },
-    "Exosister Vadis": {
-        "_current": "HOPT ACTIVATION\n<b>Pay 800 LP;</b> choose 1 \"Exosister\" monster from your Deck, then take 1 other \"Exosister\" monster from your Deck that is mentioned on that monster, and Special Summon both, but shuffle them into the Deck during the End Phase, also for the rest of this turn after this card resolves, you cannot Special Summon from the Extra Deck, except \"Exosister\" monsters.",
-        "previous": "HOPT ACTIVATION\n<b>Pay 800 LP;</b> choose 1 \"Exosister\" monster from your Deck, then take 1 other \"Exosister\" monster from your Deck that is mentioned on that monster, and Special Summon both, but shuffle them into the Deck during the End Phase, also for the rest of this turn after this card resolves, you cannot Special Summon monsters from the Extra Deck, except \"Exosister\" monsters."
+    "Azamina Determination": {
+        "_current": "HOPT | You can use ONE of —\n① Reveal 1 \"Azamina\" Fusion Monster in your Extra Deck, and for every 4 Levels it has (round down), shuffle 1 \"Sinful Spoils\" card from your GY and/or BANISHment into the Deck, then Special Summon the revealed monster. (This is treated as a Fusion Summon.)\n② <b>You can BANISH this card from your GY, then target 1 \"Sinful Spoils\" Spell/Trap in your GY;</b> Set it, but it cannot be activated this turn.",
+        "previous": null
     },
-    "Exosisters Magnifica": {
-        "_current": "2 Rank 4 \"Exosister\" Xyz Monsters\nMust be Xyz Summoned with the above materials.\n① Can make a second attack during each Battle Phase.\n② OPT | QUICK | <b>You can detach 1 material from this card;</b> BANISH 1 card your opponent controls.\n③ QUICK | When your opponent activates a card or effect: You can return 1 Xyz Monster you own attached to this card to your Extra Deck, then you can Special Summon that monster from your Extra Deck, using this card you control as material. (This is treated as an Xyz Summon. Transfer this card's materials to the Summoned monster.)",
-        "previous": "2 Rank 4 \"Exosister\" Xyz Monsters\nMust be Xyz Summoned with the above materials.\n① Can make a second attack during each Battle Phase.\n② OPT | QUICK | <b>You can detach 1 material from this card;</b> BANISH 1 card your opponent controls.\n③ QUICK | When your opponent activates a card or effect: You can return 1 Xyz Monster you own attached to this card to your Extra Deck, then you can Special Summon that monster from your Extra Deck, by using this card you control as material. (This is treated as an Xyz Summon. Transfer this card's materials to the Summoned monster.)"
+    "Azamina Ilia Silvia": {
+        "_current": "1 Illusion monster + 1 LIGHT Spellcaster monster\n① Any battle damage your \"Azamina\" monsters, except \"Azamina Ilia Silvia\", inflicts to your opponent is doubled.\n② HOPT | QUICK | When your opponent activates a card or effect: <b>You can Tribute this card;</b> NEGATE that effect.\n③ HOPT | If this card is destroyed: You can SEARCH 1 \"Sinful Spoils\" Trap.",
+        "previous": null
     },
-    "Promethean Princess, Bestower of Flames": {
-        "_current": "2+ Effect Monsters\n① You cannot Special Summon, except FIRE monsters.\n② YOUR MAIN PHASE | HOPT | You can Special Summon 1 FIRE monster from your GY.\n③ HOPT | If a monster(s) is Special Summoned to your opponent's field, while this card is in your GY (except during the Damage Step): <b>You can target 1 FIRE monster you control and 1 monster your opponent controls;</b> DESTROY them, and if you do, Special Summon this card.",
-        "previous": "2+ Effect Monsters\n① You cannot Special Summon monsters, except FIRE monsters.\n② YOUR MAIN PHASE | HOPT | You can Special Summon 1 FIRE monster from your GY.\n③ HOPT | If a monster(s) is Special Summoned to your opponent's field, while this card is in your GY (except during the Damage Step): <b>You can target 1 FIRE monster you control and 1 monster your opponent controls;</b> DESTROY them, and if you do, Special Summon this card."
+    "Azamina Mu Rcielago": {
+        "_current": "1 Illusion monster + 1 LIGHT Spellcaster monster\n① Monsters your opponent controls lose 500 ATK/DEF for each \"Azamina\" monster you control.\n② HOPT | If this card is Fusion Summoned: You can SEARCH 1 \"Azamina\" or \"Sinful Spoils\" card.\n③ HOPT | If this card is destroyed: You can SEARCH 1 \"Sinful Spoils\" Spell.",
+        "previous": null
     },
-    "Regulus": {
-        "_current": "OPT | You can select 1 Field Spell Card in your GY.\nReturn it to the Deck.",
-        "previous": "OPT | You can select 1 Field Spell Card in your GY. Return it to the Deck."
+    "Azamina Sol Erysichthon": {
+        "_current": "1 Illusion monster + 1 Fiend monster\n① HOPT | If this card is Fusion Summoned: <b>You can target 1 card on the field;</b> send it to the GY.\n② STANDBY PHASE | HOPT | <b>You can target 1 \"Azamina\" or \"Sinful Spoils\" card in your GY;</b> add it to your hand.",
+        "previous": null
     },
-    "Rescue-ACE Turbulence": {
-        "_current": "① HOPT | <b>You can BANISH 2 \"Rescue-ACE\" cards from your GY;</b> Special Summon this card from your hand.\n② YOUR MAIN PHASE | HOPT | You can Set up to 4 \"Rescue-ACE\" Quick-Play Spells / Normal Traps, with different names, from your Deck.\n③ HOPT | If another card(s) you control leaves the field by an opponent's card effect (except during the Damage Step): <b>You can target 1 card on the field;</b> DESTROY it.",
-        "previous": "① HOPT | <b>You can BANISH 2 \"Rescue-ACE\" cards from your GY;</b> Special Summon this card from your hand.\n② YOUR MAIN PHASE | HOPT | You can Set up to 4 \"Rescue-ACE\" Quick-Play Spells / Normal Traps, with different names, directly from your Deck.\n③ HOPT | If another card(s) you control leaves the field by an opponent's card effect (except during the Damage Step): <b>You can target 1 card on the field;</b> DESTROY it."
+    "Bettan Bat": {
+        "_current": "① Up to thrice per turn, if your opponent Normal or Special Summons a monster(s) (except during the Damage Step): <b>You can target 1 of them;</b> toss a coin and if the result is heads, change it to face-up Attack Position, or if the result is tails, change it to face-down Defense Position.\n② OPT | If another monster(s) on the field is flipped face-up, or a face-up monster(s) is changed to face-down Defense Position, even during the Damage Step: <b>You can target 1 of them;</b> change it to face-up Attack Position or face-down Defense Position.",
+        "previous": null
     },
-    "Speed Warrior": {
-        "_current": "Once per Battle Step, if this card was Normal Summoned this turn (except during the Damage Step): You can make its ATK become double its original ATK, until the end of the Battle Phase.",
-        "previous": "Once per Battle Phase, if this card was Normal Summoned this turn (except during the Damage Step): You can make its ATK become double its original ATK, until the end of the Battle Phase."
+    "Break the Seal": {
+        "_current": "① HOPT | <b>You can activate 1 of these effects;</b> \n● Place 1 \"Break the Seal\" from your Deck or GY, face-up on your field.\n● Send 2 face-up \"Break the Seal\" you control to the GY, including this card; SEARCH 1 \"Forbidden One\" monster.\n② HOPT | If this card on the field is destroyed: <b>You can reveal up to 5 \"Forbidden One\" monsters in your hand;</b> BOUNCE that many cards your opponent controls.",
+        "previous": null
     },
-    "Vicious Claw": {
-        "_current": "① The equipped monster gains 300 ATK.\n② If the equipped monster would be destroyed by battle, return this card to its owner's hand instead. Then, DESTROY 1 monster, except the one that battled the equipped monster, and inflict 600 damage to your opponent.\n③ After that, Special Summon 1 \"Evil Token\" (Fiend-Type/DARK/Level 7/ATK 2500/DEF 2500) on your opponent's side of the field.\nDuring the turn this card is returned to your hand, you cannot use \"Vicious Claw\" from your hand.",
-        "previous": "① The equipped monster gains 300 ATK.\n② If the equipped monster would be destroyed by battle, return this card to its owner's hand instead. Then, DESTROY 1 monster, except the one that battled the equipped monster, and inflict 600 damage to your opponent. After that, Special Summon 1 \"Evil Token\" (Fiend-Type/DARK/Level 7/ATK 2500/DEF 2500) on your opponent's side of the field.\n③ During the turn this card is returned to your hand, you cannot use \"Vicious Claw\" from your hand."
+    "Broomy": {
+        "_current": "Cannot be used as Synchro Material, except for the Synchro Summon of a Level 8 or lower monster.\n① HOPT | <b>You can reveal this card and 1 monster in your hand;</b> Special Summon 1 of the 2, and if you do, BANISH the other, also for the rest of this turn, you cannot Special Summon from the Extra Deck, except Synchro Monsters, and can only declare an attack with Synchro Monsters.",
+        "previous": null
+    },
+    "Deception of the Sinful Spoils": {
+        "_current": "① HOPT | <b>You can Tribute 1 monster from your hand or field;</b> SEARCH 1 \"Azamina\" card.\n② HOPT | If a monster(s) is sent to your opponent's GY, and you control an \"Azamina\" monster (except during the Damage Step): You can make your opponent lose 1500 LP, and if you do, gain 1500 LP.\n③ END PHASE | HOPT | If this card is in the GY because it was sent there from the Spell & Trap Zone this turn while face-up: You can Set it.",
+        "previous": null
+    },
+    "Exxod Fires of Rage": {
+        "_current": "(This card is always treated as an \"Exodd\" and \"Obliterate!!!\" card.)\n① HOPT | If you control a Level 10 or higher \"Exodia\" monster: DESTROY all cards your opponent controls.\n② HOPT | If this card is in your GY, except the turn it was sent there: <b>You can BANISH it, then activate 1 of these effects;</b> \n● SEARCH 1 \"Forbidden One\" monster (from DECK or GY).\n● Shuffle up to 5 \"Forbidden One\" monsters from your GY and/or BANISHment into the Deck.",
+        "previous": null
+    },
+    "Fiend Reflection of the Millennium": {
+        "_current": "① If this card battles a monster, neither can be destroyed by that battle.\n② HOPT | If this card is in your hand: You can place it in your Spell & Trap Zone as a face-up Continuous Spell.\n③ HOPT | If your opponent activates a card or effect, while this card is a Continuous Spell (except during the Damage Step): You can Special Summon this card, then you can gain LP equal to half the ATK of 1 monster on the field.",
+        "previous": null
+    },
+    "Fiendsmith Token": {
+        "_current": "Special Summoned with the effect of \"Fiendsmith's Sanct.\"",
+        "previous": null
+    },
+    "Fiendsmith in Paradise": {
+        "_current": "① HOPT | <b>Target 1 Level 7 or higher LIGHT Fiend monster you control;</b> send all cards on the field to the GY that are not that monster.\n② HOPT | If your opponent Special Summons a monster(s), while this card is in your GY: <b>You can BANISH this card;</b> send 1 \"Fiendsmith\" monster from your Deck or Extra Deck to the GY.",
+        "previous": null
+    },
+    "Fiendsmith's Desirae": {
+        "_current": "\"Fiendsmith Engraver\" + 2 LIGHT Fiend monsters\n① HOPT | QUICK | You can NEGATE the effects of a number of face-up cards on the field, up to the total Link Rating of Link Monsters equipped to this card, until the end of this turn.\n② HOPT | If this card is sent to the GY: <b>You can shuffle 1 other LIGHT Fiend monster from your GY into the Deck/Extra Deck, then target 1 card on the field;</b> send it to the GY.",
+        "previous": null
+    },
+    "Fiendsmith's Lacrima": {
+        "_current": "2 LIGHT Fiend monsters\n① Monsters your opponent controls lose 600 ATK.\n② HOPT | If this card is Fusion Summoned: <b>You can target 1 of your LIGHT Fiend monsters that is banished or in your GY;</b> add it to your hand or Special Summon it.\n③ HOPT | If this card is sent to the GY: <b>You can shuffle 1 other LIGHT Fiend monster from your GY into the Deck/Extra Deck;</b> inflict 1200 damage to your opponent.",
+        "previous": null
+    },
+    "Fiendsmith's Requiem": {
+        "_current": "1 LIGHT Fiend monster\nYou can only Special Summon \"Fiendsmith's Requiem(s)\" once per turn.\n① MAIN PHASE | QUICK | <b>You can Tribute this card;</b> Special Summon 1 \"Fiendsmith\" monster from your hand or Deck.\n② HOPT | <b>You can target 1 LIGHT non-Link Fiend monster you control;</b> equip this card from your field or GY to that monster you control as an Equip Spell that gives it 600 ATK.",
+        "previous": null
+    },
+    "Fiendsmith's Sanct": {
+        "_current": "① HOPT | If you control no face-up monsters, or the only face-up monsters you control are LIGHT Fiend monsters: Special Summon 1 \"Fiendsmith Token\" (Fiend/LIGHT/Level 1/ATK 0/DEF 0), also you cannot declare attacks for the rest of this turn, except with Fiend monsters.\n② HOPT | If a face-up \"Fiendsmith\" monster(s) you control is destroyed by an opponent's card effect, while this card is in your GY: You can Set this card.",
+        "previous": null
+    },
+    "Fiendsmith's Sequence": {
+        "_current": "2 monsters, including a LIGHT Fiend monster\n① YOUR MAIN PHASE | HOPT | You can Fusion Summon 1 Fiend Fusion Monster from your Extra Deck, by shuffling its materials from your GY into the Deck.\n② HOPT | <b>You can target 1 LIGHT non-Link Fiend monster you control;</b> equip this card from your field or GY to that monster you control as an Equip Spell with the following effect.\n● Your opponent cannot target the equipped monster with card effects.",
+        "previous": null
+    },
+    "Fiendsmith's Tract": {
+        "_current": "① HOPT | SEARCH 1 LIGHT Fiend monster then DISCARD 1 card.\n② HOPT | <b>You can BANISH this card from your GY;</b> Fusion Summon 1 \"Fiendsmith\" Fusion Monster from your Extra Deck, using monsters from your hand or field.",
+        "previous": null
+    },
+    "Golem that Guards the Millennium Treasures": {
+        "_current": "① The activation of your \"Millennium Ankh\" cannot be negated.\n② HOPT | If this card is in your hand: You can place it in your Spell & Trap Zone as a face-up Continuous Spell.\n③ HOPT | While this card is a Continuous Spell: <b>You can either pay 2000 LP, or reveal 1 \"Millennium Ankh\" in your hand;</b> Special Summon this card, then you can SEARCH 1 \"Wedju Temple\".",
+        "previous": null
+    },
+    "Grief Tablet": {
+        "_current": "HOPT ACTIVATION\n(This card is always treated as a \"Wedju\" card.)\n① The equipped monster cannot attack or be Tributed, also its effects are negated.\n② OPT | If you control the equipped monster: You can SEARCH 1 \"Wedju\" card except \"Grief Tablet\".\n③ If this card is sent to the GY because the equipped monster is destroyed: You can inflict 500 damage to your opponent.",
+        "previous": null
+    },
+    "Guilt of the Sinful Spoils": {
+        "_current": "① HOPT | If your opponent Special Summons a monster(s) from the Deck or Extra Deck and you control a \"Diabellstar\" Monster Card (except during the Damage Step): <b>Target 1 monster your opponent controls;</b> shuffle it into the Deck.\n② HOPT | During the Damage Step, when your \"Diabellstar\" monster battles an opponent's monster: <b>You can BANISH this card from your GY;</b> that opponent's monster's ATK becomes halved until the end of this turn.",
+        "previous": null
+    },
+    "Heart of the Blue-Eyes": {
+        "_current": "(This card is always treated as a \"Millennium\" card.)\n① Control of this card cannot switch.\n② HOPT | <b>You can DISCARD this card;</b> SEARCH 1 \"Millennium Ankh\".\n③ If this card is in your GY, and you have successfully activated \"Millennium Ankh\" this Duel, and your opponent Normal or Special Summons a monster(s) that is Level 8 or higher, or has 3000 or more ATK: You can send that monster to the GY, and if you do, Special Summon this card.\nYou can only use this effect of \"Heart of the Blue-Eyes\" once per Duel.",
+        "previous": null
+    },
+    "Kochobo's Hinamatsuri": {
+        "_current": "HOPT | If this card is in your hand or GY: <b>You can target 1 Machine monster on the field;</b> for the rest of this turn, you cannot Special Summon from the Extra Deck, except Xyz Monsters, also Special Summon this card (but BANISH it when it leaves the field), and if you do, halve that monster's ATK, also this card's Level becomes that monster's.",
+        "previous": null
+    },
+    "Like the Diabell": {
+        "_current": "① HOPT | If a Spell/Trap(s) is sent to the GY by a card effect: Set 1 Spell/Trap from your hand or GY, but it cannot be activated this turn.\n② YOUR MAIN PHASE | HOPT | <b>You can BANISH 3 Spells/Traps from your GY, including this card;</b> Special Summon 1 \"Diabell\" monster from your hand or GY.",
+        "previous": null
+    },
+    "Maiden of the Millennium Moon": {
+        "_current": "① If this card battles a monster, neither can be destroyed by that battle.\n② HOPT | If this card is in your hand: You can place it in your Spell & Trap Zone as a face-up Continuous Spell.\n③ HOPT | If your opponent activates a card or effect, while this card is a Continuous Spell (except during the Damage Step): You can Special Summon this card, and if you do, for the rest of this turn, your opponent cannot target Level 5 or higher Illusion or Spellcaster monsters you control with card effects.",
+        "previous": null
+    },
+    "Millennium Ankh": {
+        "_current": "Show 5 \"Forbidden One\" Monster Cards from your hand, Deck, and/or face-up field, then Special Summon 1 \"The Unstoppable Exodia Incarnate\" from your Extra Deck, then shuffle the face-up Monster Cards you control into the Deck, except \"Exodia\" Monster Cards whose original Levels are 10 or higher, and \"Millennium\" Monster Cards, also you cannot Summon for the rest of this turn. After activation, shuffle this card into the Deck instead of sending it to the GY.",
+        "previous": null
+    },
+    "Obliterate!!! Blaze": {
+        "_current": "<b>One Level 10 or higher monster on the field with \"Exodia\" in its original name gains these effects.\n● You can pay half your LP;</b> DESTROY as many cards in the Spell & Trap Zones as possible, then equip 5 \"Forbidden One\" monsters from your hand and/or Deck to this card as Equip Spells that each give it 2000 ATK, also you cannot activate other cards' effects for the rest of this turn.\n● This card is PIERCING.",
+        "previous": null
+    },
+    "Play the Diabell": {
+        "_current": "① HOPT | If a Spell/Trap(s) is sent to the GY to activate a card or effect: Send 1 Illusion or Spellcaster monster from your hand, Deck, or Extra Deck to the GY.\n② YOUR MAIN PHASE | HOPT | <b>You can BANISH 3 Spells/Traps from your GY, including this card;</b> Special Summon 1 \"Diabell\" monster from your hand or GY.",
+        "previous": null
+    },
+    "Psychic Trigger": {
+        "_current": "Activate only while your Life Points are lower than your opponent's.\nSelect 2 Psychic-Type monsters in your GY. Remove them from play and DRAW 2 cards.",
+        "previous": "Activate only while your Life Points are lower than your opponent's. Select 2 Psychic-Type monsters in your GY. Remove them from play and DRAW 2 cards."
+    },
+    "Queen Azamina": {
+        "_current": "(This card is always treated as a \"Sinful Spoils\" card.)\n① HOPT | If this card in your hand or field is sent to the GY or banished, by an activated effect: You can Special Summon it.\n② HOPT | When your \"Azamina\" or \"White Forest\" monster DESTROYS an opponent's monster by battle: <b>You can target 1 \"Sinful Spoils\" Spell/Trap in your GY;</b> add it to your hand.",
+        "previous": null
+    },
+    "Saint Azamina": {
+        "_current": "2 Level 6 or higher monsters (1 Fusion + 1 Synchro)\n① Your opponent cannot target cards in their field, GY, or BANISHment, or this card on the field, with card effects. Your opponent takes any battle damage you would have taken.\n② HOPT | QUICK | If this card was Fusion Summoned this turn: You can Special Summon 1 Level 9 or lower \"Azamina\" monster from your Deck or Extra Deck.",
+        "previous": null
+    },
+    "Sengenjin Wakes from a Millennium": {
+        "_current": "① Cannot be destroyed by monster effects.\n② HOPT | If this card is in your hand: You can place it in your Spell & Trap Zone as a face-up Continuous Spell.\n③ HOPT | While this card is a Continuous Spell: <b>You can either pay 2000 LP, or reveal 1 \"Millennium Ankh\" in your hand;</b> Special Summon this card, then you can SEARCH 1 \"Millennium\" monster.",
+        "previous": null
+    },
+    "Shield of the Millennium Dynasty": {
+        "_current": "① Cannot be destroyed by Spell/Trap effects.\n② HOPT | If this card is in your hand: You can place it in your Spell & Trap Zone as a face-up Continuous Spell.\n③ HOPT | While this card is a Continuous Spell: <b>You can either pay 2000 LP, or reveal 1 \"Millennium Ankh\" in your hand;</b> Special Summon this card, then you can SEARCH 1 \"Millennium Ankh\".",
+        "previous": null
+    },
+    "Sinful Spoils Awakening": {
+        "_current": "HOPT | You can use ONE of —\n① If your opponent controls 3 or more monsters and you control a Level 5 or higher Illusion monster: <b>Target up to 3 cards your opponent controls;</b> BOUNCE them.\n② If you control a Level 5 or higher Illusion monster and this card is in your GY: You can Set this card, but BANISH it when it leaves the field.",
+        "previous": null
+    },
+    "Sinful Spoils of the White Forest": {
+        "_current": "① HOPT | If you control a Fiend, Illusion, or Spellcaster monster: <b>Activate 1 of these effects;</b> \n● Special Summon 1 Fiend, Illusion, or Spellcaster monster from your hand.\n● Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field.\n② HOPT | If this card is sent to the GY to activate a monster effect: You can Set this card.",
+        "previous": null
+    },
+    "That's 10!": {
+        "_current": "① Each time a card or effect is activated, except \"That's 10!\": You can place 1 Access Counter on this card (max. 10).\n② Monsters you control gain 100 ATK for each Access Counter on this card.\n③ If the 10th Access Counter is placed on this card: You can BOUNCE this card, and if you do, Set from your Deck, 1 Continuous Trap with an effect that Special Summons itself as a monster. It can be activated this turn.",
+        "previous": null
+    },
+    "The Hallowed Azamina": {
+        "_current": "① Reveal 1 \"Azamina\" Fusion Monster in your Extra Deck, and for every 4 Levels it has (round down), send 1 \"Sinful Spoils\" card from your hand and/or field to the GY (if face-down, reveal it), then Special Summon that revealed monster. (This is treated as a Fusion Summon.)\n② HOPT | If this card is in the GY: <b>You can target 1 \"Azamina\" monster you control or in your GY;</b> shuffle it into the Deck, and if you do, add this card to your hand.",
+        "previous": null
+    },
+    "Wedju Temple": {
+        "_current": "① YOUR MAIN PHASE | HOPT | You can place 1 monster from your hand in your Spell & Trap Zone as a face-up Continuous Spell, then place 1 \"Millennium\" monster from your Deck in your Spell & Trap Zone as a face-up Continuous Spell.\n② If a face-up \"Millennium\" monster(s) you control is destroyed, you can place it in your Spell & Trap Zone as a face-up Continuous Spell, instead of sending it to the GY.",
+        "previous": null
     }
 }
