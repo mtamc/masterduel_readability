@@ -1,162 +1,426 @@
 {
-    "Azamina Aphes": {
-        "_current": "(This card is always treated as a \"White Forest\" card.)\n① HOPT | <b>Target cards on the field, up to the number of Fusion and Synchro Monsters in your field and GY that are Fiend, Illusion, or Spellcaster;</b> BOUNCE them.\n② HOPT | If this card is sent to the GY to activate a monster effect: You can Set this card.",
+    "Absorb Fusion": {
+        "_current": "HOPT ACTIVATION\nSEARCH 1 \"Gem-Knight\" card then you can apply this effect.\n● Fusion Summon 1 \"Gem-Knight\" Fusion Monster from your Extra Deck, by BANISHING its materials from your hand or field.\nYou cannot Special Summon the turn you activate this card, except \"Gem-Knight\" monsters.",
+        "previous": "HOPT ACTIVATION\nSEARCH 1 \"Gem-Knight\" card then you can apply this effect.\n● Fusion Summon 1 \"Gem-Knight\" Fusion Monster from your Extra Deck, by BANISHING Fusion Materials listed on it from your hand or your side of the field.\nYou cannot Special Summon monsters the turn you activate this card, except \"Gem-Knight\" monsters."
+    },
+    "Abyssal Kingshark": {
+        "_current": "Each turn, the first time this card would be destroyed by an effect that does not target it, it is not destroyed.",
+        "previous": "OPT | If this card would be destroyed by an effect that does not target it, it is not destroyed."
+    },
+    "Ariel, Priestess of the Nekroz": {
+        "_current": "① OPT | <b>You can reveal a number of \"Nekroz\" cards in your hand;</b> increase or decrease this card's Level by the number revealed, until the end of this turn.\n② HOPT | If this card is Tributed by card effect: You can SEARCH 1 \"Nekroz\" monster except a Ritual Monster.",
+        "previous": "① OPT | <b>You can reveal any number of \"Nekroz\" cards in your hand;</b> increase or reduce this card's Level by the number of revealed cards until the end of this turn.\n② HOPT | If this card is Tributed by a card effect: You can SEARCH 1 \"Nekroz\" monster except a Ritual Monster."
+    },
+    "Atlantean Attack Squad": {
+        "_current": "Gains 800 ATK while you control a Fish, Sea Serpent, or Aqua monster other than this card.",
+        "previous": "Gains 800 ATK while you control a face-up Fish, Sea Serpent, or Aqua monster other than this card."
+    },
+    "Augmented Heraldry": {
+        "_current": "① Neither player can target Psychic Xyz Monsters on the field with Spell/Trap Cards or effects.\n② OPT | <b>You can DISCARD 1 \"Heraldic Beast\" monster;</b> SEARCH 1 \"Heraldry\" Spell/Trap except \"Augmented Heraldry\". You cannot Normal or Special Summon the turn you activate this effect, except Psychic Xyz Monsters and \"Heraldic Beast\" monsters (even if this card leaves the field).",
+        "previous": "① Psychic Xyz Monsters on the field cannot be targeted by Spell/Trap Cards or effects.\n② OPT | <b>You can DISCARD 1 \"Heraldic Beast\" monster;</b> SEARCH 1 \"Heraldry\" Spell/Trap except \"Augmented Heraldry\". You cannot Normal or Special Summon during the turn you activate this effect, except Psychic Xyz Monsters and \"Heraldic Beast\" monsters (even if this card leaves the field)."
+    },
+    "Avance, Swordsman of the Nekroz": {
+        "_current": "If you Ritual Summon exactly 1 \"Nekroz\" Ritual Monster with a card effect that requires use of monsters, this card you control can be used as the entire Tribute. When this card is Normal Summoned: You can Special Summon 1 \"Nekroz\" monster from your Deck, except \"Avance, Swordsman of the Nekroz\". If this card is Tributed by card effect: You can add any number of your banished \"Nekroz\" cards with different names to your hand. You can only use this effect of \"Avance, Swordsman of the Nekroz\" once per Duel.",
         "previous": null
     },
-    "Azamina Debtors": {
-        "_current": "HOPT | You can use ONE of —\n① MAIN PHASE | Reveal 1 \"Azamina\" Fusion Monster in your Extra Deck, and for every 4 Levels it has (round down), send 1 \"Sinful Spoils\" card from your hand and/or field to the GY (if face-down, reveal it), then Special Summon that revealed monster. (This is treated as a Fusion Summon.)\n② YOUR MAIN PHASE | <b>You can BANISH this card from your GY, then target 1 \"Azamina\" monster in your GY;</b> Special Summon it.",
+    "Blackwing Armed Wing": {
+        "_current": "1 \"Blackwing\" Tuner + 1+ non-Tuner monsters\n① If this card attacks a Defense Position monster, it gains 500 ATK during the Damage Step only, also inflict PIERCING battle damage to your opponent.",
+        "previous": "1 \"Blackwing\" Tuner + 1+ non-Tuner monsters\n① If this card attacks a Defense Position monster, it gains 500 ATK during the Damage Step only, also inflict PIERCING battle damage."
+    },
+    "Blue-Eyes Ultimate Spirit Dragon": {
+        "_current": "2+ Tuners + 1 non-Tuner \"Blue-Eyes\" monster\nYour opponent cannot BANISH cards from your GY. You can only use each of the following effects of \"Blue-Eyes Ultimate Spirit Dragon\" once per turn. When a card or effect is activated on the field (QUICK EFFECT): You can NEGATE the activation, and if you do, this card gains 1000 ATK until the end of this turn. If this card is destroyed: You can Special Summon 1 LIGHT Dragon monster from your GY, except \"Blue-Eyes Ultimate Spirit Dragon\".",
         "previous": null
     },
-    "Azamina Determination": {
-        "_current": "HOPT | You can use ONE of —\n① Reveal 1 \"Azamina\" Fusion Monster in your Extra Deck, and for every 4 Levels it has (round down), shuffle 1 \"Sinful Spoils\" card from your GY and/or BANISHment into the Deck, then Special Summon the revealed monster. (This is treated as a Fusion Summon.)\n② <b>You can BANISH this card from your GY, then target 1 \"Sinful Spoils\" Spell/Trap in your GY;</b> Set it, but it cannot be activated this turn.",
+    "Domain of the True Monarchs": {
+        "_current": "① While you have no cards in your Extra Deck and you are the only player that controls a Tribute Summoned monster, your opponent cannot Special Summon from the Extra Deck.\n② If a Tribute Summoned monster you control attacks an opponent's monster, it gains 800 ATK during damage calculation only.\n③ OPT | You can reduce the Level of 1 monster with 2800 ATK/1000 DEF in your hand by 2 until the end of this turn (even after they are Summoned/Set, and even if this card leaves the field).",
+        "previous": "① While you have no cards in your Extra Deck and you are the only player that controls a Tribute Summoned monster, your opponent cannot Special Summon monsters from the Extra Deck.\n② If a Tribute Summoned monster you control attacks an opponent's monster, it gains 800 ATK during damage calculation only.\n③ OPT | You can reduce the Level of 1 monster with 2800 ATK/1000 DEF in your hand by 2 until the end of this turn (even after they are Summoned/Set, and even if this card leaves the field)."
+    },
+    "Edea the Heavenly Squire": {
+        "_current": "① HOPT | If this card is Normal or Special Summoned: You can Special Summon 1 monster with 800 ATK/1000 DEF from your Deck in Defense Position, except \"Edea the Heavenly Squire\", also you cannot Special Summon from the Extra Deck for the rest of this turn.\n② HOPT | If this card is sent to the GY: <b>You can target 1 of your banished \"Monarch\" Spells/Traps;</b> add it to your hand.",
+        "previous": "① HOPT | If this card is Normal or Special Summoned: You can Special Summon 1 monster with 800 ATK/1000 DEF from your Deck in Defense Position, except \"Edea the Heavenly Squire\", also you cannot Special Summon monsters from the Extra Deck for the rest of this turn.\n② HOPT | If this card is sent to the GY: <b>You can target 1 of your banished \"Monarch\" Spells/Traps;</b> add it to your hand."
+    },
+    "Eidos the Underworld Squire": {
+        "_current": "① HOPT | If this card is Normal or Special Summoned: During your Main Phase this turn, you can Tribute Summon 1 monster, in addition to your Normal Summon/Set. (You can only gain this effect once per turn.)\n② HOPT | <b>You can BANISH this card from your GY, then target 1 monster with 800 ATK/1000 DEF in your GY, except \"Eidos the Underworld Squire\";</b> Special Summon it in Defense Position, also you cannot Special Summon from the Extra Deck for the rest of this turn.",
+        "previous": "① HOPT | If this card is Normal or Special Summoned: During your Main Phase this turn, you can Tribute Summon 1 monster, in addition to your Normal Summon/Set. (You can only gain this effect once per turn.)\n② HOPT | <b>You can BANISH this card from your GY, then target 1 monster with 800 ATK/1000 DEF in your GY, except \"Eidos the Underworld Squire\";</b> Special Summon it in Defense Position, also you cannot Special Summon monsters from the Extra Deck for the rest of this turn."
+    },
+    "Fabled Levilazebul": {
+        "_current": "1 Tuner + 1+ non-Tuner monsters\nOnce per turn, during the Main Phase (QUICK EFFECT): You can Tribute any number of \"Fabled\" monsters, and if you do, take control of that many face-up monsters your opponent controls, but their effects are negated. If this card is in your GY: <b>You can target 1 other \"Fabled\" card in your GY;</b> return this card to the Extra Deck, and if you do, add that target to your hand. You can only use this effect of \"Fabled Levilazebul\" once per turn.",
         "previous": null
     },
-    "Azamina Ilia Silvia": {
-        "_current": "1 Illusion monster + 1 LIGHT Spellcaster monster\n① Any battle damage your \"Azamina\" monsters, except \"Azamina Ilia Silvia\", inflicts to your opponent is doubled.\n② HOPT | QUICK | When your opponent activates a card or effect: <b>You can Tribute this card;</b> NEGATE that effect.\n③ HOPT | If this card is destroyed: You can SEARCH 1 \"Sinful Spoils\" Trap.",
+    "Frost Blast of the Monarchs": {
+        "_current": "① If you control a monster with 2400 or more ATK and 1000 DEF: <b>Target 1 Set card on the field;</b> DESTROY it.\n② <b>You can BANISH this card and 1 \"Monarch\" Spell/Trap from your GY, then target 1 Set card on the field;</b> DESTROY it.",
+        "previous": "① If you control a monster with 2400 or more ATK and 1000 DEF: <b>Target 1 Set card on the field;</b> DESTROY it.\n② <b>You can BANISH this card and 1 \"Monarch\" Spell/Trap Card from your GY, then target 1 Set card on the field;</b> DESTROY it."
+    },
+    "Full Salvo": {
+        "_current": "Send your entire hand to the GY, and if you do, inflict 200 damage to your opponent for each card sent to the GY by this effect.",
+        "previous": "When this card resolves, send your entire hand to the GY. Inflict 200 damage to your opponent for each card you sent to the GY by this effect."
+    },
+    "Galatea, the Orcust Automaton": {
+        "_current": "2 Effect Monsters, including an \"Orcust\" monster\n① This linked card cannot be destroyed by battle.\n② HOPT | <b>You can target 1 of your banished Machine monsters;</b> shuffle it into the Deck, then you can Set 1 \"Orcust\" Spell/Trap from your Deck.",
+        "previous": "2 Effect Monsters, including an \"Orcust\" monster\n① This linked card cannot be destroyed by battle.\n② HOPT | <b>You can target 1 of your banished Machine monsters;</b> shuffle it into the Deck, then you can Set 1 \"Orcust\" Spell/Trap directly from your Deck."
+    },
+    "Gem-Elephant": {
+        "_current": "① YOUR MAIN PHASE | You can BOUNCE this face-up card on the field.\n② QUICK | Once per battle, during damage calculation, if this card battles: <b>You can send 1 Normal Monster from your hand to the GY;</b> this card gains 1000 DEF during that damage calculation only.",
+        "previous": "① YOUR MAIN PHASE | You can BOUNCE this face-up card on the field.\n② During damage calculation, if this card attacked or was attacked: <b>You can send 1 Normal Monster from your hand to the GY;</b> this card gains 1000 DEF."
+    },
+    "Gem-Knight Amethyst": {
+        "_current": "1 \"Gem-Knight\" monster + 1 Aqua monster\nMust first be Fusion Summoned.\n① If this card is sent from the field to the GY: BOUNCE all Set Spells/Traps on the field.",
+        "previous": "1 \"Gem-Knight\" monster + 1 Aqua-Type monster\nMust first be Fusion Summoned.\n① When this card is sent from the field to the GY: BOUNCE all Set Spell and Trap Cards on the field."
+    },
+    "Gem-Knight Aquamarine": {
+        "_current": "\"Gem-Knight Sapphire\" + 1 \"Gem-Knight\" monster\nMust first be Fusion Summoned with the above Fusion Materials.\n① If this card attacks, it is changed to Defense Position at the end of the Battle Phase.\n② If this card is sent from the field to the GY: <b>Target 1 card your opponent controls;</b> BOUNCE that target.",
+        "previous": "\"Gem-Knight Sapphire\" + 1 \"Gem-Knight\" monster\nMust first be Fusion Summoned with the above Fusion Material Monsters.\n① If this card attacks, it is changed to Defense Position at the end of the Battle Phase.\n② When this card is sent from the field to the GY: <b>Target 1 card your opponent controls;</b> BOUNCE that target."
+    },
+    "Gem-Knight Citrine": {
+        "_current": "1 \"Gem-Knight\" monster + 1 Pyro monster\nMust first be Fusion Summoned.\n① If this card battles, your opponent cannot activate cards or effects until the end of the Damage Step.",
+        "previous": "1 \"Gem-Knight\" monster + 1 Pyro-Type monster\nMust first be Fusion Summoned.\n① If this card attacks or is attacked, your opponent cannot activate cards or effects until the end of the Damage Step."
+    },
+    "Gem-Knight Fusion": {
+        "_current": "① Fusion Summon 1 \"Gem-Knight\" Fusion Monster from your Extra Deck, using monsters from your hand or field.\n② If this card is in your GY: <b>You can BANISH 1 \"Gem-Knight\" monster from your GY;</b> add this card to your hand.",
+        "previous": "① Fusion Summon 1 \"Gem-Knight\" Fusion Monster from your Extra Deck, using monsters from your hand or your side of the field as Fusion Materials.\n② If this card is in your GY: <b>You can BANISH 1 \"Gem-Knight\" monster from your GY;</b> add this card to your hand."
+    },
+    "Gem-Knight Lady Lapis Lazuli": {
+        "_current": "\"Gem-Knight Lapis\" + 1 \"Gem-Knight\" monster\nMust first be Fusion Summoned with the above Fusion Materials. You can only Special Summon \"Gem-Knight Lady Lapis Lazuli(s)\" once per turn.\n① OPT | You can send 1 \"Gem-Knight\" monster from your Deck/Extra Deck to the GY, and if you do, inflict 500 damage to your opponent for each Special Summoned monster on the field.",
+        "previous": "\"Gem-Knight Lapis\" + 1 \"Gem-Knight\" monster\nMust first be Fusion Summoned with the above Fusion Materials. You can only Special Summon \"Gem-Knight Lady Lapis Lazuli(s)\" once per turn.\n① OPT | You can send 1 \"Gem-Knight\" monster from your Main Deck or Extra Deck to the GY, and if you do, inflict 500 damage to your opponent for each Special Summoned monster on the field."
+    },
+    "Gem-Knight Lazuli": {
+        "_current": "If this card is sent to the GY by card effect: <b>You can target 1 Normal Monster in your GY;</b> add it to your hand.",
+        "previous": "If this card is sent to the GY by a card effect: <b>You can target 1 Normal Monster in your GY;</b> add that target to your hand."
+    },
+    "Gem-Knight Master Diamond Dispersion": {
+        "_current": "3 \"Gem-\" monsters\nDuring the Main Phase (QUICK EFFECT): <b>You can send this card from the field to the GY;</b> Special Summon up to 3 non-Rock \"Gem-\" monsters with different names from your Extra Deck and/or GY, ignoring their Summoning conditions, also for the rest of this turn, you cannot Special Summon from the Extra Deck, except Fusion Monsters. When your \"Gem-Knight\" Fusion Monster is destroyed by battle, while this card is in your GY: You can Special Summon this card. You can only use each effect of \"Gem-Knight Master Diamond Dispersion\" once per turn.",
         "previous": null
     },
-    "Azamina Mu Rcielago": {
-        "_current": "1 Illusion monster + 1 LIGHT Spellcaster monster\n① Monsters your opponent controls lose 500 ATK/DEF for each \"Azamina\" monster you control.\n② HOPT | If this card is Fusion Summoned: You can SEARCH 1 \"Azamina\" or \"Sinful Spoils\" card.\n③ HOPT | If this card is destroyed: You can SEARCH 1 \"Sinful Spoils\" Spell.",
+    "Gem-Knight Phantom Quartz": {
+        "_current": "2 \"Gem-\" monsters\n① HOPT | If this card is Link Summoned: You can SEARCH 1 \"Gem-Knight\" card.\n② HOPT | <b>You can pay 1000 LP;</b> Fusion Summon 1 \"Gem-Knight\" Fusion Monster from your Extra Deck, by shuffling its materials from your GY or BANISHment into the Deck, but it cannot attack directly this turn.",
+        "previous": "2 \"Gem-\" monsters\n① HOPT | If this card is Link Summoned: You can SEARCH 1 \"Gem-Knight\" card.\n② HOPT | <b>You can pay 1000 LP;</b> Fusion Summon 1 \"Gem-Knight\" Fusion Monster from your Extra Deck, by shuffling Fusion Materials in your possession listed on it into your Deck, that are banished or in the GY, but it cannot attack directly this turn."
+    },
+    "Gem-Knight Prismaura": {
+        "_current": "1 \"Gem-Knight\" monster + 1 Thunder monster\nMust first be Fusion Summoned.\n① OPT | <b>You can send 1 \"Gem-Knight\" card from your hand to the GY, then target 1 face-up card on the field;</b> DESTROY that target.",
+        "previous": "1 \"Gem-Knight\" monster + 1 Thunder-Type monster\nMust first be Fusion Summoned.\n① OPT | <b>You can send 1 \"Gem-Knight\" card from your hand to the GY to target 1 face-up card on the field;</b> DESTROY that target."
+    },
+    "Gem-Knight Ruby": {
+        "_current": "\"Gem-Knight Garnet\" + 1 \"Gem-Knight\" monster\nMust first be Fusion Summoned with the above Fusion Materials.\n① OPT | <b>You can Tribute 1 other face-up \"Gem-\" monster;</b> this card gains ATK equal to the ATK that Tributed monster had on the field, until the end of this turn.\n② This card is PIERCING.",
+        "previous": "\"Gem-Knight Garnet\" + 1 \"Gem-Knight\" monster\nMust first be Fusion Summoned with the above Fusion Material Monsters.\n① OPT | <b>You can Tribute 1 face-up \"Gem-\" monster;</b> this card gains ATK equal to the Tributed monster's ATK on the field, until the End Phase.\n② This card is PIERCING."
+    },
+    "Gem-Knight Topaz": {
+        "_current": "\"Gem-Knight Tourmaline\" + 1 \"Gem-Knight\" monster\nMust first be Fusion Summoned with the above Fusion Materials.\n① Can make a second attack during each Battle Phase.\n② If this card DESTROYS a monster by battle and sends it to the GY: Inflict damage to your opponent equal to that monster's original ATK.",
+        "previous": "\"Gem-Knight Tourmaline\" + 1 \"Gem-Knight\" monster\nMust first be Fusion Summoned with the above Fusion Material Monsters.\n① This card can attack twice during each Battle Phase.\n② When this card DESTROYS a monster by battle and sends it to the GY: Inflict damage to your opponent equal to the ATK of the destroyed monster in the GY."
+    },
+    "Gem-Knight Zirconia": {
+        "_current": "1 \"Gem-Knight\" monster + 1 Rock monster",
+        "previous": "1 \"Gem-Knight\" monster + 1 Rock-Type monster"
+    },
+    "Gem-Merchant": {
+        "_current": "QUICK | During the Damage Step, when an EARTH Normal Monster you control battles: <b>You can send this card from your hand to the GY;</b> that monster gains 1000 ATK/DEF until the end of this turn.",
+        "previous": "During the Damage Step, in either player's turn, when a face-up EARTH Normal Monster you control attacks or is attacked: <b>You can send this card from your hand to the GY;</b> that monster gains 1000 ATK and DEF until the End Phase."
+    },
+    "Gladiator Beast Alexander": {
+        "_current": "Cannot be Special Summoned except by the effect of \"Gladiator Beast Dimacari\".\n① This Special Summoned card is unaffected by Spell effects.\n② At the end of the Battle Phase, if this card battled: <b>You can shuffle it into the Deck;</b> Special Summon 1 \"Gladiator Beast\" monster from your Deck, except \"Gladiator Beast Alexander\".",
+        "previous": "This card cannot be Special Summoned except by the effect of \"Gladiator Beast Dimacari\".\n① If this card was Special Summoned, it is unaffected by the effects of Spell Cards.\n② At the end of the Battle Phase, if this card attacked or was attacked, you can return it to the Deck to Special Summon 1 \"Gladiator Beast\" monster from your Deck, except \"Gladiator Beast Alexander\"."
+    },
+    "Gladiator Beast Dimacari": {
+        "_current": "① If this card was Special Summoned by the effect of a \"Gladiator Beast\" monster, it can make a second attack during each Battle Phase.\n② At the end of the Battle Phase, if this card battled: <b>You can shuffle it into the Deck;</b> Special Summon 1 \"Gladiator Beast\" monster from your Deck, except \"Gladiator Beast Dimacari\".",
+        "previous": "① If this card was Special Summoned by the effect of a \"Gladiator Beast\" monster, it can attack twice during each Battle Phase.\n② At the end of the Battle Phase, if this card attacked or was attacked, you can return it to the Deck to Special Summon 1 \"Gladiator Beast\" monster from your Deck, except \"Gladiator Beast Dimacari\"."
+    },
+    "Gladiator Beast Secutor": {
+        "_current": "If this card was Special Summoned by the effect of a \"Gladiator Beast\" monster, at the end of any Battle Phase in which this card battled: Special Summon 2 \"Gladiator Beast\" monsters from your Deck, except \"Gladiator Beast Secutor\".",
+        "previous": "If this card was Special Summoned by the effect of a \"Gladiator Beast\" monster, then at the end of any Battle Phase in which this card battled: Special Summon 2 \"Gladiator Beast\" monsters from your Deck, except \"Gladiator Beast Secutor\"."
+    },
+    "Gorz the Emissary of Darkness": {
+        "_current": "① When you take damage from a card in your opponent's possession: You can Special Summon this card from your hand. You must control no cards to activate and to resolve this effect.\n② When this card is Special Summoned by its effect: <b>Activate the appropriate effect, based on the type of damage;</b> \n● Battle damage: Special Summon 1 \"Emissary of Darkness Token\" (Fairy/LIGHT/Level 7/ATK ?/DEF ?). Its ATK/DEF are each equal to the amount of battle damage you took.\n● Effect damage: Inflict damage to your opponent equal to the damage you took.",
+        "previous": "① When you take damage from a card in your opponent's possession: You can Special Summon this card from your hand. You must control no cards to activate and to resolve this effect.\n② When this card is Special Summoned by its effect: Activate the appropriate effect, based on the type of damage.\n● Battle damage: Special Summon 1 \"Emissary of Darkness Token\" (Fairy/LIGHT/Level 7/ATK ?/DEF ?). Its ATK and DEF are each equal to the amount of battle damage you took.\n● Effect damage: Inflict damage to your opponent equal to the damage you took."
+    },
+    "Heraldic Beast Aberconway": {
+        "_current": "HOPT | If this card is in your GY: <b>You can BANISH 1 other \"Heraldic Beast Aberconway\" from your GY, then target 1 \"Heraldic Beast\" monster in your GY;</b> add that target to your hand.",
+        "previous": "HOPT | If this card is in the GY: <b>You can BANISH another \"Heraldic Beast Aberconway\" from your GY, then target 1 \"Heraldic Beast\" monster in your GY;</b> add that target to your hand."
+    },
+    "Hushed Psychic Cleric": {
+        "_current": "① If this card is Normal or Flip Summoned: Change it to Defense Position.\n② OPT | <b>You can send 1 card from your hand to the GY, then target 1 Psychic monster in your GY;</b> BANISH that target.\n③ If this card is sent from the field to the GY: <b>Target 1 monster banished by this card's effect;</b> Special Summon that target.",
+        "previous": "① If this card is Normal or Flip Summoned: Change it to Defense Position.\n② OPT | <b>You can send 1 card from your hand to the GY, then target 1 Psychic-Type monster in your GY;</b> BANISH that target.\n③ If this card is sent from the field to the GY: <b>Target 1 monster banished by this card's effect;</b> Special Summon that target."
+    },
+    "Joruri-P.U.N.K. Dangerous Gabu": {
+        "_current": "HOPT ACTIVATION\n<b>Target 1 Effect Monster your opponent controls;</b> NEGATE its effects (until the end of this turn), then, if you control a \"P.U.N.K.\" monster, gain LP equal to that targeted monster's original ATK.",
+        "previous": "HOPT ACTIVATION\n<b>You can target 1 Effect Monster your opponent controls;</b> NEGATE its effects (until the end of this turn), then, if you control a \"P.U.N.K.\" monster, gain LP equal to that targeted monster's original ATK."
+    },
+    "Jurrac Aeolo": {
+        "_current": "<b>You can Tribute this card, then target 1 Level 4 or lower \"Jurrac\" monster in your GY, except \"Jurrac Aeolo\";</b> Special Summon it.",
+        "previous": "You can Tribute this card to select 1 Level 4 or lower \"Jurrac\" monster in your GY, except \"Jurrac Aeolo\". Special Summon that monster from the GY."
+    },
+    "Jurrac Astero": {
+        "_current": "1 Tuner + 1+ non-Tuner Dinosaur monsters\nIf this card is Synchro Summoned: You can Set 1 \"Jurrac\" Spell/Trap from your Deck or GY. Once per turn, when your opponent would Special Summon a monster(s) (QUICK EFFECT): <b>You can BANISH 2 Dinosaur monsters from your GY;</b> NEGATE the Summon, and if you do, DESTROY that monster(s). During your opponent's turn (QUICK EFFECT): <b>You can BANISH 2 \"Jurrac\" monsters from your GY, including this card;</b> Special Summon 1 \"Jurrac Meteor\" from your Extra Deck (this is treated as a Synchro Summon).",
         "previous": null
     },
-    "Azamina Sol Erysichthon": {
-        "_current": "1 Illusion monster + 1 Fiend monster\n① HOPT | If this card is Fusion Summoned: <b>You can target 1 card on the field;</b> send it to the GY.\n② STANDBY PHASE | HOPT | <b>You can target 1 \"Azamina\" or \"Sinful Spoils\" card in your GY;</b> add it to your hand.",
+    "Jurrac Giganoto": {
+        "_current": "1 Tuner + 1+ non-Tuner Dinosaur monsters\n① \"Jurrac\" monsters you control gain 200 ATK for each \"Jurrac\" monster in your GY.",
+        "previous": "1 Tuner + 1 or more non-Tuner Dinosaur-Type monsters\n① While this card is face-up on the field, all face-up \"Jurrac\" monsters you control gain 200 ATK for each \"Jurrac\" monster in your GY."
+    },
+    "Jurrac Impact": {
+        "_current": "If you control a Dinosaur monster with 2500 or more ATK: DESTROY all cards on the field.",
+        "previous": "If you control a Dinosaur-Type monster with 2500 or more ATK: DESTROY all cards on the field."
+    },
+    "Jurrac Meteor": {
+        "_current": "1 \"Jurrac\" Tuner + 2 or more non-Tuner Dinosaur-Type monsters\n① When this card is Synchro Summoned, DESTROY all cards on the field.\nThen, you can Special Summon 1 Tuner monster from your GY.",
+        "previous": "1 \"Jurrac\" Tuner + 2 or more non-Tuner Dinosaur-Type monsters\n① When this card is Synchro Summoned, DESTROY all cards on the field. Then, you can Special Summon 1 Tuner monster from your GY."
+    },
+    "Jurrac Velo": {
+        "_current": "When this Attack Position card you control is destroyed by battle and sent to your GY: You can Special Summon 1 \"Jurrac\" monster with 1700 or less ATK from your Deck.",
+        "previous": "When this face-up Attack Position card you control is destroyed by battle and sent to the GY, you can Special Summon 1 \"Jurrac\" monster with 1700 or less ATK from your Deck."
+    },
+    "Jurrac Velphito": {
+        "_current": "1 Tuner + 1+ non-Tuner Dinosaur monsters\n① This card's ATK/DEF each become the total original ATK of the materials used for its Synchro Summon.\n② At the start of the Damage Step, if this card attacks a face-down Defense Position monster: You can DESTROY that face-down Defense Position monster.",
+        "previous": "1 Tuner + 1 or more non-Tuner Dinosaur-Type monsters\n① This card's ATK and DEF are equal to the total original ATK of the Synchro Material Monsters used for its Synchro Summon.\n② If this card attacks a face-down Defense Position monster, you can DESTROY the monster immediately with this card's effect without flipping it face-up or applying damage calculation."
+    },
+    "Khaos Starsource Dragon": {
+        "_current": "1 LIGHT or DARK Dragon monster + 1 Dragon monster\n① HOPT | If this card is Fusion Summoned: <b>You can target cards your opponent controls, up to the number of your LIGHT and DARK monsters used as this card's material;</b> DESTROY them.\n② HOPT | If this card is banished: <b>You can target 1 Level 4 LIGHT or DARK Dragon monster you control;</b> its Level becomes 8.",
+        "previous": "1 LIGHT or DARK Dragon monster + 1 Dragon monster\n① HOPT | If this card is Fusion Summoned: <b>You can target cards your opponent controls, up to the number of LIGHT and DARK monsters used as this card's material;</b> DESTROY them.\n② HOPT | If this card is banished: <b>You can target 1 Level 4 LIGHT or DARK Dragon monster you control;</b> its Level becomes 8."
+    },
+    "Kuribon": {
+        "_current": "During damage calculation, if this card is attacked by your opponent's monster: <b>You can activate this effect;</b> you take no battle damage from that battle, your opponent gains LP equal to the attacking monster's ATK, also you BOUNCE this card.",
+        "previous": "During damage calculation, if this card is attacked by your opponent's monster: <b>You can activate this effect;</b> you take no battle damage from that battle, your opponent gains LP equal to the attacking monster's ATK, also you return this card to your hand."
+    },
+    "Lib the World Key Blademaster": {
+        "_current": "2 monsters\nCan only be Link Summoned while you have a \"World Legacy\" card in your GY. You can only use each of the following effects of \"Lib the World Key Blademaster\" once per turn.\n● During your Main Phase: You can Set 1 \"World Legacy\" Spell/Trap from your Deck, but it cannot be activated this turn while you have no \"World Legacy\" monster in your GY.\n● If this Link Summoned card is sent to the GY as Link Material: You can shuffle 1 card on the field into the Deck.",
+        "previous": "2 monsters\nCan only be Link Summoned while you have a \"World Legacy\" card in your GY. You can only use each of the following effects of \"Lib the World Key Blademaster\" once per turn.\n● During your Main Phase: You can Set 1 \"World Legacy\" Spell/Trap directly from your Deck, but it cannot be activated this turn while you have no \"World Legacy\" monster in your GY.\n● If this Link Summoned card is sent to the GY as Link Material: You can shuffle 1 card on the field into the Deck."
+    },
+    "Lucius the Shadow Vassal": {
+        "_current": "① HOPT | <b>You can BANISH 1 Level 5 or higher monster from your GY;</b> Special Summon this card from your hand, also you cannot Special Summon from the Extra Deck for the rest of this turn.\n② HOPT | If this card is Tributed for a Tribute Summon: You can look at all Set cards your opponent controls. Your opponent cannot activate cards or effects in response to this effect's activation.",
+        "previous": "① HOPT | <b>You can BANISH 1 Level 5 or higher monster from your GY;</b> Special Summon this card from your hand, also you cannot Special Summon monsters from the Extra Deck for the rest of this turn.\n② HOPT | If this card is Tributed for a Tribute Summon: You can look at all Set cards your opponent controls. Your opponent cannot activate cards or effects in response to this effect's activation."
+    },
+    "Lunalight Black Sheep": {
+        "_current": "① <b>You can DISCARD this card, then activate 1 of these effects;</b> \n● Add 1 \"Lunalight\" monster from your GY to your hand, except \"Lunalight Black Sheep\".\n● SEARCH 1 \"Polymerization\".\n② If this card is sent to the GY as material for a Fusion Summon: You can add to your hand, 1 face-up \"Lunalight\" Pendulum Monster from your Extra Deck or 1 \"Lunalight\" monster from your GY, except \"Lunalight Black Sheep\".",
+        "previous": "① <b>You can DISCARD this card, then activate 1 of these effects;</b> \n● Add 1 \"Lunalight\" monster from your GY to your hand, except \"Lunalight Black Sheep\".\n● SEARCH 1 \"Polymerization\".\n② If this card is sent to the GY as a Fusion Material for a Fusion Summon: You can add to your hand, 1 face-up \"Lunalight\" Pendulum Monster from your Extra Deck or 1 \"Lunalight\" monster from your GY, except \"Lunalight Black Sheep\"."
+    },
+    "Lunalight Crimson Fox": {
+        "_current": "① If this card is sent to the GY by card effect: <b>You can target 1 face-up monster your opponent controls;</b> change its ATK to 0 until the end of this turn.\n② QUICK | When a card or effect is activated that targets a \"Lunalight\" monster(s) you control: <b>You can BANISH this card from your GY;</b> NEGATE the activation, and if you do, each player gains 1000 LP.",
+        "previous": "① If this card is sent to the GY by a card effect: <b>You can target 1 face-up monster your opponent controls;</b> change its ATK to 0 until the end of this turn.\n② QUICK | When a card or effect is activated that targets a \"Lunalight\" monster(s) you control: <b>You can BANISH this card from your GY;</b> NEGATE the activation, and if you do, each player gains 1000 LP."
+    },
+    "Lunalight Emerald Bird": {
+        "_current": "① HOPT | If this card is Normal or Special Summoned: You can send 1 \"Lunalight\" card from your hand to the GY, and if you do, DRAW 1 card.\n② HOPT | If this card is sent to the GY by card effect: <b>You can target 1 of your Level 4 or lower \"Lunalight\" monsters that is banished or in your GY, except \"Lunalight Emerald Bird\";</b> Special Summon it in Defense Position, but NEGATE its effects.",
+        "previous": "① HOPT | If this card is Normal or Special Summoned: You can send 1 \"Lunalight\" card from your hand to the GY, and if you do, DRAW 1 card.\n② HOPT | If this card is sent to the GY by a card effect: <b>You can target 1 of your Level 4 or lower \"Lunalight\" monsters that is banished or in your GY, except \"Lunalight Emerald Bird\";</b> Special Summon it in Defense Position, but NEGATE its effects."
+    },
+    "Lunalight Fusion": {
+        "_current": "HOPT ACTIVATION\nFusion Summon 1 \"Lunalight\" Fusion Monster from your Extra Deck, using monsters from your hand or field as material. If your opponent controls a monster that was Special Summoned from the Extra Deck, you can also use 1 \"Lunalight\" monster in your Deck or Extra Deck as material.",
+        "previous": "HOPT ACTIVATION\nFusion Summon 1 \"Lunalight\" Fusion Monster from your Extra Deck, using monsters from your hand or field as Fusion Material. If your opponent controls a monster that was Special Summoned from the Extra Deck, you can also use 1 \"Lunalight\" monster in your Deck or Extra Deck as Fusion Material."
+    },
+    "Lunalight Kaleido Chick": {
+        "_current": "① OPT | <b>You can send 1 \"Lunalight\" monster from your Deck or Extra Deck to the GY;</b> the name of this face-up card on the field can be treated as the sent monster's, if used as Fusion Material this turn.\n② HOPT | If this card is sent to the GY by card effect: <b>You can target 1 \"Polymerization\" in your GY;</b> add it to your hand.\n③ If this card is banished: <b>You can activate this effect;</b> this turn, your opponent's cards and effects cannot be activated during the Battle Phase.",
+        "previous": "① OPT | <b>You can send 1 \"Lunalight\" monster from your Deck or Extra Deck to the GY;</b> the name of this face-up card on the field can be treated as the sent monster's, if used as Fusion Material this turn.\n② HOPT | If this card is sent to the GY by a card effect: <b>You can target 1 \"Polymerization\" in your GY;</b> add it to your hand.\n③ If this card is banished: <b>You can activate this effect;</b> this turn, your opponent's cards and effects cannot be activated during the Battle Phase."
+    },
+    "Lunalight Leo Dancer": {
+        "_current": "\"Lunalight Panther Dancer\" + 2 \"Lunalight\" monsters\nMust be Fusion Summoned with the above Fusion Materials.\n① Your opponent cannot target this card with card effects, also it cannot be destroyed by your opponent's card effects.\n② Can make a second attack during each Battle Phase.\n③ OPT | At the end of the Damage Step, if this card attacked a monster: You can DESTROY all Special Summoned monsters your opponent controls.",
+        "previous": "\"Lunalight Panther Dancer\" + 2 \"Lunalight\" monsters\nMust be Fusion Summoned with the above Fusion Materials.\n① Your opponent cannot target this card with card effects, also it cannot be destroyed by your opponent's card effects.\n② This card can make a second attack during each Battle Phase.\n③ OPT | At the end of the Damage Step, if this card attacked a monster: You can DESTROY all Special Summoned monsters your opponent controls."
+    },
+    "Lunalight White Rabbit": {
+        "_current": "① When this card is Normal Summoned: <b>You can target 1 \"Lunalight\" monster in your GY, except \"Lunalight White Rabbit\";</b> Special Summon it in Defense Position.\n② OPT | <b>You can target Spells/Traps your opponent controls, up to the number of other \"Lunalight\" cards you control;</b> BOUNCE them.",
+        "previous": "① When this card is Normal Summoned: <b>You can target 1 \"Lunalight\" monster in your GY, except \"Lunalight White Rabbit\";</b> Special Summon it in Defense Position.\n② OPT | <b>You can target Spell/Trap Cards your opponent controls, up to the number of other \"Lunalight\" cards you control;</b> BOUNCE them."
+    },
+    "Lunalight Wolf": {
+        "_current": "A \"Lunalight\" monster you control is PIERCING.\n[Pendulum Effect]\n① You cannot Pendulum Summon, except \"Lunalight\" monsters. This effect cannot be negated.\n② OPT | You can Fusion Summon 1 \"Lunalight\" Fusion Monster from your Extra Deck, by BANISHING its materials from your field or GY.",
+        "previous": "A \"Lunalight\" monster you control is PIERCING.\n[Pendulum Effect]\n① You cannot Pendulum Summon monsters, except \"Lunalight\" monsters. This effect cannot be negated.\n② OPT | You can Fusion Summon 1 \"Lunalight\" Fusion Monster from your Extra Deck, by BANISHING Fusion Materials listed on it from your field or GY."
+    },
+    "Lunalight Yellow Marten": {
+        "_current": "① HOPT | If this card is in your hand or GY: <b>You can target 1 \"Lunalight\" card you control, except \"Lunalight Yellow Marten\";</b> BOUNCE it, and if you do, Special Summon this card in Defense Position, but BANISH this card when it leaves the field.\n② HOPT | If this card is sent to the GY by card effect: You can SEARCH 1 \"Lunalight\" Spell/Trap.",
+        "previous": "① HOPT | If this card is in your hand or GY: <b>You can target 1 \"Lunalight\" card you control, except \"Lunalight Yellow Marten\";</b> BOUNCE it, and if you do, Special Summon this card in Defense Position, but BANISH this card when it leaves the field.\n② HOPT | If this card is sent to the GY by a card effect: You can SEARCH 1 \"Lunalight\" Spell/Trap."
+    },
+    "Magical Android": {
+        "_current": "1 Tuner + 1+ non-Tuner monsters\n① YOUR END PHASE | OPT | Gain 600 LP for each Psychic monster you control.",
+        "previous": "1 Tuner + 1 or more non-Tuner monsters\n① YOUR END PHASES | Gain 600 LP for each Psychic-Type monster you currently control."
+    },
+    "March of the Monarchs": {
+        "_current": "① Tribute Summoned monsters you control cannot be destroyed by card effects, also neither player can target them with card effects.\n② You cannot Special Summon from the Extra Deck.",
+        "previous": "① Tribute Summoned monsters you control cannot be destroyed by card effects, also neither player can target them with card effects.\n② You cannot Special Summon monsters from the Extra Deck."
+    },
+    "Mermail Abysslung": {
+        "_current": "① Your opponent's monsters cannot target WATER monsters for attacks, except this one.\n② All WATER monsters you control gain 300 ATK.",
+        "previous": "① Your opponent cannot target face-up WATER monsters for attacks, except this one.\n② All WATER monsters you control gain 300 ATK."
+    },
+    "Mermail Abyssmander": {
+        "_current": "<b>You can BANISH this card from your GY, then activate 1 of these effects;</b> \n● Increase the Levels of all \"Mermail\" monsters you currently control by 1.\n● Increase the Levels of all \"Mermail\" monsters you currently control by 2.",
+        "previous": "<b>You can BANISH this card from your GY to activate 1 of these effects;</b> \n● Increase the Levels of all \"Mermail\" monsters you currently control by 1.\n● Increase the Levels of all \"Mermail\" monsters you currently control by 2."
+    },
+    "Nekroz Cycle": {
+        "_current": "This card can be used to Ritual Summon any \"Nekroz\" Ritual Monster.\n① HOPT | Tribute monsters from your hand or field, then Ritual Summon 1 \"Nekroz\" Ritual Monster from your hand or GY whose Level equals the total Levels of those monsters.\n② If you control no monsters: <b>You can BANISH this card and 1 \"Nekroz\" monster from your GY;</b> SEARCH 1 \"Nekroz\" Spell.",
+        "previous": "This card can be used to Ritual Summon any \"Nekroz\" Ritual Monster.\n① HOPT | Tribute monsters from your hand or field, then Ritual Summon 1 \"Nekroz\" Ritual Monster from your hand or GY whose Level exactly equals the total Levels of those monsters.\n② If you control no monsters: <b>You can BANISH this card and 1 \"Nekroz\" monster from your GY;</b> SEARCH 1 \"Nekroz\" Spell."
+    },
+    "Nekroz Kaleidoscope": {
+        "_current": "This card can be used to Ritual Summon any number of \"Nekroz\" Ritual Monsters.\n① HOPT | Tribute 1 monster from your hand or field, or send 1 monster from your Extra Deck to the GY, also after that, Ritual Summon any number of \"Nekroz\" monsters whose total Levels equal the Level of that monster.\n② If you control no monsters: <b>You can BANISH this card and 1 \"Nekroz\" monster from your GY;</b> SEARCH 1 \"Nekroz\" Spell.",
+        "previous": "This card can be used to Ritual Summon any number of \"Nekroz\" Ritual Monsters.\n① HOPT | Tribute 1 monster from your hand or field, or send 1 monster from your Extra Deck to the GY, also after that, Ritual Summon any number of \"Nekroz\" monsters whose total Levels exactly equal the Level of that monster.\n② If you control no monsters: <b>You can BANISH this card and 1 \"Nekroz\" monster from your GY;</b> SEARCH 1 \"Nekroz\" Spell."
+    },
+    "Nekroz Mirror": {
+        "_current": "Can be used to Ritual Summon any \"Nekroz\" Ritual Monster.\n① HOPT | Tribute monsters from your hand or field, and/or BANISH \"Nekroz\" monsters from your GY, then Ritual Summon 1 \"Nekroz\" Ritual Monster from your hand whose Level equals the total Levels of those monsters.\n② If you control no monsters: <b>You can BANISH this card and 1 \"Nekroz\" monster from your GY;</b> SEARCH 1 \"Nekroz\" Spell.",
+        "previous": "This card can be used to Ritual Summon any \"Nekroz\" Ritual Monster.\n① HOPT | Tribute monsters from your hand or field, and/or BANISH \"Nekroz\" monsters from your GY, then Ritual Summon 1 \"Nekroz\" Ritual Monster from your hand whose Level exactly equals the total Levels of those monsters.\n② If you control no monsters: <b>You can BANISH this card and 1 \"Nekroz\" monster from your GY;</b> SEARCH 1 \"Nekroz\" Spell."
+    },
+    "Nekroz of Areadbhair": {
+        "_current": "You can Ritual Summon this card with any \"Nekroz\" Ritual Spell. Must be Ritual Summoned, using monsters, and you cannot use Level 10 monsters. You can only use each of the following effects of \"Nekroz of Areadbhair\" once per turn.\n<b>● You can DISCARD this card;</b> Tribute up to 2 \"Nekroz\" monsters from your hand and/or field, and if you do, send that many \"Nekroz\" cards from your Deck to the GY.\nQUICK | ● When a monster effect is activated: <b>You can Tribute 1 monster from your hand or field;</b> NEGATE the activation, and if you do, BANISH that card.",
+        "previous": "You can Ritual Summon this card with any \"Nekroz\" Ritual Spell. Must be Ritual Summoned, without using any Level 10 monsters. You can only use each of these effects of \"Nekroz of Areadbhair\" once per turn.\n<b>● You can DISCARD this card;</b> Tribute up to 2 \"Nekroz\" monsters from your hand and/or field, and if you do, send that many \"Nekroz\" cards from your Deck to the GY.\nQUICK | ● When a monster effect is activated: <b>You can Tribute 1 monster from your hand or field;</b> NEGATE the activation, and if you do, BANISH that card."
+    },
+    "Nekroz of Decisive Armor": {
+        "_current": "You can Ritual Summon this card with any \"Nekroz\" Ritual Spell. Must be Ritual Summoned, using monsters, and you cannot use Level 10 monsters. You can only use each of these effects of \"Nekroz of Decisive Armor\" once per turn.\nQUICK | ● : <b>You can DISCARD this card, then target 1 \"Nekroz\" monster you control;</b> it gains 1000 ATK/DEF until the end of this turn.\n<b>● You can target 1 Set card your opponent controls;</b> DESTROY it, and if you do, BANISH it.",
+        "previous": "You can Ritual Summon this card with any \"Nekroz\" Ritual Spell Card. Must be Ritual Summoned without using any Level 10 monsters, and cannot be Special Summoned by other ways. You can only use each of these effects of \"Nekroz of Decisive Armor\" once per turn.\n● During either player's turn: <b>You can DISCARD this card, then target 1 \"Nekroz\" monster you control;</b> it gains 1000 ATK and DEF until the end of this turn.\n<b>● You can target 1 Set card your opponent controls;</b> DESTROY it, and if you do, BANISH it."
+    },
+    "Nekroz of Metaltron": {
+        "_current": "You can Ritual Summon this card with any \"Nekroz\" Ritual Spell. Must be Ritual Summoned, using monsters, and you cannot use Level 9 monsters. During the Main Phase (QUICK EFFECT): <b>You can target 1 face-up monster your opponent controls;</b> BANISH this card (until the End Phase), and if you do, BANISH that monster. You can only use this effect of \"Nekroz of Metaltron\" once per turn. Any monster destroyed by battle with your \"Nekroz\" monster is banished. \n[Pendulum Effect]\nIf your \"Nekroz\" card(s) is banished face-up (except during the Damage Step): <b>You can target 1 Spell/Trap on the field;</b> BANISH it. You can only use this effect of \"Nekroz of Metaltron\" once per turn.",
         "previous": null
     },
-    "Bettan Bat": {
-        "_current": "① Up to thrice per turn, if your opponent Normal or Special Summons a monster(s) (except during the Damage Step): <b>You can target 1 of them;</b> toss a coin and if the result is heads, change it to face-up Attack Position, or if the result is tails, change it to face-down Defense Position.\n② OPT | If another monster(s) on the field is flipped face-up, or a face-up monster(s) is changed to face-down Defense Position, even during the Damage Step: <b>You can target 1 of them;</b> change it to face-up Attack Position or face-down Defense Position.",
-        "previous": null
+    "Nekroz of Sophia": {
+        "_current": "You can Ritual Summon this card with any \"Nekroz\" Ritual Spell. Must be Ritual Summoned, using 3 monsters you control with different Types.\n① QUICK | During the Main Phase 1: <b>You can DISCARD this card and 1 \"Nekroz\" Spell;</b> your opponent cannot Special Summon from the Extra Deck during this phase.\n② When this card is Ritual Summoned: You can BANISH all other cards on the field and in the GYs. You cannot Normal Summon/Set or Special Summon other monsters the turn you activate this effect.",
+        "previous": "You can Ritual Summon this card with any \"Nekroz\" Ritual Spell Card. Must be Ritual Summoned from your hand by using 3 monsters you control with different Types, and cannot be Special Summoned by other ways.\n① During either player's Main Phase 1: <b>You can DISCARD this card and 1 \"Nekroz\" Spell Card;</b> your opponent cannot Special Summon monsters from the Extra Deck during this phase.\n② When this card is Ritual Summoned: You can BANISH all other cards on the field and in the GYs. You cannot Normal Summon/Set or Special Summon other monsters the turn you activate this effect."
     },
-    "Break the Seal": {
-        "_current": "① HOPT | <b>You can activate 1 of these effects;</b> \n● Place 1 \"Break the Seal\" from your Deck or GY, face-up on your field.\n● Send 2 face-up \"Break the Seal\" you control to the GY, including this card; SEARCH 1 \"Forbidden One\" monster.\n② HOPT | If this card on the field is destroyed: <b>You can reveal up to 5 \"Forbidden One\" monsters in your hand;</b> BOUNCE that many cards your opponent controls.",
-        "previous": null
+    "Nekroz of Trishula": {
+        "_current": "You can Ritual Summon this card with any \"Nekroz\" Ritual Spell. Must be Ritual Summoned, using monsters, and you cannot use Level 9 monsters. You can only use each of these effects of \"Nekroz of Trishula\" once per turn.\nQUICK | ● When a card or effect is activated that targets a \"Nekroz\" monster(s) you control: <b>You can DISCARD this card;</b> NEGATE the activation.\n● When this card is Ritual Summoned, you can: BANISH exactly 3 of your opponent's cards, 1 each from their hand, field, and GY. (The card in the hand is chosen at random.)",
+        "previous": "You can Ritual Summon this card with any \"Nekroz\" Ritual Spell. Must be Ritual Summoned, without using any Level 9 monsters. You can only use each of these effects of \"Nekroz of Trishula\" once per turn.\nQUICK | ● When a card or effect is activated that targets a \"Nekroz\" monster(s) you control: <b>You can DISCARD this card;</b> NEGATE the activation.\n● When this card is Ritual Summoned, you can: BANISH exactly 3 of your opponent's cards, 1 each from their hand, field, and GY. (The card in the hand is chosen at random.)"
     },
-    "Broomy": {
-        "_current": "Cannot be used as Synchro Material, except for the Synchro Summon of a Level 8 or lower monster.\n① HOPT | <b>You can reveal this card and 1 monster in your hand;</b> Special Summon 1 of the 2, and if you do, BANISH the other, also for the rest of this turn, you cannot Special Summon from the Extra Deck, except Synchro Monsters, and can only declare an attack with Synchro Monsters.",
-        "previous": null
+    "Number 69: Heraldry Crest": {
+        "_current": "3 Level 4 monsters\n① If this card is Special Summoned: NEGATE the effects of all other Xyz Monsters currently on the field.\n② HOPT | <b>You can target 1 other face-up Xyz Monster on the field;</b> until the End Phase, this card's name becomes that monster's original name, also replace this effect with that monster's original effects.",
+        "previous": "3 Level 4 monsters\n① If this card is Special Summoned: NEGATE the effects of all other face-up Xyz Monsters currently on the field.\n② HOPT | <b>You can target 1 other face-up Xyz Monster on the field;</b> until the End Phase, this card's name becomes that monster's, also replace this effect with that monster's original effects."
     },
-    "Deception of the Sinful Spoils": {
-        "_current": "① HOPT | <b>You can Tribute 1 monster from your hand or field;</b> SEARCH 1 \"Azamina\" card.\n② HOPT | If a monster(s) is sent to your opponent's GY, and you control an \"Azamina\" monster (except during the Damage Step): You can make your opponent lose 1500 LP, and if you do, gain 1500 LP.\n③ END PHASE | HOPT | If this card is in the GY because it was sent there from the Spell & Trap Zone this turn while face-up: You can Set it.",
-        "previous": null
+    "Number 8: Heraldic King Genom-Heritage": {
+        "_current": "2 Level 4 \"Heraldic Beast\" monsters\n① OPT | <b>You can target 1 face-up Xyz Monster your opponent controls;</b> this card's name and original ATK become that monster's original name and current ATK, also replace this effect with that monster's original effects, then that monster's ATK becomes 0, also its effects are negated. This effect applies until the End Phase.",
+        "previous": "2 Level 4 \"Heraldic Beast\" monsters\n① OPT | <b>You can target 1 face-up Xyz Monster your opponent controls;</b> this card's name and original ATK become that monster's name and current ATK, also replace this effect with that monster's original effects, then that monster's ATK becomes 0, also its effects are negated. This effect applies until the End Phase."
     },
-    "Exxod Fires of Rage": {
-        "_current": "(This card is always treated as an \"Exodd\" and \"Obliterate!!!\" card.)\n① HOPT | If you control a Level 10 or higher \"Exodia\" monster: DESTROY all cards your opponent controls.\n② HOPT | If this card is in your GY, except the turn it was sent there: <b>You can BANISH it, then activate 1 of these effects;</b> \n● SEARCH 1 \"Forbidden One\" monster (from DECK or GY).\n● Shuffle up to 5 \"Forbidden One\" monsters from your GY and/or BANISHment into the Deck.",
-        "previous": null
+    "Number F0: Utopic Future": {
+        "_current": "2 Xyz Monsters with the same Rank, except \"Number\" monsters\n(This card's original Rank is always treated as 1.)\n① Cannot be destroyed by battle, and neither player takes any battle damage from attacks involving this card.\n② At the end of the Damage Step, if this card battled an opponent's monster: You can take control of that opponent's monster until the end of the Battle Phase.\n③ If this face-up card on the field would be destroyed by card effect, you can detach 1 material from this card instead.",
+        "previous": "2 Xyz Monsters with the same Rank, except \"Number\" monsters\n(This card's original Rank is always treated as 1.)\n① Cannot be destroyed by battle, and neither player takes any battle damage from attacks involving this card.\n② At the end of the Damage Step, if this card battled an opponent's monster: You can take control of that opponent's monster until the end of the Battle Phase.\n③ If this face-up card on the field would be destroyed by a card effect, you can detach 1 material from this card instead."
     },
-    "Fiend Reflection of the Millennium": {
-        "_current": "① If this card battles a monster, neither can be destroyed by that battle.\n② HOPT | If this card is in your hand: You can place it in your Spell & Trap Zone as a face-up Continuous Spell.\n③ HOPT | If your opponent activates a card or effect, while this card is a Continuous Spell (except during the Damage Step): You can Special Summon this card, then you can gain LP equal to half the ATK of 1 monster on the field.",
-        "previous": null
+    "Oh F!sh!": {
+        "_current": "When a monster effect is activated: <b>Shuffle 1 of your banished Fish, Sea Serpent, or Aqua monsters into the Main Deck;</b> NEGATE the activation, and if you do, DESTROY that monster.",
+        "previous": "When an Effect Monster's effect activates: <b>Shuffle 1 of your banished Fish, Sea Serpent, or Aqua-Type monsters into the Main Deck;</b> NEGATE the activation and DESTROY it."
     },
-    "Fiendsmith Token": {
-        "_current": "Special Summoned with the effect of \"Fiendsmith's Sanct.\"",
-        "previous": null
+    "Ojama Trio": {
+        "_current": "Special Summon 3 \"Ojama Tokens\" (Beast/LIGHT/Level 2/ATK 0/DEF 1000) to your opponent's field in Defense Position. They cannot be Tributed for a Tribute Summon, and each time 1 is destroyed, its controller takes 300 damage.",
+        "previous": "Special Summon 3 \"Ojama Tokens\" (Beast-Type/LIGHT/Level 2/ATK 0/DEF 1000) to your opponent's field in Defense Position. They cannot be Tributed for a Tribute Summon, and each time 1 is destroyed, its controller takes 300 damage."
     },
-    "Fiendsmith in Paradise": {
-        "_current": "① HOPT | <b>Target 1 Level 7 or higher LIGHT Fiend monster you control;</b> send all cards on the field to the GY that are not that monster.\n② HOPT | If your opponent Special Summons a monster(s), while this card is in your GY: <b>You can BANISH this card;</b> send 1 \"Fiendsmith\" monster from your Deck or Extra Deck to the GY.",
-        "previous": null
+    "Onomatopia": {
+        "_current": "① Each time a \"Utopia\" monster(s) is Special Summoned to your field, place 1 Hi-Five the Sky Counter on this card.\n② Monsters you control gain 200 ATK/DEF for each Hi-Five the Sky Counter on this card.\n③ OPT | <b>You can remove 2 Hi-Five the Sky Counters from this card;</b> Special Summon 1 \"Zubaba\", \"Gagaga\", \"Gogogo\", or \"Dododo\" monster from your Deck.",
+        "previous": "① Each time a \"Utopia\" monster(s) is Special Summoned to your side of the field, place 1 Hi-Five the Sky Counter on this card.\n② All monsters you control gain 200 ATK and DEF for each Hi-Five the Sky Counter on this card.\n③ OPT | <b>You can remove 2 Hi-Five the Sky Counters from this card;</b> Special Summon 1 \"Zubaba\", \"Gagaga\", \"Gogogo\", or \"Dododo\" monster from your Deck."
     },
-    "Fiendsmith's Desirae": {
-        "_current": "\"Fiendsmith Engraver\" + 2 LIGHT Fiend monsters\n① HOPT | QUICK | You can NEGATE the effects of a number of face-up cards on the field, up to the total Link Rating of Link Monsters equipped to this card, until the end of this turn.\n② HOPT | If this card is sent to the GY: <b>You can shuffle 1 other LIGHT Fiend monster from your GY into the Deck/Extra Deck, then target 1 card on the field;</b> send it to the GY.",
-        "previous": null
+    "Orcust Brass Bombard": {
+        "_current": "HOPT | <b>You can BANISH this card from your GY;</b> Special Summon 1 \"Orcust\" monster from your hand, except \"Orcust Brass Bombard\", also you cannot Special Summon for the rest of this turn, except DARK monsters.",
+        "previous": "HOPT | <b>You can BANISH this card from your GY;</b> Special Summon 1 \"Orcust\" monster from your hand, except \"Orcust Brass Bombard\", also you cannot Special Summon monsters for the rest of this turn, except DARK monsters."
     },
-    "Fiendsmith's Lacrima": {
-        "_current": "2 LIGHT Fiend monsters\n① Monsters your opponent controls lose 600 ATK.\n② HOPT | If this card is Fusion Summoned: <b>You can target 1 of your LIGHT Fiend monsters that is banished or in your GY;</b> add it to your hand or Special Summon it.\n③ HOPT | If this card is sent to the GY: <b>You can shuffle 1 other LIGHT Fiend monster from your GY into the Deck/Extra Deck;</b> inflict 1200 damage to your opponent.",
-        "previous": null
+    "Orcust Crescendo": {
+        "_current": "HOPT | You can use ONE of —\n① When a Spell/Trap Card, or monster effect, is activated while you control an \"Orcust\" Link Monster: NEGATE the activation, and if you do, BANISH that card.\n② <b>You can BANISH this card from your GY;</b> add 1 DARK Machine monster from your Deck or BANISHment to your hand. You cannot Special Summon the turn you activate this effect, except DARK Machine monsters.",
+        "previous": "HOPT | You can use ONE of —\n① When a Spell/Trap Card, or monster effect, is activated while you control an \"Orcust\" Link Monster: NEGATE the activation, and if you do, BANISH that card.\n② <b>You can BANISH this card from your GY;</b> add to your hand 1 of your DARK Machine monsters that is banished or in your Deck. You cannot Special Summon monsters the turn you activate this effect, except DARK Machine monsters."
     },
-    "Fiendsmith's Requiem": {
-        "_current": "1 LIGHT Fiend monster\nYou can only Special Summon \"Fiendsmith's Requiem(s)\" once per turn.\n① MAIN PHASE | QUICK | <b>You can Tribute this card;</b> Special Summon 1 \"Fiendsmith\" monster from your hand or Deck.\n② HOPT | <b>You can target 1 LIGHT non-Link Fiend monster you control;</b> equip this card from your field or GY to that monster you control as an Equip Spell that gives it 600 ATK.",
-        "previous": null
+    "Orcust Cymbal Skeleton": {
+        "_current": "HOPT | <b>You can BANISH this card from your GY, then target 1 \"Orcust\" monster in your GY, except \"Orcust Cymbal Skeleton\";</b> Special Summon it, also you cannot Special Summon for the rest of this turn, except DARK monsters.",
+        "previous": "HOPT | <b>You can BANISH this card from your GY, then target 1 \"Orcust\" monster in your GY, except \"Orcust Cymbal Skeleton\";</b> Special Summon it, also you cannot Special Summon monsters for the rest of this turn, except DARK monsters."
     },
-    "Fiendsmith's Sanct": {
-        "_current": "① HOPT | If you control no face-up monsters, or the only face-up monsters you control are LIGHT Fiend monsters: Special Summon 1 \"Fiendsmith Token\" (Fiend/LIGHT/Level 1/ATK 0/DEF 0), also you cannot declare attacks for the rest of this turn, except with Fiend monsters.\n② HOPT | If a face-up \"Fiendsmith\" monster(s) you control is destroyed by an opponent's card effect, while this card is in your GY: You can Set this card.",
-        "previous": null
+    "Orcust Knightmare": {
+        "_current": "① Cannot be destroyed by battle with a Link Monster.\n② HOPT | <b>You can BANISH this card from your GY, then target 1 face-up monster on the field;</b> you cannot Special Summon, except DARK monsters, for the rest of this turn, also send 1 DARK Machine monster from your Deck to the GY, except \"Orcust Knightmare\", and if you do, the targeted monster gains ATK equal to the Level of the monster sent to the GY x 100, until the end of this turn.",
+        "previous": "① Cannot be destroyed by battle with a Link Monster.\n② HOPT | <b>You can BANISH this card from your GY, then target 1 face-up monster on the field;</b> you cannot Special Summon monsters, except DARK monsters, for the rest of this turn, also send 1 DARK Machine monster from your Deck to the GY, except \"Orcust Knightmare\", and if you do, the targeted monster gains ATK equal to the Level of the monster sent to the GY x 100, until the end of this turn."
     },
-    "Fiendsmith's Sequence": {
-        "_current": "2 monsters, including a LIGHT Fiend monster\n① YOUR MAIN PHASE | HOPT | You can Fusion Summon 1 Fiend Fusion Monster from your Extra Deck, by shuffling its materials from your GY into the Deck.\n② HOPT | <b>You can target 1 LIGHT non-Link Fiend monster you control;</b> equip this card from your field or GY to that monster you control as an Equip Spell with the following effect.\n● Your opponent cannot target the equipped monster with card effects.",
-        "previous": null
+    "Overdrive Teleporter": {
+        "_current": "Cannot be Special Summoned.\n① <b>You can pay 2000 LP;</b> Special Summon 2 Level 3 Psychic monsters from your Deck. This effect can only be used once while this card is face-up on the field.",
+        "previous": "This card cannot be Special Summoned.\n① You can pay 2000 Life Points to Special Summon 2 Level 3 Psychic-Type monsters from your Deck. This effect can only be used once while this card is face-up on the field."
     },
-    "Fiendsmith's Tract": {
-        "_current": "① HOPT | SEARCH 1 LIGHT Fiend monster then DISCARD 1 card.\n② HOPT | <b>You can BANISH this card from your GY;</b> Fusion Summon 1 \"Fiendsmith\" Fusion Monster from your Extra Deck, using monsters from your hand or field.",
-        "previous": null
+    "Planet Pollutant Virus": {
+        "_current": "<b>Tribute 1 \"Alien\" monster;</b> DESTROY all face-up monsters your opponent controls without A-Counters, also until the end of your opponent's 3rd turn after this card resolves, place 1 A-Counter on each monster they Summon.",
+        "previous": "Tribute 1 \"Alien\" monster. DESTROY all face-up monsters without A-Counters your opponent controls. Until the end of your opponent's 3rd turn after this card's activation, place 1 A-Counter on each monster they Summon."
     },
-    "Golem that Guards the Millennium Treasures": {
-        "_current": "① The activation of your \"Millennium Ankh\" cannot be negated.\n② HOPT | If this card is in your hand: You can place it in your Spell & Trap Zone as a face-up Continuous Spell.\n③ HOPT | While this card is a Continuous Spell: <b>You can either pay 2000 LP, or reveal 1 \"Millennium Ankh\" in your hand;</b> Special Summon this card, then you can SEARCH 1 \"Wedju Temple\".",
-        "previous": null
-    },
-    "Grief Tablet": {
-        "_current": "HOPT ACTIVATION\n(This card is always treated as a \"Wedju\" card.)\n① The equipped monster cannot attack or be Tributed, also its effects are negated.\n② OPT | If you control the equipped monster: You can SEARCH 1 \"Wedju\" card except \"Grief Tablet\".\n③ If this card is sent to the GY because the equipped monster is destroyed: You can inflict 500 damage to your opponent.",
-        "previous": null
-    },
-    "Guilt of the Sinful Spoils": {
-        "_current": "① HOPT | If your opponent Special Summons a monster(s) from the Deck or Extra Deck and you control a \"Diabellstar\" Monster Card (except during the Damage Step): <b>Target 1 monster your opponent controls;</b> shuffle it into the Deck.\n② HOPT | During the Damage Step, when your \"Diabellstar\" monster battles an opponent's monster: <b>You can BANISH this card from your GY;</b> that opponent's monster's ATK becomes halved until the end of this turn.",
-        "previous": null
-    },
-    "Heart of the Blue-Eyes": {
-        "_current": "(This card is always treated as a \"Millennium\" card.)\n① Control of this card cannot switch.\n② HOPT | <b>You can DISCARD this card;</b> SEARCH 1 \"Millennium Ankh\".\n③ If this card is in your GY, and you have successfully activated \"Millennium Ankh\" this Duel, and your opponent Normal or Special Summons a monster(s) that is Level 8 or higher, or has 3000 or more ATK: You can send that monster to the GY, and if you do, Special Summon this card.\nYou can only use this effect of \"Heart of the Blue-Eyes\" once per Duel.",
-        "previous": null
-    },
-    "Kochobo's Hinamatsuri": {
-        "_current": "HOPT | If this card is in your hand or GY: <b>You can target 1 Machine monster on the field;</b> for the rest of this turn, you cannot Special Summon from the Extra Deck, except Xyz Monsters, also Special Summon this card (but BANISH it when it leaves the field), and if you do, halve that monster's ATK, also this card's Level becomes that monster's.",
-        "previous": null
-    },
-    "Like the Diabell": {
-        "_current": "① HOPT | If a Spell/Trap(s) is sent to the GY by a card effect: Set 1 Spell/Trap from your hand or GY, but it cannot be activated this turn.\n② YOUR MAIN PHASE | HOPT | <b>You can BANISH 3 Spells/Traps from your GY, including this card;</b> Special Summon 1 \"Diabell\" monster from your hand or GY.",
-        "previous": null
-    },
-    "Maiden of the Millennium Moon": {
-        "_current": "① If this card battles a monster, neither can be destroyed by that battle.\n② HOPT | If this card is in your hand: You can place it in your Spell & Trap Zone as a face-up Continuous Spell.\n③ HOPT | If your opponent activates a card or effect, while this card is a Continuous Spell (except during the Damage Step): You can Special Summon this card, and if you do, for the rest of this turn, your opponent cannot target Level 5 or higher Illusion or Spellcaster monsters you control with card effects.",
-        "previous": null
-    },
-    "Millennium Ankh": {
-        "_current": "Show 5 \"Forbidden One\" Monster Cards from your hand, Deck, and/or face-up field, then Special Summon 1 \"The Unstoppable Exodia Incarnate\" from your Extra Deck, then shuffle the face-up Monster Cards you control into the Deck, except \"Exodia\" Monster Cards whose original Levels are 10 or higher, and \"Millennium\" Monster Cards, also you cannot Summon for the rest of this turn. After activation, shuffle this card into the Deck instead of sending it to the GY.",
-        "previous": null
-    },
-    "Obliterate!!! Blaze": {
-        "_current": "<b>One Level 10 or higher monster on the field with \"Exodia\" in its original name gains these effects.\n● You can pay half your LP;</b> DESTROY as many cards in the Spell & Trap Zones as possible, then equip 5 \"Forbidden One\" monsters from your hand and/or Deck to this card as Equip Spells that each give it 2000 ATK, also you cannot activate other cards' effects for the rest of this turn.\n● This card is PIERCING.",
-        "previous": null
-    },
-    "Play the Diabell": {
-        "_current": "① HOPT | If a Spell/Trap(s) is sent to the GY to activate a card or effect: Send 1 Illusion or Spellcaster monster from your hand, Deck, or Extra Deck to the GY.\n② YOUR MAIN PHASE | HOPT | <b>You can BANISH 3 Spells/Traps from your GY, including this card;</b> Special Summon 1 \"Diabell\" monster from your hand or GY.",
-        "previous": null
+    "Psychic Feel Zone": {
+        "_current": "<b>Target 2 of your banished monsters (1 Psychic Tuner and 1 Psychic non-Tuner);</b> return both to the GY, then Special Summon 1 Psychic Synchro Monster from your Extra Deck in face-up Defense Position, whose Level equals the total Levels of the returned monsters.",
+        "previous": "Select 2 of your removed from play monsters (1 Psychic-Type Tuner and 1 Psychic-Type non-Tuner), return them to the GY, and Special Summon 1 Psychic-Type Synchro Monster from your Extra Deck in face-up Defense Position, whose Level equals the total Levels of the returned monsters."
     },
     "Psychic Trigger": {
-        "_current": "Activate only while your Life Points are lower than your opponent's.\nSelect 2 Psychic-Type monsters in your GY. Remove them from play and DRAW 2 cards.",
-        "previous": "Activate only while your Life Points are lower than your opponent's. Select 2 Psychic-Type monsters in your GY. Remove them from play and DRAW 2 cards."
+        "_current": "If your LP is lower than your opponent's: <b>Target 2 Psychic monsters in your GY;</b> BANISH both, and if you do, DRAW 2 cards.",
+        "previous": "Activate only while your Life Points are lower than your opponent's.\nSelect 2 Psychic-Type monsters in your GY. Remove them from play and DRAW 2 cards."
     },
-    "Queen Azamina": {
-        "_current": "(This card is always treated as a \"Sinful Spoils\" card.)\n① HOPT | If this card in your hand or field is sent to the GY or banished, by an activated effect: You can Special Summon it.\n② HOPT | When your \"Azamina\" or \"White Forest\" monster DESTROYS an opponent's monster by battle: <b>You can target 1 \"Sinful Spoils\" Spell/Trap in your GY;</b> add it to your hand.",
+    "Return of the Monarchs": {
+        "_current": "① You cannot Special Summon from the Extra Deck.\n② HOPT | When you Tribute Summon a monster: <b>You can activate 1 of these effects;</b> \n● Add, from your Deck to your hand, 1 monster with 2400 ATK/1000 DEF with a different name from that Tribute Summoned monster.\n● Add, from your Deck to your hand, 1 monster with 2800 ATK/1000 DEF with a different name from that Tribute Summoned monster.\nThe Tribute Summoned monster must be face-up on the field to activate and to resolve this effect.",
+        "previous": "① You cannot Special Summon monsters from the Extra Deck.\n② HOPT | When you Tribute Summon a monster: <b>You can activate 1 of these effects;</b> \n● Add, from your Deck to your hand, 1 monster with 2400 ATK and 1000 DEF with a different name from that Tribute Summoned monster.\n● Add, from your Deck to your hand, 1 monster with 2800 ATK and 1000 DEF with a different name from that Tribute Summoned monster.\nThe Tribute Summoned monster must be face-up on the field to activate and to resolve this effect."
+    },
+    "Serene Psychic Witch": {
+        "_current": "① When this card on the field is destroyed and sent to the GY: You can BANISH 1 Psychic monster with 2000 or less ATK from your Deck.\n② During the next Standby Phase after you banished a monster by this card's effect, if this card stays in the GY: Special Summon the banished monster.",
+        "previous": "① When this card on the field is destroyed and sent to the GY: You can BANISH 1 Psychic-Type monster with 2000 or less ATK from your Deck.\n② During the next Standby Phase, if this card stays in the GY: Special Summon the monster banished by this card's effect."
+    },
+    "Seventh Tachyon": {
+        "_current": "HOPT ACTIVATION\n<b>Reveal 1 \"Number\" Xyz Monster in your Extra Deck that has a number between \"101\" and \"107\" in its name;</b> SEARCH 1 monster with the same Type or Attribute as that monster, and the same Level as that monster's Rank, then place 1 card from your hand on top of the Deck, also for the rest of this turn after this card resolves, you cannot Special Summon from the Extra Deck, except Xyz Monsters.",
         "previous": null
     },
-    "Saint Azamina": {
-        "_current": "2 Level 6 or higher monsters (1 Fusion + 1 Synchro)\n① Your opponent cannot target cards in their field, GY, or BANISHment, or this card on the field, with card effects. Your opponent takes any battle damage you would have taken.\n② HOPT | QUICK | If this card was Fusion Summoned this turn: You can Special Summon 1 Level 9 or lower \"Azamina\" monster from your Deck or Extra Deck.",
+    "Silent Psychic Wizard": {
+        "_current": "① When this card is Normal Summoned: <b>You can target 1 Psychic monster in your GY;</b> BANISH that target.\n② If this card is sent from the field to the GY: Special Summon that monster banished by this effect.",
+        "previous": "① When this card is Normal Summoned: <b>You can target 1 Psychic-Type monster in your GY;</b> BANISH that target.\n② If this card is sent from the field to the GY: Special Summon that monster banished by this effect."
+    },
+    "Stardust Sifr Divine Dragon": {
+        "_current": "1 Tuner Synchro Monster + 2+ non-Tuner Synchro Monsters\nMust be Synchro Summoned.\n① The first time each card you control would be destroyed each turn, by battle or card effect, it is not destroyed.\n② OPT | QUICK | When your opponent activates a monster effect: You can NEGATE that effect, and if you do, DESTROY 1 card on the field.\n③ <b>You can BANISH this card from your GY, then target 1 Level 8 or lower \"Stardust\" monster in your GY;</b> Special Summon it.",
+        "previous": "1 Tuner Synchro Monster + 2 or more non-Tuner Synchro Monsters\nMust be Synchro Summoned and cannot be Special Summoned by other ways.\n① The first time each card you control would be destroyed each turn, by battle or card effect, it is not destroyed.\n② OPT | During either player's turn, when your opponent activates a monster effect: You can NEGATE that effect, and if you do, DESTROY 1 card on the field.\n③ <b>You can BANISH this card from your GY, then target 1 Level 8 or lower \"Stardust\" monster in your GY;</b> Special Summon it."
+    },
+    "Strike of the Monarchs": {
+        "_current": "① <b>Tribute 1 face-up Level 5 or higher Normal Summoned/Set monster, then target 1 face-up card on the field;</b> NEGATE its effects (until the end of this turn), then DRAW 1 card.\n② YOUR MAIN PHASE | If this card is in your GY: <b>You can BANISH this card, then declare 1 Attribute;</b> all face-up monsters currently on the field become that Attribute until the end of this turn.",
+        "previous": "① <b>You can Tribute 1 face-up Level 5 or higher Normal Summoned/Set monster, then target 1 face-up card on the field;</b> NEGATE its effects, then DRAW 1 card. (The effects remain negated until the end of this turn.)\n② YOUR MAIN PHASE | If this card is in your GY: <b>You can BANISH this card, then declare 1 Attribute;</b> all face-up monsters currently on the field become that Attribute until the end of this turn."
+    },
+    "Super Quantal Alphancall Appeal": {
+        "_current": "HOPT ACTIVATION\nIf a \"Super Quant\" monster you control is destroyed by battle: Special Summon 1 \"Super Quantal Mech Beast\" Xyz Monster from your Extra Deck, then you can Special Summon 1 \"Super Quantum\" monster from your hand, Deck, or GY, that is mentioned on that Xyz Monster, but NEGATE its effects.",
+        "previous": "HOPT ACTIVATION\nIf a \"Super Quant\" monster you control is destroyed by battle: Special Summon 1 \"Super Quantal Mech Beast\" Xyz Monster from your Extra Deck, then you can Special Summon 1 \"Super Quantum\" monster from your hand, Deck, or GY, that is specifically listed on that Xyz Monster in its text, but NEGATE its effects."
+    },
+    "Super Quantal Fairy Alphan": {
+        "_current": "① OPT | <b>You can target 1 \"Super Quant\" monster you control;</b> all monsters you currently control become that monster's Level.\n② HOPT | <b>You can Tribute this card;</b> reveal 3 \"Super Quant\" monsters with different names from your Deck, your opponent randomly picks 1 for you to Special Summon to your field, and you send the rest to the GY.",
+        "previous": "① OPT | <b>You can target 1 \"Super Quant\" monster you control;</b> all face-up monsters you currently control become that monster's Level.\n② HOPT | <b>You can Tribute this card;</b> reveal 3 \"Super Quant\" monsters with different names from your Deck, your opponent randomly picks 1 for you to Special Summon to your field, and you send the rest to the GY."
+    },
+    "Super Quantal Mech Beast Aeroboros": {
+        "_current": "2 Level 4 monsters\n① Cannot attack unless it has material.\n② OPT | <b>You can detach 1 material from this card, then target 1 other face-up monster on the field;</b> change it to face-down Defense Position. This is a QUICK EFFECT if this card has \"Super Quantum Green Layer\" as material.\n③ OPT | You can attach 1 \"Super Quantum\" monster from your hand or field to this card as material.",
+        "previous": "2 Level 4 monsters\n① Cannot attack unless it has Xyz Material.\n② OPT | <b>You can detach 1 Xyz Material from this card, then target 1 other face-up monster on the field;</b> change it to face-down Defense Position. This effect can be activated during either player's turn, if this card has \"Super Quantum Green Layer\" as Xyz Material.\n③ OPT | You can attach 1 \"Super Quantum\" monster from your hand or field to this card as an Xyz Material."
+    },
+    "Super Quantal Mech Beast Grampulse": {
+        "_current": "2 Level 3 monsters\n① Cannot attack unless it has material.\n② OPT | <b>You can detach 1 material from this card, then target 1 Spell/Trap on the field;</b> DESTROY it. This is a QUICK EFFECT if this card has \"Super Quantum Blue Layer\" as material.\n③ OPT | You can attach 1 \"Super Quantum\" monster from your hand or field to this card as material.",
+        "previous": "2 Level 3 monsters\n① Cannot attack unless it has Xyz Material.\n② OPT | <b>You can detach 1 Xyz Material from this card, then target 1 Spell/Trap Card on the field;</b> DESTROY it. This effect can be activated during either player's turn, if this card has \"Super Quantum Blue Layer\" as Xyz Material.\n③ OPT | You can attach 1 \"Super Quantum\" monster from your hand or field to this card as an Xyz Material."
+    },
+    "Super Quantal Mech Beast Lusterrex": {
+        "_current": "2 Level 7 monsters\n① Cannot attack unless it has material.\n② OPT | <b>You can detach 1 material from this card, then target 1 Effect Monster on the field;</b> NEGATE its effects until the end of this turn. This is a QUICK EFFECT if this card has \"Super Quantum White Layer\" as material.\n③ OPT | You can attach 1 \"Super Quantum\" monster from your hand or field to this card as material.",
+        "previous": "2 Level 7 monsters\n① Cannot attack unless it has material.\n② OPT | <b>You can detach 1 material from this card, then target 1 Effect Monster on the field;</b> NEGATE that face-up monster's effects until the end of this turn. This is a QUICK EFFECT if this card has \"Super Quantum White Layer\" as material.\n③ OPT | You can attach 1 \"Super Quantum\" monster from your hand or field to this card as material."
+    },
+    "Super Quantum Red Layer": {
+        "_current": "① If you control no monsters, you can Special Summon this card (from your hand).\n② HOPT | When this card is Normal or Special Summoned: <b>You can target 1 \"Super Quant\" card in your GY;</b> add it to your hand.\n③ HOPT | If this card is sent to the GY: <b>You can target 1 \"Super Quant\" monster in your GY, except \"Super Quantum Red Layer\";</b> Special Summon it, but it cannot activate its effects.",
+        "previous": "If you control no monsters, you can Special Summon this card (from your hand).\n① HOPT | When this card is Normal or Special Summoned: <b>You can target 1 \"Super Quant\" card in your GY;</b> add it to your hand.\n② HOPT | If this card is sent to the GY: <b>You can target 1 \"Super Quant\" monster in your GY, except \"Super Quantum Red Layer\";</b> Special Summon it, but it cannot activate its effects."
+    },
+    "Tenacity of the Monarchs": {
+        "_current": "HOPT ACTIVATION\n<b>Reveal 1 monster in your hand with 2400 ATK/1000 DEF, or 2800 ATK/1000 DEF;</b> SEARCH 1 \"Monarch\" Spell/Trap except \"Tenacity of the Monarchs\".",
+        "previous": "HOPT ACTIVATION\n<b>Reveal 1 monster in your hand with 2400 ATK & 1000 DEF, or 2800 ATK & 1000 DEF;</b> SEARCH 1 \"Monarch\" Spell/Trap Card except \"Tenacity of the Monarchs\"."
+    },
+    "The Duke of Demise": {
+        "_current": "2 Fiend and/or Zombie monsters\nOnce per turn, during your Standby Phase, pay 500 LP or DESTROY this card.\n① Cannot be destroyed by battle.\n② YOUR MAIN PHASE | HOPT | You can: Immediately after this effect resolves, Normal Summon 1 monster.\n③ HOPT | <b>You can BANISH this card from your GY, then target 1 Level 4 or higher Fiend or Zombie monster in your GY;</b> add it to your hand.",
         "previous": null
     },
-    "Sengenjin Wakes from a Millennium": {
-        "_current": "① Cannot be destroyed by monster effects.\n② HOPT | If this card is in your hand: You can place it in your Spell & Trap Zone as a face-up Continuous Spell.\n③ HOPT | While this card is a Continuous Spell: <b>You can either pay 2000 LP, or reveal 1 \"Millennium Ankh\" in your hand;</b> Special Summon this card, then you can SEARCH 1 \"Millennium\" monster.",
-        "previous": null
+    "The First Monarch": {
+        "_current": "① Special Summon this card as an Effect Monster (Fiend/DARK/Level 6/ATK 1000/DEF 2400). (This card is also still a Trap.)\n② If Summoned this way: <b>You can DISCARD 1 card, then declare 1 Attribute;</b> this card becomes that Attribute, and can be treated as 2 Tributes for the Tribute Summon of a monster with the same Attribute as this card.\n③ If this card was Summoned this way, you cannot Special Summon, except monsters with this card's Attribute.",
+        "previous": "① Special Summon this card as an Effect Monster (Fiend/DARK/Level 6/ATK 1000/DEF 2400). (This card is also still a Trap.)\n② If Summoned this way: <b>You can DISCARD 1 card, then declare 1 Attribute;</b> this card becomes that Attribute, and can be treated as 2 Tributes for the Tribute Summon of a monster with the same Attribute as this card.\n③ If this card was Summoned this way, you cannot Special Summon monsters, except monsters with this card's Attribute."
     },
-    "Shield of the Millennium Dynasty": {
-        "_current": "① Cannot be destroyed by Spell/Trap effects.\n② HOPT | If this card is in your hand: You can place it in your Spell & Trap Zone as a face-up Continuous Spell.\n③ HOPT | While this card is a Continuous Spell: <b>You can either pay 2000 LP, or reveal 1 \"Millennium Ankh\" in your hand;</b> Special Summon this card, then you can SEARCH 1 \"Millennium Ankh\".",
-        "previous": null
+    "The Monarchs Stormforth": {
+        "_current": "HOPT ACTIVATION\nOnce during this turn, if you would Tribute a monster for a Tribute Summon, you can Tribute 1 monster your opponent controls even though you do not control it.\nDuring the turn you activate this card, you cannot Special Summon from the Extra Deck.",
+        "previous": "HOPT ACTIVATION\nOnce during this turn, if you would Tribute a monster for a Tribute Summon, you can Tribute 1 monster your opponent controls even though you do not control it.\nDuring the turn you activate this card, you cannot Special Summon monsters from the Extra Deck."
     },
-    "Sinful Spoils Awakening": {
-        "_current": "HOPT | You can use ONE of —\n① If your opponent controls 3 or more monsters and you control a Level 5 or higher Illusion monster: <b>Target up to 3 cards your opponent controls;</b> BOUNCE them.\n② If you control a Level 5 or higher Illusion monster and this card is in your GY: You can Set this card, but BANISH it when it leaves the field.",
-        "previous": null
+    "Thestalos the Mega Monarch": {
+        "_current": "You can Tribute Summon this card by Tributing 1 Tribute Summoned monster.\n① If this card is Tribute Summoned: Look at your opponent's hand and DISCARD 1 card from their hand, then, if it was a monster, inflict damage to your opponent equal to its original Level x 200. If this card was Tribute Summoned by Tributing a FIRE monster, add this additional effect.\n● Also, inflict 1000 damage to your opponent after that.",
+        "previous": "You can Tribute Summon this card by Tributing 1 Tribute Summoned monster.\n① If this card is Tribute Summoned: Look at your opponent's hand and DISCARD 1 card from their hand, then, if it was a Monster Card, inflict damage to your opponent equal to its original Level x 200. If this card was Tribute Summoned by Tributing a FIRE monster, add this additional effect.\n● Also, inflict 1000 damage to your opponent after that."
     },
-    "Sinful Spoils of the White Forest": {
-        "_current": "① HOPT | If you control a Fiend, Illusion, or Spellcaster monster: <b>Activate 1 of these effects;</b> \n● Special Summon 1 Fiend, Illusion, or Spellcaster monster from your hand.\n● Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field.\n② HOPT | If this card is sent to the GY to activate a monster effect: You can Set this card.",
-        "previous": null
+    "Tidal, Dragon Ruler of Waterfalls": {
+        "_current": "HOPT | You can use ONE of —\n① If this card is in your hand or GY: <b>You can BANISH a total of 2 WATER and/or Dragon monsters from your hand and/or GY, except this card;</b> Special Summon this card.\n② OPP'S END PHASE | If you control this Special Summoned card: BOUNCE it.\n③ <b>You can DISCARD this card and 1 WATER monster to the GY;</b> send 1 monster from your Deck to the GY.\n④ If this card is banished: You can SEARCH 1 WATER Dragon monster.",
+        "previous": "HOPT | You can use ONE of —\n① If this card is in your hand or GY: <b>You can BANISH a total of 2 WATER and/or Dragon monsters from your hand and/or GY, except this card;</b> Special Summon this card.\n② OPP'S END PHASE | If this card was Special Summoned: BOUNCE it.\n③ <b>You can DISCARD this card and 1 WATER monster to the GY;</b> send 1 monster from your Deck to the GY.\n④ If this card is banished: You can SEARCH 1 WATER Dragon monster."
     },
-    "That's 10!": {
-        "_current": "① Each time a card or effect is activated, except \"That's 10!\": You can place 1 Access Counter on this card (max. 10).\n② Monsters you control gain 100 ATK for each Access Counter on this card.\n③ If the 10th Access Counter is placed on this card: You can BOUNCE this card, and if you do, Set from your Deck, 1 Continuous Trap with an effect that Special Summons itself as a monster. It can be activated this turn.",
-        "previous": null
+    "Time Escaper": {
+        "_current": "QUICK | <b>You can DISCARD this card, then target 1 Psychic monster you control;</b> BANISH it until your next Standby Phase.",
+        "previous": "During either player's turn: <b>You can DISCARD this card, then target 1 Psychic-Type monster you control;</b> BANISH it until your next Standby Phase."
     },
-    "The Hallowed Azamina": {
-        "_current": "① Reveal 1 \"Azamina\" Fusion Monster in your Extra Deck, and for every 4 Levels it has (round down), send 1 \"Sinful Spoils\" card from your hand and/or field to the GY (if face-down, reveal it), then Special Summon that revealed monster. (This is treated as a Fusion Summon.)\n② HOPT | If this card is in the GY: <b>You can target 1 \"Azamina\" monster you control or in your GY;</b> shuffle it into the Deck, and if you do, add this card to your hand.",
-        "previous": null
+    "Ultimate Axon Kicker": {
+        "_current": "1 Psychic Synchro Monster + 1 Psychic monster\nMust first be Fusion Summoned from the Extra Deck.\n① Cannot be destroyed by card effects.\n② This card is PIERCING.\n③ If this card DESTROYS a monster by battle and sends it to the GY: Gain LP equal to the destroyed monster's original ATK.",
+        "previous": "1 Psychic-Type Synchro Monster + 1 Psychic-Type monster\nThis monster can only be Special Summoned by Fusion Summon from the Extra Deck.\n① This card cannot be destroyed by card effects.\n② During battle between this attacking card and a Defense Position monster whose DEF is lower than the ATK of this card, inflict the difference as Battle Damage to your opponent.\n③ When this card DESTROYS an opponent's monster by battle and sends it to the GY, you gain Life Points equal to the destroyed monster's ATK."
     },
-    "Wedju Temple": {
-        "_current": "① YOUR MAIN PHASE | HOPT | You can place 1 monster from your hand in your Spell & Trap Zone as a face-up Continuous Spell, then place 1 \"Millennium\" monster from your Deck in your Spell & Trap Zone as a face-up Continuous Spell.\n② If a face-up \"Millennium\" monster(s) you control is destroyed, you can place it in your Spell & Trap Zone as a face-up Continuous Spell, instead of sending it to the GY.",
-        "previous": null
+    "Unchained Soul of Anguish": {
+        "_current": "2+ monsters, including an \"Unchained Soul\" monster\n① HOPT | <b>You can target 1 face-up monster your opponent controls;</b> immediately after this effect resolves, Link Summon 1 DARK Link Monster, except \"Unchained Soul of Anguish\", by using only that opponent's monster and this card you control.\n② HOPT | If this card on the field is destroyed: <b>You can target 1 Fiend monster in your GY, except \"Unchained Soul of Anguish\";</b> add it to your hand.",
+        "previous": "2+ monsters including an \"Unchained Soul\" monster\n① HOPT | <b>You can target 1 face-up monster your opponent controls;</b> immediately after this effect resolves, Link Summon 1 DARK Link Monster, except \"Unchained Soul of Anguish\", by using only that opponent's monster and this card you control as material.\n② HOPT | If this card on the field is destroyed: <b>You can target 1 Fiend monster in your GY, except \"Unchained Soul of Anguish\";</b> add it to your hand."
+    },
+    "World Legacy - \"World Wand\"": {
+        "_current": "This Normal Summoned/Set card cannot be destroyed by battle with a monster Special Summoned from the Extra Deck.\n① HOPT | If this card is sent to the GY: You can Special Summon 1 \"World Legacy\" monster from your hand.\n② HOPT | <b>You can BANISH this card from your GY, then target 1 of your banished \"Orcust\" monsters;</b> Special Summon it, also you cannot Special Summon for the rest of this turn, except DARK monsters.",
+        "previous": "This Normal Summoned/Set card cannot be destroyed by battle with a monster Special Summoned from the Extra Deck.\n① HOPT | If this card is sent to the GY: You can Special Summon 1 \"World Legacy\" monster from your hand.\n② HOPT | <b>You can BANISH this card from your GY, then target 1 of your banished \"Orcust\" monsters;</b> Special Summon it, also you cannot Special Summon monsters for the rest of this turn, except DARK monsters."
+    },
+    "ZW - Tornado Bringer": {
+        "_current": "① <b>You can target 1 \"Utopia\" monster you control;</b> equip this monster from your hand or face-up field to that target. It gains 1300 ATK.\n② While this card is equipped to a monster, your opponent cannot target that monster with card effects.\n③ If a monster equipped with this card would be destroyed by battle, DESTROY this card instead.\n④ You can only control 1 \"ZW - Tornado Bringer\".",
+        "previous": "① <b>You can target 1 \"Utopia\" monster you control;</b> equip this monster from your hand or face-up field to that target. It gains 1300 ATK.\n② While this card is equipped to a monster, your opponent cannot target that monster with card effects.\n③ If a monster equipped with this card would be destroyed by battle, DESTROY this card instead.\n④ You can only control 1 face-up \"ZW - Tornado Bringer\"."
+    },
+    "Zubababancho Gagagacoat": {
+        "_current": "① HOPT | If you control a \"Zubaba\" or \"Gagaga\" monster except \"Zubababancho Gagagacoat\", while this card is in your hand: You can Special Summon this card.\n② HOPT | <b>You can target 1 \"Gogogo\" or \"Dododo\" monster in your GY;</b> Special Summon it, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Xyz Monsters.",
+        "previous": "① HOPT | If you control a \"Zubaba\" or \"Gagaga\" monster except \"Zubababancho Gagagacoat\", while this card is in your hand: You can Special Summon this card.\n② HOPT | <b>You can target 1 \"Gogogo\" or \"Dododo\" monster in your GY;</b> Special Summon it, also you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except Xyz Monsters."
     }
 }
