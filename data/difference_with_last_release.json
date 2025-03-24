@@ -1,150 +1,50 @@
 {
-    "A-to-Z Energy Load": {
-        "_current": "① HOPT | When your opponent activates a card or effect: DRAW cards equal to the number of Level 8 or higher LIGHT Machine Fusion Monsters you control.\n② YOUR STANDBY PHASE | HOPT | <b>You can BANISH this card from your GY;</b> shuffle up to 6 of your banished LIGHT Machine monsters into the Deck, including a Union monster.",
+    "Blue-Eyes Ultimate Spirit Dragon": {
+        "_current": "2+ Tuners + 1 non-Tuner \"Blue-Eyes\" monster\n① Your opponent cannot BANISH cards from your GY.\n② HOPT | QUICK | When a card or effect is activated on the field: You can NEGATE the activation, and if you do, this card gains 1000 ATK until the end of this turn.\n③ HOPT | If this card is destroyed: You can Special Summon 1 LIGHT Dragon monster from your GY, except \"Blue-Eyes Ultimate Spirit Dragon\".",
+        "previous": "2+ Tuners + 1 non-Tuner \"Blue-Eyes\" monster\nYour opponent cannot BANISH cards from your GY. You can only use each of the following effects of \"Blue-Eyes Ultimate Spirit Dragon\" once per turn. When a card or effect is activated on the field (QUICK EFFECT): You can NEGATE the activation, and if you do, this card gains 1000 ATK until the end of this turn. If this card is destroyed: You can Special Summon 1 LIGHT Dragon monster from your GY, except \"Blue-Eyes Ultimate Spirit Dragon\"."
+    },
+    "Dominus Impulse": {
+        "_current": "HOPT ACTIVATION\nIf your opponent controls a card, you can activate this card from your hand.\n① When a card or effect is activated that includes an effect that Special Summons a monster(s): NEGATE that effect, then if you have a Trap in your GY, DESTROY that card. If you activated this card from your hand, you cannot activate the effects of LIGHT, EARTH, and WIND monsters for the rest of this Duel.",
         "previous": null
     },
-    "Aerial Eater": {
-        "_current": "2 Fiend monsters with the same Attribute\n① HOPT | If this card is Fusion Summoned: You can send 1 Fiend monster from your Deck to the GY.\n② HOPT | If this card is in your GY: <b>You can BANISH 2 Level 6 or higher Fiend monsters with the same Attribute as each other from your GY, except \"Aerial Eater\";</b> Special Summon this card.",
+    "Dominus Purge": {
+        "_current": "HOPT ACTIVATION\nIf your opponent controls a card, you can activate this card from your hand.\n① When a card or effect is activated that includes an effect that adds a card(s) from the Deck to the hand: NEGATE that effect, then if you have a Trap in your GY, DESTROY that card. If you activated this card from your hand, you cannot activate the effects of DARK, WATER, and FIRE monsters for the rest of this Duel.",
         "previous": null
     },
-    "Cosmo Queen the Queen of Prayers": {
-        "_current": "① HOPT | If a Field Spell Card is activated: You can Special Summon this card from your hand in Defense Position.\n② HOPT | You can target 1 face-up card in the Field Zone, then activate the appropriate effect, based on which player controls that card;\n● You: DESTROY it, and if you do, SEARCH 1 Field Spell with a different name.\n● Your opponent: NEGATE its effects (until the end of this turn), and if you do, SEARCH 1 Field Spell.",
-        "previous": null
-    },
-    "Detonating Kuriboh": {
-        "_current": "① HOPT | If a \"Kuriboh\" Monster Card is on the field: You can Special Summon this card from your hand.\n② HOPT | QUICK | When your opponent activates a monster effect on the field: You can equip this card you control to that opponent's monster as an Equip Spell with the following effect.\n● The equipped monster's effects are negated.",
-        "previous": null
-    },
-    "Dipsea Fiend": {
-        "_current": "HOPT | <b>You can DISCARD 1 card, then declare 1 Attribute, except WATER;</b> Special Summon this card from your hand to either field, then this card becomes that Attribute (until the end of this turn), then if you Special Summoned this card to your opponent's field, you can Special Summon 1 Level 4 or lower Fiend monster with an original Attribute other than the declared one, from your hand or GY to your field, also for the rest of this turn, you cannot Special Summon from the Extra Deck, except Fiend monsters.",
-        "previous": null
-    },
-    "Doppelganger Token": {
-        "_current": "Special Summoned with the effect of \"Spirit Illusion.\"",
-        "previous": null
-    },
-    "Earthbound Immortal Red Nova": {
-        "_current": "① There can only be 1 \"Earthbound Immortal\" monster on the field.\n② MAIN PHASE | HOPT | QUICK | <b>You can BANISH this card from your hand or GY;</b> send 1 \"Earthbound Immortal\" monster or \"Red Dragon Archfiend\" from your hand or face-up Monster Zone to the GY, then you can apply 1 of these effects.\n● Special Summon 1 \"Earthbound\" monster from your Deck or Extra Deck.\n● Special Summon 1 \"Red Nova Dragon\" from your Extra Deck. (This is treated as a Synchro Summon.)",
-        "previous": null
-    },
-    "Flying Mary, the Wandering Ghost Ship": {
-        "_current": "2 Zombie monsters\n① HOPT | <b>You can target 1 of your Level 5 or higher Zombie monsters that is banished or in your GY;</b> place this card in your Spell & Trap Zone as a face-up Continuous Spell, and if you do, Special Summon that monster.\n② HOPT | While this card is a Continuous Spell: <b>You can target 1 Level 5 or higher Zombie monster you control;</b> DESTROY 1 monster your opponent controls with ATK less than or equal to that monster.",
-        "previous": null
-    },
-    "Galaxy War Drake": {
-        "_current": "① If a Level 4 LIGHT monster(s) is Special Summoned to your field (except during the Damage Step): You can Special Summon this card from your hand (if it was there when the Summon resolved) or GY (even if not), but BANISH it when it leaves the field.\n② <b>You can target 1 other Level 4 LIGHT monster you control;</b> make both that monster and this card Level 8 until the end of this turn.\nYou can only use each effect of \"Galaxy War Drake\" once per turn, also you cannot Special Summon the turn you activate either of this card's effects, except LIGHT monsters.",
-        "previous": null
-    },
-    "Galaxy-Eyes Tachyon Primal": {
-        "_current": "① If a Dragon Xyz Monster declares an attack: Attach this card on the field to it as material.\n② HOPT | QUICK | If a Dragon Xyz Monster is on the field: You can Special Summon this card from your hand to either field.\n③ HOPT | If this card is Normal or Special Summoned: The owner of this card adds 1 \"Tachyon\" Spell/Trap from their Deck to their hand.",
+    "Goblin Bikers Gone Wild": {
+        "_current": "① If you control no monsters, or all monsters you control are \"Goblin\" monsters, you can Normal Summon this card without Tributing.\n② HOPT | If this card is Normal or Special Summoned: You can Special Summon 1 Level 4 or lower \"Goblin\" monster from your Deck.\n③ HOPT | If this card is sent to the GY: <b>You can target 1 card on the field;</b> attach it to 1 \"Goblin\" Xyz Monster you control.",
         "previous": null
     },
     "Indigo-Eyes Silver Dragon": {
-        "_current": "2 Level 8 Dragon monsters\nCannot attack directly unless this card has a Normal Monster as material. You can only use each of the following effects of \"Indigo-Eyes Silver Dragon\" once per turn. If this card is Xyz Summoned: You can NEGATE the effects of all face-up cards your opponent currently controls. <b>You can detach 1 material from this card, then target 1 Normal Monster in your GY or BANISHment;</b> Special Summon it, and if you do, it gains 1000 ATK.",
-        "previous": null
-    },
-    "L Magi Mergy": {
-        "_current": "① Gains ATK equal to the total Link Rating of the Link Monsters in your GY x 400.\n② MAIN PHASE | HOPT | QUICK | If this card is in your hand: <b>You can Tribute 1 Cyberse monster or 1 Link Monster;</b> Special Summon this card.",
-        "previous": null
-    },
-    "Lord of the Tachyon Galaxy": {
-        "_current": "HOPT ACTIVATION\nIf you control a \"Galaxy-Eyes Tachyon Dragon\" monster, you can activate this card from your hand.\n① BATTLE PHASE | <b>Detach 1 material from your \"Galaxy-Eyes\" Xyz Monster;</b> shuffle all monsters your opponent controls into the Deck that were Normal or Special Summoned this turn. If you control a \"Number C\" monster, this card's activation and effect cannot be negated.",
-        "previous": null
+        "_current": "2 Level 8 Dragon monsters\n① Cannot attack directly unless this card has a Normal Monster as material.\n② HOPT | If this card is Xyz Summoned: You can NEGATE the effects of all face-up cards your opponent currently controls.\n③ HOPT | <b>You can detach 1 material from this card, then target 1 Normal Monster in your GY or BANISHment;</b> Special Summon it, and if you do, it gains 1000 ATK.",
+        "previous": "2 Level 8 Dragon monsters\nCannot attack directly unless this card has a Normal Monster as material. You can only use each of the following effects of \"Indigo-Eyes Silver Dragon\" once per turn. If this card is Xyz Summoned: You can NEGATE the effects of all face-up cards your opponent currently controls. <b>You can detach 1 material from this card, then target 1 Normal Monster in your GY or BANISHment;</b> Special Summon it, and if you do, it gains 1000 ATK."
     },
     "Maiden of White": {
-        "_current": "<b>You can send this card from your hand or field to the GY;</b> place 1 \"True Light\" from your hand, Deck, or GY, face-up in your Spell & Trap Zone. If you Special Summon \"Blue-Eyes White Dragon\" while this card is in your GY (except during the Damage Step): You can Special Summon this card. When a card or effect is activated that targets this card on the field, or when this card is targeted for an attack (QUICK EFFECT): You can Special Summon 1 \"Blue-Eyes White Dragon\" or 1 Level 1 LIGHT Tuner from your GY. You can only use each effect of \"Maiden of White\" once per turn.",
-        "previous": null
+        "_current": "① HOPT | <b>You can send this card from your hand or field to the GY;</b> place 1 \"True Light\" from your hand, Deck, or GY, face-up in your Spell & Trap Zone.\n② HOPT | If you Special Summon \"Blue-Eyes White Dragon\" while this card is in your GY (except during the Damage Step): You can Special Summon this card.\n③ HOPT | QUICK | When a card or effect is activated that targets this card on the field, or when this card is targeted for an attack: You can Special Summon 1 \"Blue-Eyes White Dragon\" or 1 Level 1 LIGHT Tuner from your GY.",
+        "previous": "<b>You can send this card from your hand or field to the GY;</b> place 1 \"True Light\" from your hand, Deck, or GY, face-up in your Spell & Trap Zone. If you Special Summon \"Blue-Eyes White Dragon\" while this card is in your GY (except during the Damage Step): You can Special Summon this card. When a card or effect is activated that targets this card on the field, or when this card is targeted for an attack (QUICK EFFECT): You can Special Summon 1 \"Blue-Eyes White Dragon\" or 1 Level 1 LIGHT Tuner from your GY. You can only use each effect of \"Maiden of White\" once per turn."
     },
     "Majesty of the White Dragons": {
-        "_current": "Show up to 3 of the \"Blue-Eyes White Dragon\" in your hand, face-up Monster Zone, and/or GY, then DESTROY an equal number of cards your opponent controls. <b>You can BANISH this card from your GY;</b> Ritual Summon 1 Ritual Monster from your hand, by Tributing \"Blue-Eyes White Dragon(s)\" from your hand or field whose total Levels equal its Level. You can only use each effect of \"Majesty of the White Dragons\" once per turn.",
-        "previous": null
+        "_current": "① HOPT | Show up to 3 of the \"Blue-Eyes White Dragon\" in your hand, face-up Monster Zone, and/or GY, then DESTROY an equal number of cards your opponent controls.\n② HOPT | <b>You can BANISH this card from your GY;</b> Ritual Summon 1 Ritual Monster from your hand, by Tributing \"Blue-Eyes White Dragon(s)\" from your hand or field whose total Levels equal its Level.",
+        "previous": "Show up to 3 of the \"Blue-Eyes White Dragon\" in your hand, face-up Monster Zone, and/or GY, then DESTROY an equal number of cards your opponent controls. <b>You can BANISH this card from your GY;</b> Ritual Summon 1 Ritual Monster from your hand, by Tributing \"Blue-Eyes White Dragon(s)\" from your hand or field whose total Levels equal its Level. You can only use each effect of \"Majesty of the White Dragons\" once per turn."
     },
     "Neo Kaiser Sea Horse": {
-        "_current": "If you control \"Blue-Eyes White Dragon\": You can Special Summon this card from your hand. <b>You can target 1 LIGHT Tuner you control;</b> increase or decrease its Level by 1. If this card is sent from the field to the GY: You can send 1 \"Blue-Eyes\" monster or 1 monster that mentions \"Blue-Eyes White Dragon\" from your Deck to the GY, except \"Neo Kaiser Sea Horse\". You can only use each effect of \"Neo Kaiser Sea Horse\" once per turn.",
-        "previous": null
+        "_current": "① HOPT | If you control \"Blue-Eyes White Dragon\": You can Special Summon this card from your hand.\n② HOPT | <b>You can target 1 LIGHT Tuner you control;</b> increase or decrease its Level by 1.\n③ HOPT | If this card is sent from the field to the GY: You can send 1 \"Blue-Eyes\" monster or 1 monster that mentions \"Blue-Eyes White Dragon\" from your Deck to the GY, except \"Neo Kaiser Sea Horse\".",
+        "previous": "If you control \"Blue-Eyes White Dragon\": You can Special Summon this card from your hand. <b>You can target 1 LIGHT Tuner you control;</b> increase or decrease its Level by 1. If this card is sent from the field to the GY: You can send 1 \"Blue-Eyes\" monster or 1 monster that mentions \"Blue-Eyes White Dragon\" from your Deck to the GY, except \"Neo Kaiser Sea Horse\". You can only use each effect of \"Neo Kaiser Sea Horse\" once per turn."
     },
-    "Neverending Nightmare Absorber": {
-        "_current": "① Gains 1000 ATK each time your opponent activates a monster effect.\n② HOPT | If your opponent activates a monster effect in their hand, GY, or BANISHment (except during the Damage Step): You can Special Summon this card from your GY (if it was there when they activated) or hand (even if not), but DESTROY it during the End Phase.",
-        "previous": null
-    },
-    "Otonari Thunder": {
-        "_current": "① HOPT | If you control 2 or more Thunder monsters and this card is in your hand or GY: You can Special Summon this card, but BANISH it when it leaves the field.\n② HOPT | <b>You can target 1 Xyz Monster you control;</b> attach 2 Level 4 LIGHT Thunder monsters from your hand, face-up field, and/or GY to it as material, including this card you control.",
+    "Performage Trapeze High Magician": {
+        "_current": "2 Level 5 Spellcaster monsters\n① Cannot be destroyed while it has material.\n② Your opponent takes any effect damage you would have taken, a number of times each turn up to the number of materials attached to this card.\n③ <b>If this card has \"Performage Trapeze Magician\" as material, it gains this effect.\n● You can detach 1 material from this card;</b> this card can make up to 3 attacks during each Battle Phase this turn.",
         "previous": null
     },
     "Roar of the Blue-Eyed Dragons": {
-        "_current": "Special Summon in Defense Position, 1 \"Blue-Eyes\" monster from your Deck, GY, or BANISHment (but if you control no \"Blue-Eyes White Dragon\", you can only Special Summon \"Blue-Eyes White Dragon\" with this effect), also you cannot Special Summon from the Extra Deck for the rest of this turn, except Dragon monsters. <b>You can BANISH this card from your GY;</b> Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field, including a \"Blue-Eyes\" monster. You can only use 1 \"Roar of the Blue-Eyed Dragons\" effect per turn, and only once that turn.",
-        "previous": null
-    },
-    "Schwarzschild Infinity Dragon": {
-        "_current": "If you control no monsters, or your opponent controls a monster with 2000 or more ATK: You can Special Summon this card from your hand, and if you do, Special Summon 1 Level 8 LIGHT or DARK Dragon monster from your Deck in Defense Position, except \"Schwarzschild Infinity Dragon\", but NEGATE its effects.\nYou can only use this effect of \"Schwarzschild Infinity Dragon\" once per turn, also you cannot Special Summon from the Extra Deck the turn you activate this effect, except Dragon Xyz Monsters.",
-        "previous": null
-    },
-    "Singularity Fiend": {
-        "_current": "HOPT | When your opponent Special Summons a monster(s) (except during the Damage Step): <b>You can DISCARD this card and 1 Spell;</b> DESTROY that monster(s).",
-        "previous": null
-    },
-    "Soul Fist": {
-        "_current": "Equip only to a Dragon Synchro Monster you control.\n① \"Red Dragon Archfiend\" equipped with this card is unaffected by your opponent's activated effects.\n② YOUR MAIN PHASE | OPT | You can make the ATK of all monsters your opponent currently controls become equal to the equipped monster's.\n③ OPT | When an attack is declared involving the equipped monster: <b>You can target 1 monster in your opponent's GY;</b> BANISH it, and if you do, the equipped monster gains ATK equal to that banished monster's, until the end of this turn.",
-        "previous": null
-    },
-    "Spirit Illusion": {
-        "_current": "Equip only to a Level 5 or higher Fiend or Zombie monster.\n① When an attack is declared involving the equipped monster and an opponent's monster: You can make that opponent's monster lose ATK equal to the equipped monster's ATK.\n② HOPT | <b>You can activate 1 of these effects;</b> \n● Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field.\n● Special Summon 1 \"Doppelganger Token\" (Level 5/ATK ?/DEF 0) with the equipped monster's Type, Attribute, and ATK.",
-        "previous": null
-    },
-    "Spirit Shield": {
-        "_current": "① Once per battle, when an opponent's monster declares an attack: <b>You can BANISH 1 Fiend or Zombie monster from your GY;</b> NEGATE that attack.\n② OPT | When your opponent activates a card or effect that would DESTROY a card(s): <b>You can BANISH 1 Fiend or Zombie monster from your GY;</b> NEGATE that activation.\n③ END PHASE | OPT | If you do not control a Fiend or Zombie monster: Send this card to the GY.",
-        "previous": null
+        "_current": "HOPT | You can use ONE of —\n① Special Summon in Defense Position, 1 \"Blue-Eyes\" monster from your Deck, GY, or BANISHment (but if you control no \"Blue-Eyes White Dragon\", you can only Special Summon \"Blue-Eyes White Dragon\" with this effect), also you cannot Special Summon from the Extra Deck for the rest of this turn, except Dragon monsters.\n② <b>You can BANISH this card from your GY;</b> Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field, including a \"Blue-Eyes\" monster.",
+        "previous": "Special Summon in Defense Position, 1 \"Blue-Eyes\" monster from your Deck, GY, or BANISHment (but if you control no \"Blue-Eyes White Dragon\", you can only Special Summon \"Blue-Eyes White Dragon\" with this effect), also you cannot Special Summon from the Extra Deck for the rest of this turn, except Dragon monsters. <b>You can BANISH this card from your GY;</b> Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field, including a \"Blue-Eyes\" monster. You can only use 1 \"Roar of the Blue-Eyed Dragons\" effect per turn, and only once that turn."
     },
     "Spirit with Eyes of Blue": {
-        "_current": "1 Level 4 or lower Dragon or Spellcaster monster\nYou cannot Special Summon, except Dragon monsters. You can only use each of the following effects of \"Spirit with Eyes of Blue\" once per turn. If this card is Link Summoned: You can take 1 \"Mausoleum of White\" from your Deck and either add it to your hand or send it to the GY. <b>You can Tribute this card;</b> Special Summon 1 \"Blue-Eyes\" monster from your hand or GY, but if you Special Summoned an Effect Monster from your GY by this effect, it cannot attack and its effects are negated.",
-        "previous": null
-    },
-    "Splitting Planarian": {
-        "_current": "HOPT | <b>You can BANISH this card you control;</b> Special Summon 2 Level 3 Insect monsters from your Deck with the same name from each other, but their effects are negated, also BANISH them during the End Phase.",
-        "previous": null
-    },
-    "Tachyon Cloudragon": {
-        "_current": "① HOPT | If this card is added to your hand, except by DRAWING it: You can Special Summon this card.\n② HOPT | <b>You can Tribute this card;</b> Special Summon 1 \"Tachyon\" monster from your Deck or GY, except \"Tachyon Cloudragon\".\n③ HOPT | If you Special Summon a Dragon Xyz Monster(s) (except during the Damage Step): <b>You can target 1 of them;</b> attach this card to that monster, from the GY (if it was there when the monster was Special Summoned) or hand (even if not), as material.",
-        "previous": null
-    },
-    "Tachyon Spiral of Destruction": {
-        "_current": "Activate 1 of these effects (but you can only use each effect of \"Tachyon Spiral of Destruction\" once per turn);\n● If you control a \"Galaxy\" Xyz Monster: <b>DESTROY all face-up cards your opponent controls whose effects are negated.\n● Target 1 \"Tachyon\" card in your GY, except \"Tachyon Spiral of Destruction\";</b> add it to your hand.\n● Target 1 Dragon \"Number\" monster in your GY; Special Summon it in Defense Position.",
-        "previous": null
-    },
-    "Union Activation": {
-        "_current": "① HOPT | Send 1 LIGHT Machine Normal or Union monster from your hand or Deck to the GY and SEARCH 1 LIGHT Machine monster with the same ATK but a different original name.\n② HOPT | If you Special Summon 3 LIGHT Machine monsters at the same time, while this card is in your GY: <b>You can BANISH this card;</b> SEARCH 1 monster with 3000 or more ATK then immediately after this effect resolves, Normal Summon that monster.",
-        "previous": null
-    },
-    "Union Controller": {
-        "_current": "1 LIGHT Machine monster + \"Y-Yare Head\" or \"Z-Zillion Tank\"\nMust first be Special Summoned (from your Extra Deck) by BANISHING the above cards you control.\n① HOPT | If this card is Special Summoned from the Extra Deck: You can SEARCH 1 Spell/Trap that mentions \"Union monster\" in its text.\n② YOUR MAIN PHASE | OPT | You can Special Summon 1 LIGHT Machine Normal or Union monster from your hand.",
-        "previous": null
-    },
-    "Union Pilot": {
-        "_current": "① OPT | You can either: <b>Target 1 Effect Monster you control;</b> equip this card to that target, OR: Unequip this card and Special Summon it. If the equipped monster would be destroyed, DESTROY this card instead.\n② HOPT | <b>You can return this card equipped to a monster to your hand;</b> equip 1 appropriate, banished Union monster to 1 monster you control as an Equip Spell, as if it were equipped by that Union monster's effect, and if you do, Special Summon this card from your hand.",
-        "previous": null
-    },
-    "Wandering Titan of Tartarus": {
-        "_current": "HOPT | You can use ONE of —\n① If this card is sent from the Deck to the GY: Send as many cards you control as possible to the GY, and if you do, Special Summon this card, then send cards your opponent controls to the GY up to the number sent to the GY by this effect. Neither player can activate monster effects in response to this effect's activation.\n② If this card is sent to the GY, except from the Deck: <b>You can send 1 card from your hand to the GY;</b> send 1 card on the field to the GY.",
-        "previous": null
+        "_current": "1 Level 4 or lower Dragon or Spellcaster monster\n① You cannot Special Summon, except Dragon monsters.\n② HOPT | If this card is Link Summoned: You can take 1 \"Mausoleum of White\" from your Deck and either add it to your hand or send it to the GY.\n③ HOPT | <b>You can Tribute this card;</b> Special Summon 1 \"Blue-Eyes\" monster from your hand or GY, but if you Special Summoned an Effect Monster from your GY by this effect, it cannot attack and its effects are negated.",
+        "previous": "1 Level 4 or lower Dragon or Spellcaster monster\nYou cannot Special Summon, except Dragon monsters. You can only use each of the following effects of \"Spirit with Eyes of Blue\" once per turn. If this card is Link Summoned: You can take 1 \"Mausoleum of White\" from your Deck and either add it to your hand or send it to the GY. <b>You can Tribute this card;</b> Special Summon 1 \"Blue-Eyes\" monster from your hand or GY, but if you Special Summoned an Effect Monster from your GY by this effect, it cannot attack and its effects are negated."
     },
     "Wishes for Eyes of Blue": {
-        "_current": "<b>DISCARD 1 card;</b> SEARCH 1 Level 1 LIGHT Tuner, and 1 Spell/Trap that mentions \"Blue-Eyes White Dragon\", except \"Wishes for Eyes of Blue\". <b>You can BANISH this card from your GY, then target 1 \"Blue-Eyes White Dragon\" you control;</b> equip 1 \"Blue-Eyes\" monster from your Extra Deck to it as an Equip Spell that gives it 400 ATK. You can only use each effect of \"Wishes for Eyes of Blue\" once per turn.",
-        "previous": null
-    },
-    "X-Cross Cannon": {
-        "_current": "① HOPT | If you control a LIGHT Machine Fusion or Union monster: You can Special Summon this card from your hand.\n② YOUR MAIN PHASE | HOPT | You can equip 1 appropriate LIGHT Machine Union monster from your Deck to this card as an Equip Spell as if it were equipped by that monster's effect, also you cannot Special Summon from the Extra Deck for the rest of this turn, except LIGHT monsters.",
-        "previous": null
-    },
-    "Y-Yare Head": {
-        "_current": "① If this card is Special Summoned: You can equip 1 Level 4 LIGHT Machine monster from your hand or GY to this card as an Equip Spell, also you cannot Special Summon from the Extra Deck for the rest of this turn, except LIGHT monsters.\n② OPT | You can either: <b>Target 1 Machine monster you control;</b> equip this card to that target, OR: Unequip this card and Special Summon it. If the equipped monster would be destroyed, DESTROY this card instead.",
-        "previous": null
-    },
-    "Z-Zillion Tank": {
-        "_current": "① If this card is Special Summoned: You can equip 1 of your banished Level 4 LIGHT Machine monsters to this card as an Equip Spell, also you cannot Special Summon from the Extra Deck for the rest of this turn, except LIGHT monsters.\n② OPT | You can either: <b>Target 1 Machine monster you control;</b> equip this card to that target, OR: Unequip this card and Special Summon it. If the equipped monster would be destroyed, DESTROY this card instead.",
-        "previous": null
-    },
-    "Zoma the Earthbound Spirit": {
-        "_current": "① HOPT | Special Summon this card as an Effect Monster (Zombie/DARK/Level 4/ATK 1800/DEF 500) with the following effect (this card is also still a Trap).\n● All monsters your opponent controls that can attack must attack this card.\n② HOPT | If this card Summoned this way is destroyed by an opponent's monster's attack: Inflict damage to your opponent (max. 3000) equal to double the original ATK of the attacking monster.",
-        "previous": null
+        "_current": "① HOPT | <b>DISCARD 1 card;</b> SEARCH 1 Level 1 LIGHT Tuner, and 1 Spell/Trap that mentions \"Blue-Eyes White Dragon\", except \"Wishes for Eyes of Blue\".\n② HOPT | <b>You can BANISH this card from your GY, then target 1 \"Blue-Eyes White Dragon\" you control;</b> equip 1 \"Blue-Eyes\" monster from your Extra Deck to it as an Equip Spell that gives it 400 ATK.",
+        "previous": "<b>DISCARD 1 card;</b> SEARCH 1 Level 1 LIGHT Tuner, and 1 Spell/Trap that mentions \"Blue-Eyes White Dragon\", except \"Wishes for Eyes of Blue\". <b>You can BANISH this card from your GY, then target 1 \"Blue-Eyes White Dragon\" you control;</b> equip 1 \"Blue-Eyes\" monster from your Extra Deck to it as an Equip Spell that gives it 400 ATK. You can only use each effect of \"Wishes for Eyes of Blue\" once per turn."
     }
 }
