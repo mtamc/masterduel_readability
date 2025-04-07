@@ -1,1 +1,26 @@
-{}
+{
+    "Mementomictlan Tecuhtlica - Creation King": {
+        "_current": "3 \"Memento\" monsters\n① HOPT | <b>You can BANISH this card from your GY;</b> SEARCH 1 \"Mementomictlan\".\nYou cannot activate the following effects of \"Mementomictlan Tecuhtlica - Creation King\" in the same Chain.\n② HOPT | If this card is Fusion Summoned: You can send 3 \"Memento\" cards from your Deck and/or Extra Deck to the GY.\n③ HOPT | QUICK | <b>You can target an equal number of \"Memento\" monsters you control and cards your opponent controls;</b> DESTROY them.",
+        "previous": null
+    },
+    "Necroquip Princess": {
+        "_current": "1 monster equipped with a Monster Card + 1 Fiend Monster Card\nMust be Special Summoned (from your Extra Deck) by sending the above cards from your hand and/or field to the GY.\n① You can only control 1 \"Necroquip Princess\".\n② HOPT | If a monster(s) is sent from the hand to the GY to activate a card or effect: <b>You can activate 1 of these effects;</b> \n● Equip 1 of those monsters to this card as an Equip Spell that gives it 500 ATK.\n● DRAW 1 card.",
+        "previous": null
+    },
+    "Primite Imperial Dragon": {
+        "_current": "Cannot be Normal Summoned, except by Tributing 1 Normal Monster (but can be Normal Set).\n① OPP'S MAIN PHASE | HOPT | QUICK | <b>You can reveal this card in your hand;</b> immediately after this effect resolves, Normal Summon 1 \"Primite\" monster.\n② If this card is Tribute Summoned: You can apply these effects in sequence.\n● NEGATE the effects of all face-up monsters your opponent currently controls.\n● BANISH all monsters your opponent controls with the same Type or Attribute as a Normal Monster in your GY.",
+        "previous": null
+    },
+    "Surfacing Big Jaws": {
+        "_current": "① If this card is used for the Xyz Summon of a WATER monster, it can be treated as a Level 3 or 5 monster.\n② YOUR MAIN PHASE | HOPT | If a Spell Card was activated this turn: You can Special Summon this card from your hand, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Xyz Monsters.\n③ HOPT | If this card is Normal or Special Summoned: You can SEARCH 1 Fish \"Shark\" monster.",
+        "previous": null
+    },
+    "Theia, the Primal Being": {
+        "_current": "① MAIN PHASE | HOPT | QUICK | <b>You can Tribute monsters whose total Levels equal 11 or more;</b> Special Summon this card from your hand, then if you control no other monsters, you can DESTROY 1 monster on the field with the highest ATK (your choice, if tied).\n② Neither player can Normal and/or Special Summon more than 4 times per turn while this card is face-up in the Monster Zone.",
+        "previous": null
+    },
+    "Varar, Vaalmonican Concord": {
+        "_current": "2 monsters, including a \"Vaalmonica\" Link Monster\n① Unaffected by card effects, except \"Vaalmonica\" cards, while you have 6 or more Resonance Counters on your field.\n② Gains 1 additional attack during each Battle Phase, for each Level 4 \"Vaalmonica\" monster you control.\n③ OPT | QUICK | When your opponent would Special Summon a monster(s), if you have 3+ Resonance Counters on your field: You can NEGATE the Special Summon, and if you do, DESTROY that monster(s), then remove 3 Resonance Counters from your field.",
+        "previous": null
+    }
+}
