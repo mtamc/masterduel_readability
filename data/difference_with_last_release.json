@@ -1,26 +1,166 @@
 {
-    "Mementomictlan Tecuhtlica - Creation King": {
-        "_current": "3 \"Memento\" monsters\n① HOPT | <b>You can BANISH this card from your GY;</b> SEARCH 1 \"Mementomictlan\".\nYou cannot activate the following effects of \"Mementomictlan Tecuhtlica - Creation King\" in the same Chain.\n② HOPT | If this card is Fusion Summoned: You can send 3 \"Memento\" cards from your Deck and/or Extra Deck to the GY.\n③ HOPT | QUICK | <b>You can target an equal number of \"Memento\" monsters you control and cards your opponent controls;</b> DESTROY them.",
+    "Ancient Sacred Wyvern": {
+        "_current": "1 LIGHT Tuner + 1+ non-Tuner monsters\n① While your LP is higher than your opponent's, this card gains ATK equal to the difference. While your LP is lower than your opponent's, this card loses ATK equal to the difference.\n② When this card is destroyed by battle and sent to the GY: <b>You can pay 1000 LP;</b> Special Summon this card.",
+        "previous": "1 LIGHT Tuner + 1 or more non-Tuner monsters\n① While your LP is higher than your opponent's, this card gains ATK equal to the difference. While your LP is lower than your opponent's, this card loses ATK equal to the difference.\n② When this card is destroyed by battle and sent to the GY: <b>You can pay 1000 LP;</b> Special Summon this card."
+    },
+    "Aqua Jet Surface": {
+        "_current": "① HOPT | Special Summon 1 Level 4 or lower Fish, Sea Serpent, or Aqua monster from your hand or GY, but you cannot Special Summon from the Extra Deck, except Xyz Monsters, while you control that face-up monster.\n② HOPT | If your opponent controls an Attack Position monster: <b>You can BANISH this card from your GY, then target 1 Fish, Sea Serpent, or Aqua monster you control;</b> it gains 1000 ATK until the end of this turn.",
         "previous": null
     },
-    "Necroquip Princess": {
-        "_current": "1 monster equipped with a Monster Card + 1 Fiend Monster Card\nMust be Special Summoned (from your Extra Deck) by sending the above cards from your hand and/or field to the GY.\n① You can only control 1 \"Necroquip Princess\".\n② HOPT | If a monster(s) is sent from the hand to the GY to activate a card or effect: <b>You can activate 1 of these effects;</b> \n● Equip 1 of those monsters to this card as an Equip Spell that gives it 500 ATK.\n● DRAW 1 card.",
+    "Armored Shark": {
+        "_current": "(This card is always treated as an \"Armored Xyz\" card.)\n① HOPT | <b>You can send 1 WATER Xyz Monster from your Extra Deck to the GY, then target 1 Fish monster in your GY with the same Level as the Rank of that monster;</b> Special Summon it.\n② OPP'S TURN | HOPT | QUICK | If this card is in your GY: <b>You can target 1 WATER Xyz Monster you control;</b> equip this card to that monster as an Equip Spell that gives it 500 ATK.",
         "previous": null
     },
-    "Primite Imperial Dragon": {
-        "_current": "Cannot be Normal Summoned, except by Tributing 1 Normal Monster (but can be Normal Set).\n① OPP'S MAIN PHASE | HOPT | QUICK | <b>You can reveal this card in your hand;</b> immediately after this effect resolves, Normal Summon 1 \"Primite\" monster.\n② If this card is Tribute Summoned: You can apply these effects in sequence.\n● NEGATE the effects of all face-up monsters your opponent currently controls.\n● BANISH all monsters your opponent controls with the same Type or Attribute as a Normal Monster in your GY.",
+    "Centur-Ion Atrii": {
+        "_current": "① If this card you control would be used as Synchro Material, you can treat it as a non-Tuner.\n② HOPT | If this card is Normal or Special Summoned, and you have both an \"Emblema\" card and a \"Centur-Ion\" card in your GY: You can DRAW 1 card, also you cannot Special Summon \"Centur-Ion Atrii\" for the rest of this turn.\n③ MAIN PHASE | HOPT | If this card is a Continuous Trap: You can Special Summon this card.",
         "previous": null
     },
-    "Surfacing Big Jaws": {
-        "_current": "① If this card is used for the Xyz Summon of a WATER monster, it can be treated as a Level 3 or 5 monster.\n② YOUR MAIN PHASE | HOPT | If a Spell Card was activated this turn: You can Special Summon this card from your hand, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Xyz Monsters.\n③ HOPT | If this card is Normal or Special Summoned: You can SEARCH 1 Fish \"Shark\" monster.",
+    "Centur-Ion Chimerea": {
+        "_current": "① HOPT | QUICK | When your opponent activates a monster effect as Chain Link 2 or higher: You can make the activated effect become \"Your opponent places 1 \"Centur-Ion\" monster from their face-up field or GY in their Spell & Trap Zone as a face-up Continuous Trap\", also you cannot Special Summon \"Centur-Ion Chimerea\" for the rest of this turn.\n② MAIN PHASE | HOPT | If this card is a Continuous Trap: You can Special Summon this card.",
         "previous": null
     },
-    "Theia, the Primal Being": {
-        "_current": "① MAIN PHASE | HOPT | QUICK | <b>You can Tribute monsters whose total Levels equal 11 or more;</b> Special Summon this card from your hand, then if you control no other monsters, you can DESTROY 1 monster on the field with the highest ATK (your choice, if tied).\n② Neither player can Normal and/or Special Summon more than 4 times per turn while this card is face-up in the Monster Zone.",
+    "Cutter Shark": {
+        "_current": "① HOPT | QUICK | When a card or effect is activated that targets 1 monster you control (and no other cards) or when a monster you control is targeted for an attack, while this card is in your hand or GY: <b>You can Tribute that monster;</b> Special Summon this card.\n② HOPT | If this card is Special Summoned: <b>You can activate this effect;</b> during the End Phase of this turn, add 1 WATER monster from your GY to your hand, except \"Cutter Shark\".",
         "previous": null
     },
-    "Varar, Vaalmonican Concord": {
-        "_current": "2 monsters, including a \"Vaalmonica\" Link Monster\n① Unaffected by card effects, except \"Vaalmonica\" cards, while you have 6 or more Resonance Counters on your field.\n② Gains 1 additional attack during each Battle Phase, for each Level 4 \"Vaalmonica\" monster you control.\n③ OPT | QUICK | When your opponent would Special Summon a monster(s), if you have 3+ Resonance Counters on your field: You can NEGATE the Special Summon, and if you do, DESTROY that monster(s), then remove 3 Resonance Counters from your field.",
+    "Dragon's Bind": {
+        "_current": "① <b>Activate this card by targeting 1 Dragon monster you control with 2500 or less ATK and DEF;</b> neither player can Special Summon monsters with ATK less than or equal to the original ATK of that monster.\n② When that monster leaves the field, DESTROY this card.",
+        "previous": "① <b>Activate this card by targeting 1 Dragon-Type monster you control with 2500 or less ATK and DEF;</b> neither player can Special Summon monsters with ATK less than or equal to the original ATK of that monster.\n② When that monster leaves the field, DESTROY this card."
+    },
+    "Drake Shark": {
+        "_current": "① OPT | <b>A \"Shark Drake\" Xyz Monster that has this card as material gains this effect.\n● You can detach 2 materials from this card, then target 1 Spell/Trap on the field;</b> attach it to this card as material.② \n③ HOPT | If this card is added to your hand, except by DRAWING it: You can Special Summon this card.\n④ HOPT | This card can be treated as 2 materials for the Xyz Summon of a WATER Xyz Monster that requires 3 or more materials.",
+        "previous": null
+    },
+    "Emblema Salvation": {
+        "_current": "HOPT ACTIVATION\n① <b>BANISH 1 face-up \"Centur-Ion\" Monster Card from your Spell & Trap Zone, then target 1 card your opponent controls;</b> BANISH it.\n② If this Set card in its owner's control is destroyed or banished by an opponent's activated effect: You can place 2 \"Centur-Ion\" monsters with different names from your hand, Deck, GY, and/or BANISHment in your Spell & Trap Zone as face-up Continuous Traps.",
+        "previous": null
+    },
+    "Heavy Polymerization": {
+        "_current": "Fusion Summon 1 Fusion Monster from your Extra Deck, using 3 or more monsters from your hand or field as material. You can also BANISH monsters from your Extra Deck as material, up to the number of monsters your opponent controls, but you lose LP equal to the total ATK of monsters banished this way, when the monster is Fusion Summoned.",
+        "previous": null
+    },
+    "Heosvarog the Mechanical Dawn": {
+        "_current": "2 LIGHT Machine monsters\n① HOPT | If this card is Fusion Summoned: <b>You can activate this effect;</b> during the Standby Phase of the next turn, add 1 card from your GY to your hand, with an effect that Fusion Summons a monster(s).\n② HOPT | QUICK | When your opponent activates a Spell/Trap Card or effect: <b>You can BANISH 1 face-up LIGHT Machine monster you control or 2 LIGHT Machine monsters from your GY;</b> NEGATE the activation.",
+        "previous": null
+    },
+    "Hydrojet Shark": {
+        "_current": "① If a WATER Xyz Monster is on the field, you can Special Summon this card (from your hand), but you cannot Special Summon \"Hydrojet Shark\" for the rest of this turn.\nHOPT | You can use ONE of:\n② YOUR MAIN PHASE | You can send 1 Fish \"Shark\" monster or 1 \"Xyz\" Spell/Trap from your Deck to the GY.\n③ <b>You can BANISH this card from your GY;</b> SEARCH 1 \"Aqua Jet\" card (from DECK or GY).",
+        "previous": null
+    },
+    "LeVirtue Dragon": {
+        "_current": "2 Level 3 monsters\n① HOPT | If this card is Special Summoned: You can SEARCH 1 \"Virtue Stream\".\n② HOPT | <b>You can activate 1 of these effects;</b> \n● Detach 1 material from a monster you control, then add 1 Fish, Sea Serpent, or Aqua monster from your GY to your hand, except \"LeVirtue Dragon\".\n● Target 2 Xyz Monsters on the field; attach 1 material from 1 of those monsters to the other.",
+        "previous": null
+    },
+    "Mementotlan Akihiron": {
+        "_current": "① HOPT | If this card is Normal or Special Summoned: <b>You can activate this effect;</b> this turn, Level 9 or higher \"Memento\" monsters can attack directly.\n② HOPT | If this card is destroyed by card effect: <b>You can target 1 of your other \"Memento\" cards that is banished or in your GY;</b> add it to your hand.\n③ HOPT | If a \"Memento\" monster(s) in your hand and/or face-up field is destroyed, while this card is in your GY: You can Special Summon this card.",
+        "previous": null
+    },
+    "Mementotlan Shleepy": {
+        "_current": "① HOPT | QUICK | During the turn a monster(s) in your possession was destroyed by card effect: You can Special Summon this card from your hand.\n② HOPT | If this card is Normal or Special Summoned: You can Fusion Summon 1 \"Memento\" Fusion Monster from your Extra Deck, using monsters from your hand or field.\n③ HOPT | If this card is destroyed: You can send 1 \"Memento\" card from your Deck to the GY, except \"Mementotlan Shleepy\".",
+        "previous": null
+    },
+    "Migratory Zereort": {
+        "_current": "① HOPT | If a WATER Xyz Monster is on the field: You can Special Summon this card from your hand.\n② YOUR MAIN PHASE | HOPT | You can detach 1 material from a monster you control, then you can Special Summon 1 Level 3 or 4 WATER monster from your hand or GY, but its effects are negated, also it can be treated as a Level 5 monster this turn, if used for the Xyz Summon of a WATER monster.",
+        "previous": null
+    },
+    "Mind Castlin": {
+        "_current": "1 Tuner + 1+ non-Tuner monsters\n① HOPT | <b>You can target 1 face-up monster your opponent controls;</b> switch control of that monster and this card.\n② HOPT | If this Synchro Summoned card is sent to the GY: <b>You can target 1 face-up monster on each field;</b> switch control of those monsters.",
+        "previous": null
+    },
+    "Newbee!": {
+        "_current": "① HOPT | If you have a monster with 0 ATK/DEF in your GY, you can Special Summon this card (from your hand).\n② HOPT | If this card is Special Summoned from the hand: You can apply these effects in sequence.\n● Add 1 LIGHT Insect monster from your GY to your hand, except \"Newbee!\".\n● Place 1 of your Traps that is banished or in your GY on either the top or bottom of the Deck.",
+        "previous": null
+    },
+    "Number 70: Malevolent Sin": {
+        "_current": "2 Level 4 monsters\n① OPT | <b>You can detach 1 material from this card, then target 1 monster your opponent controls;</b> BANISH it until your opponent's next Standby Phase.\n② At the end of the Damage Step, if this card attacked: You can make this card gain 300 ATK, and if you do, increase its Rank by 3.",
+        "previous": "2 Level 4 monsters\n① OPT | <b>You can detach 1 Xyz Material from this card, then target 1 monster your opponent controls;</b> BANISH it until your opponent's next Standby Phase.\n② At the end of the Damage Step, if this card attacked: You can make this card gain 300 ATK, and if you do, increase its Rank by 3."
+    },
+    "Ocean of Regeneration": {
+        "_current": "HOPT | <b>You can target 1 WATER monster with 1000 or less ATK in your GY;</b> Special Summon it, but DESTROY it during the End Phase.",
+        "previous": null
+    },
+    "Primite Dragon Ether Beryl": {
+        "_current": "① If this card is Normal Summoned: You can Set 1 \"Primite\" Spell/Trap from your Deck.\n② HOPT | <b>You can Tribute this card;</b> send 1 Normal Monster from your Deck to the GY.\n③ YOUR STANDBY PHASE | HOPT | If you have a Normal Monster in your field or GY: You can add this card from the GY to your hand.",
+        "previous": null
+    },
+    "Primite Drillbeam": {
+        "_current": "① HOPT | <b>Reveal 1 \"Primite\" card, or 1 Normal Monster, in your hand, except \"Primite Drillbeam\" (or if you control a Normal Monster or a Level 5 or higher \"Primite\" monster, except a Token, you can activate this effect without revealing a card), then target 1 face-up card on the field;</b> NEGATE its effects, and if you do, BANISH it.\n② YOUR MAIN PHASE | HOPT | If you control a \"Primite\" monster: You can Set this card from your GY.",
+        "previous": null
+    },
+    "Primite Howl": {
+        "_current": "① <b>Declare 1 Normal Monster Card name;</b> you take no battle damage from battles involving your declared Normal Monsters or your \"Primite\" monsters (for the rest of this turn), then if you control no monsters, you can Special Summon 1 declared Normal Monster from your Deck or GY.\n② OPP'S TURN | <b>You can BANISH this card from your GY, then target 1 Normal Monster you control or in your GY;</b> take control of 1 monster your opponent controls with higher ATK than that monster, until the End Phase.",
+        "previous": null
+    },
+    "Primite Lordly Lode": {
+        "_current": "① When this card is activated: SEARCH 1 \"Primite\" card except \"Primite Lordly Lode\".\n② <b>You can declare 1 Normal Monster Card name;</b> Special Summon 1 declared Normal Monster from your hand, Deck, or GY in Defense Position, also you cannot activate the effects of Special Summoned monsters on the field this turn.\nYou can only use each effect of \"Primite Lordly Lode\" once per turn.\n③ Normal Monsters and \"Primite\" monsters you control gain 300 ATK for each Normal Monster with different names in your GY.",
+        "previous": null
+    },
+    "Primite Roar": {
+        "_current": "① <b>Pay 2000 LP, then declare 1 Normal Monster Card name;</b> the declared Normal Monsters and \"Primite\" monsters you control cannot be destroyed by battle (until the end of your opponent's turn), then if you control no monsters, you can Special Summon 1 declared Normal Monster from your Deck in Defense Position.\n② If your opponent Normal Summons a monster: <b>You can BANISH this card from your GY, then target 1 Normal Monster you control or in your GY;</b> BANISH 1 monster from the field with less ATK than that monster.",
+        "previous": null
+    },
+    "Primite Scream": {
+        "_current": "① HOPT | When your opponent would Normal or Special Summons a monster(s), while you control a Normal Monster or a Level 5 or higher \"Primite\" monster, except a Token: NEGATE the Summon, and if you do, BANISH that monster(s).\n② YOUR STANDBY PHASE | HOPT | If you control a \"Primite\" monster: You can Set this card from your GY, but BANISH it when it leaves the field.",
+        "previous": null
+    },
+    "Puppet Shark": {
+        "_current": "HOPT ACTIVATION\nDetach 1 material from a monster on either field, and if you do, EXCAVATE the top 4 cards of your Deck, choose 1 of them, and apply the appropriate effect based on its card type, also place the rest on top of the Deck in the same order.\n● Monster/Spell: Add it to your hand.\n● Trap: Set it. It can be activated this turn.",
+        "previous": null
+    },
+    "Regulus": {
+        "_current": "OPT | <b>You can target 1 Field Spell in your GY;</b> shuffle it into the Deck.",
+        "previous": "OPT | You can select 1 Field Spell Card in your GY.\nReturn it to the Deck."
+    },
+    "Reincarnation Unveiling Mail": {
+        "_current": "HOPT ACTIVATION\n(This card is always treated as an \"Armored Xyz\" card.)\n\n① OPT | QUICK | An Xyz Monster equipped with this card gains these effects.\n● Cannot be destroyed by battle.\n● if this card battled this turn: You can BOUNCE 1 card equipped to this card, then immediately after this effect resolves, Xyz Summon 1 WATER Xyz Monster.\n② END PHASE | OPT | If this card is in the GY because it was sent there this turn: You can equip this card to 1 Xyz Monster you control.",
+        "previous": null
+    },
+    "Succumbing-Song Morganite": {
+        "_current": "① For the rest of this Duel, apply the following effects.\n● You cannot activate monster effects in the hand.\n● Monsters you control can make up to 2 attacks on monsters during each Battle Phase.\n● If your monster battles an opponent's monster, any battle damage it inflicts to your opponent is doubled.\n② <b>You can BANISH this card from your GY;</b> SEARCH 1 \"Morganite\" card then place 1 card from your hand on the bottom of the Deck.",
+        "previous": null
+    },
+    "The League of Uniform Nomenclature Strikes": {
+        "_current": "HOPT ACTIVATION\n<b>Target 1 face-up monster you control;</b> equip 2 monsters with the same original name as that target from your hand, Deck, and/or GY to that target as Equip Spells, and if you do, it cannot attack or be destroyed by battle while equipped with those 2 cards. You cannot Special Summon for the rest of this turn after this card resolves, except monsters with the same original Type as the targeted monster.",
+        "previous": null
+    },
+    "Three in One": {
+        "_current": "① OPP'S END PHASE | If your opponent has more total cards in their hand and field than you have in your hand and field: Special Summon 3 Normal Monsters from your GY.\n② <b>You can BANISH this card from your GY, then target 3 Monster Cards you control with different original names;</b> Set 1 Spell/Trap from your hand or Deck that mentions the original names of all 3 targets.",
+        "previous": null
+    },
+    "Transcode Talker": {
+        "_current": "2+ Effect Monsters\n① While this card is co-linked, it and its co-linked monsters gain 500 ATK, also your opponent cannot target any of them with card effects.\n② HOPT | <b>You can target 1 Link-3 or lower Cyberse Link Monster in your GY, except \"Transcode Talker\";</b> Special Summon it to your zone this card points to. You cannot Special Summon the turn you activate this effect, except Cyberse monsters.",
+        "previous": "2+ Effect Monsters\n① While this card is co-linked, it and its co-linked monsters gain 500 ATK, also your opponent cannot target any of them with card effects.\n② HOPT | <b>You can target 1 Link-3 or lower Cyberse Link Monster in your GY, except \"Transcode Talker\";</b> Special Summon it to your zone this card points to. You cannot Special Summon monsters the turn you activate this effect, except Cyberse monsters."
+    },
+    "Tri-Edge Levia": {
+        "_current": "3 Level 3 monsters\n① BANISH any monster destroyed by battle with this card.\n② OPT | QUICK | <b>You can detach 1 material from this card, then target 1 face-up monster on the field;</b> it loses 800 ATK, also its effects are negated. These changes last until the end of this turn.",
+        "previous": "3 Level 3 monsters\n① BANISH any monster destroyed by battle with this card.\n② OPT | During either player's turn: <b>You can detach 1 Xyz Material from this card, then target 1 face-up monster on the field;</b> it loses 800 ATK, also its effects are negated. These changes last until the end of this turn."
+    },
+    "Tsuru-Puru-Purun": {
+        "_current": "HOPT | If this card is in your hand: <b>You can target 1 WATER monster in your Main Monster Zone;</b> DESTROY that monster you control, and if you do, Special Summon this card to the zone that monster was in, then you can DESTROY all face-up cards your opponent controls in this card's column.",
+        "previous": null
+    },
+    "Vaalmonica Creation": {
+        "_current": "① While you have 6 or more Resonance Counters on your field, \"Vaalmonica\" Link Monsters you control gain 1200 ATK.\n② HOPT | If your opponent Special Summons a monster(s), you can (except during the Damage Step): Immediately after this effect resolves, Link Summon 1 \"Vaalmonica\" Link Monster.\n③ HOPT | If this card is sent from the hand or field to the GY: You can place Resonance Counters on 1 card in your Pendulum Zone that you can place a Resonance Counter on, so it has 3 Resonance Counters.",
+        "previous": null
+    },
+    "Vaalmonica Ereditare": {
+        "_current": "HOPT | You can use ONE of —\n① When a Spell/Trap Card, or monster effect, is activated while you control a \"Vaalmonica\" Link Monster: NEGATE the activation, and if you do, DESTROY that card.\n② <b>You can BANISH this card from your GY;</b> shuffle into the Deck, \"Vaalmonica\" cards from your face-up Extra Deck, GY, and/or BANISHment, except \"Vaalmonica Ereditare\", up to the number of Resonance Counters on your field, then you can DRAW 1 card for every 3 cards shuffled.",
+        "previous": null
+    },
+    "Vicious Claw": {
+        "_current": "① The equipped monster gains 300 ATK.\n② If the equipped monster would be destroyed by battle, BOUNCE this card instead, then DESTROY 1 monster, except the one that battled the equipped monster, and if you do, inflict 600 damage to your opponent. Then, Special Summon 1 \"Evil Token\" (Fiend/DARK/Level 7/ATK 2500/DEF 2500) to your opponent's field.\n③ During the turn this card is returned to your hand, you cannot use \"Vicious Claw\" from your hand.",
+        "previous": "① The equipped monster gains 300 ATK.\n② If the equipped monster would be destroyed by battle, return this card to its owner's hand instead. Then, DESTROY 1 monster, except the one that battled the equipped monster, and inflict 600 damage to your opponent.\n③ After that, Special Summon 1 \"Evil Token\" (Fiend-Type/DARK/Level 7/ATK 2500/DEF 2500) on your opponent's side of the field.\nDuring the turn this card is returned to your hand, you cannot use \"Vicious Claw\" from your hand."
+    },
+    "Virtue Stream": {
+        "_current": "① HOPT | <b>Target 1 Fish, Sea Serpent, or Aqua monster you control and 2 cards your opponent controls;</b> DESTROY them.\n② HOPT | <b>You can BANISH this card from your GY, then target 1 face-up monster on the field;</b> if it is a WATER monster, the next time it would be destroyed by card effect this turn, it is not destroyed. If it is not, it becomes WATER.",
+        "previous": null
+    },
+    "Xyz Poseidon Splash": {
+        "_current": "HOPT | You can use ONE of —\n① If you control an Xyz Monster that has an Xyz Monster as material: <b>Declare 1 monster Attribute on the field;</b> DESTROY all monsters on the field with that Attribute, except monsters equipped with an Equip Spell.\n② <b>You can BANISH this card from your GY and detach 1 material from a monster you control;</b> Special Summon 1 Fish, Sea Serpent, or Aqua monster from your GY to either field.",
+        "previous": null
+    },
+    "Zapper Shrimp": {
+        "_current": "1 Tuner + 1 non-Tuner monster\n① HOPT | If this card is Special Summoned: <b>You can send 1 other card from your hand or field to the GY, then target 1 Spell/Trap your opponent controls;</b> DESTROY it.\n② QUICK | Once per Chain, during your opponent's Main Phase, you can: Immediately after this effect resolves, Synchro Summon using this card you control.",
         "previous": null
     }
 }
