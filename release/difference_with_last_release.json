@@ -1,1 +1,22 @@
-{}
+{
+    "Eclipse Wyvern": {
+        "_current": "① If this card is sent to the GY: BANISH 1 Level 7 or higher LIGHT or DARK Dragon monster from your Deck.\n② If this card is banished from your GY: You can add the monster banished by this card's effect to your hand.",
+        "previous": "① If this card is sent to the GY: BANISH 1 Level 7 or higher LIGHT or DARK Dragon-Type monster from your Deck.\n② If this card is banished from your GY: You can add the monster banished by this card's effect to your hand."
+    },
+    "Phoenixian Cluster Amaryllis": {
+        "_current": "This card cannot be Special Summoned except with its own effect or with \"Phoenixian Seed\".\n① If this card attacks, it is destroyed after damage calculation.\n② If this card you control is destroyed and sent to the GY, inflict 800 damage to your opponent.\n③ YOUR END PHASE | You can remove from play 1 Plant monster from your GY to Special Summon this card from your GY in Defense Position.",
+        "previous": "This card cannot be Special Summoned except with its own effect or with \"Phoenixian Seed\".\n① If this card attacks, it is destroyed after damage calculation.\n② If this card you control is destroyed and sent to the GY, inflict 800 damage to your opponent.\n③ YOUR END PHASE | You can remove from play 1 Plant-Type monster from your GY to Special Summon this card from your GY in Defense Position."
+    },
+    "Psychic Nightmare": {
+        "_current": "1 Tuner + 1 or more non-Tuner Psychic-Type monsters\n① YOUR MAIN PHASE | OPT | You can pick 1 random card in your opponent's hand and call what type of card it is (Monster, Spell or Trap).\nIf you call it right, this card gains 1000 ATK until your opponent's End Phase.",
+        "previous": "1 Tuner + 1 or more non-Tuner Psychic-Type monsters\n① YOUR MAIN PHASE | OPT | You can pick 1 random card in your opponent's hand and call what type of card it is (Monster, Spell or Trap). If you call it right, this card gains 1000 ATK until your opponent's End Phase."
+    },
+    "Scarm, Malebranche of the Burning Abyss": {
+        "_current": "If you control a monster that is not a \"Burning Abyss\" monster, DESTROY this card.\nHOPT | You can use ONE of:\n● If you control no Spell/Trap Cards: You can Special Summon this card from your hand.\n● During the End Phase, if this card is in the GY because it was sent there this turn: You can SEARCH 1 Level 3 DARK Fiend monster except \"Scarm, Malebranche of the Burning Abyss\".",
+        "previous": "If you control a monster that is not a \"Burning Abyss\" monster, DESTROY this card.\nHOPT | You can use ONE of:\n● If you control no Spell/Trap Cards: You can Special Summon this card from your hand.\n● During the End Phase, if this card is in the GY because it was sent there this turn: You can SEARCH 1 Level 3 DARK Fiend-Type monster except \"Scarm, Malebranche of the Burning Abyss\"."
+    },
+    "The Door of Destiny": {
+        "_current": "① When an opponent's monster declares a direct attack: NEGATE the attack, then Special Summon this card as an Effect Monster (Fiend/LIGHT/Level 1/ATK 0/DEF 0). (This card is also still a Trap Card.)\n② YOUR STANDBY PHASE | While this card is treated as a monster: <b>You can BANISH any number of \"Utopia\" monsters with different names from your GY;</b> inflict 500 damage to your opponent for each of those banished monsters, and if you do, this card gains ATK equal to the damage they took.",
+        "previous": "① When an opponent's monster declares a direct attack: NEGATE the attack, then Special Summon this card as an Effect Monster (Fiend-Type/LIGHT/Level 1/ATK 0/DEF 0). (This card is also still a Trap Card.)\n② YOUR STANDBY PHASE | While this card is treated as a monster: <b>You can BANISH any number of \"Utopia\" monsters with different names from your GY;</b> inflict 500 damage to your opponent for each of those banished monsters, and if you do, this card gains ATK equal to the damage they took."
+    }
+}
