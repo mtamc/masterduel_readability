@@ -1,10 +1,158 @@
 {
-    "Eria the Water Channeler": {
-        "_current": "(This card is always treated as a \"Charmer\" card.)\n① HOPT | <b>You can DISCARD this card and 1 other WATER monster;</b> SEARCH 1 WATER monster with an equal or higher Level than the other discarded monster, also you cannot activate non-WATER monster effects for the rest of this turn.\n② HOPT | When your WATER monster is destroyed by battle: You can Special Summon this card from your hand.",
+    "Abyss-steam": {
+        "_current": "① HOPT | DRAW cards equal to the number of different Monster Types among the monsters you control that are Fish, Sea Serpent, or Aqua monsters, also until the end of your next turn after this card resolves, you cannot Special Summon from the Extra Deck, except WATER monsters.\n② HOPT | If a face-up WATER monster(s) you control is destroyed, while this card is in your GY: <b>You can BANISH this card;</b> add 1 \"Mermail\" monster from your GY or BANISHment to your hand.",
         "previous": null
     },
-    "Lacrima the Crimson Tears": {
-        "_current": "(This card is always treated as a \"Fiendsmith\" card.)\n① HOPT | If this card is Normal or Special Summoned: You can send 1 \"Fiendsmith\" card from your Deck to the GY, except \"Lacrima the Crimson Tears\".\n② OPP'S TURN | HOPT | QUICK | If this card is in your GY: <b>You can target 1 \"Fiendsmith\" Link Monster in your GY;</b> shuffle this card into the Deck, and if you do, Special Summon that monster.",
+    "Abyss-sting Triaina": {
+        "_current": "HOPT ACTIVATION\n① Special Summon 1 \"Atlantean\" or \"Mermail\" monster from your hand or GY, and if you do, equip it with this card.\n② If the equipped monster would be destroyed, you can send this card to the GY instead.\n③ HOPT | <b>You can BANISH this card from your GY, then target up to 3 of your Fish, Sea Serpent, and/or Aqua monsters that are banished or in your GY;</b> shuffle them into the Deck.",
+        "previous": null
+    },
+    "Abyssrhine, the Atlantean Spirit": {
+        "_current": "(This card is always treated as a \"Mermail\" card.)\n① HOPT | <b>You can Tribute this card from your hand and 1 \"Atlantean\" or \"Mermail\" monster from your hand or field;</b> take 1 Level 7 Fish, Sea Serpent, or Aqua monster from your Deck and either add it to your hand or Special Summon it, also you cannot Special Summon from the Extra Deck for the rest of this turn, except WATER monsters.\n② OPP'S TURN | HOPT | QUICK | <b>You can BANISH this card from your GY and DISCARD 1 card to the GY;</b> DRAW 1 card.",
+        "previous": null
+    },
+    "Abysstrite, the Atlantean Spirit": {
+        "_current": "2+ Level 7 WATER monsters\n① WATER monsters you control gain 300 ATK/DEF for each material attached to this card.\n② HOPT | If this card is Xyz Summoned: <b>You can target 1 Level 7 or lower Fish, Sea Serpent, or Aqua monster in your GY;</b> Special Summon it.\n③ HOPT | <b>You can detach 1 material from this card;</b> Set 1 \"Abyss-\" Trap from your Deck.",
+        "previous": null
+    },
+    "Argostars - Fierce Parthe": {
+        "_current": "① Gains 700 ATK/DEF for each \"Argostars\" monster with a different name you control, except this card.\n② HOPT | QUICK | <b>You can reveal this card in your hand;</b> BOUNCE 1 \"Argostars\" Continuous Trap you control, and if you do, Special Summon this card.\n③ HOPT | <b>You can BANISH this card you control;</b> Set 1 Continuous Trap from your hand. It can be activated this turn.",
+        "previous": null
+    },
+    "Argostars - Giantslaying": {
+        "_current": "HOPT | You can use ONE of —\n① SEARCH 1 \"Argostars\" monster then immediately after this effect resolves, if a Continuous Trap is in your Monster Zone, or a Continuous Trap with an effect that Special Summons itself as a monster is in your Spell & Trap Zone, you can Normal Summon 1 Warrior monster.\n② YOUR MAIN PHASE | <b>You can BANISH this card from your GY, then target 2 cards on the field, including an \"Argostars\" Continuous Trap you control;</b> BOUNCE them.",
+        "previous": null
+    },
+    "Argostars - Home Stadium": {
+        "_current": "① OPT | <b>You can pay 1000 LP;</b> add 1 \"Argostars\" card from your GY or BANISHment to your hand.\n② Each time a Continuous Trap in the Spell & Trap Zone is Special Summoned to your field, inflict 500 damage to your opponent.\n③ Once per Chain, if a Continuous Trap activates its effect in your Monster Zone, while you have a banished \"Argostars\" monster: <b>You can target 1 face-up card your opponent controls;</b> NEGATE its effects until the end of this turn.",
+        "previous": null
+    },
+    "Argostars - Lightning Tydeu": {
+        "_current": "① While this card is face-up in the Spell & Trap Zone, Warrior monsters you control gain 500 ATK/DEF.\n② OPT | QUICK | <b>You can DISCARD 1 card;</b> Special Summon this card as an Effect Monster (Warrior/LIGHT/Level 4/ATK 2000/DEF 2000) with the following effect (this card is also still a Trap), then you can SEARCH 1 \"Argostars\" card except \"Argostars - Lightning Tydeu\".\n● You can place this card face-up in your Spell & Trap Zone.",
+        "previous": null
+    },
+    "Argostars - Slayer Eteo": {
+        "_current": "① While this card is face-up in the Spell & Trap Zone, Warrior monsters you control cannot be destroyed by card effects.\n② OPT | QUICK | When your opponent activates a card or effect: You can Special Summon this card as an Effect Monster (Warrior/LIGHT/Level 4/ATK 800/DEF 800) with the following effect (this card is also still a Trap), then if you have a banished \"Argostars\" monster, you can BOUNCE 1 card on the field.\n● You can place this card face-up in your Spell & Trap Zone.",
+        "previous": null
+    },
+    "Argostars - Swift Capane": {
+        "_current": "① While this card is face-up in the Spell & Trap Zone, Warrior monsters you control cannot be destroyed by battle.\n② OPT | QUICK | If a Continuous Trap is in a Monster Zone: You can Special Summon this card as an Effect Monster (Warrior/LIGHT/Level 4/ATK 1800/DEF 1800) with the following effect (this card is also still a Trap), then if you have a banished \"Argostars\" monster, you gain 500 LP.\n● You can place this card face-up in your Spell & Trap Zone.",
+        "previous": null
+    },
+    "Butterfly Fish": {
+        "_current": "HOPT | You can use ONE of —\n① If this card is sent to the GY to activate a monster effect: You can add this card to your hand.\n② If a monster(s) is sent to your GY, except by battle, while this card is in your GY (except during the Damage Step): <b>You can DISCARD 1 card to the GY;</b> Special Summon this card.\nYou cannot Special Summon from the Extra Deck, except WATER monsters, the turn you activate either of this card's effects.",
+        "previous": null
+    },
+    "Corrupted Keys": {
+        "_current": "<b>Target 1 face-up Xyz Monster you control;</b> Special Summon 3 \"Umbral Horror Mirage Tokens\" (Fiend-Type/DARK/Level 1/ATK ?/DEF 0). (When Summoned, each Token's ATK becomes equal to that Xyz Monster's current ATK. They cannot attack your opponent directly or be Tributed, except for a Tribute Summon.) When that face-up Xyz Monster leaves the field, DESTROY these Tokens.",
+        "previous": "<b>Target 1 face-up Xyz Monster you control;</b> Special Summon 3 \"Umbral Horror Mirage Tokens\" (Fiend-Type/DARK/Level 1/ATK ?/DEF 0). (When Summoned, each Token's ATK becomes equal to that Xyz Monster's current ATK. They cannot attack your opponent directly or be Tributed, except for a Tribute Summon.) When that face-up Xyz Monster leaves the field, DESTROY these tokens."
+    },
+    "Dark Contact": {
+        "_current": "<b>Activate 1 of these effects (but you can only use each effect of \"Dark Contact\" once per turn);</b> \n● Fusion Summon 1 Fusion Monster from your Extra Deck that must be Special Summoned with \"Dark Fusion\", by shuffling its materials from your field, GY, and/or BANISHment into the Deck. (This is treated as a Fusion Summon with \"Dark Fusion\".)\n● SEARCH 1 \"Supreme King's Castle\" or \"Dark Fusion\".",
+        "previous": null
+    },
+    "Dark Supremacy": {
+        "_current": "① HOPT | <b>Target face-up cards your opponent controls, up to the number of \"Dark Fusion\" and Spells that mention it in your GY;</b> NEGATE their effects until the end of this turn.\n② HOPT | If this card is in your GY, except the turn it was sent there: <b>You can BANISH it, then target up to 5 \"HERO\" monsters in your GY and/or BANISHment;</b> shuffle them into the Deck.",
+        "previous": null
+    },
+    "Depresspard": {
+        "_current": "① If this is the only card in your hand: You can Special Summon this card.\n② If you do: This card's ATK becomes 2500 until the end of your opponent's turn.\n③ If this card battles an opponent's monster, you take any battle damage your opponent would have taken from that battle.\n④ If you take damage from battles involving this card: This card's ATK becomes 0, then if your LP are 2000 or less, this card's ATK becomes 5000.",
+        "previous": null
+    },
+    "Dipity": {
+        "_current": "A cute little thing who lives in a glass bottle and is said to bring good luck to the one who makes a contract with it. The lid must never be opened, no matter what happens…",
+        "previous": null
+    },
+    "Double Wild": {
+        "_current": "HOPT ACTIVATION\n<b>Target 1 Level 5 or lower monster you control;</b> SEARCH 1 Level 10 monster with the same original Type, then you can DISCARD 1 card, and if you do, Special Summon 1 monster from your hand with that same Type, in Defense Position. You cannot Special Summon for the rest of this turn after this card resolves, except monsters with that original Type.",
+        "previous": null
+    },
+    "Evil Assault": {
+        "_current": "① HOPT | <b>DISCARD 1 card;</b> take 1 Level 4 or lower \"Evil HERO\" monster from your Deck and either add it to your hand or Special Summon it, also for the rest of this turn after this card resolves, you cannot Special Summon from the Extra Deck, except \"HERO\" monsters.\n② HOPT | If this card is in your GY, except the turn it was sent there: <b>You can BANISH this card from your GY;</b> add 1 \"Dark Fusion\" from your GY to your hand.",
+        "previous": null
+    },
+    "Evil HERO Darkest Knight": {
+        "_current": "1 Fiend monster + 1 Warrior monster\nMust be Special Summoned with \"Dark Fusion\".\n① Monsters your opponent controls lose ATK equal to the total original ATK of the materials used for this card's Fusion Summon.\n② Can make a second attack during each Battle Phase.\n③ If this face-up Special Summoned card in its owner's control leaves the field by an opponent's card: <b>You can target 1 Fiend or Warrior monster in your GY;</b> Special Summon it in Defense Position.",
+        "previous": null
+    },
+    "Evil HERO Dead-End Prison": {
+        "_current": "① HOPT | If you control a Fusion Monster that must be Special Summoned with \"Dark Fusion\", you can Special Summon this card (from your hand).\n② HOPT | <b>You can send 1 \"HERO\" monster from your Deck to the GY;</b> if you Fusion Summon a \"HERO\" monster this turn, this face-up card can be used as a substitute for 1 material mentioned by name, but all other Fusion Materials must be correct.",
+        "previous": null
+    },
+    "Evil HERO Infernal Rider": {
+        "_current": "① HOPT | If this card is Normal or Special Summoned: You can SEARCH 1 \"Dark Fusion\" (from DECK or GY).\n② HOPT | <b>You can BANISH this card and 4 other monsters from your GY;</b> Set 1 \"Super Polymerization\" from your Deck, also you cannot Special Summon (except \"HERO\" monsters), but you can Fusion Summon monsters that must be Special Summoned with \"Dark Fusion\", using other cards' effects. These effects last until the end of your opponent's turn.",
+        "previous": null
+    },
+    "Evil HERO Inferno Wing - Backfire": {
+        "_current": "\"Elemental HERO Avian\" or \"Elemental HERO Burstinatrix\" + 1 \"HERO\" monster\nMust be Special Summoned with \"Dark Fusion\".\n① HOPT | If this card is Special Summoned: You can SEARCH 1 \"Dark Fusion\" or 1 card that mentions it (from DECK or GY) except Fusion Monsters.\n② HOPT | If your \"HERO\" monster DESTROYS an opponent's monster by battle: Inflict 2100 damage to your opponent.",
+        "previous": null
+    },
+    "Evil HERO Toxic Bubble": {
+        "_current": "① HOPT | You can Special Summon this card (from your hand), but you cannot Special Summon for the rest of this turn, except \"HERO\" monsters.\n② HOPT | If this card is Special Summoned, and you control a Fusion Monster that must be Special Summoned with \"Dark Fusion\": You can DRAW 2 cards.",
+        "previous": null
+    },
+    "Evil HERO Vicious Claws": {
+        "_current": "① HOPT | <b>You can target 1 \"HERO\" monster on the field;</b> Special Summon this card from your hand in Defense Position, and if you do, that monster gains 300 ATK.\n② If a monster(s) you control is destroyed, while this card is in your GY: You can Special Summon this card, then if you have a monster that mentions \"Dark Fusion\" in your GY, you can DESTROY 1 card on the field.\nYou can only use this effect of \"Evil HERO Vicious Claws\" once per Duel.",
+        "previous": null
+    },
+    "Fiendsmith Kyrie": {
+        "_current": "① This turn, your LIGHT Fiend monsters cannot be destroyed by battle, also any battle damage you take becomes halved.\n② HOPT | <b>You can BANISH this card from your GY;</b> Fusion Summon 1 \"Fiendsmith\" Fusion Monster from your Extra Deck, using monsters you control, and/or monsters in your Spell & Trap Zones that are equipped to a \"Fiendsmith\" monster as an Equip Spell, as material.",
+        "previous": null
+    },
+    "Fiendsmith's Agnumday": {
+        "_current": "2+ monsters, including a LIGHT Fiend monster\n① OPT | QUICK | <b>You can target 1 LIGHT non-Link Fiend monster in your GY;</b> Special Summon it, and if you do, equip this card you control to that monster as an Equip Spell with the following effects.\n● The equipped monster gains ATK equal to the total Link Rating of Link Monsters equipped to it x 600.\n● The equipped monster is PIERCING.",
+        "previous": null
+    },
+    "Fiendsmith's Rextremende": {
+        "_current": "1 \"Fiendsmith\" Fusion Monster + 1 Fusion or Link Monster\n① Unaffected by card effects, except \"Fiendsmith\" cards, while equipped with a \"Fiendsmith\" Equip Spell.\n② HOPT | If this card is Fusion Summoned: <b>You can DISCARD 1 card;</b> send 1 LIGHT Fiend monster from your Deck or Extra Deck to the GY.\n③ HOPT | If this card is sent to the GY: <b>You can target 1 other \"Fiendsmith\" card in your GY or BANISHment;</b> add it to your hand.",
+        "previous": null
+    },
+    "Firestorms Over Atlantis": {
+        "_current": "① HOPT | <b>Activate 1 of these effects;</b> \n● DISCARD 1 WATER monster to the GY, then target 1 face-up monster your opponent controls; DESTROY it.\n● DESTROY 1 FIRE monster in your hand, then you can DRAW 1 card.\n② HOPT | If only your opponent controls a monster: <b>You can BANISH this card from your GY, then target 1 Level 7 or 8 WATER or FIRE monster in your GY;</b> Special Summon it.",
+        "previous": null
+    },
+    "Grand Knight of the Red Lotus": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand or GY) by shuffling up to 3 non-Effect Monsters from your GY into the Deck/Extra Deck. You can only Special Summon \"Grand Knight of the Red Lotus\" once per turn this way.\n① If Summoned this way, this card gains 800 ATK for each Normal Monster shuffled into the Deck for its Summon.\n② OPT | <b>You can target 1 monster on the field and 1 non-Effect Monster in your GY;</b> DESTROY that monster on the field, and if you do, Special Summon that other monster from your GY.",
+        "previous": null
+    },
+    "Hydor, the Base of All Things": {
+        "_current": "HOPT | You can use ONE of —\n① <b>Target 1 monster in either GY;</b> DESTROY 1 WATER monster on the target's owner's field, and if you do, Special Summon that target to that field in Defense Position.\n② If this card is in your GY, except the turn it was sent there: <b>You can BANISH this card, then target 1 WATER monster in either GY;</b> DESTROY 1 monster on the targeted monster's owner's field, and if you do, Special Summon that targeted monster to that field in Defense Position.",
+        "previous": null
+    },
+    "Lightstorm Dragon": {
+        "_current": "1 Tuner + 1+ non-Tuner monsters\n① HOPT | If this card is Special Summoned: <b>You can target Spells/Traps on the field up to the number of Normal Monsters in your GY +1;</b> DESTROY them.\n② HOPT | If this card is destroyed: <b>You can target 1 Spell/Trap in your GY;</b> Set it, but it cannot be activated unless you control a Normal Monster.",
+        "previous": null
+    },
+    "Mantman the Ultrahuman": {
+        "_current": "① Cannot be Tributed, or be destroyed by battle, while face-up on the field.\n② HOPT | If your opponent controls a face-up card you own: You can Special Summon this card from your hand.\n③ END PHASE | HOPT | If this card was Normal or Special Summoned this turn: You can place this card on the bottom of the Deck, then you can return 1 face-up card on the field you own to your hand.",
+        "previous": null
+    },
+    "Mermail King - Neptabyss": {
+        "_current": "2+ monsters, including a Fish, Sea Serpent, or Aqua monster\n① Your opponent cannot target WATER monsters this card points to with card effects.\n② HOPT | If a WATER monster(s) is sent to the GY to activate a card or effect (except during the Damage Step): You can take 1 \"Abyss-\" Equip Spell from your Deck or GY and either add it to your hand or equip it to this card.\n③ HOPT | If this card in its owner's possession is destroyed by an opponent's card: You can SEARCH 1 \"Atlantean\" or \"Mermail\" monster.",
+        "previous": null
+    },
+    "Mermail Shadow Squad": {
+        "_current": "(This card is always treated as an \"Atlantean\" card.)\n① HOPT | <b>You can DISCARD 1 card to the GY;</b> WATER monsters you currently control become Level 7 until the end of this turn.\n② HOPT | If this card is sent to the GY to activate a WATER monster's effect: Special Summon 1 Level 4 or lower \"Atlantean\" or \"Mermail\" monster from your Deck, except \"Mermail Shadow Squad\", also you cannot Special Summon from the Extra Deck for the rest of this turn, except WATER monsters.",
+        "previous": null
+    },
+    "Mystic Piper": {
+        "_current": "You can Tribute this card to DRAW and reveal 1 card.\nIf that card is a Level 1 Monster Card, DRAW 1 more card. The effect of \"Mystic Piper\" can only be activated once per turn.",
+        "previous": "You can Tribute this card to DRAW and reveal 1 card. If that card is a Level 1 Monster Card, DRAW 1 more card.\nThe effect of \"Mystic Piper\" can only be activated once per turn."
+    },
+    "Noh-P.U.N.K. Rising Scale": {
+        "_current": "① HOPT | <b>You can BANISH 1 other \"P.U.N.K.\" card from your hand or GY;</b> Special Summon this card from your hand.\n② HOPT | If this card is Special Summoned: <b>You can pay 600 LP;</b> add to your hand, or Special Summon, 1 \"P.U.N.K.\" monster from your Deck or GY, except a Level 8 monster.\n③ HOPT | QUICK | When a monster your opponent controls with 2500 or more ATK activates its effect: You can change it to face-down Defense Position.",
+        "previous": null
+    },
+    "P.U.N.K. JAM FEVER!": {
+        "_current": "2 Level 8 monsters\nOnce per turn, you can also Xyz Summon \"P. U. N. K. JAM FEVER!\" by using a \"P. U. N. K. \" Fusion or Synchro Monster you control.\n① HOPT | <b>You can pay 600 LP, then detach 1 material from this card;</b> DRAW 1 card.\n② HOPT | QUICK | When another monster's effect is activated and you have a Level 3 Psychic monster in your GY: <b>You can detach 1 material from this card;</b> NEGATE the activation, and if you do, DESTROY that monster.",
+        "previous": null
+    },
+    "Poseidra, the Storming Atlantean": {
+        "_current": "① While you control a monster, except \"Poseidra, the Storming Atlantean\", your opponent's monsters cannot target this card for attacks.\n② HOPT | <b>You can send 1 other WATER monster from your hand or face-up field to the GY;</b> Special Summon this card from your hand.\n③ HOPT | If this card is Normal or Special Summoned: <b>You can send 1 \"Atlantean\" or \"Mermail\" monster from your Deck to the GY, then target 1 card your opponent controls;</b> BOUNCE it.",
+        "previous": null
+    },
+    "QQ Enneagon": {
+        "_current": "① HOPT | If this card is in your hand or GY: <b>You can reveal 1 Level 9 monster in your hand, except \"QQ Enneagon\";</b> Special Summon both this card and the revealed monster in Defense Position, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Rank 9 or higher Xyz Monsters.\n② A Rank 9 or higher Xyz Monster that has this card as material gains this effect.\n● This card gains 900 ATK/DEF.",
         "previous": null
     }
 }
