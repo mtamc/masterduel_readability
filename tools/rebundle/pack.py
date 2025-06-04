@@ -20,24 +20,24 @@ for filepath in getFilesList("./install/"):
     for obj in env.objects:
         if obj.type.name == "TextAsset":
             data: Any = obj.read()
-            name = data.name.upper()
+            name = data.m_Name.upper()
             if name == "CARD_PART":
                 file = open('../../data/release_bytes/Card_Part.bytes', 'rb')
                 binary_data = file.read()
                 file.close()
-                data.script = binary_data
+                data.m_Script = binary_data.decode('utf-8', 'surrogateescape')
                 data.save()
             if name == "CARD_DESC":
                 file = open('../../data/release_bytes/CARD_Desc.bytes', 'rb')
                 binary_data = file.read()
                 file.close()
-                data.script = binary_data
+                data.m_Script = binary_data.decode('utf-8', 'surrogateescape')
                 data.save()
             if name == "CARD_INDX":
                 file = open('../../data/release_bytes/CARD_Indx.bytes', 'rb')
                 binary_data = file.read()
                 file.close()
-                data.script = binary_data
+                data.m_Script = binary_data.decode('utf-8', 'surrogateescape')
                 data.save()
         with open("./install/" + filepath, "wb") as f:
             f.write(env.file.save())
@@ -49,24 +49,24 @@ for filepath in getFilesList("./install_with_empty_lines/"):
     for obj in env.objects:
         if obj.type.name == "TextAsset":
             data: Any = obj.read()
-            name = data.name.upper()
+            name = data.m_Name.upper()
             if name == "CARD_PART":
                 file = open('../../data/release_bytes_with_empty_lines/Card_Part.bytes', 'rb')
                 binary_data = file.read()
                 file.close()
-                data.script = binary_data
+                data.m_Script = binary_data.decode('utf-8', 'surrogateescape')
                 data.save()
             if name == "CARD_DESC":
                 file = open('../../data/release_bytes_with_empty_lines/CARD_Desc.bytes', 'rb')
                 binary_data = file.read()
                 file.close()
-                data.script = binary_data
+                data.m_Script = binary_data.decode('utf-8', 'surrogateescape')
                 data.save()
             if name == "CARD_INDX":
                 file = open('../../data/release_bytes_with_empty_lines/CARD_Indx.bytes', 'rb')
                 binary_data = file.read()
                 file.close()
-                data.script = binary_data
+                data.m_Script = binary_data.decode('utf-8', 'surrogateescape')
                 data.save()
         with open("./install_with_empty_lines/" + filepath, "wb") as f:
             f.write(env.file.save())
@@ -78,24 +78,24 @@ for filepath in getFilesList("./install_with_numbering_only/"):
     for obj in env.objects:
         if obj.type.name == "TextAsset":
             data: Any = obj.read()
-            name = data.name.upper()
+            name = data.m_Name.upper()
             if name == "CARD_PART":
                 file = open('../../data/release_bytes_numbering_only/Card_Part.bytes', 'rb')
                 binary_data = file.read()
                 file.close()
-                data.script = binary_data
+                data.m_Script = binary_data.decode('utf-8', 'surrogateescape')
                 data.save()
             if name == "CARD_DESC":
                 file = open('../../data/release_bytes_numbering_only/CARD_Desc.bytes', 'rb')
                 binary_data = file.read()
                 file.close()
-                data.script = binary_data
+                data.m_Script = binary_data.decode('utf-8', 'surrogateescape')
                 data.save()
             if name == "CARD_INDX":
                 file = open('../../data/release_bytes_numbering_only/CARD_Indx.bytes', 'rb')
                 binary_data = file.read()
                 file.close()
-                data.script = binary_data
+                data.m_Script = binary_data.decode('utf-8', 'surrogateescape')
                 data.save()
         with open("./install_with_numbering_only/" + filepath, "wb") as f:
             f.write(env.file.save())
@@ -107,24 +107,24 @@ for filepath in getFilesList("./install_with_numbering_and_empty_lines_only/"):
     for obj in env.objects:
         if obj.type.name == "TextAsset":
             data: Any = obj.read()
-            name = data.name.upper()
+            name = data.m_Name.upper()
             if name == "CARD_PART":
                 file = open('../../data/release_bytes_numbering_and_newlines/Card_Part.bytes', 'rb')
                 binary_data = file.read()
                 file.close()
-                data.script = binary_data
+                data.m_Script = binary_data.decode('utf-8', 'surrogateescape')
                 data.save()
             if name == "CARD_DESC":
                 file = open('../../data/release_bytes_numbering_and_newlines/CARD_Desc.bytes', 'rb')
                 binary_data = file.read()
                 file.close()
-                data.script = binary_data
+                data.m_Script = binary_data.decode('utf-8', 'surrogateescape')
                 data.save()
             if name == "CARD_INDX":
                 file = open('../../data/release_bytes_numbering_and_newlines/CARD_Indx.bytes', 'rb')
                 binary_data = file.read()
                 file.close()
-                data.script = binary_data
+                data.m_Script = binary_data.decode('utf-8', 'surrogateescape')
                 data.save()
         with open("./install_with_numbering_and_empty_lines_only/" + filepath, "wb") as f:
             f.write(env.file.save())
