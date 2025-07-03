@@ -1,170 +1,22 @@
 {
-    "Alba System Dogmatikalamity": {
-        "_current": "\"Fallen of Albaz\" + 6 monsters in your GY with different names\nMust first be Fusion Summoned.\n① Can attack all your opponent's monsters, once each.\n② Cannot declare an attack unless you send 1 card from your Extra Deck to the GY.\n③ OPT | If you control this Fusion Summoned card and have 6 or more Fusion Monsters in your GY with different names that mention \"Fallen of Albaz\" as material: You can send all cards in each player's Extra Deck to the GY.",
+    "Battlewasp - Grand Partisan the Revolution": {
+        "_current": "1 Tuner + 1+ non-Tuner monsters\n① Cannot be destroyed by card effects.\n② Insect Synchro Monsters you control gain 200 ATK for each of your banished Insect monsters.\n③ HOPT | If this card is banished: You can Special Summon it, then you can DESTROY cards your opponent controls up to the number of your banished Insect monsters, then inflict 500 damage to your opponent for each card destroyed.",
         "previous": null
     },
-    "Clockwork Knight": {
-        "_current": "1 non-Link Machine monster with 1000 or less original ATK\n① HOPT | If this card is Link Summoned: <b>You can send 1 face-up Continuous Spell you control to the GY;</b> SEARCH 1 \"Clockwork Night\".\n② HOPT | <b>You can target 1 Machine monster with 1000 or less ATK in your GY;</b> Tribute 1 Machine monster, except this card, and if you do, Special Summon that targeted monster in Defense Position.",
+    "Delta of Invitation": {
+        "_current": "HOPT ACTIVATION\n① When this card is activated: You can send 1 Level 5 or higher Zombie monster from your Deck to the GY.\n② HOPT | If a Zombie monster is on the field: You can Special Summon 1 \"Delta Token\" (Zombie/DARK/Level 5/ATK 0/DEF 0).\n③ HOPT | If a monster(s) is added from the GY to the hand, while this card is in your GY (except during the Damage Step): You can add this card to your hand.",
         "previous": null
     },
-    "Crystron Cluster": {
-        "_current": "① \"Crystron\" cards you control cannot be banished by your opponent's card effects.\n② HOPT | <b>You can target 1 face-up card on the field, or you can target 2 if you control a \"Crystron\" Synchro Monster;</b> shuffle 1 \"Crystron\" card from your GY or BANISHment into the Deck, except \"Crystron Cluster\", and if you do, DESTROY the targeted card(s).",
+    "Liberator Eto": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand or GY) by paying half your LP, while your opponent has a Monster Card in their field or GY with an effect that activates in the hand or Monster Zone in response to a card or effect activation. You can only Special Summon \"Liberator Eto\" once per turn this way.\n① This card's Special Summon cannot be negated.\n② This face-up card cannot be used as material for a Fusion, Synchro, Xyz, or Link Summon, also during your turn only, it is unaffected by monster effects activated on your opponent's field.",
         "previous": null
     },
-    "Crystron Eleskeletus": {
-        "_current": "1 Tuner + 1+ non-Tuner monsters\n① All monsters your opponent controls lose 500 ATK/DEF.\n② HOPT | If this card is Synchro Summoned: You can add 1 \"Crystron\" card from your GY or BANISHment to your hand.\n③ HOPT | If this Synchro Summoned card is destroyed: You can Special Summon 1 \"Crystron\" monster from your GY or BANISHment.",
+    "Maliss ＜Q＞ Hearts Crypter": {
+        "_current": "3 monsters, including a \"Maliss\" monster\n① HOPT | QUICK | <b>You can target 1 of your banished \"Maliss\" cards;</b> shuffle it into the Deck, and if you do, BANISH 1 card on the field (while this card points to a monster, this effect and its activation cannot be negated).\n② HOPT | If this card is banished: <b>You can pay 900 LP;</b> Special Summon it and double its ATK.",
         "previous": null
     },
-    "Crystron Inclusion": {
-        "_current": "HOPT ACTIVATION\n① When this card is activated: You can SEARCH 1 \"Crystron\" card except \"Crystron Inclusion\".\n② The first time each \"Crystron\" monster you control would be destroyed by battle each turn, it is not destroyed.\n③ HOPT | <b>You can BANISH this card from your GY, then target 1 \"Crystron\" monster in your GY;</b> Special Summon it.",
-        "previous": null
-    },
-    "Crystron Sulfador": {
-        "_current": "① HOPT | If this card is in your hand or GY: <b>You can target 1 \"Crystron\" card you control;</b> DESTROY it, and if you do, Special Summon this card, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Machine monsters.\n② HOPT | If this card is Normal or Special Summoned: You can send up to 2 \"Crystron\" cards with different names from your Deck to the GY, except \"Crystron Sulfador\".",
-        "previous": null
-    },
-    "Crystron Tristaros": {
-        "_current": "① HOPT | QUICK | When your opponent activates a card or effect: You can Special Summon 1 \"Crystron\" monster from your Deck, except \"Crystron Tristaros\", then immediately after this effect resolves, Synchro Summon 1 Machine Synchro Monster using monsters you control, including that monster.\n② HOPT | <b>You can BANISH this card from your GY;</b> DESTROY 1 Synchro Monster you control, and if you do, Special Summon 2 \"Crystron\" monsters from your Deck, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Machine monsters.",
-        "previous": null
-    },
-    "Genro Ryu-Ge Hakva": {
-        "_current": "① HOPT | <b>You can BANISH this card from your hand;</b> SEARCH 1 \"Ryu-Ge Realm - Wyrm Winds\".\n② HOPT | If a monster is banished face-up, this card is already banished, and there are now at least 2 other banished monsters that are not \"Genro Ryu-Ge Hakva\" (except during the Damage Step): You can Special Summon this banished card.\n③ HOPT | <b>You can place 1 \"Ryu-Ge Realm - Wyrm Winds\" you control on the bottom of the Deck;</b> add 1 \"Ryu-Ge\" card from your Deck, GY, or BANISHment to your hand, except \"Genro Ryu-Ge Hakva\".",
-        "previous": null
-    },
-    "Giant Mimighoul": {
-        "_current": "2 Level 1 monsters\n① Your non-Xyz \"Mimighoul\" monsters can attack directly while your opponent controls a face-down monster.\n② HOPT | If this card is Xyz Summoned: You can SEARCH 1 \"Mimighoul\" card.\n③ HOPT | <b>You can detach 1 material from this card, then target face-up cards on the field up to the number of face-down monsters your opponent controls;</b> DESTROY them, and if you do, inflict 1000 damage to your opponent for each card destroyed.",
-        "previous": null
-    },
-    "Kairo Ryu-Ge Emva": {
-        "_current": "① HOPT | <b>You can DISCARD this card;</b> SEARCH 1 \"Ryu-Ge Realm - Sea Spires\".\n② YOUR MAIN PHASE | HOPT | If 2 or more monsters were sent from the hand and/or Deck to the GY this turn, except \"Kairo Ryu-Ge Emva\": You can Special Summon this card from your GY.\n③ HOPT | <b>You can place 1 \"Ryu-Ge Realm - Sea Spires\" you control on the bottom of the Deck;</b> BANISH your opponent's entire hand, and if you do, they DRAW the same number of cards.",
-        "previous": null
-    },
-    "Kyoro Ryu-Ge Kaiva": {
-        "_current": "① HOPT | <b>You can shuffle this card from your hand into the Deck;</b> SEARCH 1 \"Ryu-Ge Realm - Dino Domains\".\n② MAIN PHASE | HOPT | QUICK | If 2 or more cards were destroyed this turn: You can Special Summon this card from your hand.\n③ HOPT | <b>You can place 1 \"Ryu-Ge Realm - Dino Domains\" you control on the bottom of the Deck, then target other cards on the field, up to the number of different Monster Types on the field;</b> DESTROY them.",
-        "previous": null
-    },
-    "Materiactor Critical": {
-        "_current": "HOPT ACTIVATION\nWhen a Spell/Trap Card, or monster effect, is activated: Add 1 of your materials from a \"Materiactor\" Xyz Monster you control to your hand, and if you do, NEGATE the activation, then apply the following effect based on the card type added.\n● Monster: Place 1 card from your hand on the bottom of the Deck.\n● Spell: \"Materiactor\" Xyz Monsters you control gain 1000 ATK.\n● Trap: You can Set that added card.",
-        "previous": null
-    },
-    "Materiactor Exagard": {
-        "_current": "2+ Level 3 monsters\n① HOPT | <b>You can detach 1 material from this card;</b> either Special Summon 1 \"Materiactor\" monster from your Deck, or SEARCH 1 \"Materiactor\" Spell/Trap.\n② HOPT | If your opponent Normal or Special Summons a monster(s) (except during the Damage Step): You can add up to 2 materials from this card to your hand, including a \"Materiactor\" card, then if a Normal Monster is in your GY, you can BOUNCE 1 card on the field.",
-        "previous": null
-    },
-    "Materiactor Exareptor": {
-        "_current": "① HOPT | <b>You can reveal this card in your hand and DISCARD 1 other card;</b> SEARCH 1 Level 3 Normal Monster (from DECK or GY) except the discarded card, then you can Special Summon this card in Defense Position.\n② QUICK | <b>You can DISCARD this card, then target 1 Rank 3 Xyz Monster you control;</b> it gains 1500 ATK until the end of this turn.",
-        "previous": null
-    },
-    "Materiactor Meltdown": {
-        "_current": "① YOUR MAIN PHASE | HOPT | You can EXCAVATE the top 6 cards of your Deck, and if you do, you can add 1 excavated \"Materiactor\" card to your hand, also place the rest on top of the Deck in any order, then you can add 1 card attached to a Rank 3 Xyz Monster you control to the hand.\n② If your Xyz Monster activates its effect: You can attach the top card of your Deck to 1 \"Materiactor\" Xyz Monster you control.",
-        "previous": null
-    },
-    "Materiactor Meltthrough": {
-        "_current": "① When this card is activated: EXCAVATE the top 6 cards of your Deck, then place them on top of the Deck in any order.\n② OPT | <b>You can pay 1500 LP;</b> Special Summon 1 \"Materiactor\" Xyz Monster from your Extra Deck, by using 1 Level 3 Normal Monster you control as material (this is treated as an Xyz Summon), also you cannot Special Summon from the Extra Deck for the rest of this turn, except Xyz Monsters.\n③ If an Xyz Monster is Xyz Summoned: You can attach the top card of your Deck to 1 \"Materiactor\" Xyz Monster you control.",
-        "previous": null
-    },
-    "Materiactor Zeptwing": {
-        "_current": "① HOPT | If you control a \"Materiactor\" card: You can Special Summon this card from your hand.\n② HOPT | If this card is Normal or Special Summoned, or flipped face-up: You can SEARCH 1 \"Materiactor\" card except \"Materiactor Zeptwing\", then you can either add to your hand or Special Summon, 1 Level 3 Normal Monster from your GY.",
-        "previous": null
-    },
-    "Mimighoul Archfiend": {
-        "_current": "① HOPT | FLIP: If it is the Main Phase: Apply these effects in sequence.\n● Your opponent DRAWS 1 card.\n● Send 1 card from your hand to the GY.\n● Give control of this card to your opponent.\n② YOUR MAIN PHASE | HOPT | You can Special Summon this card from your hand to your opponent's field in face-down Defense Position.\n③ HOPT | If this card is Normal or Special Summoned: You can change 1 face-down monster on the field to face-up Attack or Defense Position.",
-        "previous": null
-    },
-    "Mimighoul Armor": {
-        "_current": "① HOPT | FLIP: If it is the Main Phase: Apply these effects in sequence.\n● This turn, \"Mimighoul\" monsters cannot be destroyed by battle.\n● Give control of this card to your opponent.\n② YOUR MAIN PHASE | HOPT | You can Special Summon this card from your hand to your opponent's field in face-down Defense Position, or if your opponent controls a monster, you can Special Summon this card face-up on your field.",
-        "previous": null
-    },
-    "Mimighoul Cerberus": {
-        "_current": "① FLIP: If it is the Main Phase: Apply these effects in sequence.\n● BANISH the top 3 cards of your Deck, then Special Summon 1 of your banished monsters to your opponent's field in Defense Position.\n● Give control of this card to your opponent.\n② YOUR MAIN PHASE | You can Special Summon this card from your hand to your opponent's field in face-down Defense Position.\nYou can only use each effect of \"Mimighoul Cerberus\" once per turn.\n③ Your opponent cannot target face-up Spells you control with card effects.",
-        "previous": null
-    },
-    "Mimighoul Charm": {
-        "_current": "Once per Chain, during the Main Phase, if a \"Mimighoul\" monster your opponent controls is flipped face-up: You can randomly choose 1 face-down card in your opponent's Extra Deck, and if it is a monster that can be Special Summoned, Special Summon it to your field, but it cannot activate its effects this turn. If it wasn't, or couldn't be Special Summoned, BANISH that card.\nYou can only use this effect of \"Mimighoul Charm\" twice per turn.",
-        "previous": null
-    },
-    "Mimighoul Dragon": {
-        "_current": "① HOPT | FLIP: If it is the Main Phase: Apply these effects in sequence.\n● DESTROY all face-up monsters you control, except \"Mimighoul\" monsters.\n● Give control of this card to your opponent.\n② YOUR MAIN PHASE | HOPT | You can Special Summon this card from your hand to your opponent's field in face-down Defense Position.\n③ HOPT | If this card is Normal or Special Summoned: You can SEARCH 1 \"Mimighoul\" Spell/Trap.",
-        "previous": null
-    },
-    "Mimighoul Dungeon": {
-        "_current": "① \"Mimighoul\" monsters you control that were not Normal or Special Summoned this turn gain ATK equal to their original DEF.\n② Any player who controls a face-down monster cannot Normal Summon monsters, nor declare an attack with monsters that were Special Summoned this turn.\n③ YOUR MAIN PHASE | HOPT | You can SEARCH 1 \"Mimighoul\" monster (from DECK or GY).",
-        "previous": null
-    },
-    "Mimighoul Fairy": {
-        "_current": "① HOPT | FLIP: If it is the Main Phase: Apply these effects in sequence.\n● This turn, you cannot activate the effects of monsters Special Summoned from your hand.\n● Give control of this card to your opponent.\n② YOUR MAIN PHASE | HOPT | You can Special Summon this card from your hand to your opponent's field in face-down Defense Position, or if you control a \"Mimighoul\" monster, you can Special Summon this card face-up on your field.",
-        "previous": null
-    },
-    "Mimighoul Fork": {
-        "_current": "① HOPT | <b>Target 1 face-down monster your opponent controls;</b> your opponent chooses 1 of the following effects, and you apply that effect.\n● Change it to face-up Attack or Defense Position.\n● Send it to the GY, then its owner DRAWS 2 cards.\n② HOPT | <b>You can BANISH this card from your GY;</b> SEARCH 1 \"Mimighoul Fork\".",
-        "previous": null
-    },
-    "Mimighoul Maker": {
-        "_current": "HOPT | You can use ONE of —\n① Reveal 2 Flip monsters with different names from your Deck, your opponent randomly picks 1 for you to Special Summon to their field in face-down Defense Position, and you add the other to your hand, then you can Special Summon 1 \"Mimighoul\" monster from your hand.\n② If your opponent Special Summons a monster(s) (except during the Damage Step): <b>You can BANISH this card from your GY, then target 1 face-down monster your opponent controls;</b> change it to face-up Attack or Defense Position.",
-        "previous": null
-    },
-    "Mimighoul Master": {
-        "_current": "① Cannot be destroyed while your opponent controls any face-down monsters or you control a \"Mimighoul\" monster other than \"Mimighoul Master\".\n② HOPT | If this card is Normal or Special Summoned: You can SEARCH 1 \"Mimighoul\" monster except \"Mimighoul Master\".\n③ OPP'S MAIN PHASE | HOPT | QUICK | You can change 1 face-down monster on the field to face-up Attack or Defense Position.",
-        "previous": null
-    },
-    "Mimighoul Room": {
-        "_current": "HOPT | You can use ONE of —\n① Special Summon 1 \"Mimighoul\" monster from your hand or Deck to your field, or in face-down Defense Position to your opponent's field, then you can change 1 face-up monster on the field to face-down Defense Position.\n② <b>You can BANISH this card from your GY, then target any number of \"Mimighoul\" cards you control;</b> BOUNCE them.",
-        "previous": null
-    },
-    "Mimighoul Slime": {
-        "_current": "① HOPT | FLIP: If it is the Main Phase: Apply these effects in sequence.\n● Your opponent can Special Summon 1 \"Mimighoul\" monster from their Deck to their field.\n● Give control of this card to your opponent.\n② YOUR MAIN PHASE | HOPT | You can Special Summon this card from your hand to your opponent's field in face-down Defense Position, or if your opponent controls more monsters than you do, you can Special Summon this card face-up on your field.",
-        "previous": null
-    },
-    "Mimighoul Throne": {
-        "_current": "2 Level 1 \"Mimighoul\" monsters\nHOPT | You can use ONE of —\n① <b>You can detach 1 material from this card;</b> Special Summon 1 \"Mimighoul Master\" from your hand, Deck or GY.\n② MAIN PHASE | QUICK | <b>You can target 1 \"Mimighoul Master\" you control;</b> equip this card to it as an Equip Spell that gives it 1000 ATK, then you can BOUNCE cards, up to the number of materials this card had.",
-        "previous": null
-    },
-    "Prima Materiactor": {
-        "_current": "An alien life form that suddenly flew in from the heavens far away. Many researchers have tried to determine its true identity, but its luminosity and the miasma emitted have long shrouded its existence in mystery, making it extremely difficult to see the full extent of its existence. Recently, however, a number of new species have been discovered by up-and-coming researchers, and it appears that the full extent of the species' existence is finally being revealed. \n[Pendulum Effect]\n① Xyz Monsters you control gain 100 ATK for each Xyz Material on the field.\n② HOPT | <b>You can target 1 \"Materiactor\" Xyz Monster you control;</b> attach this card to it as material, then DRAW 1 card.",
-        "previous": null
-    },
-    "Ryu-Ge End": {
-        "_current": "① Your opponent cannot target \"Ryu-Ge\" monsters you control with card effects.\n② HOPT | If a \"Ryu-Ge\" Pendulum Monster is in your field or face-up Extra Deck: <b>You can shuffle 2 \"Ryu-Ge\" monsters from your hand, GY, and/or BANISHment into the Main Deck, then target 1 monster on the field;</b> DESTROY it.\n③ HOPT | If this card is destroyed: You can Set 1 non-Continuous \"Ryu-Ge\" Trap from your Deck, GY, or BANISHment.",
-        "previous": null
-    },
-    "Ryu-Ge Realm - Dino Domains": {
-        "_current": "① You can only control 1 \"Ryu-Ge Realm - Dino Domains\".\n② \"Ryu-Ge\" monsters you control gain 300 ATK.\n③ OPT | QUICK | \"Ryu-Ge\" Pendulum Monsters, and Level 10 or higher monsters whose original Type is Dinosaur, that you control, gain this effect.\n● when an effect of a monster on the field with less ATK than this card is activated: <b>You can place 1 \"Ryu-Ge\" Continuous Spell you control on the bottom of the Deck;</b> NEGATE the activation.",
-        "previous": null
-    },
-    "Ryu-Ge Realm - Sea Spires": {
-        "_current": "① You can only control 1 \"Ryu-Ge Realm - Sea Spires\".\n② Your \"Ryu-Ge\" monsters cannot be destroyed by battle.\n③ QUICK | \"Ryu-Ge\" Pendulum Monsters, and Level 10 or higher monsters whose original Type is Sea Serpent, that you control, gain this effect.\n● Once per opponent's turn: <b>You can place 1 \"Ryu-Ge\" Continuous Spell you control on the bottom of the Deck, then target 1 card on the field;</b> BOUNCE it.",
-        "previous": null
-    },
-    "Ryu-Ge Realm - Wyrm Winds": {
-        "_current": "① You can only control 1 \"Ryu-Ge Realm - Wyrm Winds\".\n② Any monster sent from the field to the GY during your opponent's turn is banished instead.\n③ QUICK | \"Ryu-Ge\" Pendulum Monsters, and Level 10 or higher monsters whose original Type is Wyrm, that you control, gain this effect.\n● Once per opponent's turn: <b>You can place 1 \"Ryu-Ge\" Continuous Spell you control on the bottom of the Deck, then target 1 face-up monster on the field;</b> its ATK becomes 0.",
-        "previous": null
-    },
-    "Ryu-Ge Rising": {
-        "_current": "HOPT | You can use ONE of —\n① SEARCH 1 \"Ryu-Ge\" monster then you can add 1 \"Ryu-Ge\" Pendulum Monster from your hand to your face-up Extra Deck.\n② YOUR MAIN PHASE | If you control a \"Ryu-Ge\" Pendulum Monster Card: <b>You can BANISH this card and 1 \"Ryu-Ge\" monster from your GY;</b> Special Summon 1 \"Ryu-Ge\" monster with the same original Type as that banished monster from your Deck.",
-        "previous": null
-    },
-    "Ryu-Ge Rivalry": {
-        "_current": "① HOPT | Special Summon 1 \"Ryu-Ge\" monster from your hand, Deck, or GY, but BOUNCE it during the End Phase.\n② HOPT | <b>You can BANISH this card from your GY, then target 1 \"Ryu-Ge\" Continuous Spell in your BANISHment, GY, or field;</b> place it on the bottom of the Deck, then DRAW 1 card.",
-        "previous": null
-    },
-    "Ryu-Ge War Zone": {
-        "_current": "① HOPT | When this card is activated: Take 1 Dinosaur, 1 Sea Serpent, and 1 Wyrm monster from your Deck, add 1 to your hand, BANISH 1, and send 1 to the GY, also you cannot Special Summon for the rest of this turn, except Dragon, Dinosaur, Sea Serpent, or Wyrm monsters.\n② HOPT | If you have \"Sosei Ryu-Ge Mistva\" in your Extra Deck face-up: You can Special Summon 3 \"Ryu-Ge\" monsters with different Types, 1 each from your Deck, GY, and BANISHment.",
-        "previous": null
-    },
-    "Sosei Ryu-Ge Mistva": {
-        "_current": "Must be Special Summoned by its own effect. You can only Special Summon \"Sosei Ryu-Ge Mistva(s)\" once per turn.\n① If a monster(s) on the field is destroyed, while this card is in your Extra Deck: You can Tribute 1 Level 10 \"Ryu-Ge\" monster, and if you do, Special Summon this card (this is treated as a Ritual Summon), then you can apply this effect.\n● DESTROY up to 2 cards you control, and if you do, place up to that many \"Ryu-Ge\" Continuous Spells from your Deck face-up on your field.\n[Pendulum Effect]\nYOUR MAIN PHASE | HOPT | You can SEARCH 1 non-Pendulum \"Ryu-Ge\" card then DESTROY this card.",
-        "previous": null
-    },
-    "Support Token": {
-        "_current": "Special Summoned with the effect of \"Token Support.\"",
-        "previous": null
-    },
-    "Tensei Ryu-Ge Anva": {
-        "_current": "① HOPT | <b>You can Tribute 1 \"Ryu-Ge\" monster from your hand or field, except \"Tensei Ryu-Ge Anva\";</b> Special Summon this card from your hand.\n② HOPT | If this card is Special Summoned: <b>You can target 1 card on the field;</b> DESTROY it.\n③ HOPT | If this card is destroyed: You can place 1 \"Ryu-Ge\" Continuous Spell/Trap from your Deck, GY, or BANISHment, face-up on your field.\n[Pendulum Effect]\n① You cannot Pendulum Summon, except \"Ryu-Ge\" monsters (this effect cannot be negated).\n② HOPT | You can NEGATE your opponent's card or effect activated in response to the activation of your \"Ryu-Ge\" Spell Card or effect, then DESTROY this card.",
-        "previous": null
-    },
-    "Token Support": {
-        "_current": "① HOPT | <b>You can Tribute any number of Tokens, then target 1 monster you control with 0 ATK;</b> it gains ATK equal to the number Tributed x 1000 (until the end of this turn), and if it does, it can attack monsters up to the number Tributed during each Battle Phase this turn.\n② At the end of your opponent's Battle Phase: You can Special Summon \"Support Tokens\" (Beast/EARTH/Level 1/ATK 0/DEF 0) up to the number of Tokens destroyed during this Battle Phase.",
+    "Tenyi Spirit - Mula Adhara": {
+        "_current": "1 Tuner + 1+ non-Tuner monsters\n① HOPT | If this card is Synchro Summoned and 2 or more Wyrm monsters are in your GY and/or BANISHment: You can SEARCH 1 Field Spell.\n② While a non-Effect Monster is face-up on the field, this card gains these effects.\n● Cannot be destroyed by an opponent's card effects.\n● Your opponent cannot target this card with card effects.\n● Can make a second attack during each Battle Phase.",
         "previous": null
     }
 }
