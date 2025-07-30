@@ -1,22 +1,26 @@
 {
-    "Battlewasp - Grand Partisan the Revolution": {
-        "_current": "1 Tuner + 1+ non-Tuner monsters\n① Cannot be destroyed by card effects.\n② Insect Synchro Monsters you control gain 200 ATK for each of your banished Insect monsters.\n③ HOPT | If this card is banished: You can Special Summon it, then you can DESTROY cards your opponent controls up to the number of your banished Insect monsters, then inflict 500 damage to your opponent for each card destroyed.",
+    "A Bao A Qu, the Lightless Shadow": {
+        "_current": "2+ monsters, including a Fiend monster\n① MAIN PHASE | HOPT | QUICK | <b>You can DISCARD 1 card, then activate 1 of these effects;</b> \n● DESTROY 1 card on the field.\n● BANISH this card (until the End Phase), and if you do, Special Summon 1 LIGHT or DARK monster from your GY.\n② YOUR STANDBY PHASE | HOPT | You can DRAW cards equal to the number of different Monster Types in your GY, then place cards from your hand on the bottom of the Deck in any order, equal to the number of cards you drew.",
         "previous": null
     },
-    "Delta of Invitation": {
-        "_current": "HOPT ACTIVATION\n① When this card is activated: You can send 1 Level 5 or higher Zombie monster from your Deck to the GY.\n② HOPT | If a Zombie monster is on the field: You can Special Summon 1 \"Delta Token\" (Zombie/DARK/Level 5/ATK 0/DEF 0).\n③ HOPT | If a monster(s) is added from the GY to the hand, while this card is in your GY (except during the Damage Step): You can add this card to your hand.",
+    "Dual Avatar - Manifested A-Un": {
+        "_current": "2 \"Dual Avatar\" monsters\n① QUICK | This card gains the following effect(s), based on the original names of the materials used for its Fusion Summon.\n● \"Dual Avatar - Empowered Kon-Gyo\": <b>The ATK of your battling \"Dual Avatar\" monsters become 3000 during damage calculation only.\n● \"Dual Avatar - Empowered Mitsu-Jaku\": Once per opponent's turn: You can target 1 card on the field;</b> BANISH it.\n② If this Fusion Summoned card is destroyed: You can Special Summon 1 \"Dual Avatar Fists - Yuhi\" and 1 \"Dual Avatar Feet - Kokoku\" from your Deck, and if you do, they cannot be destroyed this turn.",
+        "previous": "2 \"Dual Avatar\" monsters\n① QUICK | This card gains the following effect(s), based on the original names of the materials used for its Fusion Summon. ● \"Dual Avatar - Empowered Kon-Gyo\": <b>The ATK of your battling \"Dual Avatar\" monsters become 3000 during damage calculation only. ● \"Dual Avatar - Empowered Mitsu-Jaku\": Once per opponent's turn: You can target 1 card on the field;</b> BANISH it.\n② If this Fusion Summoned card is destroyed: You can Special Summon 1 \"Dual Avatar Fists - Yuhi\" and 1 \"Dual Avatar Feet - Kokoku\" from your Deck, and if you do, they cannot be destroyed this turn."
+    },
+    "Ext Ryzeal": {
+        "_current": "① HOPT | You can Special Summon this card (from your hand) by sending 1 Xyz Monster from your Extra Deck to the GY. If Summoned this way, you cannot Special Summon from the Extra Deck for the rest of this turn, except Rank 4 Xyz Monsters.\n② HOPT | If this card is Normal or Special Summoned and you control no other face-up monsters, except Level/Rank 4 monsters: You can SEARCH 1 FIRE Thunder monster.",
         "previous": null
     },
-    "Liberator Eto": {
-        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand or GY) by paying half your LP, while your opponent has a Monster Card in their field or GY with an effect that activates in the hand or Monster Zone in response to a card or effect activation. You can only Special Summon \"Liberator Eto\" once per turn this way.\n① This card's Special Summon cannot be negated.\n② This face-up card cannot be used as material for a Fusion, Synchro, Xyz, or Link Summon, also during your turn only, it is unaffected by monster effects activated on your opponent's field.",
+    "Legendary Lord Six Samurai - Shi En": {
+        "_current": "1 Warrior Tuner + 1+ non-Tuner \"Six Samurai\" monsters\n① HOPT | If this card is Synchro Summoned: You can SEARCH 1 \"Six Samurai\" monster or \"Shien\" Effect Monster (from DECK or GY).\n② OPT | QUICK | When your opponent activates a monster effect: You can NEGATE the activation, and if you do, DESTROY that card.\n③ If this card on the field would be destroyed, you can DESTROY 1 monster you control instead.",
         "previous": null
     },
-    "Maliss ＜Q＞ Hearts Crypter": {
-        "_current": "3 monsters, including a \"Maliss\" monster\n① HOPT | QUICK | <b>You can target 1 of your banished \"Maliss\" cards;</b> shuffle it into the Deck, and if you do, BANISH 1 card on the field (while this card points to a monster, this effect and its activation cannot be negated).\n② HOPT | If this card is banished: <b>You can pay 900 LP;</b> Special Summon it and double its ATK.",
+    "Mulcharmy Meowls": {
+        "_current": "QUICK | If you control no cards: <b>You can DISCARD this card;</b> apply these effects this turn.\n● Each time your opponent Special Summons a monster(s) from any GY(s) or BANISHment, immediately DRAW 1 card.\n● Once, during this End Phase, if the number of cards in your hand is more than the number of cards your opponent controls +6, you must randomly shuffle cards from your hand into the Deck so the number in your hand equals the number your opponent controls +6.\nYou can only activate 1 other \"Mulcharmy\" monster effect, the turn you activate this effect.",
         "previous": null
     },
-    "Tenyi Spirit - Mula Adhara": {
-        "_current": "1 Tuner + 1+ non-Tuner monsters\n① HOPT | If this card is Synchro Summoned and 2 or more Wyrm monsters are in your GY and/or BANISHment: You can SEARCH 1 Field Spell.\n② While a non-Effect Monster is face-up on the field, this card gains these effects.\n● Cannot be destroyed by an opponent's card effects.\n● Your opponent cannot target this card with card effects.\n● Can make a second attack during each Battle Phase.",
+    "Ryzeal Detonator": {
+        "_current": "2+ Level 4 \"Ryzeal\" monsters\n① QUICK | When your opponent activates a card or effect: <b>You can detach 1 material from this card, then target 1 card on the field;</b> DESTROY it.\n② HOPT | If this card is Special Summoned: You can attach 1 monster from your GY to this card as material.\n③ HOPT | If an Xyz Monster(s) you control would be destroyed, you can detach 1 material from this card instead.",
         "previous": null
     }
 }
