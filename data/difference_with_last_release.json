@@ -1,102 +1,18 @@
 {
-    "Anchorbolt Hedgehog": {
-        "_current": "HOPT | QUICK | If you control \"Junk Warrior\" or a monster that mentions it, except \"Anchorbolt Hedgehog\", and this card is in your GY: You can Special Summon this card in Defense Position, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Synchro Monsters.",
+    "Allied Code Talker @Ignister": {
+        "_current": "3+ Effect Monsters\n① If this card is Link Summoned: You can Special Summon as many Cyberse monsters with 2300 ATK from your GY as possible to your zones this card points to, and if you do, this card gains 500 ATK for each, also you cannot Special Summon for the rest of this turn.\n② HOPT | QUICK | When your opponent activates a card or effect: <b>You can Tribute 1 of your Link Monsters this card points to;</b> NEGATE the activation, and if you do, BANISH that card.",
         "previous": null
     },
-    "Artifact Durendal": {
-        "_current": "2 Level 5 monsters\n① OPT | QUICK | You can activate 1 of these effects;\n● When a monster effect is activated on the field or a Normal Spell/Trap Card is activated: <b>You can detach 1 material from this card;</b> the activated effect becomes \"DESTROY 1 Spell/Trap your opponent controls\".\n● You can detach 1 material from this card; each player with a hand shuffles their entire hand into the Deck, then DRAWS the same number of cards they shuffled into the Deck.",
-        "previous": "2 Level 5 monsters\n① OPT | QUICK | You can activate 1 of these effects.\n● When a monster effect is activated on the field OR when a Normal Spell/Trap Card is activated: <b>You can detach 1 material from this card;</b> the activated effect becomes \"DESTROY 1 Spell/Trap Card your opponent controls\".\n● You can detach 1 material from this card; each player with a hand shuffles their entire hand into the Deck, then DRAWS the same number of cards they shuffled into the Deck."
-    },
-    "Berlineth the Firestorm Vassal": {
-        "_current": "① HOPT | <b>You can DISCARD 1 card;</b> Special Summon this card from your hand, also you cannot Special Summon from the Extra Deck for the rest of this turn.\n② HOPT | If this card is Tributed for a Tribute Summon: You can look at your opponent's hand and BANISH 1 card from their hand until the End Phase.",
-        "previous": "① HOPT | <b>You can DISCARD 1 card;</b> Special Summon this card from your hand, also you cannot Special Summon monsters from the Extra Deck for the rest of this turn.\n② HOPT | If this card is Tributed for a Tribute Summon: You can look at your opponent's hand and BANISH 1 card from their hand until the End Phase."
-    },
-    "Enneacraft - Asta.PIXEA": {
-        "_current": "After this card was flipped face-up, while it is in the Monster Zone, your opponent cannot target cards in the field or GYs with card effects. When your opponent activates a card or effect that targets a card(s) you control (QUICK EFFECT): <b>You can change this face-down card to face-up Defense Position;</b> NEGATE that effect, then you can BANISH (face-down) 1 random card from your opponent's hand. <b>You can reveal this card in your hand;</b> Special Summon 1 monster from your hand in face-down Defense Position. You cannot Special Summon the turn you activate this effect, except in face-down Defense Position. \n[Pendulum Effect]\nEach time a monster(s) is flipped face-up, place 1 E. C. Counter on this card. At the end of the Battle Phase, if you have an \"Enneacraft\" card in your other Pendulum Zone: <b>You can target 1 monster your opponent controls with less ATK than this card;</b> DESTROY it.",
+    "Invoked Magistus Omega": {
+        "_current": "\"Aleister the Invoker\" + 1 Fusion, Synchro, Xyz, or Link Monster\n① HOPT | If this card is Special Summoned: <b>You can target 1 Fusion, Synchro, Xyz, or Link Monster in your GY and 1 monster on the field;</b> BANISH them.\n② HOPT | If this Fusion Summoned card is destroyed: You can Special Summon 1 Level 4 Spellcaster monster from your Deck, then you can equip this card to it as an Equip Spell that gives it 1000 ATK.",
         "previous": null
     },
-    "Enneacraft - Atori.MAR": {
-        "_current": "FLIP: Change all your opponent's monsters to face-down Defense Position. The monsters that were, cannot change their battle positions. \nDuring your turn, when your opponent activates a card or effect on the field (QUICK EFFECT): <b>You can change this face-down card to face-up Defense Position;</b> NEGATE the activation, and if you do, DESTROY that card. <b>You can reveal this card in your hand;</b> Special Summon 1 monster from your hand in face-down Defense Position. You cannot Special Summon the turn you activate this effect, except in face-down Defense Position. \n[Pendulum Effect]\nEach time a monster(s) is flipped face-up, place 1 E. C. Counter on this card. At the end of the Battle Phase, if you have an \"Enneacraft\" card in your other Pendulum Zone: <b>You can target 1 monster your opponent controls with less ATK than this card;</b> DESTROY it.",
+    "Number 69: Heraldry Crest - Dark Matter Demolition": {
+        "_current": "5 Level 4 monsters\n① Cannot be destroyed.\n② OPT | QUICK | <b>You can detach 1 material from this card, then target 1 face-up monster your opponent controls;</b> that monster's name becomes \"Unknown\".\n③ NEGATE any \"Unknown\" effects activated by your opponent.",
         "previous": null
     },
-    "Full-Speed Warrior": {
-        "_current": "Monsters you control that mention \"Junk Warrior\", or are a Synchro Monster with \"Warrior\" in their original name, gain 900 ATK during your Battle Phase only. If this card is Normal or Special Summoned: You can SEARCH 1 \"Junk Synchron\" or 1 Spell/Trap that mentions \"Junk Warrior\". You can only use this effect of \"Full-Speed Warrior\" once per turn.",
-        "previous": null
-    },
-    "Fusion Recycling Plant": {
-        "_current": "① OPT | <b>You can DISCARD 1 card;</b> SEARCH 1 \"Polymerization\" (from DECK or GY).\n② END PHASE | OPT | <b>You can target 1 monster in your GY that was used as material for a Fusion Summon this turn;</b> add it to your hand.",
-        "previous": "① OPT | <b>You can DISCARD 1 card;</b> SEARCH 1 \"Polymerization\" (from DECK or GY).\n② END PHASE | OPT | <b>You can target 1 monster in your GY that was used as Fusion Material for a Fusion Summon this turn;</b> add it to your hand."
-    },
-    "Heavy Polymerization": {
-        "_current": "Fusion Summon 1 Fusion Monster from your Extra Deck, using 3 or more monsters from your hand or field. You can also BANISH monsters from your Extra Deck as material, up to the number of monsters your opponent controls, but you lose LP equal to the total ATK of monsters banished this way, when the monster is Fusion Summoned.",
-        "previous": "Fusion Summon 1 Fusion Monster from your Extra Deck, using 3 or more monsters from your hand or field as material. You can also BANISH monsters from your Extra Deck as material, up to the number of monsters your opponent controls, but you lose LP equal to the total ATK of monsters banished this way, when the monster is Fusion Summoned."
-    },
-    "Hecahands Jauzah": {
-        "_current": "1 \"Hecahands\" monster + 1 Illusion monster\nMust first be either Fusion Summoned, or Special Summoned (from your Extra Deck) by Tributing 2 monsters you control (1 face-up monster owned by your opponent and 1 Illusion monster). If this card battles a monster, neither can be destroyed by that battle. During your Main Phase: You can SEARCH 1 \"Hecahands\" card (from DECK or GY). You can only use this effect of \"Hecahands Jauzah\" once per turn.",
-        "previous": null
-    },
-    "Junk Warrior Extreme": {
-        "_current": "\"Junk Synchron\" + 1+ non-Tuner monsters\nIf this card is Synchro Summoned: You can Special Summon as many Level 2 or lower monsters as possible from your GY, but neither player can activate those monsters' effects this turn, also you can only Special Summon one more time this turn. When this card DESTROYS an opponent's monster by battle: <b>You can BANISH this card;</b> Special Summon 1 \"Junk\" Synchro Monster from your Extra Deck (this is treated as a Synchro Summon). You can only use each effect of \"Junk Warrior Extreme\" once per turn.",
-        "previous": null
-    },
-    "Kewl Tune RS": {
-        "_current": "\"Kewl Tune Reco\" + 1+ Tuners\nGains 300 ATK for each Tuner in the GYs. The Levels of monsters your opponent controls with 1700 or less original ATK are increased by 1. During the Main Phase (QUICK EFFECT): <b>You can BANISH 1 Tuner from your GY, then target 1 face-up card your opponent controls;</b> NEGATE its effects until the end of this turn. You can only use this effect of \"Kewl Tune RS\" once per turn.",
-        "previous": null
-    },
-    "Kewl Tune Remix": {
-        "_current": "\"Kewl Tune Mix\" + 1+ Tuners\nGains 1500 ATK while your opponent has a Tuner in their field or GY. During your opponent's turn (QUICK EFFECT): <b>You can Tribute this card;</b> choose 2 non-Synchro Tuners in your GY, add 1 of them to your hand, and if you do, Special Summon the other, then immediately after this effect resolves, you can Synchro Summon 1 Tuner Synchro Monster. You can only use this effect of \"Kewl Tune Remix\" once per turn.",
-        "previous": null
-    },
-    "Mithra the Thunder Vassal": {
-        "_current": "① HOPT | If this card is in your hand: <b>You can activate this effect;</b> you cannot Special Summon from the Extra Deck for the rest of this turn, also Special Summon this card, and if you do, Special Summon 1 \"Vassal Token\" (Thunder/LIGHT/Level 1/ATK 800/DEF 1000) to your opponent's field in Defense Position.\n② HOPT | If this card is Tributed for a Tribute Summon: <b>You can activate this effect;</b> you can Tribute Summon 1 monster during your Main Phase this turn, in addition to your Normal Summon/Set this turn (you can only gain this effect once per turn).",
-        "previous": "① HOPT | If this card is in your hand: <b>You can activate this effect;</b> you cannot Special Summon monsters from the Extra Deck for the rest of this turn, also Special Summon this card, and if you do, Special Summon 1 \"Vassal Token\" (Thunder-Type/LIGHT/Level 1/ATK 800/DEF 1000) to your opponent's field in Defense Position.\n② HOPT | If this card is Tributed for a Tribute Summon: <b>You can activate this effect;</b> you can Tribute Summon 1 monster during your Main Phase this turn, in addition to your Normal Summon/Set this turn. (You can only gain this effect once per turn.)"
-    },
-    "Mysterion the Dragon Crown": {
-        "_current": "1 Spellcaster monster + 1 Dragon monster\nCannot be used as Fusion Material.\n① Loses 100 ATK for each of your banished cards.\n② HOPT | If a monster uses its activated effect to Special Summon itself, or a monster(s) with its same original Type (except during the Damage Step): <b>You can target 1 of those Special Summoned monsters;</b> BANISH that monster, also BANISH all monsters from the field with its same original Type.",
-        "previous": "1 Spellcaster monster + 1 Dragon monster\nCannot be used as Fusion Material.\n① This card loses 100 ATK for each of your banished cards.\n② HOPT | If a monster uses its activated effect to Special Summon itself, or a monster(s) with its same original Type (except during the Damage Step): <b>You can target 1 of those Special Summoned monsters;</b> BANISH that monster, also BANISH all monsters from the field with its same original Type."
-    },
-    "Mystic Piper": {
-        "_current": "HOPT | <b>You can Tribute this card;</b> DRAW 1 card and show it, then if it is a Level 1 monster, DRAW 1 more card.",
-        "previous": "You can Tribute this card to DRAW and reveal 1 card.\nIf that card is a Level 1 Monster Card, DRAW 1 more card. The effect of \"Mystic Piper\" can only be activated once per turn."
-    },
-    "Number 21: Frozen Lady Justice": {
-        "_current": "2 Level 6 monsters\nYou can also Xyz Summon this card by detaching 1 material from a Rank 5 Xyz Monster you control, then using that Xyz Monster as material (transfer its materials to this card).\n① Gains 1000 ATK for each material attached to it.\n② OPT | <b>You can detach 1 material from this card;</b> DESTROY all Defense Position monsters your opponent controls.",
-        "previous": "2 Level 6 monsters\nYou can also Xyz Summon this card by detaching 1 Xyz Material from a Rank 5 Xyz Monster you control, then using that Xyz Monster as the Xyz Material. (Xyz Materials attached to that monster also become Xyz Materials on this card.)\n① This card gains 1000 ATK for each Xyz Material attached to it.\n② OPT | <b>You can detach 1 Xyz Material from this card;</b> DESTROY all Defense Position monsters your opponent controls."
-    },
-    "Number 33: Chronomaly Machu Mech": {
-        "_current": "2 Level 5 monsters\n① OPT | <b>You can detach 1 material from this card, then target 1 face-up monster your opponent controls;</b> inflict damage to your opponent equal to the difference between its original ATK and current ATK, and if you do, this card gains ATK equal to the damage inflicted.",
-        "previous": "2 Level 5 monsters\n① OPT | <b>You can detach 1 Xyz Material from this card, then target 1 face-up monster your opponent controls;</b> inflict damage to your opponent equal to the difference between its original ATK and current ATK, and if you do, this card gains ATK equal to the damage inflicted."
-    },
-    "Number 5: Doom Chimera Dragon": {
-        "_current": "2+ Level 5 monsters\n① Gains 1000 ATK for each material attached to it.\n② This card with material can attack all monsters your opponent controls once each.\n③ At the end of the Battle Phase, if this card battled: <b>You can activate one of the following effects;</b> \n● Target 1 monster in your GY; attach it to this card.\n● Target 1 card in your opponent's GY; place it on top of their Deck.",
-        "previous": "2+ Level 5 monsters\n① Gains 1000 ATK for each material attached to it.\n② This card with material can attack all monsters your opponent controls once each.\n③ At the end of the Battle Phase, if this card battled: <b>You can activate one of the following effects.\n● Target 1 monster in your GY;</b> attach it to this card as material.\n● Target 1 card in your opponent's GY; place it on top of their Deck."
-    },
-    "Number 61: Volcasaurus": {
-        "_current": "2 Level 5 monsters\n① OPT | <b>You can detach 1 material from this card, then target 1 face-up monster your opponent controls;</b> DESTROY that opponent's monster, and if you do, inflict damage to your opponent equal to the destroyed monster's original ATK. This card cannot attack directly the turn you activate this effect.",
-        "previous": "2 Level 5 monsters\n① OPT | <b>You can detach 1 Xyz Material from this card, then target 1 face-up monster your opponent controls;</b> DESTROY that opponent's monster, and if you do, inflict damage to your opponent equal to the destroyed monster's original ATK. This card cannot attack your opponent directly during the turn you activate this effect."
-    },
-    "Number C104: Umbral Horror Masquerade": {
-        "_current": "4 Level 5 monsters\n① When this card is Special Summoned: <b>You can target 1 Spell/Trap on the field;</b> DESTROY that target.\n② OPT | QUICK | If this card has \"Number 104: <b>Masquerade\" as material, it gains this effect.\n● when a monster effect is activated on your opponent's field: You can detach 1 material from this card;</b> NEGATE the activation, then you can send 1 random card from your opponent's hand to the GY, and if you do, halve your opponent's LP.",
-        "previous": "4 Level 5 monsters\n① When this card is Special Summoned: <b>You can target 1 Spell/Trap Card on the field;</b> DESTROY that target.\n② OPT | If this card has \"Number 104: <b>Masquerade\" as an Xyz material, it gains this effect.\n● during either player's turn, when a monster effect is activated on your opponent's side of the field: You can detach 1 Xyz Material from this card;</b> NEGATE the activation, then you can send 1 random card from your opponent's hand to the GY, and if you do, halve your opponent's Life Points."
-    },
-    "Obedience Schooled": {
-        "_current": "If you control no monsters: Special Summon 3 Level 2 or lower Beast Effect Monsters with different names from your Deck, but their effects are negated, also they are destroyed during the End Phase. For the rest of this turn after this card resolves, you cannot Special Summon, except Beast monsters.",
-        "previous": "If you control no monsters: Special Summon 3 Level 2 or lower Beast Effect Monsters with different names from your Deck, but their effects are negated, also they are destroyed during the End Phase. For the rest of this turn after this card resolves, you cannot Special Summon monsters, except Beast monsters."
-    },
-    "Overlay Booster": {
-        "_current": "① HOPT | If you control a monster with 2000 or more ATK, you can Special Summon this card (from your hand) in Defense Position.\n② If this card is in your GY, except the turn it was sent there: <b>You can BANISH it, then target 1 face-up Xyz Monster you control that has material;</b> it gains 500 ATK for each material attached to it.",
-        "previous": "① HOPT | If you control a monster with 2000 or more ATK, you can Special Summon this card (from your hand) in face-up Defense Position.\n② YOUR TURN | Except the turn this card was sent to the GY: <b>You can BANISH this card from your GY, then target 1 face-up Xyz Monster you control that has Xyz Material;</b> it gains 500 ATK for each Xyz Material attached to it."
-    },
-    "Scrap Warrior": {
-        "_current": "\"Scrap Synchron\" + 1+ non-Tuner monsters\nMonsters you control that mention \"Junk Warrior\", or are a Synchro Monster with \"Warrior\" in their original name, cannot have their activated effects negated (except \"Scrap Warrior\"). If this card is Synchro Summoned: You can take 1 \"Junk Synchron\", or 1 card that mentions \"Junk Warrior\", from your Deck, and either add it to your hand or send it to the GY. You can only use this effect of \"Scrap Warrior\" once per turn.",
-        "previous": null
-    },
-    "Synchro Fellowship": {
-        "_current": "SEARCH 2 monsters (1 \"Junk Synchron\" and 1 monster that mentions \"Junk Warrior\" or \"Stardust Dragon\"), then DISCARD 1 card. <b>You can BANISH this card from your GY, then target 1 Synchro Monster you control;</b> reduce its Level by 1, then you can Normal Summon 1 \"Synchron\" monster during your Main Phase this turn, in addition to your Normal Summon/Set (you can only gain this effect once per turn). You can only activate 1 \"Synchro Fellowship\" per turn.",
-        "previous": null
-    },
-    "Uzuhime the Manifested Mikanko": {
-        "_current": "2 Level 3 \"Mikanko\" monsters\nIf this card is Special Summoned: You can SEARCH 1 Equip Spell (from DECK or GY). You can only use this effect of \"Uzuhime the Manifested Mikanko\" once per turn. Cannot be destroyed by battle, also your opponent takes any battle damage you would have taken from battles involving this card. If this card attacks and battles, at the end of the Damage Step: <b>You can detach 1 material from this card;</b> it can attack again in a row.",
+    "Regenesis Lord": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned (from your hand) by BANISHING 1 face-up monster you control with 2500 original ATK and DEF. You can only Special Summon \"Regenesis Lord\" once per turn this way.\n① If this card is Special Summoned: You can Set 1 \"Regenesis\" Spell/Trap from your Deck.\n② Gains 2500 ATK during the Battle Phase only.\n③ This card is PIERCING.",
         "previous": null
     }
 }
