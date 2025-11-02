@@ -1,178 +1,22 @@
 {
-    "Alba-Lenatus the Abyss Dragon": {
-        "_current": "\"Fallen of Albaz\" + 1+ Dragon monsters\nCannot be used as Fusion Material. Must be either Fusion Summoned, or Special Summoned by sending the above cards from any Monster Zones to the GY.\n① Can attack monsters a number of times each Battle Phase, up to the number of materials used for it.\n② END PHASE | OPT | If this card is in the GY because it was sent there this turn: You can SEARCH 1 \"Polymerization\" Normal Spell or \"Fusion\" Normal Spell.",
-        "previous": "1 \"Fallen of Albaz\" + 1+ Dragon monsters\nCannot be used as Fusion Material. Must be either Fusion Summoned, or Special Summoned by sending the above cards from any Monster Zones to the GY.\n① This card can attack monsters a number of times each Battle Phase, up to the number of materials used for it.\n② END PHASE | OPT | If this card is in the GY because it was sent there this turn: You can SEARCH 1 \"Polymerization\" Normal Spell or \"Fusion\" Normal Spell."
+    "Anarchist Monk of the Six Samurai": {
+        "_current": "① HOPT | If you control a \"Six Samurai\" monster other than \"Anarchist Monk of the Six Samurai\", you can Special Summon this card (from your hand).\n② HOPT | If this card is sent from the field to the GY: You can SEARCH 1 \"Six Samurai\" Quick-Play Spell.\n③ HOPT | A \"Six Samurai\" monster that was Synchro Summoned using this card gains this effect.\nThe Levels of all monsters your opponent controls are reduced by 1.",
+        "previous": "① HOPT | If you control a \"Six Samurai\" monster other than \"Anarchist Monk of the Six Samurai\", you can Special Summon this card (from your hand).② \n③ HOPT | If this card is sent from the field to the GY: You can SEARCH 1 \"Six Samurai\" Quick-Play Spell.\n④ HOPT | A \"Six Samurai\" monster that was Synchro Summoned using this card gains this effect.\nThe Levels of all monsters your opponent controls are reduced by 1."
     },
-    "Albion the Branded Dragon": {
-        "_current": "\"Fallen of Albaz\" + 1 LIGHT monster\n① HOPT | If this card is Fusion Summoned: You can Fusion Summon 1 Level 8 or lower Fusion Monster from your Extra Deck, except \"Albion the Branded Dragon\", by BANISHING Fusion Materials mentioned on it from your hand, field, and/or GY.\n② END PHASE | HOPT | If this card is in the GY because it was sent there this turn: You can add to your hand or Set 1 \"Branded\" Spell/Trap from your Deck.",
-        "previous": "\"Fallen of Albaz\" + 1 LIGHT monster\n① HOPT | If this card is Fusion Summoned: You can Fusion Summon 1 Level 8 or lower Fusion Monster from your Extra Deck, except \"Albion the Branded Dragon\", by BANISHING Fusion Materials mentioned on it from your hand, field, and/or GY.\n② END PHASE | HOPT | If this card is in the GY because it was sent there this turn: You can add to your hand or Set 1 \"Branded\" Spell/Trap directly from your Deck."
+    "Drake Shark": {
+        "_current": "① OPT | <b>A \"Shark Drake\" Xyz Monster that has this card as material gains this effect.\n● You can detach 2 materials from this card, then target 1 Spell/Trap on the field;</b> attach it to this card as material.\n② HOPT | If this card is added to your hand, except by DRAWING it: You can Special Summon this card.\n③ HOPT | This card can be treated as 2 materials for the Xyz Summon of a WATER Xyz Monster that requires 3 or more materials.",
+        "previous": "① OPT | <b>A \"Shark Drake\" Xyz Monster that has this card as material gains this effect.\n● You can detach 2 materials from this card, then target 1 Spell/Trap on the field;</b> attach it to this card as material.② \n③ HOPT | If this card is added to your hand, except by DRAWING it: You can Special Summon this card.\n④ HOPT | This card can be treated as 2 materials for the Xyz Summon of a WATER Xyz Monster that requires 3 or more materials."
     },
-    "Angry Burger": {
-        "_current": "(This card is always treated as \"Hungry Burger\".)\nYou can Ritual Summon this card with a \"Recipe\" card.\n① Monsters your opponent controls that can attack must attack this card.\n② HOPT | <b>You can reveal this card in your hand;</b> SEARCH 1 \"Nouvelles\" monster and if you do, shuffle this card into the Deck.\n③ HOPT | QUICK | You can Tribute 1 Attack Position monster on either field, and if you do, Special Summon 1 \"Hungry Burger\" with 2000 ATK from your hand or Deck.",
-        "previous": null
+    "Dreaming Reality of Nemleria, Realized": {
+        "_current": "① Gains 100 ATK for each face-down card in your Extra Deck.\n② HOPT | If this card is in your hand: <b>You can target 1 monster you control;</b> place it on the bottom of the Deck, and if you do, Special Summon this card.\n③ HOPT | If this card is Special Summoned: <b>You can activate 1 of these effects;</b> \n● Add 1 \"Dreaming Nemleria\" from your Deck to your face-up Extra Deck.\n● Change 1 other face-up monster on the field to face-down Defense Position.",
+        "previous": "① Gains 100 ATK for each face-down card in your Extra Deck.② ③ \n④ HOPT | If this card is in your hand: <b>You can target 1 monster you control;</b> place it on the bottom of the Deck, and if you do, Special Summon this card.\n⑤ HOPT | If this card is Special Summoned: <b>You can activate 1 of these effects;</b> \n● Add 1 \"Dreaming Nemleria\" from your Deck to your face-up Extra Deck.\n● Change 1 other face-up monster on the field to face-down Defense Position."
     },
-    "Assault Overload": {
-        "_current": "Tribute 1 \"/Assault Mode\" monster.\nInflict damage to both players equal to its Level x 200.",
-        "previous": "Tribute 1 \"/Assault Mode\" monster. Inflict damage to both players equal to its Level x 200."
+    "Left-Hand Shark": {
+        "_current": "① If this card is Special Summoned from the GY: This card's Level becomes 4.\n② HOPT | If you control \"Right-Hand Shark\", and this card is in your hand or GY: You can Special Summon this card, but BANISH it when it leaves the field.\n③ HOPT | An Xyz Monster that was Summoned using only WATER monsters as material, including this card on the field, gains this effect.\nThis card cannot be destroyed by card effects.",
+        "previous": "① If this card is Special Summoned from the GY: This card's Level becomes 4.② \n③ HOPT | If you control \"Right-Hand Shark\", and this card is in your hand or GY: You can Special Summon this card, but BANISH it when it leaves the field.\n④ HOPT | An Xyz Monster that was Summoned using only WATER monsters as material, including this card on the field, gains this effect.\nThis card cannot be destroyed by card effects."
     },
-    "Assault Revival": {
-        "_current": "Remove from play 1 \"Assault Mode Activate\" from your GY.\nDESTROY all monsters you control and Special Summon 1 \"/Assault Mode\" monster from your GY, ignoring its Summoning conditions. Its effect(s) is negated, and it cannot be Tributed. If it is removed from the field, remove it from play.",
-        "previous": "Remove from play 1 \"Assault Mode Activate\" from your GY. DESTROY all monsters you control and Special Summon 1 \"/Assault Mode\" monster from your GY, ignoring its Summoning conditions. Its effect(s) is negated, and it cannot be Tributed. If it is removed from the field, remove it from play."
-    },
-    "Assault Slash": {
-        "_current": "Activate only while you control an \"/Assault Mode\" monster.\nDESTROY all face-up monsters on the field.",
-        "previous": "Activate only while you control an \"/Assault Mode\" monster. DESTROY all face-up monsters on the field."
-    },
-    "B.E.S. Big Core MK-2": {
-        "_current": "① If you control no monsters, you can Normal Summon this card without Tributing.\n② When this card is Special Summoned, place 3 counters on it.\n③ This card cannot be destroyed by battle.\n④ If this card attacks or is attacked, remove 1 counter from this card at the end of the Damage Step.\nIf you cannot, DESTROY it.",
-        "previous": "① If you control no monsters, you can Normal Summon this card without Tributing.\n② When this card is Special Summoned, place 3 counters on it.\n③ This card cannot be destroyed by battle.\n④ If this card attacks or is attacked, remove 1 counter from this card at the end of the Damage Step. If you cannot, DESTROY it."
-    },
-    "B.E.S. Covered Core": {
-        "_current": "① When this card is Normal Summoned, put 2 counters on it.\n② This card cannot be destroyed by battle.\n③ If this card attacks or is attacked, at the end of the Damage Step toss a coin and call it.\nIf you call it wrong, remove 1 counter. If this card battles without a counter, DESTROY it at the end of the Damage Step.",
-        "previous": "① When this card is Normal Summoned, put 2 counters on it.\n② This card cannot be destroyed by battle.\n③ If this card attacks or is attacked, at the end of the Damage Step toss a coin and call it. If you call it wrong, remove 1 counter. If this card battles without a counter, DESTROY it at the end of the Damage Step."
-    },
-    "B.E.S. Derringer Core": {
-        "_current": "① HOPT | <b>You can reveal 1 other \"B.E.S.\" monster in your hand;</b> Special Summon this card from your hand, then place 3 counters on this card.\n② MAIN PHASE | HOPT | QUICK | <b>You can remove 1 counter from this card and activate 1 of these effects;</b> \n● SEARCH 1 \"Boss Rush\" or 1 Spell/Trap that mentions it.\n● Special Summon 1 Level 9 or lower \"B.E.S.\" monster from your GY.",
-        "previous": null
-    },
-    "B.E.S. Tetran": {
-        "_current": "① When this card is Normal Summoned, put 3 counters on it.\n② This card cannot be destroyed by battle.\n③ If this card attacks or is attacked, remove 1 counter from this card at the end of the Damage Step.\n④ If you cannot, DESTROY it.\nOnce per turn, you can remove 1 counter on this card to DESTROY 1 Spell or Trap Card on the field.",
-        "previous": "① When this card is Normal Summoned, put 3 counters on it.\n② This card cannot be destroyed by battle.\n③ If this card attacks or is attacked, remove 1 counter from this card at the end of the Damage Step. If you cannot, DESTROY it.\n④ OPT | You can remove 1 counter on this card to DESTROY 1 Spell or Trap Card on the field."
-    },
-    "Boss on Parade": {
-        "_current": "HOPT ACTIVATION\n① When this card is activated: Add 1 \"B.E.S.\" monster from your Deck to your hand.\n② YOUR MAIN PHASE | OPT | You can DESTROY 1 monster in your hand or field, and if you do, Special Summon 1 LIGHT Machine monster with 1200 ATK and 1000 or less DEF from your Deck to either field.\n③ <b>You can BANISH this card from your GY;</b> place 1 \"Boss Rush\" from your Deck or GY, face-up on your field.",
-        "previous": null
-    },
-    "Branded Banishment": {
-        "_current": "HOPT ACTIVATION\n<b>Target 1 \"Despia\" monster or 1 Level 8 or higher Fusion Monster in your GY;</b> Special Summon it, then you can apply this effect.\n● Fusion Summon 1 Level 8 or higher Fusion Monster from your Extra Deck, by BANISHING Fusion Materials mentioned on it from either field.",
-        "previous": "HOPT ACTIVATION\n<b>Target 1 \"Despia\" monster or 1 Level 8 or higher Fusion Monster in your GY;</b> Special Summon it, then you can apply this effect.\n● Fusion Summon 1 Level 8 or higher Fusion Monster from your Extra Deck, by BANISHING Fusion Materials listed on it from either field."
-    },
-    "Branded Bond": {
-        "_current": "① HOPT | Special Summon 1 \"Fallen of Albaz\" from your hand, GY, or BANISHment.\n② END PHASE | HOPT | If this card is in the GY because it was sent there to activate the effect of \"Fallen of Albaz\" this turn: You can Set this card.",
-        "previous": "① HOPT | Special Summon 1 of your \"Fallen of Albaz\" that is banished, in your hand, or in your GY.\n② END PHASE | HOPT | If this card is in the GY because it was sent there to activate the effect of \"Fallen of Albaz\" this turn: You can Set this card."
-    },
-    "Branded in White": {
-        "_current": "① HOPT | Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field, including a Dragon monster. You can also BANISH monsters from your GY as material, if you use \"Fallen of Albaz\" as Fusion Material from your hand, field, or by BANISHING itself from your GY.\n② END PHASE | HOPT | If this card is in the GY because it was sent there to activate the effect of \"Fallen of Albaz\" this turn: You can Set this card.",
-        "previous": "① HOPT | Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field as material, including a Dragon monster. You can also BANISH monsters from your GY as material, if you use \"Fallen of Albaz\" as Fusion Material from your hand, field, or by BANISHING itself from your GY.\n② END PHASE | HOPT | If this card is in the GY because it was sent there to activate the effect of \"Fallen of Albaz\" this turn: You can Set this card."
-    },
-    "Chaotic Elements": {
-        "_current": "① HOPT | SEARCH 1 Level 5 or higher monster (LIGHT or DARK, Pyro or Aqua) (from DECK or GY) then if you have 3 or more Pyro and/or Aqua monsters in your GY, you can DESTROY 1 card on the field.\n② HOPT | If your opponent controls a monster (LIGHT or DARK, Pyro or Aqua): <b>You can BANISH this card from your GY, then target 1 monster your opponent controls;</b> take control of it until the End Phase.",
-        "previous": null
-    },
-    "Cyber Jormungardr": {
-        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned by card effect.\n① HOPT | If your opponent controls a monster: You can Special Summon this card from your hand, then take 1 \"Cyber Dragon\" from your Deck, and either Special Summon it or equip it to this card as an Equip Spell, also you cannot Special Summon for the rest of this turn, except Machine monsters.\n② HOPT | <b>You can BOUNCE 1 \"Cyber Dragon\" you control;</b> SEARCH 1 \"Polymerization\" (from DECK or GY).",
-        "previous": null
-    },
-    "Cyberdark Wurm": {
-        "_current": "① This card's name becomes \"Cyber Dragon\" while on the field or in the GY.\n② If this card is in your hand or GY, and you have another Machine \"Cyber\" monster in your field or GY: <b>You can send 1 \"Cyber Dragon\" monster from your hand or Deck to the GY;</b> Special Summon this card, then you can add 1 \"Cyber\" Spell/Trap from your GY to your hand.\nYou can only use this effect of \"Cyberdark Wurm\" once per Duel.",
-        "previous": null
-    },
-    "Dark Magician of Destruction": {
-        "_current": "\"Dark Magician\" + 1 LIGHT or DARK monster\nMust be either Fusion Summoned, or Special Summoned (from your Extra Deck) during the turn a Spell Card or effect is activated, by BANISHING 1 Level 6 or higher DARK Spellcaster monster you control as material. You can only Special Summon \"Dark Magician of Destruction\" once per turn this way, no matter which method you use. This card's name becomes \"Dark Magician\" while on the field or in the GY. If this card is Special Summoned: You can SEARCH 1 \"Dark Magician\" or 1 card that mentions it.",
-        "previous": null
-    },
-    "Dogmatika Punishment": {
-        "_current": "HOPT ACTIVATION\n<b>Target 1 face-up monster your opponent controls;</b> send 1 monster with an equal or higher ATK from your Extra Deck to the GY, and if you do, DESTROY that monster. Until the end of your next turn after this card resolves, you cannot Special Summon from the Extra Deck.",
-        "previous": "HOPT ACTIVATION\n<b>Target 1 face-up monster your opponent controls;</b> send 1 monster with an equal or higher ATK from your Extra Deck to the GY, and if you do, DESTROY that monster. Until the end of your next turn after this card resolves, you cannot Special Summon monsters from the Extra Deck."
-    },
-    "Dragonmaid Cehrmba": {
-        "_current": "① Dragon Fusion Monsters you control cannot be destroyed by your opponent's card effects.\n② HOPT | <b>You can DISCARD this card;</b> Special Summon 1 \"Dragonmaid\" monster from your GY or BANISHment, except \"Dragonmaid Cehrmba\".\n③ HOPT | At the end of the Battle Phase: You can BOUNCE this card, and if you do, Special Summon 1 Level 4 or lower \"Dragonmaid\" monster from your hand.",
-        "previous": null
-    },
-    "Filia Regis": {
-        "_current": "1 Dragon Fusion Monster + 1 Level 7 or higher Dragon monster\n① MAIN PHASE | HOPT | QUICK | <b>You can target 1 card your opponent controls or in their GY;</b> BANISH it, then if you banished a card on the field, BOUNCE 1 Dragon monster you control.\n② HOPT | At the start of your opponent's Battle Phase, if this card is in your GY: You can BOUNCE 1 Dragon monster you control or Extra Deck, and if you do, Special Summon this card.",
-        "previous": null
-    },
-    "Fusion Duplication": {
-        "_current": "HOPT ACTIVATION\n<b>Target 1 \"Fusion\" or \"Polymerization\" Normal or Quick-Play Spell in either GY;</b> BANISH that Spell, then apply that Spell's effect when that card is activated.",
-        "previous": "HOPT ACTIVATION\n<b>Target 1 \"Fusion\" or \"Polymerization\" Normal or Quick-Play Spell in either player's GY;</b> BANISH that Spell, then apply that Spell's effect when that card is activated."
-    },
-    "Gagaga Head": {
-        "_current": "① If only your opponent controls a monster, you can Normal Summon this card without Tributing as a Level 4 monster.\n② When this card is Normal Summoned: <b>You can target up to 2 \"Gagaga\" monsters in your GY, except \"Gagaga Head\";</b> Special Summon them, also you cannot Special Summon for the rest of this turn, except by an Xyz Summon that uses only \"Gagaga\" monsters as materials.\n③ An Xyz Monster that was Summoned using this card on the field as material gains this effect.\n● If it is Xyz Summoned: DRAW 1 card.",
-        "previous": "① If only your opponent controls a monster, you can Normal Summon this card without Tributing as a Level 4 monster.\n② When this card is Normal Summoned: <b>You can target up to 2 \"Gagaga\" monsters in your GY, except \"Gagaga Head\";</b> Special Summon them, also you cannot Special Summon monsters for the rest of this turn, except by an Xyz Summon that uses only \"Gagaga\" monsters as materials.\n③ An Xyz Monster that was Summoned using this card on the field as material gains this effect.\n● If it is Xyz Summoned: DRAW 1 card."
-    },
-    "Gem-Knight Amber": {
-        "_current": "① This card is treated as a Normal Monster while face-up on the field or in the GY.\n② OPT | <b>While this card is a Normal Monster on the field, you can Normal Summon it to have it become an Effect Monster with this effect.\n● You can send 1 \"Gem-Knight\" card from your hand to the GY, then target 1 of your banished monsters;</b> add that target to your hand.",
-        "previous": "① This card is treated as a Normal Monster while face-up on the field or in the GY.\n② OPT | <b>While this card is face-up on the field, you can Normal Summon it to have it become an Effect Monster with this effect.\n● You can send 1 \"Gem-Knight\" card from your hand to the GY to target 1 of your banished monsters;</b> add that target to your hand."
-    },
-    "Gem-Knight Emerald": {
-        "_current": "<b>You can BANISH this face-up card you control and 1 face-up Normal Monster you control, then target 1 \"Gem-Knight\" Fusion Monster in your GY;</b> Special Summon it.",
-        "previous": "<b>You can BANISH this face-up card you control and 1 face-up Normal Monster you control to target 1 \"Gem-Knight\" Fusion Monster in your GY;</b> Special Summon it from the GY."
-    },
-    "Gem-Knight Iolite": {
-        "_current": "① This card is treated as a Normal Monster while face-up on the field or in the GY.\n② OPT | <b>While this card is a Normal Monster on the field, you can Normal Summon it to have it become an Effect Monster with this effect.\n● You can BANISH 1 \"Gem-\" monster from your GY, then target 1 \"Gem-Knight\" card in your GY;</b> add that target to your hand.",
-        "previous": "① This card is treated as a Normal Monster while face-up on the field or in the GY.\n② OPT | <b>While this card is face-up on the field, you can Normal Summon it to have it become an Effect Monster with this effect.\n● You can BANISH 1 \"Gem-\" monster from your GY to target 1 \"Gem-Knight\" card in your GY;</b> add that target to your hand."
-    },
-    "Guilt-Gripping Morganite": {
-        "_current": "① For the rest of this Duel, apply the following effects.\n● You cannot activate monster effects in the hand.\n● You can Normal Summon Level 5 or higher monsters without Tributing.\n● You do not pay LP to activate Spell/Trap Cards.\n② <b>You can BANISH this card from your GY, then reveal 1 \"Morganite\" card in your hand;</b> place the revealed card on the bottom of the Deck, then DRAW 1 card.",
-        "previous": null
-    },
-    "Hallo-Ween!": {
-        "_current": "SEARCH 1 \"Hallo, the Spirit of Tricks\" or \"Ween, the Spirit of Treats\" (from DECK or GY).",
-        "previous": null
-    },
-    "Inferno of the Ashened": {
-        "_current": "HOPT ACTIVATION\n① When this card is activated: You can place 1 \"Obsidim, the Ashened City\" from your Deck, face-up in either Field Zone.\n② HOPT | <b>You can target 1 face-up card your opponent controls and 1 Level 8 or higher DARK Pyro monster in your GY;</b> send that card on the field to the GY, and if you do, Special Summon that other monster from your GY to your opponent's field in Defense Position.",
-        "previous": null
-    },
-    "Keeper of Dragon Magic": {
-        "_current": "① HOPT | If this card is Normal or Special Summoned: <b>You can DISCARD 1 card;</b> SEARCH 1 \"Polymerization\" Normal Spell or \"Fusion\" Normal Spell.\n② HOPT | <b>You can reveal 1 Fusion Monster in your Extra Deck;</b> Special Summon 1 of the Fusion Materials mentioned on that monster from your GY, in face-down Defense Position.\nYou cannot Special Summon from the Extra Deck, except Fusion Monsters, the turn you activate either of this card's effects.",
-        "previous": "① HOPT | If this card is Normal or Special Summoned: <b>You can DISCARD 1 card;</b> SEARCH 1 \"Polymerization\" Normal Spell or \"Fusion\" Normal Spell.\n② HOPT | <b>You can reveal 1 Fusion Monster in your Extra Deck;</b> Special Summon 1 of the Fusion Materials mentioned on that monster from your GY, in face-down Defense Position.\nYou cannot Special Summon monsters from the Extra Deck, except Fusion Monsters, the turn you activate either of this card's effects."
-    },
-    "Layer 19 \"Sudden Incursion! Super Quantum Black!!\"": {
-        "_current": "Activate 1 of these effects (but you can only use each effect of \"Layer 19 \"Sudden Incursion! Super Quantum Black!!\"\" once per turn);\n● Target 1 Attack Position monster on the field; change it to Defense Position.\n● If you control a \"Super Quant\" monster: Special Summon 1 \"Super Quant\" monster from your Deck with a different original Attribute from the monsters you control, in Defense Position.\n● Set 1 \"Super Quant\" Trap from your Deck. It can be activated this turn.",
-        "previous": null
-    },
-    "Masked HERO Atomic": {
-        "_current": "Must be Special Summoned with \"Mask Change\". The first time this card would be destroyed each turn, it is not destroyed. You can only use each of the following effects of \"Masked HERO Atomic\" once per turn. If this card is Special Summoned: <b>You can target 1 non-FIRE \"Masked HERO\" monster in your GY or BANISHment;</b> Special Summon it in Defense Position, ignoring its Summoning conditions. During your End Phase: <b>You can target 1 \"Change\" Quick-Play Spell in your GY;</b> Set it.",
-        "previous": null
-    },
-    "Masked HERO Dusk Crow": {
-        "_current": "If this card is in your hand: <b>You can BANISH 1 \"HERO\" monster from your GY;</b> Special Summon this card. If this card is Normal or Special Summoned: You can SEARCH 1 \"Masked HERO\" monster (from DECK or GY) except \"Masked HERO Dusk Crow\". You can only use each effect of \"Masked HERO Dusk Crow\" once per turn.",
-        "previous": null
-    },
-    "Miasma Dragon Tistina": {
-        "_current": "① HOPT | If this card is Normal or Special Summoned: You can SEARCH 1 \"Tistina\" monster except \"Miasma Dragon Tistina\", also for the rest of this turn, LIGHT \"Tistina\" monsters you control gain 1000 ATK.\n② HOPT | If this card is sent to the GY, and a card is in the Field Zone: You can Special Summon this card, also you cannot Special Summon from the hand or GY for the rest of this turn, except \"Tistina\" monsters.",
-        "previous": null
-    },
-    "Moissa Wight": {
-        "_current": "① This card's name becomes \"Skull Servant\" while in the GY.\n② HOPT | If this card is Normal or Special Summoned: You can SEARCH 1 \"Skull Servant\" or 1 card that mentions it except \"Moissa Wight\", also you cannot Special Summon for the rest of this turn, except Zombie monsters.\n③ YOUR MAIN PHASE | HOPT | You can Normal Summon 1 Level 4 or lower Zombie monster in addition to your Normal Summon/Set. (You can only gain this effect once per turn.)",
-        "previous": null
-    },
-    "Morgana the Witch of Eyes": {
-        "_current": "(This card is always treated as a \"Morganite\" card.)\n① When an opponent's monster declares an attack: <b>You can BANISH 1 \"Morganite\" Spell from your GY;</b> NEGATE that attack.\n② HOPT | If this card is Normal or Special Summoned: You can SEARCH 1 \"Morganite\" Spell.\n③ HOPT | If you have 3 or more \"Morganite\" Spells with different names in your GY and/or BANISHment: You can change the ATK of all face-up monsters your opponent controls to 0.",
-        "previous": null
-    },
-    "Nadir Servant": {
-        "_current": "HOPT ACTIVATION\nSend 1 monster from your Extra Deck to the GY, then SEARCH 1 \"Dogmatika\" monster or \"Fallen of Albaz\" (from DECK or GY) that has ATK less than or equal to that sent monster in the GY, also, for the rest of this turn after this card resolves, you cannot Special Summon from the Extra Deck.",
-        "previous": "HOPT ACTIVATION\nSend 1 monster from your Extra Deck to the GY, then SEARCH 1 \"Dogmatika\" monster or \"Fallen of Albaz\" (from DECK or GY) that has ATK less than or equal to that sent monster in the GY, also, for the rest of this turn after this card resolves, you cannot Special Summon monsters from the Extra Deck."
-    },
-    "Nouvelles Recipe Book \"Recettes de Nouvellez\"": {
-        "_current": "HOPT ACTIVATION\n① While you control a \"Nouvelles\" Monster Card, all face-up monsters your opponent controls are changed to Attack Position.\n② Each time a monster(s) is Tributed by a Ritual Monster's effect, your opponent pays 850 LP.\n③ OPT | If you Special Summon a Ritual Monster(s) (except during the Damage Step): <b>You can target 1 of them;</b> SEARCH 1 \"Recipe\" or \"Nouvelles\" card except a Continuous Spell, and if you do, increase that monster's Level by 1.",
-        "previous": null
-    },
-    "Shipping Error": {
-        "_current": "When a card or effect is activated that includes an effect that adds a card(s) from the Deck to the hand: The activated effect becomes \"Your opponent takes 1 card from their Deck for you to add to your hand, and you must keep that card revealed. During the End Phase of this turn, shuffle it into the Deck, and if you do, DRAW 1 card\".",
-        "previous": null
-    },
-    "Super Quantum Black Layer": {
-        "_current": "① HOPT | QUICK | When your opponent activates a monster effect: You can DISCARD 1 other card, and if you do, Special Summon this card from your hand.\n② HOPT | If this card is Special Summoned: You can Special Summon 1 \"Super Quantal Mech Beast\" Xyz Monster from your Extra Deck using this card you control as material (this is treated as an Xyz Summon), and if you do, attach 1 \"Super Quant\" monster from your GY to it.\n③ HOPT | If this card is sent to the GY: You can SEARCH 1 \"Super Quant\" Spell.",
-        "previous": null
-    },
-    "Timaeus the United Magical Dragon": {
-        "_current": "\"Dark Magician\" or \"Dark Magician Girl\" + 1 Dragon or Spellcaster monster\nAfter this card is Special Summoned, it is unaffected by other cards' effects until the end of your next turn. You can only use each of the following effects of \"Timaeus the United Magical Dragon\" once per turn. If this card battles, during damage calculation: You can make this card gain 100 ATK for each Spell in the GYs and BANISHment. During your opponent's turn (QUICK EFFECT): <b>You can target 1 Spell/Trap on the field;</b> DESTROY it.",
-        "previous": null
-    },
-    "Triple Tactics Thrust": {
-        "_current": "HOPT ACTIVATION\nIf your opponent has activated a monster effect during this turn: Set 1 Normal Spell/Trap from your Deck, except \"Triple Tactics Thrust\", or if your opponent controls a monster, you can add it to your hand instead. That Set card cannot be activated this turn.",
-        "previous": "HOPT ACTIVATION\nIf your opponent has activated a monster effect during this turn: Set 1 Normal Spell/Trap directly from your Deck, except \"Triple Tactics Thrust\", or if your opponent controls a monster, you can add it to your hand instead. That Set card cannot be activated this turn."
-    },
-    "Vic Viper Type-L": {
-        "_current": "① HOPT | At the start of your Battle Phase: <b>You can activate 1 of these effects;</b> \n● Special Summon 1 Machine monster from your hand.\n● Send 1 Level 4 or lower LIGHT Machine monster from your Deck to the GY.\n② HOPT | If this card is destroyed: <b>You can target 1 LIGHT Machine monster in your GY;</b> Special Summon it, and if you Special Summoned a monster with 1200 or less original ATK, it gains 1200 ATK.",
-        "previous": null
-    },
-    "Wight Reanimator": {
-        "_current": "① Your \"King of the Skull Servants\" is PIERCING.\n② OPT | <b>You can target 1 \"Skull Servant\" or \"King of the Skull Servants\" in your GY;</b> send 1 \"Skull Servant\" or 1 monster that mentions it from your Deck to the GY, and if you do, Special Summon the targeted monster, also you cannot Special Summon for the rest of this turn, except Zombie monsters.",
-        "previous": null
+    "Tactical Trainer of the Six Samurai": {
+        "_current": "① HOPT | If you control a \"Six Samurai\" monster other than \"Tactical Trainer of the Six Samurai\", you can Special Summon this card (from your hand).\n② HOPT | If this card is sent from the field to the GY: You can SEARCH 1 \"Six Strike\" card (from DECK or GY).\n③ HOPT | A \"Six Samurai\" monster that was Synchro Summoned using this card gains this effect.\nMonsters your opponent controls lose 500 ATK.",
+        "previous": "① HOPT | If you control a \"Six Samurai\" monster other than \"Tactical Trainer of the Six Samurai\", you can Special Summon this card (from your hand).② \n③ HOPT | If this card is sent from the field to the GY: You can SEARCH 1 \"Six Strike\" card (from DECK or GY).\n④ HOPT | A \"Six Samurai\" monster that was Synchro Summoned using this card gains this effect.\nMonsters your opponent controls lose 500 ATK."
     }
 }

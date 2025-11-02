@@ -730,11 +730,13 @@ tagOncePerTurns
             (\ef →
               applyWhen (not ("1 of these" `Text.isInfixOf` ef)) (Text.replace "● " "") ef
             )
-          & #enclosedNumber .~
-            Just case mapMaybe (textNonEmpty ↢ (.enclosedNumber)) $ reverse result of
-              [] → one $ Unsafe.head enclosedList
-              (Text.head → lastEnclosed):_ →
-                one . Unsafe.head . drop 1 $ dropWhile (≢ lastEnclosed) enclosedList
+          & applyWhen (effect.mainEffect ≢ "" ∨ effect.trailingText ≢ "")
+            ( #enclosedNumber .~
+                Just case mapMaybe (textNonEmpty ↢ (.enclosedNumber)) $ reverse result of
+                  [] → one $ Unsafe.head enclosedList
+                  (Text.head → lastEnclosed):_ →
+                    one . Unsafe.head . drop 1 $ dropWhile (≢ lastEnclosed) enclosedList
+            )
         ]
       , True
 
