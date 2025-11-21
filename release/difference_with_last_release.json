@@ -1,22 +1,46 @@
 {
-    "Anarchist Monk of the Six Samurai": {
-        "_current": "① HOPT | If you control a \"Six Samurai\" monster other than \"Anarchist Monk of the Six Samurai\", you can Special Summon this card (from your hand).\n② HOPT | If this card is sent from the field to the GY: You can SEARCH 1 \"Six Samurai\" Quick-Play Spell.\n③ HOPT | A \"Six Samurai\" monster that was Synchro Summoned using this card gains this effect.\nThe Levels of all monsters your opponent controls are reduced by 1.",
-        "previous": "① HOPT | If you control a \"Six Samurai\" monster other than \"Anarchist Monk of the Six Samurai\", you can Special Summon this card (from your hand).② \n③ HOPT | If this card is sent from the field to the GY: You can SEARCH 1 \"Six Samurai\" Quick-Play Spell.\n④ HOPT | A \"Six Samurai\" monster that was Synchro Summoned using this card gains this effect.\nThe Levels of all monsters your opponent controls are reduced by 1."
+    "Azamina": {
+        "_current": "\"Queen Azamina\" + 1 Fusion or Synchro Monster\nMust first be either Fusion Summoned, or Special Summoned (from your Extra Deck) by Tributing 1 \"Saint Azamina\" you control and 1 face-up monster your opponent controls.\n① Cannot be destroyed by card effects.\n② Each time your opponent activates a card or effect, all monsters they control lose 500 ATK when it resolves.\n③ Your opponent cannot activate the effects of monsters with 0 ATK.",
+        "previous": null
     },
-    "Drake Shark": {
-        "_current": "① OPT | <b>A \"Shark Drake\" Xyz Monster that has this card as material gains this effect.\n● You can detach 2 materials from this card, then target 1 Spell/Trap on the field;</b> attach it to this card as material.\n② HOPT | If this card is added to your hand, except by DRAWING it: You can Special Summon this card.\n③ HOPT | This card can be treated as 2 materials for the Xyz Summon of a WATER Xyz Monster that requires 3 or more materials.",
-        "previous": "① OPT | <b>A \"Shark Drake\" Xyz Monster that has this card as material gains this effect.\n● You can detach 2 materials from this card, then target 1 Spell/Trap on the field;</b> attach it to this card as material.② \n③ HOPT | If this card is added to your hand, except by DRAWING it: You can Special Summon this card.\n④ HOPT | This card can be treated as 2 materials for the Xyz Summon of a WATER Xyz Monster that requires 3 or more materials."
+    "Fallen Angel of the Golden Land": {
+        "_current": "\"Eldlich the Golden Lord\" + 1 Zombie monster\nMust be either Fusion Summoned, or Special Summoned (from your Extra Deck) by Tributing 1 LIGHT Zombie monster, while you have \"Eldlich the Golden Lord\" in your field or GY. You can only Special Summon \"Fallen Angel of the Golden Land\" once per turn this way, no matter which method you use.\n① HOPT | If this card is sent from the field to the GY: You can Special Summon 1 \"Eldlich\" monster from your Deck, Extra Deck, or GY.",
+        "previous": null
     },
-    "Dreaming Reality of Nemleria, Realized": {
-        "_current": "① Gains 100 ATK for each face-down card in your Extra Deck.\n② HOPT | If this card is in your hand: <b>You can target 1 monster you control;</b> place it on the bottom of the Deck, and if you do, Special Summon this card.\n③ HOPT | If this card is Special Summoned: <b>You can activate 1 of these effects;</b> \n● Add 1 \"Dreaming Nemleria\" from your Deck to your face-up Extra Deck.\n● Change 1 other face-up monster on the field to face-down Defense Position.",
-        "previous": "① Gains 100 ATK for each face-down card in your Extra Deck.② ③ \n④ HOPT | If this card is in your hand: <b>You can target 1 monster you control;</b> place it on the bottom of the Deck, and if you do, Special Summon this card.\n⑤ HOPT | If this card is Special Summoned: <b>You can activate 1 of these effects;</b> \n● Add 1 \"Dreaming Nemleria\" from your Deck to your face-up Extra Deck.\n● Change 1 other face-up monster on the field to face-down Defense Position."
+    "Saber Hole": {
+        "_current": "Activate only while you control a face-up \"X-Saber\" monster.\nNEGATE the Summon of a monster, and DESTROY it.",
+        "previous": "Activate only while you control a face-up \"X-Saber\" monster. NEGATE the Summon of a monster, and DESTROY it."
     },
-    "Left-Hand Shark": {
-        "_current": "① If this card is Special Summoned from the GY: This card's Level becomes 4.\n② HOPT | If you control \"Right-Hand Shark\", and this card is in your hand or GY: You can Special Summon this card, but BANISH it when it leaves the field.\n③ HOPT | An Xyz Monster that was Summoned using only WATER monsters as material, including this card on the field, gains this effect.\nThis card cannot be destroyed by card effects.",
-        "previous": "① If this card is Special Summoned from the GY: This card's Level becomes 4.② \n③ HOPT | If you control \"Right-Hand Shark\", and this card is in your hand or GY: You can Special Summon this card, but BANISH it when it leaves the field.\n④ HOPT | An Xyz Monster that was Summoned using only WATER monsters as material, including this card on the field, gains this effect.\nThis card cannot be destroyed by card effects."
+    "Snake-Eyes Vengeance Dragon": {
+        "_current": "1 Tuner + 1+ non-Tuner monsters\n① MAIN PHASE | HOPT | QUICK | <b>You can target 1 face-up monster on the field or in either GY;</b> place it face-up in its owner's Spell & Trap Zone as a Continuous Spell, also this card cannot use this effect next turn.\n② BATTLE PHASE | HOPT | QUICK | <b>You can target 1 monster and 1 Continuous Spell on the field;</b> DESTROY them.",
+        "previous": null
     },
-    "Tactical Trainer of the Six Samurai": {
-        "_current": "① HOPT | If you control a \"Six Samurai\" monster other than \"Tactical Trainer of the Six Samurai\", you can Special Summon this card (from your hand).\n② HOPT | If this card is sent from the field to the GY: You can SEARCH 1 \"Six Strike\" card (from DECK or GY).\n③ HOPT | A \"Six Samurai\" monster that was Synchro Summoned using this card gains this effect.\nMonsters your opponent controls lose 500 ATK.",
-        "previous": "① HOPT | If you control a \"Six Samurai\" monster other than \"Tactical Trainer of the Six Samurai\", you can Special Summon this card (from your hand).② \n③ HOPT | If this card is sent from the field to the GY: You can SEARCH 1 \"Six Strike\" card (from DECK or GY).\n④ HOPT | A \"Six Samurai\" monster that was Synchro Summoned using this card gains this effect.\nMonsters your opponent controls lose 500 ATK."
+    "Trap Holic": {
+        "_current": "HOPT ACTIVATION\n<b>Target 1 Spell/Trap you control;</b> DESTROY it, and if you do, Set 1 Normal Trap from your Deck, except \"Trap Holic\". It can be activated this turn, while you have 3 or more Traps in your GY.",
+        "previous": null
+    },
+    "X-Saber Gottoms": {
+        "_current": "1 Tuner + 1+ EARTH monsters\nIf this card is Synchro Summoned: You can SEARCH 1 \"Saber\" or \"Gottoms\" Spell/Trap. When this card inflicts battle damage to your opponent: You can DISCARD 1 random card from their hand. When your \"X-Saber\" monster is targeted for an attack while this card is in your GY: You can Special Summon this card, then change the attack target to this card. You can only use each effect of \"X-Saber Gottoms\" once per turn.",
+        "previous": null
+    },
+    "XX-Saber Fulhelmknight": {
+        "_current": "① When an opponent's monster declares an attack: <b>You can target the attacking monster;</b> NEGATE that attack.\n② This effect can only be used once while this card is face-up on the field.\nIf this card DESTROYS an opponent's Defense Position monster by battle: You can target 1 Level 4 or lower \"X-Saber\" monster in your GY; Special Summon it.",
+        "previous": "① When an opponent's monster declares an attack: <b>You can target the attacking monster;</b> NEGATE that attack. This effect can only be used once while this card is face-up on the field.\n② If this card DESTROYS an opponent's Defense Position monster by battle: <b>You can target 1 Level 4 or lower \"X-Saber\" monster in your GY;</b> Special Summon it."
+    },
+    "ドラグニティロード－ゲオルギアス": {
+        "_current": "ドラグニティロード－ゲオルギアス",
+        "previous": null
+    },
+    "影霊翼騎　ウェンディクルフ": {
+        "_current": "影霊翼騎　ウェンディクルフ",
+        "previous": null
+    },
+    "星騎士　セイクリッド・デルタテロス": {
+        "_current": "星騎士　セイクリッド・デルタテロス",
+        "previous": null
+    },
+    "超神星輝士　セイクリッド・トレミスΩ７": {
+        "_current": "超神星輝士　セイクリッド・トレミスΩ７",
+        "previous": null
     }
 }
