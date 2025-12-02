@@ -1,154 +1,18 @@
 {
-    "Absolute Axon Kicker": {
-        "_current": "1 Psychic Synchro Monster + 1 Synchro Monster\nMust first be Fusion Summoned.\n① Cannot be destroyed by card effects.\n② If this card is Fusion Summoned: <b>You can pay 2000 LP;</b> BANISH all face-up cards your opponent controls.\n③ HOPT | If this card is in your GY, except the turn it was sent there: <b>You can BANISH it;</b> Special Summon 1 Level 10 Psychic Fusion Monster from your Extra Deck (this is treated as a Fusion Summon).",
+    "Divine Serpent Apophis": {
+        "_current": "2 monsters that mention \"Temple of the Kings\"\nMust be either Fusion Summoned, or Special Summoned by Tributing 2 \"Apophis\" monsters.\n① OPT | <b>You can target up to 3 \"Apophis\" Traps with different names in your GY;</b> Set them.\n② OPT | If a Trap Card is activated (except during the Damage Step): <b>You can target 1 card your opponent controls;</b> DESTROY it.",
         "previous": null
     },
-    "Axon Kicker Oracle": {
-        "_current": "1 Psychic monster + 1 Synchro, Xyz, or Link Monster\n① After this card is Fusion Summoned, it gains 1000 ATK for each Synchro, Xyz, and Link Monster used as its material, until the end of the next turn.\n② HOPT | QUICK | When your opponent would Special Summon a monster(s): You can NEGATE the Summon, and if you do, BANISH that monster(s).\n③ HOPT | If this Fusion Summoned card is sent to the GY: <b>You can BANISH 1 \"Teleport\" Normal or Quick-Play Spell from your GY;</b> Special Summon this card.",
+    "Dracotail Arthalion": {
+        "_current": "1 \"Dracotail\" monster + 1+ monsters in the hand\n① HOPT | If this card is Fusion Summoned: <b>You can target monsters on the field and/or GYs, up to the number of monsters used as material from the hand;</b> BOUNCE them.\n② HOPT | If 2 or more monsters are sent to the GY at the same time, while this card is in your GY (except during the Damage Step): You can Special Summon this card, but BANISH it when it leaves the field.",
         "previous": null
     },
-    "Branded Fusion": {
-        "_current": "HOPT ACTIVATION\nFusion Summon 1 Fusion Monster that mentions \"Fallen of Albaz\" as material from your Extra Deck, using 2 monsters from your hand, Deck, or field.\nYou cannot Special Summon from the Extra Deck, except Fusion Monsters, the turn you activate this card.",
-        "previous": "HOPT ACTIVATION\nFusion Summon 1 Fusion Monster that mentions \"Fallen of Albaz\" as material from your Extra Deck, using 2 monsters from your hand, Deck, or field as material.\nYou cannot Special Summon from the Extra Deck, except Fusion Monsters, the turn you activate this card."
-    },
-    "Branded Opening": {
-        "_current": "① HOPT | DISCARD 1 card, then take 1 \"Despia\" monster from your Deck, and either add it to your hand or Special Summon it in Defense Position, also for the rest of this turn after this card resolves, you cannot Special Summon from the Extra Deck, except Fusion Monsters.\n② HOPT | If a Fusion Monster(s) you control would be destroyed by card effect, you can BANISH this card from your GY instead.",
-        "previous": "① HOPT | DISCARD 1 card, then take 1 \"Despia\" monster from your Deck, and either add it to your hand or Special Summon it in Defense Position, also for the rest of this turn after this card resolves, you cannot Special Summon monsters from the Extra Deck, except Fusion Monsters.\n② HOPT | If a Fusion Monster(s) you control would be destroyed by card effect, you can BANISH this card from your GY instead."
-    },
-    "Crossmind Archfiend": {
-        "_current": "1 Psychic Tuner + 1+ non-Tuner monsters\n① MAIN PHASE | HOPT | QUICK | <b>You can target 1 of your banished Level 7 or lower Psychic monsters;</b> Special Summon it.\n② BATTLE PHASE | HOPT | QUICK | <b>You can Tribute 1 other monster;</b> gain LP equal to its original ATK, and if you do, this card gains that much ATK until the end of this turn.",
+    "Nerva the Power Patron of Creation": {
+        "_current": "3 \"Artmage\" monsters\nMust first be either Fusion Summoned, or Special Summoned (from your Extra Deck) in Defense Position by Tributing 3 monsters with different Types. You can only Special Summon \"Nerva the Power Patron of Creation(s)\" once per turn.\n① While a card is in the Field Zone, this card cannot be destroyed by card effects.\n② OPT | QUICK | When you activate an \"Artmage\" monster's effect: You can make the activated effect become \"DESTROY all cards your opponent controls\".",
         "previous": null
     },
-    "Curse of Diabell": {
-        "_current": "① HOPT | If you control 2 or more \"Diabell\" monsters: <b>Send 1 monster you control to the GY;</b> DESTROY all face-up cards your opponent controls.\n② HOPT | If this card is sent to the GY, or banished, from the hand or Deck: You can SEARCH 1 \"Diabell\" Spell/Trap except \"Curse of Diabell\".",
-        "previous": null
-    },
-    "Decisive Battle of Golgonda": {
-        "_current": "① This card's name becomes \"Great Sand Sea - Gold Golgonda\" while on the field or in the GY.\n② OPT | If a card(s) you control would be destroyed, you can send 1 Fusion Monster that mentions \"Fallen of Albaz\" as material from your Extra Deck to the GY, instead.\n③ END PHASE | HOPT | If you have \"Fallen of Albaz\" in your field or GY: You can Special Summon 1 \"Springans\" monster from your hand or Deck.",
-        "previous": "① This card's name becomes \"Great Sand Sea - Gold Golgonda\" while on the field or in the GY.\n② OPT | If a card(s) you control would be destroyed, you can send 1 Fusion Monster that mentions \"Fallen of Albaz\" as material from your Extra Deck to the GY, instead.\n③ END PHASE | HOPT | If you have \"Fallen of Albaz\" on your field or in your GY: You can Special Summon 1 \"Springans\" monster from your hand or Deck."
-    },
-    "Despia, Theater of the Branded": {
-        "_current": "① YOUR MAIN PHASE | HOPT | You can Fusion Summon 1 Level 8 or higher Fusion Monster from your Extra Deck, using monsters from your hand or field.\n② HOPT | If a face-up non-Fusion Fairy monster you control leaves the field by an opponent's card effect, or is destroyed by battle: <b>You can target 1 Level 8 or higher Fusion Monster in your GY;</b> Special Summon it.",
-        "previous": "① YOUR MAIN PHASE | HOPT | You can Fusion Summon 1 Level 8 or higher Fusion Monster from your Extra Deck, using monsters from your hand or field as material.\n② HOPT | If a face-up non-Fusion Fairy monster you control leaves the field by an opponent's card effect, or is destroyed by battle: <b>You can target 1 Level 8 or higher Fusion Monster in your GY;</b> Special Summon it."
-    },
-    "Despian Comedy": {
-        "_current": "HOPT | You can use ONE of —\n① QUICK | When your opponent activates a card or effect that targets a \"Despia\" card(s) you control: <b>You can DISCARD this card;</b> NEGATE that effect.\n② QUICK | If this card is in your GY: <b>You can Tribute 1 Fusion Monster;</b> Special Summon this card.",
-        "previous": "HOPT | You can use ONE of —\n① QUICK | When your opponent activates a card or effect that targets a face-up \"Despia\" card(s) you control: <b>You can DISCARD this card;</b> NEGATE that effect.\n② QUICK | If this card is in your GY: <b>You can Tribute 1 Fusion Monster;</b> Special Summon this card."
-    },
-    "Despian Tragedy": {
-        "_current": "HOPT | You can use ONE of —\n① If this card is sent to the GY, or banished, by card effect: You can SEARCH 1 \"Despia\" monster except \"Despian Tragedy\".\n② <b>You can BANISH this card from your GY, then target 1 \"Branded\" Spell/Trap in your GY;</b> Set it to your field.",
-        "previous": "HOPT | You can use ONE of —\n① If this card is sent to the GY, or banished, by a card effect: You can SEARCH 1 \"Despia\" monster except \"Despian Tragedy\".\n② <b>You can BANISH this card from your GY, then target 1 \"Branded\" Spell/Trap in your GY;</b> Set it to your field."
-    },
-    "Diabellstar Vengeance": {
-        "_current": "(This card is always treated as a \"Sinful Spoils\" card. <b>)\nYou can BANISH 1 Spell and 1 Trap from your hand and/or GY;</b> Special Summon this card from your hand or GY. (QUICK EFFECT): <b>You can pay half your LP, then target 1 card your opponent controls;</b> DESTROY it, then if another \"Diabell\" Monster Card is on the field, you can Special Summon 1 Tuner Synchro Monster (Illusion or Spellcaster) from your Extra Deck. You can only use each effect of \"Diabellstar Vengeance\" once per turn.",
-        "previous": null
-    },
-    "Diabellze the White Witch": {
-        "_current": "(This card is always treated as a \"White Forest\" card.)\nMonsters you control cannot be destroyed by your opponent's card effects, while you control 2 or more \"Diabell\" monsters. You can only use each of the following effects of \"Diabellze the White Witch\" once per turn. <b>You can send 1 Spell/Trap from your hand or field to the GY;</b> Special Summon this card from your hand. If this card is Normal or Special Summoned: You can send 1 \"Sinful Spoils\" or \"Diabell\" card from your Deck to the GY.",
-        "previous": null
-    },
-    "Dogmatika Ecclesia, the Virtuous": {
-        "_current": "① Cannot be destroyed by battle with a monster Special Summoned from the Extra Deck.\n② HOPT | If a monster Special Summoned from the Extra Deck is on the field: You can Special Summon this card from your hand.\n③ HOPT | If this card is Normal or Special Summoned: <b>You can activate this effect;</b> SEARCH 1 \"Dogmatika\" card except \"Dogmatika Ecclesia, the Virtuous\", also you cannot Special Summon from the Extra Deck for the rest of this turn.",
-        "previous": "① Cannot be destroyed by battle with a monster Special Summoned from the Extra Deck.\n② HOPT | If a monster Special Summoned from the Extra Deck is on the field: You can Special Summon this card from your hand.\n③ HOPT | If this card is Normal or Special Summoned: <b>You can activate this effect;</b> SEARCH 1 \"Dogmatika\" card except \"Dogmatika Ecclesia, the Virtuous\", also you cannot Special Summon monsters from the Extra Deck for the rest of this turn."
-    },
-    "Dogmatika Nation": {
-        "_current": "① Neither player can target \"Dogmatika\" monsters you control with effects of monsters that were Special Summoned from the Extra Deck.\n② HOPT | After damage calculation, if your \"Dogmatika\" monster battled an opponent's monster: You can DESTROY that opponent's monster.\n③ HOPT | If this face-up card in the Field Zone is destroyed by an opponent's card effect: You can have each player send 1 monster from their Extra Deck to the GY.",
-        "previous": "Neither player can target \"Dogmatika\" monsters you control with effects of monsters that were Special Summoned from the Extra Deck.\n① HOPT | After damage calculation, if your \"Dogmatika\" monster battled an opponent's monster: DESTROY that opponent's monster.\n② HOPT | If this face-up card in the Field Zone is destroyed by an opponent's card effect: You can have each player send 1 monster from their Extra Deck to the GY."
-    },
-    "Dogmatikalamity": {
-        "_current": "HOPT ACTIVATION\nThis card can be used to Ritual Summon any \"Dogmatika\" Ritual Monster.\n① You must also Tribute monsters from your hand or field, whose total Levels equal the Level of the Ritual Monster you Ritual Summon, or send 1 monster from your Extra Deck to the GY, whose Level equals the Level of the Ritual Monster you Ritual Summon. For the rest of this turn after this card resolves, you cannot Special Summon from the Extra Deck.",
-        "previous": "HOPT ACTIVATION\nThis card can be used to Ritual Summon any \"Dogmatika\" Ritual Monster.\n① You must also Tribute monsters from your hand or field, whose total Levels exactly equal the Level of the Ritual Monster you Ritual Summon, or send 1 monster from your Extra Deck to the GY, whose Level equals the Level of the Ritual Monster you Ritual Summon. For the rest of this turn after this card resolves, you cannot Special Summon monsters from the Extra Deck."
-    },
-    "Dogmatikaturgy": {
-        "_current": "HOPT | You can use ONE of —\n① Ritual Summon 1 \"Dogmatika\" Ritual Monster from your hand or Deck by Tributing \"Dogmatika\" monsters and/or Ritual, Fusion, or Synchro Monsters from your field whose total Levels equal the Level of the Ritual Monster you Ritual Summon.\n② If this card is in your GY: <b>You can BANISH this card, then target 2 \"Dogmatika\" monsters with different Levels in your GY;</b> add 1 of them to your hand, and place the other on the bottom of your Deck.",
-        "previous": "HOPT | You can use ONE of —\n① Ritual Summon 1 \"Dogmatika\" Ritual Monster from your hand or Deck by Tributing \"Dogmatika\" monsters and/or Ritual, Fusion, or Synchro Monsters from your field whose total Levels exactly equal the Level of the Ritual Monster you Ritual Summon.\n② If this card is in your GY: <b>You can BANISH this card, then target 2 \"Dogmatika\" monsters with different Levels in your GY;</b> add 1 of them to your hand, and place the other on the bottom of your Deck."
-    },
-    "Eldlixir of the Glorious Golden Land": {
-        "_current": "HOPT | <b>You can pay 800 LP, then activate 1 of these effects;</b> \n● Special Summon this card as a Normal Monster (Zombie/LIGHT/Level 10/ATK 1500/DEF 2800) (this card is also still a Trap), then if you control \"Eldlich the Golden Lord\", you can BOUNCE 1 monster.\n● Set 1 of your banished \"Golden Land\" or \"Eldlixir\" Spells/Traps.",
-        "previous": null
-    },
-    "Filia Diabell": {
-        "_current": "① HOPT | SEARCH 1 Level 8 or higher \"Diabell\" monster or if only your opponent controls a monster, you can Special Summon it instead.\n② HOPT | If this card is banished: You can make all \"Diabell\" monsters you currently control gain 500 ATK.",
-        "previous": null
-    },
-    "Gigantic \"Champion\" Sargas": {
-        "_current": "2+ Level 8 monsters\nOnce per turn, you can also Xyz Summon \"Gigantic \"Champion\" Sargas\" by using 1 \"Springans\" Xyz Monster you control (transfer its materials to this card).\n① HOPT | While this card has material: You can SEARCH 1 \"Springans\" or \"Therion\" card.\n② HOPT | If material is detached from a monster(s) on the field (except during the Damage Step): <b>You can target 1 card on the field;</b> either DESTROY it or BOUNCE it.",
-        "previous": "2+ Level 8 monsters\nOnce per turn, you can also Xyz Summon \"Gigantic \"Champion\" Sargas\" by using 1 \"Springans\" Xyz Monster you control. (Transfer its materials to this card.)\n① HOPT | While this card has material: You can SEARCH 1 \"Springans\" or \"Therion\" card.\n② HOPT | If material is detached from a monster(s) on the field (except during the Damage Step): <b>You can target 1 card on the field;</b> either DESTROY it or BOUNCE it."
-    },
-    "Hushed Psychic Minister": {
-        "_current": "① HOPT | If you control a Psychic monster other than \"Hushed Psychic Minister\", you can Special Summon this card (from your hand) in Defense Position.\n② HOPT | <b>You can BANISH this card and 1 Psychic monster from your GY, then target 1 face-up monster on the field;</b> BANISH it until the End Phase.",
-        "previous": null
-    },
-    "Juraishin, the Cursed Thunder God": {
-        "_current": "1 Tuner + 1+ non-Tuner monsters\n① Each time your opponent activates a card or effect, gain 300 LP when it resolves.\n② OPP'S TURN | HOPT | QUICK | <b>You can pay 1500 LP and Tribute this card, then activate 1 of these effects;</b> \n● DESTROY all face-up monsters your opponent controls.\n● DESTROY all face-up Spells and Traps your opponent controls.",
-        "previous": null
-    },
-    "Mind Procedure": {
-        "_current": "① If this card you control would be used as Synchro Material for a Psychic monster, you can treat it as a non-Tuner.\nHOPT | You can use ONE of:\n② If this card is Normal Summoned, or Special Summoned by a monster effect: <b>You can pay 2000 LP;</b> SEARCH 1 \"Teleport\" Normal or Quick-Play Spell (from DECK or GY).\n③ If this card is banished: <b>You can pay 1000 LP;</b> Special Summon it.",
-        "previous": null
-    },
-    "Parallel Teleport": {
-        "_current": "HOPT ACTIVATION\n<b>Tribute 1 Psychic monster with a Level;</b> Special Summon 1 Level 7 or lower Psychic monster from your Deck or Extra Deck, then if the original Level of the Tributed monster is different from that of the Special Summoned monster on the field, you lose LP equal to the difference x 1000.\nYou cannot Special Summon the turn you activate this card, except Psychic monsters.",
-        "previous": null
-    },
-    "Poplar of the White Forest": {
-        "_current": "1 Tuner + 1+ non-Tuner monsters\n① HOPT | If this card is Special Summoned: <b>You can target 2 \"White Forest\" monsters in your GY;</b> place them face-up in their owners' Spell & Trap Zones as Continuous Spells.\n② OPP'S MAIN PHASE | HOPT | QUICK | You can: Immediately after this effect resolves, Synchro Summon using this card you control.",
-        "previous": null
-    },
-    "Prototype Psychic Blaster": {
-        "_current": "① HOPT | <b>You can DISCARD this card;</b> Special Summon 1 Level 4 or lower Psychic monster from your hand or BANISHment.\n② HOPT | If this card is in your GY: <b>You can pay 1000 LP, and BANISH 1 other Psychic monster from your GY;</b> Special Summon this card, but BANISH it when it leaves the field.",
-        "previous": null
-    },
-    "Serene Psychic Girl": {
-        "_current": "① HOPT | If this card is Normal or Special Summoned: You can BANISH 1 card from your hand, and if you do, Special Summon 1 Level 4 or lower Psychic monster from your Deck, except \"Serene Psychic Girl\", also you cannot Special Summon from the Extra Deck for the rest of this turn, except Psychic monsters.\n② HOPT | <b>You can target face-up monsters on the field up to the number of Psychic monsters you control;</b> increase their Levels by 1 until the end of this turn.",
-        "previous": null
-    },
-    "Serene Psychic Sorceress": {
-        "_current": "1 Tuner + 1+ non-Tuner monsters\n① HOPT | If this card is Synchro Summoned: <b>You can pay 1000 LP;</b> Set 1 \"Teleport\" Normal or Quick-Play Spell from your Deck, GY, or BANISHment.\n② HOPT | If this Synchro Summoned card is sent to the GY: <b>You can target 1 card your opponent controls, or target 2 if you control a Psychic monster (Fusion or Synchro);</b> BOUNCE that card(s).",
-        "previous": null
-    },
-    "Silent Psychic Magician": {
-        "_current": "1 Tuner + 1+ non-Tuner monsters\n① HOPT | If this card is Special Summoned: <b>You can target 1 Level 4 or lower Psychic monster in your GY or BANISHment;</b> Special Summon it, then you can increase its Level by 1, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Psychic monsters.\n② If this card you control would be used as Synchro Material, you can treat it as a non-Tuner.",
-        "previous": null
-    },
-    "Sinful Spoils Sanctification": {
-        "_current": "HOPT | <b>You can activate 1 of these effects;</b> \n● Target 1 \"Diabell\" monster in your GY or BANISHment; DISCARD 1 card, and if you do, Special Summon that monster.\n● Target 1 face-up Monster Card in your Spell & Trap Zone; Special Summon it.",
-        "previous": null
-    },
-    "Springans Blast!": {
-        "_current": "HOPT ACTIVATION\nIf you control a \"Springans\" monster: <b>Choose 1 opponent's Main Monster Zone;</b> if a monster is face-up in that zone, during this turn, it cannot attack directly, also its effects are negated. If no monster is in that zone, it cannot be used this turn. If you control a Fusion Monster that mentions \"Fallen of Albaz\" as material, you can choose 2 zones instead.",
-        "previous": "HOPT ACTIVATION\nIf you control a \"Springans\" monster: <b>Choose 1 opponent's Main Monster Zone;</b> if a monster is face-up in that zone, during this turn, it cannot attack directly, also its effects are negated. If no monster is in that zone, it cannot be used this turn. If you control a Fusion Monster that lists \"Fallen of Albaz\" as material, you can choose 2 zones instead."
-    },
-    "Springans Call!": {
-        "_current": "① HOPT | <b>Target 1 \"Springans\" monster or \"Fallen of Albaz\" in your GY;</b> Special Summon it.\n② MAIN PHASE | HOPT | Except the turn this card was sent to the GY: <b>You can BANISH this card and 1 Fusion Monster from your GY, then target 1 \"Springans\" Xyz Monster you control;</b> attach 1 Fusion Monster that mentions \"Fallen of Albaz\" as material from your Extra Deck to that monster as material.",
-        "previous": "① HOPT | <b>Target 1 \"Springans\" monster or \"Fallen of Albaz\" in your GY;</b> Special Summon it.\n② MAIN PHASE | HOPT | Except the turn this card was sent to the GY: <b>You can BANISH this card and 1 Fusion Monster from your GY, then target 1 \"Springans\" Xyz Monster you control;</b> attach 1 Fusion Monster that lists \"Fallen of Albaz\" as material from your Extra Deck to that monster as material."
-    },
-    "Springans Kitt": {
-        "_current": "① HOPT | If you have a Fusion Monster that mentions \"Fallen of Albaz\" as material in your field or GY: You can Special Summon this card from your hand.\n② HOPT | If this card is Normal or Special Summoned: You can add to your hand, 1 of your \"Branded\" Spells/Traps that is banished or in your Deck or GY, then place 1 card from your hand on the bottom of the Deck.",
-        "previous": "① HOPT | If you have a Fusion Monster that mentions \"Fallen of Albaz\" as material on your field or in your GY: You can Special Summon this card from your hand.\n② HOPT | If this card is Normal or Special Summoned: You can add to your hand, 1 of your \"Branded\" Spells/Traps that is banished or in your Deck or GY, then place 1 card from your hand on the bottom of the Deck."
-    },
-    "Springans Merrymaker": {
-        "_current": "2 Level 4 monsters\n① HOPT | If this card is Special Summoned from your Extra Deck: You can send 1 \"Springans\" monster from your Deck to the GY.\n② HOPT | QUICK | During your opponent's Main or Battle Phase: You can BANISH this card until the End Phase, then if you banished this card with 2 or more Xyz Materials, you can also send 1 Fusion Monster from your Extra Deck to the GY that mentions \"Fallen of Albaz\" as material.",
-        "previous": "2 Level 4 monsters\n① HOPT | If this card is Special Summoned from your Extra Deck: You can send 1 \"Springans\" monster from your Deck to the GY.\n② HOPT | QUICK | During your opponent's Main or Battle Phase: You can BANISH this card until the End Phase, then if you banished this card with 2 or more Xyz Materials, you can also send 1 Fusion Monster from your Extra Deck to the GY that lists \"Fallen of Albaz\" as material."
-    },
-    "Teleport Fusion": {
-        "_current": "① MAIN PHASE | HOPT | Fusion Summon 1 Psychic Fusion Monster from your Extra Deck, by BANISHING Psychic monsters from your field or GY as material.\n② HOPT | If a face-up Psychic monster(s) you control that was Special Summoned from the Extra Deck is destroyed: <b>You can BANISH this card from your GY, then target 1 of your banished Psychic monsters;</b> Special Summon it.",
-        "previous": null
-    },
-    "Tri-Brigade Airborne Assault": {
-        "_current": "HOPT ACTIVATION\n<b>Target 1 Beast, Beast-Warrior, or Winged Beast monster you control;</b> Special Summon 1 Beast, Beast-Warrior, or Winged Beast monster from your Deck, in Defense Position, with a different Type and with ATK less than or equal to that monster, but its effects are negated until the end of this turn, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Link Monsters.",
-        "previous": "HOPT ACTIVATION\n<b>Target 1 Beast, Beast-Warrior, or Winged Beast monster you control;</b> Special Summon 1 Beast, Beast-Warrior, or Winged Beast monster from your Deck, in Defense Position, with a different Type and with ATK less than or equal to that monster, but its effects are negated until the end of this turn, also you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except Link Monsters."
-    },
-    "Tri-Brigade Stand-Off": {
-        "_current": "① You cannot Special Summon from the Extra Deck, except Beast, Beast-Warrior, or Winged Beast monsters.\n② HOPT | <b>You can send 1 monster from your hand or field to the GY;</b> SEARCH 1 \"Tri-Brigade\" monster with a different original Type than that monster sent to the GY.\n③ If this card in its owner's Spell & Trap Zone is destroyed by an opponent's card effect: <b>You can activate this effect;</b> your opponent cannot declare an attack this turn.",
-        "previous": "① You cannot Special Summon monsters from the Extra Deck, except Beast, Beast-Warrior, or Winged Beast monsters.\n② HOPT | <b>You can send 1 monster from your hand or field to the GY;</b> SEARCH 1 \"Tri-Brigade\" monster with a different original Type than that monster sent to the GY.\n③ If this card in its owner's Spell & Trap Zone is destroyed by an opponent's card effect: <b>You can activate this effect;</b> your opponent cannot declare an attack this turn."
-    },
-    "White Knight of Dogmatika": {
-        "_current": "You can Ritual Summon this card with \"Dogmatikalamity\".\n① You cannot Special Summon from the Extra Deck.\n② HOPT | If your opponent activates a card or effect (except during the Damage Step): You can send 1 monster from your Extra Deck to the GY, and if you do, look at your opponent's Extra Deck and send 1 monster from it to the GY. This card gains ATK equal to half the combined ATK of those monsters sent to the GY, until the end of this turn.",
-        "previous": "You can Ritual Summon this card with \"Dogmatikalamity\".\n① You cannot Special Summon monsters from the Extra Deck.\n② HOPT | If your opponent activates a card or effect (except during the Damage Step): You can send 1 monster from your Extra Deck to the GY, and if you do, look at your opponent's Extra Deck and send 1 monster from it to the GY. This card gains ATK equal to half the combined ATK of those monsters sent to the GY, until the end of this turn."
-    },
-    "Witch of the White Forest": {
-        "_current": "HOPT ACTIVATION\n① When this card is activated: You can SEARCH 1 \"White Forest\" monster but you cannot Special Summon DARK monsters from the Extra Deck for the rest of this turn.\n② The first time each \"White Forest\" monster you control would be destroyed by battle each turn, it is not destroyed.\n③ HOPT | <b>You can target 1 \"White Forest\" monster you control;</b> it is treated as a Tuner this turn.",
+    "Secreterion Dragon": {
+        "_current": "1 Dragon monster + 1 Spellcaster monster\n① This card loses 100 ATK for each of your banished cards.\n② While you control this Fusion Summoned card, your opponent cannot activate the effects of Special Summoned Dragon or Spellcaster monsters they control.\n③ HOPT | <b>You can target 1 Dragon and 1 Spellcaster monster in your GY;</b> Special Summon 1, and if you do, place the other on the bottom of the Deck.",
         "previous": null
     }
 }
