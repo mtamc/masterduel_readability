@@ -1,174 +1,18 @@
 {
-    "Anubis the Last Judge": {
-        "_current": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand or GY) while you have 3 or more cards in your GY with different names that are \"Temple of the Kings\" and/or Traps, by placing 2 of them on the bottom of the Deck in any order.\n① HOPT | <b>You can send this card from your hand to the GY;</b> SEARCH 1 \"The Man with the Mark\".\n② HOPT | If a Spell/Trap(s) you control is destroyed by card effect: <b>You can target 1 card your opponent controls;</b> DESTROY it.",
-        "previous": null
-    },
-    "Apophis the Serpent": {
-        "_current": "① HOPT | Special Summon this card as a Normal Monster (Reptile/EARTH/Level 4/ATK 1600/DEF 1800) (this card is also still a Trap), then you can Set 1 \"Apophis\" Trap from your Deck, except \"Apophis the Serpent\". It can be activated this turn.\n② HOPT | If this card is sent to the GY: You can SEARCH 1 \"Embodiment of Apophis\".",
-        "previous": null
-    },
-    "Artmage Academic Arcane Arts Acropolis": {
-        "_current": "① YOUR MAIN PHASE | You can Normal Summon 1 \"Medius the Pure\", in addition to your Normal Summon/Set (you can only gain this effect once per turn).\n② <b>You can DISCARD 1 Spell/Trap, and declare 1 \"Artmage\" Monster Card name that is not among the monsters you control and has not been declared for \"Artmage Academic Arcane Arts Acropolis\" this turn;</b> add that monster from your Deck to your hand, also you cannot Special Summon for the rest of this turn, except \"Artmage\" monsters, \"Medius the Pure\", or from the Extra Deck.",
-        "previous": null
-    },
-    "Artmage Finmel": {
-        "_current": "① Your opponent cannot target Level 6 or lower \"Artmage\" monsters you control with card effects.\n② HOPT | If you control an \"Artmage\" card: You can Special Summon this card from your hand, then you can DRAW 1 card.\n③ MAIN PHASE | HOPT | QUICK | If you have 3 or more different Monster Types on your field: You can NEGATE the effects of all face-up monsters your opponent currently controls, also until the end of this turn, their ATK's become halved.",
-        "previous": null
-    },
-    "Artmage Graflare": {
-        "_current": "① The first time this card would be destroyed by battle each turn, it is not destroyed.\n② HOPT | If you control an \"Artmage\" card: You can Special Summon this card from your hand, then you can Set 1 \"Artmage\" Spell from your Deck.\n③ HOPT | <b>You can target 1 Spell/Trap your opponent controls;</b> DESTROY it. This is a QUICK EFFECT if you have 3 or more different Monster Types on your field.",
-        "previous": null
-    },
-    "Artmage Litera": {
-        "_current": "① You take no damage from battles involving this card.\n② HOPT | If you control an \"Artmage\" card: You can Special Summon this card from your hand, then you can add 1 \"Artmage\" card from your GY to your hand.\n③ OPP'S MAIN PHASE | HOPT | QUICK | You can Special Summon 1 \"Artmage\" monster from your hand or GY, except \"Artmage Litera\", then BOUNCE this card.",
-        "previous": null
-    },
-    "Artmage Masterwork -Succession-": {
-        "_current": "① MAIN PHASE | HOPT | Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field, including an \"Artmage\" monster, then if a card is in the Field Zone, that monster gains 500 ATK.\n② YOUR MAIN PHASE | HOPT | <b>You can BANISH this card from your GY, then target 3 \"Artmage\" cards with different names in your GY;</b> shuffle them into the Deck.",
-        "previous": null
-    },
-    "Artmage Movement -Pedigree-": {
-        "_current": "① If your opponent controls more monsters than you do: Special Summon 1 \"Artmage\" monster from your Deck in Defense Position, with a different name than the cards you control.\n② If this card is sent to the GY to activate the effect of \"Artmage Academic Arcane Arts Acropolis\": You can add 1 \"Artmage\" Trap from your GY or BANISHment to your hand.\nYou can only use each effect of \"Artmage Movement -Pedigree-\" once per turn, also you cannot Special Summon from the Extra Deck the turn you activate either of this card's effects, except Fusion Monsters.",
-        "previous": null
-    },
     "Artmage Pact -Awakening-": {
-        "_current": "HOPT | You can use ONE of —\n① Special Summon 1 \"Artmage\" monster or 1 \"Medius the Pure\" from your Deck, also for the rest of this turn, the activation of your cards and effects that include an effect that Fusion Summons a Fusion Monster cannot be negated, also your opponent cannot activate cards or effects when a monster is Fusion Summoned this way.\n② <b>You can BANISH this card from your GY, then target 1 \"Artmage\" monster you control;</b> BOUNCE that monster/Extra Deck, and if you do, DESTROY 1 card your opponent controls.",
-        "previous": null
-    },
-    "Artmage Power Patron": {
-        "_current": "① You cannot Special Summon from the Extra Deck, except Fusion Monsters.\n② MAIN PHASE | HOPT | QUICK | You can Fusion Summon 1 \"Artmage\" Fusion Monster or 1 \"Nerva the Power Patron of Creation\" from your Extra Deck, using this card you control and monsters from your hand or field.\n③ HOPT | If this card is sent from the hand or field to the GY: You can SEARCH 1 \"Artmage\" Spell/Trap with a different name from the cards in your GY.",
-        "previous": null
-    },
-    "Artmage Vandalism -Assault-": {
-        "_current": "HOPT ACTIVATION\n① When this card is activated: You can SEARCH 1 \"Medius the Pure\".\n② HOPT | <b>You can target 1 face-up monster you control;</b> if that face-up monster would be used as Fusion Material this turn, it can be treated as an \"Artmage\" monster.\n③ If \"Artmage Academic Arcane Arts Acropolis\" you control would be destroyed by card effect, you can send this card you control to the GY instead.",
-        "previous": null
-    },
-    "Artmage Varnish -Alteration-": {
-        "_current": "① HOPT | Place 1 \"Artmage Academic Arcane Arts Acropolis\" from your Deck or GY, face-up in your Field Zone, or if you control \"Artmage Academic Arcane Arts Acropolis\", SEARCH 1 \"Artmage\" card instead, except \"Artmage Varnish -Alteration-\".\n② HOPT | When your \"Artmage\" monster is targeted for an attack: <b>You can BANISH this card from your GY;</b> NEGATE that attack, then you can Special Summon 1 \"Medius the Pure\" from your hand.",
-        "previous": null
-    },
-    "Black Luster Soldier": {
-        "_current": "The mightiest warrior, whose abilities equal the Blue-Eyes White Dragon.",
-        "previous": "You can Ritual Summon this card with \"Black Luster Ritual\"."
-    },
-    "Dangers of the Divine": {
-        "_current": "① HOPT | <b>Pay half your LP, then Tribute 1 monster;</b> Special Summon 1 \"The Winged Dragon of Ra\" from your hand or BANISHment, ignoring its Summoning conditions, and make its ATK/DEF 4000, but it cannot attack, also during the End Phase of the next turn, BOUNCE it.\n② HOPT | If this card is sent from the field to the GY: Choose 1 \"The Winged Dragon of Ra\" in your Monster Zone and send all other monsters on the field to the GY.",
-        "previous": null
-    },
-    "Defense of the Temple": {
-        "_current": "① Fusion Summon 1 EARTH Fusion Monster from your Extra Deck, using monsters from your hand or field. If you use a monster you control that mentions \"Temple of the Kings\", you can also use face-up monsters your opponent controls as material.\n② HOPT | If you control \"Temple of the Kings\": <b>You can BANISH this card from your GY;</b> SEARCH 1 \"Dangers of the Divine\".",
-        "previous": null
-    },
-    "Divine Scorpion Beast of Serket": {
-        "_current": "1 \"Serket\" monster + 1 monster with 2500 or less ATK\n① HOPT | If this card is Special Summoned, or at the start of the Damage Step if this card battles an opponent's monster: <b>You can target 1 face-up monster your opponent controls or in their GY;</b> BANISH it, and if you do, this card gains ATK equal to half the banished monster's original ATK.\n② Can make a second attack during each Battle Phase, while a Level 10 or higher monster is banished.",
-        "previous": null
-    },
-    "Dracotail Faimena": {
-        "_current": "① MAIN PHASE | HOPT | QUICK | <b>You can DISCARD this card;</b> Fusion Summon 1 Dragon or Spellcaster Fusion Monster from your Extra Deck, using monsters from your hand or field.\n② HOPT | If this card is sent to the GY as material for a Fusion Summon: You can Set 1 \"Dracotail\" Spell/Trap from your Deck.",
-        "previous": null
-    },
-    "Dracotail Flame": {
-        "_current": "HOPT ACTIVATION\n<b>Target 1 face-up Spell on the field;</b> NEGATE its effects (until the end of this turn), then you can place 1 \"Dracotail\" card from your GY or BANISHment on the bottom of the Deck, except \"Dracotail Flame\", then DRAW 1 card.",
-        "previous": null
-    },
-    "Dracotail Gulamel": {
-        "_current": "1 \"Dracotail\" monster + 1 monster in the hand\n① HOPT | QUICK | When you activate a \"Dracotail\" card or effect: <b>You can target 1 card your opponent controls;</b> DESTROY it.\n② HOPT | If 2 or more monsters are sent to the GY at the same time, while this card is in your GY (except during the Damage Step): You can Special Summon this card, but BANISH it when it leaves the field.",
-        "previous": null
+        "_current": "HOPT | You can use ONE of —\n① Special Summon 1 \"Artmage\" monster or 1 \"Medius the Pure\" from your Deck, also for the rest of this turn, the activation of your cards and effects that include an effect that Fusion Summons a Fusion Monster cannot be negated, also your opponent cannot activate cards or effects when a monster is Fusion Summoned this way.\n② <b>You can BANISH this card from your GY, then target 1 \"Artmage\" monster you control;</b> BOUNCE that monster, and if you do, DESTROY 1 card your opponent controls.",
+        "previous": "HOPT | You can use ONE of —\n① Special Summon 1 \"Artmage\" monster or 1 \"Medius the Pure\" from your Deck, also for the rest of this turn, the activation of your cards and effects that include an effect that Fusion Summons a Fusion Monster cannot be negated, also your opponent cannot activate cards or effects when a monster is Fusion Summoned this way.\n② <b>You can BANISH this card from your GY, then target 1 \"Artmage\" monster you control;</b> BOUNCE that monster/Extra Deck, and if you do, DESTROY 1 card your opponent controls."
     },
     "Dracotail Horn": {
-        "_current": "HOPT ACTIVATION\n<b>Target 1 Attack Position monster on the field;</b> BOUNCE it/Extra Deck, then you can place 1 \"Dracotail\" card from your GY or BANISHment on the bottom of the Deck, except \"Dracotail Horn\", then DRAW 1 card.",
-        "previous": null
+        "_current": "HOPT ACTIVATION\n<b>Target 1 Attack Position monster on the field;</b> BOUNCE it, then you can place 1 \"Dracotail\" card from your GY or BANISHment on the bottom of the Deck, except \"Dracotail Horn\", then DRAW 1 card.",
+        "previous": "HOPT ACTIVATION\n<b>Target 1 Attack Position monster on the field;</b> BOUNCE it/Extra Deck, then you can place 1 \"Dracotail\" card from your GY or BANISHment on the bottom of the Deck, except \"Dracotail Horn\", then DRAW 1 card."
     },
-    "Dracotail Lukias": {
-        "_current": "① HOPT | If this card is Normal or Special Summoned: You can SEARCH 1 \"Dracotail\" monster except \"Dracotail Lukias\".\n② HOPT | If this card is sent to the GY as material for a Fusion Summon: You can Set 1 \"Dracotail\" Spell/Trap from your Deck.",
-        "previous": null
+    "Lunalight Perfume Dancer": {
+        "_current": "2 \"Lunalight\" monsters\n① HOPT | If this card is Fusion Summoned: You can SEARCH 1 \"Luna Light Perfume\".\n② HOPT | <b>You can target 1 other \"Lunalight\" card you control;</b> BOUNCE it, then you can Special Summon 1 \"Lunalight\" monster from your hand.\n③ HOPT | <b>You can BANISH this card from your GY;</b> this turn, all monsters your opponent controls lose ATK equal to their original DEF.",
+        "previous": "2 \"Lunalight\" monsters\n① HOPT | If this card is Fusion Summoned: You can SEARCH 1 \"Luna Light Perfume\".\n② HOPT | <b>You can target 1 other \"Lunalight\" card you control;</b> BOUNCE it/Extra Deck, then you can Special Summon 1 \"Lunalight\" monster from your hand.\n③ HOPT | <b>You can BANISH this card from your GY;</b> this turn, all monsters your opponent controls lose ATK equal to their original DEF."
     },
-    "Dracotail Mululu": {
-        "_current": "① MAIN PHASE | HOPT | QUICK | You can Fusion Summon 1 \"Dracotail\" Fusion Monster from your Extra Deck, using monsters from your hand or field, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Fusion Monsters.\n② HOPT | If this card is sent to the GY as material for a Fusion Summon: You can Set 1 \"Dracotail\" Spell/Trap from your Deck, then you can NEGATE the effects of 1 face-up monster your opponent controls.",
-        "previous": null
-    },
-    "Dracotail Pan": {
-        "_current": "① HOPT | If this card is sent to the GY as material for a Fusion Summon: You can Set 1 \"Dracotail\" Spell/Trap from your Deck, then you can DESTROY 1 monster on the field.\n② HOPT | If a face-up Fusion Monster(s) you control is destroyed by an opponent's card effect, while this card is in your GY (except during the Damage Step): You can place this card on the bottom of your Deck, and if you do, Special Summon 1 non-Fusion \"Dracotail\" monster from your GY.",
-        "previous": null
-    },
-    "Dracotail Phryxul": {
-        "_current": "① HOPT | If this card is Normal or Special Summoned: <b>You can target 1 \"Dracotail\" monster in your GY, except \"Dracotail Phryxul\";</b> Special Summon it, then BOUNCE 1 monster you control.\n② HOPT | If this card is sent to the GY as material for a Fusion Summon: You can Set 1 \"Dracotail\" Spell/Trap from your Deck.",
-        "previous": null
-    },
-    "Dracotail Sting": {
-        "_current": "HOPT ACTIVATION\n<b>Target 1 monster and/or 1 Spell/Trap in your opponent's GY;</b> BANISH them, then you can place 1 \"Dracotail\" card from your GY or BANISHment on the bottom of your Deck, except \"Dracotail Sting\", then DRAW 1 card.",
-        "previous": null
-    },
-    "Dracotail Urgula": {
-        "_current": "① HOPT | If this card is sent to the GY as material for a Fusion Summon: You can Set 1 \"Dracotail\" Spell/Trap from your Deck, then you can DESTROY 1 Spell/Trap on the field.\n② HOPT | If this card is in your GY: <b>You can target 1 Spellcaster \"Dracotail\" monster in your GY;</b> place this card on the bottom of your Deck, and if you do, add that monster to your hand.",
-        "previous": null
-    },
-    "Gimmick Puppet Fantasix Machinix": {
-        "_current": "<b>2 Level 8 monsters\nYou can detach 1 material from this card;</b> SEARCH 1 \"Rank-Up-Magic\" Spell also you can Normal Summon 1 Machine monster during your Main Phase this turn, in addition to your Normal Summon/Set (you can only gain this effect once per turn). If you Special Summon a \"Gimmick Puppet\" Xyz Monster(s) (except during the Damage Step): You can Special Summon this card from your GY to either field in Defense Position, then you can add 1 \"Rank-Up-Magic\" Spell from your GY to your hand. You can only use each effect of \"Gimmick Puppet Fantasix Machinix\" once per turn.",
-        "previous": "<b>2 Level 8 monsters\nYou can detach 1 material from this card;</b> SEARCH 1 \"Rank-Up-Magic\" Spell also, you can Normal Summon 1 Machine monster during your Main Phase this turn, in addition to your Normal Summon/Set. (You can only gain this effect once per turn.) If you Special Summon a \"Gimmick Puppet\" Xyz Monster(s) (except during the Damage Step): You can Special Summon this card from your GY to either field in Defense Position, then you can add 1 \"Rank-Up-Magic\" Spell from your GY to your hand. You can only use each effect of \"Gimmick Puppet Fantasix Machinix\" once per turn."
-    },
-    "Junk Warrior Extreme": {
-        "_current": "\"Junk Synchron\" + 1+ non-Tuners\nIf this card is Synchro Summoned: You can Special Summon as many Level 2 or lower monsters as possible from your GY, but neither player can activate those monsters' effects this turn, also you can only Special Summon one more time this turn. When this card DESTROYS an opponent's monster by battle: <b>You can BANISH this card;</b> Special Summon 1 \"Junk\" Synchro Monster from your Extra Deck (this is treated as a Synchro Summon). You can only use each effect of \"Junk Warrior Extreme\" once per turn.",
-        "previous": "\"Junk Synchron\" + 1+ non-Tuner monsters\nIf this card is Synchro Summoned: You can Special Summon as many Level 2 or lower monsters as possible from your GY, but neither player can activate those monsters' effects this turn, also you can only Special Summon one more time this turn. When this card DESTROYS an opponent's monster by battle: <b>You can BANISH this card;</b> Special Summon 1 \"Junk\" Synchro Monster from your Extra Deck (this is treated as a Synchro Summon). You can only use each effect of \"Junk Warrior Extreme\" once per turn."
-    },
-    "Ketu Dracotail": {
-        "_current": "HOPT ACTIVATION\nSEARCH 1 \"Dracotail\" monster then if your opponent controls a monster, you can Fusion Summon 1 Dragon or Spellcaster monster from your Extra Deck, using monsters from your hand or field.",
-        "previous": null
-    },
-    "Lancea, Ancestral Dragon of the Ice Mountain": {
-        "_current": "1 WATER Tuner + 1+ non-Tuners\nOnce per Chain, if your opponent Special Summons a monster(s) (except during the Damage Step): You can Special Summon 1 \"Ice Barrier\" monster from your hand, Deck, Extra Deck, or GY, then you can change 1 Attack Position monster your opponent controls to Defense Position. You can only use this effect of \"Lancea, Ancestral Dragon of the Ice Mountain\" twice per turn. If this face-up Synchro Summoned card in its owner's control leaves the field because of an opponent's card: You can Special Summon 1 \"Ice Barrier\" Synchro Monster from your Extra Deck (this is treated as a Synchro Summon).",
-        "previous": "1 WATER Tuner + 1+ non-Tuner monsters\nOnce per Chain, if your opponent Special Summons a monster(s) (except during the Damage Step): You can Special Summon 1 \"Ice Barrier\" monster from your hand, Deck, Extra Deck, or GY, then you can change 1 Attack Position monster your opponent controls to Defense Position. You can only use this effect of \"Lancea, Ancestral Dragon of the Ice Mountain\" twice per turn. If this face-up Synchro Summoned card in its owner's control leaves the field because of an opponent's card: You can Special Summon 1 \"Ice Barrier\" Synchro Monster from your Extra Deck. (This is treated as a Synchro Summon.)"
-    },
-    "Medius the Pure": {
-        "_current": "① HOPT | If this card is Normal or Special Summoned: You can add to your hand, or Special Summon, 1 \"Power Patron\" monster from your Deck.\n② HOPT | If this card is in your GY: You can shuffle 1 monster from your hand or face-up field into the Deck, and if you do, Special Summon this card, but BANISH it when it leaves the field.",
-        "previous": null
-    },
-    "Merciless Scorpion of Serket": {
-        "_current": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand) by BANISHING 1 Level 10 or higher monster from your hand or Deck, while you control \"Temple of the Kings\". You can only Special Summon \"Merciless Scorpion of Serket\" once per turn this way.\n① YOUR MAIN PHASE | OPT | You can SEARCH 1 \"Temple of the Kings\", or 1 Spell that mentions it.\n② At the start of the Damage Step, if this card battles an opponent's monster: You can DESTROY that opponent's monster, and if you do, this card gains ATK equal to half the destroyed monster's original ATK.",
-        "previous": null
-    },
-    "Psychic Omnibuster": {
-        "_current": "1 Tuner + 1+ non-Tuner Psychic monsters\n① Each time your opponent activates a card or effect on the field (except during the Damage Step): <b>You can pay 2000 LP and declare 1 card type (Monster, Spell, or Trap) (but you can only declare each card type once per turn to activate this effect of \"Psychic Omnibuster\");</b> look at 1 random card in your opponent's hand, and if it is the declared card type, apply these effects in sequence (skip over any that do not apply).\n● This card cannot be destroyed by the effects of the declared card type this turn.\n● BANISH the card you looked at, face-up, until the End Phase.",
-        "previous": null
-    },
-    "Rahu Dracotail": {
-        "_current": "HOPT ACTIVATION\nFusion Summon 1 \"Dracotail\" monster from your Extra Deck, using monsters from your hand, Deck, or field, also for the rest of this turn after this card resolves, you cannot Special Summon from the Extra Deck, except Fusion Monsters.",
-        "previous": null
-    },
-    "Scrap Warrior": {
-        "_current": "\"Scrap Synchron\" + 1+ non-Tuners\nMonsters you control that mention \"Junk Warrior\", or are a Synchro Monster with \"Warrior\" in their original name, cannot have their activated effects negated (except \"Scrap Warrior\"). If this card is Synchro Summoned: You can take 1 \"Junk Synchron\", or 1 card that mentions \"Junk Warrior\", from your Deck, and either add it to your hand or send it to the GY. You can only use this effect of \"Scrap Warrior\" once per turn.",
-        "previous": "\"Scrap Synchron\" + 1+ non-Tuner monsters\nMonsters you control that mention \"Junk Warrior\", or are a Synchro Monster with \"Warrior\" in their original name, cannot have their activated effects negated (except \"Scrap Warrior\"). If this card is Synchro Summoned: You can take 1 \"Junk Synchron\", or 1 card that mentions \"Junk Warrior\", from your Deck, and either add it to your hand or send it to the GY. You can only use this effect of \"Scrap Warrior\" once per turn."
-    },
-    "Spirit Poacher": {
-        "_current": "① OPP'S STANDBY PHASE | OPT | <b>You can activate 1 of these effects;</b> \n● Place 1 monster from your Deck in your Spell & Trap Zone as a face-up Continuous Spell.\n● Your opponent can Special Summon 1 Monster Card with less original ATK than their LP from your Spell & Trap Zone to their field, then they pay LP equal to its original ATK.\n② If an Effect Monster(s) you own is Special Summoned to your opponent's field: <b>You can send this face-up card from the Spell & Trap Zone to the GY;</b> Special Summon 1 Level 4 or lower monster from your Deck.",
-        "previous": null
-    },
-    "Stinger the Electric Expeller": {
-        "_current": "Through brave struggles, Stinger and the Dune Defenders have repelled all approaching external threats. His sword should only be used for the defense of its people.",
-        "previous": null
-    },
-    "Sudden Thunder Swamp": {
-        "_current": "HOPT ACTIVATION\n① When this card is activated: You can DISCARD 1 card, and if you do, Set 1 Continuous Trap from your Deck or GY, with an effect that Special Summons itself as a monster, except the discarded card.\n② HOPT | If a card(s) you control is destroyed, and sent to the GY or banished face-up: <b>You can target 1 of them;</b> SEARCH 1 card with the same name.",
-        "previous": null
-    },
-    "The Man with the Mark": {
-        "_current": "① HOPT | If this card is Normal or Special Summoned: You can take 1 \"Temple of the Kings\", or 1 Spell/Trap that mentions it, from your Deck and either add it to your hand or send it to the GY.\n② While you control \"Temple of the Kings\", this card and \"Apophis\" monsters you control cannot be destroyed.\n③ \"Temple of the Kings\" you control cannot be destroyed by card effects.",
-        "previous": null
-    },
-    "Theorealize": {
-        "_current": "① HOPT | <b>Send 1 \"Medius the Pure\" from your Deck to the GY;</b> look at the top card of your opponent's Deck, and place it on the top or bottom of the Deck.\n② HOPT | <b>You can BANISH this card from your GY, then target 1 face-up monster you control and declare 1 Monster Type and 1 Attribute;</b> that monster becomes that Type and Attribute, until the end of your opponent's turn.",
-        "previous": null
-    },
-    "Theorealize Overdrive": {
-        "_current": "① HOPT | <b>Target 1 \"Medius the Pure\" in your GY or BANISHment;</b> Special Summon it.\n② YOUR MAIN PHASE | HOPT | <b>You can BANISH this card from your GY, then target 1 face-up monster you control, and declare a Level from 1 to 10;</b> that monster becomes that Level until the end of this turn.",
-        "previous": null
-    },
-    "Treasures of the Kings": {
-        "_current": "HOPT ACTIVATION\n① When this card is activated: You can Set 1 \"Apophis\" Trap from your Deck.\n② This card's name becomes \"Temple of the Kings\" while in the Field Zone.\n③ OPT | If you have 2 or more Set cards on your field, or a Trap in your GY: You can SEARCH 1 monster that mentions \"Temple of the Kings\".",
-        "previous": null
-    },
-    "Verdict of Anubis": {
-        "_current": "HOPT ACTIVATION\nWhen your opponent activates a Spell/Trap Card, while you control 3 or more other Spells/Traps: NEGATE the activation, and if you do, DESTROY that card, then if you control \"Temple of the Kings\", you can DESTROY as many monsters your opponent controls as possible, then inflict damage to your opponent equal to half the total original ATK of those destroyed monsters.",
-        "previous": null
+    "Madolche Dessert": {
+        "_current": "HOPT | You can use ONE of —\n① <b>Target 2 Effect Monsters on the field, including a \"Madolche\" monster;</b> BOUNCE those Effect Monsters, then you can Special Summon 1 \"Madolche\" monster from your hand or Extra Deck with ATK less than or equal to the total original ATK of those returned monsters.\n② If a \"Madolche\" card(s) is shuffled from your GY into the Deck/Extra Deck, while this card is in your GY (except during the Damage Step): You can attach this card to an Xyz Monster you control.",
+        "previous": "HOPT | You can use ONE of —\n① <b>Target 2 Effect Monsters on the field, including a \"Madolche\" monster;</b> BOUNCE those Effect Monsters/Extra Deck, then you can Special Summon 1 \"Madolche\" monster from your hand or Extra Deck with ATK less than or equal to the total original ATK of those returned monsters.\n② If a \"Madolche\" card(s) is shuffled from your GY into the Deck/Extra Deck, while this card is in your GY (except during the Damage Step): You can attach this card to an Xyz Monster you control."
     }
 }
