@@ -1,18 +1,1 @@
-{
-    "Artmage Pact -Awakening-": {
-        "_current": "HOPT | You can use ONE of —\n① Special Summon 1 \"Artmage\" monster or 1 \"Medius the Pure\" from your Deck, also for the rest of this turn, the activation of your cards and effects that include an effect that Fusion Summons a Fusion Monster cannot be negated, also your opponent cannot activate cards or effects when a monster is Fusion Summoned this way.\n② <b>You can BANISH this card from your GY, then target 1 \"Artmage\" monster you control;</b> BOUNCE that monster, and if you do, DESTROY 1 card your opponent controls.",
-        "previous": "HOPT | You can use ONE of —\n① Special Summon 1 \"Artmage\" monster or 1 \"Medius the Pure\" from your Deck, also for the rest of this turn, the activation of your cards and effects that include an effect that Fusion Summons a Fusion Monster cannot be negated, also your opponent cannot activate cards or effects when a monster is Fusion Summoned this way.\n② <b>You can BANISH this card from your GY, then target 1 \"Artmage\" monster you control;</b> BOUNCE that monster/Extra Deck, and if you do, DESTROY 1 card your opponent controls."
-    },
-    "Dracotail Horn": {
-        "_current": "HOPT ACTIVATION\n<b>Target 1 Attack Position monster on the field;</b> BOUNCE it, then you can place 1 \"Dracotail\" card from your GY or BANISHment on the bottom of the Deck, except \"Dracotail Horn\", then DRAW 1 card.",
-        "previous": "HOPT ACTIVATION\n<b>Target 1 Attack Position monster on the field;</b> BOUNCE it/Extra Deck, then you can place 1 \"Dracotail\" card from your GY or BANISHment on the bottom of the Deck, except \"Dracotail Horn\", then DRAW 1 card."
-    },
-    "Lunalight Perfume Dancer": {
-        "_current": "2 \"Lunalight\" monsters\n① HOPT | If this card is Fusion Summoned: You can SEARCH 1 \"Luna Light Perfume\".\n② HOPT | <b>You can target 1 other \"Lunalight\" card you control;</b> BOUNCE it, then you can Special Summon 1 \"Lunalight\" monster from your hand.\n③ HOPT | <b>You can BANISH this card from your GY;</b> this turn, all monsters your opponent controls lose ATK equal to their original DEF.",
-        "previous": "2 \"Lunalight\" monsters\n① HOPT | If this card is Fusion Summoned: You can SEARCH 1 \"Luna Light Perfume\".\n② HOPT | <b>You can target 1 other \"Lunalight\" card you control;</b> BOUNCE it/Extra Deck, then you can Special Summon 1 \"Lunalight\" monster from your hand.\n③ HOPT | <b>You can BANISH this card from your GY;</b> this turn, all monsters your opponent controls lose ATK equal to their original DEF."
-    },
-    "Madolche Dessert": {
-        "_current": "HOPT | You can use ONE of —\n① <b>Target 2 Effect Monsters on the field, including a \"Madolche\" monster;</b> BOUNCE those Effect Monsters, then you can Special Summon 1 \"Madolche\" monster from your hand or Extra Deck with ATK less than or equal to the total original ATK of those returned monsters.\n② If a \"Madolche\" card(s) is shuffled from your GY into the Deck/Extra Deck, while this card is in your GY (except during the Damage Step): You can attach this card to an Xyz Monster you control.",
-        "previous": "HOPT | You can use ONE of —\n① <b>Target 2 Effect Monsters on the field, including a \"Madolche\" monster;</b> BOUNCE those Effect Monsters/Extra Deck, then you can Special Summon 1 \"Madolche\" monster from your hand or Extra Deck with ATK less than or equal to the total original ATK of those returned monsters.\n② If a \"Madolche\" card(s) is shuffled from your GY into the Deck/Extra Deck, while this card is in your GY (except during the Damage Step): You can attach this card to an Xyz Monster you control."
-    }
-}
+{}
