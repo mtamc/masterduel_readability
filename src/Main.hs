@@ -610,13 +610,17 @@ reword findAndReplaceP = fromRight (error "") . parse
   ""
 
 rewordBounce ∷ Text → Text
-rewordBounce = Text.replace "returned to the hand" "bounced" . Text.replace "returned to the hand/Extra Deck" "bounced" . reword do
+rewordBounce
+  = Text.replace "returned to the hand" "bounced"
+  . Text.replace "returned to the hand/Extra Deck" "bounced"
+  . Text.replace "returned to the hand or Extra Deck" "bounced"
+  . reword do
   string' "return "
   thingToBounce ← someTill anyNotConjunction $ try do
     string " "
     optional (string "from the field ")
     string "to the hand"
-    optional (string "/Extra Deck")
+    optional (string "/Extra Deck" <|> string " or Extra Deck")
   pure $ "BOUNCE " ⊕ thingToBounce
 
 -- Piercing wordings:
