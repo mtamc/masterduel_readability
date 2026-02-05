@@ -1,30 +1,214 @@
 {
-    "Borrelshroud Dragon": {
-        "_current": "3+ Effect Monsters\n① Your opponent cannot Tribute this face-up card on the field.\n② MAIN PHASE | OPT | QUICK | <b>You can target 1 \"Rokket\" monster you control;</b> NEGATE the effects of 1 face-up card your opponent controls, then DESTROY the targeted monster.\nYour opponent cannot activate cards or effects in response to this effect's activation.\n③ Once while face-up on the field, at the start of the Battle Phase: You can Special Summon 1 Link-4 or lower \"Borrel\" Link Monster from your Extra Deck.",
-        "previous": "3+ Effect Monsters\nYour opponent cannot Tribute this face-up card on the field. Once per turn, during the Main Phase (QUICK EFFECT): <b>You can target 1 \"Rokket\" monster you control;</b> NEGATE the effects of 1 face-up card your opponent controls, then DESTROY the targeted monster. Your opponent cannot activate cards or effects in response to this effect's activation. Once while face-up on the field, at the start of the Battle Phase: You can Special Summon 1 Link-4 or lower \"Borrel\" Link Monster from your Extra Deck."
-    },
-    "Clown Crew Biancaviso": {
-        "_current": "You can Tribute Summon this card face-up by Tributing 1 Ritual, Fusion, Synchro, Xyz, Pendulum, or Link Monster. If this card is Tribute Summoned: <b>You can activate 1 of these effects (but you can only use each effect of \"Clown Crew Biancaviso\" once per turn);</b> \n● DRAW cards equal to the number of monsters Tributed. \n● NEGATE the effects of face-up cards your opponent controls, equal to the number of monsters Tributed. \nOnce per turn, during your opponent's Main Phase, you can (QUICK EFFECT): Immediately after this effect resolves, Tribute Summon 1 monster.",
-        "previous": "You can Tribute Summon this card face-up by Tributing 1 Ritual, Fusion, Synchro, Xyz, Pendulum, or Link Monster. If this card is Tribute Summoned: <b>You can activate 1 of these effects (but you can only use each effect of \"Clown Crew Biancaviso\" once per turn);</b> \n● DRAW cards equal to the number of monsters Tributed for its Tribute Summon. \n● NEGATE the effects of face-up cards your opponent controls, equal to the number of monsters Tributed for its Tribute Summon. \nOnce per turn, during your opponent's Main Phase, you can (QUICK EFFECT): Immediately after this effect resolves, Tribute Summon 1 monster."
-    },
-    "K9-66a Jokul": {
-        "_current": "① If your opponent has 2 or more cards in their hand, you can Normal Summon this card without Tributing.\n② HOPT | <b>You can reveal this card and 1 other Level 5 monster in your hand;</b> Special Summon both, but they cannot be used as material for the Xyz Summon of a LIGHT monster.\n③ YOUR MAIN PHASE | HOPT | You can SEARCH 1 non-Aqua \"K9\" monster.",
+    "\"A Case for K9\"": {
+        "_current": "HOPT ACTIVATION\n① When this card is activated: You can SEARCH 1 \"K9\" monster.\n② \"K9\" monsters you control gain 900 ATK during any turn in which your opponent has activated a monster effect in the hand or GY.\n③ HOPT | If this card in the Spell & Trap Zone is destroyed by card effect: You can Set 1 \"K9\" Quick-Play Spell from your Deck or GY.",
         "previous": null
     },
-    "K9-X \"Werewolf\"": {
-        "_current": "2 Level 9 monsters\n① While this card has material, it can attack a number of times each Battle Phase, up to the number of materials attached to it.\n② HOPT | QUICK | When your opponent activates a card or effect: <b>You can detach 1 material from this card, then activate this effect depending on whose turn it is;</b> \n● Yours: BANISH up to 1 card each from your opponent's field and GY.\n● Opponent's: Look at your opponent's hand and BANISH 1 card from it face-up, until the End Phase.",
+    "Aspischool": {
+        "_current": "① When this card is Normal Summoned: You can Special Summon 1 Level 6 or lower Fish monster from your hand in Defense Position, but BANISH it when it leaves the field.\n② HOPT | If this card is banished: You can Special Summon this card in Defense Position.",
         "previous": null
     },
-    "Live☆Twin Lil-la Sweet": {
-        "_current": "① HOPT | QUICK | When your opponent activates a card or effect in response to your \"Live☆Twin\" card or effect activation: <b>You can DISCARD this card;</b> NEGATE that opponent's effect.\n② HOPT | If you control a \"Ki-sikil\" monster and this card is in your GY: You can Special Summon this card, but while it is face-up in the Monster Zone, you cannot Special Summon from the Extra Deck, except Fiend monsters.",
+    "Aussa the Earth Channeler": {
+        "_current": "(This card is always treated as a \"Charmer\" card.)\n① HOPT | <b>You can DISCARD this card and 1 other EARTH monster;</b> SEARCH 1 EARTH monster with 1850 or less ATK, whose original Type is the same as one of the discarded monsters, also you cannot activate non-EARTH monster effects for the rest of this turn.\n② HOPT | When your EARTH monster is destroyed by battle: You can Special Summon this card from your hand.",
+        "previous": "(This card is always treated as a \"Charmer\" card.)\n① HOPT | <b>You can DISCARD this card and 1 EARTH monster;</b> SEARCH 1 EARTH monster with 1850 or less ATK, whose original Type is the same as one of the discarded monsters, also you cannot activate non-EARTH monster effects for the rest of this turn.\n② HOPT | When your EARTH monster is destroyed by battle: You can Special Summon this card from your hand."
+    },
+    "Awakening of the Possessed - Gagigobyte": {
+        "_current": "① You can Special Summon this card (from your hand or Deck) by sending 1 face-up Spellcaster monster and 1 face-up Level 4 or lower WATER monster you control to the GY.\n② HOPT | When this card is Special Summoned by its effect: You can send 1 random card from your opponent's hand to the GY, then each player DRAWS 1 card.\n③ HOPT | If this card is sent from the field to the GY: You can SEARCH 1 \"Spiritual Water Art\" card or 1 \"Possessed\" Spell/Trap.",
+        "previous": "You can Special Summon this card (from your hand or Deck) by sending 1 face-up Spellcaster monster and 1 face-up Level 4 or lower WATER monster you control to the GY.\n① HOPT | When this card is Special Summoned by its effect: You can send 1 random card from your opponent's hand to the GY, then each player DRAWS 1 card.\n② HOPT | If this card is sent from the field to the GY: You can SEARCH 1 \"Spiritual Water Art\" card or 1 \"Possessed\" Spell/Trap."
+    },
+    "Awakening of the Possessed - Greater Inari Fire": {
+        "_current": "① You can Special Summon this card (from your hand or Deck) by sending 1 face-up Spellcaster monster and 1 face-up Level 4 or lower FIRE monster you control to the GY.\n② HOPT | When this card is Special Summoned by its effect: You can inflict damage to your opponent equal to the original ATK of 1 monster they control (your choice).\n③ HOPT | If this card is sent from the field to the GY: You can SEARCH 1 \"Spiritual Fire Art\" card or 1 \"Possessed\" Spell/Trap.",
+        "previous": "You can Special Summon this card (from your hand or Deck) by sending 1 face-up Spellcaster monster and 1 face-up Level 4 or lower FIRE monster you control to the GY.\n① HOPT | When this card is Special Summoned by its effect: You can inflict damage to your opponent equal to the original ATK of 1 monster they control (your choice).\n② HOPT | If this card is sent from the field to the GY: You can SEARCH 1 \"Spiritual Fire Art\" card or 1 \"Possessed\" Spell/Trap."
+    },
+    "Awakening of the Possessed - Nefariouser Archfiend": {
+        "_current": "① You can Special Summon this card (from your hand or Deck) by sending 1 face-up Spellcaster monster and 1 face-up Level 4 or lower EARTH monster you control to the GY.\n② HOPT | When this card is Special Summoned by its effect: You can Special Summon 1 Level 4 or lower monster from your GY, but NEGATE its effects.\n③ HOPT | If this card is sent from the field to the GY: You can SEARCH 1 \"Spiritual Earth Art\" card or 1 \"Possessed\" Spell/Trap.",
+        "previous": "You can Special Summon this card (from your hand or Deck) by sending 1 face-up Spellcaster monster and 1 face-up Level 4 or lower EARTH monster you control to the GY.\n① HOPT | When this card is Special Summoned by its effect: You can Special Summon 1 Level 4 or lower monster from your GY, but NEGATE its effects.\n② HOPT | If this card is sent from the field to the GY: You can SEARCH 1 \"Spiritual Earth Art\" card or 1 \"Possessed\" Spell/Trap."
+    },
+    "Awakening of the Possessed - Rasenryu": {
+        "_current": "① You can Special Summon this card (from your hand or Deck) by sending 1 face-up Spellcaster monster and 1 face-up Level 4 or lower WIND monster you control to the GY.\n② HOPT | When this card is Special Summoned by its effect: You can BOUNCE 1 card your opponent controls.\n③ HOPT | If this card is sent from the field to the GY: You can SEARCH 1 \"Spiritual Wind Art\" card or 1 \"Possessed\" Spell/Trap.",
+        "previous": "You can Special Summon this card (from your hand or Deck) by sending 1 face-up Spellcaster monster and 1 face-up Level 4 or lower WIND monster you control to the GY.\n① HOPT | When this card is Special Summoned by its effect: You can BOUNCE 1 card your opponent controls.\n② HOPT | If this card is sent from the field to the GY: You can SEARCH 1 \"Spiritual Wind Art\" card or 1 \"Possessed\" Spell/Trap."
+    },
+    "Borrel Reboot": {
+        "_current": "When your opponent activates a Spell/Trap Card, while you control a \"Rokket\" or \"Borrel\" monster: NEGATE the activation, and if you do, Set that card face-down on your opponent's field, but it cannot be activated this turn.\nYou can activate this card from your hand by paying half your LP.",
         "previous": null
     },
-    "Starving Venom Wing Dragon": {
-        "_current": "1 Fusion Monster + 1 \"Clear Wing\" monster\nOnce per turn, if your opponent Special Summons a monster(s) face-up (except during the Damage Step): <b>You can target 1 of them;</b> this card gains ATK equal to that monster's ATK, and if it does, that monster's effects are negated. These changes last until the end of this turn. Once per turn, when another card or their effect is activated on the field (QUICK EFFECT): You can DESTROY 1 card on the field. If this card in the Monster Zone is destroyed: You can place this card in your Pendulum Zone. \n[Pendulum Effect]\nEach time a monster(s) is Special Summoned to your opponent's field, place 1 Predator Counter on it, and if it is Level 2 or higher, it becomes Level 1 as long as it has a Predator Counter.",
-        "previous": "1 Fusion Monster + 1 \"Clear Wing\" monster\nOnce per turn, if your opponent Special Summons a monster(s) face-up (except during the Damage Step): <b>You can target 1 of them;</b> this card gains ATK equal to that monster's ATK, and if it does, that monster's effects are negated. These changes last until the end of this turn. Once per turn, when another card or their effect is activated on the field (QUICK EFFECT): You can DESTROY 1 card on the field. If this card in the Monster Zone is destroyed: You can place this card in your Pendulum Zone. \n[Pendulum Effect]\nEach time a monster(s) is Special Summoned to your opponent's field, place 1 Predator Counter on each one, and if it is Level 2 or higher, it becomes Level 1 as long as it has a Predator Counter."
-    },
-    "Vanquish Soul Hollie Sue": {
-        "_current": "① MAIN PHASE | QUICK | <b>You can reveal 1 other \"Vanquish Soul\" monster in your hand;</b> Special Summon this card from your hand.\n② QUICK | <b>You can activate 1 of these effects, by revealing monster(s) in your hand with the listed Attribute(s);</b> \n● EARTH & DARK: Take control of 1 monster your opponent controls with the lowest ATK (your choice, if tied) until the End Phase.\n● FIRE & DARK: Special Summon 1 non-Psychic \"Vanquish Soul\" monster from your Deck.\nYou can only use each effect of \"Vanquish Soul Hollie Sue\" once per turn, and cannot activate more than 1 in the same Chain.",
+    "Borreload Fatalflare Dragon": {
+        "_current": "1 DARK Link Monster + 1 DARK monster\n① HOPT | If this card is Fusion Summoned: You can SEARCH 1 \"Rokket\" monster.\n② HOPT | <b>You can target 1 DARK monster you control;</b> equip it with 1 DARK Link Monster from your GY or BANISHment as an Equip Spell that gives it 500 ATK.\n③ HOPT | If this card is sent to the GY as Link Material: <b>You can target 1 card on the field;</b> DESTROY it.",
         "previous": null
+    },
+    "Breachborrel Dragon": {
+        "_current": "2 DARK Dragon monsters, including a \"Rokket\" monster\n① HOPT | If this card is Link Summoned: You can SEARCH 1 \"Borrel\" Spell/Trap.\n② HOPT | QUICK | <b>You can target 1 DARK monster you control;</b> it gains 500 ATK, or if it is no longer on the field, you can Special Summon 1 \"Rokket\" monster from your Deck in Defense Position instead.",
+        "previous": null
+    },
+    "Crossroad Sonic Chick": {
+        "_current": "HOPT | If a Tuner(s) is sent to your GY, even during the Damage Step: You can Special Summon this card from your GY (if it was there when the monster was sent) or hand (even if not), but BANISH it when it leaves the field, then if \"Junk Warrior\" or a monster that mentions it (except this card) is on the field, you can change all monsters your opponent controls with 1900 or more ATK to Defense Position, also for the rest of this turn, you cannot Special Summon from the Extra Deck, except Synchro Monsters.",
+        "previous": null
+    },
+    "Dark Magic Talisman": {
+        "_current": "You can activate this card the turn it was Set, by revealing 1 Spellcaster monster in your hand.\n① When a monster effect is activated in response to the card or effect activation of a card that mentions \"Dark Magician\": NEGATE that effect, and if you do, for the rest of this turn, NEGATE the activated effects of monsters with that same original name.\n② If you Special Summon \"Dark Magician\" while this card is in your GY (except during the Damage Step): <b>You can pay 2500 LP;</b> Set this card.",
+        "previous": null
+    },
+    "Double Interlock": {
+        "_current": "<b>Activate 1 of these effects (but you can only use each effect of \"Double Interlock\" once per turn);</b> \n● Fusion Summon 1 Fusion Monster from your Extra Deck, by BANISHING its materials from your GY, including a \"Rokket\" monster.\n● Ritual Summon 1 Ritual Monster from your hand, by BANISHING monsters from your GY whose total Levels equal or exceed its Level, including a \"Rokket\" monster.",
+        "previous": null
+    },
+    "Evil★Twin Ki-sikil Deal": {
+        "_current": "1 \"Ki-sikil\" monster\nYou can only Link Summon \"Evil★Twin Ki-sikil Deal\" once per turn.\n① HOPT | <b>You can send 1 \"Lil-la\" monster from your Deck or Extra Deck to the GY;</b> apply this effect this turn.\n● Each time your opponent activates a card or effect in response to your \"Ki-sikil\" or \"Lil-la\" monster effect activation, DRAW 1 card when that card/effect resolves.",
+        "previous": null
+    },
+    "Familiar-Possessed - Aussa": {
+        "_current": "① You can Special Summon this card (from your hand or Deck) by sending 1 face-up \"Aussa the Earth Charmer\" and 1 face-up EARTH monster you control to the GY.\n② This card Special Summoned by its effect is PIERCING.",
+        "previous": "① You can Special Summon this card (from your hand or Deck) by sending 1 face-up \"Aussa the Earth Charmer\" and 1 face-up EARTH monster you control to the GY.\n② This card Special Summoned by its own effect is PIERCING."
+    },
+    "Familiar-Possessed - Eria": {
+        "_current": "① You can Special Summon this card (from your hand or Deck) by sending 1 face-up \"Eria the Water Charmer\" and 1 face-up WATER monster you control to the GY.\n② This card Special Summoned by its effect is PIERCING.",
+        "previous": "① You can Special Summon this card (from your hand or Deck) by sending 1 face-up \"Eria the Water Charmer\" and 1 face-up WATER monster you control to the GY.\n② This card Special Summoned by its own effect is PIERCING."
+    },
+    "Familiar-Possessed - Hiita": {
+        "_current": "① You can Special Summon this card (from your hand or Deck) by sending 1 face-up \"Hiita the Fire Charmer\" and 1 face-up FIRE monster you control to the GY.\n② This card Special Summoned by its effect is PIERCING.",
+        "previous": "① You can Special Summon this card (from your hand or Deck) by sending 1 face-up \"Hiita the Fire Charmer\" and 1 face-up FIRE monster you control to the GY.\n② This card Special Summoned by its own effect is PIERCING."
+    },
+    "Familiar-Possessed - Wynn": {
+        "_current": "① You can Special Summon this card (from your hand or Deck) by sending 1 face-up \"Wynn the Wind Charmer\" and 1 face-up WIND monster you control to the GY.\n② This card Special Summoned by its effect is PIERCING.",
+        "previous": "① You can Special Summon this card (from your hand or Deck) by sending 1 face-up \"Wynn the Wind Charmer\" and 1 face-up WIND monster you control to the GY.\n② This card Special Summoned by its own effect is PIERCING."
+    },
+    "Fish and Bids": {
+        "_current": "At the start of your Main Phase 1: <b>BANISH 1 card from your hand;</b> your opponent can BANISH 2 cards from their hand, if they do not, you apply this effect.\n● Take 2 Fish monsters from your Deck and either BANISH both or send both to the GY, also you cannot Special Summon for the rest of this turn, except Fish monsters.",
+        "previous": null
+    },
+    "Grand Spiritual Art - Ichirin": {
+        "_current": "① NEGATE your opponent's first monster effect that resolves each turn while you control a Spellcaster monster with 1500 DEF.\n② YOUR MAIN PHASE | HOPT | You can reveal 1 Spellcaster monster from your hand, SEARCH 1 monster with the same Attribute but with 1500 ATK/200 DEF, and if you do, shuffle the revealed card into the Deck.",
+        "previous": "① NEGATE your opponent's first monster effect that resolves each turn while you control a Spellcaster monster with 1500 DEF.\n② YOUR MAIN PHASE | HOPT | You can reveal 1 Spellcaster monster from your hand, and if you do, SEARCH 1 monster with the same Attribute, but with 1500 ATK/200 DEF, and if you do that, shuffle the revealed card into the Deck."
+    },
+    "Hollowrokket Dragon": {
+        "_current": "① HOPT | QUICK | When a Link Monster's effect is activated that targets this face-up card on the field: You can DESTROY this card, then EXCAVATE up to 6 cards from the top of your opponent's Deck and BANISH 1 of them, and if you do, place the rest on top of the Deck in the same order.\n② END PHASE | HOPT | If this card is in the GY because it was destroyed on the field by battle or card effect and sent there this turn: You can Special Summon 1 \"Rokket\" monster from your Deck, except \"Hollowrokket Dragon\".",
+        "previous": null
+    },
+    "Inari Fire": {
+        "_current": "① You can only control 1 \"Inari Fire\".\n② If you control a Spellcaster monster, you can Special Summon this card (from your hand).\n③ OPT | During your next Standby Phase after this face-up card on the field was destroyed by card effect and sent to the GY: Special Summon it from your GY.",
+        "previous": "① You can only control 1 \"Inari Fire\".\n② If you control a Spellcaster monster, you can Special Summon this card (from your hand).\n③ OPT | During your next Standby Phase after this face-up card on the field was destroyed by a card effect and sent to the GY: Special Summon it from your GY."
+    },
+    "Junk Armor": {
+        "_current": "① Your opponent cannot target Synchro Monsters you control with \"Warrior\" or \"Stardust\" in their original names, with card effects.\n② HOPT | If this card is added to your hand, except by DRAWING it: You can Special Summon it.\n③ HOPT | <b>You can Tribute this card;</b> Special Summon 1 \"Junk\" or \"Synchron\" monster from your Deck in Defense Position, except \"Junk Armor\".",
+        "previous": null
+    },
+    "Junk Meister": {
+        "_current": "① HOPT | <b>You can reveal 1 \"Warrior\" or \"Stardust\" Synchro Monster in your Extra Deck;</b> Special Summon this card from your hand, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Synchro Monsters.\n② HOPT | If this card is Normal or Special Summoned: You can SEARCH 1 \"Junk\" card except \"Junk Meister\".\n③ HOPT | <b>You can target 1 \"Junk\" monster you control;</b> reduce its Level by up to 2.",
+        "previous": null
+    },
+    "Junk Signal": {
+        "_current": "HOPT ACTIVATION\nActivate 1 of these effects (also you cannot Special Summon from the Extra Deck for the rest of this turn, except Synchro Monsters);\n● Tribute 1 monster; Special Summon 1 monster, except the Tributed monster, from your hand, Deck, or GY, that is \"Junk Warrior\" or \"Stardust Dragon\", or that mentions either of them.\n● When your opponent activates a card or effect in response to your Synchro Monster's effect activation: NEGATE that effect.",
+        "previous": null
+    },
+    "K9-04 Noroi": {
+        "_current": "① If your opponent has 2 or more cards in their hand, you can Normal Summon this card without Tributing.\n② HOPT | If this card is Normal Summoned: You can Special Summon 1 non-Machine \"K9\" monster from your Deck, but you cannot Special Summon from the Extra Deck, except \"K9\" monsters, while you control that face-up monster.\n③ HOPT | <b>You can send 1 face-up \"K9\" card you control to the GY;</b> look at your opponent's hand.",
+        "previous": null
+    },
+    "K9-17 \"Ripper\"": {
+        "_current": "2 Level 5 monsters\n① HOPT | <b>You can detach 1 material from this card;</b> SEARCH 1 \"K9\" card then if your opponent has activated a monster effect this turn, you can Set 1 \"K9\" Quick-Play Spell from your Deck or GY.\n② HOPT | QUICK | When your opponent activates a monster effect in the hand or GY: <b>You can detach 1 material from this card;</b> NEGATE that effect.",
+        "previous": null
+    },
+    "K9-17 Izuna": {
+        "_current": "① If your opponent has 2 or more cards in their hand, you can Normal Summon this card without Tributing.\n② MAIN PHASE | HOPT | QUICK | If your opponent has activated a monster effect in the hand or GY this turn: You can Special Summon this card from your hand.\n③ HOPT | If this card is Normal or Special Summoned: You can send 1 \"K9\" card from your Deck to the GY, except \"K9-17 Izuna\".",
+        "previous": null
+    },
+    "K9-66X \"Jacks\"": {
+        "_current": "2 Level 5 monsters\n① HOPT | If this card is Xyz Summoned, or if your opponent activates a monster effect in the hand or GY: <b>You can detach 1 material from this card, then target 1 monster on the field;</b> DESTROY it.\n② A \"K9\" Xyz Monster that has this card as material gains this effect.\n● During any turn in which your opponent has activated a monster effect in the hand or GY, any battle damage this card inflicts to your opponent is doubled.",
+        "previous": null
+    },
+    "K9-66b Lantern": {
+        "_current": "① If your opponent has 2 or more cards in their hand, you can Normal Summon this card without Tributing.\n② HOPT | If this card is in your hand: <b>You can target 1 Level 5 non-Pyro \"K9\" monster in your GY;</b> Special Summon both it and this card, but they cannot be used as material for the Xyz Summon of a LIGHT monster.\n③ YOUR MAIN PHASE | HOPT | You can SEARCH 1 \"K9\" Spell/Trap.",
+        "previous": null
+    },
+    "K9-EW Special Release Experiment": {
+        "_current": "① HOPT | Special Summon 1 \"K9\" monster from your hand or GY, then you can Special Summon 1 \"K9\" Xyz Monster from your Extra Deck, by using that monster as material (this is treated as an Xyz Summon), but DESTROY the monster Special Summoned from the Extra Deck, during the End Phase of the next turn.\n② END PHASE | HOPT | <b>You can BANISH this card from your GY, then target 1 \"K9\" Quick-Play Spell in your GY;</b> Set it.",
+        "previous": null
+    },
+    "K9-LC Release Restraint": {
+        "_current": "① HOPT | <b>Target 1 \"K9\" Xyz Monster or 1 Rank 5 Xyz Monster you control;</b> Special Summon from your Extra Deck, 1 \"K9\" Xyz Monster with a different name, by using that monster you control (this is treated as an Xyz Summon, transfer its materials to the Summoned monster).\n② HOPT | At the end of the Battle Phase, if your \"K9\" monster battled this turn: You can Set this card from your GY.",
+        "previous": null
+    },
+    "K9-X Forced Release": {
+        "_current": "① MAIN PHASE | HOPT | <b>Target 1 \"K9\" Xyz Monster you control;</b> Special Summon from your Extra Deck, 1 \"K9\" Xyz Monster with a different name, by using that monster you control (this is treated as an Xyz Summon, transfer its materials to the Summoned monster), then you can DESTROY 1 card your opponent controls.\n② HOPT | At the end of the Battle Phase, if your \"K9\" monster battled this turn: You can Set this card from your GY.",
+        "previous": null
+    },
+    "K9-ØØ \"Hound\"": {
+        "_current": "2 Level 5 monsters\n① Cannot be destroyed by battle or your opponent's card effects the turn it is Special Summoned.\n② Each time your opponent activates a monster effect, this card gains 500 ATK when that effect resolves.\n③ STANDBY PHASE | OPT | <b>You can detach 1 material from this card, then target 1 card on the field;</b> BANISH it.",
+        "previous": null
+    },
+    "K9-ØØ Lupis": {
+        "_current": "① An Xyz Monster that has this card as material gains this effect.\n● Your opponent cannot target this card with card effects.\n② MAIN PHASE | HOPT | QUICK | If your opponent has activated a monster effect in the hand or GY this turn: You can Special Summon this card from your hand or GY, but BANISH it when it leaves the field.\n③ OPP'S TURN | HOPT | QUICK | You can: Immediately after this effect resolves, Xyz Summon using this card you control.",
+        "previous": null
+    },
+    "Lord of the Heavenly Prison": {
+        "_current": "HOPT | You can use ONE of —\n① YOUR MAIN PHASE | <b>You can activate this effect;</b> this card in your hand becomes revealed until the end of your opponent's turn. While this card is revealed by this effect, Set cards on the field cannot be destroyed by card effects.\n② If a Set Spell/Trap Card is activated (except during the Damage Step): You can Special Summon this card from your hand, then, if you activated this effect while this card was revealed, you can reveal and Set 1 Spell/Trap from your Deck, but BANISH it during the End Phase of the next turn.",
+        "previous": "HOPT | You can use ONE of —\n① YOUR MAIN PHASE | <b>You can activate this effect;</b> this card in your hand becomes revealed until the end of your opponent's turn. While this card is revealed by this effect, Set cards on the field cannot be destroyed by card effects.\n② If a Set Spell/Trap Card is activated (except during the Damage Step): You can Special Summon this card from your hand, then, if you activated this effect while this card was revealed, you can reveal and Set 1 Spell/Trap directly from your Deck, but BANISH it during the End Phase of the next turn."
+    },
+    "Magicalized Fusion": {
+        "_current": "HOPT ACTIVATION\nFusion Summon 1 Spellcaster Fusion Monster from your Extra Deck, by BANISHING its materials from your field or GY.",
+        "previous": "HOPT ACTIVATION\nFusion Summon 1 Spellcaster Fusion Monster from your Extra Deck, by BANISHING Fusion Materials mentioned on it from your field or GY."
+    },
+    "Miasma Necromancer": {
+        "_current": "2 monsters, including a DARK Spellcaster monster\n① HOPT | If this card is Link Summoned: You can add 1 Level 5 or higher DARK Spellcaster monster from your GY to your hand, but you cannot activate cards, or the effects of cards, with its name for the rest of this turn.\n② HOPT | <b>You can send 1 Spell/Trap from your hand or field to the GY;</b> immediately after this effect resolves, Normal Summon 1 Spellcaster monster.",
+        "previous": null
+    },
+    "Odd-Eyes Solblaze Dragon": {
+        "_current": "1 Tuner + 1+ non-Tuners\nHOPT | You can use ONE of —\n① If this card is Special Summoned: You can Special Summon 1 face-up Pendulum Monster from your Extra Deck, but you cannot Special Summon, except Pendulum Monsters, while you control that face-up monster.\n② If this card is in your GY: <b>You can BANISH 2 other monsters (Fusion/Synchro/Xyz/Pendulum) from your GY;</b> Special Summon this card.",
+        "previous": "1 Tuner + 1+ non-Tuner monsters\nHOPT | You can use ONE of —\n① If this card is Special Summoned: You can Special Summon 1 face-up Pendulum Monster from your Extra Deck, but you cannot Special Summon, except Pendulum Monsters, while you control that face-up monster.\n② If this card is in your GY: <b>You can BANISH 2 other monsters (Fusion/Synchro/Xyz/Pendulum) from your GY;</b> Special Summon this card."
+    },
+    "One-Way Synchro": {
+        "_current": "HOPT | You can use ONE of —\n① Take 1 Level 1 Tuner from your Deck or GY, and either add it to your hand or Special Summon it.\n② If you control \"Junk Warrior\" or a monster that mentions it, and this card is in your GY: You can Set this card, but BANISH it when it leaves the field.",
+        "previous": null
+    },
+    "Rokket Detonator": {
+        "_current": "① HOPT | If you control a DARK Dragon Link Monster, you can Special Summon this card (from your hand).\n② HOPT | <b>You can target 1 DARK Dragon Monster Card in your Spell & Trap Zone;</b> Special Summon it (but it cannot attack, also its effects are negated), also you cannot Special Summon from the Extra Deck for the rest of this turn, except DARK monsters.",
+        "previous": null
+    },
+    "Rokket Loader": {
+        "_current": "① HOPT | If this card is Normal or Special Summoned: You can SEARCH 1 Level 7 DARK Dragon monster also you cannot Special Summon from the Extra Deck for the rest of this turn, except DARK monsters.\n② HOPT | <b>You can BANISH this card from your GY, then target 1 face-up monster on the field;</b> it becomes DARK until the end of this turn.",
+        "previous": null
+    },
+    "Scrap Synchron": {
+        "_current": "For a Synchro Summon, you can substitute this card for any 1 \"Synchron\" Tuner. You can only use each of the following effects of \"Scrap Synchron\" once per turn.\n① If you Synchro Summon a monster that mentions a \"Synchron\" Tuner as material, this card in your hand can also be used as material.\n② If a monster(s) you control (that mentions \"Junk Warrior\" or is a Synchro Monster with \"Warrior\" in its original name) would be destroyed, you can BANISH this card from your field or GY instead.",
+        "previous": null
+    },
+    "The Gaze of Timaeus": {
+        "_current": "HOPT ACTIVATION\n<b>Target 1 \"Dark Magician\" or \"Dark Magician Girl\" in your field or GY;</b> Fusion Summon 1 Fusion Monster from your Extra Deck that mentions that monster as material, by shuffling it into the Deck as material (this is treated as a Fusion Summon with \"The Eye of Timaeus\"), but BANISH it during the End Phase of the next turn.",
+        "previous": null
+    },
+    "Topologic Blaster Dragon": {
+        "_current": "2+ Effect Monsters\nYou cannot Summon/Set monsters to any Extra Monster Zone this card points to.\n① If another monster is Special Summoned to a zone a Link Monster points to, while this card is in the Extra Monster Zone: Apply 1 of these effects (but you cannot apply that same effect of \"Topologic Blaster Dragon\" again this turn).\n● Shuffle all other monsters on the field into the Deck.\n● Shuffle all Spells/Traps on the field into the Deck.\n● Look at your opponent's Extra Deck and BANISH 1 card from it.",
+        "previous": null
+    },
+    "Toxic Boxfish": {
+        "_current": "1 Tuner + 1+ non-Tuner monsters\n① HOPT | If this card is Synchro Summoned: <b>You can target 1 card in either GY;</b> BANISH it.\n② HOPT | If this card is banished: <b>You can target 1 face-up card your opponent controls;</b> NEGATE its effects until the end of this turn.",
+        "previous": null
+    },
+    "Trisborrel Dragon": {
+        "_current": "2+ DARK Dragon monsters, including a \"Rokket\" monster\n① HOPT | If this card is Link Summoned: You can SEARCH 1 \"Rapid Trigger\", \"Heavy Interlock\", or \"Double Interlock\".\n② HOPT | <b>You can target 1 face-up card you control and 1 DARK Dragon monster in your GY;</b> DESTROY that card on the field, and if you do, add that other monster from your GY to your hand.",
+        "previous": null
+    },
+    "Unpossessed": {
+        "_current": "① \"Charmer\" monsters you control cannot be destroyed by battle.\n② If your \"Familiar-Possessed\" monster attacks an opponent's monster, it gains 800 ATK during damage calculation only.\n③ HOPT | If a monster(s) you control is destroyed, while this card is already face-up in your Spell & Trap Zone: You can Special Summon 1 Spellcaster monster with 1500 DEF from your Deck, whose Attribute is different from at least 1 of those destroyed monsters' original Attributes on the field, in Attack Position or face-down Defense Position.",
+        "previous": "① \"Charmer\" monsters you control cannot be destroyed by battle.\n② If a \"Familiar-Possessed\" monster you control attacks an opponent's monster, it gains 800 ATK during damage calculation only.\n③ HOPT | If a monster(s) you control is destroyed, while this card is already face-up in your Spell & Trap Zone: You can Special Summon 1 Spellcaster monster with 1500 DEF from your Deck, whose Attribute is different from at least 1 of those destroyed monsters' original Attributes on the field, in Attack Position or face-down Defense Position."
+    },
+    "Vallon, the Super Psy Skyblaster": {
+        "_current": "2 Level 5 monsters\n① MAIN PHASE | HOPT | QUICK | <b>You can detach 1 material from this card, then target 1 face-up monster your opponent controls;</b> change it to face-down Defense Position.\n② HOPT | If this card is sent to the GY: <b>You can target 1 face-down card on the field;</b> DESTROY it.",
+        "previous": null
+    },
+    "Vanquish Soul Rocks": {
+        "_current": "2+ Level 4 \"Vanquish Soul\" monsters\nOnce per turn, if a \"Vanquish Soul\" monster battled this turn, you can also Xyz Summon \"Vanquish Soul Rocks\" by using 1 \"Vanquish Soul\" monster or 1 \"Rock of the Vanquisher\" you control (transfer its materials to this card).\n① Gains the following effects, based on the Attributes of its attached materials.\n● DARK: <b>All monsters your opponent controls lose 800 ATK.\n● FIRE: \"Vanquish Soul\" monsters you control gain 1000 ATK.\n● EARTH: You can detach 1 material from this card;</b> DESTROY 1 card your opponent controls.",
+        "previous": null
+    },
+    "Vanquish Soul, Start!": {
+        "_current": "① HOPT | <b>You can target 1 \"Vanquish Soul\" monster you control;</b> SEARCH 1 \"Vanquish Soul\" monster with a different Attribute.\n② HOPT | If a \"Vanquish Soul\" monster(s) you control would be destroyed, you can reveal 1 \"Vanquish Soul\" monster in your hand instead.\n③ YOUR END PHASE | HOPT | If you control 2 or more \"Vanquish Soul\" monsters: You can Set 1 \"Vanquish Soul\" Trap from your Deck.",
+        "previous": null
+    },
+    "W:P Fancy Ball": {
+        "_current": "2+ Effect Monsters\n① HOPT | QUICK | When your opponent activates a monster effect on the field or GY: <b>You can BANISH this card that was Special Summoned this turn until the End Phase;</b> NEGATE that effect, and if you do, BANISH it.\n② OPP'S MAIN PHASE | HOPT | QUICK | You can: Immediately after this effect resolves, Link Summon 1 Link Monster, and if this card you control would be used as material for that Link Summon, you can also use 1 Link-2 or lower monster your opponent controls.\nNeither player can activate the effects of Link Monsters in response to this effect's activation.",
+        "previous": null
+    },
+    "Wynn the Wind Channeler": {
+        "_current": "(This card is always treated as a \"Charmer\" card.)\n① HOPT | <b>You can DISCARD this card and 1 other WIND monster;</b> SEARCH 1 WIND monster with 1500 or less DEF except \"Wynn the Wind Channeler\", also you cannot activate non-WIND monster effects for the rest of this turn.\n② HOPT | When your WIND monster is destroyed by battle: You can Special Summon this card from your hand.",
+        "previous": "(This card is always treated as a \"Charmer\" card.)\n① HOPT | <b>You can DISCARD this card and 1 other WIND monster;</b> SEARCH 1 WIND monster with 1500 or less DEF except \"Wynn the Wind Channeler\", also you cannot activate monster effects for the rest of this turn, except WIND monsters.\n② HOPT | When a WIND monster you control is destroyed by battle while this card is in your hand: You can Special Summon this card."
     }
 }
