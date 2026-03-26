@@ -1,62 +1,18 @@
 {
-    "Black Brutdrago": {
-        "_current": "1 Tuner + 1 or more non-Tuner Gemini monsters\n① OPT | You can send 1 Gemini monster from your hand to the GY to select and DESTROY 1 Spell or Trap Card your opponent controls.\n② When this card is destroyed and sent to the GY, you can select 1 Gemini monster in your GY and Special Summon it.\nThe Special Summoned Gemini monster is treated as an Effect Monster, and gains its effect.",
-        "previous": "1 Tuner + 1 or more non-Tuner Gemini monsters\n① OPT | You can send 1 Gemini monster from your hand to the GY to select and DESTROY 1 Spell or Trap Card your opponent controls.\n② When this card is destroyed and sent to the GY, you can select 1 Gemini monster in your GY and Special Summon it. The Special Summoned Gemini monster is treated as an Effect Monster, and gains its effect."
+    "Conduction Warrior Plasma Magnum": {
+        "_current": "2 EARTH Rock monsters\n① Face-up monsters on the field become EARTH.\n② HOPT | If this card is Fusion Summoned: You can SEARCH 1 \"Magnet\" Normal, Quick-Play, or Field Spell.\n③ HOPT | <b>You can send 1 Level 8 \"Magna Warrior\" monster from your Deck to the GY;</b> immediately after this effect resolves, Normal Summon 1 Level 4 or lower \"Magnet Warrior\" monster.",
+        "previous": "2 EARTH Rock monsters\nFace-up monsters on the field become EARTH. You can only use each of the following effects of \"Conduction Warrior Plasma Magnum\" once per turn. If this card is Fusion Summoned: You can SEARCH 1 \"Magnet\" Normal, Quick-Play, or Field Spell. <b>You can send 1 Level 8 \"Magna Warrior\" monster from your Deck to the GY;</b> immediately after this effect resolves, Normal Summon 1 Level 4 or lower \"Magnet Warrior\" monster."
     },
-    "Crimson Blader/Assault Mode": {
-        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned with \"Assault Mode Activate\".\n① Your opponent cannot activate the effects of Level 5 or higher monsters Special Summoned from the Extra Deck.\n② HOPT | <b>You can reveal this card in your hand;</b> SEARCH 1 \"Assault Mode Activate\" or 1 card that mentions it and if you do, shuffle this card into the Deck.\n③ If this card is destroyed: You can Special Summon 1 \"Crimson Blader\" from your GY.",
+    "Dragonic Warrior": {
+        "_current": "HOPT | <b>You can DISCARD 1 card;</b> Special Summon 1 Level 4 or lower Dragon monster from your hand or Deck, except \"Dragonic Warrior\", but NEGATE its effects.",
         "previous": null
     },
-    "Dragunity Lord - Georgius": {
-        "_current": "2+ monsters, including a Tuner\nWhile this card is equipped with a \"Dragunity\" card, your opponent cannot activate the effects of monsters in the GY. You can only use each of the following effects of \"Dragunity Lord - Georgius\" once per turn. If this card is Link Summoned, or your opponent Special Summons a monster(s): You can Special Summon 1 Level 5 or higher \"Dragunity\" monster from your Extra Deck or GY. When your opponent activates a Spell/Trap Card or effect (QUICK EFFECT): <b>You can send 1 Equip Card you control to the GY;</b> NEGATE that effect.",
+    "Illusion Gate": {
+        "_current": "<b>Pay half your LP;</b> DESTROY as many monsters your opponent controls as possible, then you can Special Summon 1 monster from your opponent's GY to your field, ignoring its Summoning conditions.\nYou can only apply this effect of \"Illusion Gate\" once per Duel.",
         "previous": null
     },
-    "Exstellarknight Constellar Ptolemy Ω7": {
-        "_current": "3 Level 7 monsters\nOnce per turn, during your Main Phase 2, you can also Xyz Summon \"Exstellarknight Constellar Ptolemy Ω7\" by using 1 \"tellarknight\" or \"Constellar\" Xyz Monster you control (transfer its materials). While you have 7 or more \"tellarknight\" monsters with different names in your GY and/or BANISHment, this card gains 2700 ATK/DEF, also it is unaffected by your opponent's activated effects. Once per turn (QUICK EFFECT): <b>You can detach any number of materials from this card, then target that many monsters your opponent controls;</b> shuffle them into the Deck.",
+    "Matador Archfiend": {
+        "_current": "You can Ritual Summon this card with \"Ritual of the Matador\".\n① HOPT | If this card is Ritual Summoned: You can SEARCH 2 \"Archfiend\" cards except \"Matador Archfiend\", also this card cannot attack for the rest of this turn.\n② Cannot be destroyed by battle, also you take no battle damage from battles involving this card.\n③ After damage calculation, if this card battled a monster: DESTROY that monster, and if you do, inflict 1000 damage to your opponent.",
         "previous": null
-    },
-    "Gouki The Tyrant Ogre": {
-        "_current": "1 \"Gouki\" Link Monster + 1 Warrior, Dinosaur, or Cyberse monster\n① If this card battles, your opponent cannot activate cards or effects until the end of the Damage Step.\n② HOPT | If this card is Fusion Summoned: <b>You can target cards on the field up to the total Link Rating of \"Gouki\" monsters used as this card's material (if you used a Link-3 or higher monster, neither player can activate those targeted cards or their effects in response to this effect's activation);</b> DESTROY them.",
-        "previous": null
-    },
-    "Junk Gardna": {
-        "_current": "\"Junk Synchron\" + 1 or more non-Tuner monsters\n① OPT | You can select 1 monster your opponent controls, and change its battle position.\n② This effect can be activated during either player's turn.\nIf this card is sent from the field to the GY, you can select 1 monster on the field and change its battle position.",
-        "previous": "\"Junk Synchron\" + 1 or more non-Tuner monsters\n① OPT | You can select 1 monster your opponent controls, and change its battle position. This effect can be activated during either player's turn.\n② If this card is sent from the field to the GY, you can select 1 monster on the field and change its battle position."
-    },
-    "Jupiter the Power Patron of Destruction": {
-        "_current": "3 Level 10 monsters\nOnce per turn, you can also Xyz Summon \"Jupiter the Power Patron of Destruction\" by using 1 monster you control equipped with 3 or more Equip Cards (transfer its materials).\n① If this card is Xyz Summoned: You can equip any number of Equip Spells from your GY to this card that can equip to it.\n② Gains 3000 ATK while it has an Xyz Monster as material.\n③ OPT | <b>You can detach 1 material from this card;</b> Special Summon 1 \"DoomZ\" monster from your GY, then you can DESTROY 1 card on the field.",
-        "previous": null
-    },
-    "Medium Piece Golem": {
-        "_current": "When this card is Summoned, if you control a \"Big Piece Golem\", you can Special Summon 1 \"Small Piece Golem\" from your Deck.\nThat monster's effect is negated while it is face-up on the field.",
-        "previous": "When this card is Summoned, if you control a \"Big Piece Golem\", you can Special Summon 1 \"Small Piece Golem\" from your Deck. That monster's effect is negated while it is face-up on the field."
-    },
-    "Multiple Piece Golem": {
-        "_current": "\"Big Piece Golem\" + \"Medium Piece Golem\"\n① At the end of the Battle Phase, if this card attacked or was attacked, you can return it to the Extra Deck.\nThen, if all of the Fusion Material Monsters that were used for the Fusion Summon of this card are in your GY, you can Special Summon them.",
-        "previous": "\"Big Piece Golem\" + \"Medium Piece Golem\"\n① At the end of the Battle Phase, if this card attacked or was attacked, you can return it to the Extra Deck. Then, if all of the Fusion Material Monsters that were used for the Fusion Summon of this card are in your GY, you can Special Summon them."
-    },
-    "Nightwinged Cleric": {
-        "_current": "1 Tuner + 1+ non-Tuners\n① HOPT | If this card is Special Summoned: You can Set 1 \"Assault Mode Activate\" from your hand, Deck, or GY. It can be activated this turn.\n② HOPT | <b>You can DISCARD 1 card;</b> add to your hand or Special Summon 1 monster from your Deck that mentions \"Assault Mode Activate\", also you cannot Special Summon from the Extra Deck for the rest of this turn, except Synchro Monsters.",
-        "previous": null
-    },
-    "Queen Dragun Djinn": {
-        "_current": "2 Level 4 monsters\n① Dragon-Type monsters you control cannot be destroyed by battle, except \"Queen Dragun Djinn\".\n② OPT | <b>You can detach 1 Xyz Material from this card to target 1 Level 5 or higher Dragon-Type monster in your GY;</b> Special Summon that target.\nIt cannot attack this turn, and its effects are negated.",
-        "previous": "2 Level 4 monsters\n① Dragon-Type monsters you control cannot be destroyed by battle, except \"Queen Dragun Djinn\".\n② OPT | <b>You can detach 1 Xyz Material from this card to target 1 Level 5 or higher Dragon-Type monster in your GY;</b> Special Summon that target. It cannot attack this turn, and its effects are negated."
-    },
-    "Reeshaddoll Wendikuruhu": {
-        "_current": "1 \"Shaddoll\" monster + 1 WIND monster\nMust first be Fusion Summoned. (QUICK EFFECT): You can change any number of face-down monsters on the field to face-up Defense Position, then, you can count the number of Flip monsters among them, and change up to that many face-up monsters on the field (except those flipped monsters) to face-down Defense Position. You can only use this effect of \"Reeshaddoll Wendikuruhu\" once per turn. If this card is sent to the GY: <b>You can target 1 \"Shaddoll\" card in your GY;</b> add it to your hand.",
-        "previous": null
-    },
-    "Small Piece Golem": {
-        "_current": "When this card is Summoned, if you control a \"Big Piece Golem\", you can Special Summon 1 \"Medium Piece Golem\" from your Deck.\nThat monster's effect is negated while it is face-up on the field.",
-        "previous": "When this card is Summoned, if you control a \"Big Piece Golem\", you can Special Summon 1 \"Medium Piece Golem\" from your Deck. That monster's effect is negated while it is face-up on the field."
-    },
-    "Tellarknight Constellar Delteros": {
-        "_current": "3+ Level 4 monsters\nYour opponent cannot target Rank 5 or higher \"tellarknight\" or \"Constellar\" Xyz Monsters you control with card effects. Once per turn: <b>You can detach 1 material from this card;</b> SEARCH 1 \"tellarknight\" or \"Constellar\" monster then immediately after this effect resolves, you can Normal Summon 1 LIGHT monster. If this card is sent to the GY, except from the field: You can Special Summon 1 \"tellarknight\" or \"Constellar\" monster from your hand or BANISHment.",
-        "previous": null
-    },
-    "Xing Zhen Hu": {
-        "_current": "Activate by selecting 2 Set Spell or Trap Cards on the field.\nThe selected Spell or Trap Cards cannot be activated.",
-        "previous": "Activate by selecting 2 Set Spell or Trap Cards on the field.\n① The selected Spell or Trap Cards cannot be activated."
     }
 }
