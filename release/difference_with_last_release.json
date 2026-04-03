@@ -1,18 +1,38 @@
 {
-    "Conduction Warrior Plasma Magnum": {
-        "_current": "2 EARTH Rock monsters\n① Face-up monsters on the field become EARTH.\n② HOPT | If this card is Fusion Summoned: You can SEARCH 1 \"Magnet\" Normal, Quick-Play, or Field Spell.\n③ HOPT | <b>You can send 1 Level 8 \"Magna Warrior\" monster from your Deck to the GY;</b> immediately after this effect resolves, Normal Summon 1 Level 4 or lower \"Magnet Warrior\" monster.",
-        "previous": "2 EARTH Rock monsters\nFace-up monsters on the field become EARTH. You can only use each of the following effects of \"Conduction Warrior Plasma Magnum\" once per turn. If this card is Fusion Summoned: You can SEARCH 1 \"Magnet\" Normal, Quick-Play, or Field Spell. <b>You can send 1 Level 8 \"Magna Warrior\" monster from your Deck to the GY;</b> immediately after this effect resolves, Normal Summon 1 Level 4 or lower \"Magnet Warrior\" monster."
-    },
-    "Dragonic Warrior": {
-        "_current": "HOPT | <b>You can DISCARD 1 card;</b> Special Summon 1 Level 4 or lower Dragon monster from your hand or Deck, except \"Dragonic Warrior\", but NEGATE its effects.",
+    "Aleister the Reminiscent": {
+        "_current": "If this card is in your hand: <b>You can target 1 Spellcaster monster or 1 Fusion Monster on the field;</b> Special Summon this card, and if you do, the targeted monster gains 1000 ATK until the end of this turn. If this card is Normal or Special Summoned, or flipped face-up: <b>You can BANISH 1 \"Invoked\" monster from your Extra Deck;</b> SEARCH 1 \"Invocation\", or 1 Spell that mentions it. You can only use each effect of \"Aleister the Reminiscent\" once per turn.",
         "previous": null
     },
-    "Illusion Gate": {
-        "_current": "<b>Pay half your LP;</b> DESTROY as many monsters your opponent controls as possible, then you can Special Summon 1 monster from your opponent's GY to your field, ignoring its Summoning conditions.\nYou can only apply this effect of \"Illusion Gate\" once per Duel.",
+    "Black Luster Soldier - Soldier of Light and Darkness": {
+        "_current": "You can Ritual Summon this card with \"Light and Darkness Ritual\". Unaffected by your opponent's activated effects, unless they target this card, also cannot be destroyed by battle. You can only use each of the following effects of \"Black Luster Soldier - Soldier of Light and Darkness\" once per turn. If this card is Special Summoned: <b>You can target 1 card your opponent controls;</b> BANISH it. When this card DESTROYS an opponent's monster by battle: You can make this card gain 1500 ATK, and if you do, it can make a second attack in a row.",
         "previous": null
     },
-    "Matador Archfiend": {
-        "_current": "You can Ritual Summon this card with \"Ritual of the Matador\".\n① HOPT | If this card is Ritual Summoned: You can SEARCH 2 \"Archfiend\" cards except \"Matador Archfiend\", also this card cannot attack for the rest of this turn.\n② Cannot be destroyed by battle, also you take no battle damage from battles involving this card.\n③ After damage calculation, if this card battled a monster: DESTROY that monster, and if you do, inflict 1000 damage to your opponent.",
+    "Froggy Forcefield": {
+        "_current": "Activate only when a face-up \"Frog\" monster you control, except \"Frog the Jam\", is selected as an attack target.\nDESTROY all Attack Position monsters your opponent controls.",
+        "previous": "Activate only when a face-up \"Frog\" monster you control, except \"Frog the Jam\", is selected as an attack target. DESTROY all Attack Position monsters your opponent controls."
+    },
+    "Heart of Gaia": {
+        "_current": "(This card is always treated as a \"Millennium\" and \"Gaia The Fierce Knight\" card.)\n① If a Level 5 or higher Monster Card is on the field, you can Normal Summon this card without Tributing.\n② The Level of any monster your opponent Normal or Special Summons in Attack Position, while this card is in your Monster Zone, is increased by 7.\n③ HOPT | QUICK | When your opponent activates a monster effect: <b>You can send 1 other face-up Level 5 or higher Monster Card you control to the GY;</b> NEGATE the activation, and if you do, DESTROY that card.",
+        "previous": null
+    },
+    "Magician of Dark Chaos - Black Chaos": {
+        "_current": "You can Ritual Summon this card with \"Light and Darkness Ritual\". Unaffected by your opponent's activated effects, unless they target this card, also Spells/Traps you control cannot be destroyed or banished by your opponent's card effects. You can only use each of the following effects of \"Magician of Dark Chaos - Black Chaos\" once per turn. If this card is Special Summoned: You can add 1 Spell from your GY to your hand. <b>You can target 1 card your opponent controls;</b> BANISH it face-down.",
+        "previous": null
+    },
+    "Master Peace, the True Dracoverlord": {
+        "_current": "Requires 3 Tributes to Normal Summon (cannot be Normal Set). To Tribute Summon this card face-up, you can Tribute Continuous Spells/Traps you control, as well as monsters. You can only use each of the following effects of \"Master Peace, the True Dracoverlord\" once per turn.\n① QUICK | When your opponent activates a monster effect in their hand or field and you control this Tribute Summoned card: You can NEGATE the activation, and if you do, DESTROY that monster.\n② If this Tribute Summoned card is destroyed by battle, or is destroyed by an opponent's card effect while in its owner's Monster Zone: <b>You can activate this effect;</b> your opponent skips their next Main Phase.",
+        "previous": null
+    },
+    "R.B. The Brute Blues": {
+        "_current": "2+ Machine monsters\n① Gains the following effects while this card points to an \"R.B.\" monster.\n● Gains ATK equal to the total original ATK of \"R.B.\" monsters it points to.\n● Can make a second attack during each Battle Phase.\n● Cannot be destroyed.\n② YOUR MAIN PHASE | HOPT | You can add 1 \"R.B.\" card from your Deck to your hand.",
+        "previous": null
+    },
+    "The Chaotic Sacred Beasts": {
+        "_current": "3 Level 10 monsters that cannot be Normal Summoned/Set\nMust be either Fusion Summoned, or Special Summoned (from your Extra Deck) by sending the above cards you control to the GY. You can only Special Summon \"The Chaotic Sacred Beasts\" once per turn this way, no matter which method you use. The first two times this card would be destroyed by card effect each turn, it is not destroyed. Once per Chain, up to thrice per turn (QUICK EFFECT): <b>You can target 1 face-up monster your opponent controls;</b> NEGATE its effects (until the end of this turn), then you can gain LP equal to half that monster's ATK.",
+        "previous": null
+    },
+    "Whisker Blitzclique": {
+        "_current": "During the turn a card(s) was destroyed by your \"Blitzclique\" card effect (QUICK EFFECT): <b>You can reveal this card in your hand;</b> Special Summon up to 3 Thunder monsters from your hand, then you can DESTROY up to that many cards on the field, also for the rest of this turn, you cannot Special Summon Effect Monsters, except from the hand. When a monster effect is activated, except in the hand (QUICK EFFECT): <b>You can BOUNCE 1 other Thunder monster you control;</b> NEGATE the activation, and if you do, DESTROY that monster. You can only use each effect of \"Whisker Blitzclique\" once per turn.",
         "previous": null
     }
 }
