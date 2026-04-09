@@ -1,38 +1,266 @@
 {
-    "Aleister the Reminiscent": {
-        "_current": "If this card is in your hand: <b>You can target 1 Spellcaster monster or 1 Fusion Monster on the field;</b> Special Summon this card, and if you do, the targeted monster gains 1000 ATK until the end of this turn. If this card is Normal or Special Summoned, or flipped face-up: <b>You can BANISH 1 \"Invoked\" monster from your Extra Deck;</b> SEARCH 1 \"Invocation\", or 1 Spell that mentions it. You can only use each effect of \"Aleister the Reminiscent\" once per turn.",
+    "Anesthrokket Dragon": {
+        "_current": "① HOPT | QUICK | When a Link Monster's effect is activated that targets this face-up card on the field: You can DESTROY this card, then make 1 face-up monster on the field unable to attack, also its effects are negated.\n② END PHASE | HOPT | If this card is in the GY because it was destroyed on the field by battle or card effect and sent there this turn: You can Special Summon 1 \"Rokket\" monster from your Deck, except \"Anesthrokket Dragon\".",
+        "previous": "① HOPT | QUICK | When a Link Monster's effect is activated that targets this face-up card on the field: You can DESTROY this card, then make 1 face-up monster on the field unable to attack, also it has its effects negated.\n② END PHASE | HOPT | If this card is in the GY because it was destroyed on the field by battle or card effect and sent there this turn: You can Special Summon 1 \"Rokket\" monster from your Deck, except \"Anesthrokket Dragon\"."
+    },
+    "Archfiend Heiress": {
+        "_current": "HOPT | If this card is sent to the GY by card effect, or by being destroyed by battle: You can SEARCH 1 \"Archfiend\" card except \"Archfiend Heiress\".",
+        "previous": "If this card is sent to the GY because of a card effect or being destroyed by battle: You can SEARCH 1 \"Archfiend\" card except \"Archfiend Heiress\".\nYou can only use the effect of \"Archfiend Heiress\" once per turn."
+    },
+    "Assault Mode Zero": {
+        "_current": "① HOPT | <b>Tribute 1 Synchro Monster;</b> Special Summon 1 \"/Assault Mode\" monster from your hand whose name includes the Tributed monster's name (this is treated as a Special Summon with \"Assault Mode Activate\").\n② YOUR MAIN PHASE | HOPT | <b>You can BANISH this card from your GY;</b> Set 1 \"Assault Mode Activate\" from your hand or Deck. It can be activated this turn.",
+        "previous": "① HOPT | <b>Tribute 1 Synchro Monster;</b> Special Summon 1 \"/Assault Mode\" monster from your hand whose name includes the Tributed monster's name. (This is treated as a Special Summon with \"Assault Mode Activate\".)\n② YOUR MAIN PHASE | HOPT | <b>You can BANISH this card from your GY;</b> Set 1 \"Assault Mode Activate\" directly from your hand or Deck. It can be activated this turn."
+    },
+    "Assault Reboot": {
+        "_current": "① HOPT | <b>Tribute 1 \"/Assault Mode\" monster;</b> Special Summon 1 \"/Assault Mode\" monster from your Deck with a different name in Defense Position, ignoring its Summoning conditions.\n② HOPT | <b>You can BANISH this card from your GY, then target any number of cards in your GY, with different names, that are \"Assault Mode Activate\" and/or mention \"Assault Mode Activate\", except \"Assault Reboot\";</b> shuffle them into the Deck.",
+        "previous": "① HOPT | <b>Tribute 1 \"/Assault Mode\" monster;</b> Special Summon 1 \"/Assault Mode\" monster from your Deck with a different name in Defense Position, ignoring its Summoning conditions.\n② HOPT | <b>You can BANISH this card from your GY, then target any number of cards in your GY, with different names, that are \"Assault Mode Activate\" and/or specifically list \"Assault Mode Activate\" in their text, except \"Assault Reboot\";</b> shuffle them into the Deck."
+    },
+    "Assault Sentinel": {
+        "_current": "① HOPT | <b>You can Tribute this card;</b> Special Summon 1 monster from your hand or Deck that mentions \"Assault Mode Activate\", except \"Assault Sentinel\", also you cannot Special Summon from the Extra Deck for the rest of this turn, except Synchro Monsters.\n② HOPT | <b>You can target 1 face-up monster you control;</b> reveal 1 Synchro Monster in your Extra Deck, and if you do, the targeted monster's Type and Attribute become the same as the revealed monster's, until the end of this turn.",
+        "previous": "① HOPT | <b>You can Tribute this card;</b> Special Summon 1 monster from your hand or Deck that specifically lists \"Assault Mode Activate\" in its text, except \"Assault Sentinel\", also you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except Synchro Monsters.\n② HOPT | <b>You can target 1 face-up monster you control;</b> reveal 1 Synchro Monster in your Extra Deck, and if you do, the targeted monster's Type and Attribute become the same as the revealed monster's, until the end of this turn."
+    },
+    "Assault Slash": {
+        "_current": "If you control an \"/Assault Mode\" monster: DESTROY all face-up monsters on the field.",
+        "previous": "Activate only while you control an \"/Assault Mode\" monster.\nDESTROY all face-up monsters on the field."
+    },
+    "B.E.F. Zelos": {
+        "_current": "① When this card is activated: You can SEARCH 1 \"Boss Rush\".\n② \"B.E.S.\" monsters you control gain 500 ATK/DEF, your opponent cannot target them with card effects, also they cannot be destroyed by your opponent's card effects.\n③ OPT | You can Special Summon 1 \"B.E.S.\" monster from your hand.\n④ If a \"B.E.S.\" monster(s) is Normal or Special Summoned to your field: Place 1 counter on it.",
+        "previous": "① When this card is activated: You can SEARCH 1 \"Boss Rush\".\n② All \"B.E.S.\" monsters you control gain 500 ATK and DEF, your opponent cannot target them with card effects, and they cannot be destroyed by your opponent's card effects.\n③ OPT | You can Special Summon 1 \"B.E.S.\" monster from your hand.\n④ If a \"B.E.S.\" monster(s) is Normal or Special Summoned to your field: Place 1 counter on it."
+    },
+    "B.E.S. Big Core MK-2": {
+        "_current": "① If you control no monsters, you can Normal Summon this card without Tributing.\n② If this card is Special Summoned: Place 3 counters on it.\n③ Cannot be destroyed by battle.\n④ At the end of the Damage Step, if this card battled: Remove 1 counter from this card, or if you cannot, DESTROY this card.",
+        "previous": "① If you control no monsters, you can Normal Summon this card without Tributing.\n② When this card is Special Summoned, place 3 counters on it.\n③ This card cannot be destroyed by battle.\n④ If this card attacks or is attacked, remove 1 counter from this card at the end of the Damage Step.\nIf you cannot, DESTROY it."
+    },
+    "B.E.S. Big Core MK-3": {
+        "_current": "① If your opponent controls a monster and you control no monsters, you can Special Summon this card (from your hand) in Defense Position.\n② If this card is Normal or Special Summoned: Place 3 counters on this card.\n③ Cannot be destroyed by battle.\n④ At the end of the Damage Step, if this card battled: Remove 1 counter from this card, or if you cannot, DESTROY this card.\n⑤ <b>You can BANISH this card from your GY;</b> shuffle all \"B.E.S.\" monsters from your GY into the Deck.",
+        "previous": "① If your opponent controls a monster and you control no monsters, you can Special Summon this card (from your hand) in Defense Position.\n② If this card is Normal or Special Summoned: Place 3 counters on this card.\n③ Cannot be destroyed by battle.\n④ At the end of the Damage Step, if this card battled: Remove 1 counter from this card.\n⑤ If you cannot, DESTROY it.\nYou can BANISH this card from your GY; shuffle all \"B.E.S.\" monsters from your GY into the Deck."
+    },
+    "Black Rose Garden": {
+        "_current": "HOPT ACTIVATION\n① When this card is activated: You can SEARCH 1 \"Rose Dragon\" monster (from DECK or GY).\n② All face-up monsters on the field become Plant monsters.\n③ HOPT | If this card is destroyed: Inflict 100 damage to your opponent for each Plant monster in your GY and BANISHment, then if this card was destroyed by the effect of \"Black Rose Dragon\", inflict 2400 damage to your opponent.",
         "previous": null
     },
-    "Black Luster Soldier - Soldier of Light and Darkness": {
-        "_current": "You can Ritual Summon this card with \"Light and Darkness Ritual\". Unaffected by your opponent's activated effects, unless they target this card, also cannot be destroyed by battle. You can only use each of the following effects of \"Black Luster Soldier - Soldier of Light and Darkness\" once per turn. If this card is Special Summoned: <b>You can target 1 card your opponent controls;</b> BANISH it. When this card DESTROYS an opponent's monster by battle: You can make this card gain 1500 ATK, and if you do, it can make a second attack in a row.",
+    "Bonding - D2O": {
+        "_current": "① <b>Tribute 2 \"Duoterion\" and 1 \"Oxygeddon\" in your hand and/or field;</b> Special Summon 1 \"Water Dragon\" or \"Water Dragon Cluster\" from your hand, Deck, or GY (this is treated as a Special Summon with the effect of \"Bonding - H2O\").\n② HOPT | If \"Water Dragon\" or \"Water Dragon Cluster\" is sent from the field to your GY while this card is in your GY: Add this card to your hand.",
+        "previous": "① <b>Tribute 2 \"Duoterion\" and 1 \"Oxygeddon\" in your hand and/or field;</b> Special Summon 1 \"Water Dragon\" or \"Water Dragon Cluster\" from your hand, Deck, or GY. (This is treated as a Special Summon with the effect of \"Bonding - H2O\".)\n② HOPT | If \"Water Dragon\" or \"Water Dragon Cluster\" is sent from the field to your GY while this card is in your GY: Add this card to your hand."
+    },
+    "Boss Rush": {
+        "_current": "Activate only if you did not Normal Summon/Set this turn.\n① You cannot Normal Summon/Set.\n② END PHASE | If a face-up \"B.E.S.\" monster(s) you control was destroyed and sent to the GY this turn while this card was face-up in your Spell & Trap Zone: You can Special Summon 1 \"B.E.S.\" monster from your Deck.",
+        "previous": "You cannot Normal Summon or Set.\n① During the End Phase of the turn that a \"B.E.S.\" monster or a \"Big Core\" is destroyed and sent to the GY, you can Special Summon 1 \"B.E.S.\" monster or 1 \"Big Core\" from your Deck."
+    },
+    "Crimson Blader": {
+        "_current": "1 Tuner + 1 or more non-Tuners\n① If this card DESTROYS an opponent's monster by battle and sends it to the GY: Your opponent cannot Normal or Special Summon Level 5 or higher monsters during their next turn.",
+        "previous": "1 Tuner + 1 or more non-Tuner monsters\n① If this card DESTROYS an opponent's monster by battle and sends it to the GY: Your opponent cannot Normal or Special Summon Level 5 or higher monsters during their next turn."
+    },
+    "Deep Diver": {
+        "_current": "At the end of the Battle Phase, if this card was destroyed by battle and sent to the GY: Place 1 monster from your Deck on top of your Deck.",
+        "previous": "At the end of the Battle Phase, if this card was destroyed by battle and sent to the GY: Choose 1 monster from your Deck and place it on top of your Deck."
+    },
+    "Draco Awakening": {
+        "_current": "HOPT ACTIVATION\n① When this card is activated: You can SEARCH 1 monster (\"True Draco\", \"True King\", \"Dracoslayer\" Pendulum, or \"Dracoverlord\" Pendulum).\n② HOPT | If a face-up \"True Draco\" or \"True King\" monster(s) you control is destroyed and sent to the GY: <b>You can target 1 of them;</b> place it in your Spell & Trap Zone as a face-up Continuous Spell.",
         "previous": null
     },
-    "Froggy Forcefield": {
-        "_current": "Activate only when a face-up \"Frog\" monster you control, except \"Frog the Jam\", is selected as an attack target.\nDESTROY all Attack Position monsters your opponent controls.",
-        "previous": "Activate only when a face-up \"Frog\" monster you control, except \"Frog the Jam\", is selected as an attack target. DESTROY all Attack Position monsters your opponent controls."
+    "Fiend Skull Dragon": {
+        "_current": "\"Cave Dragon\" + \"Lesser Fiend\"\n(This card is always treated as an \"Archfiend\" card.)\nA Fusion Summon of this card can only be done with the above materials.\n① NEGATE the effects of Flip monsters.\n② NEGATE any Trap effects that target this card on the field, and if you do, DESTROY that card.",
+        "previous": "\"Cave Dragon\" + \"Lesser Fiend\"\n(This card is always treated as an \"Archfiend\" card.)\nA Fusion Summon of this card can only be done with the above Fusion Material Monsters.\n① NEGATE the effects of Flip Effect Monsters.\n② NEGATE any Trap effects that target this card on the field, and if you do, DESTROY that Trap Card."
     },
-    "Heart of Gaia": {
-        "_current": "(This card is always treated as a \"Millennium\" and \"Gaia The Fierce Knight\" card.)\n① If a Level 5 or higher Monster Card is on the field, you can Normal Summon this card without Tributing.\n② The Level of any monster your opponent Normal or Special Summons in Attack Position, while this card is in your Monster Zone, is increased by 7.\n③ HOPT | QUICK | When your opponent activates a monster effect: <b>You can send 1 other face-up Level 5 or higher Monster Card you control to the GY;</b> NEGATE the activation, and if you do, DESTROY that card.",
+    "Gallugallud the Endless Enigma": {
+        "_current": "This sinister spirit of wavering flames can transform into any being. As it shifts from bird to human, and human to bird, it has forgotten its true self.",
         "previous": null
     },
-    "Magician of Dark Chaos - Black Chaos": {
-        "_current": "You can Ritual Summon this card with \"Light and Darkness Ritual\". Unaffected by your opponent's activated effects, unless they target this card, also Spells/Traps you control cannot be destroyed or banished by your opponent's card effects. You can only use each of the following effects of \"Magician of Dark Chaos - Black Chaos\" once per turn. If this card is Special Summoned: You can add 1 Spell from your GY to your hand. <b>You can target 1 card your opponent controls;</b> BANISH it face-down.",
+    "Hyper Psychic Blaster/Assault Mode": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned with \"Assault Mode Activate\".\n① At the end of the Damage Step, if this card battled an opponent's monster: Inflict damage to your opponent equal to that opponent's monster's DEF, also gain LP equal to its ATK.\n② When this card on the field is destroyed: <b>You can target 1 \"Hyper Psychic Blaster\" in your GY;</b> Special Summon that target.",
+        "previous": "This card cannot be Normal Summoned or Set. This card cannot be Special Summoned except with \"Assault Mode Activate\".\n① If this card battles a monster, at the end of the Damage Step, inflict damage to your opponent equal to that monster's DEF and gain Life Points equal to its ATK.\n② When this card on the field is destroyed, you can Special Summon 1 \"Hyper Psychic Blaster\" from your GY."
+    },
+    "Imperion Magnum the Superconductive Battlebot": {
+        "_current": "\"Valkyrion the Magna Warrior\" + \"Berserkion the Electromagna Warrior\"\nMust be Fusion Summoned with the above Fusion Materials.\n① OPT | QUICK | When your opponent activates a Spell/Trap Card, or monster effect: You can NEGATE the activation, and if you do, DESTROY that card.\n② If this face-up card in its owner's control leaves the field because of an opponent's card effect: You can Special Summon both 1 \"Valkyrion the Magna Warrior\" and 1 \"Berserkion the Electromagna Warrior\" from your hand and/or Deck, ignoring their Summoning conditions.",
+        "previous": "\"Valkyrion the Magna Warrior\" + \"Berserkion the Electromagna Warrior\"\nMust be Fusion Summoned with the above Fusion Materials and cannot be Special Summoned by other ways.\n① OPT | During either player's turn, when your opponent activates a Spell/Trap Card, or monster effect: You can NEGATE the activation, and if you do, DESTROY that card.\n② If this face-up card in its owner's control leaves the field because of an opponent's card effect: You can Special Summon both 1 \"Valkyrion the Magna Warrior\" and 1 \"Berserkion the Electromagna Warrior\" from your hand and/or Deck, ignoring their Summoning conditions."
+    },
+    "JJ \"Kewl Tune\"": {
+        "_current": "① You can Normal Summon 1 Tuner during your Main Phase each turn, in addition to your Normal Summon/Set (you can only gain this effect once per turn).\n② Each \"Kewl Tune Loudness War\" you control gains 3300 ATK while your opponent has a Tuner in their field or GY.\n③ HOPT | <b>You can Tribute 1 Tuner;</b> add to your hand or Special Summon, 1 \"Kewl Tune\" monster from your Deck, also you cannot Special Summon for the rest of this turn, except Tuners.",
         "previous": null
     },
-    "Master Peace, the True Dracoverlord": {
-        "_current": "Requires 3 Tributes to Normal Summon (cannot be Normal Set). To Tribute Summon this card face-up, you can Tribute Continuous Spells/Traps you control, as well as monsters. You can only use each of the following effects of \"Master Peace, the True Dracoverlord\" once per turn.\n① QUICK | When your opponent activates a monster effect in their hand or field and you control this Tribute Summoned card: You can NEGATE the activation, and if you do, DESTROY that monster.\n② If this Tribute Summoned card is destroyed by battle, or is destroyed by an opponent's card effect while in its owner's Monster Zone: <b>You can activate this effect;</b> your opponent skips their next Main Phase.",
+    "Kewl Tune B2B": {
+        "_current": "1 Tuner + 1+ Synchro Monsters\n① The Levels of monsters your opponent controls are increased by 2.\n② Your Tuners can make a second attack during each Battle Phase.\n③ QUICK | When your opponent activates a monster effect: <b>You can target 1 Tuner in your GY or BANISHment, except a Level 10 Tuner;</b> add it to your hand or Special Summon it, then immediately after this effect resolves, you can Synchro Summon 1 Synchro Monster.\nYou can only use this effect of \"Kewl Tune B2B\" twice per turn.",
         "previous": null
     },
-    "R.B. The Brute Blues": {
-        "_current": "2+ Machine monsters\n① Gains the following effects while this card points to an \"R.B.\" monster.\n● Gains ATK equal to the total original ATK of \"R.B.\" monsters it points to.\n● Can make a second attack during each Battle Phase.\n● Cannot be destroyed.\n② YOUR MAIN PHASE | HOPT | You can add 1 \"R.B.\" card from your Deck to your hand.",
+    "Kewl Tune Clip": {
+        "_current": "If this card on the field would be used as Synchro Material, 1 Tuner in your hand can be used as 1 of the other materials. You can only use each of the following effects of \"Kewl Tune Clip\" once per turn.\n① OPP'S MAIN PHASE | QUICK | If this card is in your hand: You can Special Summon this card, then immediately after this effect resolves, you can Synchro Summon 1 Tuner Synchro Monster.\n② If this card is sent to the GY as Synchro Material: You can BANISH (face-up) 1 random face-down card from your opponent's Extra Deck.",
         "previous": null
     },
-    "The Chaotic Sacred Beasts": {
-        "_current": "3 Level 10 monsters that cannot be Normal Summoned/Set\nMust be either Fusion Summoned, or Special Summoned (from your Extra Deck) by sending the above cards you control to the GY. You can only Special Summon \"The Chaotic Sacred Beasts\" once per turn this way, no matter which method you use. The first two times this card would be destroyed by card effect each turn, it is not destroyed. Once per Chain, up to thrice per turn (QUICK EFFECT): <b>You can target 1 face-up monster your opponent controls;</b> NEGATE its effects (until the end of this turn), then you can gain LP equal to half that monster's ATK.",
+    "Kewl Tune Crackle": {
+        "_current": "\"Kewl Tune Clip\" + 1+ Tuners\n① HOPT | If this card is Synchro Summoned: You can look at your opponent's Extra Deck, and if you do, BANISH (face-up) 1 card from it (until the End Phase), then you can make this card gain ATK equal to that monster's ATK.\n② HOPT | If this Synchro Summoned card is sent to the GY: You can Special Summon this card, then you can apply this effect.\n● Look at your opponent's Extra Deck and BANISH (face-up) 2 cards from it until the End Phase.",
         "previous": null
     },
-    "Whisker Blitzclique": {
-        "_current": "During the turn a card(s) was destroyed by your \"Blitzclique\" card effect (QUICK EFFECT): <b>You can reveal this card in your hand;</b> Special Summon up to 3 Thunder monsters from your hand, then you can DESTROY up to that many cards on the field, also for the rest of this turn, you cannot Special Summon Effect Monsters, except from the hand. When a monster effect is activated, except in the hand (QUICK EFFECT): <b>You can BOUNCE 1 other Thunder monster you control;</b> NEGATE the activation, and if you do, DESTROY that monster. You can only use each effect of \"Whisker Blitzclique\" once per turn.",
+    "Kewl Tune Cue": {
+        "_current": "If this card on the field would be used as Synchro Material, 1 Tuner in your hand can be used as 1 of the other materials. You can only use each of the following effects of \"Kewl Tune Cue\" once per turn.\n① If this card is Normal Summoned: You can Special Summon 1 Tuner from your hand, Deck, or GY, except \"Kewl Tune Cue\", also for the rest of this turn you cannot Special Summon, except Tuners.\n② If this card is sent to the GY as Synchro Material: You can EXCAVATE 2 cards from the top of your opponent's Deck, BANISH 1 of them, and place the other on the top or bottom of the Deck.",
+        "previous": null
+    },
+    "Kewl Tune Loudness War": {
+        "_current": "2+ Tuners\n① Other Tuners you control cannot be destroyed by card effects, also your opponent cannot target them with card effects.\n② HOPT | QUICK | When your opponent activates a card or effect: <b>You can BANISH 1 \"Kewl Tune\" monster from your GY;</b> apply that banished monster's effect that activates when it is sent to the GY as Synchro Material.",
+        "previous": null
+    },
+    "Kewl Tune Mix": {
+        "_current": "If this card on the field would be used as Synchro Material, 1 Tuner in your hand can be used as 1 of the other materials. You can only use each of the following effects of \"Kewl Tune Mix\" once per turn.\n① If this card is Normal or Special Summoned: You can SEARCH 1 \"Kewl Tune\" monster (from DECK or GY) except a Level 2 monster.\n② If this card is sent to the GY as Synchro Material: <b>You can target 1 monster your opponent controls;</b> DESTROY it.",
+        "previous": null
+    },
+    "Kewl Tune Playlist": {
+        "_current": "<b>Target 1 \"Kewl Tune\" monster in your field or GY;</b> apply these effects in sequence, also for the rest of this turn after this card resolves, you cannot Special Summon, except Tuners.\n● Apply that target's effect that activates when it is sent to the GY as Synchro Material.\n● BOUNCE that target.\nYou can activate up to 2 \"Kewl Tune Playlist\" per turn.",
+        "previous": null
+    },
+    "Kewl Tune Reco": {
+        "_current": "If this card on the field would be used as Synchro Material, 1 Tuner in your hand can be used as 1 of the other materials. You can only use each of the following effects of \"Kewl Tune Reco\" once per turn.\n① If this card is Normal or Special Summoned: You can SEARCH 1 \"Kewl Tune\" monster (from DECK or GY) except a Level 3 monster.\n② If this card is sent to the GY as Synchro Material: <b>You can target 1 Spell/Trap your opponent controls;</b> DESTROY it.",
+        "previous": null
+    },
+    "Kewl Tune Rotary": {
+        "_current": "If this card on the field would be used as Synchro Material, 1 Tuner in your hand can be used as 1 of the other materials. You can only use each of the following effects of \"Kewl Tune Rotary\" once per turn.\n① <b>You can reveal this card and 1 Tuner in your hand;</b> immediately after this effect resolves, Normal Summon 1 Tuner.\n② If this card is sent to the GY as Synchro Material: <b>You can activate 1 of these effects;</b> \n● Place 1 card from your opponent's GY on the bottom of their Deck.\n● Look at your opponent's hand, then you can SEARCH 1 \"Kewl Tune\" Spell/Trap.",
+        "previous": null
+    },
+    "Kewl Tune Synchro": {
+        "_current": "SEARCH 1 \"Kewl Tune\" card except \"Kewl Tune Synchro\", then immediately after this effect resolves, you can Synchro Summon 1 Tuner Synchro Monster. You cannot Special Summon for the rest of this turn after this card resolves, except Tuners.\nYou can activate up to 2 \"Kewl Tune Synchro\" per turn.",
+        "previous": null
+    },
+    "Kewl Tune Track Maker": {
+        "_current": "1 \"Kewl Tune\" Tuner + 1+ Tuners\nIf this card on the field would be used as Synchro Material, 1 Tuner in your hand can be used as 1 of the other materials. You can only use each of the following effects of \"Kewl Tune Track Maker\" once per turn.\n① If this card is Special Summoned: You can SEARCH 1 \"Kewl Tune\" card.\n② If this card is sent to the GY as Synchro Material: You can BOUNCE 1 card your opponent controls.",
+        "previous": null
+    },
+    "Link Turret": {
+        "_current": "① When this card is activated: Place 4 counters on this card.\n② Each time you take battle damage, place 1 counter on this card.\n③ During your Main Phase 2: <b>You can remove 1 counter from this card, then target 1 \"Rokket\" monster in your GY;</b> Special Summon it, but its effects are negated, also it is banished when it leaves the field. You cannot Special Summon from your Extra Deck, except DARK Link Monsters, the turn you activate this effect (even if this card leaves the field).",
+        "previous": "① When this card is activated: Place 4 counters on this card.\n② Each time you take battle damage, place 1 counter on this card.\n③ During your Main Phase 2: <b>You can remove 1 counter from this card, then target 1 \"Rokket\" monster in your GY;</b> Special Summon it, but its effects are negated, also it is banished when it leaves the field. You cannot Special Summon monsters from your Extra Deck, except DARK Link Monsters, the turn you activate this effect (even if this card leaves the field)."
+    },
+    "Mariamne Paradox, the True Dracophoenix Knight": {
+        "_current": "To Tribute Summon this card face-up, you can Tribute Continuous Spells/Traps you control, as well as monsters. You can only use each of the following effects of \"Mariamne Paradox, the True Dracophoenix Knight\" once per turn.\n① If this card is in your hand: You can DESTROY 1 other \"True Draco\" or \"True King\" card in your hand or face-up field, and if you do, Special Summon this card to either field.\n② If this card is Normal or Special Summoned from the hand: BANISH the top 4 cards from your Deck.",
+        "previous": null
+    },
+    "Nopenguin": {
+        "_current": "① HOPT | QUICK | When a \"Penguin\" monster's effect is activated: Special Summon this card from your GY.\n② If a card would be returned from the field to the hand by the effect of a \"Penguin\" card, BANISH it instead.",
+        "previous": "① HOPT | During either player's turn, when an effect of a \"Penguin\" monster is activated: Special Summon this card from your GY.\n② If a card would be returned from the field to the hand by the effect of a \"Penguin\" card, BANISH it instead."
+    },
+    "Number 101: Silent Honor ARK": {
+        "_current": "2 Level 4 monsters\n① HOPT | <b>You can detach 2 materials from this card, then target 1 Special Summoned monster your opponent controls in face-up Attack Position;</b> attach it to this card.\n② If this face-up card on the field would be destroyed, you can detach 1 material from this card instead.",
+        "previous": "2 Level 4 monsters\n① HOPT | <b>You can detach 2 materials from this card, then target 1 Special Summoned monster your opponent controls in face-up Attack Position;</b> attach it to this card as material.\n② If this face-up card on the field would be destroyed, you can detach 1 material from this card instead."
+    },
+    "Outburst Dragon": {
+        "_current": "① HOPT | If you control a monster: You can Special Summon this card from your hand, then DESTROY all other monsters you control, also you cannot Special Summon, except DARK monsters, while this card is face-up in the Monster Zone.\n② HOPT | QUICK | Once per Chain, during your opponent's Main Phase, you can: Immediately after this effect resolves, Link Summon 1 Dragon Link Monster using materials you control, including this card.",
+        "previous": "① HOPT | If you control a monster: You can Special Summon this card from your hand, then DESTROY all other monsters you control, also you cannot Special Summon monsters, except DARK monsters, while this card is face-up in the Monster Zone.\n② HOPT | QUICK | Once per Chain, during your opponent's Main Phase, you can: Immediately after this effect resolves, Link Summon 1 Dragon Link Monster using materials you control, including this card."
+    },
+    "Over Tuning": {
+        "_current": "HOPT ACTIVATION\nIf you control a Tuner: Special Summon 1 Tuner from your hand, Deck, or GY, also you cannot Special Summon from the Extra Deck for the rest of this turn after this card resolves, except Synchro Monsters.",
+        "previous": null
+    },
+    "Penguin Brave": {
+        "_current": "1 Tuner + 1+ non-Tuners\n① Your opponent cannot target face-down Defense Position monsters you control with card effects.\n② HOPT | If this card is Synchro Summoned: You can Special Summon 1 \"Penguin\" monster from your Deck in face-down Defense Position.\n③ HOPT | QUICK | When your opponent activates a monster effect: You can flip 1 face-down Defense Position WATER monster you control face-up.",
+        "previous": "1 Tuner + 1+ non-Tuner monsters\n① Your opponent cannot target face-down Defense Position monsters you control with card effects.\n② HOPT | If this card is Synchro Summoned: You can Special Summon 1 \"Penguin\" monster from your Deck in face-down Defense Position.\n③ HOPT | QUICK | When your opponent activates a monster effect: You can flip 1 face-down Defense Position WATER monster you control face-up."
+    },
+    "Penguin Torpedo": {
+        "_current": "① Can attack directly.\n② HOPT | When this card inflicts battle damage to your opponent: <b>You can target 1 Level 6 or lower monster your opponent controls;</b> take control of it until the End Phase, but its effects are negated, also it cannot declare an attack, while you control it.\n③ At the end of the Damage Step, if this card attacked: DESTROY this card.",
+        "previous": "① This card can attack directly.\n② HOPT | When this card inflicts battle damage to your opponent: <b>You can target 1 Level 6 or lower monster your opponent controls;</b> take control of it until the End Phase, but its effects are negated, also it cannot declare an attack, while you control it.\n③ At the end of the Damage Step, if this card attacked: DESTROY this card."
+    },
+    "Pumpking the King of Ghosts": {
+        "_current": "① Gains 100 ATK/DEF while \"Castle of Dark Illusions\" is on the field.\n② Also, during your Standby Phase, if \"Castle of Dark Illusions\" is on the field: This card gains 100 ATK/DEF. This effect activates once per turn, for four of your Standby Phases (counting this as the first). \"Castle of Dark Illusions\" must be on the field to activate and to resolve this effect. If \"Castle of Dark Illusions\" is not on the field, this ATK/DEF gain disappears and this effect resets.",
+        "previous": "① If \"Castle of Dark Illusions\" is face-up on the field, increase the ATK and DEF of this card by 100 points.\n② As long as this \"Castle of Dark Illusions\" remains face-up on the field, the ATK and DEF of this card continues to increase by 100 points during each of your Standby Phases. This effect continues until your 4th turn after the card is activated."
+    },
+    "R.B. Funk Dock": {
+        "_current": "HOPT ACTIVATION\n① When this card is activated: Add 1 \"R.B.\" card from your Deck to your hand, except \"R.B. Funk Dock\".\n② Each time a monster(s) your opponent controls is destroyed, gain 500 LP.\n③ HOPT | If a face-up \"R.B.\" monster(s) you control leaves the field by card effect (except during the Damage Step): You can Special Summon 1 \"R.B.\" monster from your Deck.",
+        "previous": null
+    },
+    "R.B. Ga10 Cutter": {
+        "_current": "① HOPT | If you control no face-up monsters, or the only face-up monsters you control are \"R.B.\" monsters, you can Special Summon this card (from your hand).\n② HOPT | QUICK | When your opponent's Spell/Trap Card or effect is activated, and this card is linked to an \"R.B.\" Link Monster: <b>You can pay 700 LP;</b> DESTROY this card, and if you do, NEGATE that effect, and if you do that, DESTROY that card.",
+        "previous": null
+    },
+    "R.B. Ga10 Driller": {
+        "_current": "① HOPT | If you control no face-up monsters, or the only face-up monsters you control are \"R.B.\" monsters, you can Special Summon this card (from your hand).\n② MAIN PHASE | HOPT | QUICK | If this card is linked to an \"R.B.\" Link Monster: <b>You can pay 500 LP, then target 1 monster your opponent controls;</b> DESTROY both that monster and this card.",
+        "previous": null
+    },
+    "R.B. Ga10 Pile Bunker": {
+        "_current": "① HOPT | If you control no face-up monsters, or the only face-up monsters you control are \"R.B.\" monsters, you can Special Summon this card (from your hand).\n② HOPT | When an attack is declared involving an opponent's monster and \"R.B. The Brute Blues\" that points to this card: <b>You can pay 1500 LP;</b> DESTROY all cards your opponent controls and this card.",
+        "previous": null
+    },
+    "R.B. Lambda Blade": {
+        "_current": "① HOPT | If this card is Normal or Special Summoned: You can send 1 \"R.B.\" card from your Deck to the GY, except \"R.B. Lambda Blade\".\n② OPP'S MAIN PHASE | HOPT | QUICK | If this card is linked to an \"R.B.\" Link Monster: <b>You can pay 1400 LP, then target 1 monster your opponent controls;</b> DESTROY this card, and if you do, take control of that monster, but DESTROY it during the End Phase.",
+        "previous": null
+    },
+    "R.B. Lambda Cannon": {
+        "_current": "① HOPT | If this card is Normal or Special Summoned: <b>You can target 1 \"R.B.\" monster in your GY, except \"R.B. Lambda Cannon\";</b> add it to your hand.\n② HOPT | While this card is linked to an \"R.B.\" Link Monster: <b>You can pay 1200 LP;</b> DESTROY this card, and if you do, look at your opponent's hand, then you can Special Summon 1 monster from it to their field, but NEGATE its effects.",
+        "previous": null
+    },
+    "R.B. Last Stand": {
+        "_current": "HOPT | You can use ONE of —\n① Special Summon 1 \"R.B.\" monster from your Deck, Extra Deck, or GY, with a different name than the cards you control. For the rest of this turn after this card resolves, you cannot Special Summon from the Extra Deck, except Machine monsters with 1500 or less ATK.\n② When your opponent activates a card or effect that targets an \"R.B.\" monster(s) you control: <b>You can BANISH this card from your GY;</b> NEGATE that effect.",
+        "previous": null
+    },
+    "R.B. Next Phase": {
+        "_current": "HOPT ACTIVATION\nWhen your opponent activates a monster effect, while you control an \"R.B.\" monster: DESTROY 1 monster you control, and if you do, NEGATE the activation, and if you do that, DESTROY that card, then gain 2000 LP.",
+        "previous": null
+    },
+    "R.B. Operation Test": {
+        "_current": "HOPT ACTIVATION\n① When this card is activated: <b>You can target 1 Level 3 or higher \"R.B.\" monster in your GY;</b> Special Summon it.\n② HOPT | <b>You can target any number of \"R.B.\" monsters you control;</b> gain LP equal to their combined original ATK, and if you do, BOUNCE them, then you can Special Summon 1 \"R.B.\" monster from your hand.",
+        "previous": null
+    },
+    "R.B. Shepherd's Crook": {
+        "_current": "2+ monsters, including an \"R. B. \" monster\n① Gains 500 ATK for each monster you control, except this card.\n② YOUR MAIN PHASE | HOPT | You can Set 1 \"R.B.\" Trap from your Deck or GY.\n③ OPP'S MAIN PHASE | HOPT | QUICK | <b>You can target 3 Level 3 or higher \"R.B.\" monsters in your GY;</b> place 2 on the bottom of the Deck in any order, and if you do, Special Summon the other in Defense Position.",
+        "previous": null
+    },
+    "R.B. Stage Landing": {
+        "_current": "① Special Summon 1 \"R.B.\" monster from your Deck/Extra Deck with a different name than the cards you control.\n② If an \"R.B.\" monster(s) you control would be destroyed, you can BANISH this card from your GY instead.\nYou cannot Special Summon from the Extra Deck the turn you activate this card, except Machine monsters with 1500 or less original ATK.",
+        "previous": null
+    },
+    "R.B. VALCan Booster": {
+        "_current": "2 Machine monsters\n① HOPT | If this card is Link Summoned: You can add 1 \"R.B.\" Spell from your Deck to your hand.\n② HOPT | If this card is in the Extra Monster Zone: You can Special Summon 1 \"R.B.\" monster from your hand or GY in Defense Position, then you can move this card you control to another of your Main Monster Zones, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Machine monsters with 1500 or less ATK.",
+        "previous": null
+    },
+    "R.B. VALCan Rocket": {
+        "_current": "① HOPT | If you control no face-up monsters, or the only face-up monsters you control are \"R.B.\" monsters, you can Special Summon this card (from your hand).\n② HOPT | If this card is linked to an \"R.B.\" Link Monster: <b>You can pay 1000 LP, then target up to 2 cards your opponent controls;</b> DESTROY them, also this card, and if you do, inflict 500 damage to your opponent for each card destroyed.",
+        "previous": null
+    },
+    "Rage Rose Witch": {
+        "_current": "1 Tuner + 1+ non-Tuner monsters\n① Plant monsters you control cannot be destroyed by card effects.\n② HOPT | If this card is Synchro Summoned: You can send up to 1 Plant monster each from your Deck and Extra Deck to the GY, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Synchro Monsters.\n③ HOPT | If a card(s) on the field is destroyed by card effect while this card is in your GY (except during the Damage Step): You can Special Summon this card.",
+        "previous": null
+    },
+    "Rapid Trigger": {
+        "_current": "HOPT ACTIVATION\nFusion Summon 1 Fusion Monster from your Extra Deck, by DESTROYING Fusion Materials mentioned on it from your field, but it can only attack monsters Special Summoned from the Extra Deck, also it is unaffected by activated effects from any other monster Special Summoned from the Extra Deck.",
+        "previous": "HOPT ACTIVATION\nFusion Summon 1 Fusion Monster from your Extra Deck, by DESTROYING Fusion Materials listed on it from your field, but it can only attack monsters Special Summoned from the Extra Deck, also it is unaffected by activated effects from any other monster Special Summoned from the Extra Deck."
+    },
+    "Smashing Ground": {
+        "_current": "DESTROY the 1 face-up monster your opponent controls with the highest DEF (your choice, if tied).",
+        "previous": "DESTROY the 1 face-up monster your opponent controls that has the highest DEF (your choice, if tied)."
+    },
+    "Solemn Scolding": {
+        "_current": "If this is the only Set card in your Spell & Trap Zone, when a monster(s) would be Summoned, OR a Spell/Trap Card, or monster effect is activated: <b>Pay 3000 LP;</b> NEGATE the Summon or activation, and if you do, DESTROY that card.",
+        "previous": "If this is the only Set card in your Spell & Trap Zone, when a monster would be Summoned, OR a Spell Card, Trap Card, or monster effect is activated: <b>Pay 3000 LP;</b> NEGATE the Summon or activation, and if you do, DESTROY that card."
+    },
+    "Spring": {
+        "_current": "① OPT | You can choose any number of your unused Main Monster Zones, and if you do, place that number of Season Counters on this card, also those zones cannot be used while this card is on the field.\n② Monsters you control gain 400 ATK for each Season Counter on this card.\n③ OPP'S END PHASE | OPT | You can take 1 Field Spell from your Deck that you can place a Season Counter on, and place it face-up on your field (but neither player can activate its effects this turn), and if you do, place all Season Counters on this card on that card.",
+        "previous": null
+    },
+    "Steel-Stringed Sacrifice": {
+        "_current": "If this card is in your hand or GY: <b>You can reveal 1 Level 5 or higher monster in your hand, then activate 1 of these effects (but you can only use each effect of \"Steel-Stringed Sacrifice\" once per turn);</b> during the End Phase of this turn, lose 1000 LP if you did not Normal Summon the revealed monster, or a monster with the same original name, after activating this effect.\n● Special Summon this card from your hand.\n● Add this card from your GY to your hand.\n● BANISH this card from your GY, and if you do, add 1 Level 5 or higher monster from your GY to your hand.",
+        "previous": null
+    },
+    "T.G. Halberd Cannon/Assault Mode": {
+        "_current": "Cannot be Normal Summoned/Set. Must be Special Summoned with \"Assault Mode Activate\". You can only use each of the following effects of \"T. G. Halberd Cannon/Assault Mode\" once per turn.\n① QUICK | When your opponent would Summon a monster: You can NEGATE the Summon, and if you do, BANISH that monster and all Special Summoned monsters your opponent controls.\n② When this card on the field is destroyed: <b>You can target 1 \"T.G. Halberd Cannon\" in your GY;</b> Special Summon it, ignoring its Summoning conditions.",
+        "previous": "Cannot be Normal Summoned/Set. Must be Special Summoned with \"Assault Mode Activate\". You can only use each of the following effects of \"T. G. Halberd Cannon/Assault Mode\" once per turn.\nQUICK | ● When your opponent would Summon a monster: You can NEGATE the Summon, and if you do, BANISH that monster and all Special Summoned monsters your opponent controls.\n● When this card on the field is destroyed: <b>You can target 1 \"T.G. Halberd Cannon\" in your GY;</b> Special Summon it, ignoring its Summoning conditions."
+    },
+    "Twilight Rose Black Knight": {
+        "_current": "① While you control a Synchro Monster, Plant monsters you control gain 1000 ATK.\n② HOPT | If this card is Normal or Special Summoned: You can Special Summon 1 \"Black Rose Dragon\" or 1 Level 4 or lower Plant monster from your GY, but NEGATE its effects.\n③ HOPT | <b>You can target 1 other Plant monster you control;</b> increase or decrease its Level by 1.",
+        "previous": null
+    },
+    "Veiss Shark": {
+        "_current": "① HOPT | If this card is Normal or Special Summoned: <b>You can Tribute 1 Fish monster;</b> Special Summon 1 Fish \"Shark\" monster from your Deck, also you cannot Special Summon for the rest of this turn, except WATER monsters.\n② OPT | QUICK | A \"Shark Drake\" Xyz Monster that has this card as material gains this effect.\n● when a Spell/Trap Card or effect is activated: <b>You can detach 2 materials from this card;</b> NEGATE that effect, and if you do, DESTROY that card.",
+        "previous": null
+    },
+    "Vengeful Witch": {
+        "_current": "① HOPT | If you control \"Black Rose Dragon\", a monster that mentions it, or a Plant Synchro Monster: You can Special Summon this card from your hand.\n② HOPT | If this card is sent to the GY and a Synchro Monster is on the field: <b>You can DISCARD 1 card;</b> Special Summon 1 Plant monster with 1500 or less DEF from your Deck, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Synchro Monsters.",
+        "previous": null
+    },
+    "Whirlwind Weasel": {
+        "_current": "FLIP: Your opponent cannot activate any Spell/Trap Cards for the rest of this turn.",
+        "previous": "FLIP: Your opponent cannot activate any Spell or Trap Cards for the rest of this turn."
+    },
+    "Yubel": {
+        "_current": "① Cannot be destroyed by battle.\n② You take no battle damage from battles involving this card.\n③ Before damage calculation, if this face-up Attack Position card is targeted for an attack: Inflict damage to your opponent equal to that attacking monster's ATK.\n④ YOUR END PHASE | OPT | Tribute 1 other monster or DESTROY this card.\nWhen this card is destroyed, except by its own effect: Its owner can Special Summon 1 \"Yubel - Terror Incarnate\" from their hand, Deck, or GY.",
+        "previous": "① Cannot be destroyed by battle. You take no battle damage from battles involving this card.\n② Before damage calculation, if this face-up Attack Position card is targeted for an attack: Inflict damage to your opponent equal to that attacking monster's ATK.\n③ YOUR END PHASE | OPT | Tribute 1 other monster or DESTROY this card.\n④ When this card is destroyed, except by its own effect: Its owner can Special Summon 1 \"Yubel - Terror Incarnate\" from their hand, Deck, or GY."
+    },
+    "Zalen the Shackled Dragon": {
+        "_current": "1 Tuner + 1+ Synchro Monsters\n① If this card you control would be used as Synchro Material, you can treat it as a non-Tuner.\n② HOPT | QUICK | When a card or effect is activated in response to another card or effect activation: <b>You can activate 1 of these effects;</b> \n● NEGATE the first effect, and if you do, DESTROY that card.\n● NEGATE the second effect, and if you do, DESTROY that card.",
         "previous": null
     }
 }

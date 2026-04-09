@@ -1103,8 +1103,6 @@ mkCards nameFilter names (map encodeUtf8 → descs) partSrc pidxSrc =
       leadingText ∷ Text
       leadingText = decodeUtf8 $ BL.take (fromIntegral firstEffectStartPosition) desc
 
-      -- takeAmountPlusEmpty
-
       allEffects ∷ [Effect]
       allEffects =
         map
