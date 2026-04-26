@@ -24,6 +24,11 @@ source-repository head
 
 library
   exposed-modules:
+      Card
+      Card.Decode
+      Card.Encode
+      Card.ProcessedEffect
+      Config
       Main
       Prelude
       Util
@@ -75,6 +80,11 @@ library
 executable masterduel-readability-exe
   main-is: Main.hs
   other-modules:
+      Card
+      Card.Decode
+      Card.Encode
+      Card.ProcessedEffect
+      Config
       Prelude
       Util
       Paths_masterduel_readability
