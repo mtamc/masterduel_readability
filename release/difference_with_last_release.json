@@ -1,1 +1,98 @@
-{}
+{
+    "Albion the Sanctifire Dragon": {
+        "_current": "\"Fallen of Albaz\" + 1 LIGHT Spellcaster monster\nCannot be used as Fusion Material.\n① Your opponent cannot target this card with card effects.\n② OPP'S TURN | HOPT | QUICK | <b>You can target 2 monsters in any GY(s);</b> Special Summon both monsters, 1 to each field.\n③ HOPT | If this card is in your GY: You can Tribute 4 monsters, the 2 in the Extra Monster Zones and the 2 in the center Main Monster Zones, and if you do, Special Summon this card.",
+        "previous": "\"Fallen of Albaz\" + 1 LIGHT Spellcaster monster\nCannot be used as Fusion Material.\n① Your opponent cannot target this card with card effects.\n② OPP'S TURN | HOPT | QUICK | <b>You can target 2 monsters in any GY(s);</b> Special Summon both monsters, 1 to each field.\n③ HOPT | If this card is in your GY: You can Tribute 4 monsters, the 2 in the Extra Monster Zones and the 2 in the central Main Monster Zones, and if you do, Special Summon this card."
+    },
+    "Albion the Shrouded Dragon": {
+        "_current": "① This card's name becomes \"Fallen of Albaz\" while on the field or in the GY.\n② HOPT | If this card is in your hand or GY: <b>You can send 1 \"Fallen of Albaz\" or 1 \"Branded\" Spell/Trap from your hand or Deck to the GY;</b> apply the following effect based on where you sent it from.\n● Hand: Special Summon this card.\n● Deck: Place this card on the bottom of the Deck, then if you placed this card from your hand, DRAW 1 card.",
+        "previous": "① This card's name becomes \"Fallen of Albaz\" while on the field or in the GY.\n② HOPT | If this card is in your hand or GY: <b>You can send 1 \"Fallen of Albaz\" or 1 \"Branded\" Spell/Trap from your hand or Deck to the GY;</b> apply the following effect based on where you sent it from.\n● Hand: Special Summon this card.\n● Deck: Place this card on the bottom of the Deck, then, if you placed this card from your hand, DRAW 1 card."
+    },
+    "Ancient Gear Fusion": {
+        "_current": "Fusion Summon 1 \"Ancient Gear\" Fusion Monster from your Extra Deck, using monsters from your hand or field. If you use \"Ancient Gear Golem\" or \"Ancient Gear Golem - Ultimate Pound\" you control as material, you can also use monsters from your Deck.",
+        "previous": "Fusion Summon 1 \"Ancient Gear\" Fusion Monster from your Extra Deck, using monsters from your hand or field as material. If you use \"Ancient Gear Golem\" or \"Ancient Gear Golem - Ultimate Pound\" you control as Fusion Material, you can also use monsters from your Deck as material."
+    },
+    "Dark Sage": {
+        "_current": "Cannot be Normal Summoned/Set. Must first be Special Summoned by its own effect.\n① If you called the coin toss right for the effect of \"Time Wizard\": <b>You can Tribute 1 \"Dark Magician\" in your Monster Zone;</b> Special Summon this card from your hand or Deck.\n② If Special Summoned this way: SEARCH 1 Spell.",
+        "previous": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand or Deck) by Tributing 1 \"Dark Magician\" immediately after applying the effect of \"Time Wizard\" in which you called the coin toss right.\n① When Special Summoned this way: SEARCH 1 Spell Card."
+    },
+    "Despian Quaeritis": {
+        "_current": "1 \"Despia\" monster + 1 LIGHT or DARK monster\n① MAIN PHASE | HOPT | QUICK | You can change the ATK of all monsters currently on the field to 0 until the end of this turn, except Level 8 or higher Fusion Monsters.\n② HOPT | If this face-up card in its owner's control leaves the field by an opponent's card effect: You can add to your hand, or Special Summon, 1 \"Fallen of Albaz\" or 1 \"Despia\" monster, from your Deck.",
+        "previous": "1 \"Despia\" monster + 1 LIGHT or DARK monster\n① MAIN PHASE | HOPT | QUICK | You can change the ATK of all monsters currently on the field to 0 until the end of this turn, except Level 8 or higher Fusion Monsters.\n② HOPT | If this face-up card in its owner's control leaves the field because of an opponent's card effect: You can add to your hand, or Special Summon, 1 \"Fallen of Albaz\" or 1 \"Despia\" monster, from your Deck."
+    },
+    "DoSolfachord Coolia": {
+        "_current": "① You can Special Summon this card (from your hand) by Tributing 2 Pendulum Monsters.\n② HOPT | <b>You can target 1 face-up card your opponent controls, or up to 2 cards if you have an odd Pendulum Scale in your Pendulum Zone;</b> NEGATE its effects until the end of your opponent's turn.\n③ HOPT | QUICK | When an effect of a monster on the field is activated, with an equal or lower ATK than the highest Pendulum Scale in your Pendulum Zone x 300: You can DESTROY that monster.\n[Pendulum Effect]\nYour opponent cannot activate a Spell/Trap Card, or monster effect, when your \"Solfachord\" Pendulum Monster(s) is Pendulum Summoned.",
+        "previous": "① You can Special Summon this card (from your hand) by Tributing 2 Pendulum Monsters.\n② HOPT | <b>You can target 1 face-up card your opponent controls, or up to 2 cards if you have an odd Pendulum Scale in your Pendulum Zone;</b> NEGATE its effects until the end of your opponent's turn.\n③ HOPT | When an effect of a monster on the field is activated, with an equal or lower ATK than the highest Pendulum Scale in your Pendulum Zone x 300: You can DESTROY that monster.\n[Pendulum Effect]\nYour opponent cannot activate a Spell/Trap Card, or monster effect, when your \"Solfachord\" Pendulum Monster(s) is Pendulum Summoned."
+    },
+    "Eldlixir of Black Awakening": {
+        "_current": "HOPT | You can use ONE of —\n① Special Summon 1 Zombie monster from your hand or Deck in Defense Position, but if you control no \"Eldlich\" monsters, you can only Special Summon \"Eldlich\" monsters with this effect. For the rest of this turn after this card resolves, you cannot Special Summon, except Zombie monsters.\n② <b>You can BANISH this card from your GY;</b> Set 1 \"Golden Land\" Spell/Trap from your Deck.",
+        "previous": "HOPT | You can use ONE of —\n① Special Summon 1 Zombie monster from your hand or Deck in Defense Position, but if you control no \"Eldlich\" monsters, you can only Special Summon \"Eldlich\" monsters with this effect. For the rest of this turn after this card resolves, you cannot Special Summon monsters, except Zombie monsters.\n② <b>You can BANISH this card from your GY;</b> Set 1 \"Golden Land\" Spell/Trap directly from your Deck."
+    },
+    "Elfnote Seraphim Strelitzia": {
+        "_current": "1 Tuner + 1+ non-Tuners\n① This card's original ATK becomes 3000, while in the center Main Monster Zone.\n② MAIN PHASE | HOPT | QUICK | You can Special Summon 1 Level 6 or lower \"Elfnote\" monster from your hand or GY, then you can reduce the Levels of all Level 4 or higher monsters on the field by 3 until the end of this turn, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Synchro Monsters.",
+        "previous": null
+    },
+    "Exosister Karmael": {
+        "_current": "2 Level 4 \"Exosister\" monsters\n① HOPT | If this card is Xyz Summoned: <b>You can activate this effect;</b> during the End Phase of this turn, Set 1 \"Exosister\" Spell/Trap from your Deck, GY, or BANISHment.\n② HOPT | QUICK | When your opponent activates a monster effect, or a Normal Spell/Trap Card: You can detach all materials from this card, and if you do, the activated effect becomes \"Add 1 card from your opponent's GY to their hand\".",
+        "previous": null
+    },
+    "Exosister Mikailis": {
+        "_current": "2 Level 4 monsters\n① Cannot be destroyed by battle with a monster Special Summoned from the GY.\n② HOPT | QUICK | If you control this card that was Xyz Summoned this turn by using an \"Exosister\" monster as material: <b>You can target 1 card in your opponent's field or GY;</b> BANISH it.\n③ HOPT | <b>You can detach 1 material from this card;</b> SEARCH 1 \"Exosister\" Spell/Trap.",
+        "previous": "2 Level 4 monsters\n① Cannot be destroyed by battle with a monster Special Summoned from the GY.\n② HOPT | QUICK | If you control this card that was Xyz Summoned this turn by using an \"Exosister\" monster as material: <b>You can target 1 card your opponent controls or in their GY;</b> BANISH it.\n③ HOPT | <b>You can detach 1 material from this card;</b> SEARCH 1 \"Exosister\" Spell/Trap."
+    },
+    "Junora the Power Patron of Tuning": {
+        "_current": "1 Tuner + 2 non-Tuners\nFor this card's Synchro Summon, you can treat 1 monster in your center Main Monster Zone as a Tuner.\n① If this card is Synchro Summoned: You can NEGATE the effects of all face-up cards your opponent controls.\n② HOPT | QUICK | <b>You can activate this effect;</b> monsters your opponent controls in the same column as the \"Elfnote\" monster(s) you control cannot be used as material for a Fusion, Synchro, Xyz, or Link Summon, until the end of this turn.",
+        "previous": null
+    },
+    "Laevatein, Generaider Boss of Shadows": {
+        "_current": "2+ Level 9 monsters\n① You can only control 1 \"Laevatein, Generaider Boss of Shadows\".\n② Monsters your opponent controls lose 1000 ATK/DEF.\n③ QUICK | <b>You can Tribute this Xyz Summoned card;</b> Special Summon 1 non-Fairy \"Generaider\" Xyz Monster from your Extra Deck, then you can attach cards from any field and/or GYs to that Special Summoned monster, up to the number of materials this card had.",
+        "previous": "2+ Level 9 monsters\n① You can only control 1 \"Laevatein, Generaider Boss of Shadows\".\n② Monsters your opponent controls lose 1000 ATK/DEF.\n③ QUICK | <b>You can Tribute this Xyz Summoned card;</b> Special Summon 1 non-Fairy \"Generaider\" Xyz Monster from your Extra Deck, then you can attach cards from any field and/or GYs to that Special Summoned monster as material, up to the number of materials this card had."
+    },
+    "Loptr, Shadow of the Generaider Bosses": {
+        "_current": "① You can only control 1 \"Loptr, Shadow of the Generaider Bosses\".\n② \"Generaider\" monsters you control gain 1000 ATK/DEF during your opponent's turn only.\n③ MAIN PHASE | HOPT | QUICK | <b>You can Tribute 1 \"Generaider\" monster;</b> Special Summon 1 Level 9 \"Generaider\" monster with a different name from your Deck.",
+        "previous": "① You can only control 1 \"Loptr, Shadow of the Generaider Bosses\".\n② All \"Generaider\" monsters you control gain 1000 ATK/DEF during your opponent's turn only.\n③ MAIN PHASE | HOPT | QUICK | <b>You can Tribute 1 \"Generaider\" monster;</b> Special Summon 1 Level 9 \"Generaider\" monster with a different name from your Deck."
+    },
+    "P.U.N.K. JAM Dragon Drive": {
+        "_current": "1 Psychic Tuner + 1+ non-Tuners\n① HOPT | If this card is Special Summoned by the effect of a \"P.U.N.K.\" card, or Synchro Summoned: <b>You can pay 600 LP;</b> take 1 Level 3 Psychic monster from your Deck and either add it to your hand or send it to the GY.\n② HOPT | If your opponent activates a card or effect in response to your \"P.U.N.K.\" card or effect activation, while this card is in your GY: You can Special Summon this card.",
+        "previous": "1 Psychic Tuner + 1+ non-Tuner monsters\n① HOPT | If this card is Special Summoned by the effect of a \"P.U.N.K.\" card, or Synchro Summoned: <b>You can pay 600 LP;</b> take 1 Level 3 Psychic monster from your Deck and either add it to your hand or send it to the GY.\n② HOPT | If your opponent activates a card or effect in response to your \"P.U.N.K.\" card or effect activation, while this card is in your GY: You can Special Summon this card."
+    },
+    "Purrely Pretty Memory": {
+        "_current": "① Each player gains 1000 LP, then you can apply the following effect.\n● DISCARD 1 card, and if you do, Special Summon 1 Level 1 \"Purrely\" monster from your Deck.\n② OPT | <b>A \"Purrely\" Xyz Monster that has this card as material gains the following effect.\n● You can send 1 other card you control to the GY, then target 1 card your opponent controls;</b> attach it to this card.",
+        "previous": "① Each player gains 1000 LP, then you can apply the following effect.\n● DISCARD 1 card, and if you do, Special Summon 1 Level 1 \"Purrely\" monster from your Deck.\n② OPT | <b>A \"Purrely\" Xyz Monster that has this card as material gains the following effect.\n● You can send 1 other card you control to the GY, then target 1 card your opponent controls;</b> attach it to this card as material."
+    },
+    "Red Wyvern": {
+        "_current": "1 Tuner + 1+ non-Tuner monsters\n① QUICK | If a monster with higher ATK than this Synchro Summoned card is on the field: You can DESTROY the 1 face-up monster on the field that has the highest ATK (your choice, if tied). This effect can only be used once while this card is face-up on the field.",
+        "previous": "1 Tuner + 1 or more non-Tuner monsters\n① During either player's turn, if a monster with higher ATK than this Synchro Summoned card is on the field: You can DESTROY the 1 face-up monster on the field that has the highest ATK (your choice, if tied). This effect can only be used once while this card is face-up on the field."
+    },
+    "Rokket Tracer": {
+        "_current": "HOPT | QUICK | <b>You can target 1 face-up card you control;</b> DESTROY it, and if you do, Special Summon 1 \"Rokket\" monster from your Deck, except \"Rokket Tracer\", also you cannot Special Summon from the Extra Deck for the rest of this turn, except DARK monsters.",
+        "previous": "HOPT | QUICK | <b>You can target 1 face-up card you control;</b> DESTROY it, and if you do, Special Summon 1 \"Rokket\" monster from your Deck, except \"Rokket Tracer\", also you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except DARK monsters."
+    },
+    "Saryuja Skull Dread": {
+        "_current": "2+ monsters with different names\n① OPT | This card gains effects based on the number of materials used for its Link Summon.\n● 2+: If a monster(s) is Normal or Special Summoned to a zone this card points to: That monster(s) gains 300 ATK/DEF.\n● 3+: during your Main Phase: You can Special Summon 1 monster from your hand.\n● 4: When this card is Link Summoned: You can DRAW 4 cards, then place 3 cards from your hand on the bottom of the Deck in any order.",
+        "previous": "2+ monsters with different names\n① OPT | This card gains effects based on the number of materials used for its Link Summon.\n● 2+: If a monster(s) is Normal or Special Summoned to a zone this card points to: That monster(s) gains 300 ATK/DEF.\n● 3+: during your Main Phase: You can Special Summon 1 monster from your hand.\n● 4: When this card is Link Summoned: You can DRAW 4 cards, then place 3 cards from your hand on the bottom of your Deck in any order."
+    },
+    "Scarred Dragon Archfiend": {
+        "_current": "1 Tuner + 1+ non-Tuner DARK monsters\n① This card's name becomes \"Red Dragon Archfiend\" while on the field or in the GY.\n② HOPT | If this card is sent from the Monster Zone to the GY: You can Special Summon 1 \"Red Dragon Archfiend\" from your Extra Deck (this is treated as a Synchro Summon), then, if this card was sent to the GY as material for a DARK Dragon Synchro Monster, you can DESTROY all Attack Position monsters your opponent controls.",
+        "previous": "1 Tuner + 1+ non-Tuner DARK monsters\n① This card's name becomes \"Red Dragon Archfiend\" while on the field or in the GY.\n② HOPT | If this card is sent from the Monster Zone to the GY: You can Special Summon 1 \"Red Dragon Archfiend\" from your Extra Deck (this is treated as a Synchro Summon), then, if this card was sent to the GY as Synchro Material for a DARK Dragon Synchro Monster, you can DESTROY all Attack Position monsters your opponent controls."
+    },
+    "Super Quantal Mech Beast Grampulse": {
+        "_current": "2 Level 3 monsters\n① Cannot attack unless it has material.\n② OPT | <b>You can detach 1 material from this card, then target 1 Spell/Trap on the field;</b> DESTROY it. This is a QUICK EFFECT if this card has \"Super Quantum Blue Layer\" as material.\n③ OPT | You can attach 1 \"Super Quantum\" monster from your hand or field to this card.",
+        "previous": "2 Level 3 monsters\n① Cannot attack unless it has material.\n② OPT | <b>You can detach 1 material from this card, then target 1 Spell/Trap on the field;</b> DESTROY it. This is a QUICK EFFECT if this card has \"Super Quantum Blue Layer\" as material.\n③ OPT | You can attach 1 \"Super Quantum\" monster from your hand or field to this card as material."
+    },
+    "Swords of Concealing Light": {
+        "_current": "DESTROY this card during your 2nd Standby Phase after activation.\n① When this card is activated: If your opponent controls a face-up monster, flip all monsters they control to face-down Defense Position.\n② Monsters your opponent controls cannot change their battle positions.",
+        "previous": "DESTROY this card during your 2nd Standby Phase after activation.\n① When this card resolves, change all monsters your opponent controls to face-down Defense Position.\n② Monsters your opponent controls cannot change their battle positions."
+    },
+    "Trap Dustshoot": {
+        "_current": "If your opponent has 4 or more cards in their hand: Look at your opponent's hand and choose 1 monster from it to shuffle into the Deck.",
+        "previous": "Activate only if your opponent has 4 or more cards in their hand.\nLook at your opponent's hand, select 1 Monster Card in it, and return that card to its owner's Deck."
+    },
+    "Traptrix Sera": {
+        "_current": "1 non-Link \"Traptrix\" monster\n① This Link Summoned card is unaffected by Trap effects.\nYou can only use each of the following effects of \"Traptrix Sera\" once per turn, and not during the Damage Step.\n② If a Normal Trap Card is activated: You can Special Summon 1 \"Traptrix\" monster from your Deck with a different name than the cards you control.\n③ If your other \"Traptrix\" monster's effect is activated: You can Set 1 \"Hole\" Normal Trap from your Deck.",
+        "previous": "1 non-Link \"Traptrix\" monster\n① This Link Summoned card is unaffected by Trap effects.\nYou can only use each of the following effects of \"Traptrix Sera\" once per turn, and not during the Damage Step.\n● If a Normal Trap Card is activated: You can Special Summon 1 \"Traptrix\" monster from your Deck with a different name than the cards you control.\n● If your other \"Traptrix\" monster's effect is activated: You can Set 1 \"Hole\" Normal Trap directly from the Deck."
+    },
+    "Yubel": {
+        "_current": "① Cannot be destroyed by battle. You take no battle damage from battles involving this card.\n② Before damage calculation, if this face-up Attack Position card is targeted for an attack: Inflict damage to your opponent equal to that attacking monster's ATK.\n③ YOUR END PHASE | OPT | Tribute 1 other monster or DESTROY this card.\n④ When this card is destroyed, except by its own effect: Its owner can Special Summon 1 \"Yubel - Terror Incarnate\" from their hand, Deck, or GY.",
+        "previous": "① Cannot be destroyed by battle.\n② You take no battle damage from battles involving this card.\n③ Before damage calculation, if this face-up Attack Position card is targeted for an attack: Inflict damage to your opponent equal to that attacking monster's ATK.\n④ YOUR END PHASE | OPT | Tribute 1 other monster or DESTROY this card.\nWhen this card is destroyed, except by its own effect: Its owner can Special Summon 1 \"Yubel - Terror Incarnate\" from their hand, Deck, or GY."
+    }
+}
