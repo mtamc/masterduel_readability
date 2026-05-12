@@ -34,6 +34,7 @@ echo "Scanning all game files to copy CARD-related ones. ENSURE THE MOD IS NOT I
 while IFS= read -r subfile; do
     # Run "./AssetStudioModCLI" on each subfile and check for success
     if ./AssetStudioModCLI "$subfile" -t textAsset --filter-by-name CARD_Desc --filter-by-name CARD_Indx --filter-by-name CARD_Name --filter-by-name Card_Part --filter-by-name Card_Pidx | grep -q "Exported"; then
+    # if ./AssetStudioModCLI "$subfile" -t textAsset --filter-by-name CARD_Desc --filter-by-name CARD_Indx --filter-by-name CARD_Name --filter-by-name Card_Part --filter-by-name Card_Pidx --filter-by-name CARD_Prop --filter-by-name WORD_Text --filter-by-name WORD_Indx --filter-by-name CardPictureFontSetting --filter-by-name YGO_Card_NA | grep -q "Exported"; then
         # Extract subpath relative to base directory
         subpath_to_file="${subfile#$base_dir}"
         # Create the destination subdirectory if it doesn't exist

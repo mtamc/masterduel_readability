@@ -1,0 +1,26 @@
+The programs is in Python, so you need to install Python and the relevant libraries (UnityPy, Pillow).
+Here is a tutorial on how to install Python: https://www.youtube.com/watch?v=C3bOxcILGu4&t=23s
+Make sure you add Python to the PATH variable like the video shows.
+Once you're done, open command prompt, which you can find by searching for cmd in the search bar, then enter the following, which will install the library that deals with Unity mods:
+python -m pip install UnityPy
+
+Then do the same with this command (which will install the library that will help figure out the correct font size for card text):
+python -m pip install Pillow
+
+
+[Section A]: Running the programs
+
+There are 4 (and a half) steps to implementing the changes:
+	1) Copying the game files
+	2) Decrypting and preparing the text assets
+	3) Creating files with the specified changes
+		3.5) Fixing the font size
+	4) Modifying the game files
+Each of these is done in separate folders.
+It's also best that you run these in an editor so that you can see what errors you get if anything goes wrong. (Python comes packaged with its own editor, IDLE, so you can use that)
+
+1) Copying the game files
+The first step is to get the game files from your Master Duel game folder.
+Generally, you want the game files to be unmodified, so if you have a text mod installed, you have to first uninstall it, by either reinstalling the backup files, or just changing Master Duel to a different language then changing it back. But if you know what you are doing and want to keep whatever mod you have while adding to it, then don't uninstall.
+
+To have the program know where your Master Duel game files are, you have to go to the utils folder, open the config file for step 1, and paste the path to your game folder in the first line. Change nothing else.

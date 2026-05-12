@@ -1,0 +1,14 @@
+### Put the path to YOUR 0000 folder in the below line
+/home/sensei/stuff/md/LocalData/a1767537/0000
+
+### Names of assets of interest (do not change these, unless you know for a fact they were changed)
+CARD_Desc 0000 30970e63 700187
+CARD_Indx 0000 414e7425 64595
+CARD_Name 0000 6501dc31 116883
+Card_Part 0000 434a8c0d 52243
+Card_Pidx 0000 58772449 28251
+CARD_Prop 0000 944c67dd 71770
+WORD_Text 0000 e40f04bf 1840
+WORD_Indx 0000 a5e8756a 1633
+CardPictureFontSetting 0000 fcd008c9 63082
+YGO_Card_NA AssetBundle ce4734d3 19391
