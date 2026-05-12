@@ -391,7 +391,26 @@ def search(search_term, bundle_folder_name, expected_filename, expected_size):
     else:
         path1 = path_AssetBundle
         path2 = path_0000
-        
+
+    #Try supplied directory first (if any)
+    if supplied_dir:
+        supplied_candidates = []
+        primary = os.path.join(supplied_dir, bundle_folder_name)
+        secondary = os.path.join(supplied_dir, "AssetBundle" if bundle_folder_name == "0000" else "0000")
+        for cand in (primary, secondary):
+            if os.path.isdir(cand):
+                supplied_candidates.append(cand)
+        for cand in supplied_candidates:
+            r = named_search(cand, search_term, expected_filename)
+            if r: return r
+        if expected_size > 0:
+            for cand in supplied_candidates:
+                r = size_search(cand, search_term, expected_size)
+                if r: return r
+        for cand in supplied_candidates:
+            r = brute_force_search(cand, search_term)
+            if r: return r
+
     search1 = named_search(path1, search_term, expected_filename)
     if search1: return search1
     else:
@@ -400,7 +419,7 @@ def search(search_term, bundle_folder_name, expected_filename, expected_size):
 
     if expected_size > 0:
         print("Could not find", search_term, "with filename search method; searching by size...")
-        
+
         search2 = size_search(path1, search_term, expected_size)
         if search2: return search2
         else:
@@ -414,7 +433,7 @@ def search(search_term, bundle_folder_name, expected_filename, expected_size):
     else:
         search3 = brute_force_search(path2, search_term)
         if search3: return search3
-    
+
     print("Could not find", search_term)
 
 def multi_search(search_quadruples_list):
@@ -470,6 +489,9 @@ def update_config(search_quadruples_list, search_results):
     line_indices = line_indices[1:]
     for j,found_path in enumerate(search_results):
         if not found_path: continue
+        #Skip entries that came from supplied_dir — they aren't representative of installed-game cache
+        if supplied_dir and os.path.abspath(found_path).startswith(supplied_dir):
+            continue
         search_term = search_quadruples_list[j][0]
         bundle_folder_name = get_bundle_folder_name(found_path)
         expected_filename = os.path.basename(found_path)
@@ -1261,7 +1283,18 @@ if __name__ == '__main__':
     
     #Global variables
     nul = b'\x00'
-    pend_stripped_marker = ""    
+    pend_stripped_marker = ""
+
+    #Optional supplied directory (first CLI arg). Searched before installed game files.
+    supplied_dir = None
+    if len(sys.argv) > 1 and sys.argv[1].strip():
+        candidate = os.path.abspath(sys.argv[1])
+        if os.path.isdir(candidate):
+            supplied_dir = candidate
+            print("Using supplied directory (searched before installed game files):", supplied_dir)
+        else:
+            print("Warning: supplied path is not a directory; ignoring:", candidate)
+
     #Shorten multiprocessing terms
     mp_context = mp.get_context('spawn')
     manager = mp_context.Manager()
@@ -1615,4 +1648,5 @@ if __name__ == '__main__':
     print("Script finished at", datetime.fromtimestamp(end_time).strftime("%Y-%m-%d %H:%M:%S"))
     print("Took", round((end_time-start_time)/60,2), "minutes")
 
-    input("\nPress Enter to close...")
+    if sys.stdin.isatty():
+        input("\nPress Enter to close...")
