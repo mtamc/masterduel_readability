@@ -1,1 +1,34 @@
-{}
+{
+    "Magician of Dark Chaos - Black Chaos": {
+        "_current": "You can Ritual Summon this card with \"Light and Darkness Ritual\". Unaffected by your opponent's activated effects, unless they target this card, also Spells/Traps you control cannot be destroyed, or banished, by your opponent's card effects. You can only use each of the following effects of \"Magician of Dark Chaos - Black Chaos\" once per turn. If this card is Special Summoned: You can add 1 Spell from your GY to your hand. <b>You can target 1 card your opponent controls;</b> BANISH it face-down.",
+        "previous": "You can Ritual Summon this card with \"Light and Darkness Ritual\". Unaffected by your opponent's activated effects, unless they target this card, also Spells/Traps you control cannot be destroyed or banished by your opponent's card effects. You can only use each of the following effects of \"Magician of Dark Chaos - Black Chaos\" once per turn. If this card is Special Summoned: You can add 1 Spell from your GY to your hand. <b>You can target 1 card your opponent controls;</b> BANISH it face-down."
+    },
+    "The Chaotic Phantasmal Sacred Beasts": {
+        "_current": "3 Level 10 monsters that cannot be Normal Summoned/Set\nMust be either Fusion Summoned, or Special Summoned (from your Extra Deck) by sending the above cards you control to the GY. You can only Special Summon \"The Chaotic Phantasmal Sacred Beasts\" once per turn this way, no matter which method you use. The first two times this card on the field would be destroyed by card effect each turn, it is not destroyed. Once per Chain, up to thrice per turn (QUICK EFFECT): <b>You can target 1 face-up monster your opponent controls;</b> NEGATE its effects (until the end of this turn), then you can gain LP equal to half that monster's ATK.",
+        "previous": null
+    },
+    "Yubel": {
+        "_current": "① Cannot be destroyed by battle.\n② You take no battle damage from battles involving this card.\n③ Before damage calculation, if this face-up Attack Position card is targeted for an attack: Inflict damage to your opponent equal to that attacking monster's ATK.\n④ YOUR END PHASE | OPT | Tribute 1 other monster or DESTROY this card.\nWhen this card is destroyed, except by its own effect: Its owner can Special Summon 1 \"Yubel - Terror Incarnate\" from their hand, Deck, or GY.",
+        "previous": "① Cannot be destroyed by battle. You take no battle damage from battles involving this card.\n② Before damage calculation, if this face-up Attack Position card is targeted for an attack: Inflict damage to your opponent equal to that attacking monster's ATK.\n③ YOUR END PHASE | OPT | Tribute 1 other monster or DESTROY this card.\n④ When this card is destroyed, except by its own effect: Its owner can Special Summon 1 \"Yubel - Terror Incarnate\" from their hand, Deck, or GY."
+    },
+    "ブルーアイズ・トゥーン・アルティメットドラゴン": {
+        "_current": "ブルーアイズ・トゥーン・アルティメットドラゴン",
+        "previous": null
+    },
+    "大魔女サンドリヨン": {
+        "_current": "大魔女サンドリヨン",
+        "previous": null
+    },
+    "完全なる世界　トゥーン・ワールド": {
+        "_current": "完全なる世界　トゥーン・ワールド",
+        "previous": null
+    },
+    "破械焔魔天ヤマ": {
+        "_current": "破械焔魔天ヤマ",
+        "previous": null
+    },
+    "魔女の聖夜行": {
+        "_current": "魔女の聖夜行",
+        "previous": null
+    }
+}

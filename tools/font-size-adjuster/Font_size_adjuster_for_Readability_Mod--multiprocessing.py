@@ -1647,6 +1647,3 @@ if __name__ == '__main__':
     end_time = time.time()
     print("Script finished at", datetime.fromtimestamp(end_time).strftime("%Y-%m-%d %H:%M:%S"))
     print("Took", round((end_time-start_time)/60,2), "minutes")
-
-    if sys.stdin.isatty():
-        input("\nPress Enter to close...")
