@@ -602,6 +602,13 @@ tagOncePerTurns =
         . tagTrailingHoptInMonsterAndPend
         . fmap tag
   where
+    -- | Set leadingNewline on the first effect with actual content, skipping
+    -- empty effects (which would otherwise render a stray newline).
+    setLeadingNewlineOnFirstNonEmpty :: [ProcessedEffect] -> [ProcessedEffect]
+    setLeadingNewlineOnFirstNonEmpty [] = []
+    setLeadingNewlineOnFirstNonEmpty (e : es)
+        | e.mainEffect /= "" || e.trailingText /= "" = (e & #leadingNewline .~ True) : es
+        | otherwise = e : setLeadingNewlineOnFirstNonEmpty es
     tag :: ProcessedEffect -> ProcessedEffect
     tag = tagPreviousHopt . tagSsHopt . tagStandardHopt . tagGainHopt . tagOptComma . tagOptColon
     -- e.g. Senet Switch
@@ -814,7 +821,7 @@ tagOncePerTurns =
                         %~ (("HOPT ACTIVATION\n" <>) >>> Text.strip)
                   )
                 & ( #effects
-                        %~ mapHead (#leadingNewline .~ True)
+                        %~ setLeadingNewlineOnFirstNonEmpty
                   )
                 & ( #effects
                         %~ map
