@@ -10,5 +10,5 @@ Card_Pidx 0000 58772449 28251
 CARD_Prop 0000 944c67dd 71823
 WORD_Text 0000 e40f04bf 1840
 WORD_Indx 0000 a5e8756a 1633
-CardPictureFontSetting 0000 fcd008c9 63133
+CardPictureFontSetting 0000 fcd008c9 120347
 YGO_Card_NA AssetBundle ce4734d3 38035
