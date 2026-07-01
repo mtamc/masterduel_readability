@@ -55888,12 +55888,24 @@
             "fontsize": 14.2
         },
         {
+            "cardid": 22533,
+            "fontsize": 15.05
+        },
+        {
             "cardid": 22537,
             "fontsize": 14.85
         },
         {
             "cardid": 22539,
             "fontsize": 15.05
+        },
+        {
+            "cardid": 22540,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 22543,
+            "fontsize": 12.55
         },
         {
             "cardid": 22544,
@@ -55905,6 +55917,10 @@
         },
         {
             "cardid": 22551,
+            "fontsize": 12.55
+        },
+        {
+            "cardid": 22552,
             "fontsize": 12.55
         },
         {
@@ -55937,6 +55953,10 @@
         },
         {
             "cardid": 22715,
+            "fontsize": 12.55
+        },
+        {
+            "cardid": 22728,
             "fontsize": 12.55
         },
         {
@@ -57736,6 +57756,10 @@
         {
             "cardid": 22539,
             "fontsize": 22.6
+        },
+        {
+            "cardid": 22540,
+            "fontsize": 25.15
         },
         {
             "cardid": 30007,
