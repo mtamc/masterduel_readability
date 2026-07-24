@@ -1,198 +1,70 @@
 {
-    "Akasuna the Battle Ashtra": {
-        "_current": "You can Special Summon this card (from your hand) by revealing 1 face-down card you control and returning it to the hand or Extra Deck. You can only Special Summon \"Akasuna the Battle Ashtra\" once per turn this way. You can only use each of the following effects of \"Akasuna the Battle Ashtra\" once per turn. During the Main Phase (QUICK EFFECT): <b>You can send 1 Trap from your hand or face-down field to the GY;</b> change all face-up monsters your opponent controls to face-down Defense Position. During your End Phase: You can Set 1 \"Ashtra\" Trap from your Deck.",
+    "Blue-Eyes Toon Ultimate Dragon": {
+        "_current": "\"Blue-Eyes Toon Dragon\" + 2 Toon monsters\nMust be Special Summoned (from your Extra Deck) by shuffling the above cards from your hand, field, and/or GY into the Deck/Extra Deck. Your Toon monsters can attack directly. Once per turn, during your Main Phase: You can add 1 \"Toon\" card, or 1 card that mentions a \"Toon\" card by name, from your GY to your hand. If your Toon monster is attacked, during damage calculation: You can BANISH it until the end of the Damage Step.",
         "previous": null
     },
-    "Armades, Keeper of Boundaries": {
-        "_current": "1 Tuner + 1+ non-Tuners\n① If this card battles, your opponent cannot activate cards or effects until the end of the Damage Step.",
-        "previous": "1 Tuner + 1 or more non-Tuner monsters\n① If this card attacks or is attacked, your opponent cannot activate cards or effects until the end of the Damage Step."
+    "Bramble Rose Dragon": {
+        "_current": "1 Plant Tuner + 1+ non-Tuners\nEach time your opponent activates a monster effect, inflict 600 damage to your opponent, and if you do, all monsters your opponent currently controls lose 600 ATK. You can only use each of the following effects of \"Bramble Rose Dragon\" once per turn. During the Main Phase (QUICK EFFECT): <b>You can Tribute this card;</b> Special Summon 1 \"Black Rose Dragon\" from your Extra Deck (this is treated as a Synchro Summon). <b>You can BANISH this card from your GY;</b> Special Summon 1 Level 4 or lower Plant Tuner from your GY.",
+        "previous": "1 Plant Tuner + 1+ non-Tuner monsters\nEach time your opponent activates a monster effect, inflict 600 damage to your opponent, and if you do, all monsters your opponent currently controls lose 600 ATK. You can only use each of the following effects of \"Bramble Rose Dragon\" once per turn. During the Main Phase (QUICK EFFECT): <b>You can Tribute this card;</b> Special Summon 1 \"Black Rose Dragon\" from your Extra Deck (this is treated as a Synchro Summon). <b>You can BANISH this card from your GY;</b> Special Summon 1 Level 4 or lower Plant Tuner from your GY."
     },
-    "Azure Ocean Dragon Lord - Neo-Daedalus Rage": {
-        "_current": "4 monsters\nThis card's name becomes \"Umi\" while on the field. If this card is Link Summoned: You can Special Summon up to 3 monsters that mention \"Atlantis, City of the Sea Dragon\" from your GY to your zone this card points to, also you cannot Special Summon for the rest of this turn. Once per turn (QUICK EFFECT): <b>You can send 1 face-up \"Umi\" you control to the GY;</b> send all cards on the field to the GY, except \"Umi\".",
+    "Kagetokage": {
+        "_current": "Cannot be Normal Summoned/Set. Must first be Special Summoned by its own effect. Cannot be used as Synchro Material.\n① When you Normal Summon a Level 4 monster: You can Special Summon this card from your hand.",
+        "previous": "Cannot be Normal Summoned/Set. Must first be Special Summoned by its own effect.\n① Cannot be used as Synchro Material.\nWhen you Normal Summon a Level 4 monster: You can Special Summon this card from your hand."
+    },
+    "Madolche Ticket": {
+        "_current": "HOPT | If another \"Madolche\" card(s) you control or in your GY is added to your hand or shuffled into your Main Deck by a card effect: SEARCH 1 \"Madolche\" monster.\nIf you control a Fairy \"Madolche\" monster, you can Special Summon the monster from your Deck in Attack Position instead of adding it to your hand.",
+        "previous": "HOPT | If another \"Madolche\" card(s) you control or in your GY is added to your hand or shuffled into your Main Deck by a card effect: SEARCH 1 \"Madolche\" monster. If you control a Fairy \"Madolche\" monster, you can Special Summon the monster from your Deck in Attack Position instead of adding it to your hand."
+    },
+    "Magical Musket Mastermind Caspar": {
+        "_current": "2 monsters, including a LIGHT Fiend monster\n① During either player's turn, you can activate \"Magical Musket\" Spell/Trap Cards from your hand.\n② HOPT | If this card is Link Summoned: You can take 2 \"Magical Musket\" cards from your hand and/or Deck, including a monster, Special Summon 1 monster from it to your field, and Set the other to your opponent's field.",
         "previous": null
     },
-    "B.E.S. Crystal Core": {
-        "_current": "① If this card is Normal Summoned: Place 3 counters on this card.\n② Cannot be destroyed by battle.\n③ At the end of the Damage Step, if this card battled: Remove 1 counter from this card, or if you cannot, DESTROY this card.\n④ OPT | <b>You can target 1 Attack Position monster your opponent controls;</b> change that target to face-up Defense Position.",
-        "previous": "① When this card is Normal Summoned, put 3 counters on it.\n② This card cannot be destroyed by battle.\n③ If this card attacks or is attacked, remove 1 counter from this card at the end of the Damage Step.\n④ If you cannot, DESTROY it.\nOnce per turn, during your Main Phase, you can change 1 face-up Attack Position monster your opponent controls to face-up Defense Position."
+    "Magical Scientist": {
+        "_current": "Pay 1000 Life Points to Special Summon 1 level 6 or lower Fusion Monster from your Extra Deck in face-up Attack or Defense Position.\nThat Fusion Monster cannot attack your opponent's Life Points directly, and is returned to your Extra Deck at the end of the turn.",
+        "previous": "Pay 1000 Life Points to Special Summon 1 level 6 or lower Fusion Monster from your Extra Deck in face-up Attack or Defense Position. That Fusion Monster cannot attack your opponent's Life Points directly, and is returned to your Extra Deck at the end of the turn."
     },
-    "Baneshade": {
-        "_current": "Target 1 face-up card your opponent controls; apply this effect based on the number of cards in their GY with that face-up card's name.\n● 1: DESTROY it.\n● 2: BANISH it.\n● 3+: BANISH it, also all cards with that name from your opponent's field and GY (face-down).",
+    "Metamorphosis": {
+        "_current": "Tribute 1 monster.\nSpecial Summon 1 Fusion Monster from your Extra Deck with the same Level as the Tributed monster.",
+        "previous": "Tribute 1 monster. Special Summon 1 Fusion Monster from your Extra Deck with the same Level as the Tributed monster."
+    },
+    "Pumpking the Great Ghost King": {
+        "_current": "2 Level 6 Zombie monsters\n① While you control \"Call of the Haunted\", your opponent cannot target Zombie monsters you control with monster effects.\n② HOPT | If this card is Special Summoned: You can SEARCH 1 \"Call of the Haunted\" or 1 card that mentions it.\n③ HOPT | <b>You can detach 1 material from this card, then target up to 2 cards on the field;</b> BOUNCE them.",
         "previous": null
     },
-    "Bazoo the Soul-Devourer": {
-        "_current": "3 Level 4 monsters\n① Any Xyz Material detached from a monster is banished instead of going to the GY.\n② Once per Chain, if a Monster Card(s) is sent to the GY (except during the Damage Step): You can detach 1 material from this card.\n③ If the last material(s) is detached from this card (except during the Damage Step): <b>You can target 3 cards in the GY(s);</b> attach them to this card.",
+    "Rescue-ACE Arbitrator": {
+        "_current": "2+ FIRE monsters\nYou can only Special Summon \"Rescue-ACE Arbitrator(s)\" once per turn.\n① If this card is Link Summoned: You can SEARCH 1 \"Rescue-ACE Hydrant\" or \"Rescue-ACE HQ\" (from DECK or GY).\n② If you activate a \"Rescue-ACE\" Quick-Play Spell Card or a \"Rescue-ACE\" Normal Trap Card (except during the Damage Step): <b>You can target 1 card your opponent controls;</b> DESTROY it.\nYou can only use this effect of \"Rescue-ACE Arbitrator\" twice per turn.",
         "previous": null
     },
-    "Clear Wing Synchro Dragon, Four Heavenly Dragons": {
-        "_current": "1 Tuner + 1+ non-Tuners\n(This card is always treated as a \"Speedroid\" card.)\n① HOPT | If this card is Special Summoned: You can DESTROY 1 Effect Monster your opponent controls, and if you do, this card gains ATK equal to that monster's original ATK.\n② HOPT | QUICK | When your opponent activates a card or effect: You can Special Summon 1 Level 4 or lower WIND Tuner from your hand or GY (but NEGATE its effects), then immediately after this effect resolves, you can Synchro Summon 1 WIND Synchro Monster.",
+    "Rex, Ride Fur Hire": {
+        "_current": "① HOPT | <b>You can reveal this card in your hand;</b> Special Summon 1 monster \"Fur Hire\" from your hand, except \"Rex, Ride Fur Hire\", then Special Summon this card.\n② If a card(s) is added from the Deck to your opponent's hand, except by a card effect \"Fur Hire\", and you control another monster \"Fur Hire\" (except during the Damage Step): You can DRAW 1 card.",
         "previous": null
     },
-    "Commander Souza, Swordmaster": {
-        "_current": "1 Tuner + 1+ EARTH monsters\n(This card is always treated as an \"X-Saber\" card.)\nGains 200 ATK for each banished monster. When this card DESTROYS a monster by battle: You can DRAW 1 card. Once per turn, when your opponent activates a card or effect (QUICK EFFECT): <b>You can Tribute 1 \"X-Saber\" monster;</b> DESTROY 1 card your opponent controls. If this card would be destroyed, you can BANISH 1 \"Saber\" card from your GY instead.",
+    "Subspace Battle": {
+        "_current": "HOPT ACTIVATION\nApply the following effect, 3 times, in sequence.\n● Each player reveals 1 monster from their Deck that does not have ? ATK. Add the monster with the higher ATK to the hand of the player that revealed it, also DESTROY the monster with the lower ATK and inflict 500 damage to the player that revealed it. If tied, shuffle those monsters into the Decks.\nFor the rest of this turn, neither player can activate the effects of monsters with any of their revealed monsters' names.",
         "previous": null
     },
-    "Constellar Castor": {
-        "_current": "If this card is Summoned: You can Special Summon 1 \"Constellar\" monster from your Deck, except \"Constellar Castor\", also you cannot Special Summon from the Extra Deck for the rest of this turn, except LIGHT or DARK monsters. You can only use this effect of \"Constellar Castor\" once per turn. A \"Constellar\" Xyz Monster that has this card as material gains this effect. \n● Once per turn, when your opponent activates a Spell Card or effect (QUICK EFFECT): You can detach 2 materials from a monster(s) you control, and if you do, NEGATE that effect, and if you do that, DESTROY that card.",
+    "The Perfect Cartoon World": {
+        "_current": "This card's name becomes \"Toon World\" while in the Field Zone. Once per turn, during your Main Phase: You can SEARCH 1 \"Toon\" card, or 1 card that mentions a \"Toon\" card by name. You can only use this effect of \"The Perfect Cartoon World\" thrice per turn. If another card's effect activates, at the start of its resolution, you can BANISH 1 Toon monster you control until immediately after that effect resolves (each unique original monster name can only be banished once per turn, by you, by this effect of \"The Perfect Cartoon World\").",
         "previous": null
     },
-    "Destiny HERO - Dreadnought Master": {
-        "_current": "2 Level 5 or higher \"Destiny HERO\" monsters\nMust be either Fusion Summoned, or Special Summoned (from your Extra Deck) by Tributing 1 \"Destiny HERO - Dreadmaster\". You can only Special Summon \"Destiny HERO - Dreadnought Master\" once per turn this way, no matter which method you use. If this card is Special Summoned: You can SEARCH 2 cards that are \"Destiny HERO\" monsters and/or mention a \"Destiny HERO\" monster by name. This card's ATK becomes the total original ATK of other \"Destiny HERO\" monsters in your field and GY.",
+    "Trifortressops": {
+        "_current": "During either player's turn, if your opponent Summoned 3 or more monsters this turn: You can Special Summon this card from your hand.\nIf Summoned this way, it is unaffected by other cards' effects, but loses 500 DEF during each player's Standby Phase.",
+        "previous": "During either player's turn, if your opponent Summoned 3 or more monsters this turn: You can Special Summon this card from your hand. If Summoned this way, it is unaffected by other cards' effects, but loses 500 DEF during each player's Standby Phase."
+    },
+    "Unchained Firelord of Yama": {
+        "_current": "2+ monsters, including an \"Unchained Soul\" monster\nDuring your End Phase: <b>You can target up to 2 Fiend monsters in your GY that were destroyed this turn;</b> Special Summon them, but for each one, as long as it remains face-up in your Monster Zone, you cannot Special Summon, except Fiend monsters. If this card on the field would be destroyed, you can DESTROY 1 other face-up card on either field instead. You can only use each effect of \"Unchained Firelord of Yama\" once per turn.",
         "previous": null
     },
-    "Diagram Token": {
-        "_current": "Special Summoned with the effect of \"Exceptional Schedule.\"",
+    "Witchcrafter Madame Rilliona": {
+        "_current": "\"Witchcrafter Madame Verre\" + 2 Spellcaster monsters\nIf this card is Fusion Summoned: You can Special Summon up to 3 Level 7 or lower \"Witchcrafter\" monsters with different Attributes from your hand and/or Deck, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Fusion Monsters. During your End Phase, if this card is in your GY: <b>You can reveal 1 Spell in your hand;</b> Special Summon this card in Defense Position. You can only use each effect of \"Witchcrafter Madame Rilliona\" once per turn.",
         "previous": null
     },
-    "Exceptional Schedule": {
-        "_current": "① HOPT | SEARCH 1 \"Special Schedule\" or \"Urgent Schedule\" then you can Special Summon 1 \"Diagram Token\" (Machine/EARTH/Level 10/ATK 3000/DEF 3000) to your opponent's field.\n② HOPT | <b>You can BANISH this card from your GY, then target 1 Level 10 Machine monster in your GY or BANISHment;</b> send 1 card you control to the GY, and if you do, Special Summon that monster.",
+    "Witchcrafter Walpurgis": {
+        "_current": "During your Main Phase: You can SEARCH 1 \"Witchcrafter\" monster then DISCARD 1 card. You can only use this effect of \"Witchcrafter Walpurgis\" once per turn. During your turn, if a \"Witchcrafter\" monster you control would DISCARD to activate an effect, you can send 1 \"Witchcrafter\" Spell/Trap from your Deck to the GY instead, except \"Witchcrafter Walpurgis\".",
         "previous": null
     },
-    "Fairy Tail - Matchgiru": {
-        "_current": "① HOPT | If a Spellcaster monster with 1850 original ATK is on the field: You can Special Summon this card from your hand or GY, also you cannot Special Summon for the rest of this turn, except Spellcaster monsters.\n② HOPT | If this card is Normal or Special Summoned: You can SEARCH 1 \"Fairy Tail\" Spell/Trap or 1 \"Fairy Tale Tails\".\n③ HOPT | <b>You can pay 500 LP;</b> the name of 1 Effect Monster your opponent controls becomes \"Prince of Fairies\".",
-        "previous": null
-    },
-    "Fairy Tail - Wiccat": {
-        "_current": "2 Level 4 Spellcaster monsters\n① Each \"Fairy Tail\" monster you control whose original Attribute is LIGHT, is unaffected by your opponent's activated effects.\n② HOPT | <b>You can detach up to 2 materials from this card;</b> send \"Fairy Tail\" cards from your Deck to the GY, equal to the number detached.\n③ HOPT | QUICK | If this card is in your GY: <b>You can target 1 \"Fairy Tail\" monster you control whose original Attribute is LIGHT;</b> Special Summon this card, and if you do, send that monster to the GY.",
-        "previous": null
-    },
-    "Fairy Tail Ball": {
-        "_current": "HOPT ACTIVATION\n① When this card is activated: You can add 1 \"Fairy Tail\" monster or 1 \"Fairy Tale Tails\" from your Deck or BANISHment to your hand.\n② Your \"Fairy Tail\" monsters can attack directly.\n③ OPT | If your opponent Special Summons a monster(s) and you control a \"Fairy Tail\" monster (except during the Damage Step): <b>You can target 1 Effect Monster your opponent controls;</b> NEGATE its effects, also its name becomes \"Prince of Fairies\".",
-        "previous": null
-    },
-    "Festiballoon": {
-        "_current": "① If this card battles a monster, neither can be destroyed by that battle.\n② Each time a monster declares an attack, this card gains 1000 ATK.\n③ YOUR MAIN PHASE | HOPT | You can make this card lose exactly 5000 ATK, and if you do, DESTROY all other cards on the field.",
-        "previous": null
-    },
-    "Heavy Armored Knight Babeldecker": {
-        "_current": "① You can Normal Summon this card without Tributing.\n② HOPT | If this card is Normal or Special Summoned: You can Special Summon 1 EARTH Machine monster from your hand.\n③ YOUR MAIN PHASE | HOPT | If your opponent activated a card or effect this turn: You can Special Summon 1 Rank 10 EARTH Machine Xyz Monster from your Extra Deck using this card you control as material (this is treated as an Xyz Summon).",
-        "previous": null
-    },
-    "Lycoris Lilyreaper": {
-        "_current": "1 Tuner + 1+ non-Tuner monsters\n① HOPT | If a monster(s) is sent from the field to your opponent's GY, while this card is in your Monster Zone, even during the Damage Step: You can gain LP equal to 1 of those monsters' ATK in their GY.\n② HOPT | If your opponent takes effect damage, while this card is in your GY (except during the Damage Step): <b>You can BANISH this card;</b> send 1 monster from the field to the GY with ATK less than or equal to the difference in your LP and your opponent's.",
-        "previous": null
-    },
-    "Night Sword Serpent": {
-        "_current": "HOPT | If this card is sent to the GY by card effect: You can Special Summon this card, but BANISH it when it leaves the field.",
-        "previous": "HOPT | If this card is sent to the GY by a card effect: You can Special Summon this card, but BANISH it when it leaves the field."
-    },
-    "Night Train Blue Traveler": {
-        "_current": "① <b>You can DISCARD this card;</b> SEARCH 1 \"Train Connection\" or \"Revolving Switchyard\" (from DECK or GY).\n② If this card is in your GY: <b>You can target 1 other EARTH Machine monster in your GY;</b> Special Summon both it and this card, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Machine monsters.\nYou can only use this effect of \"Night Train Blue Traveler\" once per Duel, and its previous effect only once per turn.",
-        "previous": null
-    },
-    "Northern Crossfire": {
-        "_current": "HOPT | You can use ONE of —\n① If the total Levels of monsters you control are 10 or higher: Add to your hand or Special Summon 1 Level 10 monster from your hand or Deck.\n② If the total Levels of monsters your opponent controls are 10 or higher: <b>You can BANISH this card and 1 Level 10 monster from your GY, then target 1 card your opponent controls;</b> BANISH it.",
-        "previous": null
-    },
-    "Once Upon a Fairy Tail": {
-        "_current": "① HOPT | Special Summon up to 1 LIGHT \"Fairy Tail\" monster each from your hand, GY, and BANISHment, with different names, also you cannot Special Summon for the rest of this turn, except Spellcaster monsters.\n② HOPT | If this card is banished, or sent to the GY except from the field: You can Set this card, but it cannot be activated unless you control a \"Fairy Tail\" monster.",
-        "previous": null
-    },
-    "Penetration Fusion": {
-        "_current": "If a monster(s) was destroyed by battle this turn: Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field, and if you do, it gains this effect. \n● (QUICK EFFECT): <b>You can Tribute this card, then target 1 face-up monster you control;</b> it gains 500 ATK. \nYou can only activate 1 \"Penetration Fusion\" per turn.",
-        "previous": null
-    },
-    "Predaplant Bal Teah": {
-        "_current": "1 Tuner + 1+ non-Tuners\n① HOPT | If this card is Synchro Summoned: You can Special Summon 1 \"Predaplant\" or \"Starving Venom\" monster from your face-up Extra Deck or GY.\n② HOPT | If a monster(s) is Special Summoned to your opponent's field (except during the Damage Step): <b>You can BANISH 1 \"Polymerization\" and this card from your GY;</b> Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field.",
-        "previous": null
-    },
-    "Predaplant Daredevil": {
-        "_current": "1 \"Predaplant\" monster + 1 Level 1 monster\nMust first be either Fusion Summoned, or Special Summoned (from your Extra Deck) by Tributing 1 monster on either field with a Predator Counter and 1 \"Predaplant\" monster you control.\n① MAIN PHASE | HOPT | QUICK | If this card was Special Summoned this turn: <b>You can target Spells/Traps on the field, up to the number of monsters with a Predator Counter;</b> DESTROY them.",
-        "previous": null
-    },
-    "Predaplant Lilizard": {
-        "_current": "① HOPT | If you control a \"Predaplant\" or \"Starving Venom\" monster and this card is in your hand: You can Special Summon this card, then you can SEARCH 1 \"Polymerization\".\n② HOPT | <b>You can target 1 face-up monster on the field;</b> it becomes DARK until the end of this turn.\n③ HOPT | If this card is Special Summoned from the GY: You can DRAW 1 card.",
-        "previous": null
-    },
-    "Predaplant Longinephila": {
-        "_current": "① HOPT | If this card is Normal or Special Summoned: You can SEARCH 1 \"Predap\" card except \"Predaplant Longinephila\".\n② HOPT | <b>You can BANISH this card from your GY, then activate 1 of these effects;</b> \n● Place 1 Predator Counter on 1 face-up monster on the field, and if you do, any of those monsters that are Level 2 or higher become Level 1 as long as they have a Predator Counter.\n● Set 1 \"Polymerization\" from your GY or BANISHment.",
-        "previous": null
-    },
-    "Predaprimitive": {
-        "_current": "HOPT ACTIVATION\n① <b>Send 1 \"Predap\" card from your Deck to the GY, except \"Predaprimitive\";</b> SEARCH 1 \"Polymerization\" Spell or \"Fusion\" Spell also you cannot Special Summon for the rest of this turn after this card resolves, except Plant or Dragon monsters.\n② If a monster(s) is Special Summoned to your opponent's field (except during the Damage Step): <b>You can BANISH this card from your GY, then target 1 Fusion Monster you control;</b> DESTROY it.",
-        "previous": null
-    },
-    "Prince of Fairies": {
-        "_current": "Prince of Fairies",
-        "previous": null
-    },
-    "Princess Dracaena, the Thirsting Tree": {
-        "_current": "① <b>You can send 1 Level 4 or lower Plant monster from your Deck to the GY, except \"Princess Dracaena, the Thirsting Tree\";</b> Special Summon this card from your hand, and if you do, it becomes that sent monster's Level.\n② <b>You can BANISH 1 Plant monster and this card from your GY;</b> Special Summon 1 Dragon monster from your hand or GY.\nYou can only use each effect of \"Princess Dracaena, the Thirsting Tree\" once per turn, also you cannot Special Summon the turn you activate either of this card's effects, except Dragon or Plant monsters.",
-        "previous": null
-    },
-    "Red-Eyes Black Dragon Exceed": {
-        "_current": "\"Red-Eyes Black Dragon\" + 1 monster that mentions \"Dark Time Wizard\"\nMust be either Fusion Summoned, or Special Summoned (from your Extra Deck) by Tributing 1 face-up monster on either field during the turn a monster was destroyed by the effect of \"Dark Time Wizard\". You can only Special Summon \"Red-Eyes Black Dragon Exceed\" once per turn this way, no matter which method you use. Unaffected by your opponent's activated Spell or monster effects. If this card is Special Summoned: You can Special Summon 1 Level 8 or lower monster from your hand or GY.",
-        "previous": null
-    },
-    "Saber Combination": {
-        "_current": "While 10 or more \"X-Saber\" monsters are in your field, GY, and/or BANISHment, \"X-Saber\" monsters you control gain ATK equal to their original DEF. You can only use each of the following effects of \"Saber Combination\" once per turn. If you Special Summon an \"X-Saber\" monster(s) from the Extra Deck (except during the Damage Step): You can Special Summon 1 \"X-Saber\" monster from your hand or Deck. When an opponent's monster declares an attack: You can Special Summon 1 \"X-Saber\" monster from your hand.",
-        "previous": null
-    },
-    "Shateki": {
-        "_current": "You can DISCARD 1 card, then target 1 monster your opponent controls with a Level; roll a six-sided die and apply this effect based on the result.\n● Higher than its Level: DESTROY that monster, then you can SEARCH 1 monster with the same original Level also you cannot activate the effect of \"Shateki\" for the rest of this turn.\n● Equal to or lower than its Level: Reduce that monster's Level by 1 (even if this card leaves the field).",
-        "previous": null
-    },
-    "Silk Bomb Moth": {
-        "_current": "① HOPT | If you have 2 or more WIND monsters in your GY and this card is in your hand: You can Special Summon this card, and if you do, shuffle 1 WIND monster from your GY into the Deck.\n② HOPT | If this card is Normal or Special Summoned: You can reveal the top card of your opponent's Deck, and apply the appropriate effect based on its card type.\n● Monster: Place it in your opponent's Spell & Trap Zone as a face-up Continuous Spell.\n● Spell/Trap: BANISH it.",
-        "previous": null
-    },
-    "Sloppy Stasher Squirrel": {
-        "_current": "① MAIN PHASE | HOPT | QUICK | <b>You can target up to 3 Spells/Traps in your GY;</b> BANISH them, and if you do, shuffle them into the Deck during the End Phase of the next turn.\n② YOUR STANDBY PHASE | HOPT | <b>You can target 1 of your banished Spells/Traps;</b> Set it.",
-        "previous": null
-    },
-    "Stellarnova Binding": {
-        "_current": "<b>Activate 1 of these effects, but you cannot Special Summon from the Extra Deck for the rest of this turn, except Xyz Monsters;</b> \n● DISCARD 1 card, and if you do, Special Summon 1 \"tellarknight\" or \"Constellar\" monster from your Deck with a different Type from the monsters you control. <b>\n● Target face-up monsters your opponent controls, up to the number of \"tellarknight\" and \"Constellar\" monsters you control;</b> NEGATE their effects until the end of this turn. \nYou can only activate 1 \"Stellarnova Binding\" per turn.",
-        "previous": null
-    },
-    "Summer": {
-        "_current": "① OPT | You can place Season Counters on this card equal to the number of your opponent's unused Main Monster Zones.\n② OPT | When your monster declares an attack: You can inflict damage to your opponent equal to the total number of Season Counters on this card and \"Spring\" in your GY x 400.\n③ OPP'S END PHASE | OPT | You can take 1 Field Spell from your hand or Deck that you can place a Season Counter on, and place it face-up on your field (but neither player can activate its effects this turn), and if you do, place all Season Counters on this card on that card.",
-        "previous": null
-    },
-    "Super Duper Polymerization": {
-        "_current": "HOPT ACTIVATION\n<b>Pay 2000 LP, then target 1 Effect Monster on the field;</b> Special Summon 1 monster from your Extra Deck, with the same Type and Attribute but a different Level (but NEGATE its effects), then apply 1 of these effects. Neither player can activate cards or effects in response to this card's activation.\n● Fusion Summon 1 Fusion Monster from your Extra Deck, using the Special Summoned monster and the targeted monster.\n● Send the Special Summoned monster to the GY.",
-        "previous": null
-    },
-    "Superdreadnought Rail Cannon Flying Launcher": {
-        "_current": "2 Level 10 monsters\n① YOUR MAIN PHASE | You can Normal Summon 1 Machine monster, in addition to your Normal Summon/Set (you can only gain this effect once per turn).\n② HOPT | If this card is Xyz Summoned: You can SEARCH 1 EARTH Machine monster or 1 \"Barrage Blast\".\n③ HOPT | <b>You can detach any number of materials from this card, then target that many Spells/Traps on the field;</b> DESTROY them.",
-        "previous": null
-    },
-    "Surprise Fusion": {
-        "_current": "<b>Target 1 face-up monster you control, then declare 1 Monster Type and 1 Attribute;</b> that monster becomes that Type and Attribute, then you can Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters you control, including that monster. <b>You can BANISH this card from your GY;</b> Tribute 1 Fusion Monster, and if you do, Special Summon 2 \"Surprise Tokens\" (Spellcaster/DARK/ATK 0/DEF 0) with the same Level as the Tributed monster had on the field. You can only use this effect of \"Surprise Fusion\" once per turn.",
-        "previous": null
-    },
-    "Surprise Token": {
-        "_current": "Special Summoned with the effect of \"Surprise Fusion.\"",
-        "previous": null
-    },
-    "Tails of the Fairy Tails": {
-        "_current": "① The equipped monster gains 1000 ATK.\n② YOUR MAIN PHASE | OPT | You can Fusion Summon 1 Spellcaster Fusion Monster from your Extra Deck, using monsters from your hand, field, and/or \"Prince of Fairies\" your opponent controls as material.\n③ HOPT | If this card is in your GY: You can equip this card to 1 \"Fairy Tail\" monster on the field, then immediately after this effect resolves, you can Normal Summon 1 Spellcaster monster with 1850 ATK.",
-        "previous": null
-    },
-    "Tellarknight Cygnian": {
-        "_current": "(This card is always treated as a \"Constellar\" card.)\nIf this card is Summoned: You can SEARCH 1 \"tellarknight\" or \"Constellar\" monster. <b>You can target 1 other LIGHT monster you control;</b> increase both its Level and this card's by 1. This card can be treated as 2 materials for the Xyz Summon of a \"tellarknight\" Xyz Monster that requires 3 or more materials. You can only use each effect of \"Tellarknight Cygnian\" once per turn.",
-        "previous": null
-    },
-    "The Great Gallant Bandit": {
-        "_current": "You can Tribute Summon this card face-up by Tributing monsters in your hand and/or your opponent's field, while you control no monsters. You can only use each of the following effects of \"The Great Gallant Bandit\" once per turn. When your opponent activates a card effect in the hand, GY, or BANISHment, and you control this Normal Summoned/Set card (QUICK EFFECT): You can NEGATE that effect, and if you do, DESTROY that card. During the Battle Phase (QUICK EFFECT): <b>You can reveal your entire hand;</b> change all monsters your opponent controls to Defense Position.",
-        "previous": null
-    },
-    "Thorns of Violet Poison": {
-        "_current": "(This card is always treated as a \"Predap\" card. <b>)\nTarget 1 \"Starving Venom Fusion Dragon\" in your Monster Zone;</b> it cannot attack this turn, also DESTROY as many monsters your opponent controls as possible with less ATK than that monster, then you can DISCARD your entire hand, and if you do, inflict damage to your opponent equal to the combined original ATK of monsters destroyed by this effect.",
-        "previous": null
-    },
-    "VARefar, the Judge of Ball": {
-        "_current": "HOPT | QUICK | When your opponent activates a monster effect on their field that targets a monster(s) you control, or their monster targets one for an attack: You can Special Summon this card from your hand, then you can choose 1 of those opponent's monsters and reveal 1 card in your hand, then apply the following effect to that monster based on the revealed card type.\n● Monster: Change it to Defense Position.\n● Spell: Double its ATK.\n● Trap: BANISH it.",
-        "previous": null
-    },
-    "Weaver of Fairy Tails": {
-        "_current": "1 \"Fairy Tail\" monster + 1 Spellcaster monster\n① All \"Prince of Fairies\" on the field become Spellcaster monsters.\n② YOUR MAIN PHASE | HOPT | You can Special Summon 1 \"Fairy Tail\" monster from your Deck or BANISHment.\n③ If you Normal or Special Summon a non-EARTH \"Fairy Tail\" monster, while this card is in your Monster Zone (except during the Damage Step): <b>You can target 1 Effect Monster your opponent controls;</b> NEGATE its effects, also its name becomes \"Prince of Fairies\".",
-        "previous": null
-    },
-    "X-Saber Bruno": {
-        "_current": "Once per turn, during your opponent's Main or Battle Phase, you can (QUICK EFFECT): Immediately after this effect resolves, Synchro Summon using only EARTH monsters you control, including this card. You can only use each of the following effects of \"X-Saber Bruno\" once per turn. If this card is in your hand: <b>You can BANISH 1 other EARTH monster from your hand, face-up field, or GY;</b> Special Summon this card. If this card is Normal or Special Summoned: You can SEARCH 1 \"Saber\" Spell/Trap (from DECK or GY).",
-        "previous": null
-    },
-    "X-Saber Pellina": {
-        "_current": "If this card is Normal or Special Summoned: <b>You can send it to the GY;</b> Special Summon 2 \"X-Saber\" monsters from your Deck, except \"X-Saber Pellina\", but DESTROY them during the End Phase. If this card is sent to the GY as Synchro Material for an \"X-Saber\" monster: You can apply 1 of these effects. \n● That monster can make a second attack during each Battle Phase. \n● That monster can attack directly. \nYou can only use each effect of \"X-Saber Pellina\" once per turn.",
-        "previous": null
+    "XX-Saber Boggart Knight": {
+        "_current": "Cannot be used as Synchro Material, except for the Synchro Summon of an \"X-Saber\" monster.\n① When this card is Normal Summoned: You can Special Summon 1 Level 4 or lower \"X-Saber\" monster from your hand.",
+        "previous": "Cannot be used as Synchro Material, except for the Synchro Summon of an \"X-Saber\" monster.\nWhen this card is Normal Summoned: You can Special Summon 1 Level 4 or lower \"X-Saber\" monster from your hand."
     }
 }

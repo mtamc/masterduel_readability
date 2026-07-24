@@ -185,23 +185,23 @@
         },
         {
             "cardid": 3195,
-            "fontsize": 28
+            "fontsize": 17.55
         },
         {
             "cardid": 3196,
-            "fontsize": 28
+            "fontsize": 20.45
         },
         {
             "cardid": 3197,
-            "fontsize": 28
+            "fontsize": 17.55
         },
         {
             "cardid": 3198,
-            "fontsize": 28
+            "fontsize": 25.4
         },
         {
             "cardid": 3199,
-            "fontsize": 28
+            "fontsize": 17.55
         },
         {
             "cardid": 3401,
@@ -6665,7 +6665,7 @@
         },
         {
             "cardid": 5657,
-            "fontsize": 26.35
+            "fontsize": 22.4
         },
         {
             "cardid": 5658,
@@ -21089,7 +21089,7 @@
         },
         {
             "cardid": 9723,
-            "fontsize": 20.05
+            "fontsize": 22.65
         },
         {
             "cardid": 9724,
@@ -23313,7 +23313,7 @@
         },
         {
             "cardid": 10283,
-            "fontsize": 23.2
+            "fontsize": 23.45
         },
         {
             "cardid": 10284,
@@ -24553,7 +24553,7 @@
         },
         {
             "cardid": 10598,
-            "fontsize": 26.35
+            "fontsize": 22.6
         },
         {
             "cardid": 10599,
@@ -55628,6 +55628,10 @@
             "fontsize": 13.8
         },
         {
+            "cardid": 22088,
+            "fontsize": 15.05
+        },
+        {
             "cardid": 22089,
             "fontsize": 22.45
         },
@@ -55698,6 +55702,10 @@
         {
             "cardid": 22122,
             "fontsize": 15.85
+        },
+        {
+            "cardid": 22123,
+            "fontsize": 17.55
         },
         {
             "cardid": 22127,
@@ -55781,6 +55789,10 @@
         },
         {
             "cardid": 22152,
+            "fontsize": 12.55
+        },
+        {
+            "cardid": 22154,
             "fontsize": 12.55
         },
         {
@@ -55972,6 +55984,10 @@
             "fontsize": 17.25
         },
         {
+            "cardid": 22348,
+            "fontsize": 12.55
+        },
+        {
             "cardid": 22356,
             "fontsize": 15.05
         },
@@ -56142,6 +56158,10 @@
         {
             "cardid": 22593,
             "fontsize": 12.55
+        },
+        {
+            "cardid": 22687,
+            "fontsize": 19.45
         },
         {
             "cardid": 22715,
