@@ -1,70 +1,110 @@
 {
-    "Blue-Eyes Toon Ultimate Dragon": {
-        "_current": "\"Blue-Eyes Toon Dragon\" + 2 Toon monsters\nMust be Special Summoned (from your Extra Deck) by shuffling the above cards from your hand, field, and/or GY into the Deck/Extra Deck. Your Toon monsters can attack directly. Once per turn, during your Main Phase: You can add 1 \"Toon\" card, or 1 card that mentions a \"Toon\" card by name, from your GY to your hand. If your Toon monster is attacked, during damage calculation: You can BANISH it until the end of the Damage Step.",
+    "Army of the Haunted": {
+        "_current": "① HOPT | If you control \"Call of the Haunted\" and this card is in your hand or GY: You can Special Summon this card.\n② HOPT | If this card is sent to the GY: <b>You can target 1 \"Call of the Haunted\" in your GY;</b> Set it.",
         "previous": null
     },
-    "Bramble Rose Dragon": {
-        "_current": "1 Plant Tuner + 1+ non-Tuners\nEach time your opponent activates a monster effect, inflict 600 damage to your opponent, and if you do, all monsters your opponent currently controls lose 600 ATK. You can only use each of the following effects of \"Bramble Rose Dragon\" once per turn. During the Main Phase (QUICK EFFECT): <b>You can Tribute this card;</b> Special Summon 1 \"Black Rose Dragon\" from your Extra Deck (this is treated as a Synchro Summon). <b>You can BANISH this card from your GY;</b> Special Summon 1 Level 4 or lower Plant Tuner from your GY.",
-        "previous": "1 Plant Tuner + 1+ non-Tuner monsters\nEach time your opponent activates a monster effect, inflict 600 damage to your opponent, and if you do, all monsters your opponent currently controls lose 600 ATK. You can only use each of the following effects of \"Bramble Rose Dragon\" once per turn. During the Main Phase (QUICK EFFECT): <b>You can Tribute this card;</b> Special Summon 1 \"Black Rose Dragon\" from your Extra Deck (this is treated as a Synchro Summon). <b>You can BANISH this card from your GY;</b> Special Summon 1 Level 4 or lower Plant Tuner from your GY."
-    },
-    "Kagetokage": {
-        "_current": "Cannot be Normal Summoned/Set. Must first be Special Summoned by its own effect. Cannot be used as Synchro Material.\n① When you Normal Summon a Level 4 monster: You can Special Summon this card from your hand.",
-        "previous": "Cannot be Normal Summoned/Set. Must first be Special Summoned by its own effect.\n① Cannot be used as Synchro Material.\nWhen you Normal Summon a Level 4 monster: You can Special Summon this card from your hand."
-    },
-    "Madolche Ticket": {
-        "_current": "HOPT | If another \"Madolche\" card(s) you control or in your GY is added to your hand or shuffled into your Main Deck by a card effect: SEARCH 1 \"Madolche\" monster.\nIf you control a Fairy \"Madolche\" monster, you can Special Summon the monster from your Deck in Attack Position instead of adding it to your hand.",
-        "previous": "HOPT | If another \"Madolche\" card(s) you control or in your GY is added to your hand or shuffled into your Main Deck by a card effect: SEARCH 1 \"Madolche\" monster. If you control a Fairy \"Madolche\" monster, you can Special Summon the monster from your Deck in Attack Position instead of adding it to your hand."
-    },
-    "Magical Musket Mastermind Caspar": {
-        "_current": "2 monsters, including a LIGHT Fiend monster\n① During either player's turn, you can activate \"Magical Musket\" Spell/Trap Cards from your hand.\n② HOPT | If this card is Link Summoned: You can take 2 \"Magical Musket\" cards from your hand and/or Deck, including a monster, Special Summon 1 monster from it to your field, and Set the other to your opponent's field.",
+    "Assist★Yummy!": {
+        "_current": "① STANDBY PHASE | OPT | You can gain 100 LP, and if you do, your opponent pays 100 LP.\nHOPT | You can use ONE of:\n② During the Main Phase or your opponent's Battle Phase: <b>You can send 2 face-up \"Yummy\" cards you control to the GY, including this card;</b> BOUNCE 1 card on the field or either GY.\n③ <b>You can BANISH this card from your GY;</b> send 1 \"Yummy\" card from your Deck to the GY, except \"Assist★Yummy!\".",
         "previous": null
     },
-    "Magical Scientist": {
-        "_current": "Pay 1000 Life Points to Special Summon 1 level 6 or lower Fusion Monster from your Extra Deck in face-up Attack or Defense Position.\nThat Fusion Monster cannot attack your opponent's Life Points directly, and is returned to your Extra Deck at the end of the turn.",
-        "previous": "Pay 1000 Life Points to Special Summon 1 level 6 or lower Fusion Monster from your Extra Deck in face-up Attack or Defense Position. That Fusion Monster cannot attack your opponent's Life Points directly, and is returned to your Extra Deck at the end of the turn."
-    },
-    "Metamorphosis": {
-        "_current": "Tribute 1 monster.\nSpecial Summon 1 Fusion Monster from your Extra Deck with the same Level as the Tributed monster.",
-        "previous": "Tribute 1 monster. Special Summon 1 Fusion Monster from your Extra Deck with the same Level as the Tributed monster."
-    },
-    "Pumpking the Great Ghost King": {
-        "_current": "2 Level 6 Zombie monsters\n① While you control \"Call of the Haunted\", your opponent cannot target Zombie monsters you control with monster effects.\n② HOPT | If this card is Special Summoned: You can SEARCH 1 \"Call of the Haunted\" or 1 card that mentions it.\n③ HOPT | <b>You can detach 1 material from this card, then target up to 2 cards on the field;</b> BOUNCE them.",
+    "Call of the Forgotten": {
+        "_current": "HOPT ACTIVATION\n① When this card is activated: You can Set up to 3 \"Call of the Haunted\" from your Deck and/or GY, and if you do, until the end of your opponent's turn, you cannot Special Summon, except Zombie monsters, or monsters from the GY.\n② OPT | If you activate \"Call of the Haunted\": <b>You can target 1 monster your opponent controls;</b> send it to the GY.",
         "previous": null
     },
-    "Rescue-ACE Arbitrator": {
-        "_current": "2+ FIRE monsters\nYou can only Special Summon \"Rescue-ACE Arbitrator(s)\" once per turn.\n① If this card is Link Summoned: You can SEARCH 1 \"Rescue-ACE Hydrant\" or \"Rescue-ACE HQ\" (from DECK or GY).\n② If you activate a \"Rescue-ACE\" Quick-Play Spell Card or a \"Rescue-ACE\" Normal Trap Card (except during the Damage Step): <b>You can target 1 card your opponent controls;</b> DESTROY it.\nYou can only use this effect of \"Rescue-ACE Arbitrator\" twice per turn.",
+    "Chevreuil, Hunting Scout of the Deep Forest": {
+        "_current": "1 Level 5 or higher EARTH Warrior monster + 1 EARTH Warrior monster\n① Unaffected by your opponent's activated effects, during the Main Phase only.\n② Your opponent's monsters that can attack must attack the monster you control with the highest ATK (their choice, if tied).\n③ HOPT | When another EARTH Warrior monster you control DESTROYS an opponent's monster by battle: You can Special Summon 1 EARTH Warrior monster from your GY or BANISHment.",
         "previous": null
     },
-    "Rex, Ride Fur Hire": {
-        "_current": "① HOPT | <b>You can reveal this card in your hand;</b> Special Summon 1 monster \"Fur Hire\" from your hand, except \"Rex, Ride Fur Hire\", then Special Summon this card.\n② If a card(s) is added from the Deck to your opponent's hand, except by a card effect \"Fur Hire\", and you control another monster \"Fur Hire\" (except during the Damage Step): You can DRAW 1 card.",
+    "Deadly Zombie Breath": {
+        "_current": "HOPT | You can use ONE of —\n① If you control a Zombie monster and \"Call of the Haunted\": <b>Target 1 monster your opponent controls;</b> send it to the GY.\n② If you control a Zombie monster: <b>You can BANISH this card from your GY, then target 1 face-up card you control and 1 face-up card your opponent controls;</b> send them to the GY.",
         "previous": null
     },
-    "Subspace Battle": {
-        "_current": "HOPT ACTIVATION\nApply the following effect, 3 times, in sequence.\n● Each player reveals 1 monster from their Deck that does not have ? ATK. Add the monster with the higher ATK to the hand of the player that revealed it, also DESTROY the monster with the lower ATK and inflict 500 damage to the player that revealed it. If tied, shuffle those monsters into the Decks.\nFor the rest of this turn, neither player can activate the effects of monsters with any of their revealed monsters' names.",
+    "Diabrocken the Ominous Specter": {
+        "_current": "① HOPT | QUICK | If this card is in your hand: <b>You can BANISH 1 FIRE monster from your face-up field or GY;</b> Special Summon this card.\n② HOPT | If this card is Special Summoned: <b>You can target 1 face-up card on the field;</b> NEGATE its effects until the end of this turn.\n③ HOPT | If this card is sent to the GY as Link Material: You can Set 1 Quick-Play Spell or Normal Trap from your GY that was sent there this turn.",
         "previous": null
     },
-    "The Perfect Cartoon World": {
-        "_current": "This card's name becomes \"Toon World\" while in the Field Zone. Once per turn, during your Main Phase: You can SEARCH 1 \"Toon\" card, or 1 card that mentions a \"Toon\" card by name. You can only use this effect of \"The Perfect Cartoon World\" thrice per turn. If another card's effect activates, at the start of its resolution, you can BANISH 1 Toon monster you control until immediately after that effect resolves (each unique original monster name can only be banished once per turn, by you, by this effect of \"The Perfect Cartoon World\").",
+    "Dracotail Shaulas": {
+        "_current": "1 \"Dracotail\" monster + 1 monster in the hand\n① HOPT | <b>You can target 2 \"Dracotail\" cards in your GY and 1 face-up card on the field with the same type (Monster, Spell, or Trap) as 1 of those GY cards;</b> shuffle all 3 into the Deck.\n② HOPT | If 2 or more monsters are sent to the GY at the same time, while this card is in your GY (except during the Damage Step): You can Special Summon this card, but BANISH it when it leaves the field.",
         "previous": null
     },
-    "Trifortressops": {
-        "_current": "During either player's turn, if your opponent Summoned 3 or more monsters this turn: You can Special Summon this card from your hand.\nIf Summoned this way, it is unaffected by other cards' effects, but loses 500 DEF during each player's Standby Phase.",
-        "previous": "During either player's turn, if your opponent Summoned 3 or more monsters this turn: You can Special Summon this card from your hand. If Summoned this way, it is unaffected by other cards' effects, but loses 500 DEF during each player's Standby Phase."
-    },
-    "Unchained Firelord of Yama": {
-        "_current": "2+ monsters, including an \"Unchained Soul\" monster\nDuring your End Phase: <b>You can target up to 2 Fiend monsters in your GY that were destroyed this turn;</b> Special Summon them, but for each one, as long as it remains face-up in your Monster Zone, you cannot Special Summon, except Fiend monsters. If this card on the field would be destroyed, you can DESTROY 1 other face-up card on either field instead. You can only use each effect of \"Unchained Firelord of Yama\" once per turn.",
+    "Ectoplasmic Fortification": {
+        "_current": "HOPT ACTIVATION\nActivate 1 of these effects;\n● If you control no monsters: SEARCH 1 Level 6 Zombie monster or 1 \"Call of the Forgotten\".\n● Zombie monsters you control gain 400 ATK, then you can DRAW cards equal to the number of \"Call of the Haunted\" you control.",
         "previous": null
     },
-    "Witchcrafter Madame Rilliona": {
-        "_current": "\"Witchcrafter Madame Verre\" + 2 Spellcaster monsters\nIf this card is Fusion Summoned: You can Special Summon up to 3 Level 7 or lower \"Witchcrafter\" monsters with different Attributes from your hand and/or Deck, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Fusion Monsters. During your End Phase, if this card is in your GY: <b>You can reveal 1 Spell in your hand;</b> Special Summon this card in Defense Position. You can only use each effect of \"Witchcrafter Madame Rilliona\" once per turn.",
+    "Faisan, Hunting Scout of the Deep Forest": {
+        "_current": "2 EARTH Warrior monsters\n① Unaffected by your opponent's activated effects, during the Main Phase only.\n② BATTLE PHASE | HOPT | QUICK | <b>You can Tribute this Fusion Summoned card;</b> Special Summon 2 EARTH Warrior monsters from your GY, except \"Faisan, Hunting Scout of the Deep Forest\", and if you do, your EARTH Warrior monsters cannot be destroyed by battle for the rest of this turn.",
         "previous": null
     },
-    "Witchcrafter Walpurgis": {
-        "_current": "During your Main Phase: You can SEARCH 1 \"Witchcrafter\" monster then DISCARD 1 card. You can only use this effect of \"Witchcrafter Walpurgis\" once per turn. During your turn, if a \"Witchcrafter\" monster you control would DISCARD to activate an effect, you can send 1 \"Witchcrafter\" Spell/Trap from your Deck to the GY instead, except \"Witchcrafter Walpurgis\".",
+    "Fandora, the Flying Fighting Furtress": {
+        "_current": "(This card is always treated as a card \"Fur Hire\".)\n① Monsters \"Fur Hire\" you control gain 300 ATK for each monster \"Fur Hire\" you control with a different name.\n② YOUR MAIN PHASE | HOPT | You can SEARCH 1 monster \"Fur Hire\" then DISCARD 1 card.\n③ HOPT | If a face-up monster(s) \"Fur Hire\" you control is destroyed by an opponent's card effect (except during the Damage Step): You can Special Summon 1 monster \"Fur Hire\" from your Deck.",
         "previous": null
     },
-    "XX-Saber Boggart Knight": {
-        "_current": "Cannot be used as Synchro Material, except for the Synchro Summon of an \"X-Saber\" monster.\n① When this card is Normal Summoned: You can Special Summon 1 Level 4 or lower \"X-Saber\" monster from your hand.",
-        "previous": "Cannot be used as Synchro Material, except for the Synchro Summon of an \"X-Saber\" monster.\nWhen this card is Normal Summoned: You can Special Summon 1 Level 4 or lower \"X-Saber\" monster from your hand."
+    "Furtive Techniques Fur Hire, Fur All Your Ultimate Moves": {
+        "_current": "HOPT | You can use ONE of —\n① <b>Target face-up cards on the field, up to the number of monsters \"Fur Hire\" you control with different names;</b> DESTROY those targeted cards, or if you control at least 1 each of Level 8 or higher and Link-3 or higher monsters \"Fur Hire\", you can BANISH those targeted cards instead.\n② If a Level 8 or higher, or Link-3 or higher, monster \"Fur Hire\" is Special Summoned to your field, while this card is in your GY (except during the Damage Step): You can add this card to your hand.",
+        "previous": null
+    },
+    "Great Mammoth of the Netherworld": {
+        "_current": "① HOPT | If this card is Special Summoned and you control \"Call of the Haunted\" or a Zombie monster, except \"Great Mammoth of the Netherworld\": <b>You can target 1 card on the field;</b> DESTROY it.\n② A Zombie Xyz Monster that has this card as material gains this effect.\n● Gains 1000 ATK.",
+        "previous": null
+    },
+    "Hunting Horn": {
+        "_current": "HOPT ACTIVATION\nFusion Summon 1 EARTH Warrior Fusion Monster from your Extra Deck, using Warrior monsters from your hand or field, then if you activated this card during the Battle Phase, you can choose monsters your opponent controls, up to the number of materials used from the hand for this Fusion Summon, and their ATK become halved until the end of the Battle Phase.\nYou cannot declare attacks the turn you activate this card, except with EARTH Warrior monsters.",
+        "previous": null
+    },
+    "K9-X \"Ripper/M\"": {
+        "_current": "2 Level 9 monsters\n① This card is PIERCING.\n② HOPT | If this card is Special Summoned by a \"K9\" Spell/Trap effect: <b>You can target up to 2 cards in your opponent's GY and/or BANISHment;</b> shuffle them into the Deck.\n③ HOPT | QUICK | When your opponent activates a monster effect: <b>You can detach 2 materials from this card;</b> NEGATE that effect, then DESTROY all cards on the field.",
+        "previous": null
+    },
+    "Keel, Shipwright Fur Hire": {
+        "_current": "2 monsters with different Types\n① HOPT | If this card is Link Summoned: You can Set 1 Spell/Trap \"Fur Hire\" or 1 \"Fandora, the Flying Furtress\" from your Deck, also you cannot Special Summon for the rest of this turn, except monsters \"Fur Hire\".\n② OPP'S TURN | HOPT | QUICK | You can BANISH this card from your GY, and if you do, Special Summon 1 monster \"Fur Hire\" from your hand, then if your opponent controls a monster with the highest original ATK on the field (even if tied), you can Special Summon 1 more such monster.",
+        "previous": null
+    },
+    "Laevateinn the Burning Blade": {
+        "_current": "2 FIRE monsters\n① MAIN PHASE | HOPT | QUICK | <b>You can Tribute 1 other FIRE monster, then target 1 FIRE monster in your GY with the same original Type but a lower original Level than that monster;</b> Special Summon it in Defense Position.\n② HOPT | If a face-down card(s) in your Spell & Trap Zone would be destroyed by an opponent's card effect, you can BANISH this card you control instead.",
+        "previous": null
+    },
+    "Mercurium the Living Quicksilver": {
+        "_current": "2+ Level 10 monsters\n① HOPT | If this card is Xyz Summoned: You can attach 1 monster from your Deck to this card as material.\n② While this card has material, your opponent cannot activate the effects of monsters in their GY with the same Attribute as a monster in your GY.\n③ END PHASE | OPT | Detach 1 material from this card or take 3000 damage.",
+        "previous": null
+    },
+    "Perfect Toon World": {
+        "_current": "This card's name becomes \"Toon World\" while in the Field Zone. Once per turn, during your Main Phase: You can SEARCH 1 \"Toon\" card, or 1 card that mentions a \"Toon\" card by name. You can only use this effect of \"Perfect Toon World\" thrice per turn. If another card's effect activates, at the start of its resolution, you can BANISH 1 Toon monster you control until immediately after that effect resolves (each unique original monster name can only be banished once per turn, by you, by this effect of \"Perfect Toon World\").",
+        "previous": null
+    },
+    "Pumpking the King of Grave Ghosts": {
+        "_current": "① HOPT | <b>You can reveal this card in your hand;</b> Set 1 \"Call of the Haunted\" from your Deck or GY, and if you do, DISCARD 1 card. That Set card can be activated this turn.\n② HOPT | If this card is Special Summoned: You can Special Summon 1 Level 6 Zombie monster from your Deck, except with 1950 ATK, also you cannot Special Summon from the hand or GY for the rest of this turn, except Zombie monsters.",
+        "previous": "<b>You can reveal this card in your hand;</b> Set 1 \"Call of the Haunted\" from your Deck or GY, and if you do, DISCARD 1 card. That Set card can be activated this turn. If this card is Special Summoned: You can Special Summon 1 Level 6 Zombie monster from your Deck, except with 1950 ATK, also you cannot Special Summon from the hand or GY for the rest of this turn, except Zombie monsters. You can only use each effect of \"Pumpking the King of Grave Ghosts\" once per turn."
+    },
+    "Rain of Frogs": {
+        "_current": "① HOPT | If you control an Aqua monster with 2000 or more ATK: Send all monsters on the field to the GY, except Aqua monsters.\n② HOPT | If this Set card is destroyed by card effect: You can Set this card.",
+        "previous": null
+    },
+    "Rescue-ACE Quick Attacker": {
+        "_current": "① HOPT | <b>You can shuffle 1 other \"Rescue-ACE\" card from your hand or face-up field into the Deck;</b> Special Summon this card from your hand.\n② HOPT | <b>You can Tribute this card;</b> SEARCH 1 \"Rescue-ACE\" monster then you can Special Summon it if only your opponent controls a monster, also you cannot Special Summon from the Extra Deck for the rest of this turn, except FIRE monsters.",
+        "previous": null
+    },
+    "Scrap Dragon": {
+        "_current": "1 Tuner + 1+ non-Tuners\n① OPT | <b>You can target 1 card you control and 1 card your opponent controls;</b> DESTROY them.\n② If this card in your possession is destroyed by your opponent's card and sent to your GY: <b>Target 1 non-Synchro \"Scrap\" monster in your GY;</b> Special Summon that target.",
+        "previous": "1 Tuner + 1+ non-Tuners\n① OPT | <b>You can target 1 card you control and 1 card your opponent controls;</b> DESTROY them.\n② When this card in your possession is destroyed by your opponent's card and sent to your GY: <b>Target 1 non-Synchro \"Scrap\" monster in your GY;</b> Special Summon that target."
+    },
+    "Stare of the Snake Hair": {
+        "_current": "① HOPT | <b>You can DISCARD this card;</b> SEARCH 1 \"Call of the Haunted\" or 1 Spell/Trap that mentions it.\n② HOPT | If this card is Special Summoned: <b>You can target 1 Attack Position monster your opponent controls;</b> that face-up monster cannot attack, its effects are negated, also it cannot be used as material for a Fusion, Synchro, Xyz, or Link Summon.",
+        "previous": null
+    },
+    "The Undying Legion": {
+        "_current": "2 Level 7 monsters\nOnce per turn, you can also Xyz Summon \"The Undying Legion\" by using 1 Rank 6 Zombie Xyz Monster you control (transfer its materials).\n① OPP'S MAIN PHASE | HOPT | QUICK | <b>You can detach 2 materials from this card (or just 1 material if all this card's materials are Xyz Monsters), then target 1 Attack Position monster your opponent controls or 1 monster in their GY;</b> attach it to this card.",
+        "previous": "2 Level 7 monsters\nOnce per turn, you can also Xyz Summon \"The Undying Legion\" by using 1 Rank 6 Zombie Xyz Monster you control (transfer its materials). During your opponent's Main Phase (QUICK EFFECT): <b>You can detach 2 materials from this card (or just 1 material if all this card's materials are Xyz Monsters), then target 1 Attack Position monster your opponent controls or 1 monster in their GY;</b> attach it to this card. You can only use this effect of \"The Undying Legion\" once per turn."
+    },
+    "Vodnika the Fountain Spirit": {
+        "_current": "① HOPT | If a Level 10 monster(s) is sent to the GY, except \"Vodnika the Fountain Spirit\" (except during the Damage Step): You can Special Summon this card from your GY (if it was there when the monster was sent) or hand (even if not) in Defense Position, but BANISH it when it leaves the field.\n② HOPT | <b>You can target 1 Level 10 monster in your GY;</b> Special Summon it to your opponent's field (but NEGATE its effects), then DRAW 1 card.",
+        "previous": null
+    },
+    "Vortex of Time": {
+        "_current": "HOPT ACTIVATION\nWhen your opponent activates a Normal or Quick-Play Spell Card or effect, or a monster effect, while you control a Zombie monster and \"Call of the Haunted\" (except during the Damage Step): Your opponent tosses a coin and their activated effect becomes the following effect.\n● Heads: \"Your opponent must BANISH 1 monster they control\".\n● Tails: \"You must BANISH all monsters you control\".",
+        "previous": null
+    },
+    "Whirlwind Fur Hire": {
+        "_current": "① HOPT | If you control no monsters: Special Summon 1 Level 4 or lower monster \"Fur Hire\" from your Deck, then if your opponent controls 2 or more monsters, you can Special Summon 1 monster \"Fur Hire\" from your Deck, also for the rest of this turn, you cannot Special Summon, except monsters \"Fur Hire\".\n② HOPT | If you would DISCARD to activate the effect of a monster \"Fur Hire\", you can BANISH this card from your GY instead of 1 of those cards.",
+        "previous": null
     }
 }
