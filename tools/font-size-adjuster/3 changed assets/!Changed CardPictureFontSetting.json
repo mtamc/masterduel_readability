@@ -16,6 +16,10 @@
             "fontsize": 28
         },
         {
+            "cardid": 3002,
+            "fontsize": 28
+        },
+        {
             "cardid": 3100,
             "fontsize": 20.05
         },
@@ -64,18 +68,6 @@
             "fontsize": 17.65
         },
         {
-            "cardid": 3165,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 3166,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 3167,
-            "fontsize": 17.55
-        },
-        {
             "cardid": 3168,
             "fontsize": 17.55
         },
@@ -106,10 +98,6 @@
         {
             "cardid": 3175,
             "fontsize": 17.55
-        },
-        {
-            "cardid": 3176,
-            "fontsize": 16.45
         },
         {
             "cardid": 3177,
@@ -13481,15 +13469,15 @@
         },
         {
             "cardid": 7603,
-            "fontsize": 22.6
+            "fontsize": 24.75
         },
         {
             "cardid": 7604,
-            "fontsize": 20.15
+            "fontsize": 22.6
         },
         {
             "cardid": 7605,
-            "fontsize": 25.1
+            "fontsize": 25.85
         },
         {
             "cardid": 7606,
@@ -14549,7 +14537,7 @@
         },
         {
             "cardid": 7899,
-            "fontsize": 19.75
+            "fontsize": 17.55
         },
         {
             "cardid": 7900,
@@ -16537,7 +16525,7 @@
         },
         {
             "cardid": 8443,
-            "fontsize": 20.05
+            "fontsize": 22.6
         },
         {
             "cardid": 8444,
@@ -20249,7 +20237,7 @@
         },
         {
             "cardid": 9504,
-            "fontsize": 26.35
+            "fontsize": 28
         },
         {
             "cardid": 9505,
@@ -22609,7 +22597,7 @@
         },
         {
             "cardid": 10105,
-            "fontsize": 22.6
+            "fontsize": 23.4
         },
         {
             "cardid": 10106,
@@ -23041,7 +23029,7 @@
         },
         {
             "cardid": 10215,
-            "fontsize": 21.9
+            "fontsize": 22.0
         },
         {
             "cardid": 10216,
@@ -23405,7 +23393,7 @@
         },
         {
             "cardid": 10306,
-            "fontsize": 26.35
+            "fontsize": 26.6
         },
         {
             "cardid": 10307,
@@ -23833,7 +23821,7 @@
         },
         {
             "cardid": 10415,
-            "fontsize": 26.75
+            "fontsize": 28
         },
         {
             "cardid": 10416,
@@ -25289,7 +25277,7 @@
         },
         {
             "cardid": 10783,
-            "fontsize": 12.55
+            "fontsize": 13.4
         },
         {
             "cardid": 10784,
@@ -29221,7 +29209,7 @@
         },
         {
             "cardid": 11804,
-            "fontsize": 17.55
+            "fontsize": 18.15
         },
         {
             "cardid": 11805,
@@ -29813,7 +29801,7 @@
         },
         {
             "cardid": 11953,
-            "fontsize": 20.6
+            "fontsize": 22.6
         },
         {
             "cardid": 11954,
@@ -32485,7 +32473,7 @@
         },
         {
             "cardid": 12641,
-            "fontsize": 13.8
+            "fontsize": 14.9
         },
         {
             "cardid": 12642,
@@ -33785,11 +33773,11 @@
         },
         {
             "cardid": 12972,
-            "fontsize": 18.8
+            "fontsize": 19.25
         },
         {
             "cardid": 12973,
-            "fontsize": 18.3
+            "fontsize": 18.8
         },
         {
             "cardid": 12974,
@@ -33841,7 +33829,7 @@
         },
         {
             "cardid": 12986,
-            "fontsize": 21.8
+            "fontsize": 22.5
         },
         {
             "cardid": 12987,
@@ -38689,7 +38677,7 @@
         },
         {
             "cardid": 14214,
-            "fontsize": 17.55
+            "fontsize": 15.2
         },
         {
             "cardid": 14215,
@@ -41057,7 +41045,7 @@
         },
         {
             "cardid": 14829,
-            "fontsize": 15.15
+            "fontsize": 15.65
         },
         {
             "cardid": 14830,
@@ -49953,7 +49941,7 @@
         },
         {
             "cardid": 18806,
-            "fontsize": 17.55
+            "fontsize": 16.05
         },
         {
             "cardid": 18807,
@@ -56300,228 +56288,12 @@
             "fontsize": 16.3
         },
         {
-            "cardid": 30000,
-            "fontsize": 17.8
-        },
-        {
-            "cardid": 30001,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30002,
-            "fontsize": 20.05
-        },
-        {
-            "cardid": 30003,
-            "fontsize": 21.15
-        },
-        {
-            "cardid": 30004,
-            "fontsize": 17.7
-        },
-        {
-            "cardid": 30005,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30006,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30007,
-            "fontsize": 15.05
-        },
-        {
-            "cardid": 30008,
-            "fontsize": 15.05
-        },
-        {
-            "cardid": 30009,
-            "fontsize": 16.85
-        },
-        {
-            "cardid": 30010,
-            "fontsize": 16.85
-        },
-        {
-            "cardid": 30011,
-            "fontsize": 18.7
-        },
-        {
-            "cardid": 30012,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30013,
-            "fontsize": 22.6
-        },
-        {
-            "cardid": 30014,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30015,
-            "fontsize": 18.35
-        },
-        {
-            "cardid": 30016,
-            "fontsize": 15.05
-        },
-        {
-            "cardid": 30017,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30018,
-            "fontsize": 21.95
-        },
-        {
             "cardid": 30019,
             "fontsize": 17.55
         },
         {
-            "cardid": 30020,
-            "fontsize": 16.8
-        },
-        {
-            "cardid": 30021,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30022,
-            "fontsize": 18.35
-        },
-        {
-            "cardid": 30023,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30024,
-            "fontsize": 28
-        },
-        {
-            "cardid": 30025,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30026,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30027,
-            "fontsize": 16.05
-        },
-        {
-            "cardid": 30028,
-            "fontsize": 20.05
-        },
-        {
-            "cardid": 30029,
-            "fontsize": 16.9
-        },
-        {
-            "cardid": 30030,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30031,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30032,
-            "fontsize": 12.55
-        },
-        {
-            "cardid": 30033,
-            "fontsize": 20.05
-        },
-        {
-            "cardid": 30034,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30035,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30036,
-            "fontsize": 17.3
-        },
-        {
-            "cardid": 30037,
-            "fontsize": 15.75
-        },
-        {
-            "cardid": 30038,
-            "fontsize": 19.45
-        },
-        {
-            "cardid": 30039,
-            "fontsize": 18.85
-        },
-        {
-            "cardid": 30040,
-            "fontsize": 13.8
-        },
-        {
-            "cardid": 30041,
-            "fontsize": 20.05
-        },
-        {
-            "cardid": 30042,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30043,
-            "fontsize": 20.05
-        },
-        {
-            "cardid": 30044,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30045,
-            "fontsize": 16.45
-        },
-        {
-            "cardid": 30046,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30047,
-            "fontsize": 22.6
-        },
-        {
-            "cardid": 30048,
-            "fontsize": 20.05
-        },
-        {
-            "cardid": 30049,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30050,
-            "fontsize": 15.05
-        },
-        {
-            "cardid": 30051,
-            "fontsize": 16.55
-        },
-        {
-            "cardid": 30052,
-            "fontsize": 16.35
-        },
-        {
-            "cardid": 30053,
-            "fontsize": 20.05
-        },
-        {
             "cardid": 30054,
             "fontsize": 20.05
-        },
-        {
-            "cardid": 30055,
-            "fontsize": 17.55
         },
         {
             "cardid": 30056,
@@ -56530,34 +56302,6 @@
         {
             "cardid": 30057,
             "fontsize": 16.55
-        },
-        {
-            "cardid": 30058,
-            "fontsize": 19.45
-        },
-        {
-            "cardid": 30059,
-            "fontsize": 17.8
-        },
-        {
-            "cardid": 30060,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30061,
-            "fontsize": 17.55
-        },
-        {
-            "cardid": 30062,
-            "fontsize": 22.6
-        },
-        {
-            "cardid": 30063,
-            "fontsize": 22.6
-        },
-        {
-            "cardid": 30064,
-            "fontsize": 23.25
         }
     ],
     "m_CardidPendulumFontSizePairDatas": [
@@ -56907,7 +56651,7 @@
         },
         {
             "cardid": 11960,
-            "fontsize": 20.0
+            "fontsize": 22.6
         },
         {
             "cardid": 11968,
@@ -57463,7 +57207,7 @@
         },
         {
             "cardid": 13359,
-            "fontsize": 22.6
+            "fontsize": 21.5
         },
         {
             "cardid": 13361,
@@ -58084,18 +57828,6 @@
         {
             "cardid": 22540,
             "fontsize": 25.15
-        },
-        {
-            "cardid": 30007,
-            "fontsize": 18.8
-        },
-        {
-            "cardid": 30039,
-            "fontsize": 22.6
-        },
-        {
-            "cardid": 30050,
-            "fontsize": 18.8
         },
         {
             "cardid": 30056,
