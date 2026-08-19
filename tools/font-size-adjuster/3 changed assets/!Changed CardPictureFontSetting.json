@@ -2084,6 +2084,10 @@
             "fontsize": 28
         },
         {
+            "cardid": 4344,
+            "fontsize": 28
+        },
+        {
             "cardid": 4345,
             "fontsize": 28
         },
@@ -2122,6 +2126,10 @@
         {
             "cardid": 4354,
             "fontsize": 23.2
+        },
+        {
+            "cardid": 4355,
+            "fontsize": 28
         },
         {
             "cardid": 4356,
@@ -4036,6 +4044,10 @@
             "fontsize": 28
         },
         {
+            "cardid": 4867,
+            "fontsize": 28
+        },
+        {
             "cardid": 4868,
             "fontsize": 28
         },
@@ -5044,6 +5056,10 @@
             "fontsize": 28
         },
         {
+            "cardid": 5165,
+            "fontsize": 28
+        },
+        {
             "cardid": 5166,
             "fontsize": 28
         },
@@ -5360,6 +5376,10 @@
             "fontsize": 28
         },
         {
+            "cardid": 5275,
+            "fontsize": 27.1
+        },
+        {
             "cardid": 5276,
             "fontsize": 28
         },
@@ -5373,6 +5393,10 @@
         },
         {
             "cardid": 5279,
+            "fontsize": 28
+        },
+        {
+            "cardid": 5280,
             "fontsize": 28
         },
         {
@@ -5780,6 +5804,10 @@
             "fontsize": 28
         },
         {
+            "cardid": 5392,
+            "fontsize": 28
+        },
+        {
             "cardid": 5393,
             "fontsize": 25.35
         },
@@ -6102,6 +6130,10 @@
         {
             "cardid": 5493,
             "fontsize": 28
+        },
+        {
+            "cardid": 5494,
+            "fontsize": 27.25
         },
         {
             "cardid": 5496,
@@ -6590,6 +6622,10 @@
         {
             "cardid": 5628,
             "fontsize": 15.4
+        },
+        {
+            "cardid": 5629,
+            "fontsize": 28
         },
         {
             "cardid": 5630,
@@ -8900,6 +8936,10 @@
             "fontsize": 28
         },
         {
+            "cardid": 6276,
+            "fontsize": 28
+        },
+        {
             "cardid": 6277,
             "fontsize": 28
         },
@@ -10112,6 +10152,14 @@
             "fontsize": 28
         },
         {
+            "cardid": 6627,
+            "fontsize": 26.35
+        },
+        {
+            "cardid": 6629,
+            "fontsize": 20.05
+        },
+        {
             "cardid": 6636,
             "fontsize": 28
         },
@@ -10154,6 +10202,10 @@
         {
             "cardid": 6648,
             "fontsize": 15.05
+        },
+        {
+            "cardid": 6649,
+            "fontsize": 18.8
         },
         {
             "cardid": 6653,
@@ -10398,6 +10450,10 @@
         {
             "cardid": 6713,
             "fontsize": 15.0
+        },
+        {
+            "cardid": 6715,
+            "fontsize": 20.05
         },
         {
             "cardid": 6716,
@@ -11322,6 +11378,10 @@
         {
             "cardid": 6988,
             "fontsize": 12.55
+        },
+        {
+            "cardid": 6989,
+            "fontsize": 15.05
         },
         {
             "cardid": 6990,
@@ -13158,6 +13218,10 @@
         {
             "cardid": 7511,
             "fontsize": 15.3
+        },
+        {
+            "cardid": 7513,
+            "fontsize": 20.05
         },
         {
             "cardid": 7514,
@@ -15914,6 +15978,10 @@
         {
             "cardid": 8266,
             "fontsize": 28
+        },
+        {
+            "cardid": 8267,
+            "fontsize": 26.4
         },
         {
             "cardid": 8268,
@@ -28988,6 +29056,10 @@
             "fontsize": 23.85
         },
         {
+            "cardid": 11738,
+            "fontsize": 28
+        },
+        {
             "cardid": 11739,
             "fontsize": 28
         },
@@ -39276,6 +39348,30 @@
             "fontsize": 28
         },
         {
+            "cardid": 14365,
+            "fontsize": 17.55
+        },
+        {
+            "cardid": 14366,
+            "fontsize": 15.05
+        },
+        {
+            "cardid": 14367,
+            "fontsize": 17.55
+        },
+        {
+            "cardid": 14368,
+            "fontsize": 14.5
+        },
+        {
+            "cardid": 14369,
+            "fontsize": 16.9
+        },
+        {
+            "cardid": 14370,
+            "fontsize": 20.05
+        },
+        {
             "cardid": 14371,
             "fontsize": 28
         },
@@ -48784,6 +48880,10 @@
             "fontsize": 20.05
         },
         {
+            "cardid": 18145,
+            "fontsize": 28
+        },
+        {
             "cardid": 18146,
             "fontsize": 15.8
         },
@@ -53128,6 +53228,10 @@
             "fontsize": 21.3
         },
         {
+            "cardid": 20557,
+            "fontsize": 15.05
+        },
+        {
             "cardid": 20566,
             "fontsize": 28
         },
@@ -53696,6 +53800,10 @@
             "fontsize": 20.05
         },
         {
+            "cardid": 20818,
+            "fontsize": 13.8
+        },
+        {
             "cardid": 20819,
             "fontsize": 28
         },
@@ -54100,6 +54208,10 @@
             "fontsize": 13.8
         },
         {
+            "cardid": 21170,
+            "fontsize": 14.05
+        },
+        {
             "cardid": 21171,
             "fontsize": 17.7
         },
@@ -54286,6 +54398,10 @@
         {
             "cardid": 21217,
             "fontsize": 23.85
+        },
+        {
+            "cardid": 21218,
+            "fontsize": 13.8
         },
         {
             "cardid": 21219,
@@ -54938,6 +55054,10 @@
         {
             "cardid": 21617,
             "fontsize": 18.15
+        },
+        {
+            "cardid": 21618,
+            "fontsize": 28
         },
         {
             "cardid": 21620,
@@ -55936,6 +56056,10 @@
             "fontsize": 20.05
         },
         {
+            "cardid": 22171,
+            "fontsize": 20.05
+        },
+        {
             "cardid": 22172,
             "fontsize": 25.7
         },
@@ -55968,8 +56092,28 @@
             "fontsize": 20.05
         },
         {
+            "cardid": 22180,
+            "fontsize": 19.9
+        },
+        {
+            "cardid": 22181,
+            "fontsize": 25.6
+        },
+        {
+            "cardid": 22182,
+            "fontsize": 16.3
+        },
+        {
             "cardid": 22183,
             "fontsize": 28
+        },
+        {
+            "cardid": 22184,
+            "fontsize": 13.9
+        },
+        {
+            "cardid": 22185,
+            "fontsize": 22.6
         },
         {
             "cardid": 22186,
@@ -56082,6 +56226,22 @@
         {
             "cardid": 22311,
             "fontsize": 28
+        },
+        {
+            "cardid": 22312,
+            "fontsize": 16.65
+        },
+        {
+            "cardid": 22313,
+            "fontsize": 25.0
+        },
+        {
+            "cardid": 22314,
+            "fontsize": 22.3
+        },
+        {
+            "cardid": 22315,
+            "fontsize": 20.05
         },
         {
             "cardid": 22316,
@@ -56200,6 +56360,14 @@
             "fontsize": 20.05
         },
         {
+            "cardid": 22354,
+            "fontsize": 18.8
+        },
+        {
+            "cardid": 22355,
+            "fontsize": 13.8
+        },
+        {
             "cardid": 22356,
             "fontsize": 15.05
         },
@@ -56210,6 +56378,22 @@
         {
             "cardid": 22499,
             "fontsize": 12.55
+        },
+        {
+            "cardid": 22510,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 22511,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 22512,
+            "fontsize": 15.05
+        },
+        {
+            "cardid": 22513,
+            "fontsize": 14.85
         },
         {
             "cardid": 22514,
@@ -56232,12 +56416,36 @@
             "fontsize": 16.25
         },
         {
+            "cardid": 22519,
+            "fontsize": 12.9
+        },
+        {
+            "cardid": 22520,
+            "fontsize": 13.85
+        },
+        {
+            "cardid": 22521,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 22522,
+            "fontsize": 13.85
+        },
+        {
             "cardid": 22523,
             "fontsize": 15.05
         },
         {
+            "cardid": 22524,
+            "fontsize": 13.8
+        },
+        {
             "cardid": 22525,
             "fontsize": 14.3
+        },
+        {
+            "cardid": 22526,
+            "fontsize": 12.55
         },
         {
             "cardid": 22527,
@@ -56257,6 +56465,10 @@
         },
         {
             "cardid": 22531,
+            "fontsize": 14.2
+        },
+        {
+            "cardid": 22532,
             "fontsize": 14.2
         },
         {
@@ -56280,12 +56492,20 @@
             "fontsize": 14.85
         },
         {
+            "cardid": 22538,
+            "fontsize": 12.55
+        },
+        {
             "cardid": 22539,
             "fontsize": 15.05
         },
         {
             "cardid": 22540,
             "fontsize": 13.8
+        },
+        {
+            "cardid": 22541,
+            "fontsize": 15.05
         },
         {
             "cardid": 22542,
@@ -56300,8 +56520,24 @@
             "fontsize": 13.8
         },
         {
+            "cardid": 22545,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 22546,
+            "fontsize": 13.15
+        },
+        {
+            "cardid": 22547,
+            "fontsize": 12.5
+        },
+        {
             "cardid": 22548,
             "fontsize": 13.8
+        },
+        {
+            "cardid": 22549,
+            "fontsize": 15.15
         },
         {
             "cardid": 22550,
@@ -56320,16 +56556,36 @@
             "fontsize": 12.45
         },
         {
+            "cardid": 22554,
+            "fontsize": 12.7
+        },
+        {
+            "cardid": 22555,
+            "fontsize": 17.55
+        },
+        {
             "cardid": 22556,
             "fontsize": 11.95
+        },
+        {
+            "cardid": 22557,
+            "fontsize": 12.4
         },
         {
             "cardid": 22558,
             "fontsize": 15.05
         },
         {
+            "cardid": 22559,
+            "fontsize": 13.8
+        },
+        {
             "cardid": 22560,
             "fontsize": 11.3
+        },
+        {
+            "cardid": 22561,
+            "fontsize": 20.05
         },
         {
             "cardid": 22562,
@@ -56341,6 +56597,30 @@
         },
         {
             "cardid": 22564,
+            "fontsize": 18.8
+        },
+        {
+            "cardid": 22565,
+            "fontsize": 18.45
+        },
+        {
+            "cardid": 22566,
+            "fontsize": 16.3
+        },
+        {
+            "cardid": 22567,
+            "fontsize": 15.2
+        },
+        {
+            "cardid": 22568,
+            "fontsize": 20.05
+        },
+        {
+            "cardid": 22569,
+            "fontsize": 18.75
+        },
+        {
+            "cardid": 22570,
             "fontsize": 18.8
         },
         {
@@ -56360,6 +56640,10 @@
             "fontsize": 18.6
         },
         {
+            "cardid": 22575,
+            "fontsize": 20.05
+        },
+        {
             "cardid": 22576,
             "fontsize": 24.45
         },
@@ -56372,8 +56656,24 @@
             "fontsize": 20.05
         },
         {
+            "cardid": 22579,
+            "fontsize": 19.6
+        },
+        {
+            "cardid": 22580,
+            "fontsize": 17.5
+        },
+        {
             "cardid": 22581,
             "fontsize": 18.8
+        },
+        {
+            "cardid": 22582,
+            "fontsize": 18.8
+        },
+        {
+            "cardid": 22583,
+            "fontsize": 18.15
         },
         {
             "cardid": 22584,
@@ -56388,8 +56688,16 @@
             "fontsize": 19.55
         },
         {
+            "cardid": 22587,
+            "fontsize": 26.35
+        },
+        {
             "cardid": 22588,
             "fontsize": 18.8
+        },
+        {
+            "cardid": 22589,
+            "fontsize": 20.0
         },
         {
             "cardid": 22590,
@@ -56512,8 +56820,364 @@
             "fontsize": 23.85
         },
         {
+            "cardid": 22950,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 22951,
+            "fontsize": 16.1
+        },
+        {
+            "cardid": 22952,
+            "fontsize": 15.85
+        },
+        {
+            "cardid": 22953,
+            "fontsize": 17.55
+        },
+        {
+            "cardid": 22954,
+            "fontsize": 12.8
+        },
+        {
+            "cardid": 22955,
+            "fontsize": 13.3
+        },
+        {
+            "cardid": 22956,
+            "fontsize": 13.95
+        },
+        {
+            "cardid": 22957,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 22958,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 22959,
+            "fontsize": 14.7
+        },
+        {
+            "cardid": 22960,
+            "fontsize": 15.05
+        },
+        {
+            "cardid": 22961,
+            "fontsize": 15.05
+        },
+        {
+            "cardid": 22962,
+            "fontsize": 15.05
+        },
+        {
+            "cardid": 22963,
+            "fontsize": 15.45
+        },
+        {
+            "cardid": 22964,
+            "fontsize": 15.05
+        },
+        {
+            "cardid": 22965,
+            "fontsize": 15.05
+        },
+        {
+            "cardid": 22966,
+            "fontsize": 14.0
+        },
+        {
+            "cardid": 22967,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 22968,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 22969,
+            "fontsize": 15.25
+        },
+        {
+            "cardid": 22970,
+            "fontsize": 15.05
+        },
+        {
+            "cardid": 22971,
+            "fontsize": 13.45
+        },
+        {
+            "cardid": 22972,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 22973,
+            "fontsize": 20.25
+        },
+        {
+            "cardid": 22974,
+            "fontsize": 17.55
+        },
+        {
+            "cardid": 22975,
+            "fontsize": 16.2
+        },
+        {
+            "cardid": 22976,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 22977,
+            "fontsize": 12.7
+        },
+        {
+            "cardid": 22978,
+            "fontsize": 13.7
+        },
+        {
+            "cardid": 22979,
+            "fontsize": 15.05
+        },
+        {
+            "cardid": 22980,
+            "fontsize": 14.75
+        },
+        {
+            "cardid": 22981,
+            "fontsize": 13.1
+        },
+        {
+            "cardid": 22982,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 22983,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 22984,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 22985,
+            "fontsize": 15.05
+        },
+        {
+            "cardid": 22986,
+            "fontsize": 12.55
+        },
+        {
+            "cardid": 22987,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 22988,
+            "fontsize": 14.2
+        },
+        {
+            "cardid": 22989,
+            "fontsize": 15.05
+        },
+        {
+            "cardid": 22990,
+            "fontsize": 15.05
+        },
+        {
+            "cardid": 22991,
+            "fontsize": 15.05
+        },
+        {
+            "cardid": 22992,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 22993,
+            "fontsize": 20.05
+        },
+        {
+            "cardid": 22994,
+            "fontsize": 18.8
+        },
+        {
+            "cardid": 22995,
+            "fontsize": 20.05
+        },
+        {
+            "cardid": 22996,
+            "fontsize": 20.75
+        },
+        {
+            "cardid": 22997,
+            "fontsize": 17.75
+        },
+        {
+            "cardid": 22998,
+            "fontsize": 19.75
+        },
+        {
+            "cardid": 22999,
+            "fontsize": 15.7
+        },
+        {
+            "cardid": 23000,
+            "fontsize": 18.8
+        },
+        {
+            "cardid": 23001,
+            "fontsize": 18.45
+        },
+        {
+            "cardid": 23002,
+            "fontsize": 20.05
+        },
+        {
+            "cardid": 23003,
+            "fontsize": 20.05
+        },
+        {
+            "cardid": 23004,
+            "fontsize": 17.1
+        },
+        {
+            "cardid": 23005,
+            "fontsize": 19.1
+        },
+        {
+            "cardid": 23006,
+            "fontsize": 20.05
+        },
+        {
+            "cardid": 23007,
+            "fontsize": 20.05
+        },
+        {
+            "cardid": 23008,
+            "fontsize": 19.55
+        },
+        {
+            "cardid": 23009,
+            "fontsize": 16.3
+        },
+        {
+            "cardid": 23010,
+            "fontsize": 28
+        },
+        {
+            "cardid": 23011,
+            "fontsize": 20.05
+        },
+        {
+            "cardid": 23012,
+            "fontsize": 20.25
+        },
+        {
             "cardid": 23013,
             "fontsize": 16.3
+        },
+        {
+            "cardid": 23014,
+            "fontsize": 16.3
+        },
+        {
+            "cardid": 23015,
+            "fontsize": 18.8
+        },
+        {
+            "cardid": 23016,
+            "fontsize": 16.1
+        },
+        {
+            "cardid": 23017,
+            "fontsize": 16.55
+        },
+        {
+            "cardid": 23018,
+            "fontsize": 17.0
+        },
+        {
+            "cardid": 23019,
+            "fontsize": 20.05
+        },
+        {
+            "cardid": 23020,
+            "fontsize": 20.45
+        },
+        {
+            "cardid": 23021,
+            "fontsize": 18.65
+        },
+        {
+            "cardid": 23022,
+            "fontsize": 16.3
+        },
+        {
+            "cardid": 23023,
+            "fontsize": 20.05
+        },
+        {
+            "cardid": 23024,
+            "fontsize": 18.8
+        },
+        {
+            "cardid": 23025,
+            "fontsize": 20.05
+        },
+        {
+            "cardid": 23026,
+            "fontsize": 28
+        },
+        {
+            "cardid": 23027,
+            "fontsize": 26.35
+        },
+        {
+            "cardid": 23028,
+            "fontsize": 23.85
+        },
+        {
+            "cardid": 23029,
+            "fontsize": 20.05
+        },
+        {
+            "cardid": 23487,
+            "fontsize": 28
+        },
+        {
+            "cardid": 23488,
+            "fontsize": 28
+        },
+        {
+            "cardid": 23489,
+            "fontsize": 28
+        },
+        {
+            "cardid": 23490,
+            "fontsize": 28
+        },
+        {
+            "cardid": 23491,
+            "fontsize": 28
+        },
+        {
+            "cardid": 23492,
+            "fontsize": 17.55
+        },
+        {
+            "cardid": 23493,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 23494,
+            "fontsize": 15.05
+        },
+        {
+            "cardid": 23495,
+            "fontsize": 13.8
+        },
+        {
+            "cardid": 23496,
+            "fontsize": 12.55
         },
         {
             "cardid": 30019,
@@ -58042,6 +58706,22 @@
             "fontsize": 28
         },
         {
+            "cardid": 22519,
+            "fontsize": 16.3
+        },
+        {
+            "cardid": 22520,
+            "fontsize": 19.95
+        },
+        {
+            "cardid": 22521,
+            "fontsize": 21.7
+        },
+        {
+            "cardid": 22522,
+            "fontsize": 18.8
+        },
+        {
             "cardid": 22529,
             "fontsize": 15.25
         },
@@ -58056,6 +58736,10 @@
         {
             "cardid": 22540,
             "fontsize": 25.15
+        },
+        {
+            "cardid": 22974,
+            "fontsize": 21.1
         },
         {
             "cardid": 30056,
