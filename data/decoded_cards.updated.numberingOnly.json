@@ -157,6 +157,54 @@
     },
     {
         "effects": [],
+        "leadingText": "If this card is Normal or Special Summoned: You can send it to the GY; show up to 2 Normal Monster Cards from your hand, Deck, face-up field, and/or GY, then Set that many \"Zenet\" Spells from your Deck. During your opponent's turn (Quick Effect): You can banish this card from your GY; equip 1 Normal Monster from your GY to 1 Ritual Monster you control as an Equip Spell. You can only use each effect of \"Zenet Revelator Nefertari\" once per turn.",
+        "name": "Zenet Revelator Nefertari",
+        "pendulumEffects": []
+    },
+    {
+        "effects": [],
+        "leadingText": "You can Ritual Summon this card with a \"Zenet\" card. Unaffected by your opponent's activated effects, while equipped with an Equip Card. You can only use each of the following effects of \"Zenet-Nakhte Sphinx\" once per turn. You can discard this card; add 1 \"Zenet\" card from your Deck to your hand, except \"Zenet-Nakhte Sphinx\". (Quick Effect): You can send 1 face-up Normal Monster Card you control to the GY; change as many monsters your opponent controls as possible to face-down Defense Position, then you can Special Summon 1 Normal Monster from your GY.",
+        "name": "Zenet-Nakhte Sphinx",
+        "pendulumEffects": []
+    },
+    {
+        "effects": [],
+        "leadingText": "2 Level 7 \"Raise Moon\" monsters\nCannot be used as material for a Fusion, Xyz, or Link Summon. Gains these effects while in the Extra Monster Zone.\n●Unaffected by other cards' effects.\n●When your opponent's activated card or effect that includes an effect that adds a card(s) from the Deck to the hand resolves, you can make that effect become \"Draw 1 card\".\n●Once per turn (Quick Effect): You can detach 1 material from this card; draw 1 card.\nIf this card in your possession is sent to your GY by an opponent's card: You can draw 1 card.",
+        "name": "Cielo, the Night Sky of Raise Moon - No More Bets!",
+        "pendulumEffects": []
+    },
+    {
+        "effects": [],
+        "leadingText": "2+ Level 7 monsters\nYour opponent's monsters cannot target monsters for attacks, except this one. If this card is Xyz Summoned, or a monster(s) is Special Summoned from the hand (except during the Damage Step): You can detach any number of materials from this card; place that many cards your opponent controls on the bottom of the Deck in any order. You can only use this effect of \"Squeeze, the Full Moon of Raise Moon - JACKPOT!\" once per turn. Each time an opponent's card(s) is moved out of the Main Deck by an opponent's card, except by drawing it: You can attach the top card of your opponent's Deck to this card.",
+        "name": "Squeeze, the Full Moon of Raise Moon - JACKPOT!",
+        "pendulumEffects": []
+    },
+    {
+        "effects": [],
+        "leadingText": "If this card is Normal or Special Summoned: Banish (face-down) 8 cards from the top of your Deck. Gains effects based on the number of face-down banished cards.\n●10+: Cannot be destroyed by battle.\n●20+: Once per turn (Quick Effect): You can target 1 card on the field; destroy it.\n●30+: Once per turn, during your opponent's End Phase: You can add 1 of your face-down banished cards to your hand.\n●40+: Skip the Draw Phase.",
+        "name": "Trirealm Rift Darkness",
+        "pendulumEffects": []
+    },
+    {
+        "effects": [],
+        "leadingText": "Cannot be destroyed by battle, also you take no battle damage from battles involving this card. Before damage calculation, if this Attack Position card is targeted for an attack: Inflict damage to your opponent equal to that attacking monster's ATK. Once per turn, during your End Phase: Tribute 1 other monster or destroy this card. When this card is destroyed, except by its own effect: Its owner can Special Summon 1 \"Yubel - Terror Incarnate\" from their hand, Deck, or GY.",
+        "name": "Yubel",
+        "pendulumEffects": []
+    },
+    {
+        "effects": [],
+        "leadingText": "Each time an opponent's monster declares an attack, place 1 Sinister Doctrine Counter on this card. You can only use each of the following effects of \"Wicked Canon\" once per turn. During your Main Phase, if this card was activated this turn: You can add 1 DARK Fiend monster from your Deck to your hand, then discard 1 Fiend monster. You can send this card with 4 or more Sinister Doctrine Counters to the GY; Special Summon 1 Fiend monster from your Deck, then you can add 1 \"Super Polymerization\" from your Deck to your hand.",
+        "name": "Wicked Canon",
+        "pendulumEffects": []
+    },
+    {
+        "effects": [],
+        "leadingText": "If you control a \"Neos\" Fusion Monster or \"Elemental HERO Neos\": Discard 1 card; Fusion Summon 1 Fusion Monster from your Extra Deck that mentions a \"HERO\" monster as material, using monsters from your hand, Deck, or field. If you control a \"Neos\" Fusion Monster: You can banish this card from your GY, then target 1 face-up card your opponent controls; negate its effects until the end of this turn. You can only use each effect of \"Hope for the Future\" once per turn.",
+        "name": "Hope for the Future",
+        "pendulumEffects": []
+    },
+    {
+        "effects": [],
         "leadingText": "You can Ritual Summon this card with \"Throne of the Archfiends\". Must be Ritual Summoned. Unaffected by other monsters' effects while in the Extra Monster Zone. You can only use each of the following effects of \"Archfiend Emperor\" once per turn. If this card is Ritual Summoned from the Extra Deck: You can banish all monsters on the field, except in the Extra Monster Zones. If this card is in the Extra Monster Zone: You can Special Summon 1 Fiend monster from your hand, Deck, GY, or banishment.\n[Pendulum Effect]\nYou can target 1 other face-up Spell/Trap on the field; destroy both it and this card. You can only use this effect of \"Archfiend Emperor\" once per turn.",
         "name": "Archfiend Emperor",
         "pendulumEffects": []
@@ -41943,24 +41991,24 @@
     {
         "effects": [
             {
-                "mainEffect": "① Cannot be destroyed by battle.",
+                "mainEffect": "① Cannot be destroyed by battle. You take no battle damage from battles involving this card.",
                 "originalPosition": 3271,
                 "trailingText": ""
             },
             {
-                "mainEffect": "\n② You take no battle damage from battles involving this card.",
+                "mainEffect": "\n② Before damage calculation, if this face-up Attack Position card is targeted for an attack: Inflict damage to your opponent equal to that attacking monster's ATK.",
                 "originalPosition": 3272,
                 "trailingText": ""
             },
             {
-                "mainEffect": "\n③ Before damage calculation, if this face-up Attack Position card is targeted for an attack: Inflict damage to your opponent equal to that attacking monster's ATK.",
+                "mainEffect": "\n③ Once per turn, during your End Phase: Tribute 1 other monster or destroy this card.",
                 "originalPosition": 3273,
                 "trailingText": ""
             },
             {
-                "mainEffect": "\n④ Once per turn, during your End Phase: Tribute 1 other monster or destroy this card.",
+                "mainEffect": "\n④ When this card is destroyed, except by its own effect: Its owner can Special Summon 1 \"Yubel - Terror Incarnate\" from their hand, Deck, or GY.",
                 "originalPosition": 3274,
-                "trailingText": "\nWhen this card is destroyed, except by its own effect: Its owner can Special Summon 1 \"Yubel - Terror Incarnate\" from their hand, Deck, or GY."
+                "trailingText": ""
             }
         ],
         "leadingText": "",
@@ -196046,12 +196094,12 @@
     {
         "effects": [
             {
-                "mainEffect": "① During the Main Phase, if this card is in your hand (Quick Effect): You can target 1 Fiend monster or 1 face-down card you control; destroy it, and if you do, Special Summon this card, but while it is face-up in the Monster Zone, you cannot Special Summon monsters, except Fiend monsters.",
+                "mainEffect": "① During the Main Phase, if this card is in your hand (Quick Effect): You can target 1 Fiend monster or 1 face-down card you control; destroy it, and if you do, Special Summon this card, but while it is face-up in the Monster Zone, you cannot Special Summon, except Fiend monsters.",
                 "originalPosition": 20830,
                 "trailingText": ""
             },
             {
-                "mainEffect": "\n② If this card is sent to the GY: You can Set 1 \"Unchained\" Spell/Trap directly from your Deck.",
+                "mainEffect": "\n② If this card is sent to the GY: You can Set 1 \"Unchained\" Spell/Trap from your Deck.",
                 "originalPosition": 20831,
                 "trailingText": "\nYou can only use each effect of \"Unchained Soul of Sharvara\" once per turn."
             }
@@ -228141,13 +228189,35 @@
     {
         "effects": [
             {
-                "mainEffect": "\n① If this card is Special Summoned: You can target 1 other face-up monster on the field; change its ATK to 0, negate its effects, also it becomes DARK.",
+                "mainEffect": "",
+                "originalPosition": 24873,
+                "trailingText": ""
+            },
+            {
+                "mainEffect": "\n① Cannot be destroyed by card effects.",
+                "originalPosition": 24872,
+                "trailingText": ""
+            },
+            {
+                "mainEffect": "\n② If this card is Special Summoned: You can add 1 card from your GY to your hand, and if you do, this card gains 2000 ATK.",
                 "originalPosition": 24871,
+                "trailingText": "\nYou can only use this effect of \"Red Nova Dragon - Burning Soul\" once per Duel, and only if you have Synchro Summoned \"Red Dragon Archfiend\"."
+            }
+        ],
+        "leadingText": "2 Tuners + 1 non-Tuner\nMust be either Synchro Summoned, or Special Summoned (from your Extra Deck) by banishing 2 Tuners and 1 \"Red Dragon Archfiend\" from your GY.",
+        "name": "Red Nova Dragon - Burning Soul",
+        "pendulumEffects": []
+    },
+    {
+        "effects": [
+            {
+                "mainEffect": "\n① If this card is Special Summoned: You can target 1 other face-up monster on the field; change its ATK to 0, negate its effects, also it becomes DARK.",
+                "originalPosition": 24874,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② When your opponent activates a card or effect (Quick Effect): You can Fusion Summon 1 DARK Fusion Monster from your Extra Deck using DARK monsters on either field, including this card.",
-                "originalPosition": 24872,
+                "originalPosition": 24875,
                 "trailingText": "\nYou can only use each effect of \"Starving Venom Fusion Dragon, Four Heavenly Dragons\" once per turn."
             }
         ],
@@ -228159,12 +228229,12 @@
         "effects": [
             {
                 "mainEffect": "\n① If this card is Special Summoned: You can destroy 1 Effect Monster your opponent controls, and if you do, this card gains ATK equal to that monster's original ATK.",
-                "originalPosition": 24873,
+                "originalPosition": 24876,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② When your opponent activates a card or effect (Quick Effect): You can Special Summon 1 Level 4 or lower WIND Tuner from your hand or GY (but negate its effects), then immediately after this effect resolves, you can Synchro Summon 1 WIND Synchro Monster.",
-                "originalPosition": 24874,
+                "originalPosition": 24877,
                 "trailingText": "\nYou can only use each effect of \"Clear Wing Synchro Dragon, Four Heavenly Dragons\" once per turn."
             }
         ],
@@ -228176,12 +228246,12 @@
         "effects": [
             {
                 "mainEffect": "\n① During your opponent's Main Phase, you can (Quick Effect): Immediately after this effect resolves, Link Summon 1 Link Monster using materials you control, including this card.",
-                "originalPosition": 24875,
+                "originalPosition": 24878,
                 "trailingText": "\nYou can only use this effect of \"I:P Masquerena\" once per turn."
             },
             {
                 "mainEffect": "\n② A Link Monster that used this card as material cannot be destroyed by your opponent's card effects.",
-                "originalPosition": 24876,
+                "originalPosition": 24879,
                 "trailingText": ""
             }
         ],
@@ -228193,12 +228263,12 @@
         "effects": [
             {
                 "mainEffect": "\n① If this card is Link Summoned using a Fusion, Synchro, Xyz, or Link Monster as material: You can target 1 card on the field or in either GY; banish it, also your monsters cannot attack directly this turn.",
-                "originalPosition": 24877,
+                "originalPosition": 24880,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② When your opponent activates a card or effect (Quick Effect): You can target 2 face-up monsters on the field, including a monster you control; banish both until the End Phase.",
-                "originalPosition": 24878,
+                "originalPosition": 24881,
                 "trailingText": "\nYou can only use each effect of \"S:P Little Knight\" once per turn."
             }
         ],
@@ -228210,12 +228280,12 @@
         "effects": [
             {
                 "mainEffect": "\n① If this card is Special Summoned from the Extra Deck: You can shuffle 5 monsters from your GY into the Deck, then draw 2 cards, and if you do, this card gains 1000 ATK.",
-                "originalPosition": 24879,
+                "originalPosition": 24882,
                 "trailingText": "\nYou can only use this effect of \"Favorite HERO Shining Flare Wingman\" once per turn."
             },
             {
                 "mainEffect": "\n② If this card destroys a monster by battle: Inflict damage to your opponent equal to that monster's original ATK.",
-                "originalPosition": 24880,
+                "originalPosition": 24883,
                 "trailingText": ""
             }
         ],
@@ -228224,20 +228294,26 @@
         "pendulumEffects": []
     },
     {
+        "effects": [],
+        "leadingText": "3 Machine monsters with 2100 or more ATK\nMust be Fusion Summoned. If this card is Fusion Summoned using only LIGHT monsters: You can pay 4000 LP; add 1 \"Limiter Removal\" from your Deck to your hand. You can only use this effect of \"Cyber End Dragon, the Final Strike Dragon\" once per turn. If this card attacks a Defense Position monster, inflict piercing battle damage to your opponent. While its ATK is higher than its original ATK, this card can make up to 3 attacks during each Battle Phase.",
+        "name": "Cyber End Dragon, the Final Strike Dragon",
+        "pendulumEffects": []
+    },
+    {
         "effects": [
             {
                 "mainEffect": "\n① Gains 300 ATK for each material used for its Summon. Can make a number of attacks on monsters each Battle Phase, up to the number of Fusion Monsters used as material for its Summon.",
-                "originalPosition": 24881,
+                "originalPosition": 24884,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② After damage calculation, if this card battled a monster: Destroy that monster, and if you do, inflict damage to your opponent equal to its original ATK.",
-                "originalPosition": 24882,
+                "originalPosition": 24885,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ If this Fusion Summoned card is destroyed: Special Summon 1 Warrior monster from your hand or Deck.",
-                "originalPosition": 24883,
+                "originalPosition": 24886,
                 "trailingText": ""
             }
         ],
@@ -228249,17 +228325,17 @@
         "effects": [
             {
                 "mainEffect": "\n① You can only control 1 \"Mirrorjade the Iceblade Dragon\".",
-                "originalPosition": 24884,
+                "originalPosition": 24887,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② Once per turn (Quick Effect): You can send 1 Fusion Monster from your Extra Deck to the GY that mentions \"Fallen of Albaz\" as material; banish 1 monster on the field, also this card cannot use this effect next turn.",
-                "originalPosition": 24885,
+                "originalPosition": 24888,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ If this Fusion Summoned card in its owner's control leaves the field by an opponent's card: You can destroy all monsters your opponent controls during the End Phase of this turn.",
-                "originalPosition": 24886,
+                "originalPosition": 24889,
                 "trailingText": ""
             }
         ],
@@ -228271,7 +228347,7 @@
         "effects": [
             {
                 "mainEffect": "Discard 1 card; Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from either field.",
-                "originalPosition": 24887,
+                "originalPosition": 24890,
                 "trailingText": "\nNeither player can activate cards or effects in response to this card's activation."
             }
         ],
@@ -228283,7 +228359,7 @@
         "effects": [
             {
                 "mainEffect": "\n① When a card or effect is activated that includes an effect that Special Summons a monster(s): Negate that effect, then if you have a Trap in your GY, destroy that card. If you activated this card from your hand, you cannot activate the effects of LIGHT, EARTH, and WIND monsters for the rest of this Duel.",
-                "originalPosition": 24888,
+                "originalPosition": 24891,
                 "trailingText": "\nYou can only activate 1 \"Dominus Impulse\" per turn."
             }
         ],
@@ -228295,12 +228371,12 @@
         "effects": [
             {
                 "mainEffect": "",
-                "originalPosition": 24890,
+                "originalPosition": 24893,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n① During the Main Phase, if this card was Special Summoned this turn (Quick Effect): You can target Spells/Traps on the field, up to the number of monsters with a Predator Counter; destroy them.",
-                "originalPosition": 24889,
+                "originalPosition": 24892,
                 "trailingText": "\nYou can only use this effect of \"Predaplant Daredevil\" once per turn."
             }
         ],
@@ -228312,12 +228388,12 @@
         "effects": [
             {
                 "mainEffect": "\n① Your opponent cannot target Fusion Monsters you control with card effects.",
-                "originalPosition": 24891,
+                "originalPosition": 24894,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If this card is sent to the GY as material for a Fusion Summon: You can Special Summon 1 Fusion Monster from your Extra Deck in Defense Position (but negate its effects, also return it to the Extra Deck during the End Phase), also for the rest of this turn, you cannot Special Summon from the Extra Deck, except Fusion Monsters.",
-                "originalPosition": 24892,
+                "originalPosition": 24895,
                 "trailingText": "\nYou can only use this effect of \"Fata Dragna\" once per turn."
             }
         ],
@@ -228329,12 +228405,12 @@
         "effects": [
             {
                 "mainEffect": "① If this card is in your hand: You can target 1 face-up monster on the field; Special Summon this card, also that target becomes a Spellcaster monster. The next time that target would be destroyed by card effect this turn, it is not destroyed, also you cannot Special Summon from the Extra Deck for the rest of this turn, except Spellcaster monsters.",
-                "originalPosition": 24893,
+                "originalPosition": 24896,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If this card is Tributed, or banished, to activate a Spellcaster monster's effect: You can add this card to your hand.",
-                "originalPosition": 24894,
+                "originalPosition": 24897,
                 "trailingText": "\nYou can only use each effect of \"Genia of the Ring\" once per turn."
             }
         ],
@@ -228346,17 +228422,17 @@
         "effects": [
             {
                 "mainEffect": "① If this card is in your hand: You can discard 1 other card; Special Summon this card.",
-                "originalPosition": 24895,
+                "originalPosition": 24898,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If an Xyz Monster(s) is sent to the GY, while this card is in your GY (except during the Damage Step): You can banish this card; Special Summon 1 Zombie monster from your GY.",
-                "originalPosition": 24896,
+                "originalPosition": 24899,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ During the Standby Phase of the next turn after this card was banished: You can target 1 Zombie Xyz Monster you control; attach this banished card to it.",
-                "originalPosition": 24897,
+                "originalPosition": 24900,
                 "trailingText": "\nYou can only use each effect of \"Officiating Reverie\" once per turn."
             }
         ],
@@ -228368,12 +228444,12 @@
         "effects": [
             {
                 "mainEffect": "\n① During the Main Phase (Quick Effect): You can detach 1 material from this card, then target 1 Zombie monster in your GY; Special Summon it, then you can negate the effects of 1 monster your opponent controls with ATK less than or equal to that monster.",
-                "originalPosition": 24898,
+                "originalPosition": 24901,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If this card is sent to the GY: You can target 1 monster in either GY; shuffle it into the Deck.",
-                "originalPosition": 24899,
+                "originalPosition": 24902,
                 "trailingText": "\nYou can only use each effect of \"Officiator of Doom Samuel\" once per turn."
             }
         ],
@@ -228385,12 +228461,12 @@
         "effects": [
             {
                 "mainEffect": "① You can reveal this card in your hand; Special Summon 1 \"GMX\" monster or 1 Dinosaur monster from your hand, also you can only attack directly with \"GMX\" monsters for the rest of this turn.",
-                "originalPosition": 24900,
+                "originalPosition": 24903,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If this card is Special Summoned by a monster effect: You can Special Summon 1 Level 4 or lower \"GMX\" or Dinosaur monster from your hand, GY, or banishment in Defense Position.",
-                "originalPosition": 24901,
+                "originalPosition": 24904,
                 "trailingText": "\nYou can only use each effect of \"GMX Partner Selandea\" once per turn."
             }
         ],
@@ -228402,12 +228478,12 @@
         "effects": [
             {
                 "mainEffect": "① If this card is in your hand and you control a \"GMX\" monster or a Dinosaur monster: You can Special Summon this card.",
-                "originalPosition": 24902,
+                "originalPosition": 24905,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② You can target 1 face-up monster on the field; excavate the top cards of your Deck until you excavate a Dinosaur monster, send that Dinosaur monster to the GY, and if you do, the targeted monster becomes a Dinosaur monster (until the end of this turn), also shuffle the rest into the Deck.",
-                "originalPosition": 24903,
+                "originalPosition": 24906,
                 "trailingText": "\nYou can only use each effect of \"GMX Suppression Squad\" once per turn."
             }
         ],
@@ -228419,27 +228495,27 @@
         "effects": [
             {
                 "mainEffect": "",
-                "originalPosition": 24906,
+                "originalPosition": 24909,
                 "trailingText": ""
             },
             {
                 "mainEffect": "",
-                "originalPosition": 24907,
+                "originalPosition": 24910,
                 "trailingText": ""
             },
             {
                 "mainEffect": "",
-                "originalPosition": 24908,
+                "originalPosition": 24911,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n① Gains these effects based on the number of Dinosaur monsters used as Fusion Material for this card.\n●3+: Your opponent cannot target this card with card effects.\n●4+: Can make up to 3 attacks during each Battle Phase.\n●5+: Each time your opponent Normal or Special Summons a monster(s), they lose 800 LP.",
-                "originalPosition": 24904,
+                "originalPosition": 24907,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② Once per turn, if you excavate a card(s) by a \"GMX\" card effect: You can destroy all other monsters on the field.",
-                "originalPosition": 24905,
+                "originalPosition": 24908,
                 "trailingText": ""
             }
         ],
@@ -228451,22 +228527,22 @@
         "effects": [
             {
                 "mainEffect": "",
-                "originalPosition": 24911,
+                "originalPosition": 24914,
                 "trailingText": ""
             },
             {
                 "mainEffect": "",
-                "originalPosition": 24912,
+                "originalPosition": 24915,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n① If this card is Special Summoned: You can add 1 \"GMX\" card from your Deck to your hand.",
-                "originalPosition": 24909,
+                "originalPosition": 24912,
                 "trailingText": "\nYou can only use this effect of \"Evolved Daneen\" once per turn."
             },
             {
                 "mainEffect": "\n② If you excavate a card(s) by a \"GMX\" card effect: You can activate the following effect, based on where this card is at activation (but you can only use each effect of \"Evolved Daneen\" once per turn);\n●Field: Gain 1500 LP.\n●GY: Special Summon this card.",
-                "originalPosition": 24910,
+                "originalPosition": 24913,
                 "trailingText": ""
             }
         ],
@@ -228478,12 +228554,12 @@
         "effects": [
             {
                 "mainEffect": "① Fusion Summon 1 Dinosaur Fusion Monster from your Extra Deck using monsters from your hand or field. If your opponent controls a monster, you can also use 1 \"GMX\" monster in your Deck as material.",
-                "originalPosition": 24913,
+                "originalPosition": 24916,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② During your Main Phase: You can banish this card from your GY; excavate the top cards of your Deck until you excavate a \"GMX\" card, add that \"GMX\" card to your hand, also shuffle the rest into the Deck.",
-                "originalPosition": 24914,
+                "originalPosition": 24917,
                 "trailingText": "\nYou can only use 1 \"GMX 55th Experiment Report\" effect per turn, and only once that turn."
             }
         ],
@@ -228495,12 +228571,12 @@
         "effects": [
             {
                 "mainEffect": "① Your opponent cannot activate cards or effects when you Normal or Special Summon a \"GMX\" monster(s).",
-                "originalPosition": 24915,
+                "originalPosition": 24918,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② During your Main Phase: You can Set 1 \"GMX\" Spell/Trap from your Deck, except \"GMX Lab #5\", then place 1 card from your hand on top of the Deck.",
-                "originalPosition": 24916,
+                "originalPosition": 24919,
                 "trailingText": "\nYou can only use this effect of \"GMX Lab #5\" once per turn."
             }
         ],
@@ -228512,7 +228588,7 @@
         "effects": [
             {
                 "mainEffect": "\n① Once per turn, when your opponent activates a monster effect on the field (except during the Damage Step): You can excavate the top 5 cards of your Deck, then if you excavated a \"GMX\" card(s), negate that activated effect, also place all the excavated cards on the top or bottom of the Deck in any order.",
-                "originalPosition": 24917,
+                "originalPosition": 24920,
                 "trailingText": ""
             }
         ],
@@ -228524,17 +228600,17 @@
         "effects": [
             {
                 "mainEffect": "\n① You can discard this card; place 1 Continuous Trap that mentions \"Light and Darkness Ritual\" from your Deck or GY, face-up on your field.",
-                "originalPosition": 24918,
+                "originalPosition": 24921,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② While you have a Ritual Spell in your GY, this card is unaffected by your opponent's activated effects.",
-                "originalPosition": 24919,
+                "originalPosition": 24922,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ Once per turn, during your Main Phase: You can banish 2 cards your opponent controls.",
-                "originalPosition": 24920,
+                "originalPosition": 24923,
                 "trailingText": ""
             }
         ],
@@ -228546,12 +228622,12 @@
         "effects": [
             {
                 "mainEffect": "① If this card is in your hand or GY: You can target 3 other cards in the GYs and/or face-up banishment, including a card that mentions \"Light and Darkness Ritual\"; place them on the bottom of the Deck in any order, and if you do, Special Summon this card.",
-                "originalPosition": 24921,
+                "originalPosition": 24924,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If this card is sent to the GY: You can send 1 Ritual Spell from your hand or Deck to the GY; add 1 Ritual Monster whose name is mentioned on that card from your Deck to your hand.",
-                "originalPosition": 24922,
+                "originalPosition": 24925,
                 "trailingText": "\nYou can only use each effect of \"Skull Archfiend of Chaos\" once per turn."
             }
         ],
@@ -228563,12 +228639,12 @@
         "effects": [
             {
                 "mainEffect": "① If this card is Normal or Special Summoned: You can reveal your entire hand, and if you revealed a card that mentions \"Light and Darkness Ritual\", you can draw 3 cards, then discard 2 cards, also for the rest of this turn, you can only Special Summon once from the Extra Deck.",
-                "originalPosition": 24923,
+                "originalPosition": 24926,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② You can Tribute this card; Special Summon 1 Ritual Monster that mentions \"Light and Darkness Ritual\" from your hand.",
-                "originalPosition": 24924,
+                "originalPosition": 24927,
                 "trailingText": "\nYou can only use each effect of \"Celtic Mystic\" once per turn."
             }
         ],
@@ -228580,22 +228656,22 @@
         "effects": [
             {
                 "mainEffect": "① (Quick Effect): You can discard this card, then activate 1 of these effects;\n●The next battle or effect damage you take this turn will become 0.\n●Set 1 Quick-Play Spell or Trap that mentions \"Light and Darkness Ritual\" from your Deck. It can be activated this turn.",
-                "originalPosition": 24925,
+                "originalPosition": 24928,
                 "trailingText": "\nYou can only use this effect of \"Griffoh\" once per turn."
             },
             {
                 "mainEffect": "",
-                "originalPosition": 24927,
+                "originalPosition": 24930,
                 "trailingText": ""
             },
             {
                 "mainEffect": "",
-                "originalPosition": 24928,
+                "originalPosition": 24931,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If you Ritual Summon exactly 1 Level 8 Ritual Monster with a card effect that requires use of monsters, this card can be used as the entire Tribute.",
-                "originalPosition": 24926,
+                "originalPosition": 24929,
                 "trailingText": ""
             }
         ],
@@ -228607,17 +228683,17 @@
         "effects": [
             {
                 "mainEffect": "\n① You can reveal this card in your hand; add 1 \"Sacred Beast\" Trap from your Deck to your hand, then discard 1 card.",
-                "originalPosition": 24929,
+                "originalPosition": 24932,
                 "trailingText": "\nYou can only use this effect of \"Inferno of the Sacred Beasts - Uria, Lord of Searing Flames\" once per turn."
             },
             {
                 "mainEffect": "\n② Gains 1000 ATK/DEF for each Trap in the GYs.",
-                "originalPosition": 24930,
+                "originalPosition": 24933,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ Once per turn (Quick Effect): You can target 1 Spell/Trap on the field; destroy it. Neither player can activate cards or effects in response to this effect's activation.",
-                "originalPosition": 24931,
+                "originalPosition": 24934,
                 "trailingText": ""
             }
         ],
@@ -228629,17 +228705,17 @@
         "effects": [
             {
                 "mainEffect": "\n① You can reveal this card in your hand; add 1 \"Sacred Beast\" Spell from your Deck to your hand, then discard 1 card.",
-                "originalPosition": 24932,
+                "originalPosition": 24935,
                 "trailingText": "\nYou can only use this effect of \"Calamity of the Sacred Beasts - Hamon, Lord of Striking Thunder\" once per turn."
             },
             {
                 "mainEffect": "\n② Once per turn, if a monster(s) is sent to your opponent's GY: Inflict 1000 damage to your opponent.",
-                "originalPosition": 24933,
+                "originalPosition": 24936,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ If this card is destroyed by battle or card effect: You can activate this effect; you take no damage this turn.",
-                "originalPosition": 24934,
+                "originalPosition": 24937,
                 "trailingText": ""
             }
         ],
@@ -228651,12 +228727,12 @@
         "effects": [
             {
                 "mainEffect": "\n① You can reveal this card in your hand; add 1 \"Sacred Beast\" monster from your Deck to your hand except \"Infinity of the Sacred Beasts - Raviel, Lord of Phantasms\", then discard 1 card.",
-                "originalPosition": 24935,
+                "originalPosition": 24938,
                 "trailingText": "\nYou can only use this effect of \"Infinity of the Sacred Beasts - Raviel, Lord of Phantasms\" once per turn."
             },
             {
                 "mainEffect": "\n② Once per turn (Quick Effect): You can Tribute 2 other \"Sacred Beast\" monsters; destroy as many monsters your opponent controls as possible, and if you do, this card gains 1000 ATK for each card destroyed.",
-                "originalPosition": 24936,
+                "originalPosition": 24939,
                 "trailingText": ""
             }
         ],
@@ -228668,17 +228744,17 @@
         "effects": [
             {
                 "mainEffect": "① You can reveal this card in your hand; discard 1 card, and if you do, Special Summon 1 \"Sacred Beast\" monster from your hand in Defense Position, except a Level 8 monster.",
-                "originalPosition": 24937,
+                "originalPosition": 24940,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② You can discard 1 card; Special Summon 1 \"Sacred Beast\" monster from your hand or GY in Defense Position, except a Level 8 monster or the discarded card.",
-                "originalPosition": 24938,
+                "originalPosition": 24941,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ You can banish this card from your GY; Special Summon 1 \"Sacred Beast\" monster from your GY in Defense Position, except a Level 8 monster.",
-                "originalPosition": 24939,
+                "originalPosition": 24942,
                 "trailingText": "\nYou can only use each effect of \"Summoner of the Sacred Beasts\" once per turn."
             }
         ],
@@ -228690,17 +228766,17 @@
         "effects": [
             {
                 "mainEffect": "① If this card is Normal or Special Summoned: You can place 1 \"Sacred Beast\" Field Spell or 1 \"Sacred Beast\" Continuous Spell/Trap from your Deck, face-up on your field.",
-                "originalPosition": 24940,
+                "originalPosition": 24943,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If you control another \"Sacred Beast\" monster: You can Special Summon 2 \"Martyr of the Sacred Beasts\" from your hand, Deck, and/or GY.",
-                "originalPosition": 24941,
+                "originalPosition": 24944,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ During your opponent's End Phase, if you have this card and a Level 10 \"Sacred Beast\" monster in your GY: You can add this card to your hand.",
-                "originalPosition": 24942,
+                "originalPosition": 24945,
                 "trailingText": "\nYou can only use each effect of \"Martyr of the Sacred Beasts\" once per turn."
             }
         ],
@@ -228712,12 +228788,12 @@
         "effects": [
             {
                 "mainEffect": "① During the turn a card(s) was destroyed by your \"Blitzclique\" card effect (Quick Effect): You can reveal this card in your hand; Special Summon up to 3 Thunder monsters from your hand, then you can destroy up to that many cards on the field, also for the rest of this turn, you cannot Special Summon Effect Monsters, except from the hand.",
-                "originalPosition": 24943,
+                "originalPosition": 24946,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② When a monster effect is activated, except in the hand (Quick Effect): You can return 1 other Thunder monster you control to the hand; negate the activation, and if you do, destroy that monster.",
-                "originalPosition": 24944,
+                "originalPosition": 24947,
                 "trailingText": "\nYou can only use each effect of \"Whisker Blitzclique\" once per turn."
             }
         ],
@@ -228729,12 +228805,12 @@
         "effects": [
             {
                 "mainEffect": "① You can reveal this card in your hand, then target 1 monster on the field; destroy it, and if you do, Special Summon 1 Thunder monster from your hand, also for the rest of this turn, you cannot Special Summon Effect Monsters, except from the hand.",
-                "originalPosition": 24945,
+                "originalPosition": 24948,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If another card(s) is destroyed by card effect, while this card is in the Monster Zone (except during the Damage Step): You can add 1 \"Blitzclique\" monster from your Deck to your hand, except \"Surge Blitzclique\".",
-                "originalPosition": 24946,
+                "originalPosition": 24949,
                 "trailingText": "\nYou can only use each effect of \"Surge Blitzclique\" once per turn."
             }
         ],
@@ -228746,12 +228822,12 @@
         "effects": [
             {
                 "mainEffect": "① During your opponent's turn, when your opponent activates a monster effect on the field (Quick Effect): You can reveal this card in your hand; destroy that monster, and if you do, Special Summon 1 Thunder monster from your hand, also for the rest of this turn, you cannot Special Summon Effect Monsters, except from the hand.",
-                "originalPosition": 24947,
+                "originalPosition": 24950,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If another card(s) is destroyed by card effect, while this card is in the Monster Zone (except during the Damage Step): You can send 1 \"Blitzclique\" Spell/Trap from your Deck to the GY.",
-                "originalPosition": 24948,
+                "originalPosition": 24951,
                 "trailingText": "\nYou can only use each effect of \"Crackle Blitzclique\" once per turn."
             }
         ],
@@ -228763,12 +228839,12 @@
         "effects": [
             {
                 "mainEffect": "① You can reveal this card in your hand, then target 1 Spell/Trap on the field; destroy it, and if you do, Special Summon 1 Thunder monster from your hand, also for the rest of this turn, you cannot Special Summon Effect Monsters, except from the hand.",
-                "originalPosition": 24949,
+                "originalPosition": 24952,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If another card(s) is destroyed by card effect, while this card is in the Monster Zone (except during the Damage Step): You can add 1 \"Blitzclique\" Spell or 1 \"Hideout in the Sky, Coulomb\" from your Deck to your hand.",
-                "originalPosition": 24950,
+                "originalPosition": 24953,
                 "trailingText": "\nYou can only use each effect of \"Grain Blitzclique\" once per turn."
             }
         ],
@@ -228780,12 +228856,12 @@
         "effects": [
             {
                 "mainEffect": "① If this card is added to your hand, except by drawing it: You can reveal this card, then target 1 card on the field; destroy it, and if you do, Special Summon 1 Thunder monster from your hand, also for the rest of this turn, you cannot Special Summon Effect Monsters, except from the hand.",
-                "originalPosition": 24951,
+                "originalPosition": 24954,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If another card(s) is destroyed by card effect, while this card is in the Monster Zone (except during the Damage Step): You can add 1 \"Blitzclique\" Trap from your Deck to your hand.",
-                "originalPosition": 24952,
+                "originalPosition": 24955,
                 "trailingText": "\nYou can only use each effect of \"Emi Blitzclique\" once per turn."
             }
         ],
@@ -228797,12 +228873,12 @@
         "effects": [
             {
                 "mainEffect": "① If this card is in your hand: You can target 1 Spellcaster monster or 1 Fusion Monster on the field; Special Summon this card, and if you do, the targeted monster gains 1000 ATK until the end of this turn.",
-                "originalPosition": 24953,
+                "originalPosition": 24956,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If this card is Normal or Special Summoned, or flipped face-up: You can banish 1 \"Invoked\" monster from your Extra Deck; add 1 \"Invocation\", or 1 Spell that mentions it, from your Deck to your hand.",
-                "originalPosition": 24954,
+                "originalPosition": 24957,
                 "trailingText": "\nYou can only use each effect of \"Aleister the Reminiscent\" once per turn."
             }
         ],
@@ -228814,12 +228890,12 @@
         "effects": [
             {
                 "mainEffect": "① You can banish this card from your hand or field; add 1 \"Aleister\" monster from your Deck to your hand, then if this effect was activated on the field, immediately after this effect resolves, you can Normal Summon 1 Spellcaster monster.",
-                "originalPosition": 24955,
+                "originalPosition": 24958,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If a face-up Fusion Monster(s) you control is sent to the GY, except by battle, while this card is in your GY (except during the Damage Step): You can Special Summon this card, then you can Fusion Summon 1 \"Invoked\" monster from your Extra Deck, using monsters from your hand or field.",
-                "originalPosition": 24956,
+                "originalPosition": 24959,
                 "trailingText": "\nYou can only use each effect of \"Aiwass, Divine Spirit of the Law\" once per turn."
             }
         ],
@@ -228831,17 +228907,17 @@
         "effects": [
             {
                 "mainEffect": "① If you have an \"Aleister\" monster in your field or GY: You can Special Summon this card from your hand.",
-                "originalPosition": 24957,
+                "originalPosition": 24960,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If this card is Special Summoned: You can Set 1 \"Invocation\", or 1 Spell that mentions it, from your Deck.",
-                "originalPosition": 24958,
+                "originalPosition": 24961,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ When your opponent activates a card or effect in response to your Fusion Monster's effect activation (Quick Effect): You can banish this card you control, and if you do, negate that opponent's effect, and if you do that, banish it.",
-                "originalPosition": 24959,
+                "originalPosition": 24962,
                 "trailingText": "\nYou can only use each effect of \"Virakam, the Divine Spirit of Artifice\" once per turn."
             }
         ],
@@ -228853,17 +228929,17 @@
         "effects": [
             {
                 "mainEffect": "① If this card is in your hand: You can reveal 1 other \"The Phantom Knights\" card in your hand; Special Summon this card.",
-                "originalPosition": 24960,
+                "originalPosition": 24963,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If this card is Normal or Special Summoned: You can add 1 \"The Phantom Knights\" monster from your Deck to your hand.",
-                "originalPosition": 24961,
+                "originalPosition": 24964,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ You can banish this card from your GY, then target 1 Xyz Monster you control; this turn, you can use that face-up Xyz Monster as material for an Xyz Summon using its Rank as if it were a Level.",
-                "originalPosition": 24962,
+                "originalPosition": 24965,
                 "trailingText": "\nYou can only use each effect of \"The Phantom Knights of Decayed Cloak\" once per turn."
             }
         ],
@@ -228875,17 +228951,17 @@
         "effects": [
             {
                 "mainEffect": "① If you control no monsters, you can Special Summon this card (from your hand).",
-                "originalPosition": 24963,
+                "originalPosition": 24966,
                 "trailingText": "\nYou can only Special Summon \"The Phantom Knights of Doomed Soleret\" once per turn this way. You can only use each of the following effects of \"The Phantom Knights of Doomed Soleret\" once per turn."
             },
             {
                 "mainEffect": "\n② If this card is Normal or Special Summoned: You can Set 1 \"The Phantom Knights\" Spell/Trap from your Deck.",
-                "originalPosition": 24964,
+                "originalPosition": 24967,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ You can banish this card from your GY, then target up to 2 Level/Rank 3 DARK monsters you control; increase their Levels/Ranks by 1.",
-                "originalPosition": 24965,
+                "originalPosition": 24968,
                 "trailingText": ""
             }
         ],
@@ -228897,12 +228973,12 @@
         "effects": [
             {
                 "mainEffect": "① If this card is Normal or Special Summoned: You can add 1 \"S-Force\" monster from your Deck to your hand, except \"S-Force Signify\", then if your opponent controls a monster in this card's column, you can draw 1 card.",
-                "originalPosition": 24966,
+                "originalPosition": 24969,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If your opponent activates a monster effect in the same column as a monster you control (except during the Damage Step): You can make all \"S-Force\" monsters you control gain 1000 ATK.",
-                "originalPosition": 24967,
+                "originalPosition": 24970,
                 "trailingText": "\nYou can only use each effect of \"S-Force Signify\" once per turn."
             }
         ],
@@ -228914,12 +228990,12 @@
         "effects": [
             {
                 "mainEffect": "① If your opponent Normal or Special Summons a monster(s) (except during the Damage Step): You can Special Summon this card from your hand, then you can Fusion Summon 1 \"Melffy\" Fusion Monster from your Extra Deck, using monsters from your hand or field.",
-                "originalPosition": 24968,
+                "originalPosition": 24971,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If this card is Normal or Special Summoned: You can add 1 \"Melffy\" monster from your Deck to your hand, then if you added a Normal Monster, you can Special Summon any number of Beast monsters from your hand.",
-                "originalPosition": 24969,
+                "originalPosition": 24972,
                 "trailingText": "\nYou can only use 1 \"Melffy Rabbys\" effect per turn, and only once that turn."
             }
         ],
@@ -228931,17 +229007,17 @@
         "effects": [
             {
                 "mainEffect": "① You can reveal this card and 1 Spell/Trap in your hand; until the end of the next turn, neither player can activate cards or effects in response to the activation of cards, or effects of cards, with the revealed Spell/Trap's name.",
-                "originalPosition": 24970,
+                "originalPosition": 24973,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If this card is sent from the hand or field to the GY by a Spell/Trap effect: You can Special Summon this card.",
-                "originalPosition": 24971,
+                "originalPosition": 24974,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ If this card is Special Summoned from the GY: You can take control of 1 monster your opponent controls with the highest ATK (your choice, if tied).",
-                "originalPosition": 24972,
+                "originalPosition": 24975,
                 "trailingText": "\nYou can only use each effect of \"Phara the Primordial Goddess\" once per turn."
             }
         ],
@@ -228953,17 +229029,17 @@
         "effects": [
             {
                 "mainEffect": "① You can Special Summon this card (from your hand) by returning 1 or 2 monsters you control to the hand.",
-                "originalPosition": 24973,
+                "originalPosition": 24976,
                 "trailingText": "\nYou can only Special Summon \"Astrazma Urania\" once per turn this way. You can only use each of the following effects of \"Astrazma Urania\" once per turn."
             },
             {
                 "mainEffect": "\n② If this card is Special Summoned: You can reveal any number of monsters in your hand with different Levels, then target that many face-up cards your opponent controls; negate their effects.",
-                "originalPosition": 24974,
+                "originalPosition": 24977,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ If this card on the field is destroyed by card effect and sent to the GY: You can add this card to your hand.",
-                "originalPosition": 24975,
+                "originalPosition": 24978,
                 "trailingText": ""
             }
         ],
@@ -228975,7 +229051,7 @@
         "effects": [
             {
                 "mainEffect": "If this card is in your hand: You can reveal 1 Fusion Monster in your Extra Deck and banish 1 material whose name is mentioned on it from your Deck, then Special Summon this card, and if you do, this card's name can be treated as the banished monster's, if used as Fusion Material this turn.",
-                "originalPosition": 24976,
+                "originalPosition": 24979,
                 "trailingText": "\nYou can only use this effect of \"Sorcerer of the Swamp\" once per turn."
             }
         ],
@@ -228987,12 +229063,12 @@
         "effects": [
             {
                 "mainEffect": "① If this card is in your hand: You can target 1 Pendulum Monster you control; place that Pendulum Monster in your Pendulum Zone (neither player can activate its Pendulum Effects this turn), and if you do, Special Summon this card.",
-                "originalPosition": 24977,
+                "originalPosition": 24980,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② (Quick Effect): You can Tribute this card, then target 1 card in your Pendulum Zone; it cannot be destroyed by your opponent's card effects this turn.",
-                "originalPosition": 24978,
+                "originalPosition": 24981,
                 "trailingText": "\nYou can only use each effect of \"Twilight Specter Rayrage\" once per turn.\n[Pendulum Effect]"
             }
         ],
@@ -229001,7 +229077,7 @@
         "pendulumEffects": [
             {
                 "mainEffect": "\nIf a Pendulum Monster(s) you control would be destroyed by an opponent's card effect, you can destroy this card instead of 1 of those Pendulum Monsters.",
-                "originalPosition": 24979,
+                "originalPosition": 24982,
                 "trailingText": "\nYou can only use this effect of \"Twilight Specter Rayrage\" once per turn."
             }
         ]
@@ -229010,12 +229086,12 @@
         "effects": [
             {
                 "mainEffect": "① You can Tribute this card, then reveal 1 Machine monster in your hand; add 1 Machine monster with a different Attribute from your Deck to your hand, then if you added a monster with 1200 or less ATK, you can Special Summon 1 Machine monster from your hand.",
-                "originalPosition": 24980,
+                "originalPosition": 24983,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If a monster(s) in your possession is destroyed by card effect, while this card is in your GY (except during the Damage Step): You can banish this card; destroy 1 card on the field.",
-                "originalPosition": 24981,
+                "originalPosition": 24984,
                 "trailingText": "\nYou can only use each effect of \"Gray Layer\" once per turn."
             }
         ],
@@ -229027,17 +229103,17 @@
         "effects": [
             {
                 "mainEffect": "\n① Unaffected by your opponent's activated effects, unless they target this card, also Spells/Traps you control cannot be destroyed, or banished, by your opponent's card effects.",
-                "originalPosition": 24983,
+                "originalPosition": 24986,
                 "trailingText": "\nYou can only use each of the following effects of \"Magician of Dark Chaos - Black Chaos\" once per turn."
             },
             {
                 "mainEffect": "\n② If this card is Special Summoned: You can add 1 Spell from your GY to your hand.",
-                "originalPosition": 24982,
+                "originalPosition": 24985,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ You can target 1 card your opponent controls; banish it face-down.",
-                "originalPosition": 24984,
+                "originalPosition": 24987,
                 "trailingText": ""
             }
         ],
@@ -229049,17 +229125,17 @@
         "effects": [
             {
                 "mainEffect": "\n① Unaffected by your opponent's activated effects, unless they target this card, also cannot be destroyed by battle.",
-                "originalPosition": 24986,
+                "originalPosition": 24989,
                 "trailingText": "\nYou can only use each of the following effects of \"Black Luster Soldier - Soldier of Light and Darkness\" once per turn."
             },
             {
                 "mainEffect": "\n② If this card is Special Summoned: You can target 1 card your opponent controls; banish it.",
-                "originalPosition": 24985,
+                "originalPosition": 24988,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ When this card destroys an opponent's monster by battle: You can make this card gain 1500 ATK, and if you do, it can make a second attack in a row.",
-                "originalPosition": 24987,
+                "originalPosition": 24990,
                 "trailingText": ""
             }
         ],
@@ -229071,17 +229147,17 @@
         "effects": [
             {
                 "mainEffect": "",
-                "originalPosition": 24990,
+                "originalPosition": 24993,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n① The first two times this card on the field would be destroyed by card effect each turn, it is not destroyed.",
-                "originalPosition": 24988,
+                "originalPosition": 24991,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② Once per Chain, up to thrice per turn (Quick Effect): You can target 1 face-up monster your opponent controls; negate its effects (until the end of this turn), then you can gain LP equal to half that monster's ATK.",
-                "originalPosition": 24989,
+                "originalPosition": 24992,
                 "trailingText": ""
             }
         ],
@@ -229093,12 +229169,12 @@
         "effects": [
             {
                 "mainEffect": "\n① During the Main Phase (Quick Effect): You can target 1 Level 6 or lower monster in either GY; Special Summon it to your field in Defense Position, but negate its effects.",
-                "originalPosition": 24991,
+                "originalPosition": 24994,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If this card is in your GY: You can Fusion Summon 1 \"Invoked\" Fusion Monster from your Extra Deck, by banishing this card from your GY and monsters from your field or GY as material.",
-                "originalPosition": 24992,
+                "originalPosition": 24995,
                 "trailingText": "\nYou can only use each effect of \"Invoked Sorath\" once per turn."
             }
         ],
@@ -229110,12 +229186,12 @@
         "effects": [
             {
                 "mainEffect": "\n① If this card is Special Summoned: You can add 1 \"Virakam, the Divine Spirit of Artifice\" or 1 \"Gamma Summon\" from your Deck to your hand, then you can banish 1 monster from either GY.",
-                "originalPosition": 24993,
+                "originalPosition": 24996,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② You can banish this card from your GY, then target 1 Fusion Monster you control; monsters your opponent currently controls lose ATK equal to the targeted monster's ATK, until the end of this turn.",
-                "originalPosition": 24994,
+                "originalPosition": 24997,
                 "trailingText": "\nYou can only use each effect of \"Invoked Baybarron\" once per turn."
             }
         ],
@@ -229127,17 +229203,17 @@
         "effects": [
             {
                 "mainEffect": "\n① While this card is in the Main Monster Zone, your opponent's monsters cannot target monsters for attacks, except this one.",
-                "originalPosition": 24995,
+                "originalPosition": 24998,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② While this card is in the Extra Monster Zone, any monster sent to your opponent's GY is banished instead.",
-                "originalPosition": 24996,
+                "originalPosition": 24999,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ You can banish this card from your GY, then target 1 Fusion Monster you control; it can attack directly this turn.",
-                "originalPosition": 24997,
+                "originalPosition": 25000,
                 "trailingText": "\nYou can only use this effect of \"Invoked Oceanus\" once per turn."
             }
         ],
@@ -229149,12 +229225,12 @@
         "effects": [
             {
                 "mainEffect": "\n① If this card is Fusion Summoned: You can banish cards from the field and/or GYs, up to the number of monsters used as material, then if you used 3 or more materials, you can look at your opponent's Extra Deck and banish up to 3 cards from it.",
-                "originalPosition": 24998,
+                "originalPosition": 25001,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② (Quick Effect): You can declare 1 Attribute; all other monsters on the field become that Attribute until the end of this turn.",
-                "originalPosition": 24999,
+                "originalPosition": 25002,
                 "trailingText": "\nYou can only use 1 \"Hyperinvoked Aeon\" effect per turn, and only once that turn."
             }
         ],
@@ -229166,12 +229242,12 @@
         "effects": [
             {
                 "mainEffect": "\n① If this card is Fusion Summoned: You can target an equal number of \"Melffy\" cards you control and cards your opponent controls; return them to the hand.",
-                "originalPosition": 25000,
+                "originalPosition": 25003,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If your opponent Normal or Special Summons a monster(s) (except during the Damage Step), or if an opponent's monster targets this card for an attack: You can target 1 Beast monster in your GY; reduce this card's Level by exactly 2, and if you do, Special Summon that target.",
-                "originalPosition": 25001,
+                "originalPosition": 25004,
                 "trailingText": "\nYou can only use each effect of \"Melffys' Joyful Surprise\" once per turn."
             }
         ],
@@ -229183,12 +229259,12 @@
         "effects": [
             {
                 "mainEffect": "\n① While this card is in the center Main Monster Zone, neither player can declare attacks, except with monsters in their center Main Monster Zones.",
-                "originalPosition": 25002,
+                "originalPosition": 25005,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② During the Main Phase, if this card is in the center Main Monster Zone (Quick Effect): You can return this card to the Extra Deck, and if you do, Special Summon up to 1 \"Elfnote\" monster each from your hand, Deck, and GY.",
-                "originalPosition": 25003,
+                "originalPosition": 25006,
                 "trailingText": "\nYou can only use this effect of \"Elfnote June Pride\" once per turn."
             }
         ],
@@ -229200,12 +229276,12 @@
         "effects": [
             {
                 "mainEffect": "\n① If this card is Synchro Summoned: You can add 1 Level 8 or higher monster with 0 ATK from your Deck to your hand.",
-                "originalPosition": 25004,
+                "originalPosition": 25007,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② You can target 1 monster with 0 ATK in your GY; Special Summon it, but negate its effects, also it cannot be used as material for a Fusion, Synchro, Xyz, or Link Summon.",
-                "originalPosition": 25005,
+                "originalPosition": 25008,
                 "trailingText": "\nYou can only use each effect of \"Glitch Clutch Nullgainer\" once per turn."
             }
         ],
@@ -229217,17 +229293,17 @@
         "effects": [
             {
                 "mainEffect": "\n① You can detach 1 material from this card; Special Summon 1 \"The Phantom Knights\" monster from your Deck.",
-                "originalPosition": 25006,
+                "originalPosition": 25009,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If you Xyz Summon an \"Xyz Dragon\" monster, while this card is in your Monster Zone (except during the Damage Step): You can add 1 \"Rank-Up-Magic\" Spell from your Deck to your hand.",
-                "originalPosition": 25007,
+                "originalPosition": 25010,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ If this card is destroyed: You can add 1 of your banished \"The Phantom Knights\" cards to your hand, except Xyz Monsters.",
-                "originalPosition": 25008,
+                "originalPosition": 25011,
                 "trailingText": "\nYou can only use each effect of \"The Phantom Knights of Malevolent Scythe\" once per turn."
             }
         ],
@@ -229239,17 +229315,17 @@
         "effects": [
             {
                 "mainEffect": "\n① If this card is Special Summoned: You can add 1 \"Melffy\" Spell/Trap from your Deck or GY to your hand.",
-                "originalPosition": 25009,
+                "originalPosition": 25012,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② Gains ATK equal to the combined ATK and DEF of \"Melffy\" monsters attached to it.",
-                "originalPosition": 25010,
+                "originalPosition": 25013,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ You can detach 5 materials from this card; return all cards your opponent controls to the hand.",
-                "originalPosition": 25011,
+                "originalPosition": 25014,
                 "trailingText": ""
             }
         ],
@@ -229261,12 +229337,12 @@
         "effects": [
             {
                 "mainEffect": "\n① If this card is Link Summoned, and you have a \"Power Patron\" monster in your GY: You can add 1 \"Theorealize\" card from your Deck to your hand.",
-                "originalPosition": 25012,
+                "originalPosition": 25015,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② During the Main Phase, if you control another DARK Fairy monster, you can (Quick Effect): Immediately after this effect resolves, Link Summon 1 Link Monster using materials you control, including this card.",
-                "originalPosition": 25013,
+                "originalPosition": 25016,
                 "trailingText": "\nYou can only use each effect of \"Purification Power Patron\" once per turn."
             }
         ],
@@ -229278,12 +229354,12 @@
         "effects": [
             {
                 "mainEffect": "\n① If this card is Special Summoned: You can add 1 \"S-Force\" Spell/Trap from your Deck to your hand.",
-                "originalPosition": 25014,
+                "originalPosition": 25017,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② (Quick Effect): You can banish this card you control and 1 \"S-Force\" card in your hand; Special Summon 1 \"S-Force\" monster from your Deck/Extra Deck, except \"S-Force Nightcatcher\".",
-                "originalPosition": 25015,
+                "originalPosition": 25018,
                 "trailingText": "\nYou can only use each effect of \"S-Force Nightcatcher\" once per turn."
             }
         ],
@@ -229295,12 +229371,12 @@
         "effects": [
             {
                 "mainEffect": "\n① While your opponent controls a monster in this card's column, they cannot target this card with card effects, nor Special Summon by an activated monster effect.",
-                "originalPosition": 25016,
+                "originalPosition": 25019,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② (Quick Effect): You can target 1 monster on the field; move it to another Main Monster Zone on its controller's field.",
-                "originalPosition": 25017,
+                "originalPosition": 25020,
                 "trailingText": "\nYou can only use this effect of \"S-Force Mystify\" once per turn."
             }
         ],
@@ -229312,22 +229388,22 @@
         "effects": [
             {
                 "mainEffect": "",
-                "originalPosition": 25020,
+                "originalPosition": 25023,
                 "trailingText": ""
             },
             {
                 "mainEffect": "",
-                "originalPosition": 25021,
+                "originalPosition": 25024,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n① Your Tribute Summoned monsters can make a second attack during each Battle Phase.",
-                "originalPosition": 25018,
+                "originalPosition": 25021,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If this card is Tributed: You can activate 1 of these effects (but you can only use each effect of \"Clown Crew Dristy\" once per turn);\n●Return all Link Monsters from the field and the GYs to the Extra Deck.\n●Each player with a hand shuffles their entire hand into the Deck, then draws the same number of cards they shuffled into the Deck.",
-                "originalPosition": 25019,
+                "originalPosition": 25022,
                 "trailingText": ""
             }
         ],
@@ -229339,12 +229415,12 @@
         "effects": [
             {
                 "mainEffect": "\n① If this card is Link Summoned: You can send 1 monster from your Deck to the GY, or if all materials used for its Link Summon were monsters you controlled, you can send 1 monster from your Extra Deck instead.",
-                "originalPosition": 25022,
+                "originalPosition": 25025,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② During your next Standby Phase after this card was sent from the field to the GY: You can add 1 monster from your GY to your hand.",
-                "originalPosition": 25023,
+                "originalPosition": 25026,
                 "trailingText": ""
             }
         ],
@@ -229356,12 +229432,12 @@
         "effects": [
             {
                 "mainEffect": "① This card can be used to Ritual Summon \"Magician of Dark Chaos - Black Chaos\" or \"Black Luster Soldier - Soldier of Light and Darkness\". You must also Tribute monsters from your hand or field, and/or banish monsters from your GY, whose total Levels equal or exceed its Level.",
-                "originalPosition": 25024,
+                "originalPosition": 25027,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If this card is in your GY: You can add this card and 1 card that mentions \"Light and Darkness Ritual\" from your GY to your hand.",
-                "originalPosition": 25025,
+                "originalPosition": 25028,
                 "trailingText": "\nYou can only use this effect of \"Light and Darkness Ritual\" once per turn."
             }
         ],
@@ -229373,12 +229449,12 @@
         "effects": [
             {
                 "mainEffect": "① When your opponent activates a card or effect that targets another card(s) you control: Return 1 of your targeted cards to the hand (if face-down, reveal it), and if you do, destroy 1 card on the field, then you can Special Summon 1 monster from your hand that mentions \"Light and Darkness Ritual\" with a different name than the card returned to the hand, ignoring its Summoning conditions.",
-                "originalPosition": 25026,
+                "originalPosition": 25029,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If this card in its owner's possession is destroyed by an opponent's card: You can Special Summon 1 Ritual Monster that mentions \"Light and Darkness Ritual\" from your hand or Deck.",
-                "originalPosition": 25027,
+                "originalPosition": 25030,
                 "trailingText": ""
             }
         ],
@@ -229390,7 +229466,7 @@
         "effects": [
             {
                 "mainEffect": "When your opponent activates a monster effect, or a Normal Spell/Trap Card: Choose 3 Spells/Traps with different names from your Deck and 1 monster in your Main Monster Zone that mentions \"Light and Darkness Ritual\". Special Summon the Spells/Traps as Normal Monsters (Spellcaster/DARK/Level 8/ATK 0/DEF 0) in face-down Defense Position (their names become \"Chaos Magical Hats\" even while face-down), Set the chosen monster if it is face-up, and shuffle them on the field. Then your opponent's activated effect becomes \"Destroy 1 monster your opponent controls in face-down Defense Position\".",
-                "originalPosition": 25028,
+                "originalPosition": 25031,
                 "trailingText": ""
             }
         ],
@@ -229402,12 +229478,12 @@
         "effects": [
             {
                 "mainEffect": "① Add 3 \"Sacred Beast\" monsters with different names from your Deck to your hand, then discard 2 cards.",
-                "originalPosition": 25029,
+                "originalPosition": 25032,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If this card is in your GY, except the turn it was sent there: You can banish it; add 1 Level 10 Pyro, Thunder, or Fiend monster that cannot be Normal Summoned/Set, from your Deck to your hand.",
-                "originalPosition": 25030,
+                "originalPosition": 25033,
                 "trailingText": "\nYou can only use each effect of \"Sacred Beasts Released\" once per turn."
             }
         ],
@@ -229419,12 +229495,12 @@
         "effects": [
             {
                 "mainEffect": "① Up to thrice per turn, during your Main Phase: You can send 3 other cards of the same type (Monster, Spell, or Trap) from your hand and/or face-up field to the GY, then you can Special Summon 1 \"Sacred Beast\" monster from your hand, Deck, GY, or banishment, and if you do, it is unaffected by your opponent's activated Spell/Trap effects.",
-                "originalPosition": 25031,
+                "originalPosition": 25034,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If you control a \"Sacred Beast\" monster whose original Level is 10: You can draw 2 cards.",
-                "originalPosition": 25032,
+                "originalPosition": 25035,
                 "trailingText": "\nYou can only use this effect of \"Fallen Paradise of the Sacred Beasts\" once per turn."
             }
         ],
@@ -229436,12 +229512,12 @@
         "effects": [
             {
                 "mainEffect": "① During your Main Phase: You can place 2 \"Sacred Beasts Thunderclap\" from your hand, Deck, and/or GY, face-up on your field, then you can reveal 1 Level 10 \"Sacred Beast\" monster in your hand, then place 1 \"Fallen Paradise of the Sacred Beasts\" from your Deck, face-up in your Field Zone.",
-                "originalPosition": 25033,
+                "originalPosition": 25036,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② During your opponent's End Phase, if this card is in your GY: You can add this card to your hand.",
-                "originalPosition": 25034,
+                "originalPosition": 25037,
                 "trailingText": "\nYou can only use each effect of \"Sacred Beasts Thunderclap\" once per turn."
             }
         ],
@@ -229453,17 +229529,17 @@
         "effects": [
             {
                 "mainEffect": "① Monsters you control that were Normal or Special Summoned from the hand gain 500 ATK/DEF.",
-                "originalPosition": 25035,
+                "originalPosition": 25038,
                 "trailingText": "\nYou can only use each of the following effects of \"Hideout in the Sky, Coulomb\" once per turn."
             },
             {
                 "mainEffect": "\n② During your Main Phase: You can Special Summon 1 \"Mech Beast Token\" (Machine/EARTH/Level 6/ATK 2000/DEF 2000) to your opponent's field, and if you do, add 1 \"Blitzclique\" monster from your Deck to your hand.",
-                "originalPosition": 25036,
+                "originalPosition": 25039,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ If a card(s) is destroyed by your \"Blitzclique\" card's effect, while this card is in your GY (except during the Damage Step): You can add this card to your hand.",
-                "originalPosition": 25037,
+                "originalPosition": 25040,
                 "trailingText": ""
             }
         ],
@@ -229475,22 +229551,22 @@
         "effects": [
             {
                 "mainEffect": "① Activate 1 of these effects;\n●Place 1 \"Blitzclique\" Continuous Trap from your Deck, face-up on your field.\n●Return 1 Thunder monster you control to the hand, then target 1 card on the field; destroy it.",
-                "originalPosition": 25038,
-                "trailingText": ""
-            },
-            {
-                "mainEffect": "",
-                "originalPosition": 25040,
-                "trailingText": ""
-            },
-            {
-                "mainEffect": "",
                 "originalPosition": 25041,
                 "trailingText": ""
             },
             {
+                "mainEffect": "",
+                "originalPosition": 25043,
+                "trailingText": ""
+            },
+            {
+                "mainEffect": "",
+                "originalPosition": 25044,
+                "trailingText": ""
+            },
+            {
                 "mainEffect": "\n② If a card(s) is destroyed by your \"Blitzclique\" card's effect, while this card is in your GY (except during the Damage Step): You can add this card to your hand.",
-                "originalPosition": 25039,
+                "originalPosition": 25042,
                 "trailingText": "\nYou can only use each effect of \"Blitzclique - Breakaway\" once per turn."
             }
         ],
@@ -229502,17 +229578,17 @@
         "effects": [
             {
                 "mainEffect": "① If a card(s) is destroyed by your \"Blitzclique\" card's effect (except during the Damage Step): You can target 1 Thunder monster in your GY; add it to your hand.",
-                "originalPosition": 25042,
+                "originalPosition": 25045,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② During your Main Phase: You can Special Summon 1 Thunder monster from your hand, then destroy this card.",
-                "originalPosition": 25043,
+                "originalPosition": 25046,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ If a card(s) is destroyed by your \"Blitzclique\" card's effect, while this card is in your GY (except during the Damage Step): You can add this card to your hand.",
-                "originalPosition": 25044,
+                "originalPosition": 25047,
                 "trailingText": "\nYou can only use each effect of \"Blitzclique - Steppleader\" once per turn."
             }
         ],
@@ -229524,12 +229600,12 @@
         "effects": [
             {
                 "mainEffect": "① Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters you control. If Summoning an \"Invoked\" Fusion Monster this way, you can also return monsters from any banishment to the GY as material.",
-                "originalPosition": 25045,
+                "originalPosition": 25048,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② During your Main Phase, if this card is in your GY: You can target 1 \"Aleister\" monster or \"Invocation\" in your GY; shuffle this card into the Deck, and if you do, add that target to your hand.",
-                "originalPosition": 25046,
+                "originalPosition": 25049,
                 "trailingText": "\nYou can only use each effect of \"Invocation - \"Sword\"\" once per turn."
             }
         ],
@@ -229541,7 +229617,7 @@
         "effects": [
             {
                 "mainEffect": "Activate 1 of these effects, but you cannot declare attacks for the rest of this turn, except with Fusion Monsters;\n●Special Summon 1 \"Aiwass, Divine Spirit of the Law\" from your Deck or GY.\n●Take 1 \"Aleister\" monster from your Deck, and either send it to the GY or banish it.\n●Look at 3 random face-down cards in your opponent's Extra Deck, and if you do, banish 1 of them.",
-                "originalPosition": 25047,
+                "originalPosition": 25050,
                 "trailingText": "\nYou can only activate 1 \"Sacred Spirit Sword Aiwass\" per turn."
             }
         ],
@@ -229550,17 +229626,17 @@
         "pendulumEffects": [
             {
                 "mainEffect": "",
-                "originalPosition": 25048,
+                "originalPosition": 25051,
                 "trailingText": ""
             },
             {
                 "mainEffect": "",
-                "originalPosition": 25049,
+                "originalPosition": 25052,
                 "trailingText": ""
             },
             {
                 "mainEffect": "",
-                "originalPosition": 25050,
+                "originalPosition": 25053,
                 "trailingText": ""
             }
         ]
@@ -229569,12 +229645,12 @@
         "effects": [
             {
                 "mainEffect": "① Show 1 \"Nerva the Power Patron of Creation\", 1 \"Jupiter the Power Patron of Destruction\", and 1 \"Junora the Power Patron of Tuning\" from your Extra Deck, face-up Monster Zone, and/or GY, and if you do, your opponent cannot activate cards or effects in response to the activation of your \"Power Patron\" monster effects this turn.",
-                "originalPosition": 25051,
+                "originalPosition": 25054,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If you would banish the top card(s) of your Deck to activate the effect of a \"Power Patron\" monster you control, you can banish this card from your GY instead.",
-                "originalPosition": 25052,
+                "originalPosition": 25055,
                 "trailingText": "\nYou can only use each effect of \"Prohibitive Power Patron Purview - Vilaea\" once per turn."
             }
         ],
@@ -229586,12 +229662,12 @@
         "effects": [
             {
                 "mainEffect": "① If you control an \"Artmage\", \"DoomZ\", or \"Elfnote\" card: You can Special Summon 1 \"Medius the Pure\" from your hand or Deck. Your opponent cannot activate cards or effects when that monster is Special Summoned.",
-                "originalPosition": 25053,
+                "originalPosition": 25056,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② You can banish this card from your GY, then target 1 Fusion, Synchro, or Xyz Monster in your GY; Special Summon it to your zone a Link Monster points to.",
-                "originalPosition": 25054,
+                "originalPosition": 25057,
                 "trailingText": "\nYou can only use 1 \"Theorealize Past Lull\" effect per turn, and only once that turn."
             }
         ],
@@ -229603,7 +229679,7 @@
         "effects": [
             {
                 "mainEffect": "Target 1 \"The Phantom Knights\" or \"Xyz Dragon\" monster in your GY or banishment; Special Summon it, but negate its effects, then apply the following effect.\n●Choose 1 DARK Xyz Monster you control, and Special Summon from your Extra Deck, 1 \"The Phantom Knights\" or \"Xyz Dragon\" Xyz Monster that is 1 Rank higher than that monster, by using it as material (this is treated as an Xyz Summon, transfer its materials).",
-                "originalPosition": 25055,
+                "originalPosition": 25058,
                 "trailingText": "\nYou can only activate 1 \"The Phantom Knights' Rank-Up-Magic Requiem\" per turn."
             }
         ],
@@ -229612,7 +229688,7 @@
         "pendulumEffects": [
             {
                 "mainEffect": "",
-                "originalPosition": 25056,
+                "originalPosition": 25059,
                 "trailingText": ""
             }
         ]
@@ -229621,12 +229697,12 @@
         "effects": [
             {
                 "mainEffect": "① Special Summon 1 \"S-Force\" monster from your hand, GY, or banishment, but banish it when it leaves the field.",
-                "originalPosition": 25057,
+                "originalPosition": 25060,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If another card is banished, while this card is in your GY (except during the Damage Step): You can banish this card; take 2 \"S-Force\" cards from your Deck, except \"S-Force Origin\", banish 1 of them, and send the other to the GY.",
-                "originalPosition": 25058,
+                "originalPosition": 25061,
                 "trailingText": "\nYou can only use each effect of \"S-Force Origin\" once per turn."
             }
         ],
@@ -229638,12 +229714,12 @@
         "effects": [
             {
                 "mainEffect": "① Add up to 4 \"Melffy\" monsters with different names from your Deck to your hand, then it becomes the End Phase of this turn.",
-                "originalPosition": 25059,
+                "originalPosition": 25062,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② You can banish this card from your GY, then target 2 \"Melffy\" cards in your GY, except \"Melffy Footsteps\"; add 1 of them to your hand, and if you do, place the other on the bottom of your Deck.",
-                "originalPosition": 25060,
+                "originalPosition": 25063,
                 "trailingText": "\nYou can only use this effect of \"Melffy Footsteps\" once per turn. You cannot Special Summon the turn you activate this card, except \"Melffy\" monsters."
             }
         ],
@@ -229655,12 +229731,12 @@
         "effects": [
             {
                 "mainEffect": "\n① Banish any number of Spellcaster monsters and/or Spells from your GY; monsters you control gain 200 ATK x the number banished, and if they do, you gain 400 LP x the number banished.",
-                "originalPosition": 25061,
+                "originalPosition": 25064,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② During your Main Phase: You can banish this card from your GY; Special Summon any number of Spellcaster monsters with different Attributes from your hand.",
-                "originalPosition": 25062,
+                "originalPosition": 25065,
                 "trailingText": "\nYou can only use 1 \"Spiritual Power Recovery Potion\" effect per turn, and only once that turn."
             }
         ],
@@ -229672,7 +229748,7 @@
         "effects": [
             {
                 "mainEffect": "Draw cards equal to the number of cards your opponent controls, then if you drew 2 or more cards, place cards from your hand on the bottom of the Deck in any order, equal to the number you drew -1. For the rest of this turn after this card resolves, you cannot activate \"Pot of Sloth\".",
-                "originalPosition": 25063,
+                "originalPosition": 25066,
                 "trailingText": ""
             }
         ],
@@ -229684,12 +229760,12 @@
         "effects": [
             {
                 "mainEffect": "① Reveal 1 Ritual Spell from your hand or Deck, and if you do, add 1 monster from your Deck to your hand that mentions that Spell's name.",
-                "originalPosition": 25064,
+                "originalPosition": 25067,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If a face-up Ritual Monster(s) you control leaves the field by card effect while this card is in your GY, and you do not control any face-up monsters, other than Ritual Monsters (except during the Damage Step): You can add this card from your GY to your hand.",
-                "originalPosition": 25065,
+                "originalPosition": 25068,
                 "trailingText": "\nYou can only use each effect of \"Ragged Records of Rites\" once per turn."
             }
         ],
@@ -229701,7 +229777,7 @@
         "effects": [
             {
                 "mainEffect": "Activate the following effect depending on whose turn it is;\n●Yours: Place 1 Thunder or Rock monster from your Deck on top of your Deck, then if you have a Thunder or Rock monster in your field or GY, you can destroy 1 card on the field.\n●Opponent's: Add 1 Thunder or Rock monster from your field, GY or banishment to your hand, or if a monster(s) was destroyed by battle or card effect this turn, you can add 1 such monster from your Deck instead.",
-                "originalPosition": 25066,
+                "originalPosition": 25069,
                 "trailingText": "\nYou can only activate 1 \"Superconductive Plasma Blast\" per turn."
             }
         ],
@@ -229710,12 +229786,12 @@
         "pendulumEffects": [
             {
                 "mainEffect": "",
-                "originalPosition": 25067,
+                "originalPosition": 25070,
                 "trailingText": ""
             },
             {
                 "mainEffect": "",
-                "originalPosition": 25068,
+                "originalPosition": 25071,
                 "trailingText": ""
             }
         ]
@@ -229724,17 +229800,17 @@
         "effects": [
             {
                 "mainEffect": "① Once per turn: You can place Season Counters on this card equal to the number of your opponent's unused Main Monster Zones.",
-                "originalPosition": 25069,
+                "originalPosition": 25072,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② Once per turn, when your monster declares an attack: You can inflict damage to your opponent equal to the total number of Season Counters on this card and \"Spring\" in your GY x 400.",
-                "originalPosition": 25070,
+                "originalPosition": 25073,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ Once per turn, during your opponent's End Phase: You can take 1 Field Spell from your hand or Deck that you can place a Season Counter on, and place it face-up on your field (but neither player can activate its effects this turn), and if you do, place all Season Counters on this card on that card.",
-                "originalPosition": 25071,
+                "originalPosition": 25074,
                 "trailingText": ""
             }
         ],
@@ -229746,12 +229822,12 @@
         "effects": [
             {
                 "mainEffect": "① During either player's turn: You can add 1 monster that mentions \"Light and Darkness Ritual\" from your Deck to your hand, then discard 1 card.",
-                "originalPosition": 25072,
+                "originalPosition": 25075,
                 "trailingText": "\nYou can only use this effect of \"Mind Shuffle\" once per turn."
             },
             {
                 "mainEffect": "\n② When your opponent activates a card or effect: You can return 1 Level 7 or higher monster you control to the hand; Special Summon 1 monster that mentions \"Light and Darkness Ritual\" from your hand, with a different name than the returned monster, ignoring its Summoning conditions.",
-                "originalPosition": 25073,
+                "originalPosition": 25076,
                 "trailingText": "\nYou cannot activate these effects of \"Mind Shuffle\" in the same Chain."
             }
         ],
@@ -229763,12 +229839,12 @@
         "effects": [
             {
                 "mainEffect": "① Special Summon 1 \"Sacred Beast\" monster from your hand or GY in Defense Position, then if you control 2 or more \"Sacred Beast\" monsters whose original Levels are 10, you can negate the effects of 1 face-up card your opponent controls, and if you do, destroy it.",
-                "originalPosition": 25074,
+                "originalPosition": 25077,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② You can banish this card from your GY; Fusion Summon 1 \"Phantasm\" Fusion Monster from your Extra Deck, using monsters from your hand or field.",
-                "originalPosition": 25075,
+                "originalPosition": 25078,
                 "trailingText": "\nYou can only use each effect of \"Sacred Beasts Combined Assault\" once per turn."
             }
         ],
@@ -229780,17 +229856,17 @@
         "effects": [
             {
                 "mainEffect": "① You can send 3 face-up \"Abyss of the Sacred Beasts\" you control to the GY, including this card, then target 1 face-up monster your opponent controls; change it to face-down Defense Position.",
-                "originalPosition": 25077,
+                "originalPosition": 25080,
                 "trailingText": "\nYou can only use each of the following effects of \"Abyss of the Sacred Beasts\" once per turn."
             },
             {
                 "mainEffect": "\n② During the Main Phase: You can place 2 \"Abyss of the Sacred Beasts\" from your hand, Deck, and/or GY, face-up on your field.",
-                "originalPosition": 25076,
+                "originalPosition": 25079,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ During your opponent's End Phase, if this card is in your GY: You can place this card on the bottom of the Deck.",
-                "originalPosition": 25078,
+                "originalPosition": 25081,
                 "trailingText": ""
             }
         ],
@@ -229802,17 +229878,17 @@
         "effects": [
             {
                 "mainEffect": "① \"Blitzclique\" monsters you control cannot be destroyed by your opponent's card effects.",
-                "originalPosition": 25079,
+                "originalPosition": 25082,
                 "trailingText": "\nYou can only use each of the following effects of \"Blitzclique Return Stroke\" once per turn."
             },
             {
                 "mainEffect": "\n② When your opponent activates a Spell Card or effect: You can return 1 \"Blitzclique\" monster you control to the hand; negate that effect, and if you do, destroy that card.",
-                "originalPosition": 25080,
+                "originalPosition": 25083,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ You can banish this card from your GY, then target 1 \"Blitzclique\" monster in your field or GY; return it to the hand.",
-                "originalPosition": 25081,
+                "originalPosition": 25084,
                 "trailingText": ""
             }
         ],
@@ -229824,17 +229900,17 @@
         "effects": [
             {
                 "mainEffect": "① Monsters your opponent controls lose 300 ATK/DEF for each Thunder monster you control.",
-                "originalPosition": 25082,
+                "originalPosition": 25085,
                 "trailingText": "\nYou can only use each of the following effects of \"Blitzclique Alternator\" once per turn."
             },
             {
                 "mainEffect": "\n② You can shuffle 1 other \"Blitzclique\" card from your hand or face-up field into the Deck; add 1 Thunder monster with a different name from your Deck to your hand.",
-                "originalPosition": 25083,
+                "originalPosition": 25086,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ You can banish this card from your GY; add 1 \"Blitzclique\" Spell or \"Hideout in the Sky, Coulomb\" from your Deck to your hand.",
-                "originalPosition": 25084,
+                "originalPosition": 25087,
                 "trailingText": ""
             }
         ],
@@ -229846,12 +229922,12 @@
         "effects": [
             {
                 "mainEffect": "① Banish 1 \"Aleister\" monster or 1 Fusion Monster from your GY; Special Summon 1 \"Invoked\" monster from your Extra Deck, ignoring its Summoning conditions, but banish it during the End Phase.",
-                "originalPosition": 25085,
+                "originalPosition": 25088,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If a monster is banished face-up, while this card is in your GY (except during the Damage Step): You can banish this card, then target 1 of your banished \"Invoked\" monsters; Special Summon it.",
-                "originalPosition": 25086,
+                "originalPosition": 25089,
                 "trailingText": "\nYou can only use each effect of \"Gamma Summon\" once per turn."
             }
         ],
@@ -229863,7 +229939,7 @@
         "effects": [
             {
                 "mainEffect": "Special Summon 1 \"Power Patron\" monster from your hand, face-up Extra Deck, or GY, then you can apply these effects in sequence, based on the number of different card types (Fusion, Synchro, or Xyz) you control.\n●1+: Banish (face-down) 3 cards from the top of your opponent's Deck.\n●2+: Banish (face-down) 1 card your opponent controls.\n●3: Banish (face-down) 1 random card from your opponent's hand.",
-                "originalPosition": 25087,
+                "originalPosition": 25090,
                 "trailingText": "\nYou can only activate 1 \"Power Patron Shade of the Final Hour\" per turn."
             }
         ],
@@ -229872,17 +229948,17 @@
         "pendulumEffects": [
             {
                 "mainEffect": "",
-                "originalPosition": 25088,
+                "originalPosition": 25091,
                 "trailingText": ""
             },
             {
                 "mainEffect": "",
-                "originalPosition": 25089,
+                "originalPosition": 25092,
                 "trailingText": ""
             },
             {
                 "mainEffect": "",
-                "originalPosition": 25090,
+                "originalPosition": 25093,
                 "trailingText": ""
             }
         ]
@@ -229891,12 +229967,12 @@
         "effects": [
             {
                 "mainEffect": "① The monster in your center Main Monster Zone cannot be banished by your opponent's card effects.",
-                "originalPosition": 25091,
+                "originalPosition": 25094,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② You can send 1 other Spell/Trap from your hand or field to the GY, then declare a Level from 1 to 4; Special Summon 1 \"Elfnote Seraphim Token\" (Plant/Tuner/FIRE/ATK 0/DEF 0) with the declared Level. While that Token is in the Monster Zone, the player who Summoned it cannot Special Summon from the Extra Deck, except \"Elfnote\" monsters.",
-                "originalPosition": 25092,
+                "originalPosition": 25095,
                 "trailingText": "\nYou can only use this effect of \"Elfnotes: Quatrain of Succession\" once per turn."
             }
         ],
@@ -229908,12 +229984,12 @@
         "effects": [
             {
                 "mainEffect": "\n① Special Summon this card in Defense Position as a Normal Monster (Warrior/DARK/Level 3/ATK 0/DEF 300) (this card is NOT treated as a Trap), then you can change 1 Attack Position monster your opponent controls to Defense Position.",
-                "originalPosition": 25093,
+                "originalPosition": 25096,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② You can banish this card from your GY; immediately after this effect resolves, Xyz Summon 1 DARK Xyz Monster.",
-                "originalPosition": 25094,
+                "originalPosition": 25097,
                 "trailingText": "\nYou can only use each effect of \"The Phantom Knights of Umbrage Veil\" once per turn."
             }
         ],
@@ -229925,12 +230001,12 @@
         "effects": [
             {
                 "mainEffect": "① If an \"S-Force\" monster you control would banish a card(s) from your hand to activate its effect, you can send 1 \"S-Force\" card from your Deck to the GY instead, except \"S-Force World Sorting\".",
-                "originalPosition": 25095,
+                "originalPosition": 25098,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If another card(s) is banished (except during the Damage Step): You can target 1 card in your opponent's field or GY; banish it, then you can move 1 \"S-Force\" monster you control to another of your Main Monster Zones.",
-                "originalPosition": 25096,
+                "originalPosition": 25099,
                 "trailingText": "\nYou can only use each effect of \"S-Force World Sorting\" once per turn."
             }
         ],
@@ -229942,12 +230018,12 @@
         "effects": [
             {
                 "mainEffect": "① Target 1 \"Melffy\" monster in your field or GY; return it to the hand, then you can Fusion Summon 1 Beast Fusion Monster from your Extra Deck, using monsters from your hand or field.",
-                "originalPosition": 25097,
+                "originalPosition": 25100,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If you control a \"Melffy\" Xyz Monster: You can banish this card from your GY; for the rest of this turn, \"Melffy\" monsters you control that are Special Summoned from the Extra Deck are unaffected by your opponent's activated effects.",
-                "originalPosition": 25098,
+                "originalPosition": 25101,
                 "trailingText": "\nYou can only use each effect of \"Melffy Playtime Surprise\" once per turn."
             }
         ],
@@ -229959,12 +230035,12 @@
         "effects": [
             {
                 "mainEffect": "① If you control a Tribute Summoned monster: Discard any number of cards, then target that many face-up cards on the field; destroy them.",
-                "originalPosition": 25099,
+                "originalPosition": 25102,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② You can banish this card from your GY, and Tribute 1 Ritual, Fusion, Synchro, Xyz, Pendulum, or Link Monster from your hand or field; add 1 \"Clown Crew\" monster with a different original Level/Rank/Link Rating from your Deck or GY to your hand.",
-                "originalPosition": 25100,
+                "originalPosition": 25103,
                 "trailingText": "\nYou can only use each effect of \"Clown Crew Finale\" once per turn."
             }
         ],
@@ -229976,7 +230052,7 @@
         "effects": [
             {
                 "mainEffect": "When a monster effect is activated on your opponent's field, during a turn your opponent has Special Summoned: Destroy the monster that activated its effect, then if your opponent controls a card(s) in its adjacent Monster Zones and/or Spell & Trap Zones, destroy them.",
-                "originalPosition": 25101,
+                "originalPosition": 25104,
                 "trailingText": ""
             }
         ],
@@ -229988,12 +230064,12 @@
         "effects": [
             {
                 "mainEffect": "① When this card is activated: You can Special Summon 1 of your banished monsters to your rightmost Main Monster Zone.",
-                "originalPosition": 25102,
+                "originalPosition": 25105,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If your opponent would Normal or Special Summon a monster(s) in their Main Monster Zone, they must use their leftmost zone(s) that can be used.",
-                "originalPosition": 25103,
+                "originalPosition": 25106,
                 "trailingText": ""
             }
         ],
@@ -230005,12 +230081,12 @@
         "effects": [
             {
                 "mainEffect": "① When your opponent activates a monster effect on the field, except monsters that were Summoned this turn: Negate that activation, then you can banish (face-down) all face-up monsters your opponent controls, except monsters Summoned this turn.",
-                "originalPosition": 25104,
+                "originalPosition": 25107,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If this Set card in its owner's control is destroyed by an opponent's card effect: You can Set 1 Trap from your Deck.",
-                "originalPosition": 25105,
+                "originalPosition": 25108,
                 "trailingText": ""
             }
         ],
@@ -230022,12 +230098,12 @@
         "effects": [
             {
                 "mainEffect": "① While you control 5 cards in your Spell & Trap Zone, any battle damage a player takes is halved, also once per turn, you can activate 1 Continuous Trap Card the turn it was Set.",
-                "originalPosition": 25106,
+                "originalPosition": 25109,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② During the Standby Phase: You can reveal 5 Continuous Traps from your Deck with different names, your opponent randomly picks 1 for you to Set, and shuffle the rest into the Deck.",
-                "originalPosition": 25107,
+                "originalPosition": 25110,
                 "trailingText": "\nYou can only use this effect of \"Garden of Talistones\" once per turn."
             }
         ],
@@ -230051,7 +230127,7 @@
         "effects": [
             {
                 "mainEffect": "Gains 300 ATK for every \"Dark Magician\" or \"Magician of Black Chaos\" in the GYs.",
-                "originalPosition": 25108,
+                "originalPosition": 25111,
                 "trailingText": ""
             }
         ],
@@ -230075,7 +230151,7 @@
         "effects": [
             {
                 "mainEffect": "Fusion Summon 1 Fusion Monster from your Extra Deck, using monsters from your hand or field.",
-                "originalPosition": 25109,
+                "originalPosition": 25112,
                 "trailingText": ""
             }
         ],
@@ -230087,7 +230163,7 @@
         "effects": [
             {
                 "mainEffect": "Target 1 monster in either GY; Special Summon it.",
-                "originalPosition": 25110,
+                "originalPosition": 25113,
                 "trailingText": ""
             }
         ],
@@ -230099,12 +230175,12 @@
         "effects": [
             {
                 "mainEffect": "① During the Main Phase (Quick Effect): You can discard this card; Fusion Summon 1 Dragon or Spellcaster monster from your Extra Deck, using monsters from your hand or field.",
-                "originalPosition": 25111,
+                "originalPosition": 25114,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② If this card is sent to the GY as material for a Fusion Summon: You can Set 1 \"Dracotail\" Spell/Trap from your Deck.",
-                "originalPosition": 25112,
+                "originalPosition": 25115,
                 "trailingText": "\nYou can only use each effect of \"Dracotail Faimena\" once per turn."
             }
         ],
@@ -230116,12 +230192,12 @@
         "effects": [
             {
                 "mainEffect": "\n① If this card is Special Summoned: You can place 1 \"Yummy\" Field Spell from your hand or Deck, face-up on your field, also you cannot Link Summon Link-3 or higher Link Monsters for the rest of this turn.",
-                "originalPosition": 25113,
+                "originalPosition": 25116,
                 "trailingText": "\nYou can only use this effect of \"Yummy★Snatchy\" once per turn."
             },
             {
                 "mainEffect": "\n② Once per Chain, during the Main Phase or your opponent's Battle Phase (Quick Effect): You can pay 100 LP; immediately after this effect resolves, Synchro Summon using monsters you control as material, including a \"Yummy\" monster.",
-                "originalPosition": 25114,
+                "originalPosition": 25117,
                 "trailingText": ""
             }
         ],
@@ -230133,22 +230209,22 @@
         "effects": [
             {
                 "mainEffect": "① During the Main Phase (Quick Effect): You can target 1 non-Dragon \"Vanquish Soul\" monster you control; return it to the hand, and if you do, Special Summon this card from your hand.",
-                "originalPosition": 25115,
-                "trailingText": ""
-            },
-            {
-                "mainEffect": "",
-                "originalPosition": 25117,
-                "trailingText": ""
-            },
-            {
-                "mainEffect": "",
                 "originalPosition": 25118,
                 "trailingText": ""
             },
             {
+                "mainEffect": "",
+                "originalPosition": 25120,
+                "trailingText": ""
+            },
+            {
+                "mainEffect": "",
+                "originalPosition": 25121,
+                "trailingText": ""
+            },
+            {
                 "mainEffect": "\n② (Quick Effect): You can activate 1 of these effects, by revealing monster(s) in your hand with the listed Attribute(s);\n●EARTH: This face-up card is unaffected by your opponent's activated effects this turn.\n●EARTH, FIRE, & DARK: Destroy 1 other card on the field.",
-                "originalPosition": 25116,
+                "originalPosition": 25119,
                 "trailingText": "\nYou can only use each effect of \"Vanquish Soul Caesar Valius\" once per turn, and cannot activate more than 1 in the same Chain."
             }
         ],
@@ -230160,12 +230236,12 @@
         "effects": [
             {
                 "mainEffect": "\n① You can detach 1 material from this card; add 1 \"K9\" card from your Deck to your hand, then if your opponent has activated a monster effect this turn, you can Set 1 \"K9\" Quick-Play Spell from your Deck or GY.",
-                "originalPosition": 25119,
+                "originalPosition": 25122,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② When your opponent activates a monster effect in the hand or GY (Quick Effect): You can detach 1 material from this card; negate that effect.",
-                "originalPosition": 25120,
+                "originalPosition": 25123,
                 "trailingText": "\nYou can only use each effect of \"K9-17 \"Ripper\"\" once per turn."
             }
         ],
@@ -230177,17 +230253,17 @@
         "effects": [
             {
                 "mainEffect": "\n① If this card is Special Summoned: You can destroy all monsters your opponent controls.",
-                "originalPosition": 25121,
+                "originalPosition": 25124,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n② When your opponent activates a card or effect (Quick Effect): You can activate this effect; your opponent can discard 1 card, or that effect is negated.",
-                "originalPosition": 25122,
+                "originalPosition": 25125,
                 "trailingText": ""
             },
             {
                 "mainEffect": "\n③ If this card is Tributed: You can add 1 \"Mitsurugi\" card from your Deck to your hand, except \"Ame no Murakumo no Mitsurugi\", then you can Special Summon this card.",
-                "originalPosition": 25123,
+                "originalPosition": 25126,
                 "trailingText": "\nYou can only use each effect of \"Ame no Murakumo no Mitsurugi\" once per turn."
             }
         ],
