@@ -187,6 +187,24 @@
     },
     {
         "effects": [],
+        "leadingText": "Cannot be destroyed by battle, also you take no battle damage from battles involving this card. Before damage calculation, if this Attack Position card is targeted for an attack: Inflict damage to your opponent equal to that attacking monster's ATK. Once per turn, during your End Phase: Tribute 1 other monster or DESTROY this card. When this card is destroyed, except by its own effect: Its owner can Special Summon 1 \"Yubel - Terror Incarnate\" from their hand, Deck, or GY.",
+        "name": "Yubel",
+        "pendulumEffects": []
+    },
+    {
+        "effects": [],
+        "leadingText": "Each time an opponent's monster declares an attack, place 1 Sinister Doctrine Counter on this card. You can only use each of the following effects of \"Wicked Canon\" once per turn. During your Main Phase, if this card was activated this turn: You can SEARCH 1 DARK Fiend monster then DISCARD 1 Fiend monster. <b>You can send this card with 4 or more Sinister Doctrine Counters to the GY;</b> Special Summon 1 Fiend monster from your Deck, then you can SEARCH 1 \"Super Polymerization\".",
+        "name": "Wicked Canon",
+        "pendulumEffects": []
+    },
+    {
+        "effects": [],
+        "leadingText": "If you control a \"Neos\" Fusion Monster or \"Elemental HERO Neos\": <b>DISCARD 1 card;</b> Fusion Summon 1 Fusion Monster from your Extra Deck that mentions a \"HERO\" monster as material, using monsters from your hand, Deck, or field. If you control a \"Neos\" Fusion Monster: <b>You can BANISH this card from your GY, then target 1 face-up card your opponent controls;</b> NEGATE its effects until the end of this turn. You can only use each effect of \"Hope for the Future\" once per turn.",
+        "name": "Hope for the Future",
+        "pendulumEffects": []
+    },
+    {
+        "effects": [],
         "leadingText": "You can Ritual Summon this card with \"Throne of the Archfiends\". Must be Ritual Summoned. Unaffected by other monsters' effects while in the Extra Monster Zone. You can only use each of the following effects of \"Archfiend Emperor\" once per turn. If this card is Ritual Summoned from the Extra Deck: You can BANISH all monsters on the field, except in the Extra Monster Zones. If this card is in the Extra Monster Zone: You can Special Summon 1 Fiend monster from your hand, Deck, GY, or BANISHment. <b>\n[Pendulum Effect]\nYou can target 1 other face-up Spell/Trap on the field;</b> DESTROY both it and this card. You can only use this effect of \"Archfiend Emperor\" once per turn.",
         "name": "Archfiend Emperor",
         "pendulumEffects": []
