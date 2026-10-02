@@ -1,10 +1,10 @@
 {
-    "Hope for the Future": {
-        "_current": "If you control a \"Neos\" Fusion Monster or \"Elemental HERO Neos\": <b>DISCARD 1 card;</b> Fusion Summon 1 Fusion Monster from your Extra Deck that mentions a \"HERO\" monster as material, using monsters from your hand, Deck, or field. If you control a \"Neos\" Fusion Monster: <b>You can BANISH this card from your GY, then target 1 face-up card your opponent controls;</b> NEGATE its effects until the end of this turn. You can only use each effect of \"Hope for the Future\" once per turn.",
+    "Dark Rebellion Xyz Dragon, Four Heavenly Dragons": {
+        "_current": "2 Level 4 DARK monsters\n(This card is always treated as a \"The Phantom Knights\" card.)\n① HOPT | If this card is Special Summoned: <b>You can target an equal number of cards on each field;</b> DESTROY them.\n② HOPT | QUICK | When your opponent activates a card or effect: <b>You can detach 1 material from this card;</b> Special Summon 1 Rank 4 DARK Xyz Monster from your Extra Deck, using this card you control (this is treated as an Xyz Summon, transfer this card's materials).",
         "previous": null
     },
-    "Wicked Canon": {
-        "_current": "Each time an opponent's monster declares an attack, place 1 Sinister Doctrine Counter on this card. You can only use each of the following effects of \"Wicked Canon\" once per turn. During your Main Phase, if this card was activated this turn: You can SEARCH 1 DARK Fiend monster then DISCARD 1 Fiend monster. <b>You can send this card with 4 or more Sinister Doctrine Counters to the GY;</b> Special Summon 1 Fiend monster from your Deck, then you can SEARCH 1 \"Super Polymerization\".",
+    "Invoked De Anima": {
+        "_current": "1 \"Aleister\" monster + 1 monster Special Summoned from the Extra Deck\n① HOPT | If this card is Special Summoned: <b>You can activate 1 of these effects;</b> \n● DESTROY all monsters your opponent controls that were Special Summoned from the Extra Deck.\n● DESTROY all Spells/Traps your opponent controls.\n② HOPT | QUICK | When your opponent activates a card effect in the GY: <b>You can BANISH this card you control;</b> Special Summon 1 \"Aleister\" monster from your Deck, and if you do, NEGATE that activated effect.",
         "previous": null
     }
 }

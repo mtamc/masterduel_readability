@@ -56848,6 +56848,10 @@
             "fontsize": 11.4
         },
         {
+            "cardid": 22730,
+            "fontsize": 12.55
+        },
+        {
             "cardid": 22746,
             "fontsize": 15.05
         },
@@ -57258,6 +57262,10 @@
         {
             "cardid": 23029,
             "fontsize": 20.05
+        },
+        {
+            "cardid": 23360,
+            "fontsize": 13.8
         },
         {
             "cardid": 23487,
