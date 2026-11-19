@@ -7,7 +7,6 @@ Credits:
 import UnityPy, os, shutil, re, sys, json, subprocess, time, pickle, errno, multiprocessing as mp#, pathlib
 from PIL import ImageFont
 from datetime import datetime
-from ctypes import c_bool, c_int, c_char_p
 
 # Step 0.0: Common defs
 
@@ -1149,11 +1148,59 @@ def apply_loaded_fonts(loaded_font_list, font_list):
 
 '''Main loop defs'''
 
-def calc_font_sizes(
-prop_range_start,
-prop_range_end,
+#Fonts of the current worker process, loaded once per worker by init_font_worker.
+#Sending a loaded font to another process makes Pillow reload the .ttf, so each worker loads its own.
+worker_font_sizes_nums = None
+
+def load_font_sizes_nums(font_path, font_sizes):
+    return [(s, ImageFont.truetype(font_path, s)) for s in font_sizes]
+
+def init_font_worker(font_path, font_sizes):
+    global worker_font_sizes_nums
+    worker_font_sizes_nums = load_font_sizes_nums(font_path, font_sizes)
+
+#Returns (font size of the main box or None, font size of the Pendulum box or None)
+def calc_card_font_sizes(full_text, OLD_text, prop_bits, unescaped_pend_marker, font_sizes_nums):
+    norm_guess = None
+    pend_guess = None
+
+    has_top_text = unescaped_pend_marker in full_text
+    if has_top_text:
+        bottom_text, top_text   = full_text.split(unescaped_pend_marker)
+        OLD_b_text , OLD_t_text =  OLD_text.split(unescaped_pend_marker)
+
+    #If it doesn't have a Pendulum effect
+    if (not has_top_text) and should_be_resized(OLD_text, full_text):
+        norm_guess = get_correct_font_size(full_text, font_sizes_nums, 0, not is_backrow(prop_bits))
+
+    #If it has a Pendulum effect
+    if has_top_text and should_be_resized(OLD_b_text, bottom_text):
+        norm_guess = get_correct_font_size(bottom_text, font_sizes_nums, 0, True)
+
+    #If it has a Pendulum effect
+    if has_top_text and should_be_resized(OLD_t_text, top_text):
+        pend_guess = get_correct_font_size(top_text, font_sizes_nums, 1, False)
+
+    return norm_guess, pend_guess
+
+#cards: list of (card index, new text, old text, prop bits)
+def calc_font_sizes_chunk(args):
+    unescaped_pend_marker, cards = args
+    return [
+        (i,) + calc_card_font_sizes(full_text, OLD_text, prop_bits, unescaped_pend_marker, worker_font_sizes_nums)
+        for (i, full_text, OLD_text, prop_bits) in cards
+    ]
+
+def set_font_size(font_list, index, font_size):
+    temp = font_list[index]
+    temp.pop("fontsize")
+    temp["fontsize"] = font_size
+    font_list[index] = temp
+
+#All arguments are plain (non-shared) objects. Workers only receive texts and return font sizes;
+#norm_font and pend_font are updated here, in the parent process.
+def calc_font_sizes_multiprocessing(
 prop,
-prop_len,
 bool_main_changed_indices,
 bool_pend_changed_indices,
 post_change_arr,
@@ -1162,98 +1209,31 @@ unescaped_pend_marker,
 norm_font,
 pend_font,
 norm_to_pend_index,
-font_sizes_nums,
-processed_cards
+font_path,
+font_sizes,
+chunk_size=64
 ):
-    for i in range(prop_range_start, prop_range_end):
-        
-        #If nothing changed: Continue
-        if not (bool_main_changed_indices[i] or bool_pend_changed_indices[i]): continue
-        #if loaded_norm_indices_list[i]: continue
+    cards = [
+        (i, post_change_arr[i], pre_change_arr[i], prop[i])
+        for i in range(len(prop))
+        if bool_main_changed_indices[i] or bool_pend_changed_indices[i] #If nothing changed: skip
+    ]
+    chunks = [(unescaped_pend_marker, cards[start:start+chunk_size]) for start in range(0, len(cards), chunk_size)]
 
-        #New and old texts
-        full_text = post_change_arr[i]
-        OLD_text  =  pre_change_arr[i]
-        
-        has_top_text = unescaped_pend_marker in full_text
-        if has_top_text:
-            bottom_text, top_text   = full_text.split(unescaped_pend_marker)
-            OLD_b_text , OLD_t_text =  OLD_text.split(unescaped_pend_marker)
-
-        #If it doesn't have a Pendulum effect
-        if (not has_top_text) and should_be_resized(OLD_text, full_text):
-            guess = get_correct_font_size(full_text, font_sizes_nums, 0, not is_backrow(prop[i]))
-
-            temp = norm_font[i]
-            temp.pop("fontsize")
-            temp["fontsize"] = guess
-            norm_font[i] = temp
-            
-        #If it has a Pendulum effect
-        if has_top_text and should_be_resized(OLD_b_text, bottom_text):
-            guess = get_correct_font_size(bottom_text, font_sizes_nums, 0, True)
-
-            temp = norm_font[i]
-            temp.pop("fontsize")
-            temp["fontsize"] = guess
-            norm_font[i] = temp
-            
-        #If it has a Pendulum effect
-        if has_top_text and should_be_resized(OLD_t_text, top_text):
-            guess = get_correct_font_size(top_text, font_sizes_nums, 1, False)
-
-            temp = pend_font[norm_to_pend_index[i]]
-            temp.pop("fontsize")
-            temp["fontsize"] = guess
-            pend_font[norm_to_pend_index[i]] = temp  
-    
-        processed_cards.value += 1
-        sys.stdout.flush()
-        sys.stdout.write('{:5.1f}%\r'.format(processed_cards.value / prop_len * 100))    
-    #return "Done with thread "+str(prop_range_start)
-
-def calc_font_sizes_multiprocessing():
-  
-    #Initialize shared memory variables
-    prop_range_start = mp.Value(c_int, 0) #segment start boundary
-    prop_range_end = mp.Value(c_int, 0) #segment end boundary
-    processed_cards = mp.Value(c_int, 0) #for status info
- 
     core_count = os.cpu_count() or 1 #use all available logical CPU cores
+    processed_cards = 0
 
-    segment = prop_len // core_count #define the size of each segment by floor dividing the total item number by the number of CPU cores
-    processes = []
+    with mp.Pool(core_count, initializer=init_font_worker, initargs=(font_path, font_sizes)) as pool:
+        for results in pool.imap_unordered(calc_font_sizes_chunk, chunks):
+            for (i, norm_guess, pend_guess) in results:
+                if norm_guess is not None:
+                    set_font_size(norm_font, i, norm_guess)
+                if pend_guess is not None:
+                    set_font_size(pend_font, norm_to_pend_index[i], pend_guess)
+            processed_cards += len(results)
+            sys.stdout.write('{:5.1f}%\r'.format(processed_cards / max(len(cards), 1) * 100))
+            sys.stdout.flush()
 
-    for i in range(core_count):
-        prop_range_start = i * segment
-        if i == core_count - 1:
-            prop_range_end = prop_len  # Ensure the last segment goes up to the end
-        else:
-            prop_range_end = prop_range_start + segment
-        # Creating a process for each segment        
-        process = mp.Process(target=calc_font_sizes, args=(
-        prop_range_start,
-        prop_range_end,
-        prop,
-        prop_len,
-        bool_main_changed_indices,
-        bool_pend_changed_indices,
-        post_change_arr,
-        pre_change_arr,
-        unescaped_pend_marker,
-        norm_font,
-        pend_font,
-        norm_to_pend_index,
-        font_sizes_nums,
-        processed_cards
-        ))
-
-        processes.append(process)
-        process.start()
-        
-    for process in processes:
-        process.join()
-        
     return norm_font,pend_font
 
 #Step 0.4: Defs for "mod the files"
@@ -1295,10 +1275,6 @@ if __name__ == '__main__':
         else:
             print("Warning: supplied path is not a directory; ignoring:", candidate)
 
-    #Shorten multiprocessing terms
-    mp_context = mp.get_context('spawn')
-    manager = mp_context.Manager()
-    
     #Create and clear input and output folders
     os.makedirs(copied_files_folder, exist_ok=True)
     os.makedirs(modded_folder, exist_ok=True)
@@ -1458,46 +1434,39 @@ if __name__ == '__main__':
     font_path = os.path.join(scripts_folder, "!Changed YGO_Card_NA.ttf") #Modded font
 
     #Hard-coded to go from 11 to 28 (inclusive) by steps of 0.05 ((28-11)/0.05 + 1 = 341 fonts)
-    font_sizes_nums_backup = [round(s/20, 2)  for s in range(11*20, 28*20 +1)]
-    font_sizes_nums_backup = [(s, ImageFont.truetype(font_path, s)) for s in font_sizes_nums_backup]
-    font_sizes_nums = manager.list(font_sizes_nums_backup)
+    #The fonts themselves are loaded by each worker process (see init_font_worker)
+    font_sizes = [round(s/20, 2)  for s in range(11*20, 28*20 +1)]
     
     #Get the current font size arrays
     json_data = ReadJSON(font_asset_path)
-    norm_font_backup = json_data['m_CardidNormalFontSizePairDatas']
-    norm_font = manager.list(norm_font_backup)
-    pend_font_backup = json_data['m_CardidPendulumFontSizePairDatas']
-    pend_font = manager.list(pend_font_backup)
+    norm_font = json_data['m_CardidNormalFontSizePairDatas']
+    pend_font = json_data['m_CardidPendulumFontSizePairDatas']
 
     #Make a dict that makes it easy to change the pend array
-    norm_to_pend_index = manager.dict(norm_index_to_pend_index_dict(norm_font, pend_font))
+    norm_to_pend_index = norm_index_to_pend_index_dict(norm_font, pend_font)
     
     #Don't ignore text boxes that only got effect numbers and nothing else
     ignore_if_only_numbered = 'n' == 'y'
 
     #Indices of the changed cards
     with open(unbraced_changed_path, encoding="utf-8") as post_change_desc_json:
-        post_change_arr_backup = json.load(post_change_desc_json)
+        post_change_arr = json.load(post_change_desc_json)
     post_change_desc_json.close()
-    post_change_arr = manager.list(post_change_arr_backup)
 
-    changed_norm_lines_indices, changed_pend_lines_indices, pre_change_arr_backup = get_changed_lines_indices(post_change_arr, ignore_if_only_numbered)
-    pre_change_arr = manager.list(pre_change_arr_backup)
+    changed_norm_lines_indices, changed_pend_lines_indices, pre_change_arr = get_changed_lines_indices(post_change_arr, ignore_if_only_numbered)
 
     #Read the prop file
     prop = get_prop_list()
     prop_len = len(prop)
     prop_range = range(prop_len)
 
-    bool_main_changed_indices_backup = [False for _ in prop_range] #Probably shouldn't use prop for length
+    bool_main_changed_indices = [False for _ in prop_range] #Probably shouldn't use prop for length
     for index in changed_norm_lines_indices:
-        bool_main_changed_indices_backup[index] = True
-    bool_main_changed_indices = manager.list(bool_main_changed_indices_backup)
+        bool_main_changed_indices[index] = True
 
-    bool_pend_changed_indices_backup = [False for _ in prop_range] #Probably shouldn't use prop for length
+    bool_pend_changed_indices = [False for _ in prop_range] #Probably shouldn't use prop for length
     for index in changed_pend_lines_indices:
-        bool_pend_changed_indices_backup[index] = True
-    bool_pend_changed_indices = manager.list(bool_pend_changed_indices_backup)
+        bool_pend_changed_indices[index] = True
 
     print("\nGot indices of changed cards:")
     print(len(changed_norm_lines_indices), "normal text boxes")
@@ -1508,7 +1477,19 @@ if __name__ == '__main__':
     start_time_calc_font_sizes = time.time()
     print("Started at", datetime.fromtimestamp(start_time_calc_font_sizes).strftime("%Y-%m-%d %H:%M:%S"))
 
-    norm_font,pend_font = calc_font_sizes_multiprocessing()
+    norm_font,pend_font = calc_font_sizes_multiprocessing(
+        prop,
+        bool_main_changed_indices,
+        bool_pend_changed_indices,
+        post_change_arr,
+        pre_change_arr,
+        unescaped_pend_marker,
+        norm_font,
+        pend_font,
+        norm_to_pend_index,
+        font_path,
+        font_sizes
+    )
 
     end_time_calc_font_sizes = time.time()
     print("Finished at", datetime.fromtimestamp(end_time_calc_font_sizes).strftime("%Y-%m-%d %H:%M:%S"))
