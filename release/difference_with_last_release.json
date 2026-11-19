@@ -1,46 +1,30 @@
 {
-    "Armament Reincarnation Token": {
-        "_current": "Special Summoned with the effect of \"Armament Reincarnation.\"",
+    "Divine Anima Infinity the Omnific Cubic Supreme Lord": {
+        "_current": "4 \"Cubic\" monsters\nMust be Fusion Summoned. Gains 1500 ATK for each \"Vijam the Cubic Seed\" in your GY, also unaffected by the activated effects of monsters with less ATK than this card (at resolution). Once per turn (QUICK EFFECT): You can shuffle all your banished \"Cubic\" cards into the Deck, and if you do, DESTROY 1 card your opponent controls. If this face-up card in its owner's control leaves the field by an opponent's card: You can Special Summon up to 3 \"Vijam the Cubic Seed\" from your GY.",
         "previous": null
     },
-    "Black Luster Soldier - Soldier of Light and Darkness": {
-        "_current": "You can Ritual Summon this card with \"Light and Darkness Ritual\". Unaffected by your opponent's activated effects, unless they target this card, also cannot be destroyed by battle. You can only use each of the following effects of \"Black Luster Soldier - Soldier of Light and Darkness\" once per turn. If this card is Special Summoned: <b>You can target 1 card your opponent controls;</b> BANISH it. When this card DESTROYS an opponent's monster by battle: You can make this card gain 1500 ATK, and if you do, it can make a second attack in a row.",
-        "previous": "You can Ritual Summon this card with \"Light and Darkness Ritual\".\n① Unaffected by your opponent's activated effects, unless they target this card, also cannot be destroyed by battle.\n② HOPT | If this card is Special Summoned: <b>You can target 1 card your opponent controls;</b> BANISH it.\n③ HOPT | When this card DESTROYS an opponent's monster by battle: You can make this card gain 1500 ATK, and if you do, it can make a second attack in a row."
-    },
-    "Elfnote Seraphim Token": {
-        "_current": "Special Summoned with the effect of \"Elfnotes: Quatrain of Succession.\"",
+    "Ghostrick Master Alucard": {
+        "_current": "3 Level 6 monsters\nYou can also Xyz Summon this card by DISCARDING 1 \"Ghostrick\" card, then using \"Ghostrick Alucard\" you control (transfer its materials). Cannot be used as material for an Xyz Summon. This face-up card cannot be changed to face-down Defense Position. Once per turn (QUICK EFFECT): <b>You can detach 1 material from this card;</b> DESTROY all face-down cards your opponent controls. When a Spell/Trap Card is activated (QUICK EFFECT): <b>You can detach 2 materials from this card;</b> NEGATE the activation, and if you do, Set that card.",
         "previous": null
     },
-    "Invocation - \"Grail\"": {
-        "_current": "HOPT ACTIVATION\nIf you have an \"Aleister\" monster in your field, GY, or BANISHment: <b>Activate 1 of these effects;</b> \n● Fusion Summon 1 \"Invoked\" Fusion Monster from your Extra Deck, by BANISHING 1 monster in your hand or field and 1 monster in your Deck as material.\n● Fusion Summon 1 \"Invoked\" Fusion Monster from your Extra Deck, by BANISHING 1 monster you control and 1 face-up monster your opponent controls as material.",
+    "Marincess Truth Heart": {
+        "_current": "2+ \"Marincess\" monsters\nIf this card is Link Summoned using a Link Monster with 0 original ATK: You can Special Summon 1 Link-3 or lower \"Marincess\" monster from your Extra Deck. You can only use this effect of \"Marincess Truth Heart\" once per turn. <b>You can BANISH 1 Link Monster Card from your field or GY;</b> DESTROY 1 card your opponent controls, also for the rest of this turn, you cannot BANISH monsters with that same Link Rating to activate this effect of \"Marincess Truth Heart\".",
         "previous": null
     },
-    "Magician of Dark Chaos - Black Chaos": {
-        "_current": "You can Ritual Summon this card with \"Light and Darkness Ritual\". Unaffected by your opponent's activated effects, unless they target this card, also Spells/Traps you control cannot be destroyed, or banished, by your opponent's card effects. You can only use each of the following effects of \"Magician of Dark Chaos - Black Chaos\" once per turn. If this card is Special Summoned: You can add 1 Spell from your GY to your hand. <b>You can target 1 card your opponent controls;</b> BANISH it face-down.",
-        "previous": "You can Ritual Summon this card with \"Light and Darkness Ritual\".\n① Unaffected by your opponent's activated effects, unless they target this card, also Spells/Traps you control cannot be destroyed, or banished, by your opponent's card effects.\n② HOPT | If this card is Special Summoned: You can add 1 Spell from your GY to your hand.\n③ HOPT | <b>You can target 1 card your opponent controls;</b> BANISH it face-down."
-    },
-    "Possessed Destiny - Wynn": {
-        "_current": "1 Spellcaster monster + 1 WIND monster\n(This card is always treated as a \"Familiar-Possessed\" card.)\nHOPT | You can use ONE of —\n① If this card is Fusion Summoned: <b>You can place 1 WIND monster from your GY on the bottom of the Deck, then target 1 monster your opponent controls;</b> take control of that monster.\n② OPP'S TURN | QUICK | <b>You can target 2 cards on the field, including a WIND monster you control;</b> place them on the bottom of the Deck in any order.",
+    "Odd-Eyes Override Dragon": {
+        "_current": "2+ monsters, including a Pendulum Monster\n① <b>You can target 1 other card you control;</b> DESTROY it, and if you do, DRAW 1 card.\nDuring your turn, when your opponent activates a card or effect (QUICK EFFECT): You can DISCARD 1 card; NEGATE that effect.\n② You can only use each of the preceding effects of \"Odd-Eyes Override Dragon\" once per turn.\n③ If you destroyed a Pendulum Monster Card by this card's first effect, during your Main Phase this turn, you can conduct 1 Pendulum Summon of a \"Performapal\" monster(s), \"Magician\" Pendulum Monster(s), and/or \"Odd-Eyes\" monster(s), in addition to your Pendulum Summon (you can only gain this effect once per turn).",
         "previous": null
     },
-    "Shade the Obscure": {
-        "_current": "① HOPT | If you have a card in your Pendulum Zone and this card is in your hand: You can Special Summon this card.\n② HOPT | <b>You can pay 1000 LP;</b> DESTROY 1 Pendulum Monster Card in your hand or face-up field, then you can add 1 Pendulum Monster from your Deck to your face-up Extra Deck.\n[Pendulum Effect]\n① You cannot Pendulum Summon, except Pendulum Monsters (this effect cannot be negated).\n② HOPT | If a monster(s) with 1000 ATK or less is Special Summoned (except during the Damage Step): You can BOUNCE this card.",
+    "Odd-Eyes Pendulum Dragon, Four Heavenly Dragons": {
+        "_current": "① This Pendulum Summoned card gains these effects.\n● Gains ATK equal to the difference in the Pendulum Scales of the 2 cards in your Pendulum Zones x 300.\n● Any battle damage your opponent takes from battles involving this card is doubled.\n② HOPT | If this card in the Monster Zone is destroyed: You can add this card to your hand, then if it was destroyed by your opponent's card, you can Special Summon it.\n[Pendulum Effect]\nYOUR MAIN PHASE | HOPT | You can DESTROY this card, and if you do, SEARCH 1 Pendulum Monster with 1500 or less ATK also for the rest of this turn, you cannot activate monster effects on the field until you Pendulum Summon.",
         "previous": null
     },
-    "Shamanite Shamanknight": {
-        "_current": "2+ Level 3 monsters\n① HOPT | If this card is Xyz Summoned, or if a Trap you own is banished: <b>You can target 1 of your banished Traps;</b> attach it to this card.\n② HOPT | <b>You can detach any number of materials from this card, then target 1 DARK monster in your GY or BANISHment with a Level equal to the number detached;</b> Special Summon it.",
+    "S-Force Nightcatcher": {
+        "_current": "2 monsters, including an \"S-Force\" monster\n① HOPT | If this card is Special Summoned: You can SEARCH 1 \"S-Force\" Spell/Trap.\n② HOPT | QUICK | <b>You can BANISH this card you control and 1 \"S-Force\" card in your hand;</b> Special Summon 1 \"S-Force\" monster from your Deck/Extra Deck, except \"S-Force Nightcatcher\".",
         "previous": null
     },
-    "The Chaotic Phantasmal Sacred Beasts": {
-        "_current": "3 Level 10 monsters that cannot be Normal Summoned/Set\nMust be either Fusion Summoned, or Special Summoned (from your Extra Deck) by sending the above cards you control to the GY. You can only Special Summon \"The Chaotic Phantasmal Sacred Beasts\" once per turn this way, no matter which method you use. The first two times this card on the field would be destroyed by card effect each turn, it is not destroyed. Once per Chain, up to thrice per turn (QUICK EFFECT): <b>You can target 1 face-up monster your opponent controls;</b> NEGATE its effects (until the end of this turn), then you can gain LP equal to half that monster's ATK.",
-        "previous": "3 Level 10 monsters that cannot be Normal Summoned/Set\nMust be either Fusion Summoned, or Special Summoned (from your Extra Deck) by sending the above cards you control to the GY. You can only Special Summon \"The Chaotic Phantasmal Sacred Beasts\" once per turn this way, no matter which method you use.\n① The first two times this card on the field would be destroyed by card effect each turn, it is not destroyed.\n② QUICK | Once per Chain, up to thrice per turn: <b>You can target 1 face-up monster your opponent controls;</b> NEGATE its effects (until the end of this turn), then you can gain LP equal to half that monster's ATK."
-    },
-    "Toon Cyber Dragon": {
-        "_current": "① If only your opponent controls a monster, you can Special Summon this card (from your hand).\n② Cannot attack the turn it is Summoned.\n③ While you control \"Toon World\" and your opponent controls no Toon monsters, this card can attack directly.",
-        "previous": "① If your opponent controls a monster and you control no monsters, you can Special Summon this card (from your hand).\n② Cannot attack the turn it is Summoned.\n③ While you control \"Toon World\" and your opponent controls no Toon monsters, this card can attack your opponent directly."
-    },
-    "Whisker Blitzclique": {
-        "_current": "During the turn a card(s) was destroyed by your \"Blitzclique\" card effect (QUICK EFFECT): <b>You can reveal this card in your hand;</b> Special Summon up to 3 Thunder monsters from your hand, then you can DESTROY up to that many cards on the field, also for the rest of this turn, you cannot Special Summon Effect Monsters, except from the hand. When a monster effect is activated, except in the hand (QUICK EFFECT): <b>You can BOUNCE 1 other Thunder monster you control;</b> NEGATE the activation, and if you do, DESTROY that monster. You can only use each effect of \"Whisker Blitzclique\" once per turn.",
-        "previous": "① HOPT | QUICK | During the turn a card(s) was destroyed by your \"Blitzclique\" card effect: <b>You can reveal this card in your hand;</b> Special Summon up to 3 Thunder monsters from your hand, then you can DESTROY up to that many cards on the field, also for the rest of this turn, you cannot Special Summon Effect Monsters, except from the hand.\n② HOPT | QUICK | When a monster effect is activated, except in the hand: <b>You can BOUNCE 1 other Thunder monster you control;</b> NEGATE the activation, and if you do, DESTROY that monster."
+    "Stardust Dragon - Victim Sanctuary": {
+        "_current": "1 Tuner + 1+ non-Tuners\n① QUICK | When your opponent activates a card or effect in response to your card or effect activation: <b>You can Tribute this card;</b> NEGATE the activation of your opponent's card or effect, and if you do, DESTROY that card.\n② QUICK | If a monster(s) in your possession was Tributed this turn: <b>You can BANISH this card from your GY;</b> Special Summon 1 \"Stardust\" Synchro Monster from your Extra Deck.\nYou can only use each effect of \"Stardust Dragon - Victim Sanctuary\" once per turn, and cannot activate more than 1 in the same Chain.",
+        "previous": null
     }
 }
