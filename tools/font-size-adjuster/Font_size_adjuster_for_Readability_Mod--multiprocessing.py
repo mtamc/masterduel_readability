@@ -4,7 +4,8 @@ Credits:
 - Multiprocessing modification and optimizations by RndUser: https://www.nexusmods.com/profile/RndUser
 '''
 
-import UnityPy, os, shutil, re, sys, json, subprocess, time, pickle, errno, multiprocessing as mp#, pathlib
+import UnityPy, os, shutil, re, sys, json, subprocess, time, pickle, errno, hashlib, inspect, multiprocessing as mp#, pathlib
+import PIL, PIL.features
 from PIL import ImageFont
 from datetime import datetime
 
@@ -1159,10 +1160,10 @@ def init_font_worker(font_path, font_sizes):
     global worker_font_sizes_nums
     worker_font_sizes_nums = load_font_sizes_nums(font_path, font_sizes)
 
-#Returns (font size of the main box or None, font size of the Pendulum box or None)
-def calc_card_font_sizes(full_text, OLD_text, prop_bits, unescaped_pend_marker, font_sizes_nums):
-    norm_guess = None
-    pend_guess = None
+#Returns the text boxes of a card whose font size is needed, as a list of
+#(is_pend_box, text, box_type, has_type_line). box_type: 0 for main box, 1 for pend box
+def get_card_boxes(full_text, OLD_text, prop_bits, unescaped_pend_marker):
+    boxes = []
 
     has_top_text = unescaped_pend_marker in full_text
     if has_top_text:
@@ -1171,24 +1172,23 @@ def calc_card_font_sizes(full_text, OLD_text, prop_bits, unescaped_pend_marker, 
 
     #If it doesn't have a Pendulum effect
     if (not has_top_text) and should_be_resized(OLD_text, full_text):
-        norm_guess = get_correct_font_size(full_text, font_sizes_nums, 0, not is_backrow(prop_bits))
+        boxes.append((False, full_text, 0, not is_backrow(prop_bits)))
 
     #If it has a Pendulum effect
     if has_top_text and should_be_resized(OLD_b_text, bottom_text):
-        norm_guess = get_correct_font_size(bottom_text, font_sizes_nums, 0, True)
+        boxes.append((False, bottom_text, 0, True))
 
     #If it has a Pendulum effect
     if has_top_text and should_be_resized(OLD_t_text, top_text):
-        pend_guess = get_correct_font_size(top_text, font_sizes_nums, 1, False)
+        boxes.append((True, top_text, 1, False))
 
-    return norm_guess, pend_guess
+    return boxes
 
-#cards: list of (card index, new text, old text, prop bits)
-def calc_font_sizes_chunk(args):
-    unescaped_pend_marker, cards = args
+#boxes: list of (cache key, text, box_type, has_type_line)
+def calc_font_sizes_chunk(boxes):
     return [
-        (i,) + calc_card_font_sizes(full_text, OLD_text, prop_bits, unescaped_pend_marker, worker_font_sizes_nums)
-        for (i, full_text, OLD_text, prop_bits) in cards
+        (key, get_correct_font_size(text, worker_font_sizes_nums, box_type, has_type_line))
+        for (key, text, box_type, has_type_line) in boxes
     ]
 
 def set_font_size(font_list, index, font_size):
@@ -1197,8 +1197,48 @@ def set_font_size(font_list, index, font_size):
     temp["fontsize"] = font_size
     font_list[index] = temp
 
+'''Font size cache'''
+
+#The font size of a box only depends on its text, its box type, whether it has a type line,
+#the font and the calculation code. The cache file keeps the sizes already calculated, for every
+#variant of the mod, so a run only calculates the boxes whose text is new or changed.
+#Delete the cache file to force a full recalculation.
+
+def font_size_cache_key(text, box_type, has_type_line):
+    return str(box_type) + "|" + str(int(has_type_line)) + "|" + hashlib.sha1(text.encode("utf-8")).hexdigest()
+
+#Changes whenever something that could change the calculated sizes changes: the font file, the list
+#of font sizes, the calculation functions (they hold the box dimensions), Pillow or FreeType
+def font_size_cache_signature(font_path, font_sizes):
+    h = hashlib.sha1()
+    with open(font_path, 'rb') as f:
+        h.update(f.read())
+    h.update(json.dumps(font_sizes).encode())
+    for func in (wrap_text, find_max_font_size_multiline, clean_text, get_correct_font_size):
+        h.update(inspect.getsource(func).encode("utf-8"))
+    h.update((PIL.__version__ + "|" + str(PIL.features.version("freetype2"))).encode())
+    return h.hexdigest()
+
+def load_font_size_cache(cache_path, signature):
+    try:
+        with open(cache_path, encoding="utf-8") as f:
+            data = json.load(f)
+    except (OSError, ValueError):
+        return {}
+    if not isinstance(data, dict) or data.get("signature") != signature or not isinstance(data.get("sizes"), dict):
+        print("Font size cache is outdated (font, sizes, calculation code or Pillow changed); recalculating everything")
+        return {}
+    return data["sizes"]
+
+def save_font_size_cache(cache_path, signature, sizes):
+    temp_path = cache_path + ".tmp"
+    with open(temp_path, "w", encoding="utf-8") as f:
+        json.dump({"signature": signature, "sizes": sizes}, f, separators=(",", ":"))
+    os.replace(temp_path, cache_path)
+
 #All arguments are plain (non-shared) objects. Workers only receive texts and return font sizes;
 #norm_font and pend_font are updated here, in the parent process.
+#cache_path=None disables the cache.
 def calc_font_sizes_multiprocessing(
 prop,
 bool_main_changed_indices,
@@ -1211,28 +1251,50 @@ pend_font,
 norm_to_pend_index,
 font_path,
 font_sizes,
+cache_path=None,
 chunk_size=64
 ):
-    cards = [
-        (i, post_change_arr[i], pre_change_arr[i], prop[i])
-        for i in range(len(prop))
-        if bool_main_changed_indices[i] or bool_pend_changed_indices[i] #If nothing changed: skip
-    ]
-    chunks = [(unescaped_pend_marker, cards[start:start+chunk_size]) for start in range(0, len(cards), chunk_size)]
+    signature = font_size_cache_signature(font_path, font_sizes)
+    sizes = load_font_size_cache(cache_path, signature) if cache_path else {}
 
-    core_count = os.cpu_count() or 1 #use all available logical CPU cores
-    processed_cards = 0
+    #(is_pend_box, card index, cache key) of every box that needs a font size
+    targets = []
+    #Boxes that are not in the cache, by cache key
+    missing = {}
+    cached_count = 0
+    for i in range(len(prop)):
+        #If nothing changed: skip
+        if not (bool_main_changed_indices[i] or bool_pend_changed_indices[i]): continue
+        for (is_pend_box, text, box_type, has_type_line) in get_card_boxes(post_change_arr[i], pre_change_arr[i], prop[i], unescaped_pend_marker):
+            key = font_size_cache_key(text, box_type, has_type_line)
+            targets.append((is_pend_box, i, key))
+            if key in sizes:
+                cached_count += 1
+            else:
+                missing[key] = (key, text, box_type, has_type_line)
 
-    with mp.Pool(core_count, initializer=init_font_worker, initargs=(font_path, font_sizes)) as pool:
-        for results in pool.imap_unordered(calc_font_sizes_chunk, chunks):
-            for (i, norm_guess, pend_guess) in results:
-                if norm_guess is not None:
-                    set_font_size(norm_font, i, norm_guess)
-                if pend_guess is not None:
-                    set_font_size(pend_font, norm_to_pend_index[i], pend_guess)
-            processed_cards += len(results)
-            sys.stdout.write('{:5.1f}%\r'.format(processed_cards / max(len(cards), 1) * 100))
-            sys.stdout.flush()
+    #Boxes with the same text are only calculated once
+    print(len(targets), "text boxes:", cached_count, "from cache,", len(missing), "different ones to calculate")
+
+    if missing:
+        boxes = list(missing.values())
+        chunks = [boxes[start:start+chunk_size] for start in range(0, len(boxes), chunk_size)]
+        core_count = min(os.cpu_count() or 1, len(chunks)) #use all available logical CPU cores
+        processed_boxes = 0
+        with mp.Pool(core_count, initializer=init_font_worker, initargs=(font_path, font_sizes)) as pool:
+            for results in pool.imap_unordered(calc_font_sizes_chunk, chunks):
+                sizes.update(results)
+                processed_boxes += len(results)
+                sys.stdout.write('{:5.1f}%\r'.format(processed_boxes / len(boxes) * 100))
+                sys.stdout.flush()
+        if cache_path:
+            save_font_size_cache(cache_path, signature, sizes)
+
+    for (is_pend_box, i, key) in targets:
+        if is_pend_box:
+            set_font_size(pend_font, norm_to_pend_index[i], sizes[key])
+        else:
+            set_font_size(norm_font, i, sizes[key])
 
     return norm_font,pend_font
 
@@ -1488,7 +1550,8 @@ if __name__ == '__main__':
         pend_font,
         norm_to_pend_index,
         font_path,
-        font_sizes
+        font_sizes,
+        cache_path=os.path.join(script_folder(), "font_size_cache.json")
     )
 
     end_time_calc_font_sizes = time.time()
