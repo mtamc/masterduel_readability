@@ -225497,22 +225497,22 @@
             {
                 "mainEffect": "\n\n① Gains ATK equal to the combined ATK of the monsters equipped to this card by its effect.",
                 "originalPosition": 24545,
-                "trailingText": "\n\nIf this card battles a monster, neither can be destroyed by that battle."
+                "trailingText": ""
             },
             {
-                "mainEffect": "\n\n② Your opponent's monsters cannot attack any monsters, except this one.",
+                "mainEffect": "\n\n② If this card battles a monster, neither can be destroyed by that battle.",
                 "originalPosition": 24546,
                 "trailingText": ""
             },
             {
-                "mainEffect": "\n\n③ If this card is Special Summoned, or at the end of the Battle Phase, if this card battled: You can equip 1 monster your opponent controls to this card as an Equip Spell.",
+                "mainEffect": "\n\n③ Your opponent's monsters cannot attack any monsters, except this one.",
                 "originalPosition": 24547,
                 "trailingText": ""
             },
             {
-                "mainEffect": "\n\n④ You can only use this effect of \"Nightmare-Eyes Restrict\" once per turn.",
+                "mainEffect": "\n\n④ If this card is Special Summoned, or at the end of the Battle Phase, if this card battled: You can equip 1 monster your opponent controls to this card as an Equip Spell.",
                 "originalPosition": 24548,
-                "trailingText": ""
+                "trailingText": "\n\nYou can only use this effect of \"Nightmare-Eyes Restrict\" once per turn."
             }
         ],
         "leadingText": "2 monsters with different Types (Fiend, Illusion, or Spellcaster)",
@@ -230182,12 +230182,12 @@
             {
                 "mainEffect": "\n\n① You can target 1 other card you control; destroy it, and if you do, draw 1 card.",
                 "originalPosition": 25130,
-                "trailingText": "\n\nDuring your turn, when your opponent activates a card or effect (Quick Effect): You can discard 1 card; negate that effect."
+                "trailingText": ""
             },
             {
-                "mainEffect": "\n\n② You can only use each of the preceding effects of \"Odd-Eyes Override Dragon\" once per turn.",
+                "mainEffect": "\n\n② During your turn, when your opponent activates a card or effect (Quick Effect): You can discard 1 card; negate that effect.",
                 "originalPosition": 25129,
-                "trailingText": ""
+                "trailingText": "\n\nYou can only use each of the preceding effects of \"Odd-Eyes Override Dragon\" once per turn."
             },
             {
                 "mainEffect": "\n\n③ If you destroyed a Pendulum Monster Card by this card's first effect, during your Main Phase this turn, you can conduct 1 Pendulum Summon of a \"Performapal\" monster(s), \"Magician\" Pendulum Monster(s), and/or \"Odd-Eyes\" monster(s), in addition to your Pendulum Summon (you can only gain this effect once per turn).",

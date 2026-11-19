@@ -7,7 +7,7 @@ import Card (Card (..))
 import Card qualified
 import Control.Lens (over, (%~), (.~), (?~), (^.))
 import Data.Aeson (FromJSON, ToJSON)
-import Data.Char (toUpper)
+import Data.Char (isSpace, toUpper)
 import Data.List (partition)
 import Data.List.Extra (dropEnd)
 import Data.Text qualified as Text
@@ -71,9 +71,62 @@ unzipVersions versions =
         , numberingAndDoubleNewlinesOnly = map (.numberingAndDoubleNewlinesOnly) versions
         }
 
+{- | Some cards have their use restriction sentence registered as an effect in
+Card_Part, while a real effect before it is left unregistered, eg
+Odd-Eyes Override Dragon:
+  registered:   "You can target 1 other card you control; (...)"
+  unregistered: "During your turn, when your opponent activates (...)"
+  registered:   "You can only use each of the preceding effects of (...) once per turn."
+We move the unregistered effect into the next effect slot, shift the following
+effects by one slot, and leave the restriction sentence as trailing text.
+-}
+fixMisregisteredRestrictions :: [Card.Effect] -> [Card.Effect]
+fixMisregisteredRestrictions effects = fromMaybe effects do
+    restrictionIndex <-
+        viaNonEmpty head [i | (i, e) <- zip [0 ..] effects, isRestriction e.mainEffect]
+    holderIndex <-
+        viaNonEmpty
+            last
+            [ i
+            | (i, e) <- zip [0 ..] (take restrictionIndex effects)
+            , Text.strip e.trailingText /= ""
+            ]
+    let (before, rest) = splitAt holderIndex effects
+        (slots, after) = splitAt (restrictionIndex - holderIndex + 1) rest
+    holder <- viaNonEmpty head slots
+    restriction <- viaNonEmpty last slots
+    let middle = dropEnd 1 $ drop 1 slots
+        unregisteredEffect = holder.trailingText
+        texts =
+            (holder.mainEffect, Text.takeWhile isSpace unregisteredEffect)
+                : (Text.strip unregisteredEffect, Text.takeWhileEnd isSpace unregisteredEffect)
+                : map (\e -> (e.mainEffect, e.trailingText)) middle
+        textsWithRestriction =
+            dropEnd 1 texts
+                <> map
+                    (second (<> restriction.mainEffect <> restriction.trailingText))
+                    (take 1 $ reverse texts)
+    guard $ all (\e -> e.mainEffect /= "") (holder : middle)
+    pure $
+        before
+            <> zipWith
+                (\e (main, trailing) -> e & #mainEffect .~ main & #trailingText .~ trailing)
+                slots
+                textsWithRestriction
+            <> after
+  where
+    isRestriction (Text.strip -> text) =
+        "You can only use " `Text.isPrefixOf` text
+            && "once per turn." `Text.isSuffixOf` text
+            && not ("\n" `Text.isInfixOf` text)
+
 updateDesc :: Card Card.Effect -> CardVersions
-updateDesc card =
-    let processedEffects = map effectToProcessed card.effects
+updateDesc cardWithOriginalEffectSlots =
+    let card =
+            cardWithOriginalEffectSlots
+                & #effects %~ fixMisregisteredRestrictions
+                & #pendulumEffects %~ fixMisregisteredRestrictions
+        processedEffects = map effectToProcessed card.effects
         normalizedLeading = Text.strip card.leadingText
         (leadingWithoutUnregisteredEffects, effectsWithUnregistered) =
             getUnregisteredEffects normalizedLeading processedEffects
