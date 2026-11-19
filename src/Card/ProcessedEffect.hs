@@ -648,7 +648,9 @@ rewordSearch = reword do
 
 tagOncePerTurns :: Card ProcessedEffect -> Card ProcessedEffect
 tagOncePerTurns =
-    tagFollowingHoptInMonsterAndPend
+    (#effects %~ tagPrecedingHopt)
+        . (#pendulumEffects %~ tagPrecedingHopt)
+        . tagFollowingHoptInMonsterAndPend
         . tagHoptActis
         . tagLeadingHoptOneEffect
         . tagTrailingHoptOneEffect
@@ -947,6 +949,69 @@ detectPreviousHopt =
     detectAndRemove $
         standardHoptParser
             "You can only use the previous effect of \""
+            "\" once per turn."
+
+{- | Turns "You can only use each of the preceding effects of (...) once per turn."
+into HOPT tags on the effects it refers to, and removes the sentence.
+
+The sentence is either in the trailing text of the last effect it refers to:
+  Odd-Eyes Override Dragon, Tindangle Dholes, Mokomoko
+or inside the effect that follows the ones it refers to:
+  Vendread Core: "A \"Vendread\" monster (...) gains the following effect. You can only use each of the preceding effects of (...)"
+  Vendread Revenants, same but "the preceding effect": only the effect right before is tagged
+-}
+tagPrecedingHopt :: [ProcessedEffect] -> [ProcessedEffect]
+tagPrecedingHopt effects =
+    case viaNonEmpty head $ mapMaybe detect indexedEffects of
+        Nothing -> effects
+        Just (sentenceIndex, withoutSentence, indicesToTag) ->
+            map
+                ( \(i, effect) ->
+                    (if i == sentenceIndex then withoutSentence else effect)
+                        & applyWhen (i `elem` indicesToTag && "hopt" `notElem` effect.tags) (#tags %~ ("hopt" :))
+                )
+                indexedEffects
+  where
+    indexedEffects :: [(Int, ProcessedEffect)]
+    indexedEffects = zip [0 ..] effects
+    nonEmptyIndicesBefore :: Int -> [Int]
+    nonEmptyIndicesBefore end =
+        [i | (i, e) <- take end indexedEffects, e.mainEffect /= "" || e.trailingText /= ""]
+    detect :: (Int, ProcessedEffect) -> Maybe (Int, ProcessedEffect, [Int])
+    detect (i, effect) =
+        asum
+            [ detectPrecedingHoptEach effect.trailingText <&> \changed ->
+                (i, effect & #trailingText .~ changed, nonEmptyIndicesBefore (i + 1))
+            , detectPrecedingHoptEach effect.mainEffect <&> \changed ->
+                (i, effect & #mainEffect .~ stripLineEnds changed, nonEmptyIndicesBefore i)
+            , detectPrecedingHoptSingle effect.mainEffect <&> \changed ->
+                ( i
+                , effect & #mainEffect .~ stripLineEnds changed
+                , maybeToList . viaNonEmpty last $ nonEmptyIndicesBefore i
+                )
+            ]
+    -- removing the sentence can leave a space at the end of a line
+    stripLineEnds :: Text -> Text
+    stripLineEnds = Text.intercalate "\n" . map Text.stripEnd . Text.splitOn "\n"
+
+detectPrecedingHoptEach :: Text -> Maybe Text
+detectPrecedingHoptEach =
+    detectAndRemove $
+        standardHoptParser'
+            ( choice $
+                map
+                    string
+                    [ "You can only use each of the preceding effects of \""
+                    , "You can only use each of the previous effects of \""
+                    ]
+            )
+            (string "\" once per turn.")
+
+detectPrecedingHoptSingle :: Text -> Maybe Text
+detectPrecedingHoptSingle =
+    detectAndRemove $
+        standardHoptParser
+            "You can only use the preceding effect of \""
             "\" once per turn."
 
 detectOneOnlyOnce :: Text -> Maybe Text
